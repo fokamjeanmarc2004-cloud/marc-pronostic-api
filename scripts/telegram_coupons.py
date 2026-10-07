@@ -9,6 +9,8 @@ Tu envoies une PHOTO a ton bot avec une legende. 1re ligne = le mot-cle :
     resultat     -> result-photo.jpg  (page Resultats)
 Les lignes suivantes de la legende (facultatives) sont ajoutees au message du canal.
 Ajoute le mot  site  a la fin du mot-cle (ex : "cote2 site") pour NE PAS publier dans le canal.
+Ajoute le mot  canal  (ex : "cote2 canal") pour publier SEULEMENT dans le canal (pas sur le site).
+Legende "canal" seule : n'importe quelle photo, publiee seulement dans le canal.
 
 Ce script est lance automatiquement par GitHub Actions (toutes les ~5 minutes).
 
@@ -56,7 +58,9 @@ HELP = ("📸 Envoie la photo du coupon avec une légende :\n"
         "• tpi melbet → Pair/Impair Melbet\n"
         "• resultat → page Résultats\n\n"
         "Tu peux écrire ton commentaire sur les lignes suivantes : il sera ajouté au message du canal.\n"
-        "Ajoute « site » après le mot-clé (ex : cote2 site) pour publier seulement sur le site.\n\n"
+        "Ajoute « site » après le mot-clé (ex : cote2 site) pour publier seulement sur le site.\n"
+        "Ajoute « canal » après le mot-clé (ex : cote2 canal) pour publier seulement dans le canal.\n"
+        "Légende « canal » seule : n'importe quelle photo, dans le canal seulement.\n\n"
         "Le site et le canal sont mis à jour en 5 à 15 minutes.")
 
 
@@ -82,17 +86,21 @@ def norm(text):
 
 
 def parse_caption(caption):
-    """Renvoie (fichier, nom, texte canal, commentaire, publier_dans_canal)."""
+    """Renvoie (fichier, nom, texte canal, commentaire, publier_dans_canal, publier_sur_site)."""
     lines = (caption or "").strip().splitlines()
     first = norm(lines[0]) if lines else ""
     comment = "\n".join(lines[1:]).strip()
-    to_channel = True
+    to_channel, to_site = True, True
+    if first == "canal":                       # photo libre : canal seulement
+        return None, "Canal", "", comment, True, False
     if first.endswith(" site"):
         first, to_channel = first[:-5].strip(), False
+    elif first.endswith(" canal"):
+        first, to_site = first[:-6].strip(), False
     for pattern, filename, label, text in TARGETS:
         if re.match(pattern, first):
-            return filename, label, text, comment, to_channel
-    return None, None, None, comment, to_channel
+            return filename, label, text, comment, to_channel, to_site
+    return None, None, None, comment, to_channel, to_site
 
 
 def target_for(caption):  # garde pour compatibilite
@@ -110,7 +118,8 @@ def download(file_id, dest):
 
 
 def channel_text(text, comment):
-    return (f"{comment}\n\n{text}" if comment else text) + FOOTER
+    body = "\n\n".join(x for x in (comment, text) if x)
+    return (body or "⚽ Cousin Marc") + FOOTER
 
 
 def main():
@@ -141,14 +150,17 @@ def main():
         if not file_id:
             reply(chat_id, HELP)
             continue
-        filename, label, text, comment, to_channel = parse_caption(msg.get("caption"))
-        if not filename:
+        filename, label, text, comment, to_channel, to_site = parse_caption(msg.get("caption"))
+        if not label:
             reply(chat_id, "❓ Légende non reconnue.\n\n" + HELP)
             continue
-        size = download(file_id, os.path.join(ROOT, filename))
-        changed.append(filename)
         post = channel_text(text, comment)
-        status = f"✅ Reçu ! {label} ({filename}, {size // 1024} Ko).\nSur le site dans quelques minutes."
+        if to_site and filename:
+            size = download(file_id, os.path.join(ROOT, filename))
+            changed.append(filename)
+            status = f"✅ Reçu ! {label} ({filename}, {size // 1024} Ko).\nSur le site dans quelques minutes."
+        else:
+            status = "✅ Reçu ! Publication dans le canal seulement (le site ne change pas)."
         if CHANNEL and to_channel:
             try:
                 method = "sendPhoto" if as_photo else "sendDocument"
