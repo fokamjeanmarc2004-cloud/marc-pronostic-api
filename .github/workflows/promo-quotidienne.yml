@@ -1,11 +1,10 @@
+# Horaires automatiques DESACTIVES : les promos de 6h et 21h partent maintenant de Cloudflare.
+# Ce bouton "Run workflow" reste disponible pour publier un message promo a la main.
 # Message promo automatique dans le canal Telegram : 6h00 et 21h00 (heure du Cameroun, UTC+1)
 # GitHub utilise l'heure UTC : 5h00 UTC = 6h00 Cameroun, 20h00 UTC = 21h00 Cameroun.
 name: Promo quotidienne Telegram
 
 on:
-  schedule:
-    - cron: "0 5 * * *"
-    - cron: "0 20 * * *"
   workflow_dispatch:
     inputs:
       numero:

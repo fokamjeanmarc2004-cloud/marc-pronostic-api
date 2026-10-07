@@ -1,10 +1,10 @@
+# DESACTIVE : le bot tourne maintenant sur Cloudflare Workers (dossier worker/).
+# Ne pas relancer : Telegram envoie les messages directement a Cloudflare.
 # Bot Telegram -> coupons du site (cote2.jpg, tpi-1xbet.jpg, tpi-melbet.jpg, result-photo.jpg)
 # Verifie les nouveaux messages du bot toutes les 5 minutes et publie les photos recues.
 name: Coupons depuis Telegram
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch:        # bouton "Run workflow" pour lancer a la main
 
 permissions:
