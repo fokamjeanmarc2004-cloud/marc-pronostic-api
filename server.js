@@ -1,6 +1,7 @@
 const https = require('https');
 
-const CLAUDE_KEY = 'sk-ant-api03-EXA0AuT9AoGwktgcU02e3GRQWZFNUr9SGwpPUMZfSd3AruL0NjIOcawf0wUFIR73U5kWUE7_Vl_EfWBQpq_k0Q-qctvSQAA';
+// La cle API se met dans la variable d'environnement ANTHROPIC_API_KEY chez l'hebergeur (jamais dans le code)
+const CLAUDE_KEY = process.env.ANTHROPIC_API_KEY || '';
 const PORT = process.env.PORT || 3000;
 
 function sendJSON(res, status, data) {
