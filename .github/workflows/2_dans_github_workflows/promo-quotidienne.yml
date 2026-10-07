@@ -1,0 +1,29 @@
+# Message promo automatique dans le canal Telegram : 6h00 et 21h00 (heure du Cameroun, UTC+1)
+# GitHub utilise l'heure UTC : 5h00 UTC = 6h00 Cameroun, 20h00 UTC = 21h00 Cameroun.
+name: Promo quotidienne Telegram
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+    inputs:
+      numero:
+        description: "Numero du message a envoyer (1 a 13). Vide = message du moment."
+        required: false
+        default: ""
+
+jobs:
+  promo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Publier le message promo dans le canal
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          PROMO_INDEX: ${{ github.event.inputs.numero }}
+        run: python3 scripts/promo.py
