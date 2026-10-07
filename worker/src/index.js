@@ -184,7 +184,11 @@ async function sendPromo(env, index) {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const keyOk = env.WEBHOOK_SECRET && url.searchParams.get("key") === env.WEBHOOK_SECRET;
+    const given = (url.searchParams.get("key") || "").trim();
+    const keyOk = env.WEBHOOK_SECRET && given === env.WEBHOOK_SECRET.trim();
+    const keyHelp = () => !env.WEBHOOK_SECRET
+      ? "❌ Le secret WEBHOOK_SECRET est absent dans Cloudflare (Settings > Variables and Secrets)."
+      : `❌ Clé incorrecte : tu as tapé ${given.length} caractères, le mot de passe enregistré en a ${env.WEBHOOK_SECRET.trim().length}. Attention aux majuscules/minuscules.`;
 
     // Messages envoyes par Telegram
     if (url.pathname === "/telegram" && request.method === "POST") {
@@ -198,7 +202,7 @@ export default {
 
     // A ouvrir UNE fois : branche Telegram sur ce Worker
     if (url.pathname === "/setup") {
-      if (!keyOk) return new Response("cle incorrecte", { status: 403 });
+      if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
       const res = await tg(env, "setWebhook", {
         url: `${url.origin}/telegram`,
         secret_token: env.WEBHOOK_SECRET,
@@ -210,7 +214,7 @@ export default {
 
     // Test d'un message promo : /promo?key=...&n=1
     if (url.pathname === "/promo") {
-      if (!keyOk) return new Response("cle incorrecte", { status: 403 });
+      if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
       const n = parseInt(url.searchParams.get("n") || "", 10);
       const i = n >= 1 && n <= PROMOS.length ? n - 1 : pickIndex(new Date());
       const out = await sendPromo(env, i);
