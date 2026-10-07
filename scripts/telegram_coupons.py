@@ -33,25 +33,36 @@ OFFSET_FILE = os.path.join(ROOT, ".telegram_offset")
 SITE = "https://cousinmarc-pronostic.com"
 
 # (mot-cle, fichier sur le site, nom affiche, texte pour le canal / WhatsApp)
+SEP = "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+PIED = (f"\n{SEP}\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n{SEP}\n"
+        "📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n" + SEP)
 TARGETS = [
     (r"^(cote|côte)\s*(de\s*)?2$|^c2$", "cote2.jpg", "Côte de 2 + coupon du jour de l'accueil",
-     "🎯 COUPON CÔTE DE 2 DU JOUR\n\n"
-     "✅ Pas encore de compte ? Inscris-toi avec le code promo FFN\n"
-     f"🌐 {SITE}/cote-de-2.html"),
+     f"{SEP}\n⚽ COUPON CÔTE DE 2 DU JOUR\n{SEP}\n\n"
+     f"👉 Détails : {SITE}/cote-de-2.html\n\n"
+     "🎯 1XBET — Code promo : FFN\n\n"
+     "🌐 https://tinyurl.com/3vptk7a4\n"
+     "📲 https://tinyurl.com/7vucc2fu\n" + PIED),
     (r"^tpi\s*1\s*x\s*bet$|^tpi\s*1xbet$|^pair\s*impair\s*1xbet$", "tpi-1xbet.jpg", "Total Pair/Impair · 1xBet",
-     "🎲 TOTAL PAIR / IMPAIR · 1xBet\n\n"
-     "✅ Code promo 1xBet : FFN\n"
-     f"🌐 {SITE}/total-pair-impair.html"),
+     f"{SEP}\n🎲 TOTAL PAIR / IMPAIR DU JOUR\n{SEP}\n\n"
+     f"👉 Détails : {SITE}/total-pair-impair.html\n\n"
+     "🎯 1XBET — Code promo : FFN\n\n"
+     "🌐 https://tinyurl.com/3vptk7a4\n"
+     "📲 https://tinyurl.com/7vucc2fu\n" + PIED),
     (r"^tpi\s*melbet$|^pair\s*impair\s*melbet$", "tpi-melbet.jpg", "Total Pair/Impair · Melbet",
-     "🎲 TOTAL PAIR / IMPAIR · Melbet\n\n"
-     "✅ Code promo Melbet : FFN\n"
-     f"🌐 {SITE}/total-pair-impair.html"),
+     f"{SEP}\n🎲 TOTAL PAIR / IMPAIR DU JOUR\n{SEP}\n\n"
+     f"👉 Détails : {SITE}/total-pair-impair.html\n\n"
+     "🎯 MELBET — Code promo : FFN\n\n"
+     "🌐 https://tinyurl.com/48f3ukrb\n"
+     "📲 https://tinyurl.com/4nsmfukc\n" + PIED),
     (r"^(resultat|résultat|resultats|résultats)$", "result-photo.jpg", "Résultats",
-     "🏆 RÉSULTAT COUSIN MARC\n\n"
-     "📊 Tous les résultats publiés :\n"
-     f"🌐 {SITE}/resultats.html"),
+     f"{SEP}\n🏆 ENCORE UN COUPON GAGNANT !\n{SEP}\n\n"
+     "✅ Bravo à tous ceux qui ont suivi\n\n"
+     f"📊 Tous les résultats : {SITE}/resultats.html\n"
+     f"⭐ Grosses cotes et live dans le VIP : {SITE}/vip.html\n\n"
+     "Les gains passés ne garantissent pas les gains futurs.\n" + SEP),
 ]
-FOOTER = "\n\n18+ · Joue de façon responsable"
+FOOTER = "\n\n🔞 18+ · Joue de façon responsable."
 HELP = ("📸 Envoie la photo du coupon avec une légende :\n"
         "• cote2 → Côte de 2 (+ accueil)\n"
         "• tpi 1xbet → Pair/Impair 1xBet\n"
