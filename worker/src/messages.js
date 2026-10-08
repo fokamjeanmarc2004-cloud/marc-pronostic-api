@@ -40,16 +40,16 @@ export const PROMOS = [
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ REJOINS LE VIP COUSIN MARC\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 Côte de 2 VIP tous les jours\n🚀 Grosses cotes plusieurs fois par semaine\n⚡ Pronostics en live pendant les matchs\n💬 Canal privé + questions directes\n\n💳 1 mois 30 $ · 3 mois 75 $ · 1 an 250 $\n📲 Paiement Orange Money, MTN ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
  },
  {
-  "image": "https://cousinmarc-pronostic.com/affiche-1xbet.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔥 PAS ENCORE DE COMPTE 1XBET ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 1XBET — Code promo : FFN\n🎁 100% sur ton 1er dépôt (jusqu'à 100 000 FCFA au Cameroun)\n\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n📲 Dépôt et retrait par Mobile Money\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-1xbet.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔥 PAS ENCORE DE COMPTE 1XBET ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 1XBET — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n📲 Dépôt et retrait par Mobile Money\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-quel-bookmaker.jpg",
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🤔 QUEL BOOKMAKER CHOISIR ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nDonne ton pays et ton moyen de paiement\n(Orange Money, MTN, Wave, crypto…)\net je te donne ton TOP 3 avec le bon code promo 👇\n\n🧭 https://cousinmarc-pronostic.com/quel-bookmaker-choisir.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
-  "image": "https://cousinmarc-pronostic.com/affiche-melbet.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟡 MELBET : TON BONUS T'ATTEND\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 MELBET — Code promo : FFN\n🎁 100% sur ton 1er dépôt\n\n🌐 https://tinyurl.com/48f3ukrb\n📲 https://tinyurl.com/4nsmfukc\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-melbet.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟡 MELBET : TON BONUS T'ATTEND\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 MELBET — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n\n🌐 https://tinyurl.com/48f3ukrb\n📲 https://tinyurl.com/4nsmfukc\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
  },
  {
   "image": "COUPON_DU_JOUR",
@@ -64,20 +64,20 @@ export const PROMOS = [
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n❓ TON CODE PROMO NE MARCHE PAS ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nCode refusé, oublié à l'inscription,\nbonus pas reçu, retrait bloqué…\nToutes les solutions sont ici 👇\n\n🛠️ https://cousinmarc-pronostic.com/code-promo-ne-marche-pas.html\n\nToujours bloqué ? Écris-moi en privé avec une capture.\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
-  "image": "https://cousinmarc-pronostic.com/affiche-paripesa.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟠 PARIPESA : MÊME CODE, MÊME BONUS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 PARIPESA — Code promo : FFN\n🎁 100% sur ton 1er dépôt\n\n🌐 https://paripesa.bet/flex4\n📲 https://paripesa.bet/cousinmarc\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-paripesa.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟠 PARIPESA : MÊME CODE, MÊME BONUS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 PARIPESA — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n\n🌐 https://paripesa.bet/flex4\n📲 https://paripesa.bet/cousinmarc\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-vip.jpg",
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 LES GROSSES COTES, C'EST DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLes cotes à 5, 8, 10 et plus que vous aimez 🔥\nsont partagées en priorité dans le canal VIP,\navec la côte de 2 du jour et le live.\n\n🏆 Mes derniers tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n\n💳 Dès 30 $/mois · Orange Money, MTN ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
  },
  {
-  "image": "https://cousinmarc-pronostic.com/affiche-winwin.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟢 WINWIN : INSCRIS-TOI AVEC FFN\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 WINWIN — Code promo : FFN\n🎁 100% sur ton 1er dépôt\n\n🌐 https://slim.link/FFN\n📲 Android : https://slim.link/FFN_APK\n🍏 iPhone : https://apps.apple.com/sc/app/win-win-sports-betting/id6747608407\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-winwin.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟢 WINWIN : INSCRIS-TOI AVEC FFN\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 WINWIN — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n\n🌐 https://slim.link/FFN\n📲 Android : https://slim.link/FFN_APK\n🍏 iPhone : https://apps.apple.com/sc/app/win-win-sports-betting/id6747608407\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
  },
  {
-  "image": "https://cousinmarc-pronostic.com/affiche-goldpari.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n💎 2 AUTRES BOOKMAKERS AVEC FFN\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 MEGAPARI — Code promo : FFN\n🎁 100% sur ton 1er dépôt\n\n🌐 https://4646532.megapari-359310.net\n\n\n🎯 GOLDPARI — Code promo : FFN\n🎁 300% jusqu'à 200 $\n\n🌐 https://slim.link/yHtzWdS\n📲 https://slim.link/5gRZnVB\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-megapari-goldpari.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n💎 2 AUTRES BOOKMAKERS AVEC FFN\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 MEGAPARI — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n\n🌐 https://4646532.megapari-359310.net\n\n\n🎯 GOLDPARI — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n\n🌐 https://slim.link/yHtzWdS\n📲 https://slim.link/5gRZnVB\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
