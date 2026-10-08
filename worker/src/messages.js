@@ -82,5 +82,9 @@ export const PROMOS = [
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎟️ TOUS MES CODES PROMO\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🔥 FFN → 1xBet · Melbet · Paripesa · WinWin · Megapari · GoldPari\n🔥 ESS22 → 1win · Linebet\n🔥 FJM → BetAndYou · Fastparie\n🔥 CMF → Betwiner\n\n👉 Tous les liens (site + application) :\nhttps://cousinmarc-pronostic.com\n\n⚠️ Le code s'entre UNE seule fois, à l'inscription.\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-stickers.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎨 STICKERS, EMOJIS ET AFFICHE FFN\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n😎 Emojis animés FFN :\nhttps://t.me/addemoji/FFN_emojis\n\n🔥 Stickers Cousin Marc :\n__STICKERS__\n\n🖼️ Fais ton affiche avec TON prénom et TON code promo (gratuit) :\nhttps://cousinmarc-pronostic.com/affiche.html\n\n📲 Partage-la à tes amis, ça aide la communauté !\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  }
 ];

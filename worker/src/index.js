@@ -19,7 +19,69 @@
 import { RESP, FOOTER, HELP as HELP_TXT, COUPON_DU_JOUR, TARGETS, PROMOS } from "./messages.js";
 
 const REPO = "fokamjeanmarc2004-cloud/marc-pronostic-api";
-const HELP = HELP_TXT.replace("mis à jour en 5 à 15 minutes", "mis à jour en quelques secondes");
+const SITE = "https://cousinmarc-pronostic.com";
+const EMOJI_PACK = "https://t.me/addemoji/FFN_emojis";
+const COMMANDS = "\n\n🎨 Commandes :\n/emojis → ton pack d'emojis FFN\n/stickers → ton pack de stickers (le crée la 1re fois)\n/affiche → l'outil pour fabriquer une affiche avec ton code";
+const HELP = HELP_TXT.replace("mis à jour en 5 à 15 minutes", "mis à jour en quelques secondes") + COMMANDS;
+
+// ---------------------------------------------------------------- Stickers
+// Un emoji associe a chaque image du dossier stickers/ du depot (meme ordre alphabetique).
+const STICKER_EMOJIS = ["🔥", "🔥", "⚠️", "✅", "🎯", "⭐", "👇", "🎁", "🔥", "🔥", "🔥", "🔥", "💰", "🎯", "🙏"];
+
+async function stickerSetName(env) {
+  const me = await tg(env, "getMe", {});
+  return { name: `cousinmarc_ffn_by_${me.username}`, bot: me.username };
+}
+
+async function stickerSetLink(env) {
+  const { name } = await stickerSetName(env);
+  try { await tg(env, "getStickerSet", { name }); return `https://t.me/addstickers/${name}`; } catch (e) { return null; }
+}
+
+// Cree le pack la premiere fois (images lues dans le depot GitHub) et renvoie le lien.
+async function ensureStickers(env, userId) {
+  const existing = await stickerSetLink(env);
+  if (existing) return { link: existing, created: false };
+  const { name } = await stickerSetName(env);
+  const list = await (await gh(env, "contents/stickers?ref=main")).json();
+  if (!Array.isArray(list)) throw new Error("dossier stickers/ introuvable dans le depot GitHub");
+  const files = list.filter((f) => /\.png$/i.test(f.name)).sort((a, b) => a.name.localeCompare(b.name)).slice(0, 50);
+  if (!files.length) throw new Error("aucune image dans stickers/");
+  const form = new FormData();
+  form.append("user_id", String(userId));
+  form.append("name", name);
+  form.append("title", "Cousin Marc · Code FFN");
+  const stickers = [];
+  for (let i = 0; i < files.length; i++) {
+    const img = await fetch(files[i].download_url);
+    form.append(`s${i}`, new Blob([await img.arrayBuffer()], { type: "image/png" }), files[i].name);
+    stickers.push({ sticker: `attach://s${i}`, format: "static", emoji_list: [STICKER_EMOJIS[i] || "🔥"] });
+  }
+  form.append("stickers", JSON.stringify(stickers));
+  const r = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/createNewStickerSet`, { method: "POST", body: form });
+  const out = await r.json();
+  if (!out.ok) throw new Error(`createNewStickerSet: ${out.description || r.status}`);
+  return { link: `https://t.me/addstickers/${name}`, created: true, count: files.length };
+}
+
+async function handleCommand(env, chatId, userId, text) {
+  const cmd = text.trim().split(/[\s@]/)[0].toLowerCase();
+  if (cmd === "/emojis") {
+    await reply(env, chatId, `😎 Ton pack d'emojis animés FFN :\n${EMOJI_PACK}\n\n(Les emojis personnalisés s'écrivent à la main dans Telegram : le bot ne peut pas les envoyer à ta place.)`);
+  } else if (cmd === "/stickers") {
+    try {
+      const s = await ensureStickers(env, userId);
+      await reply(env, chatId, `${s.created ? `✅ Pack créé (${s.count} stickers) !` : "✅ Ton pack de stickers :"}\n${s.link}\n\nPartage ce lien dans ton canal et tes groupes.`);
+    } catch (e) {
+      console.log("stickers", e.message);
+      await reply(env, chatId, `⚠️ Impossible de créer le pack : ${e.message}`);
+    }
+  } else if (cmd === "/affiche" || cmd === "/moncode") {
+    await reply(env, chatId, `🖼️ Fabrique une affiche avec ton prénom et ton code promo :\n${SITE}/affiche.html\n\nChoisis le bookmaker, télécharge l'image, partage-la.`);
+  } else {
+    await reply(env, chatId, HELP);
+  }
+}
 
 // ---------------------------------------------------------------- Telegram
 async function tg(env, method, params) {
@@ -117,6 +179,8 @@ async function handleUpdate(update, env) {
     return;
   }
 
+  if (msg.text && msg.text.trim().startsWith("/")) { await handleCommand(env, chatId, userId, msg.text); return; }
+
   let fileId = null, asPhoto = true;
   if (msg.photo && msg.photo.length) fileId = msg.photo[msg.photo.length - 1].file_id;
   else if (msg.document && String(msg.document.mime_type || "").startsWith("image/")) { fileId = msg.document.file_id; asPhoto = false; }
@@ -167,7 +231,13 @@ async function sendPromo(env, index) {
   const p = PROMOS[index];
   const hour = new Date().toISOString().slice(0, 13).replace(/\D/g, "");
   const image = p.image === "COUPON_DU_JOUR" ? `${COUPON_DU_JOUR}?t=${hour}` : p.image;
-  const text = p.text + RESP;
+  let body = p.text;
+  if (body.includes("__STICKERS__")) {
+    let link = null;
+    try { link = await stickerSetLink(env); } catch (e) { console.log("stickers", e.message); }
+    body = link ? body.replace("__STICKERS__", link) : body.replace(/🔥 Stickers[^\n]*\n__STICKERS__\n\n/, "");
+  }
+  const text = body + RESP;
   if (image) {
     try {
       await tg(env, "sendPhoto", { chat_id: channelOf(env), photo: image, caption: text });
