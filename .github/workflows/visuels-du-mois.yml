@@ -1,0 +1,48 @@
+# Images neuves du canal Telegram : le 25 de chaque mois, fabrique les ~60 images du mois suivant
+# (un nouveau style chaque mois, une image differente pour chaque message de 6h et de 21h)
+# et efface celles des mois passes. Le bouton "Run workflow" permet de lancer a la main (ex : 2026-12).
+name: Visuels du mois (Telegram)
+
+on:
+  schedule:
+    - cron: "0 6 25 * *"
+  workflow_dispatch:
+    inputs:
+      mois:
+        description: "Mois a fabriquer (AAAA-MM). Vide = mois prochain."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visuels-du-mois
+  cancel-in-progress: false
+
+jobs:
+  visuels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer Pillow
+        run: pip install pillow
+
+      - name: Fabriquer les images
+        run: python scripts/visuels.py ${{ github.event.inputs.mois }}
+
+      - name: Publier
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A promo/visuels
+          git diff --cached --quiet && echo "rien a publier" && exit 0
+          git commit -m "Visuels Telegram du mois"
+          git pull --rebase
+          git push

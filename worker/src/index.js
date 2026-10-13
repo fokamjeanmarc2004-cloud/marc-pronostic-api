@@ -227,10 +227,23 @@ export function pickIndex(date) {
   return (days * 2 + slot) % PROMOS.length;
 }
 
-async function sendPromo(env, index) {
+// Image neuve du jour (fabriquee chaque mois par scripts/visuels.py) : promo/visuels/AAAA-MM/JJ-matin.jpg ou JJ-soir.jpg
+const VISUELS = "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/visuels";
+function visuelDuJour(date) {
+  const d = date.toISOString();
+  return `${VISUELS}/${d.slice(0, 7)}/${d.slice(8, 10)}-${date.getUTCHours() < 12 ? "matin" : "soir"}.jpg`;
+}
+
+async function sendPromo(env, index, date = new Date()) {
   const p = PROMOS[index];
   const hour = new Date().toISOString().slice(0, 13).replace(/\D/g, "");
   const image = p.image === "COUPON_DU_JOUR" ? `${COUPON_DU_JOUR}?t=${hour}` : p.image;
+  // le coupon du jour garde la vraie photo ; les autres messages prennent l'image neuve du jour si elle existe
+  let fresh = null;
+  if (p.image !== "COUPON_DU_JOUR" && index === pickIndex(date)) {
+    const url = visuelDuJour(date);
+    try { if ((await fetch(url, { method: "HEAD" })).ok) fresh = url; } catch (e) { console.log("visuel", e.message); }
+  }
   let body = p.text;
   if (body.includes("__STICKERS__")) {
     let link = null;
@@ -238,10 +251,11 @@ async function sendPromo(env, index) {
     body = link ? body.replace("__STICKERS__", link) : body.replace(/🔥 Stickers[^\n]*\n__STICKERS__\n\n/, "");
   }
   const text = body + RESP;
-  if (image) {
+  for (const img of [fresh, image]) {
+    if (!img) continue;
     try {
-      await tg(env, "sendPhoto", { chat_id: channelOf(env), photo: image, caption: text });
-      return `message ${index + 1} publié (avec image)`;
+      await tg(env, "sendPhoto", { chat_id: channelOf(env), photo: img, caption: text });
+      return `message ${index + 1} publié (${img === fresh ? "image neuve du jour" : "image"})`;
     } catch (e) {
       console.log("image", e.message);
     }
@@ -296,6 +310,7 @@ export default {
 
   // 5h00 et 20h00 UTC = 6h00 et 21h00 au Cameroun
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(sendPromo(env, pickIndex(new Date(event.scheduledTime))).then(console.log));
+    const when = new Date(event.scheduledTime);
+    ctx.waitUntil(sendPromo(env, pickIndex(when), when).then(console.log));
   },
 };
