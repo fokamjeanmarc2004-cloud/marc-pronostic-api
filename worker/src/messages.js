@@ -37,7 +37,7 @@ export const PROMOS = [
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-vip.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ REJOINS LE VIP COUSIN MARC\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 Côte de 2 VIP tous les jours\n🚀 Grosses cotes plusieurs fois par semaine\n⚡ Pronostics en live pendant les matchs\n💬 Canal privé + questions directes\n\n💳 1 mois 30 $ · 3 mois 75 $ · 1 an 250 $\n📲 Paiement Orange Money, MTN ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ REJOINS LE VIP COUSIN MARC\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 Côte de 2 VIP tous les jours\n🚀 Grosses cotes plusieurs fois par semaine\n⚡ Pronostics en live pendant les matchs\n💬 Canal privé + questions directes\n\n💳 1 mois 30 $ · 3 mois 75 $ · 1 an 250 $\n📲 Paiement Orange Money, MTN, Wave ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-1xbet.jpg",
@@ -69,7 +69,7 @@ export const PROMOS = [
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-vip.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 LES GROSSES COTES, C'EST DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLes cotes à 5, 8, 10 et plus que vous aimez 🔥\nsont partagées en priorité dans le canal VIP,\navec la côte de 2 du jour et le live.\n\n🏆 Mes derniers tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n\n💳 Dès 30 $/mois · Orange Money, MTN ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 LES GROSSES COTES, C'EST DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLes cotes à 5, 8, 10 et plus que vous aimez 🔥\nsont partagées en priorité dans le canal VIP,\navec la côte de 2 du jour et le live.\n\n🏆 Mes derniers tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n\n💳 Dès 30 $/mois · Orange Money, MTN, Wave ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-winwin.jpg",
@@ -84,17 +84,17 @@ export const PROMOS = [
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎟️ TOUS MES CODES PROMO\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🔥 FFN → 1xBet · Melbet · Paripesa · WinWin · Megapari · GoldPari\n🔥 ESS22 → 1win · Linebet\n🔥 FJM → BetAndYou · Fastparie\n🔥 CMF → Betwiner\n\n👉 Tous les liens (site + application) :\nhttps://cousinmarc-pronostic.com\n\n⚠️ Le code s'entre UNE seule fois, à l'inscription.\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
-  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-stickers.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎨 STICKERS, EMOJIS ET AFFICHE FFN\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n😎 Emojis animés FFN :\nhttps://t.me/addemoji/FFN_emojis\n\n🔥 Stickers Cousin Marc :\n__STICKERS__\n\n🖼️ Fais ton affiche avec TON prénom et TON code promo (gratuit) :\nhttps://cousinmarc-pronostic.com/affiche.html\n\n📲 Partage-la à tes amis, ça aide la communauté !\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 MES PRONOSTICS ET ANALYSES\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChaque semaine, j'analyse les grands matchs : forme des équipes, mon pronostic et la cote.\nLe résultat est affiché après le match, gagné ou perdu.\n\n👉 https://cousinmarc-pronostic.com/pronostics.html\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 SUIS-MOI PARTOUT\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n✈️ Telegram : https://t.me/marc_prono\n💬 WhatsApp : https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h\n▶️ YouTube : https://youtube.com/@prossport\n🌐 Site : https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  }
 ];
 
 // Rappel VIP de 13h (un texte different chaque jour, image neuve du jour promo/visuels/AAAA-MM/JJ-vip.jpg)
 export const VIP_RAPPELS = [
- "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ RAPPEL : REJOINS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLe ticket sur l'image est passé dans le VIP 👆\n\n🎯 Côte de 2 VIP tous les jours\n🚀 Grosses cotes plusieurs fois par semaine\n⚡ Pronostics en live pendant les matchs\n\n💳 1 mois 30 $ · 3 mois 75 $ · 1 an 250 $\n📲 Orange Money, MTN ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
- "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔥 LES MEILLEURS COUPONS SONT DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nDans le canal gratuit, tu as la côte de 2.\nDans le VIP, tu as en plus mes grosses cotes, le live et mes conseils en direct.\n\n🏆 Mes tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n\n💳 Dès 30 $ par mois · Orange Money, MTN ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
+ "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ RAPPEL : REJOINS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLe ticket sur l'image est passé dans le VIP 👆\n\n🎯 Côte de 2 VIP tous les jours\n🚀 Grosses cotes plusieurs fois par semaine\n⚡ Pronostics en live pendant les matchs\n\n💳 1 mois 30 $ · 3 mois 75 $ · 1 an 250 $\n📲 Orange Money, MTN, Wave ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
+ "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔥 LES MEILLEURS COUPONS SONT DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nDans le canal gratuit, tu as la côte de 2.\nDans le VIP, tu as en plus mes grosses cotes, le live et mes conseils en direct.\n\n🏆 Mes tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n\n💳 Dès 30 $ par mois · Orange Money, MTN, Wave ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
  "━━━━━━━━━━━━━━━━━━━━━━━━━━\n💎 POURQUOI REJOINDRE LE VIP ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n✅ Mes coupons avant tout le monde\n✅ Une côte de 2 VIP chaque jour\n✅ Des grosses cotes (5, 8, 10 et plus)\n✅ Tu me poses tes questions directement\n\n💳 1 mois 30 $ · 3 mois 75 $ · 1 an 250 $\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
- "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⏰ LE VIP, C'EST AUJOURD'HUI\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChaque jour sans le VIP, ce sont des coupons que tu ne vois pas.\nRegarde le ticket sur l'image, puis rejoins-nous 👇\n\n💳 Dès 30 $ par mois\n📲 Paiement Orange Money, MTN ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
+ "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⏰ LE VIP, C'EST AUJOURD'HUI\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChaque jour sans le VIP, ce sont des coupons que tu ne vois pas.\nRegarde le ticket sur l'image, puis rejoins-nous 👇\n\n💳 Dès 30 $ par mois\n📲 Paiement Orange Money, MTN, Wave ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
  "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎯 TU VEUX JOUER COMME MOI ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nDans le VIP, je partage les coupons que je joue moi-même, avec la cote et l'heure.\nTu n'as plus qu'à copier.\n\n🏆 Mes derniers tickets : https://cousinmarc-pronostic.com/vip.html#preuves\n💳 Dès 30 $ par mois\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
 ];
 export const VIP_IMAGE = "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-vip.jpg";

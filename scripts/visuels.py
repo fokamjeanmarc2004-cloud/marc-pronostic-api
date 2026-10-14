@@ -28,7 +28,7 @@ TOPICS = [
   "sub": "1xBet · Paripesa · Melbet · WinWin", "code": "FFN", "big": "300%", "line": B300, "line2": B300b,
   "logos": ["1xbet", "paripesa", "melbet", "winwin"], "cta": "Liens et tuto dans le message"},
  {"k": "VIP", "h": ["Rejoins le VIP Cousin Marc", "Le VIP, c'est ici", "Passe au niveau supérieur", "Mes meilleurs coupons en premier"],
-  "sub": "Côte de 2 VIP chaque jour · Grosses cotes · Live", "big": "VIP", "line": "Dès 30 $ par mois", "line2": "Orange Money · MTN · crypto",
+  "sub": "Côte de 2 VIP chaque jour · Grosses cotes · Live", "big": "VIP", "line": "Dès 30 $ par mois", "line2": "Orange Money · MTN · Wave · crypto",
   "rows": [("Côte de 2 VIP", "tous les jours"), ("Grosses cotes", "plusieurs fois par semaine"), ("Pronostics en live", "pendant les matchs"), ("Canal privé", "questions directes")],
   "cta": "Infos et paiement dans le message", "vip": True},
  {"k": "1xBet", "h": ["Pas encore de compte 1xBet ?", "1xBet : ton bonus t'attend", "Ouvre ton compte 1xBet", "1xBet avec le code FFN"],
@@ -59,32 +59,32 @@ TOPICS = [
   "sub": "Le code s'entre une seule fois, à l'inscription", "big": "4 codes", "line": "Tous les liens sur le site", "line2": "cousinmarc-pronostic.com",
   "codes": [("FFN", ["1xbet", "melbet", "paripesa", "winwin", "megapari", "goldpari"]), ("ESS22", ["1win", "linebet"]), ("FJM", ["betandyou", "fastparie"]), ("CMF", ["betwiner"])],
   "cta": "Tous les liens dans le message"},
- {"k": "Stickers · Affiche", "h": ["Stickers, emojis et affiche FFN", "Fais ton affiche avec ton code", "Les emojis FFN sont là", "Partage le code FFN avec style"],
-  "sub": "Emojis animés · stickers · affiche personnalisée", "code": "FFN", "big": "FFN", "line": "Affiche gratuite avec ton prénom", "line2": "Partage-la à tes amis",
-  "cta": "Liens dans le message",
-  "rows": [("Emojis animés FFN", "à ajouter en un clic sur Telegram"), ("Stickers Cousin Marc", "pour tes discussions"), ("Ton affiche perso", "avec ton prénom et ton code")]},
+ {"k": "Analyses", "h": ["Mes analyses des grands matchs", "Le pronostic du week-end", "Les gros matchs analysés", "Lis mon analyse avant de parier"],
+  "sub": "Ligue des champions · Premier League · Liga · Ligue 1", "code": "FFN", "big": "1X2", "line": "Mon pronostic et mon avis", "line2": "Gratuit sur le site",
+  "cta": "Mes analyses : lien dans le message",
+  "rows": [("Forme des équipes", "les chiffres qui comptent"), ("Mon pronostic", "et l'option pour une grosse cote"), ("Le résultat", "gagné ou perdu, affiché après le match")]},
 ]
 
 # ------------------------------------------------------------------ Styles du mois (un theme par mois, ils tournent)
 THEMES = [
- {"name": "verre-clair", "dark": False, "bg": "#eaf2ff",
-  "pal": [("#3b82f6", "#a855f7", "#22d3ee", "#facc15"), ("#2563eb", "#06b6d4", "#f472b6", "#fde047"), ("#4f46e5", "#0ea5e9", "#34d399", "#fbbf24"),
-          ("#1d4ed8", "#ec4899", "#38bdf8", "#facc15"), ("#7c3aed", "#3b82f6", "#2dd4bf", "#fb923c"), ("#0284c7", "#8b5cf6", "#4ade80", "#fde047")]},
- {"name": "nuit-neon", "dark": True, "bg": "#060a24",
-  "pal": [("#2563eb", "#7c3aed", "#06b6d4", "#facc15"), ("#1d4ed8", "#db2777", "#22d3ee", "#fde047"), ("#4338ca", "#0ea5e9", "#10b981", "#fbbf24"),
-          ("#6d28d9", "#2563eb", "#f43f5e", "#facc15"), ("#0369a1", "#9333ea", "#14b8a6", "#fb923c"), ("#1e40af", "#c026d3", "#38bdf8", "#fde047")]},
- {"name": "noir-or", "dark": True, "bg": "#0b0904",
-  "pal": [("#b45309", "#facc15", "#78350f", "#fde68a"), ("#a16207", "#f59e0b", "#422006", "#fef3c7"), ("#92400e", "#eab308", "#1c1917", "#fde047"),
-          ("#ca8a04", "#d97706", "#292524", "#fef9c3"), ("#854d0e", "#fbbf24", "#44403c", "#fde68a"), ("#b45309", "#fcd34d", "#1f2937", "#fffbeb")]},
- {"name": "coucher-soleil", "dark": False, "bg": "#fff1e6",
-  "pal": [("#f97316", "#ec4899", "#facc15", "#8b5cf6"), ("#ef4444", "#f59e0b", "#f472b6", "#6366f1"), ("#fb7185", "#fb923c", "#fde047", "#a855f7"),
-          ("#f43f5e", "#f97316", "#facc15", "#3b82f6"), ("#e11d48", "#fbbf24", "#fb923c", "#7c3aed"), ("#ea580c", "#db2777", "#fde047", "#2563eb")]},
- {"name": "stade-neon", "dark": True, "bg": "#03140c",
-  "pal": [("#16a34a", "#22d3ee", "#a3e635", "#facc15"), ("#059669", "#3b82f6", "#84cc16", "#fde047"), ("#15803d", "#06b6d4", "#4ade80", "#fbbf24"),
-          ("#047857", "#0ea5e9", "#bef264", "#facc15"), ("#166534", "#2dd4bf", "#a3e635", "#fde68a"), ("#065f46", "#38bdf8", "#86efac", "#fde047")]},
- {"name": "ocean-glace", "dark": False, "bg": "#e6fbff",
-  "pal": [("#06b6d4", "#3b82f6", "#a78bfa", "#facc15"), ("#0ea5e9", "#14b8a6", "#818cf8", "#fde047"), ("#0891b2", "#6366f1", "#2dd4bf", "#fbbf24"),
-          ("#0284c7", "#22d3ee", "#c084fc", "#facc15"), ("#0e7490", "#60a5fa", "#5eead4", "#fde68a"), ("#0369a1", "#38bdf8", "#a5b4fc", "#fde047")]},
+ {"name": "stade-violet", "dark": True, "bg": "#0b0624", "sky": ("#12082e", "#2a1570"), "beam": "221,214,254", "pitch": ("#1f9d55", "#0b5a2e"),
+  "pal": [("#7c3aed", "#2563eb", "#a78bfa", "#facc15"), ("#6d28d9", "#db2777", "#c4b5fd", "#fde047"), ("#4f46e5", "#7c3aed", "#93c5fd", "#fbbf24"),
+          ("#7c3aed", "#0ea5e9", "#ddd6fe", "#facc15"), ("#5b21b6", "#f59e0b", "#c4b5fd", "#fde68a"), ("#6d28d9", "#2563eb", "#a5b4fc", "#fde047")]},
+ {"name": "stade-bleu", "dark": True, "bg": "#030a1f", "sky": ("#04102e", "#0f2a6b"), "beam": "191,219,254", "pitch": ("#16a34a", "#065f2c"),
+  "pal": [("#2563eb", "#0ea5e9", "#93c5fd", "#facc15"), ("#1d4ed8", "#22d3ee", "#bfdbfe", "#fde047"), ("#1e40af", "#3b82f6", "#7dd3fc", "#fbbf24"),
+          ("#2563eb", "#6366f1", "#a5b4fc", "#facc15"), ("#0369a1", "#2563eb", "#bae6fd", "#fde68a"), ("#1d4ed8", "#0891b2", "#93c5fd", "#fde047")]},
+ {"name": "stade-or", "dark": True, "bg": "#0a0802", "sky": ("#0c0904", "#2e2108"), "beam": "254,240,138", "pitch": ("#15803d", "#064e27"),
+  "pal": [("#b45309", "#facc15", "#fde68a", "#fde68a"), ("#a16207", "#f59e0b", "#fef3c7", "#fef3c7"), ("#92400e", "#eab308", "#fde047", "#fde047"),
+          ("#ca8a04", "#d97706", "#fef9c3", "#fef9c3"), ("#854d0e", "#fbbf24", "#fde68a", "#fde68a"), ("#b45309", "#fcd34d", "#fffbeb", "#fffbeb")]},
+ {"name": "stade-vert", "dark": True, "bg": "#02120a", "sky": ("#021a0e", "#064229"), "beam": "217,249,157", "pitch": ("#22c55e", "#0a6b33"),
+  "pal": [("#16a34a", "#22d3ee", "#a3e635", "#facc15"), ("#059669", "#3b82f6", "#bef264", "#fde047"), ("#15803d", "#06b6d4", "#86efac", "#fbbf24"),
+          ("#047857", "#0ea5e9", "#d9f99d", "#facc15"), ("#166534", "#2dd4bf", "#a3e635", "#fde68a"), ("#065f46", "#38bdf8", "#86efac", "#fde047")]},
+ {"name": "derby-rouge", "dark": True, "bg": "#140404", "sky": ("#1a0505", "#4a0d0d"), "beam": "254,226,226", "pitch": ("#16a34a", "#065f2c"),
+  "pal": [("#dc2626", "#f59e0b", "#fca5a5", "#facc15"), ("#b91c1c", "#ea580c", "#fecaca", "#fde047"), ("#991b1b", "#facc15", "#fda4af", "#fde68a"),
+          ("#dc2626", "#be123c", "#fecdd3", "#facc15"), ("#b91c1c", "#d97706", "#fca5a5", "#fde047"), ("#e11d48", "#f97316", "#fecaca", "#fbbf24")]},
+ {"name": "nuit-cyan", "dark": True, "bg": "#021014", "sky": ("#031418", "#0b3b4a"), "beam": "207,250,254", "pitch": ("#16a34a", "#065f2c"),
+  "pal": [("#0891b2", "#2563eb", "#67e8f9", "#facc15"), ("#0e7490", "#14b8a6", "#a5f3fc", "#fde047"), ("#0369a1", "#06b6d4", "#99f6e4", "#fbbf24"),
+          ("#0891b2", "#4f46e5", "#67e8f9", "#facc15"), ("#155e75", "#0ea5e9", "#a5f3fc", "#fde68a"), ("#0e7490", "#2563eb", "#67e8f9", "#fde047")]},
 ]
 LAYOUTS = ["hero", "ticket", "bulle", "liste"]
 
@@ -115,20 +115,25 @@ def css(th, pal, rnd):
     glass_bg = ("linear-gradient(160deg,rgba(255,255,255,.20),rgba(255,255,255,.05) 50%,rgba(255,255,255,.10))" if dark
                 else "linear-gradient(160deg,rgba(255,255,255,.78),rgba(255,255,255,.42) 55%,rgba(255,255,255,.62))")
     glass_bd = "rgba(255,255,255,.38)" if dark else "rgba(255,255,255,.95)"
-    orbs = ""
-    spots = [(rnd.randint(-15, 40), rnd.randint(-10, 25)), (rnd.randint(55, 100), rnd.randint(15, 45)), (rnd.randint(-10, 45), rnd.randint(55, 90)), (rnd.randint(50, 100), rnd.randint(65, 105))]
-    for (x, y), c in zip(spots, (c1, c2, c3, c4)):
-        orbs += f"radial-gradient({rnd.randint(420, 640)}px {rnd.randint(380, 600)}px at {x}% {y}%,{c}{'cc' if dark else 'b3'},transparent 70%),"
+    s1, s2 = th["sky"]; bm = th["beam"]
+    bx = rnd.choice([18, 30, 70, 82])
+    orbs = (f"radial-gradient(900px 300px at {bx}% 0%,rgba({bm},.55),transparent 70%),"
+            f"conic-gradient(from 160deg at {bx}% -8%,transparent 0deg,rgba({bm},.20) 5deg,transparent 11deg,transparent 22deg,rgba({bm},.16) 27deg,transparent 33deg,transparent 44deg,rgba({bm},.13) 49deg,transparent 55deg),"
+            f"conic-gradient(from 150deg at {100 - bx}% -6%,transparent 0deg,rgba({bm},.14) 6deg,transparent 12deg,transparent 26deg,rgba({bm},.11) 31deg,transparent 37deg),"
+            f"radial-gradient(520px 420px at {rnd.randint(5, 40)}% {rnd.randint(30, 60)}%,{c1}55,transparent 70%),"
+            f"linear-gradient(180deg,{s1} 0%,{s2} 38%,{th['bg']} 62%,{th['bg']} 100%),")
     extra = ""
-    if th["name"] == "stade-neon":
-        extra = ("url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1080' height='1350'%3E%3Cg fill='none' stroke='%23a3e635' stroke-opacity='.22' stroke-width='4'%3E"
-                 "%3Crect x='60' y='60' width='960' height='1230' rx='8'/%3E%3Cpath d='M60 675h960'/%3E%3Ccircle cx='540' cy='675' r='150'/%3E%3Crect x='300' y='60' width='480' height='200'/%3E%3Crect x='300' y='1090' width='480' height='200'/%3E%3C/g%3E%3C/svg%3E\"),")
-    if th["name"] == "noir-or":
-        extra = "repeating-linear-gradient(115deg,rgba(250,204,21,.05) 0 2px,transparent 2px 26px),"
     return f"""
 *{{box-sizing:border-box;margin:0;padding:0}}
 html,body{{width:{W}px;height:{H}px;overflow:hidden}}
 body{{font-family:Inter,'Segoe UI',Arial,sans-serif;color:{ink};background:{extra}{orbs}{th['bg']};position:relative}}
+.stadium{{position:absolute;inset:0;overflow:hidden}}
+.crowd{{position:absolute;left:0;right:0;top:27%;height:30%;background:radial-gradient(circle,rgba({th['beam']},.85) 0 1.3px,transparent 1.9px) 0 0/17px 13px,radial-gradient(circle,{c3}aa 0 1.1px,transparent 1.7px) 8px 6px/23px 15px;
+  -webkit-mask:linear-gradient(180deg,transparent,#000 35%,#000 70%,transparent);mask:linear-gradient(180deg,transparent,#000 35%,#000 70%,transparent);opacity:.5}}
+.pitch{{position:absolute;left:-35%;right:-35%;bottom:-3%;height:48%;transform:perspective(700px) rotateX(55deg);transform-origin:bottom;background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='700'%3E%3Cg fill='none' stroke='white' stroke-opacity='.6' stroke-width='5'%3E%3Cpath d='M0 120H1600M800 120V700'/%3E%3Cellipse cx='800' cy='430' rx='200' ry='150'/%3E%3Crect x='560' y='560' width='480' height='160'/%3E%3C/g%3E%3C/svg%3E") center/100% 100% no-repeat,
+  repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 120px,transparent 120px 240px),linear-gradient(180deg,{th['pitch'][0]},{th['pitch'][1]})}}
+.shade{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.45),rgba(0,0,0,.1) 70%),linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.4) 80%,rgba(0,0,0,.65))}}
 .grain{{position:absolute;inset:0;background-image:radial-gradient(rgba({'255,255,255' if dark else '11,29,92'},.06) 1px,transparent 1px);background-size:6px 6px;pointer-events:none}}
 .disp{{font-family:'Bricolage Grotesque','Segoe UI Black',Arial,sans-serif;font-weight:800;letter-spacing:-.035em}}
 .glass{{position:relative;background:{glass_bg};border:2px solid {glass_bd};border-radius:48px;
@@ -163,10 +168,10 @@ body{{font-family:Inter,'Segoe UI',Arial,sans-serif;color:{ink};background:{extr
 """
 
 def bubbles(rnd, n=7):
-    out = ""
+    out = '<div class="stadium"><i class="crowd"></i><i class="pitch"></i><i class="shade"></i></div>'
     for _ in range(n):
-        s = rnd.randint(30, 150)
-        out += f'<i class="bub" style="width:{s}px;height:{s}px;left:{rnd.choice([rnd.randint(-50, 60), rnd.randint(W - 140, W - 20)])}px;top:{rnd.randint(140, H - 260)}px;opacity:{rnd.uniform(.35, .9):.2f}"></i>'
+        z = rnd.randint(6, 14)
+        out += f'<i style="position:absolute;width:{z}px;height:{z}px;border-radius:50%;background:#fff;box-shadow:0 0 {z * 3}px {z}px rgba(255,255,255,.55);left:{rnd.randint(40, W - 40)}px;top:{rnd.randint(20, 330)}px;opacity:{rnd.uniform(.5, .95):.2f}"></i>'
     return out
 
 def head_html(t, headline):
@@ -302,7 +307,7 @@ def layout_vip_preuve(t, th, rnd, headline, left=False):
     <div class="disp gold" style="font-size:86px;line-height:1">30 $</div>
     <div style="font-size:26px;font-weight:800;opacity:.85">par mois</div></div>
 </div>
-<div style="position:absolute;left:64px;right:64px;top:1010px;text-align:center;font-size:28px;font-weight:700;opacity:.8">Orange Money · MTN · crypto · Aucun gain n'est garanti</div>"""
+<div style="position:absolute;left:64px;right:64px;top:1010px;text-align:center;font-size:28px;font-weight:700;opacity:.8">Orange Money · MTN · Wave · crypto · Aucun gain n'est garanti</div>"""
 
 def layout_vip_liste(t, th, rnd, headline):
     pr = t["proof"]
