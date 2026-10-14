@@ -3,7 +3,7 @@
   "name": "cousinmarc-bot",
   "main": "worker/src/index.js",
   "compatibility_date": "2025-09-01",
-  // 5h00 et 20h00 UTC = 6h00 et 21h00 au Cameroun (messages promo du canal)
-  "triggers": { "crons": ["0 5 * * *", "0 20 * * *"] },
+  // 5h00, 12h00 et 20h00 UTC = 6h00, 13h00 (rappel VIP) et 21h00 au Cameroun (messages du canal)
+  "triggers": { "crons": ["0 5 * * *", "0 12 * * *", "0 20 * * *"] },
   "observability": { "enabled": true }
 }

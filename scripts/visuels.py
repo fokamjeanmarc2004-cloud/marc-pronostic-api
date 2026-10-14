@@ -148,6 +148,7 @@ body{{font-family:Inter,'Segoe UI',Arial,sans-serif;color:{ink};background:{extr
   filter:drop-shadow(0 18px 30px {c2}55)}}
 .drop .big{{background:linear-gradient(180deg,#0b1d5c 10%,{c1} 95%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 8px 14px rgba(255,255,255,.5))}}
 .code{{font-size:170px;letter-spacing:.08em;line-height:1}}
+.gold{{background:linear-gradient(180deg,#fff7c2,#facc15 45%,#d97706);-webkit-background-clip:text;background-clip:text;color:transparent}}
 .code.gold{{background:linear-gradient(180deg,#fff7c2,#facc15 45%,#d97706);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 10px 18px rgba(217,119,6,.45))}}
 .logo{{border-radius:28%;background:#fff;box-shadow:0 14px 30px rgba(0,0,0,.25),0 0 0 6px rgba(255,255,255,.65)}}
 .drop{{border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.95),rgba(255,255,255,.35) 55%,{c3}55);
@@ -175,7 +176,8 @@ def head_html(t, headline):
     return html.escape(" ".join(words[:-k])) + " <em>" + html.escape(" ".join(words[-k:])) + "</em>"
 
 def top_html(t, th):
-    pill = (f'<span class="pill glass" style="border-radius:999px">CODE <b>{html.escape(t.get("code", "FFN"))}</b></span>')
+    pill = ('<span class="pill glass" style="border-radius:999px">VIP · dès <b>30 $</b></span>' if t.get("vip_day")
+            else f'<span class="pill glass" style="border-radius:999px">CODE <b>{html.escape(t.get("code", "FFN"))}</b></span>')
     return f'<div class="top"><div class="brand disp"><span class="dot"></span>cousin <b>marc</b></div>{pill}</div>'
 
 def logos_row(slugs, size):
@@ -260,11 +262,66 @@ def layout_liste(t, th, rnd, headline):
   <div style="display:flex;flex-direction:column;gap:16px;margin-top:32px">{rows}</div>
 </div>"""
 
+
+# ------------------------------------------------------------------ Rappel VIP du jour (13h) : un vrai ticket gagnant chaque jour
+PREUVES = json.load(open(os.path.join(ROOT, "promo", "preuves", "preuves.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "promo", "preuves", "preuves.json")) else []
+VIP_H = ["Rejoins le VIP aujourd'hui", "Ce ticket est passé dans le VIP", "Mes meilleurs coupons sont dans le VIP",
+         "Les grosses cotes, c'est dans le VIP", "Joue avec mes coupons VIP", "Encore un ticket gagnant VIP",
+         "Tu veux mes coupons avant tout le monde ?", "Le VIP, c'est maintenant", "Passe au niveau supérieur",
+         "Mes tickets VIP de la semaine"]
+VIP_T = {"k": "Canal VIP", "cta": "Rejoins le VIP : infos dans le message", "vip_day": True,
+         "rows": [("Côte de 2 VIP", "tous les jours"), ("Grosses cotes", "plusieurs fois par semaine"), ("Pronostics en live", "pendant les matchs"), ("Canal privé", "questions directes")]}
+VIP_LAYOUTS = ["vip-preuve", "vip-preuve-g", "vip-liste"]
+
+def _clean(t):
+    return re.sub(r"^[^\w(]+", "", t).strip()
+
+def preuve_uri(f):
+    return "file:///" + os.path.join(ROOT, "promo", "preuves", f).replace("\\", "/")
+
+def _proof_card(pr, w, rot):
+    gain = f'<div style="font-size:28px;font-weight:800;margin-top:6px;white-space:nowrap">Gain : <span class="gold disp" style="font-size:36px;white-space:nowrap">{html.escape(pr["gain"])}</span></div>' if pr.get("gain") else ""
+    return f"""<div class="glass" style="width:{w}px;padding:18px;border-radius:40px;transform:rotate({rot}deg)">
+<div style="border-radius:26px;overflow:hidden;height:{int(w * 1.12)}px;background:#fff"><img src="{preuve_uri(pr['file'])}" style="width:100%;display:block"></div>
+<div style="margin-top:14px;font-size:26px;font-weight:700;opacity:.85;line-height:1.25">{html.escape(_clean(pr['titre']))[:70]}</div>
+<div style="font-size:30px;font-weight:800;margin-top:6px">Cote : <span class="gold disp" style="font-size:44px">{html.escape(pr['cote'])}</span></div>{gain}
+</div>"""
+
+def layout_vip_preuve(t, th, rnd, headline, left=False):
+    pr = t["proof"]
+    side = "left:60px" if left else "right:60px"
+    tx = "right:60px;text-align:right" if left else "left:64px"
+    return f"""
+<div style="position:absolute;{side};top:170px">{_proof_card(pr, 470, rnd.choice([-3, -2, 2, 3]))}</div>
+<div style="position:absolute;{tx};top:190px;width:430px">
+  <span class="kick glass">VIP</span>
+  <div class="h1 disp" style="margin-top:26px;font-size:{74 if len(headline) < 28 else 64}px">{head_html(t, headline)}</div>
+  <div class="sub" style="margin-top:20px;font-size:32px">Côte de 2 VIP chaque jour, grosses cotes et live.</div>
+  <div class="glass" style="display:inline-block;margin-top:26px;padding:20px 30px;border-radius:30px">
+    <div style="font-size:26px;font-weight:800;opacity:.85">À partir de</div>
+    <div class="disp gold" style="font-size:86px;line-height:1">30 $</div>
+    <div style="font-size:26px;font-weight:800;opacity:.85">par mois</div></div>
+</div>
+<div style="position:absolute;left:64px;right:64px;top:1010px;text-align:center;font-size:28px;font-weight:700;opacity:.8">Orange Money · MTN · crypto · Aucun gain n'est garanti</div>"""
+
+def layout_vip_liste(t, th, rnd, headline):
+    pr = t["proof"]
+    rows = "".join(f'<div class="row glass"><span class="n">{i + 1}</span><span><b>{html.escape(a)}</b><small>{html.escape(b)}</small></span></div>' for i, (a, b) in enumerate(t["rows"][:3]))
+    return f"""
+<div style="position:absolute;left:64px;top:190px;width:560px">
+  <span class="kick glass">Canal VIP</span>
+  <div class="h1 disp" style="margin-top:26px;font-size:{78 if len(headline) < 28 else 66}px">{head_html(t, headline)}</div>
+  <div style="display:flex;flex-direction:column;gap:14px;margin-top:30px">{rows}</div>
+</div>
+<div style="position:absolute;right:40px;top:330px">{_proof_card(pr, 360, 4)}</div>"""
+
 def page(t, th, pal, layout, headline, seed):
     rnd = random.Random(seed)
-    body = {"hero": layout_hero, "ticket": layout_ticket, "bulle": layout_bulle, "liste": layout_liste}[layout](t, th, rnd, headline)
+    body = {"hero": layout_hero, "ticket": layout_ticket, "bulle": layout_bulle, "liste": layout_liste,
+            "vip-preuve": layout_vip_preuve, "vip-preuve-g": lambda *a: layout_vip_preuve(*a, left=True),
+            "vip-liste": layout_vip_liste}[layout](t, th, rnd, headline)
     deco = bubbles(rnd, rnd.randint(5, 9))
-    ball = f'<div style="position:absolute;{rnd.choice(["right:-70px", "left:-70px"])};top:{rnd.randint(980, 1080)}px;transform:rotate({rnd.randint(0, 90)}deg)">{ball_svg(rnd.randint(150, 210), .9)}</div>' if layout != "bulle" else ""
+    ball = f'<div style="position:absolute;{rnd.choice(["right:-70px", "left:-70px"])};top:{rnd.randint(980, 1080)}px;transform:rotate({rnd.randint(0, 90)}deg)">{ball_svg(rnd.randint(150, 210), .9)}</div>' if layout not in ("bulle", "vip-preuve", "vip-preuve-g", "vip-liste") else ""
     return f"""<!doctype html><html lang="fr"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Inter:wght@600;700;800;900&display=block" rel="stylesheet">
 <style>{css(th, pal, rnd)}</style></head><body><div class="grain"></div>{deco}{ball}{top_html(t, th)}{body}
@@ -306,6 +363,11 @@ def plan_month(year, month):
             pal = th["pal"][(k * 2 + ti) % len(th["pal"])]
             headline = t["h"][(k + k // len(LAYOUTS) + year + month) % len(t["h"])]
             jobs.append((day, name, t, th, pal, layout, headline, f"{day}-{name}"))
+        if PREUVES:
+            n = (day - datetime.date(2026, 1, 1)).days
+            tv = dict(VIP_T, proof=PREUVES[(n * 5) % len(PREUVES)])
+            jobs.append((day, "vip", tv, th, th["pal"][(n + 3) % len(th["pal"])], VIP_LAYOUTS[n % len(VIP_LAYOUTS)],
+                         VIP_H[(n + n // len(VIP_H)) % len(VIP_H)], f"{day}-vip"))
     return th, jobs
 
 def main():
