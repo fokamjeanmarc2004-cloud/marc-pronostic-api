@@ -148,7 +148,7 @@ body{{font-family:Inter,'Segoe UI',Arial,sans-serif;color:{ink};background:{extr
   filter:drop-shadow(0 18px 30px {c2}55)}}
 .drop .big{{background:linear-gradient(180deg,#0b1d5c 10%,{c1} 95%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 8px 14px rgba(255,255,255,.5))}}
 .code{{font-size:170px;letter-spacing:.08em;line-height:1}}
-.gold{{background:linear-gradient(180deg,#fff7c2,#facc15 45%,#d97706);-webkit-background-clip:text;background-clip:text;color:transparent}}
+.gold{{background:linear-gradient(180deg,{'#fff7c2,#facc15 45%,#d97706' if dark else '#f59e0b,#d97706 45%,#92400e'});-webkit-background-clip:text;background-clip:text;color:transparent}}
 .code.gold{{background:linear-gradient(180deg,#fff7c2,#facc15 45%,#d97706);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 10px 18px rgba(217,119,6,.45))}}
 .logo{{border-radius:28%;background:#fff;box-shadow:0 14px 30px rgba(0,0,0,.25),0 0 0 6px rgba(255,255,255,.65)}}
 .drop{{border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.95),rgba(255,255,255,.35) 55%,{c3}55);
