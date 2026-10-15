@@ -167,6 +167,56 @@ async function saveToGithub(env, file, bytes, label) {
   if (!r.ok) throw new Error(`GitHub ${r.status}: ${(await r.text()).slice(0, 200)}`);
 }
 
+
+// ---------------------------------------------------------------- Preuves VIP (legende « vip »)
+// Ligne 1 : vip (ou « vip canal » pour publier aussi dans le canal)
+// Ligne 2 (facultatif) : le match, la cote et le gain, ex : Rennes – OFI Crète · cote 11 · 3 850 000 F
+export function parseVip(caption) {
+  const lines = (caption || "").trim().split(/\r?\n/);
+  const first = norm(lines[0] || "");
+  if (!/^vip( canal)?$/.test(first)) return null;
+  const rest = lines.slice(1).join(" ").trim();
+  let cote = "", gain = "";
+  // le gain : un grand nombre suivi de F / FCFA (ex : 3 850 000 F, 2.675.000 FCFA, 2515000F)
+  const mg = rest.match(/(?:gains?\s*:?\s*)?(\d{1,3}(?:[\s.]\d{3})+|\d{5,})\s*(?:f|fcfa|xaf|xof)\b/i);
+  if (mg) gain = mg[1].replace(/[\s.]/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " F";
+  const restA = mg ? rest.replace(mg[0], " · ") : rest;
+  // la cote : « cote 11 », « @12.9 » ou un nombre a virgule seul (ex : 5.03)
+  const mc = restA.match(/cote\s*:?\s*@?\s*(\d+(?:[.,]\d+)?)/i) || restA.match(/@\s*(\d+(?:[.,]\d+)?)/) || restA.match(/(?:^|\s)(\d{1,3}[.,]\d{1,2})(?=\s|$|·)/);
+  if (mc) cote = mc[1].replace(",", ".");
+  let titre = restA.replace(mc ? mc[0] : "", " ").replace(/[·|,;-]\s*$/g, "").replace(/\s*[·|]\s*[·|]\s*/g, " · ").replace(/^[\s·|,;-]+|[\s·|,;-]+$/g, "").trim();
+  if (!titre) titre = "Ticket gagnant VIP";
+  return { toChannel: first.endsWith("canal"), titre: "⚽ " + titre, cote, gain };
+}
+
+async function addVipProof(env, bytes, info) {
+  const d = new Date().toISOString().replace(/\D/g, "").slice(0, 14);
+  const file = `tg-${d}.jpg`;
+  await saveToGithub(env, `promo/preuves/${file}`, bytes, "preuve VIP");
+  // liste des preuves (lue par la page VIP du site et par les images du rappel de 13h)
+  const path = "promo/preuves/preuves.json";
+  for (let essai = 0; essai < 3; essai++) {
+    const cur = await gh(env, `contents/${path}?ref=main`);
+    if (!cur.ok) throw new Error(`GitHub ${cur.status}`);
+    const meta = await cur.json();
+    const bin = atob(meta.content.replace(/\n/g, ""));
+    const list = JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, (ch) => ch.charCodeAt(0))));
+    list.unshift({ file, titre: info.titre, cote: info.cote, gain: info.gain, date: new Date().toISOString().slice(0, 10) });
+    const body = new TextEncoder().encode(JSON.stringify(list, null, 1));
+    const r = await gh(env, `contents/${path}`, {
+      method: "PUT",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ message: "Nouvelle preuve VIP depuis Telegram", content: toBase64(body), branch: "main", sha: meta.sha,
+        committer: { name: "cousinmarc-bot", email: "cousinmarc-bot@users.noreply.github.com" } }),
+    });
+    if (r.ok) return file;
+    if (r.status !== 409) throw new Error(`GitHub ${r.status}: ${(await r.text()).slice(0, 200)}`);
+  }
+  throw new Error("GitHub : conflit, réessaie");
+}
+
+const VIP_POST = "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ ENCORE UN TICKET GAGNANT DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🏆 Mes tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n💳 Dès 25 000 FCFA par mois · Orange Money, MTN, Wave ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.";
+
 // ---------------------------------------------------------------- Message recu
 async function handleUpdate(update, env) {
   const msg = update.message;
@@ -185,6 +235,30 @@ async function handleUpdate(update, env) {
   if (msg.photo && msg.photo.length) fileId = msg.photo[msg.photo.length - 1].file_id;
   else if (msg.document && String(msg.document.mime_type || "").startsWith("image/")) { fileId = msg.document.file_id; asPhoto = false; }
   if (!fileId) { await reply(env, chatId, HELP); return; }
+
+  const v = parseVip(msg.caption);
+  if (v) {
+    let st;
+    try {
+      const info = await tg(env, "getFile", { file_id: fileId });
+      const img = await fetch(`https://api.telegram.org/file/bot${env.TELEGRAM_BOT_TOKEN}/${info.file_path}`);
+      const bytes = await img.arrayBuffer();
+      await addVipProof(env, bytes, v);
+      st = `✅ Ticket ajouté à la galerie VIP du site (visible dans 5 minutes environ).\n${v.titre}${v.cote ? " · cote " + v.cote : ""}${v.gain ? " · " + v.gain : ""}\nIl sera aussi utilisé dans les rappels VIP de 13h.`;
+      if (!v.cote) st += "\nℹ️ Astuce : ajoute la cote et le gain sur la 2e ligne, ex : Rennes – OFI · cote 11 · 3 850 000 F";
+    } catch (e) {
+      console.log("vip", e.message);
+      st = "⚠️ Impossible d'ajouter le ticket au site (vérifie la clé GITHUB_TOKEN dans Cloudflare).";
+    }
+    if (v.toChannel) {
+      try {
+        await tg(env, asPhoto ? "sendPhoto" : "sendDocument", { chat_id: channelOf(env), caption: VIP_POST + RESP, [asPhoto ? "photo" : "document"]: fileId });
+        st += `\n📢 Publié dans le canal ${channelOf(env)}.`;
+      } catch (e) { st += "\n⚠️ Impossible de publier dans le canal."; }
+    }
+    await reply(env, chatId, st);
+    return;
+  }
 
   const c = parseCaption(msg.caption);
   if (!c.label) { await reply(env, chatId, "❓ Légende non reconnue.\n\n" + HELP); return; }
