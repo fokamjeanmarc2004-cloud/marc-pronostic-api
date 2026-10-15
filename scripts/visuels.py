@@ -28,7 +28,7 @@ TOPICS = [
   "sub": "1xBet · Paripesa · Melbet · WinWin", "code": "FFN", "big": "300%", "line": B300, "line2": B300b,
   "logos": ["1xbet", "paripesa", "melbet", "winwin"], "cta": "Liens et tuto dans le message"},
  {"k": "VIP", "h": ["Rejoins le VIP Cousin Marc", "Le VIP, c'est ici", "Passe au niveau supérieur", "Mes meilleurs coupons en premier"],
-  "sub": "Côte de 2 VIP chaque jour · Grosses cotes · Live", "big": "VIP", "line": "Dès 30 $ par mois", "line2": "Orange Money · MTN · Wave · crypto",
+  "sub": "Côte de 2 VIP chaque jour · Grosses cotes · Live", "big": "VIP", "line": "25 000 FCFA par mois", "line2": "Orange Money · MTN · Wave · crypto",
   "rows": [("Côte de 2 VIP", "tous les jours"), ("Grosses cotes", "plusieurs fois par semaine"), ("Pronostics en live", "pendant les matchs"), ("Canal privé", "questions directes")],
   "cta": "Infos et paiement dans le message", "vip": True},
  {"k": "1xBet", "h": ["Pas encore de compte 1xBet ?", "1xBet : ton bonus t'attend", "Ouvre ton compte 1xBet", "1xBet avec le code FFN"],
@@ -49,7 +49,7 @@ TOPICS = [
  {"k": "Paripesa", "h": ["Paripesa : même code, même bonus", "Inscris-toi sur Paripesa", "Paripesa avec le code FFN", "Ton compte Paripesa en 2 minutes"],
   "sub": "Site et application", "code": "FFN", "big": "300%", "line": B300, "line2": B300b, "logos": ["paripesa"], "cta": "Lien d'inscription dans le message"},
  {"k": "VIP", "h": ["Les grosses cotes, c'est dans le VIP", "Cotes à 5, 8, 10 et plus", "Les gros tickets en priorité", "Vise plus haut avec le VIP"],
-  "sub": "Côte de 2 du jour + live + grosses cotes", "big": "x10", "line": "Dès 30 $ par mois", "line2": "Mes tickets gagnants sur le site",
+  "sub": "Côte de 2 du jour + live + grosses cotes", "big": "x10", "line": "25 000 FCFA par mois", "line2": "Mes tickets gagnants sur le site",
   "rows": [("Grosses cotes", "partagées en priorité"), ("Côte de 2", "chaque jour"), ("Live", "pendant les matchs")], "cta": "Infos VIP dans le message", "vip": True},
  {"k": "WinWin", "h": ["WinWin : inscris-toi avec FFN", "Ton bonus WinWin t'attend", "WinWin avec le code FFN", "Ouvre ton compte WinWin"],
   "sub": "Android et iPhone", "code": "FFN", "big": "300%", "line": B300, "line2": B300b, "logos": ["winwin"], "cta": "Liens Android et iPhone dans le message"},
@@ -181,7 +181,7 @@ def head_html(t, headline):
     return html.escape(" ".join(words[:-k])) + " <em>" + html.escape(" ".join(words[-k:])) + "</em>"
 
 def top_html(t, th):
-    pill = ('<span class="pill glass" style="border-radius:999px">VIP · dès <b>30 $</b></span>' if t.get("vip_day")
+    pill = ('<span class="pill glass" style="border-radius:999px">VIP · <b>25 000 F</b> / mois</span>' if t.get("vip_day")
             else f'<span class="pill glass" style="border-radius:999px">CODE <b>{html.escape(t.get("code", "FFN"))}</b></span>')
     return f'<div class="top"><div class="brand disp"><span class="dot"></span>cousin <b>marc</b></div>{pill}</div>'
 
@@ -303,8 +303,8 @@ def layout_vip_preuve(t, th, rnd, headline, left=False):
   <div class="h1 disp" style="margin-top:26px;font-size:{74 if len(headline) < 28 else 64}px">{head_html(t, headline)}</div>
   <div class="sub" style="margin-top:20px;font-size:32px">Côte de 2 VIP chaque jour, grosses cotes et live.</div>
   <div class="glass" style="display:inline-block;margin-top:26px;padding:20px 30px;border-radius:30px">
-    <div style="font-size:26px;font-weight:800;opacity:.85">À partir de</div>
-    <div class="disp gold" style="font-size:86px;line-height:1">30 $</div>
+    <div style="font-size:26px;font-weight:800;opacity:.85">Le VIP</div>
+    <div class="disp gold" style="font-size:64px;line-height:1.05">25 000 F</div>
     <div style="font-size:26px;font-weight:800;opacity:.85">par mois</div></div>
 </div>
 <div style="position:absolute;left:64px;right:64px;top:1010px;text-align:center;font-size:28px;font-weight:700;opacity:.8">Orange Money · MTN · Wave · crypto · Aucun gain n'est garanti</div>"""
