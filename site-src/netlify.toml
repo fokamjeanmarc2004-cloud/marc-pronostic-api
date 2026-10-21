@@ -1,0 +1,1313 @@
+[build]
+  command = "python build2.py"
+  publish = "site"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+# Desactive la reecriture d'URL de Netlify (Pretty URLs)
+# Sans ca, /page.html est redirige vers /page => conflit avec les balises canonical
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = false
+
+# Redirections 301 des anciennes URL sans .html (heritage Pretty URLs)
+# Elles consolident le jus SEO vers l'URL canonique et vident les doublons.
+
+[[redirects]]
+  from = "/1win-codigo-promocional"
+  to = "/1win-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1win-promo-ar"
+  to = "/1win-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1win-promo-code"
+  to = "/1win-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1xbet-codigo-promocional"
+  to = "/1xbet-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1xbet-promo-ar"
+  to = "/1xbet-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1xbet-promo-code"
+  to = "/1xbet-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1xbit-codigo-promocional"
+  to = "/1xbit-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1xbit-promo-ar"
+  to = "/1xbit-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/1xbit-promo-code"
+  to = "/1xbit-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-conseils-parier-football-ar"
+  to = "/5-conseils-parier-football-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-conseils-parier-football"
+  to = "/5-conseils-parier-football.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-consejos-apuestas-futbol"
+  to = "/5-consejos-apuestas-futbol.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-tips-football-betting"
+  to = "/5-tips-football-betting.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-propos-ar"
+  to = "/a-propos-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-propos"
+  to = "/a-propos.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/acerca-de"
+  to = "/acerca-de.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/actualites-ar"
+  to = "/actualites-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/actualites"
+  to = "/actualites.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche"
+  to = "/affiche.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/afroparie-codigo-promocional"
+  to = "/afroparie-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/afroparie-promo-ar"
+  to = "/afroparie-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/afroparie-promo-code"
+  to = "/afroparie-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betandyou-codigo-promocional"
+  to = "/betandyou-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betandyou-promo-ar"
+  to = "/betandyou-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betandyou-promo-code"
+  to = "/betandyou-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betwiner-codigo-promocional"
+  to = "/betwiner-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betwiner-promo-ar"
+  to = "/betwiner-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betwiner-promo-code"
+  to = "/betwiner-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1win"
+  to = "/code-promo-1win.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-senegal"
+  to = "/code-promo-1xbet-senegal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbit"
+  to = "/code-promo-1xbit.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-afroparie"
+  to = "/code-promo-afroparie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-betandyou"
+  to = "/code-promo-betandyou.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-betwiner"
+  to = "/code-promo-betwiner.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-fastparie"
+  to = "/code-promo-fastparie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-goldpari"
+  to = "/code-promo-goldpari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-linebet"
+  to = "/code-promo-linebet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-burkina-faso"
+  to = "/code-promo-melbet-burkina-faso.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-cameroun"
+  to = "/code-promo-melbet-cameroun.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-rdc"
+  to = "/code-promo-melbet-rdc.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-ne-marche-pas"
+  to = "/code-promo-ne-marche-pas.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/codigos-promocionales"
+  to = "/codigos-promocionales.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/comment-sinscrire-1xbet-2026-ar"
+  to = "/comment-sinscrire-1xbet-2026-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/comment-sinscrire-1xbet-2026"
+  to = "/comment-sinscrire-1xbet-2026.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/como-registrarse-1xbet-2026"
+  to = "/como-registrarse-1xbet-2026.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/como-retirar-1xbet-melbet-paripesa"
+  to = "/como-retirar-1xbet-melbet-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cote-2-ar"
+  to = "/cote-2-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cote-de-2"
+  to = "/cote-de-2.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cuota-de-2"
+  to = "/cuota-de-2.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/deposer-retirer-paris-afrique-ar"
+  to = "/deposer-retirer-paris-afrique-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/deposer-retirer-paris-afrique"
+  to = "/deposer-retirer-paris-afrique.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fastparie-codigo-promocional"
+  to = "/fastparie-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fastparie-promo-ar"
+  to = "/fastparie-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fastparie-promo-code"
+  to = "/fastparie-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/goldpari-codigo-promocional"
+  to = "/goldpari-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/goldpari-promo-ar"
+  to = "/goldpari-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/goldpari-promo-code"
+  to = "/goldpari-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-register-1xbet-2026"
+  to = "/how-to-register-1xbet-2026.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-withdraw-1xbet-melbet-paripesa"
+  to = "/how-to-withdraw-1xbet-melbet-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/jeu-responsable-ar"
+  to = "/jeu-responsable-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/jeu-responsable"
+  to = "/jeu-responsable.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/juego-responsable"
+  to = "/juego-responsable.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linebet-codigo-promocional"
+  to = "/linebet-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linebet-promo-ar"
+  to = "/linebet-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linebet-promo-code"
+  to = "/linebet-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/megapari-codigo-promocional"
+  to = "/megapari-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/megapari-promo-ar"
+  to = "/megapari-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/megapari-promo-code"
+  to = "/megapari-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/melbet-codigo-promocional"
+  to = "/melbet-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/melbet-promo-ar"
+  to = "/melbet-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/melbet-promo-code"
+  to = "/melbet-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/news"
+  to = "/news.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/noticias"
+  to = "/noticias.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/odds-of-2"
+  to = "/odds-of-2.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paripesa-codigo-promocional"
+  to = "/paripesa-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paripesa-promo-ar"
+  to = "/paripesa-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paripesa-promo-code"
+  to = "/paripesa-promo-code.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-benin"
+  to = "/paris-sportifs-benin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-burkina-faso"
+  to = "/paris-sportifs-burkina-faso.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-cameroun"
+  to = "/paris-sportifs-cameroun.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-cote-divoire"
+  to = "/paris-sportifs-cote-divoire.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-mali"
+  to = "/paris-sportifs-mali.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-rdc"
+  to = "/paris-sportifs-rdc.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-senegal"
+  to = "/paris-sportifs-senegal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/paris-sportifs-togo"
+  to = "/paris-sportifs-togo.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/predictions"
+  to = "/predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/promo-codes-ar"
+  to = "/promo-codes-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/promo-codes"
+  to = "/promo-codes.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-aston-villa-viking-2026-10-21"
+  to = "/pronostic-aston-villa-viking-2026-10-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-atletico-madrid-manchester-united-2026-10-13"
+  to = "/pronostic-atletico-madrid-manchester-united-2026-10-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-bayern-munich-arsenal-2026-10-21"
+  to = "/pronostic-bayern-munich-arsenal-2026-10-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-bodo-glimt-borussia-dortmund-2026-10-14"
+  to = "/pronostic-bodo-glimt-borussia-dortmund-2026-10-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-como-manchester-united-2026-10-21"
+  to = "/pronostic-como-manchester-united-2026-10-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-everton-chelsea-2026-10-17"
+  to = "/pronostic-everton-chelsea-2026-10-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-fenerbahce-slavia-prague-2026-10-20"
+  to = "/pronostic-fenerbahce-slavia-prague-2026-10-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-feyenoord-como-2026-10-14"
+  to = "/pronostic-feyenoord-como-2026-10-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-galatasaray-barcelone-2026-10-13"
+  to = "/pronostic-galatasaray-barcelone-2026-10-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-leeds-united-manchester-united-2026-10-18"
+  to = "/pronostic-leeds-united-manchester-united-2026-10-18.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lille-galatasaray-2026-10-21"
+  to = "/pronostic-lille-galatasaray-2026-10-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-liverpool-villarreal-2026-10-20"
+  to = "/pronostic-liverpool-villarreal-2026-10-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-manchester-city-psg-2026-10-14"
+  to = "/pronostic-manchester-city-psg-2026-10-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-naples-bodo-glimt-2026-10-20"
+  to = "/pronostic-naples-bodo-glimt-2026-10-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-nottingham-forest-arsenal-2026-10-18"
+  to = "/pronostic-nottingham-forest-arsenal-2026-10-18.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-porto-psv-eindhoven-2026-10-20"
+  to = "/pronostic-porto-psv-eindhoven-2026-10-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-psg-barcelone-2026-10-20"
+  to = "/pronostic-psg-barcelone-2026-10-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-rb-leipzig-psv-eindhoven-2026-10-13"
+  to = "/pronostic-rb-leipzig-psv-eindhoven-2026-10-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-rc-lens-sporting-portugal-2026-10-13"
+  to = "/pronostic-rc-lens-sporting-portugal-2026-10-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-real-betis-barcelone-2026-10-17"
+  to = "/pronostic-real-betis-barcelone-2026-10-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-real-madrid-rb-leipzig-2026-10-21"
+  to = "/pronostic-real-madrid-rb-leipzig-2026-10-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-real-madrid-seville-2026-10-18"
+  to = "/pronostic-real-madrid-seville-2026-10-18.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-roma-real-madrid-2026-10-14"
+  to = "/pronostic-roma-real-madrid-2026-10-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-strasbourg-psg-2026-10-17"
+  to = "/pronostic-strasbourg-psg-2026-10-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-vfb-stuttgart-atletico-madrid-2026-10-20"
+  to = "/pronostic-vfb-stuttgart-atletico-madrid-2026-10-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-villarreal-naples-2026-10-13"
+  to = "/pronostic-villarreal-naples-2026-10-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronosticos"
+  to = "/pronosticos.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostics-ar"
+  to = "/pronostics-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostics"
+  to = "/pronostics.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/quel-bookmaker-choisir"
+  to = "/quel-bookmaker-choisir.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/responsible-gambling"
+  to = "/responsible-gambling.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resultados"
+  to = "/resultados.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resultats-ar"
+  to = "/resultats-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resultats"
+  to = "/resultats.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/results"
+  to = "/results.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/total-odd-even"
+  to = "/total-odd-even.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/total-pair-impair-ar"
+  to = "/total-pair-impair-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/total-pair-impair"
+  to = "/total-pair-impair.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/total-par-impar"
+  to = "/total-par-impar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vip-ar"
+  to = "/vip-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vip-en"
+  to = "/vip-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vip-es"
+  to = "/vip-es.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vip"
+  to = "/vip.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/winwin-codigo-promocional"
+  to = "/winwin-codigo-promocional.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/winwin-promo-ar"
+  to = "/winwin-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/winwin-promo-code"
+  to = "/winwin-promo-code.html"
+  status = 301
+  force = true
+
+# Redirections 301 des pages pays x bookmaker a faible volume, consolidees vers la page
+# bookmaker generique (voir KEEP_COUNTRY_BK) pour reduire le contenu quasi-duplique.
+
+[[redirects]]
+  from = "/code-promo-1xbet-cameroun"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-cameroun.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-cameroun"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-cameroun.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-cameroun"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-cameroun.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-cameroun"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-cameroun.html"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-cote-divoire"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-cote-divoire.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-cote-divoire"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-cote-divoire.html"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-cote-divoire"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-cote-divoire.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-cote-divoire"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-cote-divoire.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-cote-divoire"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-cote-divoire.html"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-senegal"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-senegal.html"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-senegal"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-senegal.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-senegal"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-senegal.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-senegal"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-senegal.html"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-rdc"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-rdc.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-rdc"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-rdc.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-rdc"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-rdc.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-benin"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-benin.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-benin"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-benin.html"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-benin"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-benin.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-benin"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-benin.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-mali"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-mali.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-mali"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-mali.html"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-mali"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-mali.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-mali"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-mali.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-togo"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-togo.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-togo"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-togo.html"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-togo"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-togo.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-togo"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-togo.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-burkina-faso"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-burkina-faso.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-burkina-faso"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-burkina-faso.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-burkina-faso"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-burkina-faso.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+# Affiches : anciens PNG remplaces par des JPG legers (< 300 Ko)
+
+[[redirects]]
+  from = "/affiche-1win.png"
+  to = "/affiche-1win.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-1xbet.png"
+  to = "/affiche-1xbet.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-1xbit.png"
+  to = "/affiche-1xbit.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-afroparie.png"
+  to = "/affiche-afroparie.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-betandyou.png"
+  to = "/affiche-betandyou.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-betwiner.png"
+  to = "/affiche-betwiner.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-fastparie.png"
+  to = "/affiche-fastparie.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-goldpari.png"
+  to = "/affiche-goldpari.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-linebet.png"
+  to = "/affiche-linebet.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-megapari.png"
+  to = "/affiche-megapari.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-melbet.png"
+  to = "/affiche-melbet.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-paripesa.png"
+  to = "/affiche-paripesa.jpg"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affiche-winwin.png"
+  to = "/affiche-winwin.jpg"
+  status = 301
+  force = true

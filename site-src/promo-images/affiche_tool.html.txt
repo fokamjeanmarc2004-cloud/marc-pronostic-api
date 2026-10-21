@@ -1,0 +1,96 @@
+
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Outil gratuit</p>
+<h1>Fabrique ton <span class="hl">affiche</span> avec ton code promo</h1>
+<p class="lead">Choisis ton bookmaker, écris ton prénom, télécharge l'image et partage-la sur WhatsApp, Telegram ou Facebook. Le code promo est ajouté pour toi.</p>
+</div></header>
+<main class="wrap"><section id="aff-tool" style="border-bottom:none">
+<div class="aff-grid">
+<form class="aff-form" onsubmit="return false">
+<label>Ton prénom (facultatif)<input id="aff-name" type="text" maxlength="24" placeholder="Ex : Marc" autocomplete="off"></label>
+<label>Bookmaker<select id="aff-bk"></select></label>
+<label>Type d'affiche<select id="aff-mode"><option value="code">Inscris-toi avec mon code</option><option value="prono">Mon pronostic du jour</option></select></label>
+<div id="aff-prono" hidden>
+<label>Match<input id="aff-match" type="text" maxlength="40" placeholder="Ex : PSG - Barcelone"></label>
+<label>Pronostic<input id="aff-pick" type="text" maxlength="42" placeholder="Ex : Les deux équipes marquent"></label>
+<label>Cote<input id="aff-odd" type="text" maxlength="6" placeholder="Ex : 1.85"></label>
+</div>
+<label>Format<select id="aff-fmt"><option value="1080">Carré (WhatsApp, Facebook)</option><option value="1920">Story (statut, TikTok)</option></select></label>
+<div class="btnrow" style="justify-content:flex-start">
+<button class="cta" type="button" id="aff-dl">⬇️ Télécharger l'image</button>
+<button class="cta alt" type="button" id="aff-share">📤 Partager</button>
+</div>
+<p class="muted" style="font-size:13px">18+ · Joue de façon responsable. L'affiche ne garantit aucun gain.</p>
+</form>
+<div class="aff-preview"><canvas id="aff-cv" width="1080" height="1080" aria-label="Aperçu de l'affiche"></canvas></div>
+</div>
+</section></main>
+<style>
+.aff-grid{display:grid;gap:22px;grid-template-columns:1fr;align-items:start}
+@media(min-width:900px){.aff-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+.aff-form{display:grid;gap:14px}
+.aff-form label{display:grid;gap:6px;font-weight:700;font-size:14px}
+.aff-form input,.aff-form select{font:inherit;font-weight:600;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+.aff-preview canvas{width:100%;height:auto;border-radius:20px;box-shadow:var(--shadow-lg);background:#1d4ed8;display:block;max-height:80vh;object-fit:contain}
+</style>
+<script>
+(function(){
+var BKS=__BKS__;
+var $=function(i){return document.getElementById(i)};
+var sel=$('aff-bk'),cv=$('aff-cv'),ctx=cv.getContext('2d'),logos={};
+BKS.forEach(function(b,i){var o=document.createElement('option');o.value=i;o.textContent=b.n+' · code '+b.c;sel.appendChild(o);});
+var q=new URLSearchParams(location.search);
+if(q.get('name'))$('aff-name').value=q.get('name').slice(0,24);
+if(q.get('bk')){BKS.forEach(function(b,i){if(b.s===q.get('bk'))sel.value=i;});}
+function logo(b,cb){if(logos[b.s]){cb(logos[b.s]);return;}var im=new Image();im.onload=function(){logos[b.s]=im;cb(im);};im.onerror=function(){cb(null);};im.src='logos/'+b.s+'.png';}
+function rr(x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
+function wrap(t,x,y,maxw,lh,font,color,align,maxLines){ctx.font=font;ctx.fillStyle=color;ctx.textAlign=align||'left';var words=t.split(' '),line='',lines=[];
+ words.forEach(function(w){var test=line?line+' '+w:w;if(ctx.measureText(test).width>maxw&&line){lines.push(line);line=w;}else line=test;});lines.push(line);
+ if(maxLines&&lines.length>maxLines){lines=lines.slice(0,maxLines);lines[maxLines-1]=lines[maxLines-1].replace(/\s*\S*$/,'')+'…';}
+ lines.forEach(function(l,i){ctx.fillText(l,x,y+i*lh);});return y+lines.length*lh;}
+function draw(){
+ var W=1080,H=parseInt($('aff-fmt').value,10),b=BKS[sel.value],mode=$('aff-mode').value,name=$('aff-name').value.trim();
+ cv.width=W;cv.height=H;
+ var g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,'#1e40af');g.addColorStop(.5,'#1d4ed8');g.addColorStop(1,'#0b1d5c');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+ var rg=ctx.createRadialGradient(W*.85,H*.2,0,W*.85,H*.2,W*.7);rg.addColorStop(0,'rgba(96,165,250,.55)');rg.addColorStop(1,'rgba(96,165,250,0)');ctx.fillStyle=rg;ctx.fillRect(0,0,W,H);
+ ctx.strokeStyle='rgba(255,255,255,.10)';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(0,H*.62);ctx.lineTo(W,H*.62);ctx.stroke();ctx.beginPath();ctx.arc(W/2,H*.62,170,0,7);ctx.stroke();
+ var s=ctx.createLinearGradient(0,0,W,0);s.addColorStop(0,'#16a34a');s.addColorStop(.333,'#16a34a');s.addColorStop(.334,'#dc2626');s.addColorStop(.666,'#dc2626');s.addColorStop(.667,'#facc15');s.addColorStop(1,'#facc15');ctx.fillStyle=s;ctx.fillRect(0,0,W,14);
+ var F='"Bricolage Grotesque",Inter,Arial,sans-serif',I='Inter,Arial,sans-serif';
+ ctx.fillStyle='#facc15';ctx.beginPath();ctx.arc(92,92,13,0,7);ctx.fill();
+ ctx.textAlign='left';ctx.fillStyle='#fff';ctx.font='800 42px '+F;ctx.fillText('cousin',120,106);var w1=ctx.measureText('cousin ').width;ctx.fillStyle='#bfdbfe';ctx.fillText('marc',120+w1,106);
+ var y=H>1200?300:250;
+ if(mode==='code'){
+  y=wrap('INSCRIS-TOI',70,y,940,100,'800 90px '+F,'#fff','left',1);
+  y=wrap('AVEC MON CODE',70,y,940,100,'800 90px '+F,'#facc15','left',1);
+  y+=14;wrap(b.n+' · bonus de bienvenue',70,y,940,48,'700 40px '+I,'#dbeafe','left',2);y+=80;
+ } else {
+  wrap('PRONOSTIC DU JOUR',70,y-20,940,40,'800 34px '+I,'#bfdbfe','left',1);
+  var m=$('aff-match').value.trim()||'Ton match ici',pk=$('aff-pick').value.trim()||'Ton pronostic ici',od=$('aff-odd').value.trim();
+  y=wrap(m,70,y+50,940,88,'800 78px '+F,'#fff','left',2);y+=10;
+  rr(70,y,940,120,28);ctx.fillStyle='rgba(255,255,255,.14)';ctx.fill();
+  wrap(pk,100,y+74,od?700:880,46,'800 40px '+I,'#fff','left',2);
+  if(od){rr(780,y+20,200,80,22);ctx.fillStyle='#facc15';ctx.fill();ctx.fillStyle='#0b1d5c';ctx.textAlign='center';ctx.font='800 50px '+F;ctx.fillText('@'+od,880,y+75);}
+  y+=150;
+ }
+ var by=Math.max(y,H>1200?950:560),bh=190;
+ rr(70,by,940,bh,36);ctx.fillStyle='#facc15';ctx.fill();
+ ctx.textAlign='left';ctx.fillStyle='#0b1d5c';ctx.font='800 34px '+I;ctx.fillText('CODE',110,by+82);ctx.fillText('PROMO',110,by+122);
+ ctx.fillStyle='rgba(11,29,92,.3)';for(var k=0;k<7;k++){ctx.fillRect(290,by+22+k*21,5,12);}
+ ctx.fillStyle='#0b1d5c';ctx.font='800 124px '+F;ctx.fillText(b.c,330,by+138);
+ logo(b,function(im){
+  if(im){var ls=110,lx=W-70-ls,ly=by+bh+24;ctx.save();rr(lx,ly,ls,ls,28);ctx.fillStyle='#fff';ctx.fill();ctx.clip();ctx.drawImage(im,lx,ly,ls,ls);ctx.restore();}
+  ctx.textAlign='left';ctx.fillStyle='#fff';ctx.font='800 46px '+F;ctx.fillText(b.n,70,by+bh+82);
+  ctx.font='700 34px '+I;ctx.fillStyle='#dbeafe';ctx.fillText(name?('Recommandé par '+name):'Entre ce code à l\'inscription',70,by+bh+126);
+  ctx.fillStyle='#fff';ctx.font='800 36px '+I;ctx.fillText('cousinmarc-pronostic.com',70,H-80);
+  ctx.fillStyle='#93c5fd';ctx.font='700 28px '+I;ctx.fillText('18+ · Joue de façon responsable',70,H-38);
+ });
+}
+function go(){if(document.fonts&&document.fonts.load){Promise.all([document.fonts.load('800 60px "Bricolage Grotesque"'),document.fonts.load('700 30px Inter'),document.fonts.load('800 30px Inter')]).then(draw,draw);}else draw();}
+['aff-name','aff-bk','aff-mode','aff-match','aff-pick','aff-odd','aff-fmt'].forEach(function(i){$(i).addEventListener('input',function(){$('aff-prono').hidden=$('aff-mode').value!=='prono';draw();});});
+$('aff-dl').addEventListener('click',function(){draw();setTimeout(function(){var a=document.createElement('a');a.download='affiche-cousin-marc.png';a.href=cv.toDataURL('image/png');a.click();if(typeof gtag==='function')gtag('event','affiche_download',{page_path:location.pathname});},250);});
+$('aff-share').addEventListener('click',function(){draw();setTimeout(function(){cv.toBlob(function(bl){var f=new File([bl],'affiche-cousin-marc.png',{type:'image/png'});
+ if(navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:'Mon code promo '+BKS[sel.value].c+' : https://cousinmarc-pronostic.com'}).catch(function(){});}
+ else{var a=document.createElement('a');a.download='affiche-cousin-marc.png';a.href=URL.createObjectURL(bl);a.click();}},'image/png');},250);});
+go();
+})();
+</script>
