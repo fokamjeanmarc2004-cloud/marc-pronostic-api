@@ -27,10 +27,10 @@ TOPICS = [
  {"k": "Inscription", "h": ["Inscris-toi avec le code FFN", "Ton compte en 2 minutes", "Un seul code pour 4 bookmakers", "Commence aujourd'hui avec FFN"],
   "sub": "1xBet · Paripesa · Melbet · WinWin", "code": "FFN", "big": "300%", "line": B300, "line2": B300b,
   "logos": ["1xbet", "paripesa", "melbet", "winwin"], "cta": "Liens et tuto dans le message"},
- {"k": "VIP", "h": ["Rejoins le VIP Cousin Marc", "Le VIP, c'est ici", "Passe au niveau supérieur", "Mes meilleurs coupons en premier"],
-  "sub": "Côte de 2 VIP chaque jour · Grosses cotes · Live", "big": "VIP", "line": "25 000 FCFA par mois", "line2": "Orange Money · MTN · Wave · crypto",
-  "rows": [("Côte de 2 VIP", "tous les jours"), ("Grosses cotes", "plusieurs fois par semaine"), ("Pronostics en live", "pendant les matchs"), ("Canal privé", "questions directes")],
-  "cta": "Infos et paiement dans le message", "vip": True},
+ {"k": "Résultats", "h": ["Mes résultats, gagnés ou perdus", "Je ne cache rien", "Tous mes résultats en ligne", "Vérifie mes pronostics"],
+  "sub": "Chaque pronostic affiche son résultat après le match", "code": "FFN", "big": "SCORE", "line": "Tout est sur le site", "line2": "cousinmarc-pronostic.com",
+  "rows": [("Mon pronostic", "publié avant le match"), ("Le score final", "ajouté après le match"), ("Gagné ou perdu", "affiché pour chaque match")],
+  "cta": "Lien des résultats dans le message"},
  {"k": "1xBet", "h": ["Pas encore de compte 1xBet ?", "1xBet : ton bonus t'attend", "Ouvre ton compte 1xBet", "1xBet avec le code FFN"],
   "sub": "Dépôt et retrait par Mobile Money", "code": "FFN", "big": "300%", "line": B300, "line2": B300b, "logos": ["1xbet"], "cta": "Lien d'inscription dans le message"},
  {"k": "Comparateur", "h": ["Quel bookmaker choisir ?", "Ton top 3 en 10 secondes", "Le bon bookmaker pour ton pays", "Ne choisis plus au hasard"],
@@ -48,9 +48,10 @@ TOPICS = [
   "cta": "Lien de l'aide dans le message"},
  {"k": "Paripesa", "h": ["Paripesa : même code, même bonus", "Inscris-toi sur Paripesa", "Paripesa avec le code FFN", "Ton compte Paripesa en 2 minutes"],
   "sub": "Site et application", "code": "FFN", "big": "300%", "line": B300, "line2": B300b, "logos": ["paripesa"], "cta": "Lien d'inscription dans le message"},
- {"k": "VIP", "h": ["Les grosses cotes, c'est dans le VIP", "Cotes à 5, 8, 10 et plus", "Les gros tickets en priorité", "Vise plus haut avec le VIP"],
-  "sub": "Côte de 2 du jour + live + grosses cotes", "big": "x10", "line": "25 000 FCFA par mois", "line2": "Mes tickets gagnants sur le site",
-  "rows": [("Grosses cotes", "partagées en priorité"), ("Côte de 2", "chaque jour"), ("Live", "pendant les matchs")], "cta": "Infos VIP dans le message", "vip": True},
+ {"k": "Côte de 2", "h": ["La côte de 2 gratuite chaque jour", "Un coupon cote 2 par jour", "Ta côte de 2 du jour", "Active les notifications"],
+  "sub": "Ici dans le canal et sur le site", "code": "FFN", "big": "2.00", "line": "Un coupon chaque jour", "line2": "Côte de 2 · Total pair / impair",
+  "logos": ["1xbet"], "rows": [("Côte de 2", "un coupon chaque jour"), ("Total pair / impair", "sur le site"), ("Notifications", "active-les pour ne rien rater")],
+  "cta": "Liens dans le message"},
  {"k": "WinWin", "h": ["WinWin : inscris-toi avec FFN", "Ton bonus WinWin t'attend", "WinWin avec le code FFN", "Ouvre ton compte WinWin"],
   "sub": "Android et iPhone", "code": "FFN", "big": "300%", "line": B300, "line2": B300b, "logos": ["winwin"], "cta": "Liens Android et iPhone dans le message"},
  {"k": "Megapari · GoldPari", "h": ["2 autres bookmakers avec FFN", "Megapari et GoldPari", "Encore plus de choix avec FFN", "Même code, 2 bookmakers"],
@@ -278,6 +279,37 @@ VIP_T = {"k": "Canal VIP", "cta": "Rejoins le VIP : infos dans le message", "vip
          "rows": [("Côte de 2 VIP", "tous les jours"), ("Grosses cotes", "plusieurs fois par semaine"), ("Pronostics en live", "pendant les matchs"), ("Canal privé", "questions directes")]}
 VIP_LAYOUTS = ["vip-preuve", "vip-preuve-g", "vip-liste"]
 
+# ------------------------------------------------------------------ 13h du lundi au samedi (meme ordre que MIDI / MIDI_BK dans worker/src/messages.js)
+MIDI_T = {
+ 0: {"k": "Bilan du week-end", "h": ["Le bilan du week-end", "Mes résultats du week-end", "Week-end terminé : le bilan", "Gagné ou perdu : tout est affiché"],
+     "sub": "Tous mes pronostics avec leur résultat", "code": "FFN", "big": "BILAN", "line": "Résultats sur le site", "line2": "Nouvelle semaine, nouveaux coupons",
+     "rows": [("Mes pronostics", "du week-end"), ("Le score final", "pour chaque match"), ("Gagné ou perdu", "affiché sur le site")]},
+ 1: {"k": "Matchs de la semaine", "h": ["Les gros matchs de la semaine", "Les affiches à ne pas rater", "Mes analyses de la semaine", "Le programme de la semaine"],
+     "sub": "Ligue des champions · Europa · championnats", "code": "FFN", "big": "1X2", "line": "Mes analyses sur le site", "line2": "Forme · pronostic · cote",
+     "rows": [("Forme des équipes", "les chiffres qui comptent"), ("Mon pronostic", "et la cote"), ("Le résultat", "affiché après le match")]},
+ 2: {"k": "Tuto inscription", "h": ["T'inscrire avec FFN en 4 étapes", "Ton compte en 4 étapes", "Le bon code : FFN", "Inscris-toi sans erreur"],
+     "sub": "1xBet · Melbet · Paripesa · WinWin", "code": "FFN", "big": "4 étapes", "line": B300, "line2": B300b, "logos": ["1xbet", "melbet", "paripesa", "winwin"],
+     "rows": [("Ouvre le lien", "site ou application"), ("Choisis ton pays", "et la monnaie FCFA"), ("Écris FFN", "dans la case code promo"), ("1er dépôt", "bonus jusqu'à 300%")]},
+ 4: {"k": "Programme du week-end", "h": ["Le programme du week-end", "Les matchs du week-end", "Prépare ton week-end", "Mes pronostics du week-end"],
+     "sub": "Premier League · Liga · Serie A · Ligue 1 · Bundesliga", "code": "FFN", "big": "WEEK-END", "line": "Mes pronostics sur le site", "line2": "Côte de 2 chaque jour",
+     "rows": [("Les gros matchs", "du samedi et du dimanche"), ("Mes analyses", "sur le site"), ("Ton compte", "prêt avec le code FFN")]},
+ 5: {"k": "Suis-moi partout", "h": ["Ne rate aucun de mes coupons", "Suis-moi partout", "Abonne-toi partout", "Partage le canal"],
+     "sub": "Telegram · WhatsApp · YouTube · site", "code": "FFN", "big": "4 canaux", "line": "Mes coupons dès qu'ils sortent", "line2": "cousinmarc-pronostic.com",
+     "rows": [("Telegram", "t.me/marc_prono"), ("WhatsApp", "ma chaîne WhatsApp"), ("YouTube", "@prossport"), ("Site", "cousinmarc-pronostic.com")]},
+}
+MIDI_BK = [("1xBet", ["1xbet"]), ("Melbet", ["melbet"]), ("Paripesa", ["paripesa"]), ("WinWin", ["winwin"]), ("GoldPari", ["goldpari"])]
+MIDI_LAYOUTS = ["liste", "hero", "ticket", "liste", "bulle"]
+
+def midi_topic(day):
+    week = (day - datetime.date(2026, 1, 1)).days // 7
+    if day.weekday() == 3:
+        name, logos = MIDI_BK[week % len(MIDI_BK)]
+        t = {"k": "Bookmaker de la semaine", "h": [f"{name} : bookmaker de la semaine", f"Cette semaine : {name}", f"{name} avec le code FFN", f"Ouvre ton compte {name}"],
+             "sub": "Dépôt et retrait par Mobile Money", "code": "FFN", "big": "300%", "line": B300, "line2": B300b, "logos": logos}
+    else:
+        t = MIDI_T[day.weekday()]
+    return dict(t, cta=t.get("cta", "Tous les liens dans le message")), week
+
 def _clean(t):
     return re.sub(r"^[^\w(]+", "", t).strip()
 
@@ -368,8 +400,14 @@ def plan_month(year, month):
             pal = th["pal"][(k * 2 + ti) % len(th["pal"])]
             headline = t["h"][(k + k // len(LAYOUTS) + year + month) % len(t["h"])]
             jobs.append((day, name, t, th, pal, layout, headline, f"{day}-{name}"))
-        if PREUVES:
+        if day.weekday() != 6:
+            t, week = midi_topic(day)
             n = (day - datetime.date(2026, 1, 1)).days
+            layout = MIDI_LAYOUTS[(week + day.weekday()) % len(MIDI_LAYOUTS)]
+            if layout == "bulle" and not t.get("logos"): layout = "hero"
+            jobs.append((day, "midi", t, th, th["pal"][(n + 1) % len(th["pal"])], layout, t["h"][(week + month) % len(t["h"])], f"{day}-midi"))
+        elif PREUVES:
+            n = (day - datetime.date(2026, 1, 1)).days // 7
             tv = dict(VIP_T, proof=PREUVES[(n * 5) % len(PREUVES)])
             jobs.append((day, "vip", tv, th, th["pal"][(n + 3) % len(th["pal"])], VIP_LAYOUTS[n % len(VIP_LAYOUTS)],
                          VIP_H[(n + n // len(VIP_H)) % len(VIP_H)], f"{day}-vip"))

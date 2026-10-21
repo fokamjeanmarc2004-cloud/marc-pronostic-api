@@ -16,7 +16,7 @@
  * Variable facultative :
  *   TELEGRAM_CHANNEL_ID  ton canal (par defaut @marc_prono)
  */
-import { RESP, FOOTER, HELP as HELP_TXT, COUPON_DU_JOUR, TARGETS, PROMOS, VIP_RAPPELS, VIP_IMAGE } from "./messages.js";
+import { RESP, FOOTER, HELP as HELP_TXT, COUPON_DU_JOUR, TARGETS, PROMOS, VIP_RAPPELS, VIP_IMAGE, MIDI, MIDI_BK } from "./messages.js";
 
 const REPO = "fokamjeanmarc2004-cloud/marc-pronostic-api";
 const SITE = "https://cousinmarc-pronostic.com";
@@ -423,10 +423,33 @@ async function sendPromo(env, index, date = new Date()) {
   return `message ${index + 1} publié (texte)`;
 }
 
-// ---------------------------------------------------------------- Rappel VIP de 13h (Cameroun)
+// ---------------------------------------------------------------- 13h (Cameroun) : VIP le dimanche seulement, un sujet par jour sinon
+function weekOf(date) {
+  return Math.floor((Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()) - Date.UTC(2026, 0, 1)) / 86400000 / 7);
+}
+
+async function sendMidi(env, date = new Date()) {
+  const wd = date.getUTCDay();
+  if (wd === 0) return sendVip(env, date);
+  const m = wd === 4 ? MIDI_BK[weekOf(date) % MIDI_BK.length] : MIDI[wd];
+  const text = m.text + RESP;
+  const d = date.toISOString();
+  const fresh = `${VISUELS}/${d.slice(0, 7)}/${d.slice(8, 10)}-midi.jpg`;
+  let ok = false;
+  try { ok = (await fetch(fresh, { method: "HEAD" })).ok; } catch (e) { console.log("visuel midi", e.message); }
+  for (const img of [ok ? fresh : null, m.image]) {
+    if (!img) continue;
+    try {
+      await tg(env, "sendPhoto", { chat_id: channelOf(env), photo: img, caption: text });
+      return `message de 13h publié (${img === fresh ? "image neuve du jour" : "image"})`;
+    } catch (e) { console.log("image midi", e.message); }
+  }
+  await tg(env, "sendMessage", { chat_id: channelOf(env), text });
+  return "message de 13h publié (texte)";
+}
+
 async function sendVip(env, date = new Date()) {
-  const days = Math.floor((Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()) - Date.UTC(2026, 0, 1)) / 86400000);
-  const text = VIP_RAPPELS[days % VIP_RAPPELS.length] + RESP;
+  const text = VIP_RAPPELS[weekOf(date) % VIP_RAPPELS.length] + RESP;
   const d = date.toISOString();
   const fresh = `${VISUELS}/${d.slice(0, 7)}/${d.slice(8, 10)}-vip.jpg`;
   let ok = false;
@@ -483,6 +506,12 @@ export default {
       return new Response(`✅ ${out} dans ${channelOf(env)}`, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
+    if (url.pathname === "/midi") {
+      if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
+      const out = await sendMidi(env);
+      return new Response(`✅ ${out} dans ${channelOf(env)}`, { headers: { "content-type": "text/plain; charset=utf-8" } });
+    }
+
     if (url.pathname === "/vip") {
       if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
       const out = await sendVip(env);
@@ -495,8 +524,8 @@ export default {
   // 5h00 et 20h00 UTC = 6h00 et 21h00 au Cameroun
   async scheduled(event, env, ctx) {
     const when = new Date(event.scheduledTime);
-    // 12h00 UTC = 13h00 au Cameroun : rappel VIP ; sinon promo de 6h ou 21h
-    if (when.getUTCHours() === 12) ctx.waitUntil(sendVip(env, when).then(console.log));
+    // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
+    if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
     else ctx.waitUntil(sendPromo(env, pickIndex(when), when).then(console.log));
   },
 };

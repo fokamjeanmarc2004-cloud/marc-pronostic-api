@@ -27,7 +27,7 @@ export const TARGETS = [
   "pattern": "^(resultat|résultat|resultats|résultats)$",
   "file": "result-photo.jpg",
   "label": "Résultats",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏆 ENCORE UN COUPON GAGNANT !\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n✅ Bravo à tous ceux qui ont suivi\n\n📊 Tous les résultats : https://cousinmarc-pronostic.com/resultats.html\n⭐ Grosses cotes et live dans le VIP : https://cousinmarc-pronostic.com/vip.html\n\nLes gains passés ne garantissent pas les gains futurs.\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏆 ENCORE UN COUPON GAGNANT !\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n✅ Bravo à tous ceux qui ont suivi\n\n📊 Tous les résultats : https://cousinmarc-pronostic.com/resultats.html\n🎯 Pas encore de compte ? Code promo FFN : https://cousinmarc-pronostic.com\n\nLes gains passés ne garantissent pas les gains futurs.\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  }
 ];
 export const PROMOS = [
@@ -36,8 +36,8 @@ export const PROMOS = [
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔔 INSCRIS-TOI MAINTENANT\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 1XBET — Code promo : FFN\n\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n\n\n🎯 PARIPESA — Code promo : FFN\n\n🌐 https://paripesa.bet/flex4\n📲 https://paripesa.bet/cousinmarc\n\n\n🎯 MELBET — Code promo : FFN\n\n🌐 https://tinyurl.com/48f3ukrb\n📲 https://tinyurl.com/4nsmfukc\n\n🎯 WINWIN — Code promo : FFN\n\n🌐 https://slim.link/FFN\n📲 https://slim.link/FFN_APK\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
  },
  {
-  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-vip.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ REJOINS LE VIP COUSIN MARC\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 Côte de 2 VIP tous les jours\n🚀 Grosses cotes plusieurs fois par semaine\n⚡ Pronostics en live pendant les matchs\n💬 Canal privé + questions directes\n\n💳 1 mois 25 000 FCFA · 3 mois 65 000 FCFA · 1 an 240 000 FCFA\n📲 Paiement Orange Money, MTN, Wave ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 MES RÉSULTATS, GAGNÉS OU PERDUS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nJe ne cache rien : chaque pronostic du site affiche son résultat après le match ✅ ❌\n\n👉 https://cousinmarc-pronostic.com/resultats.html\n\n🎯 Joue mes pronostics sur 1xBet, Melbet, Paripesa ou WinWin avec le code FFN\n👉 Tous les liens : https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-1xbet.jpg",
@@ -68,8 +68,8 @@ export const PROMOS = [
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟠 PARIPESA : MÊME CODE, MÊME BONUS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 PARIPESA — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n\n🌐 https://paripesa.bet/flex4\n📲 https://paripesa.bet/cousinmarc\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🌐 = site · 📲 = application"
  },
  {
-  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-vip.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 LES GROSSES COTES, C'EST DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLes cotes à 5, 8, 10 et plus que vous aimez 🔥\nsont partagées en priorité dans le canal VIP,\navec la côte de 2 du jour et le live.\n\n🏆 Mes derniers tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n\n💳 Dès 25 000 FCFA par mois (moins cher en 3 mois ou 1 an) · Orange Money, MTN, Wave ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-1xbet.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚽ LA CÔTE DE 2 GRATUITE, CHAQUE JOUR\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChaque jour, un coupon autour de cote 2 publié ici et sur le site 👇\n\n🎯 Côte de 2 : https://cousinmarc-pronostic.com/cote-de-2.html\n🎲 Total pair / impair : https://cousinmarc-pronostic.com/total-pair-impair.html\n\n🔔 Active les notifications du canal pour ne rien rater.\n\n🎯 1XBET — Code promo : FFN\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-winwin.jpg",
@@ -89,12 +89,62 @@ export const PROMOS = [
  }
 ];
 
-// Rappel VIP de 13h (un texte different chaque jour, image neuve du jour promo/visuels/AAAA-MM/JJ-vip.jpg)
+// Message VIP du dimanche 13h (un texte different chaque dimanche, image neuve du jour promo/visuels/AAAA-MM/JJ-vip.jpg)
 export const VIP_RAPPELS = [
  "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ RAPPEL : REJOINS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLe ticket sur l'image est passé dans le VIP 👆\n\n🎯 Côte de 2 VIP tous les jours\n🚀 Grosses cotes plusieurs fois par semaine\n⚡ Pronostics en live pendant les matchs\n\n💳 1 mois 25 000 FCFA · 3 mois 65 000 FCFA · 1 an 240 000 FCFA\n📲 Orange Money, MTN, Wave ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
  "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔥 LES MEILLEURS COUPONS SONT DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nDans le canal gratuit, tu as la côte de 2.\nDans le VIP, tu as en plus mes grosses cotes, le live et mes conseils en direct.\n\n🏆 Mes tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n\n💳 Dès 25 000 FCFA par mois (moins cher en 3 mois ou 1 an) · Orange Money, MTN, Wave ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
  "━━━━━━━━━━━━━━━━━━━━━━━━━━\n💎 POURQUOI REJOINDRE LE VIP ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n✅ Mes coupons avant tout le monde\n✅ Une côte de 2 VIP chaque jour\n✅ Des grosses cotes (5, 8, 10 et plus)\n✅ Tu me poses tes questions directement\n\n💳 1 mois 25 000 FCFA · 3 mois 65 000 FCFA · 1 an 240 000 FCFA\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
- "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⏰ LE VIP, C'EST AUJOURD'HUI\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChaque jour sans le VIP, ce sont des coupons que tu ne vois pas.\nRegarde le ticket sur l'image, puis rejoins-nous 👇\n\n💳 Dès 25 000 FCFA par mois (moins cher en 3 mois ou 1 an)\n📲 Paiement Orange Money, MTN, Wave ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
+ "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🗓️ NOUVELLE SEMAINE : REJOINS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nUne nouvelle semaine de coupons commence demain.\nRegarde le ticket sur l'image, puis rejoins-nous 👇\n\n💳 Dès 25 000 FCFA par mois (moins cher en 3 mois ou 1 an)\n📲 Paiement Orange Money, MTN, Wave ou crypto\n\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.",
  "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎯 TU VEUX JOUER COMME MOI ?\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nDans le VIP, je partage les coupons que je joue moi-même, avec la cote et l'heure.\nTu n'as plus qu'à copier.\n\n🏆 Mes derniers tickets : https://cousinmarc-pronostic.com/vip.html#preuves\n💳 Dès 25 000 FCFA par mois (moins cher en 3 mois ou 1 an)\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti."
 ];
 export const VIP_IMAGE = "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-vip.jpg";
+
+// 13h du lundi au samedi : un sujet par jour (index = jour : 1 lundi ... 6 samedi ; jeudi = MIDI_BK)
+export const MIDI = [
+ null,
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 BILAN DU WEEK-END\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLe week-end de foot est terminé : tous mes pronostics sont affichés sur le site avec leur résultat, gagné ou perdu ✅ ❌\n\n👉 https://cousinmarc-pronostic.com/resultats.html\n\nNouvelle semaine, nouveaux coupons : la côte de 2 continue chaque jour ici 💪\n\n🎯 Pas encore de compte ? Inscris-toi avec le code FFN :\n👉 https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚽ LES GROS MATCHS DE LA SEMAINE\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLigue des champions, Ligue Europa, championnats : j'analyse les matchs les plus attendus.\nForme des équipes, mon pronostic et la cote, tout est sur le site 👇\n\n👉 https://cousinmarc-pronostic.com/pronostics.html\n\n🎯 Joue-les sur 1xBet, Melbet, Paripesa ou WinWin avec le code FFN.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-inscris-toi.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 T'INSCRIRE AVEC LE CODE FFN EN 4 ÉTAPES\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n1️⃣ Ouvre le lien du bookmaker (site ou application)\n2️⃣ Choisis ton pays et ta monnaie (FCFA)\n3️⃣ Dans la case « code promo », écris FFN\n4️⃣ Fais ton 1er dépôt par Mobile Money : bonus jusqu'à 300%\n\n🎯 1XBET\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n\n🎯 MELBET\n🌐 https://tinyurl.com/48f3ukrb\n📲 https://tinyurl.com/4nsmfukc\n\n⚠️ Le code s'entre UNE seule fois, à l'inscription.\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ null,
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔥 PROGRAMME DU WEEK-END\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nPremier League, Liga, Serie A, Ligue 1, Bundesliga : les matchs à ne pas rater ce week-end.\nMes analyses et mes pronostics sont sur le site 👇\n\n👉 https://cousinmarc-pronostic.com/pronostics.html\n⚽ Côte de 2 du jour : https://cousinmarc-pronostic.com/cote-de-2.html\n\n🎯 Prépare ton compte avant le week-end : code promo FFN\n👉 https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📢 NE RATE AUCUN DE MES COUPONS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nAbonne-toi partout pour recevoir mes pronostics dès qu'ils sortent 👇\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 SUIS-MOI PARTOUT\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n✈️ Telegram : https://t.me/marc_prono\n💬 WhatsApp : https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h\n▶️ YouTube : https://youtube.com/@prossport\n🌐 Site : https://cousinmarc-pronostic.com\n\n👥 Partage le canal à tes amis parieurs !\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ }
+];
+
+// Jeudi 13h : bookmaker de la semaine (tourne chaque semaine)
+export const MIDI_BK = [
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-1xbet.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔵 BOOKMAKER DE LA SEMAINE : 1XBET\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 1XBET — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n💳 Dépôt et retrait par Mobile Money\n\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n\n👉 Guide complet : https://cousinmarc-pronostic.com\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-melbet.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟡 BOOKMAKER DE LA SEMAINE : MELBET\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 MELBET — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n💳 Dépôt et retrait par Mobile Money\n\n🌐 https://tinyurl.com/48f3ukrb\n📲 https://tinyurl.com/4nsmfukc\n\n👉 Guide complet : https://cousinmarc-pronostic.com\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-paripesa.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟠 BOOKMAKER DE LA SEMAINE : PARIPESA\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 PARIPESA — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n💳 Dépôt et retrait par Mobile Money\n\n🌐 https://paripesa.bet/flex4\n📲 https://paripesa.bet/cousinmarc\n\n👉 Guide complet : https://cousinmarc-pronostic.com\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-winwin.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n🟢 BOOKMAKER DE LA SEMAINE : WINWIN\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 WINWIN — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n💳 Dépôt et retrait par Mobile Money\n\n🌐 https://slim.link/FFN\n📲 https://slim.link/FFN_APK\n\n👉 Guide complet : https://cousinmarc-pronostic.com\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ },
+ {
+  "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-megapari-goldpari.jpg",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n💎 BOOKMAKER DE LA SEMAINE : GOLDPARI\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 GOLDPARI — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n💳 Dépôt et retrait par Mobile Money\n\n🌐 https://slim.link/yHtzWdS\n📲 https://slim.link/5gRZnVB\n\n👉 Guide complet : https://cousinmarc-pronostic.com\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+ }
+];
