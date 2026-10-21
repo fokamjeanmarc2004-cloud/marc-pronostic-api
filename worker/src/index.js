@@ -217,6 +217,90 @@ async function addVipProof(env, bytes, info) {
 
 const VIP_POST = "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⭐ ENCORE UN TICKET GAGNANT DANS LE VIP\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🏆 Mes tickets gagnants : https://cousinmarc-pronostic.com/vip.html#preuves\n💳 Dès 25 000 FCFA par mois · Orange Money, MTN, Wave ou crypto\n👉 https://cousinmarc-pronostic.com/vip.html\n━━━━━━━━━━━━━━━━━━━━━━━━━━\nAucun gain n'est garanti.";
 
+
+// ---------------------------------------------------------------- Resultats des matchs (message « score »)
+// Une ligne par match :  score Roma Real 2-1 gagné   (ou perdu / remboursé ; le score est facultatif)
+function plain(t) {
+  return (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+const RES_WORDS = { gagne: "gagne", gagner: "gagne", win: "gagne", perdu: "perdu", perd: "perdu", rembourse: "rembourse", annule: "rembourse" };
+
+export function parseScoreLine(line) {
+  let t = plain(line).replace(/^(score|scores|resultat|resultats)\s+/, "");
+  const words = t.split(" ");
+  const res = RES_WORDS[words[words.length - 1]];
+  if (!res) return null;
+  t = words.slice(0, -1).join(" ");
+  let score = "";
+  const ms = line.match(/(\d+)\s*[-:–]\s*(\d+)/);
+  if (ms) { score = `${ms[1]}-${ms[2]}`; t = t.replace(new RegExp(`\\b${ms[1]}\\s+${ms[2]}\\b`), " "); }
+  const teams = t.split(" ").filter((w) => w.length >= 3 && !/^\d+$/.test(w));
+  return teams.length ? { teams, res, score } : null;
+}
+
+export function applyScores(text, lines, now = new Date()) {
+  const blocks = text.split("\n---\n");
+  const done = [], missing = [];
+  for (const L of lines) {
+    let best = -1, bestDate = "";
+    blocks.forEach((b, i) => {
+      const d = (b.match(/^date:\s*(.+)$/m) || [])[1];
+      const e1 = (b.match(/^equipe1:\s*(.+)$/m) || [])[1], e2 = (b.match(/^equipe2:\s*(.+)$/m) || [])[1];
+      if (!d || !e1 || !e2) return;
+      if (new Date(d.trim().replace(" ", "T") + ":00+01:00") > now) return;
+      const names = plain(e1 + " " + e2);
+      if (!L.teams.every((w) => names.includes(w))) return;
+      if (d > bestDate) { bestDate = d; best = i; }
+    });
+    if (best < 0) { missing.push(L.teams.join(" ")); continue; }
+    let b = blocks[best].replace(/^resultat:.*\n?/m, "");
+    b = b.replace(/^(bookmaker:.*)$/m, `$1\nresultat: ${L.res}`);
+    if (!/^resultat:/m.test(b)) b = b.replace(/^(cote:.*)$/m, `$1\nresultat: ${L.res}`);
+    const e1 = b.match(/^equipe1:\s*(.+)$/m)[1].trim(), e2 = b.match(/^equipe2:\s*(.+)$/m)[1].trim();
+    if (L.score) {
+      b = b.replace(/\nScore final : .*$/m, "");
+      const [a, c] = L.score.split("-");
+      b = b.replace(/\s*$/, "") + `\nScore final : ${e1} ${a}-${c} ${e2}.`;
+    }
+    blocks[best] = b;
+    done.push(`${e1} – ${e2}${L.score ? " " + L.score : ""} : ${L.res === "gagne" ? "✅ gagné" : L.res === "perdu" ? "❌ perdu" : "↩️ remboursé"}`);
+  }
+  return { text: blocks.join("\n---\n"), done, missing };
+}
+
+async function handleScores(env, chatId, msgText) {
+  const lines = msgText.split(/\r?\n/).map(parseScoreLine).filter(Boolean);
+  if (!lines.length) {
+    await reply(env, chatId, "✍️ Pour mettre un résultat, écris une ligne par match :\nscore Roma Real 2-1 gagné\nscore Betis Barcelone 1-3 perdu\n\n(gagné, perdu ou remboursé à la fin ; le score est facultatif)");
+    return;
+  }
+  const path = "site-src/matchs.txt";
+  try {
+    const cur = await gh(env, `contents/${path}?ref=main`);
+    if (!cur.ok) throw new Error(`GitHub ${cur.status}`);
+    const meta = await cur.json();
+    const bin = atob(meta.content.replace(/\n/g, ""));
+    const text = new TextDecoder().decode(Uint8Array.from(bin, (ch) => ch.charCodeAt(0)));
+    const r = applyScores(text, lines);
+    if (r.done.length) {
+      const body = new TextEncoder().encode(r.text);
+      const put = await gh(env, `contents/${path}`, {
+        method: "PUT",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ message: "Resultats depuis Telegram", content: toBase64(body), branch: "main", sha: meta.sha,
+          committer: { name: "cousinmarc-bot", email: "cousinmarc-bot@users.noreply.github.com" } }),
+      });
+      if (!put.ok) throw new Error(`GitHub ${put.status}: ${(await put.text()).slice(0, 150)}`);
+    }
+    let msg = r.done.length ? "✅ Résultats mis sur le site (visibles dans 2 à 3 minutes) :\n" + r.done.join("\n") : "";
+    if (r.missing.length) msg += (msg ? "\n\n" : "") + "❓ Match introuvable (déjà joué ?) : " + r.missing.join(", ") + "\nÉcris les noms comme sur le site, ex : score Real Madrid Seville 2-0 gagné";
+    await reply(env, chatId, msg);
+  } catch (e) {
+    console.log("score", e.message);
+    await reply(env, chatId, "⚠️ Impossible de mettre le résultat sur le site (vérifie la clé GITHUB_TOKEN dans Cloudflare).");
+  }
+}
+
 // ---------------------------------------------------------------- Message recu
 async function handleUpdate(update, env) {
   const msg = update.message;
@@ -230,6 +314,7 @@ async function handleUpdate(update, env) {
   }
 
   if (msg.text && msg.text.trim().startsWith("/")) { await handleCommand(env, chatId, userId, msg.text); return; }
+  if (msg.text && /^\s*(score|scores)\b/i.test(msg.text)) { await handleScores(env, chatId, msg.text); return; }
 
   let fileId = null, asPhoto = true;
   if (msg.photo && msg.photo.length) fileId = msg.photo[msg.photo.length - 1].file_id;
