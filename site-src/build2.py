@@ -4921,6 +4921,10 @@ HOME_VENUE = {
     "Everton": ("Hill Dickinson Stadium", "Liverpool", "GB"), "Strasbourg": ("Stade de la Meinau", "Strasbourg", "FR"),
     "Real Betis": ("Stade du Real Betis", "Séville", "ES"), "Leeds United": ("Elland Road", "Leeds", "GB"),
     "Nottingham Forest": ("City Ground", "Nottingham", "GB"),
+    "Le Havre": ("Stade Océane", "Le Havre", "FR"), "Chelsea": ("Stamford Bridge", "Londres", "GB"),
+    "Marseille": ("Orange Vélodrome", "Marseille", "FR"), "Manchester United": ("Old Trafford", "Manchester", "GB"),
+    "AEK Athènes": ("OPAP Arena", "Athènes", "GR"), "Borussia Dortmund": ("Signal Iduna Park", "Dortmund", "DE"),
+    "Slavia Prague": ("Fortuna Arena", "Prague", "CZ"),
 }
 ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"),
              "Ligue 1": ("Ligue de Football Professionnel", "https://www.lfp.fr"), "Premier League": ("Premier League", "https://www.premierleague.com"),
@@ -5016,7 +5020,9 @@ TEAM_L = {"Barcelone": {"en": "Barcelona", "es": "Barcelona"}, "Naples": {"en": 
           "Sporting Portugal": {"en": "Sporting CP", "es": "Sporting de Portugal"},
           "Séville": {"en": "Sevilla", "es": "Sevilla"},
           "Slavia Prague": {"en": "Slavia Prague", "es": "Slavia de Praga"}, "Bayern Munich": {"en": "Bayern Munich", "es": "Bayern de Múnich"},
-          "Bodø/Glimt": {"en": "Bodø/Glimt", "es": "Bodø/Glimt"}}
+          "Bodø/Glimt": {"en": "Bodø/Glimt", "es": "Bodø/Glimt"},
+          "Lyon": {"en": "Lyon", "es": "Olympique de Lyon"}, "Marseille": {"en": "Marseille", "es": "Olympique de Marsella"},
+          "AEK Athènes": {"en": "AEK Athens", "es": "AEK Atenas"}, "Alavés": {"en": "Alavés", "es": "Alavés"}}
 AN_L = {
  "en": {"h2": "Upcoming analysed matches", "done": "Finished matches", "all": "All", "soon": "Upcoming", "win": "✅ Won", "lose": "❌ Lost", "void": "↩️ Void",
         "stats": ("predictions published", "upcoming matches", "won", "lost", "success rate"),

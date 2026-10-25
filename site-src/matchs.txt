@@ -449,3 +449,266 @@ Le choc de la soirée. Arsenal a gagné ses deux matchs sans encaisser le moindr
 Le Bayern a 4 points et une attaque redoutable à l'Allianz Arena (5-0 contre Bodø/Glimt). Après le 3-3 à Viking, les Bavarois voudront se racheter devant leur public.
 Mon choix : victoire du Bayern (1X2 : V1, cote 2.15). Option plus prudente : les deux équipes marquent.
 Ce match est dans mon combiné WinWin du mercredi à cote 17.01 (4 matchs), visible ci-dessous.
+---
+date: 2026-10-25 21:00
+competition: Liga
+equipe1: Barcelone
+equipe2: Real Madrid
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi dimanche 25 octobre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Le premier Clásico de la saison ! Le Barça de Hansi Flick a gagné tous ses matchs de Liga et peut prendre 9 points d'avance en cas de victoire. Le Real Madrid est 3e et n'a pas le droit de perdre.
+Le Barça marque énormément à domicile, avec Lamine Yamal, Raphinha et Pedri, mais sa défense laisse des occasions : elle a encaissé 2 buts au Bétis la semaine dernière.
+Côté Real, Vinícius est suspendu, Rodrygo est blessé. Mais avec Mbappé devant, le Real marque presque à chaque match.
+Mon choix : les deux équipes marquent. Pour une cote plus haute : plus de 2,5 buts dans le match, ou victoire du Barça et les deux équipes marquent.
+Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-25 20:45
+competition: Ligue 1
+equipe1: PSG
+equipe2: Lyon
+pronostic: Victoire du PSG
+pronostic_en: PSG to win
+pronostic_es: Gana el PSG
+pronostic_ar: فوز باريس سان جيرمان
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi dimanche 25 octobre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
+Le choc de la 8e journée au Parc des Princes. Lyon est dans le haut du classement et vient défier le champion.
+Le PSG est en grande forme : victoire 3-1 à Strasbourg en championnat et un parcours parfait en Ligue des champions. À domicile, l'équipe de Luis Enrique fait très mal.
+Lyon joue bien cette saison, mais au Parc des Princes la marche est haute.
+Mon choix : victoire du PSG. Option plus prudente : le PSG gagne au moins une mi-temps.
+Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-30 19:00
+competition: Ligue 1
+equipe1: Le Havre
+equipe2: PSG
+pronostic: Victoire du PSG
+pronostic_en: PSG to win
+pronostic_es: Gana el PSG
+pronostic_ar: فوز باريس سان جيرمان
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi vendredi 30 octobre : 19h heure de Paris et à Douala, 18h à Abidjan et Dakar.
+Le PSG ouvre la 9e journée de Ligue 1 au Havre, vendredi soir, quatre jours avant son déplacement à Villarreal en Ligue des champions.
+Le Havre se bat pour se maintenir et a du mal face aux grosses équipes. Même avec une petite rotation, le PSG a beaucoup plus de qualité.
+Mon choix : victoire du PSG. Pour une meilleure cote : le PSG gagne et marque au moins 2 buts.
+Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-31 13:30
+competition: Premier League
+equipe1: Chelsea
+equipe2: Manchester United
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi samedi 31 octobre : 13h30 heure de Paris et à Douala, 12h30 à Abidjan et Dakar.
+Le gros match du samedi midi en Premier League, à Stamford Bridge.
+Chelsea est 4e et vient de gagner 2-0 à Everton avec un doublé de Pedro Neto. L'équipe crée beaucoup d'occasions à domicile.
+Manchester United souffre en défense en ce moment et encaisse souvent, mais garde assez de talent devant pour marquer partout.
+Mon choix : les deux équipes marquent. Option : plus de 2,5 buts dans le match.
+Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-31 21:00
+competition: Liga
+equipe1: Barcelone
+equipe2: Alavés
+pronostic: Barcelone gagne et plus de 2,5 buts
+pronostic_en: Barcelona to win and over 2.5 goals
+pronostic_es: Gana el Barcelona y más de 2,5 goles
+pronostic_ar: فوز برشلونة وأكثر من 2.5 هدف
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi samedi 31 octobre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Une semaine après le Clásico, le Barça reçoit Alavés samedi soir.
+Le Barça est l'attaque la plus forte de Liga : il marque très souvent 3 buts ou plus à domicile. Alavés défend bas, mais finit souvent par craquer face aux grandes équipes.
+Mon choix : le Barça gagne et il y a plus de 2,5 buts dans le match. Une belle cote pour un pari logique.
+Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-01 17:30
+competition: Premier League
+equipe1: Liverpool
+equipe2: Arsenal
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi dimanche 1er novembre : 17h30 heure de Paris et à Douala, 16h30 à Abidjan et Dakar.
+L'affiche du week-end en Premier League ! Arsenal est co-leader avec Manchester City (21 points). Liverpool n'est que 5e en championnat et doit absolument gagner pour revenir dans la course.
+À Anfield, Liverpool marque presque toujours, et son attaque est en feu en Ligue des champions. Mais Liverpool encaisse aussi beaucoup en ce moment.
+Arsenal a l'une des meilleures défenses d'Angleterre, mais sur ce terrain, face à cette attaque, il sera difficile de ne pas encaisser. Et devant, Arsenal a de quoi marquer.
+Mon choix : les deux équipes marquent. Pour une grosse cote : match nul.
+Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-01 20:45
+competition: Ligue 1
+equipe1: Marseille
+equipe2: Toulouse
+pronostic: Victoire de Marseille
+pronostic_en: Marseille to win
+pronostic_es: Gana el Olympique de Marsella
+pronostic_ar: فوز مارسيليا
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi dimanche 1er novembre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
+L'OM termine la 9e journée au Vélodrome, dimanche soir, devant son public.
+Marseille est très fort à domicile et joue pour rester dans le haut du classement. Toulouse est une équipe qui joue bien au ballon, mais elle gagne rarement au Vélodrome.
+Mon choix : victoire de Marseille. Option plus prudente : Marseille gagne ou match nul et plus de 1,5 but.
+Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-03 21:00
+competition: Ligue des Champions
+equipe1: Atlético Madrid
+equipe2: Bayern Munich
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Le choc de la 4e journée de Ligue des champions au Metropolitano.
+Le Bayern a une attaque redoutable, mais il encaisse beaucoup en ce moment en Ligue des champions : 3 buts à Viking et 2 contre Arsenal.
+L'Atlético de Simeone est solide chez lui, mais il devra attaquer pour prendre des points : il en a besoin pour le classement.
+Mon choix : les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-03 21:00
+competition: Ligue des Champions
+equipe1: Barcelone
+equipe2: Aston Villa
+pronostic: Plus de 2,5 buts dans le match
+pronostic_en: Over 2.5 goals
+pronostic_es: Más de 2,5 goles
+pronostic_ar: أكثر من 2.5 هدف في المباراة
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Gros match au Camp Nou entre deux équipes qui adorent attaquer.
+Aston Villa fait un début de Ligue des champions impressionnant, avec beaucoup de buts marqués. Le Barça, lui, marque énormément à domicile.
+Avec deux équipes aussi offensives, je m'attends à un match ouvert avec des buts des deux côtés.
+Mon choix : plus de 2,5 buts dans le match. Option : les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-03 21:00
+competition: Ligue des Champions
+equipe1: Manchester United
+equipe2: Roma
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Old Trafford accueille la Roma pour un match très important pour la qualification.
+Manchester United a perdu ses deux derniers matchs de Ligue des champions et encaisse beaucoup. Mais à domicile, United a de quoi marquer.
+La Roma marque régulièrement en Ligue des champions (3 buts contre le Real Madrid, un match fou perdu 4-3).
+Mon choix : les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-03 21:00
+competition: Ligue des Champions
+equipe1: Villarreal
+equipe2: PSG
+pronostic: Victoire du PSG
+pronostic_en: PSG to win
+pronostic_es: Gana el PSG
+pronostic_ar: فوز باريس سان جيرمان
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Le PSG se déplace en Espagne avec 3 victoires en 3 matchs de Ligue des champions, dont deux gros succès contre Manchester City et le Barça.
+Villarreal joue bien chez lui, mais encaisse beaucoup en Ligue des champions et manque de régularité.
+Mon choix : victoire du PSG. Pour une cote plus haute : le PSG gagne et les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-04 18:45
+competition: Ligue des Champions
+equipe1: Fenerbahçe
+equipe2: Liverpool
+pronostic: Victoire de Liverpool
+pronostic_en: Liverpool to win
+pronostic_es: Gana el Liverpool
+pronostic_ar: فوز ليفربول
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mercredi 4 novembre : 18h45 heure de Paris et à Douala, 17h45 à Abidjan et Dakar.
+Ambiance chaude à Istanbul, mais Liverpool est l'une des équipes les plus en forme de cette Ligue des champions, avec une attaque qui marque beaucoup.
+Fenerbahçe n'a pas encore gagné et a pris une très lourde défaite à Aston Villa.
+Mon choix : victoire de Liverpool. Option : Liverpool marque au moins 2 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-04 18:45
+competition: Ligue des Champions
+equipe1: AEK Athènes
+equipe2: Real Madrid
+pronostic: Victoire du Real Madrid
+pronostic_en: Real Madrid to win
+pronostic_es: Gana el Real Madrid
+pronostic_ar: فوز ريال مدريد
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mercredi 4 novembre : 18h45 heure de Paris et à Douala, 17h45 à Abidjan et Dakar.
+Le Real Madrid a gagné ses 3 premiers matchs de Ligue des champions, dont un 4-1 contre Leipzig.
+L'AEK Athènes a pris une grosse défaite à Manchester City et a du mal face aux grandes équipes, même devant son public bouillant.
+Mon choix : victoire du Real Madrid. Option : le Real gagne et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-04 21:00
+competition: Ligue des Champions
+equipe1: RB Leipzig
+equipe2: Manchester City
+pronostic: Victoire de Manchester City
+pronostic_en: Manchester City to win
+pronostic_es: Gana el Manchester City
+pronostic_ar: فوز مانشستر سيتي
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mercredi 4 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Manchester City est co-leader de Premier League et vient de gagner 5-1 contre l'AEK en Ligue des champions.
+Leipzig a perdu lourdement contre Como et le Real Madrid : sa défense souffre face aux équipes qui ont le ballon.
+Mon choix : victoire de Manchester City. Option : City marque au moins 2 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-04 21:00
+competition: Ligue des Champions
+equipe1: Slavia Prague
+equipe2: Arsenal
+pronostic: Victoire d'Arsenal
+pronostic_en: Arsenal to win
+pronostic_es: Gana el Arsenal
+pronostic_ar: فوز أرسنال
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mercredi 4 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Arsenal est invaincu en Ligue des champions et co-leader de Premier League. Sa défense est l'une des meilleures d'Europe.
+Le Slavia Prague n'a pas encore gagné cette saison en Ligue des champions.
+Mon choix : victoire d'Arsenal. Option plus sûre : Arsenal gagne au moins une mi-temps.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-04 21:00
+competition: Ligue des Champions
+equipe1: Borussia Dortmund
+equipe2: Real Betis
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi mercredi 4 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
+Le Bétis fait un très bon début de Ligue des champions, avec beaucoup de matchs serrés et des buts. Dortmund, devant son Mur jaune, marque presque toujours.
+Les deux équipes aiment attaquer et laissent des espaces : un match à buts.
+Mon choix : les deux équipes marquent. Option : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
