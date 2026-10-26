@@ -126,10 +126,12 @@ pronostic_es: La Roma marca 2 o más goles
 pronostic_ar: روما يسجل هدفين أو أكثر
 cote: 2.19
 bookmaker: winwin
+resultat: gagne
 images: coupon-ldc-n8xd2.jpg, coupon-ldc-cote-32.jpg
 analyse: Coup d'envoi mercredi 14 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Mon choix : la Roma marque 2 buts ou plus face au Real (Total 1 plus de 1,5, cote 2.19). À l'Olimpico, la Roma peut faire mal à une défense madrilène qui laisse des espaces.
 Ce match est dans mon combiné WinWin à cote 6.98 : code coupon N8XD2 (avec Manchester City – PSG et Bodø/Glimt – Dortmund).
+Score final : Roma 3-4 Real Madrid. Pronostic gagné ✅ : la Roma a marqué 3 buts dans un match fou.
 ---
 date: 2026-10-14 20:00
 competition: Ligue des Champions
@@ -141,10 +143,12 @@ pronostic_es: El PSG marca 2 o más goles
 pronostic_ar: باريس سان جيرمان يسجل هدفين أو أكثر
 cote: 1.96
 bookmaker: winwin
+resultat: gagne
 images: coupon-ldc-n8xd2.jpg
 analyse: Coup d'envoi mercredi 14 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Mon choix : le PSG marque 2 buts ou plus à l'Etihad (Total 2 plus de 1,5, cote 1.96). Le PSG a les attaquants pour faire mal même à l'extérieur.
 Ce match est dans mon combiné WinWin à cote 6.98 : code coupon N8XD2.
+Score final : Manchester City 2-4 PSG. Pronostic gagné ✅ : le PSG a marqué 4 buts à l'Etihad.
 ---
 date: 2026-10-14 20:00
 competition: Ligue des Champions
@@ -156,10 +160,12 @@ pronostic_es: El Dortmund marca 2 o más goles
 pronostic_ar: دورتموند يسجل هدفين أو أكثر
 cote: 1.63
 bookmaker: winwin
+resultat: perdu
 images: coupon-ldc-n8xd2.jpg
 analyse: Coup d'envoi mercredi 14 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Mon choix : Dortmund marque 2 buts ou plus en Norvège (Total 2 plus de 1,5, cote 1.63).
 Ce match est dans mon combiné WinWin à cote 6.98 : code coupon N8XD2.
+Score final : Bodø/Glimt 1-0 Borussia Dortmund. Pronostic perdu ❌ : Dortmund n'a pas marqué en Norvège.
 ---
 date: 2026-10-14 17:45
 competition: Ligue des Champions
@@ -171,10 +177,12 @@ pronostic_es: Gana el Como
 pronostic_ar: فوز كومو
 cote: 1.86
 bookmaker: winwin
+resultat: perdu
 images: coupon-ldc-mlyd2.jpg, coupon-ldc-cote-32.jpg
 analyse: Coup d'envoi mercredi 14 octobre : 18h45 heure de Paris, 17h45 à Douala, 16h45 à Abidjan et Dakar.
 Mon choix : Como gagne à Rotterdam (1X2 : V2, cote 1.86 à 1.93).
 Ce match est dans mon combiné WinWin à cote 12.85 : code coupon MLYD2.
+Score final : Feyenoord 3-2 Como. Pronostic perdu ❌ : Como s'est incliné à Rotterdam.
 ---
 date: 2026-10-20 20:00
 competition: Ligue des Champions
@@ -185,11 +193,13 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi mardi 20 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar. Le choc de la 3e journée, au Parc des Princes.
 Mon choix : les deux équipes marquent. À la 1re journée, le PSG a battu Slovan Bratislava 6-1 et le Barça a battu Feyenoord 5-1 : deux attaques en grande forme, et c'est le genre de match où les deux gardiens vont devoir se retrousser les manches.
 Le dernier duel à Barcelone (octobre 2025) s'était décidé dans les dernières minutes, avec une victoire parisienne : ces deux équipes aiment jouer vers l'avant.
 Option plus prudente : plus de 1,5 but dans le match.
 Attention : ce pronostic est provisoire. Les compositions et les blessés peuvent tout changer, je le confirme sur Telegram le jour du match. Vérifie la cote avant de jouer.
+Score final : PSG 4-2 Barcelone. Pronostic gagné ✅ : les deux équipes ont marqué.
 ---
 date: 2026-10-21 20:00
 competition: Ligue des Champions
@@ -200,11 +210,13 @@ pronostic_en: Real Madrid to win
 pronostic_es: Gana el Real Madrid
 pronostic_ar: فوز ريال مدريد
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi mercredi 21 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar. Au Santiago Bernabéu.
 Mon choix : victoire du Real Madrid à domicile. Le Real a commencé sa campagne par une victoire 2-1 contre l'Inter, et le Bernabéu reste un stade où il est très difficile de faire tomber le Real en Ligue des champions.
 Leipzig est une équipe qui court beaucoup et qui peut gêner, mais lors de leur dernier duel européen (huitièmes de finale 2023-2024), c'est le Real qui est passé (1-0 à l'aller en Allemagne, 1-1 au retour à Madrid).
 La cote du Real sera sûrement basse : je le vois bien dans un combiné. Option plus prudente : Real ou nul (double chance 1X).
 Attention : ce pronostic est provisoire. Les compositions et les blessés peuvent tout changer, je le confirme sur Telegram le jour du match. Vérifie la cote avant de jouer.
+Score final : Real Madrid 4-1 RB Leipzig. Pronostic gagné ✅ : victoire du Real Madrid.
 ---
 date: 2026-10-17 12:30
 competition: Premier League
@@ -215,11 +227,13 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 bookmaker: 1xbet
+resultat: perdu
 analyse: Coup d'envoi samedi 17 octobre : 13h30 heure de Paris, 12h30 à Douala, 11h30 à Abidjan et Dakar.
 Everton n'a pas encore perdu en Premier League cette saison : 2 victoires et 4 nuls en 6 matchs, 8 buts marqués et seulement 5 encaissés. Les Toffees sont 5es, à égalité de points avec Chelsea (10 points).
 Chelsea, 6e, a l'une des attaques les plus efficaces du championnat (15 buts en 6 matchs, avec João Pedro à 5 buts), mais sa défense laisse passer beaucoup : 13 buts encaissés, plus de 2 par match.
 Une équipe qui marque presque à chaque fois à domicile contre une équipe qui marque beaucoup et encaisse beaucoup : le scénario le plus logique, c'est un but de chaque côté.
 Mon choix : les deux équipes marquent. Pour une cote plus haute, tu peux tenter le match nul, Everton étant très difficile à battre cette saison.
+Score final : Everton 0-2 Chelsea. Pronostic perdu ❌ : Everton n'a pas marqué (doublé de Pedro Neto pour Chelsea).
 ---
 date: 2026-10-17 16:15
 competition: Ligue 1
@@ -230,11 +244,13 @@ pronostic_en: PSG to win
 pronostic_es: Gana el PSG
 pronostic_ar: فوز باريس سان جيرمان
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi samedi 17 octobre : 17h15 heure de Paris, 16h15 à Douala, 15h15 à Abidjan et Dakar. 7e journée de Ligue 1, au stade de la Meinau.
 Le PSG n'est que 6e avec 11 points, à 3 points du leader Monaco, mais il reste sur 3 victoires de suite en Ligue 1 et a marqué 11 buts en 6 journées.
 Strasbourg (11e, 7 points) marque facilement chez lui mais sa défense est fragile : 12 buts encaissés en 6 matchs, soit 2 par match.
 Le seul piège, c'est la fatigue : Paris joue Manchester City en Ligue des champions le mercredi 14, et prépare le choc contre Barcelone le mardi 20. Luis Enrique peut faire tourner son effectif.
 Mon choix : victoire du PSG. Si tu veux plus de sécurité, joue plutôt « PSG marque au moins 2 buts », vu les difficultés défensives de Strasbourg.
+Score final : Strasbourg 1-3 PSG. Pronostic gagné ✅ : victoire du PSG.
 ---
 date: 2026-10-17 17:30
 competition: Liga
@@ -245,12 +261,14 @@ pronostic_en: Over 2.5 goals
 pronostic_es: Más de 2,5 goles
 pronostic_ar: أكثر من 2.5 هدف في المباراة
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi samedi 17 octobre : 18h30 heure de Paris, 17h30 à Douala, 16h30 à Abidjan et Dakar.
 Le choc du week-end en Espagne : le 3e reçoit le leader. Le Barça a gagné ses 8 matchs de Liga, avec 34 buts marqués (plus de 4 par match) et seulement 7 encaissés. Raphinha est déjà à 12 buts.
 Le Betis est la surprise du début de saison : 6 victoires, 1 nul et 1 défaite, 19 points, à égalité avec l'Atlético. Mais sa défense a déjà concédé 9 buts.
 Avec l'attaque du Barça, il faut s'attendre à des buts. Le Betis, qui joue chez lui, devrait aussi se créer des occasions face à une défense catalane qui joue très haut.
 Mon choix : plus de 2,5 buts dans le match. Pour une cote plus haute : victoire du Barça et plus de 2,5 buts.
 Attention : le Barça joue ensuite le PSG mardi 20 octobre en Ligue des champions (voir mon analyse PSG – Barcelone).
+Score final : Real Betis 2-5 Barcelone. Pronostic gagné ✅ : 7 buts dans le match.
 ---
 date: 2026-10-18 14:00
 competition: Premier League
@@ -261,11 +279,13 @@ pronostic_en: Leeds or draw
 pronostic_es: Leeds o empate
 pronostic_ar: ليدز أو التعادل
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi dimanche 18 octobre : 15h heure de Paris, 14h à Douala, 13h à Abidjan et Dakar. Un classique du foot anglais à Elland Road.
 Leeds réussit un bon début de saison : 7e avec 9 points, une seule défaite en 6 matchs et une défense solide (5 buts encaissés seulement).
 Manchester United n'avance pas : 13e avec 6 points, une seule victoire en 6 journées. En plus, United arrive après un match de Ligue des champions perdu 2-0 à l'Atlético Madrid mardi.
 Elland Road est un stade très chaud et Leeds y joue avec beaucoup d'intensité. Je ne vois pas United s'imposer facilement là-bas.
 Mon choix : Leeds ou match nul (double chance 1X). Pour une grosse cote : victoire de Leeds.
+Score final : Leeds United 1-1 Manchester United. Pronostic gagné ✅ : Leeds ou match nul.
 ---
 date: 2026-10-18 16:30
 competition: Premier League
@@ -276,11 +296,13 @@ pronostic_en: Arsenal to win
 pronostic_es: Gana el Arsenal
 pronostic_ar: فوز آرسنال
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi dimanche 18 octobre : 17h30 heure de Paris, 16h30 à Douala, 15h30 à Abidjan et Dakar.
 Arsenal est 2e de Premier League avec 15 points (5 victoires, 1 défaite), seulement 3 points derrière Manchester City. Les Gunners ont la défense parmi les plus solides du championnat : 5 buts encaissés en 6 matchs.
 Nottingham Forest est en difficulté : 15e avec 5 points, une seule victoire et seulement 5 buts marqués en 6 journées. L'attaque de Forest a beaucoup de mal à se créer des occasions.
 Le City Ground reste un déplacement piégeux, mais face à une équipe qui marque si peu, Arsenal a les armes pour gagner.
 Mon choix : victoire d'Arsenal. Option plus prudente : Arsenal gagne ou nul et moins de 3,5 buts.
+Score final : Nottingham Forest 0-1 Arsenal. Pronostic gagné ✅ : victoire d'Arsenal.
 ---
 date: 2026-10-18 20:00
 competition: Liga
@@ -291,11 +313,13 @@ pronostic_en: Real Madrid to win
 pronostic_es: Gana el Real Madrid
 pronostic_ar: فوز ريال مدريد
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi dimanche 18 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar. Au Santiago Bernabéu.
 Le Real Madrid est 4e avec 18 points (6 victoires, 2 défaites), 19 buts marqués et seulement 8 encaissés. Les Madrilènes sont déjà à 6 points du Barça et ne peuvent plus se permettre de perdre des points à domicile.
 Séville réalise un bon début de saison (5e, 14 points), mais sa défense a déjà encaissé 12 buts en 8 matchs.
 Le Real joue la Roma en Ligue des champions mercredi 14 et reçoit Leipzig le mercredi 21 : le calendrier est chargé, mais à domicile, l'équipe de Mbappé reste très forte.
 Mon choix : victoire du Real Madrid. Pour une cote plus haute : Real gagne et plus de 2,5 buts.
+Score final : Real Madrid 4-1 Séville. Pronostic gagné ✅ : victoire du Real Madrid.
 ---
 date: 2026-10-20 17:45
 competition: Ligue des Champions
@@ -307,12 +331,14 @@ pronostic_es: Gana el Fenerbahçe
 pronostic_ar: فوز فنربخشة
 cote: 1.675
 bookmaker: winwin
+resultat: perdu
 images: coupon-ldc-20oct-10-39.jpg
 analyse: Coup d'envoi mardi 20 octobre : 18h45 heure de Paris, 17h45 à Douala, 16h45 à Abidjan et Dakar.
 Fenerbahçe n'a pris qu'un point en deux journées (1-1 contre la Roma) et doit absolument gagner à domicile, devant son public très chaud.
 Slavia Prague n'a encore rien pris : défaite 3-2 contre Lens puis 2-0 à Sabah. Les Tchèques encaissent beaucoup loin de chez eux.
 Mon choix : victoire de Fenerbahçe (1X2 : V1, cote 1.675).
 Ce match est dans mon combiné WinWin du mardi à cote 10.39 (5 matchs), visible ci-dessous.
+Score final : Fenerbahçe 2-2 Slavia Prague. Pronostic perdu ❌ : match nul.
 ---
 date: 2026-10-20 20:00
 competition: Ligue des Champions
@@ -324,12 +350,14 @@ pronostic_es: Gana el Liverpool
 pronostic_ar: فوز ليفربول
 cote: 1.515
 bookmaker: winwin
+resultat: gagne
 images: coupon-ldc-20oct-10-39.jpg
 analyse: Coup d'envoi mardi 20 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Liverpool a gagné ses deux matchs de Ligue des champions (dont 2-1 contre l'Atlético) avec 8 buts marqués. À Anfield, les soirs de Ligue des champions, c'est une autre équipe.
 Villarreal a 3 points (défaite 3-2 à Dortmund, victoire 3-1 contre Naples) mais reste 11e de Liga et souffre à l'extérieur.
 Mon choix : victoire de Liverpool (1X2 : V1, cote 1.515). Pour une cote plus haute : Liverpool gagne et plus de 2,5 buts.
 Ce match est dans mon combiné WinWin du mardi à cote 10.39 (5 matchs), visible ci-dessous.
+Score final : Liverpool 4-3 Villarreal. Pronostic gagné ✅ : victoire de Liverpool.
 ---
 date: 2026-10-20 20:00
 competition: Ligue des Champions
@@ -341,12 +369,14 @@ pronostic_es: Bodø/Glimt o empate al descanso
 pronostic_ar: بودو غليمت أو التعادل في الشوط الأول
 cote: 1.67
 bookmaker: winwin
+resultat: perdu
 images: coupon-ldc-20oct-10-39.jpg
 analyse: Coup d'envoi mardi 20 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Naples est dernier ou presque : 0 point et seulement 1 but marqué en deux matchs (0-1 contre Arsenal, 3-1 à Villarreal). L'équipe manque de confiance et démarre lentement.
 Bodø/Glimt a déjà 3 points et sait fermer le jeu en début de match.
 Mon choix : Bodø/Glimt ou match nul à la mi-temps (double chance X2 1re mi-temps, cote 1.67). Naples devrait mettre du temps à trouver la faille.
 Ce match est dans mon combiné WinWin du mardi à cote 10.39 (5 matchs), visible ci-dessous.
+Score final : Naples 4-3 Bodø/Glimt (2-1 à la pause). Pronostic perdu ❌ : Naples menait à la mi-temps.
 ---
 date: 2026-10-20 20:00
 competition: Ligue des Champions
@@ -358,12 +388,14 @@ pronostic_es: Gana el Oporto
 pronostic_ar: فوز بورتو
 cote: 1.70
 bookmaker: winwin
+resultat: perdu
 images: coupon-ldc-20oct-10-39.jpg
 analyse: Coup d'envoi mardi 20 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Porto n'a pas encore pris de point (défaite 2-0 contre Manchester City) : à l'Estádio do Dragão, les Portugais n'ont plus le droit à l'erreur.
 Le PSV n'a qu'un point, et n'a marqué qu'un but en deux matchs (1-1 contre le Shakhtar, 0-0 à Leipzig). Son attaque tourne au ralenti.
 Mon choix : victoire de Porto (1X2 : V1, cote 1.70).
 Ce match est dans mon combiné WinWin du mardi à cote 10.39 (5 matchs), visible ci-dessous.
+Score final : Porto 0-1 PSV Eindhoven. Pronostic perdu ❌ : le PSV s'est imposé au Dragão.
 ---
 date: 2026-10-20 20:00
 competition: Ligue des Champions
@@ -375,12 +407,14 @@ pronostic_es: Atlético o empate
 pronostic_ar: أتلتيكو أو التعادل
 cote: 1.442
 bookmaker: winwin
+resultat: gagne
 images: coupon-ldc-20oct-10-39.jpg
 analyse: Coup d'envoi mardi 20 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Stuttgart est la belle surprise : 2 victoires, 6 buts marqués et 1 seul encaissé. Mais l'Atlético est un tout autre adversaire.
 L'Atlético est 2e de Liga et a battu Manchester United 2-0 lors de la dernière journée. L'équipe de Simeone perd très rarement quand elle décide de fermer le jeu.
 Mon choix : Atlético ou match nul (double chance X2, cote 1.442).
 Ce match est dans mon combiné WinWin du mardi à cote 10.39 (5 matchs), visible ci-dessous.
+Score final : VfB Stuttgart 1-1 Atlético Madrid. Pronostic gagné ✅ : Atlético ou match nul.
 ---
 date: 2026-10-21 17:45
 competition: Ligue des Champions
@@ -392,12 +426,14 @@ pronostic_es: Gana el Manchester United
 pronostic_ar: فوز مانشستر يونايتد
 cote: 2.864
 bookmaker: winwin
+resultat: perdu
 images: coupon-ldc-21oct-17-01.jpg
 analyse: Coup d'envoi mercredi 21 octobre : 18h45 heure de Paris, 17h45 à Douala, 16h45 à Abidjan et Dakar.
 Les deux équipes ont 3 points. Como a frappé fort à domicile (4-1 contre Leipzig), Manchester United a battu Sabah 4-0 avant de perdre 2-0 à l'Atlético.
 United a plus d'expérience à ce niveau et la cote de presque 3 est intéressante pour une équipe de ce calibre.
 Mon choix : victoire de Manchester United (1X2 : V2, cote 2.864). Pari plus risqué, à petite mise.
 Ce match est dans mon combiné WinWin du mercredi à cote 17.01 (4 matchs), visible ci-dessous.
+Score final : Como 4-1 Manchester United. Pronostic perdu ❌ : Como a gagné.
 ---
 date: 2026-10-21 17:45
 competition: Ligue des Champions
@@ -409,12 +445,14 @@ pronostic_es: Galatasaray o empate
 pronostic_ar: غلطة سراي أو التعادل
 cote: 1.727
 bookmaker: winwin
+resultat: gagne
 images: coupon-ldc-21oct-17-01.jpg
 analyse: Coup d'envoi mercredi 21 octobre : 18h45 heure de Paris, 17h45 à Douala, 16h45 à Abidjan et Dakar.
 Lille est 2e de Ligue 1 mais n'a pas encore marqué de point en Ligue des champions (défaites 3-2 contre le Betis et 3-0 à Arsenal).
 Galatasaray a tenu le Barça en échec 1-1 la semaine dernière : les Turcs savent rester solides face aux grosses équipes.
 Mon choix : Galatasaray ou match nul (double chance X2, cote 1.727).
 Ce match est dans mon combiné WinWin du mercredi à cote 17.01 (4 matchs), visible ci-dessous.
+Score final : Lille 2-4 Galatasaray. Pronostic gagné ✅ : victoire de Galatasaray.
 ---
 date: 2026-10-21 20:00
 competition: Ligue des Champions
@@ -426,12 +464,14 @@ pronostic_es: Viking marca al menos un gol
 pronostic_ar: فايكنغ يسجل هدفًا على الأقل
 cote: 1.60
 bookmaker: winwin
+resultat: gagne
 images: coupon-ldc-21oct-17-01.jpg
 analyse: Coup d'envoi mercredi 21 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Aston Villa a gagné ses deux matchs avec 9 buts marqués et attaque énormément à Villa Park.
 Mais Viking marque partout : 1 but à Stuttgart et 3 buts contre le Bayern (3-3). Face à une équipe de Villa qui joue très haut, les Norvégiens auront des occasions.
 Mon choix : Viking marque au moins un but (Total 2 plus de 0,5, cote 1.60).
 Ce match est dans mon combiné WinWin du mercredi à cote 17.01 (4 matchs), visible ci-dessous.
+Score final : Aston Villa 3-1 Viking. Pronostic gagné ✅ : Viking a marqué.
 ---
 date: 2026-10-21 20:00
 competition: Ligue des Champions
@@ -443,12 +483,14 @@ pronostic_es: Gana el Bayern de Múnich
 pronostic_ar: فوز بايرن ميونخ
 cote: 2.15
 bookmaker: winwin
+resultat: perdu
 images: coupon-ldc-21oct-17-01.jpg
 analyse: Coup d'envoi mercredi 21 octobre : 21h heure de Paris, 20h à Douala, 19h à Abidjan et Dakar.
 Le choc de la soirée. Arsenal a gagné ses deux matchs sans encaisser le moindre but (1-0 à Naples, 3-0 contre Lille) et est 2e de Premier League.
 Le Bayern a 4 points et une attaque redoutable à l'Allianz Arena (5-0 contre Bodø/Glimt). Après le 3-3 à Viking, les Bavarois voudront se racheter devant leur public.
 Mon choix : victoire du Bayern (1X2 : V1, cote 2.15). Option plus prudente : les deux équipes marquent.
 Ce match est dans mon combiné WinWin du mercredi à cote 17.01 (4 matchs), visible ci-dessous.
+Score final : Bayern Munich 2-2 Arsenal. Pronostic perdu ❌ : match nul.
 ---
 date: 2026-10-25 21:00
 competition: Liga
