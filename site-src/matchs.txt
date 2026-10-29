@@ -502,12 +502,15 @@ pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 cote: 
 bookmaker: 1xbet
+resultat: gagne
+images: vip-proof-41.jpg, vip-proof-43.jpg
 analyse: Coup d'envoi dimanche 25 octobre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Le premier Clásico de la saison ! Le Barça de Hansi Flick a gagné tous ses matchs de Liga et peut prendre 9 points d'avance en cas de victoire. Le Real Madrid est 3e et n'a pas le droit de perdre.
 Le Barça marque énormément à domicile, avec Lamine Yamal, Raphinha et Pedri, mais sa défense laisse des occasions : elle a encaissé 2 buts au Bétis la semaine dernière.
 Côté Real, Vinícius est suspendu, Rodrygo est blessé. Mais avec Mbappé devant, le Real marque presque à chaque match.
 Mon choix : les deux équipes marquent. Pour une cote plus haute : plus de 2,5 buts dans le match, ou victoire du Barça et les deux équipes marquent.
 Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Barcelone 1-2 Real Madrid (0-1 à la pause). Pronostic gagné ✅ : les deux équipes ont marqué. J'avais aussi joué la victoire du Real : 2 tickets gagnants à cote 4.06 et 7.1, plus de 11 millions F encaissés (voir ci-dessous).
 ---
 date: 2026-10-25 20:45
 competition: Ligue 1
