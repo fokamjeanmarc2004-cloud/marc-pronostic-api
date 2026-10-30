@@ -622,6 +622,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-bayern-munich-borussia-dortmund-2026-10-31"
+  to = "/pronostic-bayern-munich-borussia-dortmund-2026-10-31.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-bodo-glimt-borussia-dortmund-2026-10-14"
   to = "/pronostic-bodo-glimt-borussia-dortmund-2026-10-14.html"
   status = 301
@@ -676,6 +682,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-juventus-naples-2026-11-01"
+  to = "/pronostic-juventus-naples-2026-11-01.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-le-havre-psg-2026-10-30"
   to = "/pronostic-le-havre-psg-2026-10-30.html"
   status = 301
@@ -720,6 +732,12 @@
 [[redirects]]
   from = "/pronostic-marseille-toulouse-2026-11-01"
   to = "/pronostic-marseille-toulouse-2026-11-01.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-milan-inter-2026-10-31"
+  to = "/pronostic-milan-inter-2026-10-31.html"
   status = 301
   force = true
 
@@ -804,6 +822,12 @@
 [[redirects]]
   from = "/pronostic-strasbourg-psg-2026-10-17"
   to = "/pronostic-strasbourg-psg-2026-10-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-udinese-roma-2026-10-31"
+  to = "/pronostic-udinese-roma-2026-10-31.html"
   status = 301
   force = true
 

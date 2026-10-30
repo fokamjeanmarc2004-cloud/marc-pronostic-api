@@ -757,3 +757,68 @@ Le Bétis fait un très bon début de Ligue des champions, avec beaucoup de matc
 Les deux équipes aiment attaquer et laissent des espaces : un match à buts.
 Mon choix : les deux équipes marquent. Option : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-31 18:00
+competition: Serie A
+equipe1: Udinese
+equipe2: Roma
+pronostic: Roma ou match nul
+pronostic_en: Roma or draw
+pronostic_es: Roma o empate
+pronostic_ar: روما أو التعادل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi samedi 31 octobre : 18h heure de Paris et à Douala, 17h à Abidjan et Dakar.
+La Roma se déplace dans le Frioul avec l'ambition de rester dans le haut du tableau.
+Udine est un terrain difficile, l'Udinese y défend bien et joue les contres, mais la Roma a plus de qualité individuelle.
+Mon choix : Roma ou match nul (double chance). Option plus grosse cote : victoire de la Roma.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-31 18:30
+competition: Bundesliga
+equipe1: Bayern Munich
+equipe2: Borussia Dortmund
+pronostic: Plus de 2,5 buts
+pronostic_en: Over 2.5 goals
+pronostic_es: Más de 2,5 goles
+pronostic_ar: أكثر من 2.5 هدف
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi samedi 31 octobre : 18h30 heure de Paris et à Douala, 17h30 à Abidjan et Dakar.
+C'est le Klassiker, le plus gros match d'Allemagne, à l'Allianz Arena.
+À domicile, le Bayern attaque sans arrêt et marque beaucoup. Dortmund aime jouer vite en contre-attaque et trouve presque toujours le chemin des filets.
+Ces dernières saisons, les Bayern–Dortmund à Munich ont très souvent donné beaucoup de buts.
+Mon choix : plus de 2,5 buts. Option plus grosse cote : victoire du Bayern et les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-31 20:45
+competition: Serie A
+equipe1: Milan
+equipe2: Inter
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi samedi 31 octobre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
+Le derby de Milan à San Siro : l'AC Milan reçoit l'Inter dans le match le plus chaud d'Italie.
+Les deux clubs ont des attaquants de très haut niveau et visent le titre. Dans un derby, personne ne lâche rien et les deux équipes se créent des occasions.
+Mon choix : les deux équipes marquent. Option plus grosse cote : match nul.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-01 20:45
+competition: Serie A
+equipe1: Juventus
+equipe2: Naples
+pronostic: Moins de 3,5 buts
+pronostic_en: Under 3.5 goals
+pronostic_es: Menos de 3,5 goles
+pronostic_ar: أقل من 3.5 هدف
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi dimanche 1er novembre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
+Grosse affiche à Turin entre la Juventus et Naples, deux candidats au titre.
+Ces matchs au sommet de la Serie A sont souvent serrés et tactiques : les deux équipes défendent bien et ne prennent pas de risques inutiles.
+Mon choix : moins de 3,5 buts. Option plus grosse cote : match nul.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
