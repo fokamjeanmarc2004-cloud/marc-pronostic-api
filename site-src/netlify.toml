@@ -708,6 +708,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-levante-atletico-madrid-2026-10-31"
+  to = "/pronostic-levante-atletico-madrid-2026-10-31.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-lille-galatasaray-2026-10-21"
   to = "/pronostic-lille-galatasaray-2026-10-21.html"
   status = 301
@@ -776,6 +782,12 @@
 [[redirects]]
   from = "/pronostic-psg-lyon-2026-10-25"
   to = "/pronostic-psg-lyon-2026-10-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-racing-santander-real-madrid-2026-11-01"
+  to = "/pronostic-racing-santander-real-madrid-2026-11-01.html"
   status = 301
   force = true
 

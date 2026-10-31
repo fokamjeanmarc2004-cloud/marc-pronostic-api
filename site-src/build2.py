@@ -4934,7 +4934,8 @@ HOME_VENUE = {
     "Marseille": ("Orange Vélodrome", "Marseille", "FR"), "Manchester United": ("Old Trafford", "Manchester", "GB"),
     "AEK Athènes": ("OPAP Arena", "Athènes", "GR"), "Borussia Dortmund": ("Signal Iduna Park", "Dortmund", "DE"),
     "Milan": ("San Siro", "Milan", "IT"), "Juventus": ("Allianz Stadium", "Turin", "IT"),
-    "Udinese": ("Bluenergy Stadium", "Udine", "IT"),
+    "Udinese": ("Bluenergy Stadium", "Udine", "IT"), "Levante": ("Ciutat de València", "Valence", "ES"),
+    "Racing Santander": ("El Sardinero", "Santander", "ES"),
     "Slavia Prague": ("Fortuna Arena", "Prague", "CZ"),
 }
 ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"),

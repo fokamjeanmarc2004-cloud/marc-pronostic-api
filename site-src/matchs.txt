@@ -822,3 +822,35 @@ Grosse affiche à Turin entre la Juventus et Naples, deux candidats au titre.
 Ces matchs au sommet de la Serie A sont souvent serrés et tactiques : les deux équipes défendent bien et ne prennent pas de risques inutiles.
 Mon choix : moins de 3,5 buts. Option plus grosse cote : match nul.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-10-31 14:00
+competition: Liga
+equipe1: Levante
+equipe2: Atlético Madrid
+pronostic: Victoire de l'Atlético Madrid
+pronostic_en: Atlético Madrid to win
+pronostic_es: Gana el Atlético de Madrid
+pronostic_ar: فوز أتلتيكو مدريد
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi samedi 31 octobre : 14h heure de Paris et à Douala, 13h à Abidjan et Dakar.
+L'Atlético de Simeone se déplace à Valence avant de recevoir le Bayern mardi en Ligue des champions.
+L'équipe madrilène est l'une des plus solides d'Espagne et sait gagner les matchs serrés à l'extérieur. Levante joue avec cœur devant son public mais a moins de qualité.
+Mon choix : victoire de l'Atlético. Option plus prudente : Atlético ou match nul.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-01 16:15
+competition: Liga
+equipe1: Racing Santander
+equipe2: Real Madrid
+pronostic: Victoire du Real Madrid
+pronostic_en: Real Madrid to win
+pronostic_es: Gana el Real Madrid
+pronostic_ar: فوز ريال مدريد
+cote: 
+bookmaker: 1xbet
+analyse: Coup d'envoi dimanche 1er novembre : 16h15 heure de Paris et à Douala, 15h15 à Abidjan et Dakar.
+Après sa victoire dans le Clásico, le Real Madrid va à Santander, au stade El Sardinero, plein à craquer pour ce grand rendez-vous.
+Le Racing va tout donner devant son public, mais le Real a beaucoup plus de talent offensif et veut rester en tête de la Liga.
+Mon choix : victoire du Real Madrid. Option plus grosse cote : Real Madrid gagne et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
