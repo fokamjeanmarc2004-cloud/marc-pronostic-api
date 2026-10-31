@@ -640,6 +640,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-cameroun-namibie-2026-11-11"
+  to = "/pronostic-cameroun-namibie-2026-11-11.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-chelsea-manchester-united-2026-10-31"
   to = "/pronostic-chelsea-manchester-united-2026-10-31.html"
   status = 301

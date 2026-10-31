@@ -4935,7 +4935,7 @@ HOME_VENUE = {
     "AEK Athènes": ("OPAP Arena", "Athènes", "GR"), "Borussia Dortmund": ("Signal Iduna Park", "Dortmund", "DE"),
     "Milan": ("San Siro", "Milan", "IT"), "Juventus": ("Allianz Stadium", "Turin", "IT"),
     "Udinese": ("Bluenergy Stadium", "Udine", "IT"), "Levante": ("Ciutat de València", "Valence", "ES"),
-    "Racing Santander": ("El Sardinero", "Santander", "ES"),
+    "Racing Santander": ("El Sardinero", "Santander", "ES"), "Cameroun": ("Cameroun", "", "CM"),
     "Slavia Prague": ("Fortuna Arena", "Prague", "CZ"),
 }
 ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"),
@@ -5028,7 +5028,7 @@ COMP_L = {"Ligue des Champions": {"en": "Champions League", "es": "Liga de Campe
           "Serie A": {"en": "Serie A", "es": "Serie A", "ar": "الدوري الإيطالي"},
           "Bundesliga": {"en": "Bundesliga", "es": "Bundesliga", "ar": "الدوري الألماني"},
           "CAN": {"en": "AFCON", "es": "Copa Africana", "ar": "كأس أمم أفريقيا"}}
-TEAM_L = {"Milan": {"en": "AC Milan", "es": "AC Milan"}, "Inter": {"en": "Inter Milan", "es": "Inter de Milán"}, "Barcelone": {"en": "Barcelona", "es": "Barcelona"}, "Naples": {"en": "Napoli", "es": "Nápoles"},
+TEAM_L = {"Cameroun": {"en": "Cameroon", "es": "Camerún"}, "Namibie": {"en": "Namibia", "es": "Namibia"}, "Milan": {"en": "AC Milan", "es": "AC Milan"}, "Inter": {"en": "Inter Milan", "es": "Inter de Milán"}, "Barcelone": {"en": "Barcelona", "es": "Barcelona"}, "Naples": {"en": "Napoli", "es": "Nápoles"},
           "Sporting Portugal": {"en": "Sporting CP", "es": "Sporting de Portugal"},
           "Séville": {"en": "Sevilla", "es": "Sevilla"},
           "Slavia Prague": {"en": "Slavia Prague", "es": "Slavia de Praga"}, "Bayern Munich": {"en": "Bayern Munich", "es": "Bayern de Múnich"},
