@@ -364,6 +364,7 @@ ARTICLES = [
 <p>Je montre l'inscription complète et comment créer un compte authentique, étape par étape :</p>
 <div class="video yt-facade" data-yt="EnBk9p_Akvc" data-yt-title="Comment s'inscrire - tuto Cousin Marc"><img src="https://img.youtube.com/vi/EnBk9p_Akvc/hqdefault.jpg" alt="Comment s'inscrire - tuto Cousin Marc" loading="lazy"><span class="ytf-play">▶</span></div>
 <p style="margin-top:12px"><a href="https://youtu.be/EnBk9p_Akvc" rel="nofollow" style="color:var(--gold);font-weight:700">▶️ Regarder sur YouTube</a> &nbsp;·&nbsp; <a href="https://youtube.com/@prossport" rel="nofollow" style="color:var(--gold);font-weight:700">S'abonner à la chaîne</a></p>
+<p style="margin-top:10px">📱 Nouveau tuto inscription 1xBet (version courte, avec le code <b>FFN</b>), choisis ta langue : <a href="https://youtube.com/shorts/SJKZVnmO65M" rel="nofollow" style="color:var(--gold);font-weight:700">🇫🇷 Français</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/Gl9BeZE_FxE" rel="nofollow" style="color:var(--gold);font-weight:700">🇬🇧 English</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/vUIsSVGUUEE" rel="nofollow" style="color:var(--gold);font-weight:700"><bdi>🇸🇦 العربية</bdi></a></p>
 <h2>N'oublie pas le code promo</h2>
 <p>Le champ « code promo » apparaît pendant l'inscription. Si tu l'oublies à ce moment-là, tu ne pourras pas l'ajouter après coup. Colle donc bien <b>FFN</b> avant de finaliser. Tous les détails sont sur ma page <a href="code-promo-1xbet.html">code promo 1xBet</a>.</p>
 <h2>Vérifie ton compte dès le début</h2>
@@ -482,6 +483,7 @@ ARTICLES_ES = [
 <p>Muestro el registro completo y cómo crear una cuenta auténtica, paso a paso:</p>
 <div class="video yt-facade" data-yt="EnBk9p_Akvc" data-yt-title="Cómo registrarse - tutorial Cousin Marc"><img src="https://img.youtube.com/vi/EnBk9p_Akvc/hqdefault.jpg" alt="Cómo registrarse - tutorial Cousin Marc" loading="lazy"><span class="ytf-play">▶</span></div>
 <p style="margin-top:12px"><a href="https://youtu.be/EnBk9p_Akvc" rel="nofollow" style="color:var(--gold);font-weight:700">▶️ Ver en YouTube</a> &nbsp;·&nbsp; <a href="https://youtube.com/@prossport" rel="nofollow" style="color:var(--gold);font-weight:700">Suscribirse al canal</a></p>
+<p style="margin-top:10px">📱 Nuevo tutorial de registro 1xBet (versión corta, con el código <b>FFN</b>), elige tu idioma: <a href="https://youtube.com/shorts/SJKZVnmO65M" rel="nofollow" style="color:var(--gold);font-weight:700">🇫🇷 Français</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/Gl9BeZE_FxE" rel="nofollow" style="color:var(--gold);font-weight:700">🇬🇧 English</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/vUIsSVGUUEE" rel="nofollow" style="color:var(--gold);font-weight:700"><bdi>🇸🇦 العربية</bdi></a></p>
 <h2>No olvides el código promocional</h2>
 <p>El campo «código promocional» aparece durante el registro. Si lo olvidas en ese momento, no podrás añadirlo después. Así que pega bien <b>FFN</b> antes de finalizar. Todos los detalles están en mi página <a href="1xbet-codigo-promocional.html">código promocional 1xBet</a>.</p>
 <h2>Verifica tu cuenta desde el principio</h2>
@@ -593,6 +595,7 @@ ARTICLES_AR = [
 <p>أعرض التسجيل الكامل وكيفية إنشاء حساب صحيح، خطوة بخطوة:</p>
 <div class="video yt-facade" data-yt="EnBk9p_Akvc" data-yt-title="كيفية التسجيل - شرح Cousin Marc"><img src="https://img.youtube.com/vi/EnBk9p_Akvc/hqdefault.jpg" alt="كيفية التسجيل - شرح Cousin Marc" loading="lazy"><span class="ytf-play">▶</span></div>
 <p style="margin-top:12px"><a href="https://youtu.be/EnBk9p_Akvc" rel="nofollow" style="color:var(--gold);font-weight:700">▶️ المشاهدة على YouTube</a> &nbsp;·&nbsp; <a href="https://youtube.com/@prossport" rel="nofollow" style="color:var(--gold);font-weight:700">اشترك في القناة</a></p>
+<p style="margin-top:10px">📱 شرح جديد للتسجيل في 1xBet (نسخة قصيرة مع الرمز <b>FFN</b>)، اختر لغتك : <a href="https://youtube.com/shorts/SJKZVnmO65M" rel="nofollow" style="color:var(--gold);font-weight:700">🇫🇷 Français</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/Gl9BeZE_FxE" rel="nofollow" style="color:var(--gold);font-weight:700">🇬🇧 English</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/vUIsSVGUUEE" rel="nofollow" style="color:var(--gold);font-weight:700"><bdi>🇸🇦 العربية</bdi></a></p>
 <h2>لا تنسَ الرمز الترويجي</h2>
 <p>يظهر حقل «الرمز الترويجي» أثناء التسجيل. إذا نسيته في تلك اللحظة، لن تتمكن من إضافته لاحقًا. لذا أدخل <b>FFN</b> قبل إنهاء التسجيل. كل التفاصيل في صفحتي <a href="1xbet-promo-ar.html">الرمز الترويجي 1xBet</a>.</p>
 <h2>تحقق من حسابك من البداية</h2>
@@ -698,6 +701,7 @@ ARTICLES_EN = [
 <p>I show the full registration and how to create a genuine account, step by step:</p>
 <div class="video yt-facade" data-yt="EnBk9p_Akvc" data-yt-title="How to register - Cousin Marc tutorial"><img src="https://img.youtube.com/vi/EnBk9p_Akvc/hqdefault.jpg" alt="How to register - Cousin Marc tutorial" loading="lazy"><span class="ytf-play">▶</span></div>
 <p style="margin-top:12px"><a href="https://youtu.be/EnBk9p_Akvc" rel="nofollow" style="color:var(--gold);font-weight:700">▶️ Watch on YouTube</a> &nbsp;·&nbsp; <a href="https://youtube.com/@prossport" rel="nofollow" style="color:var(--gold);font-weight:700">Subscribe to the channel</a></p>
+<p style="margin-top:10px">📱 New 1xBet sign-up tutorial (short version, with code <b>FFN</b>), pick your language: <a href="https://youtube.com/shorts/SJKZVnmO65M" rel="nofollow" style="color:var(--gold);font-weight:700">🇫🇷 Français</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/Gl9BeZE_FxE" rel="nofollow" style="color:var(--gold);font-weight:700">🇬🇧 English</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/vUIsSVGUUEE" rel="nofollow" style="color:var(--gold);font-weight:700"><bdi>🇸🇦 العربية</bdi></a></p>
 <h2>Don't forget the promo code</h2>
 <p>The "promo code" field appears during registration. If you forget it at that moment, you cannot add it afterwards. So make sure to paste <b>FFN</b> before finalizing. All the details are on my <a href="1xbet-promo-code.html">1xBet promo code</a> page.</p>
 <h2>Verify your account from the start</h2>
