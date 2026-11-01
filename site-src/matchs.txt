@@ -541,11 +541,13 @@ pronostic_es: Gana el PSG
 pronostic_ar: فوز باريس سان جيرمان
 cote: 
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi vendredi 30 octobre : 19h heure de Paris et à Douala, 18h à Abidjan et Dakar.
 Le PSG ouvre la 9e journée de Ligue 1 au Havre, vendredi soir, quatre jours avant son déplacement à Villarreal en Ligue des champions.
 Le Havre se bat pour se maintenir et a du mal face aux grosses équipes. Même avec une petite rotation, le PSG a beaucoup plus de qualité.
 Mon choix : victoire du PSG. Pour une meilleure cote : le PSG gagne et marque au moins 2 buts.
 Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Le Havre 1-5 PSG. Pronostic gagné ✅ : large victoire du PSG, avec un triplé d'Achraf Hakimi.
 ---
 date: 2026-10-31 13:30
 competition: Premier League
@@ -557,12 +559,14 @@ pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 cote: 
 bookmaker: 1xbet
+resultat: perdu
 analyse: Coup d'envoi samedi 31 octobre : 13h30 heure de Paris et à Douala, 12h30 à Abidjan et Dakar.
 Le gros match du samedi midi en Premier League, à Stamford Bridge.
 Chelsea est 4e et vient de gagner 2-0 à Everton avec un doublé de Pedro Neto. L'équipe crée beaucoup d'occasions à domicile.
 Manchester United souffre en défense en ce moment et encaisse souvent, mais garde assez de talent devant pour marquer partout.
 Mon choix : les deux équipes marquent. Option : plus de 2,5 buts dans le match.
 Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Chelsea 2-0 Manchester United. Pronostic perdu ❌ : Manchester United n'a pas marqué.
 ---
 date: 2026-10-31 21:00
 competition: Liga
@@ -574,11 +578,13 @@ pronostic_es: Gana el Barcelona y más de 2,5 goles
 pronostic_ar: فوز برشلونة وأكثر من 2.5 هدف
 cote: 
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi samedi 31 octobre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Une semaine après le Clásico, le Barça reçoit Alavés samedi soir.
 Le Barça est l'attaque la plus forte de Liga : il marque très souvent 3 buts ou plus à domicile. Alavés défend bas, mais finit souvent par craquer face aux grandes équipes.
 Mon choix : le Barça gagne et il y a plus de 2,5 buts dans le match. Une belle cote pour un pari logique.
 Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Barcelone 6-1 Alavés. Pronostic gagné ✅ : victoire du Barça avec 7 buts dans le match.
 ---
 date: 2026-11-01 17:30
 competition: Premier League
@@ -823,11 +829,13 @@ pronostic_es: Roma o empate
 pronostic_ar: روما أو التعادل
 cote: 
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi samedi 31 octobre : 18h heure de Paris et à Douala, 17h à Abidjan et Dakar.
 La Roma se déplace dans le Frioul avec l'ambition de rester dans le haut du tableau.
 Udine est un terrain difficile, l'Udinese y défend bien et joue les contres, mais la Roma a plus de qualité individuelle.
 Mon choix : Roma ou match nul (double chance). Option plus grosse cote : victoire de la Roma.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Udinese 2-5 Roma. Pronostic gagné ✅ : large victoire de la Roma.
 ---
 date: 2026-10-31 18:30
 competition: Bundesliga
@@ -839,12 +847,14 @@ pronostic_es: Más de 2,5 goles
 pronostic_ar: أكثر من 2.5 هدف
 cote: 
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi samedi 31 octobre : 18h30 heure de Paris et à Douala, 17h30 à Abidjan et Dakar.
 C'est le Klassiker, le plus gros match d'Allemagne, à l'Allianz Arena.
 À domicile, le Bayern attaque sans arrêt et marque beaucoup. Dortmund aime jouer vite en contre-attaque et trouve presque toujours le chemin des filets.
 Ces dernières saisons, les Bayern–Dortmund à Munich ont très souvent donné beaucoup de buts.
 Mon choix : plus de 2,5 buts. Option plus grosse cote : victoire du Bayern et les deux équipes marquent.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Bayern Munich 2-2 Borussia Dortmund. Pronostic gagné ✅ : 4 buts dans le Klassiker.
 ---
 date: 2026-10-31 20:45
 competition: Serie A
@@ -856,11 +866,13 @@ pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 cote: 
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi samedi 31 octobre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
 Le derby de Milan à San Siro : l'AC Milan reçoit l'Inter dans le match le plus chaud d'Italie.
 Les deux clubs ont des attaquants de très haut niveau et visent le titre. Dans un derby, personne ne lâche rien et les deux équipes se créent des occasions.
 Mon choix : les deux équipes marquent. Option plus grosse cote : match nul.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Milan 3-1 Inter. Pronostic gagné ✅ : les deux équipes ont marqué.
 ---
 date: 2026-11-01 20:45
 competition: Serie A
@@ -893,11 +905,13 @@ pronostic_es: Gana el Atlético de Madrid
 pronostic_ar: فوز أتلتيكو مدريد
 cote: 
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi samedi 31 octobre : 14h heure de Paris et à Douala, 13h à Abidjan et Dakar.
 L'Atlético de Simeone se déplace à Valence avant de recevoir le Bayern mardi en Ligue des champions.
 L'équipe madrilène est l'une des plus solides d'Espagne et sait gagner les matchs serrés à l'extérieur. Levante joue avec cœur devant son public mais a moins de qualité.
 Mon choix : victoire de l'Atlético. Option plus prudente : Atlético ou match nul.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Levante 0-2 Atlético Madrid. Pronostic gagné ✅ : victoire de l'Atlético.
 ---
 date: 2026-11-01 16:15
 competition: Liga
