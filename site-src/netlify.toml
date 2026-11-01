@@ -594,6 +594,12 @@
   force = true
 
 [[redirects]]
+  from = "/paris-sportifs-tchad"
+  to = "/paris-sportifs-tchad.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/paris-sportifs-togo"
   to = "/paris-sportifs-togo.html"
   status = 301
@@ -1541,6 +1547,66 @@
 [[redirects]]
   from = "/code-promo-winwin-burkina-faso.html"
   to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-tchad"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-1xbet-tchad.html"
+  to = "/code-promo-1xbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-tchad"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-melbet-tchad.html"
+  to = "/code-promo-melbet.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-tchad"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-paripesa-tchad.html"
+  to = "/code-promo-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-tchad"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-winwin-tchad.html"
+  to = "/code-promo-winwin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-tchad"
+  to = "/code-promo-megapari.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code-promo-megapari-tchad.html"
+  to = "/code-promo-megapari.html"
   status = 301
   force = true
 

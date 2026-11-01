@@ -4448,7 +4448,7 @@ def country_page_tchad_ar():
 </section>
 <section id="football">
 <h2><span class="num">02</span> كرة القدم والمراهنات في تشاد</h2>
-<p>في تشاد، اللغتان الرسميتان هما <b>العربية والفرنسية</b>، ولذلك أكتب لك هذا الدليل بالعربية. يتابع المشجعون في <b>انجامينا وأبشي ومندو وسار</b> منتخب <b>الساو</b> بكل حماس، لكن أكثر المباريات التي يراهنون عليها هي مباريات الدوري الإنجليزي ودوري أبطال أوروبا والدوري الإسباني.</p>
+<p>في تشاد، اللغتان الرسميتان هما <b>العربية والفرنسية</b>، ولذلك أكتب لك هذا الدليل بالعربية (وهو متوفر أيضًا <a href="paris-sportifs-tchad.html" hreflang="fr">بالفرنسية</a>). يتابع المشجعون في <b>انجامينا وأبشي ومندو وسار</b> منتخب <b>الساو</b> بكل حماس، لكن أكثر المباريات التي يراهنون عليها هي مباريات الدوري الإنجليزي ودوري أبطال أوروبا والدوري الإسباني.</p>
 <p>تشاد تستعمل <b>الفرنك CFA (XAF)</b> مثل الكاميرون: نفس العملة ونفس حدود المكافأة، ونفس التوقيت تقريبًا. لذلك تصلح لك كل توقعاتي وقسائمي اليومية كما هي.</p>
 <p>الدفع بالهاتف هو الأكثر استعمالًا: <b>Airtel Money</b> و<b>Moov Money</b> هما الطريقتان المعتادتان للإيداع والسحب.</p>
 </section>
@@ -5107,11 +5107,19 @@ COUNTRIES = [
   "cities":"Ouagadougou, Bobo-Dioulasso, Koudougou et Banfora",
   "foot":"les Étalons du Burkina, l'ASFA Yennenga et le Rahimo FC",
   "books":["code-promo-1xbet","code-promo-melbet","code-promo-paripesa","code-promo-winwin"]},
+
+ {"slug":"tchad","name":"Tchad","adj":"tchadien","the":"au Tchad","in":"au Tchad",
+  "cur":"franc CFA (XAF)","cur_short":"FCFA",
+  "momo":["Airtel Money","Moov Money"],
+  "extra_pay":"cartes bancaires et cryptomonnaies (USDT, BTC)",
+  "cities":"N'Djamena, Moundou, Abéché et Sarh",
+  "foot":"les Sao du Tchad et les grands championnats européens",
+  "books":["code-promo-1xbet","code-promo-melbet","code-promo-paripesa","code-promo-winwin","code-promo-megapari"]},
 ]
 
 COUNTRY_ALIASES = {"rdc":["Congo (RDC)","RDC","Congo"],"cote-divoire":["Côte d'Ivoire"],
                    "cameroun":["Cameroun"],"senegal":["Sénégal"],"benin":["Bénin"],"mali":["Mali"],
-                   "togo":["Togo"],"burkina-faso":["Burkina Faso"]}
+                   "togo":["Togo"],"burkina-faso":["Burkina Faso"],"tchad":["Tchad"]}
 
 # Pages pays x bookmaker a conserver en URL dediee (verifie sur 3 mois de Search Console,
 # 2026-10-06 : 262 / 67 / 18 / 13 impressions respectivement, les 31 autres combos a 0-7
@@ -5320,6 +5328,8 @@ CTY_EXTRA = {
    "intro": "Au Mali, Orange Money et Moov Money permettent de déposer en quelques minutes, en francs CFA (XOF). Les Aigles, le Stade Malien et le Djoliba AC sont les équipes les plus suivies à Bamako."},
  "togo": {"utc": 0, "op": "la LONATO (Loterie Nationale Togolaise)",
    "intro": "Au Togo, on dépose surtout avec T-Money et Flooz, en francs CFA (XOF). Lomé rassemble la majorité des parieurs togolais de la communauté, qui suivent les Éperviers et les grands championnats européens."},
+ "tchad": {"utc": 1, "op_text": "Au Tchad, les jeux d'argent sont encadrés par l'État.",
+   "intro": "Au Tchad, on parie en francs CFA (XAF), la même monnaie qu'au Cameroun : les bonus ont donc les mêmes plafonds. Les dépôts se font surtout par Airtel Money et Moov Money, de N'Djamena à Moundou."},
  "burkina-faso": {"utc": 0, "op": "la LONAB (Loterie Nationale Burkinabè)",
    "intro": "Le Burkina Faso est le deuxième pays de la communauté Cousin Marc sur le site, porté par Ouagadougou et Bobo-Dioulasso. Les dépôts se font surtout par Orange Money et Moov Money, en francs CFA (XOF)."},
 }
@@ -5398,6 +5408,13 @@ CTY_GUIDE = {
   "tips": ["Choisis <b>Burkina Faso</b> et <b>XOF</b> à l'inscription.",
            "Dépose et retire avec le même numéro Orange ou Moov.",
            "De novembre à mars, un match à 21h à Paris se joue à 20h à Ouagadougou."]},
+ "tchad": {"team": "Tchad", "h2": "Le foot et les paris au Tchad", "p": [
+   "Au Tchad, on parle <b>français et arabe</b> : ce guide existe aussi <a href=\"promo-codes-tchad-ar.html\" hreflang=\"ar\">en arabe</a>. De N'Djamena à Abéché, de Moundou à Sarh, les supporters suivent les <b>Sao</b>, l'équipe nationale, mais les matchs les plus joués restent ceux de la Premier League, de la Ligue des champions, de la Liga et de la Ligue 1.",
+   "Le Tchad utilise le <b>franc CFA (XAF)</b> comme le Cameroun et vit à la même heure que Douala : mes pronostics, mes coupons du jour et les plafonds de bonus sont donc exactement les mêmes pour toi.",
+   "Pour déposer et retirer, on utilise surtout <b>Airtel Money</b> et <b>Moov Money</b>."],
+  "tips": ["Choisis <b>Tchad</b> et <b>XAF</b> à l'inscription : la devise est difficile à changer ensuite.",
+           "Dépose et retire avec le même numéro Airtel ou Moov que celui de ton compte.",
+           "De novembre à mars, un match à 21h à Paris se joue aussi à 21h à N'Djamena."]},
 }
 
 def cty_guide_html(c):
@@ -5455,7 +5472,7 @@ def country_hub_page(c):
 <section>
 <h2><span class="num">●</span> Les paris sportifs {c['in']} en bref</h2>
 <p>{CTY_EXTRA.get(c['slug'], {}).get('intro', '')}</p>
-<p>{_cap(CTY_EXTRA.get(c['slug'], {}).get('op', "l'opérateur national"))} est l'opérateur national historique des jeux et paris {c['the']}. Les bookmakers en ligne de ce site sont internationaux : vérifie toujours la réglementation locale avant de jouer. 18+.</p>
+<p>{CTY_EXTRA.get(c['slug'], {}).get('op_text') or _cap(CTY_EXTRA.get(c['slug'], {}).get('op', "l'opérateur national")) + " est l'opérateur national historique des jeux et paris " + c['the'] + "."} Les bookmakers en ligne de ce site sont internationaux : vérifie toujours la réglementation locale avant de jouer. 18+.</p>
 </section>
 {cty_guide_html(c)}
 <section id="heure-des-matchs">
@@ -5547,7 +5564,7 @@ def country_block_for_bk(b):
 def country_index_cards():
     out = ""
     FLAG = {"cameroun": ("🇨🇲", "#16a34a"), "cote-divoire": ("🇨🇮", "#f97316"), "senegal": ("🇸🇳", "#16a34a"), "rdc": ("🇨🇩", "#0ea5e9"),
-            "benin": ("🇧🇯", "#facc15"), "mali": ("🇲🇱", "#facc15"), "togo": ("🇹🇬", "#16a34a"), "burkina-faso": ("🇧🇫", "#dc2626")}
+            "benin": ("🇧🇯", "#facc15"), "mali": ("🇲🇱", "#facc15"), "togo": ("🇹🇬", "#16a34a"), "burkina-faso": ("🇧🇫", "#dc2626"), "tchad": ("🇹🇩", "#1d4ed8")}
     for c in COUNTRIES:
         n = len(c["books"])
         fl, fc = FLAG.get(c["slug"], ("🌍", "#2563eb"))
