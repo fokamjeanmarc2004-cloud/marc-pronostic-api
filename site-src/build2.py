@@ -1787,10 +1787,11 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
     oglocale = {"fr":"fr_FR","en":"en_US","es":"es_ES","ar":"ar_AR"}.get(lang,"fr_FR")
     diratt = ' dir="rtl"' if lang=="ar" else ''
     ogimg = image if image else f"{BASE}/og-cousinmarc-v3.jpg"
+    FONTS_Q = "family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;600;700;800" + ("&family=IBM+Plex+Sans+Arabic:wght@400;600;700" if lang == "ar" else "") + "&display=swap"
     return f"""<!DOCTYPE html>
 <html lang="{lang}"{diratt}><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Preload critical fonts for faster LCP --><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" /></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Preload critical fonts for faster LCP --><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?{FONTS_Q}" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?{FONTS_Q}" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?{FONTS_Q}" /></noscript>
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canonical}">
