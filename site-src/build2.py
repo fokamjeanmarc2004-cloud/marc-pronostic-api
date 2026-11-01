@@ -3058,14 +3058,37 @@ def actualites_page():
 {footer_html()}
 </body></html>"""
 
+COUPON_FAQ_FR = [
+    ("Où trouver un coupon 1xBet gratuit aujourd'hui ?", "Sur cette page : je publie chaque matin mon coupon Côte de 2 du jour, gratuit, avec une cote totale autour de 2. Il est aussi envoyé sur ma chaîne Telegram."),
+    ("Comment charger un code coupon sur 1xBet ?", "Ouvre 1xBet, va dans le coupon de paris, choisis « Charger un coupon » (ou « Code du coupon »), colle le code puis valide : les matchs s'ajoutent à ton ticket. Vérifie la mise avant de confirmer."),
+    ("Quand est publié le coupon de demain ?", "Le coupon du lendemain est publié le matin même, une fois les compositions et les cotes stables. Les analyses des gros matchs de demain sont déjà en ligne plus bas sur cette page."),
+    ("Un coupon score exact gratuit, ça vaut le coup ?", "Le score exact paie gros mais se trompe très souvent. Je ne le mets jamais dans la Côte de 2 : si tu en joues un, garde une toute petite mise."),
+]
+
+def _coupon_matchs_html():
+    now = datetime.datetime.now()
+    up = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
+    rows = "".join(
+        f'<li data-d="{m["dt"]:%Y-%m-%d}"><a href="{m["slug"]}.html"><b>{_JOURS_FR[m["dt"].weekday()].capitalize()} {m["dt"].day} {_MOIS_FR[m["dt"].month-1]}, {m["dt"]:%H}h{m["dt"]:%M}</b> · '
+        f'{html.escape(m["equipe1"])} – {html.escape(m["equipe2"])} · mon pronostic : {html.escape(m["pronostic"])}</a></li>'
+        for m in up[:12])
+    js = ("<script>(function(){try{var f=function(o){return new Date(Date.now()+o*864e5).toLocaleDateString('en-CA',{timeZone:'Africa/Douala'})},"
+          "t=f(0),d=f(1),ls=document.querySelectorAll('#matchs-jour li'),n=0;"
+          "ls.forEach(function(l){var k=l.getAttribute('data-d');if(k<t)l.style.display='none';if(k===t||k===d){n++;var b=l.querySelector('b');b.textContent=(k===t?\"Aujourd'hui\":'Demain')+b.textContent.replace(/^[^,]*/,'')}});"
+          "if(n)ls.forEach(function(l){var k=l.getAttribute('data-d');if(k!==t&&k!==d)l.style.display='none'})}catch(e){}})();</script>")
+    return f'<ul class="steps" id="matchs-jour">{rows}</ul>{js}' if rows else '<p>Les prochaines analyses arrivent bientôt.</p>'
+
 def cote_de_2_page():
     onex = next(b["site"] for b in BOOKMAKERS if b["slug"]=="code-promo-1xbet")
+    faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in COUPON_FAQ_FR]}, ensure_ascii=False)
+    faq_html = "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>" for q, a in COUPON_FAQ_FR)
     return head(
-        "Côte de 2 du jour : le coupon de Cousin Marc",
-        "Le coupon Côte de 2 du jour de Cousin Marc : un pari combiné avec une cote autour de 2, publié chaque matin. Code promo FFN.",
-        f"{BASE}/cote-de-2.html", nav=nav_fr(en="odds-of-2.html", es="cuota-de-2.html", ar="cote-2-ar.html"), alternates=(f"{BASE}/cote-de-2.html", f"{BASE}/odds-of-2.html", f"{BASE}/cuota-de-2.html", f"{BASE}/cote-2-ar.html")) + f"""
+        "Coupon 1xBet gratuit du jour : la côte de 2 | Cousin Marc",
+        "Coupon 1xBet gratuit aujourd'hui : ma côte de 2 du jour, publiée chaque matin, et les matchs d'aujourd'hui et de demain analysés. Code promo FFN.",
+        f"{BASE}/cote-de-2.html", f'<script type="application/ld+json">{faq}</script>', nav=nav_fr(en="odds-of-2.html", es="cuota-de-2.html", ar="cote-2-ar.html"), alternates=(f"{BASE}/cote-de-2.html", f"{BASE}/odds-of-2.html", f"{BASE}/cuota-de-2.html", f"{BASE}/cote-2-ar.html")) + f"""
 <header class="hero" style="padding:30px 0 20px"><div class="wrap">
-<p class="eyebrow">⚽ Coupon du jour</p>
+<p class="eyebrow">⚽ Coupon 1xBet gratuit du jour</p>
 <h1>Côte de <span class="hl">2</span></h1>
 </div></header>
 <main class="wrap">
@@ -3078,8 +3101,41 @@ def cote_de_2_page():
 </div>
 </section>
 <section>
+<h2><span class="num">●</span> Coupon 1xBet gratuit aujourd'hui</h2>
+<p>Le coupon ci-dessus, c'est <b>mon coupon gratuit du jour</b> : un combiné de quelques matchs que j'ai analysés, avec une cote totale autour de 2. Il est publié <b>chaque matin</b>, ici et sur ma chaîne Telegram. Pas besoin de payer ni de s'abonner pour l'avoir.</p>
+<p>Tu peux le jouer sur 1xBet, mais aussi sur Melbet, Paripesa ou WinWin : les matchs sont les mêmes, seules les cotes changent un peu d'un bookmaker à l'autre.</p>
+</section>
+<section>
+<h2><span class="num">●</span> Les matchs d'aujourd'hui et de demain</h2>
+<p>Mes analyses complètes des gros matchs, avec mon pronostic. Clique sur un match pour lire l'analyse :</p>
+{_coupon_matchs_html()}
+<p style="margin-top:10px"><a href="pronostics.html" style="color:var(--gold);font-weight:700">Voir toutes mes analyses →</a></p>
+</section>
+<section>
+<h2><span class="num">●</span> Comment charger un code coupon sur 1xBet</h2>
+<ul class="steps">
+<li>Ouvre l'application ou le site 1xBet et connecte-toi.</li>
+<li>Va dans le <b>coupon de paris</b> et choisis « Charger un coupon » (ou « Code du coupon »).</li>
+<li>Colle le code coupon que je partage sur Telegram et valide : les matchs s'ajoutent à ton ticket.</li>
+<li>Vérifie les matchs et la cote, entre ta mise, puis confirme.</li>
+</ul>
+<p>À ne pas confondre : le <b>code coupon</b> charge un ticket, le <a href="code-promo-1xbet.html">code promo 1xBet FFN</a> sert une seule fois, à l'inscription, pour avoir ton bonus.</p>
+</section>
+<section>
+<h2><span class="num">●</span> Et le coupon de demain ?</h2>
+<p>Le coupon de demain est publié <b>demain matin</b>, quand les compositions et les cotes sont plus sûres. En attendant, les analyses des gros matchs de demain sont déjà dans la liste plus haut. Pour être prévenu dès la publication, rejoins mon <a href="https://t.me/marc_prono" rel="nofollow">Telegram</a>.</p>
+</section>
+<section>
+<h2><span class="num">●</span> Score exact gratuit : mon avis</h2>
+<p>Beaucoup cherchent un « coupon score exact gratuit aujourd'hui ». Le score exact paie gros, mais il se trompe la plupart du temps, même pour les meilleurs pronostiqueurs. C'est pour ça que je ne le mets jamais dans la Côte de 2. Si tu veux en jouer un, garde une toute petite mise, et méfie-toi de ceux qui vendent des « scores exacts sûrs » : ça n'existe pas.</p>
+</section>
+<section>
 <h2><span class="num">●</span> C'est quoi la « Côte de 2 » ?</h2>
-<p>La « Côte de 2 », c'est un coupon combiné dont la cote totale tourne autour de 2. L'idée est simple : viser un gain régulier en doublant ta mise, avec un risque maîtrisé. Chaque matin, je publie ici mon coupon du jour.</p>
+<p>La « Côte de 2 », c'est un coupon combiné dont la cote totale tourne autour de 2. L'idée est simple : viser un gain régulier en doublant ta mise, avec un risque maîtrisé. Chaque matin, je publie ici mon coupon du jour. Mes résultats, gagnés comme perdus, sont sur la page <a href="resultats.html">Résultats</a>.</p>
+</section>
+<section>
+<h2><span class="num">●</span> Questions fréquentes</h2>
+{faq_html}
 </section>
 <section>
 <h2><span class="num">●</span> Joue avec le code promo</h2>
