@@ -2218,6 +2218,103 @@ BK_FAQ_FR["code-promo-megapari"] = _ffn_faq("Megapari", [("Comment vérifier un 
 BK_FAQ_FR["code-promo-goldpari"] = _ffn_faq("GoldPari", [("Puis-je utiliser FFN sur GoldPari et sur 1xBet ?", "Oui. Tu peux t'inscrire avec FFN chez plusieurs bookmakers différents. Ce qui est interdit, c'est d'avoir deux comptes chez le même bookmaker.")])
 BK_FAQ_FR["code-promo-afroparie"] = _ffn_faq("Afropari", [("Afropari et Afroparie, c'est pareil ?", "Oui, ce sont deux orthographes du même bookmaker. Le code promo est FFN dans les deux cas : 300% sur le premier dépôt, jusqu'à 300 000 FCFA.")])
 
+
+# Guide des bookmakers hors FFN (1win, Betwiner, Linebet, Fastparie) : pas de montant invente,
+# on reprend seulement b["bonus_max"] ; le plafond exact s'affiche dans le compte selon la devise.
+def _other_guide(b, extra=""):
+    name, code, bonus = b["name"], b["code"], b["bonus_max"]
+    pays = "".join(f"<tr><td>{c}</td><td>{m}</td></tr>" for c, m in _PAY_ROWS)
+    return f"""
+<section id="fiche">
+<h2>Code promo {name} {code} : la fiche en bref</h2>
+<div class="tablecard"><table><tbody>
+<tr><td>Code promo</td><td><b>{code}</b> (à saisir une seule fois, à l'inscription)</td></tr>
+<tr><td>Bonus de bienvenue</td><td><b>{bonus}</b> (le plafond exact dépend de ta devise)</td></tr>
+<tr><td>Pays</td><td>Afrique francophone (Cameroun, Côte d'Ivoire, Sénégal, Burkina, Mali, Bénin, Togo, RDC…) et de nombreux autres pays</td></tr>
+<tr><td>Paiement</td><td>Mobile Money (MTN, Orange, Moov, Wave, M-Pesa…), carte bancaire, crypto, selon le pays</td></tr>
+<tr><td>Dernière vérification</td><td>{VERIF_FR}, par Cousin Marc</td></tr>
+</tbody></table></div>
+</section>
+<section id="utiliser-code">
+<h2>Comment utiliser le code promo {name} {code}</h2>
+<ol class="steps">
+<li>Ouvre {name} avec le bouton de cette page et choisis <b>Inscription</b>.</li>
+<li>Choisis ton <b>pays</b> et ta <b>devise</b> (FCFA, CDF, dirham…) : ils ne se changent pas facilement après.</li>
+<li>Dans le champ <b>« Code promo »</b>, écris <b>{code}</b>, en majuscules, sans espace.</li>
+<li>Valide, complète ton profil, puis fais ton <b>premier dépôt</b> : le bonus s'ajoute automatiquement.</li>
+</ol>
+<p>Le champ code promo est souvent marqué « facultatif » : tu peux t'inscrire sans, mais <b>sans code, pas de bonus</b>, et on ne peut pas l'ajouter après l'inscription.</p>
+</section>
+<section id="conditions">
+<h2>Conditions du bonus {name} : à lire avant de déposer</h2>
+<ul class="steps">
+<li><b>Le bonus n'est pas retirable tout de suite.</b> Il doit d'abord être rejoué un certain nombre de fois, souvent en paris combinés avec une cote minimale.</li>
+<li><b>Les règles exactes dépendent de ton pays</b> : tu les trouves dans ton compte, rubrique « Bonus » ou « Promotions », juste après ton dépôt.</li>
+<li><b>Un seul compte par personne</b> (même téléphone, même numéro Mobile Money). Un deuxième compte peut être bloqué, avec ses gains.</li>
+<li><b>Ton profil doit être complet</b> (nom, date de naissance, téléphone vérifié) pour pouvoir retirer.</li>
+</ul>
+</section>
+<section id="depot-retrait">
+<h2>Dépôt et retrait sur {name} en Afrique</h2>
+<div class="tablecard"><table>
+<thead><tr><th>Pays</th><th>Moyens de paiement les plus utilisés</th></tr></thead>
+<tbody>{pays}</tbody></table></div>
+<p style="margin-top:12px">Les moyens proposés peuvent varier : vérifie dans la caisse de {name} avant de déposer. Retire toujours vers le même moyen que ton dépôt. Le pas à pas : <a href="deposer-retirer-paris-afrique.html">déposer et retirer en Afrique</a>. Un souci avec le code ? <a href="code-promo-ne-marche-pas.html">Voici les solutions</a>.</p>
+</section>
+{extra}
+<section id="autres-codes">
+<h2>{name} ou un bookmaker avec le code FFN ?</h2>
+<p>Tu peux avoir un compte chez plusieurs bookmakers différents. Si tu veux comparer, mon code <b>FFN</b> donne <b>300% sur le premier dépôt, jusqu'à 300 000 FCFA</b> chez mes partenaires principaux : <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a>, <a href="code-promo-paripesa.html">Paripesa</a> et <a href="code-promo-winwin.html">WinWin</a>.</p>
+<p>Mes analyses de match sont dans l'onglet <a href="pronostics.html">Analyses</a>, et mon <a href="cote-de-2.html">coupon gratuit du jour</a> est publié chaque matin : tu peux les jouer sur {name} aussi.</p>
+</section>
+"""
+
+def _other_faq(name, code, bonus, extra=()):
+    return list(extra) + [
+        (f"J'ai oublié le code promo {name}, que faire ?", f"Le code ne peut pas être ajouté après l'inscription. Contacte le support {name} depuis ton compte, avant ton premier dépôt, et explique que tu voulais utiliser {code}. Ne crée pas de deuxième compte."),
+        (f"Le code promo {name} marche-t-il au Cameroun et en Côte d'Ivoire ?", f"Oui. {code} fonctionne dans les pays où {name} accepte les inscriptions, dont le Cameroun, la Côte d'Ivoire et le Sénégal. Seul le plafond du bonus change selon ta devise."),
+        (f"Quel bonus avec le code promo {name} {code} ?", f"Le bonus de bienvenue est de {bonus}. Le plafond exact dépend de ta devise et s'affiche dans ton compte après l'inscription."),
+    ]
+
+BK_GUIDE_FR["code-promo-1win"] = lambda b: _other_guide(b, """
+<section id="bonus-1win">
+<h2>Le bonus 1win : jusqu'à 500% sur les premiers dépôts</h2>
+<p>Particularité de 1win : le bonus de bienvenue n'est pas versé sur un seul dépôt, il est <b>réparti sur tes premiers dépôts</b>, avec un pourcentage qui baisse à chaque fois. Au total, il peut atteindre <b>500%</b>. Le détail exact (pourcentage par dépôt, plafond dans ta devise) s'affiche dans ton compte, rubrique « Bonus ».</p>
+<p>Conseil : lis bien les conditions de mise avant de faire ton premier dépôt, et ne dépose que ce que tu peux te permettre de perdre.</p>
+</section>
+<section id="application">
+<h2>Application 1win : Android et iPhone</h2>
+<p>1win a une application Android (fichier APK depuis le site officiel) et une version iPhone. Le code <b>ESS22</b> se met dans le formulaire d'inscription de l'application, exactement comme sur le site.</p>
+</section>""")
+BK_FAQ_FR["code-promo-1win"] = _other_faq("1win", "ESS22", "jusqu'à 500% sur les premiers dépôts",
+    [("Comment marche le bonus 500% de 1win ?", "Le bonus est réparti sur tes premiers dépôts, avec un pourcentage dégressif. Au total, il peut atteindre 500%. Le détail s'affiche dans ton compte 1win après l'inscription avec le code ESS22.")])
+
+BK_GUIDE_FR["code-promo-betwiner"] = lambda b: _other_guide(b, """
+<section id="orthographe">
+<h2>Betwiner ou Betwinner : c'est le même bookmaker</h2>
+<p>Tu verras les deux orthographes, <b>Betwiner</b> (un seul n) et <b>Betwinner</b> : il s'agit du même site de paris. Le code promo de Cousin Marc est le même dans les deux cas : <b>CMF</b>.</p>
+<p>Betwinner est très présent en Afrique francophone, avec un large choix de matchs, des paris en direct et des dépôts par Mobile Money.</p>
+</section>""")
+BK_FAQ_FR["code-promo-betwiner"] = _other_faq("Betwiner", "CMF", "100% sur le 1er dépôt",
+    [("Betwiner et Betwinner, c'est pareil ?", "Oui, ce sont deux orthographes du même bookmaker. Le code promo est CMF dans les deux cas.")])
+
+BK_GUIDE_FR["code-promo-linebet"] = lambda b: _other_guide(b, """
+<section id="linebet">
+<h2>Linebet en Afrique</h2>
+<p>Linebet est un bookmaker en ligne présent en Afrique de l'Ouest et du Centre, au Cameroun, au Sénégal ou au Nigeria notamment. Le code promo <b>ESS22</b> est le même dans tous les pays : seul le plafond du bonus dépend de ta devise.</p>
+<p>Comme pour tous les bookmakers, choisis bien ton pays et ta devise à l'inscription, et garde le même numéro Mobile Money pour tes dépôts et tes retraits.</p>
+</section>""")
+BK_FAQ_FR["code-promo-linebet"] = _other_faq("Linebet", "ESS22", "100% sur le 1er dépôt")
+
+BK_GUIDE_FR["code-promo-fastparie"] = lambda b: _other_guide(b, """
+<section id="orthographe">
+<h2>Fastpari ou Fastparie : c'est le même bookmaker</h2>
+<p>Tu verras <b>Fastpari</b> et <b>Fastparie</b> : c'est le même site de paris. Le code promo de Cousin Marc est le même dans les deux cas : <b>FJM</b>.</p>
+<p>Fastpari est disponible au Sénégal, au Cameroun, en Côte d'Ivoire et dans d'autres pays d'Afrique, avec des dépôts par Mobile Money.</p>
+</section>""")
+BK_FAQ_FR["code-promo-fastparie"] = _other_faq("Fastparie", "FJM", "100% sur le 1er dépôt",
+    [("Fastpari et Fastparie, c'est pareil ?", "Oui, ce sont deux orthographes du même bookmaker. Le code promo est FJM dans les deux cas.")])
+
 def bookmaker_page(b):
     name, code, slug = b["name"], b["code"], b["slug"]
     extra = f'<script type="application/ld+json">\n{faq_jsonld(name, code, BK_FAQ_FR.get(slug, ()))}\n</script>'
@@ -2421,6 +2518,19 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
     verified = T["verified"].replace("{d}", day)
     trust = "".join(f'<div><b>{v.replace("{n}", str(len(BOOKMAKERS)))}</b>{t}</div>' for v, t in T["trust"])
     facts = "".join(f'<div class="fact"><span class="fi">{i}</span><div><b>{t}</b><span>{d}</span></div></div>' for i, t, d in T["facts"])
+    # bilan reel des pronostics publies (calcule depuis matchs.txt)
+    _done = sorted([m for m in MATCHS if _RES_FR.get(m.get("resultat", "").lower(), (0, ""))[1] in ("win", "lose")], key=lambda m: m["dt"])
+    _w = sum(1 for m in _done if _RES_FR[m["resultat"].lower()][1] == "win")
+    bilan = ""
+    if _done:
+        _pc = round(100 * _w / len(_done))
+        _last = "".join("✅" if _RES_FR[m["resultat"].lower()][1] == "win" else "❌" for m in _done[-8:])
+        _lab = {"fr": (f"Mon bilan : <b>{_w} pronostics gagnés sur {len(_done)}</b> ({_pc} %)", "Derniers résultats", "Voir tous mes résultats"),
+                "en": (f"My record: <b>{_w} predictions won out of {len(_done)}</b> ({_pc}%)", "Latest results", "See all my results"),
+                "es": (f"Mi balance: <b>{_w} pronósticos ganados de {len(_done)}</b> ({_pc} %)", "Últimos resultados", "Ver todos mis resultados"),
+                "ar": (f"حصيلتي: <b>{_w} توقعات رابحة من {len(_done)}</b> ({_pc}%)", "آخر النتائج", "كل نتائجي")}[lang]
+        bilan = (f'<div class="note" style="margin-top:16px;text-align:center">📊 {_lab[0]} · {_lab[1]} : <span aria-label="{_lab[1]}">{_last}</span> · '
+                 f'<a href="{U["res"]}" style="color:var(--gold);font-weight:700">{_lab[2]} →</a></div>')
     countries = ""
     matchs_home = ""
     compare_home = ""
@@ -2451,6 +2561,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 <p class="lead">{T["lead"]}</p>
 <div class="btnrow"><a class="cta" href="#bookmakers">{T["cta1"]}</a><a class="cta alt" href="#coupon-du-jour">{T["cta2"]}</a></div>
 <div class="home-trust">{trust}</div>
+{bilan}
 <div class="topcodes">{top}</div>
 </div></header>
 
