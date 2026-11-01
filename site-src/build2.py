@@ -2588,10 +2588,15 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
     if _done:
         _pc = round(100 * _w / len(_done))
         _last = "".join("✅" if _RES_FR[m["resultat"].lower()][1] == "win" else "❌" for m in _done[-8:])
+        _d30 = [m for m in _done if m["dt"] >= datetime.datetime.now() - datetime.timedelta(days=30)]
+        _p30 = round(100 * sum(1 for m in _d30 if _RES_FR[m["resultat"].lower()][1] == "win") / len(_d30)) if len(_d30) >= 5 else None
         _lab = {"fr": (f"Mon bilan : <b>{_w} pronostics gagnés sur {len(_done)}</b> ({_pc} %)", "Derniers résultats", "Voir tous mes résultats"),
                 "en": (f"My record: <b>{_w} predictions won out of {len(_done)}</b> ({_pc}%)", "Latest results", "See all my results"),
                 "es": (f"Mi balance: <b>{_w} pronósticos ganados de {len(_done)}</b> ({_pc} %)", "Últimos resultados", "Ver todos mis resultados"),
                 "ar": (f"حصيلتي: <b>{_w} توقعات رابحة من {len(_done)}</b> ({_pc}%)", "آخر النتائج", "كل نتائجي")}[lang]
+        if _p30 is not None:
+            _lab = (_lab[0] + {"fr": f" · <b>{_p30} %</b> sur les 30 derniers jours", "en": f" · <b>{_p30}%</b> over the last 30 days",
+                               "es": f" · <b>{_p30} %</b> en los últimos 30 días", "ar": f" · <b>{_p30}%</b> خلال آخر 30 يومًا"}[lang],) + _lab[1:]
         bilan = (f'<div class="note" style="margin-top:16px;text-align:center">📊 {_lab[0]} · {_lab[1]} : <span aria-label="{_lab[1]}">{_last}</span> · '
                  f'<a href="{U["res"]}" style="color:var(--gold);font-weight:700">{_lab[2]} →</a></div>')
     countries = ""
@@ -2734,6 +2739,7 @@ def pronostics_page():
 <h1>Pronostics foot <span class="hl">du jour</span></h1>
 <p class="sub">Mes analyses des grands matchs : Ligue des champions, Premier League, Liga, Ligue 1, CAN… Pour chaque match : mon pronostic, la cote, mon avis, puis le résultat.</p>
 <div class="astats">{stats}</div>
+{nav_links_html("fr")}
 </div></header>
 <main class="wrap">
 {combine_html()}
@@ -3181,7 +3187,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, HELP_SLUG, "affiche.html"] + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [COMPARE_SLUG, HELP_SLUG, "affiche.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -4006,6 +4012,7 @@ def predictions_page_en():
 <p class="eyebrow">⚽ Analysis & Predictions</p>
 <h1>Daily <span class="hl">Predictions</span></h1>
 <p class="sub">My free football analysis. For early predictions and VIP accumulators, join my Telegram and WhatsApp community.</p>
+{nav_links_html("en")}
 <div class="btnrow"><a class="cta" href="https://t.me/marc_prono" rel="nofollow">✈️ Telegram</a><a class="cta alt" href="https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h" rel="nofollow">💬 WhatsApp</a></div>
 </div></header>
 <main class="wrap">
@@ -5865,7 +5872,7 @@ def match_page(m):
     if m.get("slug_ar"): en_link += f' · <a href="{m["slug_ar"]}.html" hreflang="ar" style="color:inherit">العربية</a>'
     return head(html.escape(title), html.escape(desc), f'{BASE}/{m["slug"]}.html', extra=f'<script type="application/ld+json">{jsonld}</script>', alternates=alt, image=match_og_image(m)) + f"""
 <header class="hero"><div class="wrap">
-<p class="eyebrow"><a href="pronostics.html" style="color:inherit">📊 Toutes les analyses</a> · {html.escape(m.get("competition", "Football"))} · {_date_fr(m["dt"])}{en_link}</p>
+<p class="eyebrow"><a href="pronostics.html" style="color:inherit">📊 Toutes les analyses</a> · {comp_link(m.get("competition", "Football"))} · {_date_fr(m["dt"])}{en_link}</p>
 <h1>Pronostic {html.escape(e1)} <span class="hl">vs</span> {html.escape(e2)}</h1>
 {match_card(m, link=False)}
 <div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Jouer ce pronostic sur {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 Code {b["code"]}</button></div>
@@ -5911,7 +5918,7 @@ def match_page_en(m):
     return head(html.escape(title), html.escape(desc), canon, extra=f'<script type="application/ld+json">{json.dumps(ev, ensure_ascii=False)}</script>',
                 nav=nav_en(fr=f'{m["slug"]}.html', ar=f'{m.get("slug_ar") or "pronostics-ar"}.html'), lang="en", alternates=(f'{BASE}/{m["slug"]}.html', canon) + ((None, f'{BASE}/{m["slug_ar"]}.html') if m.get("slug_ar") else ()), image=match_og_image(m, "en")) + f"""
 <header class="hero"><div class="wrap">
-<p class="eyebrow"><a href="predictions.html" style="color:inherit">📊 All predictions</a> · {html.escape(comp)} · {when} · <a href="{m["slug"]}.html" hreflang="fr" style="color:inherit">🇫🇷 Français</a>{f' · <a href="{m["slug_ar"]}.html" hreflang="ar" style="color:inherit">العربية</a>' if m.get("slug_ar") else ""}</p>
+<p class="eyebrow"><a href="predictions.html" style="color:inherit">📊 All predictions</a> · {comp_link(m.get("competition", ""), "en")} · {when} · <a href="{m["slug"]}.html" hreflang="fr" style="color:inherit">🇫🇷 Français</a>{f' · <a href="{m["slug_ar"]}.html" hreflang="ar" style="color:inherit">العربية</a>' if m.get("slug_ar") else ""}</p>
 <h1>{html.escape(e1)} <span class="hl">vs</span> {html.escape(e2)} prediction</h1>
 <div class="mcard big"><div class="mmeta">{html.escape(comp)} · {d:%H:%M} Lagos / Douala time</div>
 <div class="mteams"><b>{html.escape(e1)}</b><span>vs</span><b>{html.escape(e2)}</b></div>
@@ -6138,6 +6145,204 @@ for _c in COUNTRIES_EN:
     open(os.path.join(OUT, cty_en_slug(_c) + ".html"), "w", encoding="utf-8").write(country_page_en(_c)); written.append(cty_en_slug(_c) + ".html")
 for b in BOOKMAKERS:
     open(os.path.join(OUT,f"{b['slug']}.html"),"w",encoding="utf-8").write(bookmaker_page(b)); written.append(f"{b['slug']}.html")
+
+# ============================================================
+#  PAGES « AUJOURD'HUI / DEMAIN » ET PAGES PAR COMPETITION (comme Forebet, PredictZ, Betensured)
+#  Le bot reconstruit le site chaque matin a 6h (site-src/jour.txt) : la date du titre reste juste.
+# ============================================================
+NEW_PAGES = []
+_DLA_NOW = datetime.datetime.utcnow() + datetime.timedelta(hours=1)   # heure de Douala
+DAY_SLUGS = {"fr": ("pronostic-foot-aujourdhui", "pronostic-foot-demain"),
+             "en": ("football-predictions-today", "football-predictions-tomorrow")}
+# competition -> (page FR, page EN, intro FR, intro EN)
+COMP_PAGES = {
+ "Ligue des Champions": ("pronostic-ligue-des-champions", "champions-league-predictions",
+   "La Ligue des champions est la compétition la plus jouée par les parieurs africains : les meilleurs clubs d'Europe, des matchs le mardi et le mercredi soir, et des cotes très suivies. Voici toutes mes analyses de la phase de ligue, avec mon pronostic avant le match et le résultat après.",
+   "The Champions League is the most bet-on competition among African punters: Europe's best clubs, Tuesday and Wednesday night games and closely watched odds. Here are all my league-phase analyses, with my pick before the game and the result after."),
+ "Premier League": ("pronostic-premier-league", "premier-league-predictions",
+   "La Premier League est le championnat le plus regardé en Afrique. Arsenal, Manchester City, Liverpool, Chelsea et Manchester United : j'analyse les grosses affiches du week-end.",
+   "The Premier League is the most watched league in Africa, from Lagos to Nairobi. Arsenal, Manchester City, Liverpool, Chelsea and Manchester United: I analyse the big weekend games."),
+ "Liga": ("pronostic-liga", "la-liga-predictions",
+   "Real Madrid, Barça, Atlético : la Liga espagnole reste une valeur sûre pour les paris. Mes analyses des grands matchs, avec le résultat de chaque pronostic.",
+   "Real Madrid, Barcelona, Atlético: La Liga is a safe bet for football fans. My analysis of the big games, with the result of every prediction."),
+ "Ligue 1": ("pronostic-ligue-1", "ligue-1-predictions",
+   "Le PSG, l'OM, Lyon, Monaco, Lille : la Ligue 1 est le championnat de cœur de l'Afrique francophone. Mes pronostics des grosses affiches et leurs résultats.",
+   "PSG, Marseille, Lyon, Monaco, Lille: Ligue 1 is followed all over French-speaking Africa. My predictions for the big games and their results."),
+ "Serie A": ("pronostic-serie-a", "serie-a-predictions",
+   "Inter, Milan, Juventus, Naples, Roma : la Serie A offre des matchs souvent serrés, parfaits pour les paris sur les buts. Mes analyses et mes résultats.",
+   "Inter, Milan, Juventus, Napoli, Roma: Serie A often gives tight games, perfect for goals markets. My analysis and results."),
+ "Bundesliga": ("pronostic-bundesliga", "bundesliga-predictions",
+   "Le Bayern Munich et le Borussia Dortmund dominent une Bundesliga où l'on marque beaucoup. Mes pronostics des grands matchs allemands.",
+   "Bayern Munich and Borussia Dortmund lead a Bundesliga full of goals. My predictions for the big German games."),
+ "Éliminatoires CAN 2027": ("pronostic-eliminatoires-can-2027", "afcon-2027-qualifiers-predictions",
+   "Les éliminatoires de la CAN 2027 : Cameroun, Côte d'Ivoire, Sénégal et les autres sélections africaines. Mes pronostics des matchs des Lions et des grandes équipes du continent.",
+   "AFCON 2027 qualifiers: Cameroon, Ivory Coast, Senegal, Nigeria and Africa's other big teams. My predictions for the national team games."),
+}
+
+def _comp_ms(comp): return [m for m in MATCHS if m.get("competition") == comp]
+def comp_page_ok(comp): return comp in COMP_PAGES and len(_comp_ms(comp)) >= 3
+def comp_link(comp, lang="fr"):
+    if not comp_page_ok(comp):
+        return html.escape(COMP_L.get(comp, {}).get(lang, comp) if lang != "fr" else comp)
+    sl = COMP_PAGES[comp][0 if lang == "fr" else 1]
+    return f'<a href="{sl}.html" style="color:inherit">{html.escape(COMP_L.get(comp, {}).get(lang, comp) if lang != "fr" else comp)}</a>'
+
+def _day_lab(d, lang):
+    return (f"{_JOURS_FR[d.weekday()]} {d.day} {_MOIS_FR[d.month-1]} {d.year}" if lang == "fr"
+            else f"{_JOURS_L['en'][d.weekday()]} {_MOIS_EN[d.month-1]} {d.day}, {d.year}")
+def _cardl(m, lang): return match_card(m) if lang == "fr" else match_card_l(m, "en")
+def _grid(ms, lang): return f'<div class="mgrid">{"".join(_cardl(m, lang) for m in ms)}</div>'
+def _record(ms):
+    r = [_RES_FR.get(m.get("resultat", "").lower(), (0, ""))[1] for m in ms]
+    return r.count("win"), r.count("lose")
+
+_PG_CSS = """<style>.astats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+.astats div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 16px;font-size:13px;color:var(--muted);font-weight:600}
+.astats b{display:block;font-family:var(--display);font-size:24px;color:var(--ink)}
+.linkchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.linkchips a{font-size:13px;font-weight:700;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink)}</style>"""
+
+def nav_links_html(lang, current=""):
+    """Puces de liens : aujourd'hui, demain et chaque competition (maillage interne)."""
+    t1, t2 = DAY_SLUGS[lang]
+    items = [(t1, "📅 Aujourd'hui" if lang == "fr" else "📅 Today"), (t2, "➡️ Demain" if lang == "fr" else "➡️ Tomorrow")]
+    for comp, v in COMP_PAGES.items():
+        if comp_page_ok(comp):
+            items.append((v[0] if lang == "fr" else v[1], comp if lang == "fr" else COMP_L.get(comp, {}).get("en", comp)))
+    return '<div class="linkchips">' + "".join(f'<a href="{s}.html">{html.escape(l)}</a>' for s, l in items if s != current) + "</div>"
+
+def _stats_html(ms, lang):
+    w, l = _record(ms)
+    if not w + l: return ""
+    lab = ("gagnés", "perdus", "de réussite") if lang == "fr" else ("won", "lost", "success rate")
+    return f'<div class="astats"><div><b>{w}</b>{lab[0]}</div><div><b>{l}</b>{lab[1]}</div><div><b>{round(100 * w / (w + l))} %</b>{lab[2]}</div></div>'
+
+def _itemlist(ms, lang, name):
+    key = "slug" if lang == "fr" else "slug_en"
+    return json.dumps({"@context": "https://schema.org", "@type": "ItemList", "name": name, "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "url": f'{BASE}/{m.get(key) or m["slug"]}.html'} for i, m in enumerate(ms)]}, ensure_ascii=False)
+
+def day_page(lang, offset):
+    d = (_DLA_NOW + datetime.timedelta(days=offset)).date()
+    slug = DAY_SLUGS[lang][offset]
+    ms = sorted([m for m in MATCHS if m["dt"].date() == d], key=lambda m: m["dt"])
+    nxt = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"].date() > d], key=lambda m: m["dt"])[:6]
+    lab = _day_lab(d, lang)
+    names = ", ".join(f'{_team_l(m["equipe1"], lang) if lang != "fr" else m["equipe1"]}–{_team_l(m["equipe2"], lang) if lang != "fr" else m["equipe2"]}' for m in ms[:3])
+    alt = (f"{BASE}/{DAY_SLUGS['fr'][offset]}.html", f"{BASE}/{DAY_SLUGS['en'][offset]}.html")
+    if lang == "fr":
+        word = "aujourd'hui" if offset == 0 else "demain"
+        title = f"Pronostic foot {word} ({_JOURS_FR[d.weekday()]} {d.day} {_MOIS_FR[d.month-1]}) | Cousin Marc"
+        desc = (f"Mes pronostics foot pour {word}, {lab} : {names}. Analyse gratuite de chaque match et code promo FFN." if ms
+                else f"Pronostic foot {word}, {lab} : mes analyses gratuites des grands matchs, le coupon du jour et mes prochains pronostics.")
+        found = (f'<h2><span class="num">⚽</span> Mes pronostics du {lab}</h2>{_grid(ms, lang)}' if ms else
+                 f'<h2><span class="num">⚽</span> Mes pronostics du {lab}</h2><p>Pas de grand match analysé ce jour-là. Pour jouer quand même, prends mon <a href="cote-de-2.html">coupon gratuit du jour (côte de 2)</a>, ou regarde mes prochains matchs ci-dessous.</p>')
+        nexth = f'<section><h2><span class="num">→</span> Mes prochains pronostics</h2>{_grid(nxt, lang)}</section>' if nxt else ""
+        body = f"""<header class="hero"><div class="wrap">
+<p class="eyebrow">📅 {lab} · <a href="pronostics.html" style="color:inherit">Tous mes pronostics</a></p>
+<h1>Pronostic foot <span class="hl">{word}</span></h1>
+<p class="sub">Les grands matchs du {lab}, avec mon pronostic et mon analyse pour chacun. Heures de Douala (heure de Paris en hiver).</p>
+{nav_links_html("fr", slug)}
+</div></header>
+<main class="wrap">
+<section id="matchs">{found}</section>
+{combine_html()}
+{nexth}
+<section><h2><span class="num">?</span> Comment je choisis mes pronostics</h2>
+<p>Je ne publie pas 200 matchs par jour comme les robots de pronostics : je choisis seulement les grandes affiches que je connais (Ligue des champions, Premier League, Liga, Ligue 1, Serie A, sélections africaines), et j'écris une vraie analyse pour chacune. Après le match, je garde le résultat en ligne, gagné ou perdu : c'est plus honnête.</p>
+{_stats_html(MATCHS, "fr")}
+<p style="margin-top:12px"><a href="{RESULTS_SLUG['fr']}">Voir tous mes résultats →</a></p>
+<div class="note">Pour jouer ces pronostics, inscris-toi sur <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a> ou <a href="code-promo-paripesa.html">Paripesa</a> avec le code promo <b>FFN</b> : 300 % de bonus sur ton premier dépôt. 18+, un pronostic n'est jamais sûr.</div>
+</section>
+</main>
+{footer_html()}"""
+        nav = nav_fr(en=f"{DAY_SLUGS['en'][offset]}.html")
+    else:
+        word = "today" if offset == 0 else "tomorrow"
+        title = f"Football Predictions {word.capitalize()} ({_JOURS_L['en'][d.weekday()]} {_MOIS_EN[d.month-1]} {d.day}) | Cousin Marc"
+        desc = (f"My football predictions for {word}, {lab}: {names}. Free analysis of every game, promo code FFN." if ms
+                else f"Football predictions for {word}, {lab}: my free analysis of the big games, the free slip of the day and my next picks.")
+        found = (f'<h2><span class="num">⚽</span> My predictions for {lab}</h2>{_grid(ms, lang)}' if ms else
+                 f'<h2><span class="num">⚽</span> My predictions for {lab}</h2><p>No big game analysed on this day. You can still play my <a href="odds-of-2.html">free slip of the day (odds of 2)</a>, or check my next games below.</p>')
+        nexth = f'<section><h2><span class="num">→</span> My next predictions</h2>{_grid(nxt, lang)}</section>' if nxt else ""
+        body = f"""<header class="hero"><div class="wrap">
+<p class="eyebrow">📅 {lab} · <a href="predictions.html" style="color:inherit">All my predictions</a></p>
+<h1>Football predictions <span class="hl">{word}</span></h1>
+<p class="sub">The big games of {lab}, with my pick and my analysis for each one. Times in Lagos and Douala (1 hour earlier in Accra, 2 hours later in Nairobi).</p>
+{nav_links_html("en", slug)}
+</div></header>
+<main class="wrap">
+<section id="matchs">{found}</section>
+{nexth}
+<section><h2><span class="num">?</span> How I choose my predictions</h2>
+<p>I don't publish 200 games a day like prediction robots: I only pick the big games I know well (Champions League, Premier League, La Liga, Ligue 1, Serie A, African national teams) and I write a real analysis for each. After the game, the result stays online, won or lost: that's more honest.</p>
+{_stats_html(MATCHS, "en")}
+<p style="margin-top:12px"><a href="{RESULTS_SLUG['en']}">See all my results →</a></p>
+<div class="note">To play these predictions, sign up on <a href="1xbet-promo-code.html">1xBet</a>, <a href="melbet-promo-code.html">Melbet</a> or <a href="paripesa-promo-code.html">Paripesa</a> with the promo code <b>FFN</b>: 300% bonus on your first deposit. 18+, no prediction is ever certain.</div>
+</section>
+</main>
+{footer_html_en()}"""
+        nav = nav_en(fr=f"{DAY_SLUGS['fr'][offset]}.html")
+    return head(html.escape(title), html.escape(desc), f"{BASE}/{slug}.html", extra=_PG_CSS + f'<script type="application/ld+json">{_itemlist(ms, lang, title)}</script>',
+                nav=nav, lang=lang, alternates=alt) + body + "\n</body></html>"
+
+def comp_page(comp, lang):
+    fr_sl, en_sl, intro_fr, intro_en = COMP_PAGES[comp]
+    slug = fr_sl if lang == "fr" else en_sl
+    ms = _comp_ms(comp)
+    now = datetime.datetime.now()
+    up = sorted([m for m in ms if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
+    done = sorted([m for m in ms if m not in up], key=lambda m: m["dt"], reverse=True)[:12]
+    alt = (f"{BASE}/{fr_sl}.html", f"{BASE}/{en_sl}.html")
+    name = comp if lang == "fr" else COMP_L.get(comp, {}).get("en", comp)
+    if lang == "fr":
+        title = f"Pronostic {comp} : mes analyses et résultats | Cousin Marc"
+        desc = f"Mes pronostics {comp} gratuits : analyse de chaque grand match, mon choix et le résultat. Code promo FFN pour ton bonus."
+        uph = f'<section><h2><span class="num">⚽</span> Prochains matchs de {comp}</h2>{_grid(up, lang)}</section>' if up else ""
+        doneh = f'<section><h2><span class="num">✓</span> Mes derniers pronostics {comp} et leurs résultats</h2>{_grid(done, lang)}</section>' if done else ""
+        body = f"""<header class="hero"><div class="wrap">
+<p class="eyebrow">🏆 {comp} · <a href="pronostics.html" style="color:inherit">Tous mes pronostics</a></p>
+<h1>Pronostic <span class="hl">{comp}</span></h1>
+<p class="sub">{intro_fr}</p>
+{_stats_html(ms, "fr")}
+{nav_links_html("fr", slug)}
+</div></header>
+<main class="wrap">
+{uph}{doneh}
+<div class="note">Pour jouer mes pronostics {comp}, inscris-toi avec le code promo <b>FFN</b> sur <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a> ou <a href="code-promo-paripesa.html">Paripesa</a>. 18+, un pronostic n'est jamais sûr.</div>
+</main>
+{footer_html()}"""
+        nav = nav_fr(en=f"{en_sl}.html")
+    else:
+        title = f"{name} Predictions: Analysis & Results | Cousin Marc"
+        desc = f"Free {name} predictions: analysis of every big game, my pick and the result. Promo code FFN for your bonus."
+        uph = f'<section><h2><span class="num">⚽</span> Next {name} games</h2>{_grid(up, lang)}</section>' if up else ""
+        doneh = f'<section><h2><span class="num">✓</span> My latest {name} predictions and results</h2>{_grid(done, lang)}</section>' if done else ""
+        body = f"""<header class="hero"><div class="wrap">
+<p class="eyebrow">🏆 {name} · <a href="predictions.html" style="color:inherit">All my predictions</a></p>
+<h1><span class="hl">{name}</span> predictions</h1>
+<p class="sub">{intro_en}</p>
+{_stats_html(ms, "en")}
+{nav_links_html("en", slug)}
+</div></header>
+<main class="wrap">
+{uph}{doneh}
+<div class="note">To play my {name} predictions, sign up with the promo code <b>FFN</b> on <a href="1xbet-promo-code.html">1xBet</a>, <a href="melbet-promo-code.html">Melbet</a> or <a href="paripesa-promo-code.html">Paripesa</a>. 18+, no prediction is ever certain.</div>
+</main>
+{footer_html_en()}"""
+        nav = nav_en(fr=f"{fr_sl}.html")
+    return head(html.escape(title), html.escape(desc), f"{BASE}/{slug}.html", extra=_PG_CSS + f'<script type="application/ld+json">{_itemlist(up + done, lang, title)}</script>',
+                nav=nav, lang=lang, alternates=alt) + body + "\n</body></html>"
+
+for _lang in ("fr", "en"):
+    for _off in (0, 1):
+        _sl = DAY_SLUGS[_lang][_off]
+        open(os.path.join(OUT, _sl + ".html"), "w", encoding="utf-8").write(day_page(_lang, _off)); written.append(_sl + ".html"); NEW_PAGES.append(_sl + ".html")
+    for _comp in COMP_PAGES:
+        if comp_page_ok(_comp):
+            _sl = COMP_PAGES[_comp][0 if _lang == "fr" else 1]
+            open(os.path.join(OUT, _sl + ".html"), "w", encoding="utf-8").write(comp_page(_comp, _lang)); written.append(_sl + ".html"); NEW_PAGES.append(_sl + ".html")
+print(f"  {len(NEW_PAGES)} page(s) aujourd'hui/demain/competition")
+
 open(os.path.join(OUT,"pronostics.html"),"w",encoding="utf-8").write(pronostics_page()); written.append("pronostics.html")
 open(os.path.join(OUT,COMPARE_SLUG),"w",encoding="utf-8").write(compare_page()); written.append(COMPARE_SLUG)
 open(os.path.join(OUT,HELP_SLUG),"w",encoding="utf-8").write(help_page()); written.append(HELP_SLUG)

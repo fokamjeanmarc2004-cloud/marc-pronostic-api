@@ -562,6 +562,8 @@ export default {
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
     if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
     else ctx.waitUntil(sendPromo(env, pickIndex(when), when).then(console.log));
+    // 6h : reconstruit le site (pages « pronostic foot aujourd'hui / demain » a la bonne date)
+    if (when.getUTCHours() === 5) ctx.waitUntil(saveToGithub(env, "site-src/jour.txt", new TextEncoder().encode(when.toISOString().slice(0, 10) + "\n"), "reconstruction du jour").catch((e) => console.log("jour", e.message)));
     // 6h : apres la promo, la liste des analyses du jour (seulement les jours de match)
     if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, 20000)).then(() => sendAnalyses(env, when)).then(console.log).catch((e) => console.log("analyses", e.message)));
   },
