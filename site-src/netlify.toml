@@ -174,6 +174,42 @@
   force = true
 
 [[redirects]]
+  from = "/betting-promo-codes-cameroon"
+  to = "/betting-promo-codes-cameroon.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betting-promo-codes-ghana"
+  to = "/betting-promo-codes-ghana.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betting-promo-codes-kenya"
+  to = "/betting-promo-codes-kenya.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betting-promo-codes-nigeria"
+  to = "/betting-promo-codes-nigeria.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betting-promo-codes-uganda"
+  to = "/betting-promo-codes-uganda.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/betting-promo-codes-zambia"
+  to = "/betting-promo-codes-zambia.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/betwiner-codigo-promocional"
   to = "/betwiner-codigo-promocional.html"
   status = 301

@@ -2609,6 +2609,12 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
                         f'<div class="hsec-head"><div><p class="kicker">En 10 secondes</p><h2>Quel bookmaker pour toi ?</h2>'
                         f'<p>Choisis ton pays et ton moyen de paiement, je te donne ton top 3 avec le bon code.</p></div></div>'
                         f'{comparator_html()}</div></section>')
+    if lang == "en":
+        countries = ('<section class="hsec" id="countries"><div class="wrap">'
+                     '<div class="hsec-head"><div><p class="kicker">By country</p><h2>Betting promo codes in your country</h2>'
+                     '<p>Bookmakers, bonus, mobile money and kick-off times for players in English-speaking Africa.</p></div></div>'
+                     '<div class="related">' + "".join(f'<a href="{cty_en_slug(c)}.html"><div class="bk">{c["name"]}</div><div class="cd">Promo codes &amp; mobile money</div></a>' for c in COUNTRIES_EN)
+                     + '</div></div></section>')
     if lang == "fr":
         countries = (f'<section class="hsec" id="pays"><div class="wrap">'
                      f'<div class="hsec-head"><div><p class="kicker">{T["p_kick"]}</p><h2>{T["p_h2"]}</h2><p>{T["p_p"]}</p></div></div>'
@@ -3167,7 +3173,7 @@ def sitemap():
              RESULTS_SLUG["fr"], RESULTS_SLUG["en"], RESULTS_SLUG["es"], RESULTS_SLUG["ar"], VIP_SLUG["fr"], VIP_SLUG["en"], VIP_SLUG["es"], VIP_SLUG["ar"]] \
             + [f"{b['slug']}.html" for b in BOOKMAKERS] + [f"{en_slug(b)}.html" for b in BOOKMAKERS] + [f"{es_slug(b)}.html" for b in BOOKMAKERS] + [f"{ar_slug(b)}.html" for b in BOOKMAKERS] \
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
-            + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] \
+            + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
             + [COMPARE_SLUG, HELP_SLUG, "affiche.html"] + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
@@ -3421,6 +3427,9 @@ def footer_html_en():
 <div><h4>Bookmakers</h4>
 {''.join(f'<a href="{en_slug(b)}.html">{b["name"]}</a>' for b in BOOKMAKERS[:4])}
 </div>
+<div><h4>Countries</h4>
+{''.join(f'<a href="{cty_en_slug(c)}.html">{c["name"]}</a>' for c in COUNTRIES_EN)}
+</div>
 <div><h4>Networks</h4>
 <a href="https://t.me/marc_prono" rel="nofollow">Telegram</a>
 <a href="https://youtube.com/@prossport" rel="nofollow">YouTube</a>
@@ -3431,6 +3440,168 @@ def footer_html_en():
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Promo code FFN · Football tips Africa</p>
 </div></footer>
 <script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
+
+# ---------------------------------------------------------------- Pages PAYS en anglais (public anglophone prioritaire)
+# utc = decalage horaire en heure d'hiver europeenne (novembre-mars)
+COUNTRIES_EN = [
+ {"slug": "cameroon", "name": "Cameroon", "utc": 1, "cur": "CFA franc (XAF)", "cities": "Buea, Bamenda, Limbe, Kumba, Douala and Yaoundé",
+  "pay": [("MTN Mobile Money", "Deposit & withdrawal"), ("Orange Money", "Deposit & withdrawal"), ("Cards / crypto", "Depending on the bookmaker")],
+  "foot": ["Cameroon is one of Africa's great football nations. The <b>Indomitable Lions</b> have won <b>5 Africa Cup of Nations</b> titles (1984, 1988, 2000, 2002 and 2017) and made history by reaching the World Cup quarter-finals in 1990.",
+           "From Buea and Limbe to Bamenda and Kumba, English-speaking Cameroonians follow the Lions as closely as the Premier League. Locally, <b>Coton Sport of Garoua</b> has dominated the Elite One for years, with clubs like Canon Yaoundé and Union Douala as historic names.",
+           "Most bettors in Cameroon play the Premier League, the Champions League, La Liga and the Lions' matches, where statistics and odds are the most reliable."],
+  "tips": ["Choose <b>Cameroon</b> and <b>XAF</b> when you register: the currency is hard to change later.",
+           "Deposit with the same MTN or Orange number as the one on your account: withdrawals go back to that number.",
+           "From November to March, a 9pm Champions League game in Paris kicks off at 9pm in Buea and Douala."],
+  "team": "Cameroun"},
+ {"slug": "nigeria", "name": "Nigeria", "utc": 1, "cur": "naira (NGN)", "cities": "Lagos, Abuja, Port Harcourt, Ibadan and Kano",
+  "pay": [("Bank transfer", "Deposit & withdrawal"), ("Debit cards", "Deposit"), ("Mobile wallets", "Depending on the bookmaker"), ("Crypto (USDT)", "Depending on the bookmaker")],
+  "foot": ["Nigeria lives and breathes football. The <b>Super Eagles</b> have won the <b>Africa Cup of Nations 3 times</b> (1980, 1994 and 2013) and Nigeria won Olympic gold in 1996, one of the proudest moments in African football.",
+           "Nigerian fans are among the biggest Premier League supporters in the world: Arsenal, Chelsea, Manchester United and Liverpool games are the most bet on, from Lagos to Abuja. Locally, Enyimba, Rangers International and Kano Pillars are the historic NPFL clubs.",
+           "Sports betting is very popular in Nigeria and is regulated at state level: always check the rules where you live and only bet with money you can afford to lose."],
+  "tips": ["Choose <b>Nigeria</b> and <b>NGN</b> at registration if the bookmaker offers them: the bonus cap is then shown in naira.",
+           "Use a bank account or card in <b>your own name</b>: withdrawals to someone else's account are usually refused.",
+           "Lagos time = Douala time: a 9pm Champions League game in Paris kicks off at 9pm in Lagos from November to March."],
+  "team": "Nigeria"},
+ {"slug": "ghana", "name": "Ghana", "utc": 0, "cur": "cedi (GHS)", "cities": "Accra, Kumasi, Tamale, Takoradi and Cape Coast",
+  "pay": [("MTN MoMo", "Deposit & withdrawal"), ("Telecel Cash", "Deposit & withdrawal"), ("AirtelTigo Money", "Deposit & withdrawal"), ("Cards / crypto", "Depending on the bookmaker")],
+  "foot": ["Ghana has won the <b>Africa Cup of Nations 4 times</b> (1963, 1965, 1978 and 1982), and the <b>Black Stars</b> reached the World Cup quarter-finals in 2010, one of the greatest runs by an African team.",
+           "In the Ghana Premier League, the big rivalry is <b>Asante Kotoko</b> of Kumasi against <b>Hearts of Oak</b> of Accra. But Ghanaian bettors mostly play the Premier League and the Champions League, where many Ghanaian players have starred.",
+           "Mobile money is king in Ghana: MTN MoMo is by far the most used way to deposit."],
+  "tips": ["Choose <b>Ghana</b> and <b>GHS</b> at registration if available.",
+           "MTN MoMo is usually the fastest way to deposit and withdraw: check the bookmaker's cashier first.",
+           "Accra time = GMT: a 9pm Champions League game in Paris kicks off at 8pm in Accra from November to March."],
+  "team": "Ghana"},
+ {"slug": "kenya", "name": "Kenya", "utc": 3, "cur": "Kenyan shilling (KES)", "cities": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret",
+  "pay": [("M-Pesa", "Deposit & withdrawal"), ("Airtel Money", "Deposit & withdrawal"), ("Cards / crypto", "Depending on the bookmaker")],
+  "foot": ["In Kenya, the <b>Harambee Stars</b> and the big Nairobi derby between <b>Gor Mahia</b> and <b>AFC Leopards</b> (the Mashemeji derby) are the heart of local football.",
+           "But Kenyan bettors are above all Premier League fans: Arsenal, Manchester United, Chelsea and Liverpool matches are the most played, often late in the evening because of the time difference.",
+           "M-Pesa made mobile betting a daily habit in Kenya. Betting is regulated by the Betting Control and Licensing Board (BCLB): always check that the site you use is allowed in Kenya."],
+  "tips": ["Choose <b>Kenya</b> and <b>KES</b> at registration if available.",
+           "Deposit and withdraw with the same M-Pesa number as the one on your account.",
+           "Nairobi is 2 hours ahead of Paris in winter: a 9pm Champions League game kicks off at 11pm in Nairobi."],
+  "team": "Kenya"},
+ {"slug": "uganda", "name": "Uganda", "utc": 3, "cur": "Ugandan shilling (UGX)", "cities": "Kampala, Entebbe, Jinja, Gulu and Mbarara",
+  "pay": [("MTN Mobile Money", "Deposit & withdrawal"), ("Airtel Money", "Deposit & withdrawal"), ("Cards / crypto", "Depending on the bookmaker")],
+  "foot": ["The <b>Uganda Cranes</b> carry the hopes of a whole country, and Uganda is one of the co-hosts of <b>AFCON 2027</b> with Kenya and Tanzania: football fever is growing fast.",
+           "In the Uganda Premier League, KCCA FC, Vipers SC and SC Villa are among the best-known clubs. Like their neighbours, Ugandan bettors mostly play the Premier League and the Champions League.",
+           "MTN Mobile Money and Airtel Money are the usual ways to deposit. Betting is regulated in Uganda: always check that the site you use is allowed."],
+  "tips": ["Choose <b>Uganda</b> and <b>UGX</b> at registration if available.",
+           "Use the same MTN or Airtel number for deposits and withdrawals.",
+           "Kampala is 2 hours ahead of Paris in winter: a 9pm Champions League game kicks off at 11pm in Kampala."],
+  "team": "Ouganda"},
+ {"slug": "zambia", "name": "Zambia", "utc": 2, "cur": "Zambian kwacha (ZMW)", "cities": "Lusaka, Ndola, Kitwe, Kabwe and Livingstone",
+  "pay": [("MTN Mobile Money", "Deposit & withdrawal"), ("Airtel Money", "Deposit & withdrawal"), ("Zamtel Kwacha", "Depending on the bookmaker")],
+  "foot": ["Zambia's greatest football moment came in <b>2012</b>, when the <b>Chipolopolo</b> won the Africa Cup of Nations in Libreville, a deeply emotional victory for the whole country.",
+           "Zambian clubs like ZESCO United, Power Dynamos and Nkana are well known on the Copperbelt, but Zambian bettors mostly follow the Premier League and the Champions League.",
+           "MTN Mobile Money and Airtel Money are the most common ways to deposit."],
+  "tips": ["Choose <b>Zambia</b> and <b>ZMW</b> at registration if available.",
+           "Deposit and withdraw with the same mobile money number.",
+           "Lusaka is 1 hour ahead of Paris in winter: a 9pm Champions League game kicks off at 10pm in Lusaka."],
+  "team": "Zambie"},
+]
+CTY_EN_BOOKS = ["code-promo-1xbet", "code-promo-melbet", "code-promo-paripesa", "code-promo-winwin", "code-promo-megapari", "code-promo-1win", "code-promo-betwiner", "code-promo-linebet"]
+
+def cty_en_slug(c): return f'betting-promo-codes-{c["slug"]}'
+
+def _cty_en_kick(c):
+    rows = ""
+    for lab, h, mi, ref in (("Champions League (evening game)", 21, 0, 1), ("Champions League (early game)", 18, 45, 1),
+                            ("Premier League (Saturday afternoon)", 15, 0, 0), ("Premier League (Super Sunday)", 16, 30, 0)):
+        lh = (h + c["utc"] - ref) % 24
+        rows += f"<tr><td>{lab}</td><td>{h}:{mi:02d} ({'Paris' if ref else 'London'})</td><td><b>{lh}:{mi:02d}</b></td></tr>"
+    return rows
+
+def country_page_en(c):
+    slug = cty_en_slug(c)
+    rows = ""
+    for sl in CTY_EN_BOOKS:
+        b = _bk(sl)
+        bonus = B300["en"].replace("up to 300,000 FCFA", "capped in your currency") if sl in FFN300 else bk_bonus(b, "en")
+        rows += (f'<tr><td><a href="{en_slug(b)}.html" style="color:{BRAND[sl]};font-weight:800" translate="no">{b["name"]}</a></td>'
+                 f'<td>{bonus}</td><td><b>{b["code"]}</b></td></tr>')
+    pay = "".join(f"<tr><td>{a}</td><td>{u}</td></tr>" for a, u in c["pay"])
+    ms = sorted([m for m in MATCHS if c["team"] in (m["equipe1"], m["equipe2"])], key=lambda m: m["dt"], reverse=True)[:4]
+    team_html = ""
+    if ms:
+        team_html = '<h3>National team matches: my predictions</h3><ul class="steps">' + "".join(
+            f'<li><a href="{m.get("slug_en") or m["slug"]}.html">{html.escape(TEAM_L.get(m["equipe1"], {}).get("en", m["equipe1"]))} vs '
+            f'{html.escape(TEAM_L.get(m["equipe2"], {}).get("en", m["equipe2"]))}</a> ({_MOIS_EN[m["dt"].month-1]} {m["dt"].day}, {m["dt"].year}): '
+            f'{html.escape(m.get("pronostic_en") or m["pronostic"])}</li>' for m in ms) + "</ul>"
+    qs = [
+        (f"What is the best betting promo code in {c['name']} in 2026?", f"Cousin Marc's code FFN gives a 300% bonus on your first deposit on 1xBet, Melbet, Paripesa, WinWin and Megapari, capped in your currency. It is entered once, at registration."),
+        (f"How do I deposit with mobile money in {c['name']}?", f"Choose {c['name']} and the {c['cur']} at registration, then open the cashier: the payment methods available in {c['name']} ({', '.join(a for a, _ in c['pay'][:2])}…) are listed there."),
+        (f"What time are Champions League games in {c['name']}?", f"From November to March, a 9pm Champions League game in Paris kicks off at {(21 + c['utc'] - 1) % 24}:00 in {c['name']}."),
+        (f"Does the promo code work in {c['name']}?", f"Yes: the promo code works wherever the bookmaker accepts registrations from {c['name']}. If the site lets you register in your currency, the code and the bonus work. Only the bonus cap changes with your currency."),
+    ]
+    faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qs]}, ensure_ascii=False)
+    others = "".join(f'<a href="{cty_en_slug(o)}.html"><div class="bk">{o["name"]}</div><div class="cd">Promo codes</div></a>' for o in COUNTRIES_EN if o is not c)
+    return head(f"Betting Promo Codes {c['name']} 2026: Bonus & Mobile Money | Cousin Marc",
+        f"Best betting promo codes in {c['name']} for 2026: 1xBet, Melbet, Paripesa, 1win and more. 300% bonus with code FFN, deposits by {c['pay'][0][0]}. Guide by Cousin Marc.",
+        f"{BASE}/{slug}.html", f'<script type="application/ld+json">{faq}</script>', nav=nav_en(), lang="en") + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">⚽ Sports betting {c['name']} · Updated {MAJ_EN}</p>
+<h1>Betting Promo Codes <span class="hl">{c['name']}</span> 2026</h1>
+<p class="sub">The best bookmakers for players in {c['name']}, their welcome bonus and the promo code to use. Deposits with {c['pay'][0][0]} and more.</p>
+<div class="btnrow"><a class="cta" href="#bookmakers">See the codes</a><a class="cta alt" href="https://t.me/marc_prono" rel="nofollow">✈️ Telegram</a></div>
+</div></header>
+<main class="wrap">
+<section id="bookmakers" style="padding-top:16px">
+<h2><span class="num">01</span> Promo codes for {c['name']}: the table</h2>
+<div class="tablecard"><table>
+<thead><tr><th>Bookmaker</th><th>Welcome bonus</th><th>Code</th></tr></thead>
+<tbody>{rows}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:12px">Availability depends on each bookmaker: if the site lets you register from {c['name']} in your currency, the code works. Bonus caps are shown in the {c['cur']} in your account.</p>
+</section>
+<section id="football">
+<h2><span class="num">02</span> Football and betting in {c['name']}</h2>
+{''.join(f'<p>{x}</p>' for x in c['foot'])}
+{team_html}
+</section>
+<section>
+<h2><span class="num">03</span> How to open an account from {c['name']}</h2>
+<ol class="steps">
+<li><b>Pick a bookmaker</b> in the table above.</li>
+<li><b>Select {c['name']}</b> as your country and the <b>{c['cur']}</b> as your currency, if they are offered.</li>
+<li><b>Enter the promo code</b> (FFN for 1xBet, Melbet, Paripesa, WinWin and Megapari) before you confirm: no code, no bonus.</li>
+<li><b>Make your first deposit</b>: the welcome bonus is added automatically.</li>
+</ol>
+<div class="note">⚠️ Use your real details (name, date of birth, phone number). An account that does not match your ID can be blocked when you withdraw.</div>
+</section>
+<section>
+<h2><span class="num">04</span> Deposits and withdrawals in {c['name']}</h2>
+<div class="tablecard"><table>
+<thead><tr><th>Payment method</th><th>Use</th></tr></thead>
+<tbody>{pay}</tbody></table></div>
+<p style="margin-top:12px">Always withdraw to the same method you deposited with. The methods offered can change: check the cashier of your bookmaker before depositing.</p>
+</section>
+<section>
+<h2><span class="num">05</span> My tips for betting from {c['name']}</h2>
+<ul class="steps">{''.join(f'<li>{t}</li>' for t in c['tips'])}</ul>
+</section>
+<section id="kick-off">
+<h2><span class="num">06</span> What time are the big games in {c['name']}?</h2>
+<p>Times in {c['cities'].split(',')[0]} from November to March:</p>
+<div class="tablecard"><table>
+<thead><tr><th>Match</th><th>European time</th><th>{c['name']} time</th></tr></thead>
+<tbody>{_cty_en_kick(c)}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:10px">Europe moves to summer time on the last Sunday of March: European games then kick off one hour earlier for you.</p>
+<p>My predictions for the big games: <a href="predictions.html">predictions page</a> · free slip of the day: <a href="odds-of-2.html">odds of 2</a>.</p>
+</section>
+<section>
+<h2><span class="num">07</span> FAQ: betting promo codes in {c['name']}</h2>
+{''.join(f'<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in qs)}
+</section>
+<section>
+<h2><span class="num">08</span> Promo codes in other countries</h2>
+<div class="related">{others}</div>
+</section>
+<section style="border-bottom:none">
+<div class="note">⚠️ 18+ only. Betting involves risks: debt, addiction, isolation. Only stake what you can afford to lose, and check the rules in force in {c['name']}. <a href="responsible-gambling.html" style="color:var(--gold)">Learn more</a></div>
+</section>
+</main>
+{footer_html_en()}
+</body></html>"""
 
 # ---------------------------------------------------------------- Guides detailles EN (meme profondeur que les pages FR)
 # Public anglophone prioritaire : Cameroun anglophone (Buea, Bamenda), Nigeria, Ghana, Kenya, Ouganda, Tanzanie, Zambie...
@@ -3500,14 +3671,19 @@ def _en_guide(b, extra=""):
 <h2>{name} promo code by country (2026 list)</h2>
 <p>Good news: <b>the {name} promo code is the same in every country: {code}.</b> It is valid today (last checked {VERIF_EN}). What changes from one country to another is the bonus currency and the payment methods.</p>
 <h3>{name} promo code in Cameroon (English-speaking regions included)</h3>
+<p style="margin:0 0 6px"><a href="betting-promo-codes-cameroon.html">→ All betting promo codes in Cameroon</a></p>
 <p>From Buea, Bamenda or Limbe as from Douala, register in CFA francs (XAF) with <b>{code}</b> and deposit with MTN Mobile Money or Orange Money.</p>
 <h3>{name} promo code in Nigeria</h3>
+<p style="margin:0 0 6px"><a href="betting-promo-codes-nigeria.html">→ All betting promo codes in Nigeria</a></p>
 <p>Where {name} accepts Nigerian players, choose Nigeria and the naira (NGN) at registration and enter <b>{code}</b>. The bonus cap is shown in naira in your account.</p>
 <h3>{name} promo code in Ghana</h3>
+<p style="margin:0 0 6px"><a href="betting-promo-codes-ghana.html">→ All betting promo codes in Ghana</a></p>
 <p>Choose Ghana and the cedi (GHS), enter <b>{code}</b>, then deposit with MTN MoMo, Telecel Cash or AirtelTigo Money if they are offered in the cashier.</p>
 <h3>{name} promo code in Kenya, Uganda and Tanzania</h3>
+<p style="margin:0 0 6px"><a href="betting-promo-codes-kenya.html">→ Kenya</a> · <a href="betting-promo-codes-uganda.html">Uganda</a></p>
 <p>Same code <b>{code}</b> in East Africa. M-Pesa and Airtel Money are the usual ways to deposit; always check the cashier of {name} for your country.</p>
 <h3>{name} promo code in Zambia and other countries</h3>
+<p style="margin:0 0 6px"><a href="betting-promo-codes-zambia.html">→ All betting promo codes in Zambia</a></p>
 <p>{code} is an international partner code: you enter it the same way wherever {name} accepts registrations. Pick your currency in the form and the bonus cap is shown in that currency.</p>
 <div class="tablecard" style="margin-top:14px"><table>
 <thead><tr><th>Country</th><th>Most used payment methods</th></tr></thead>
@@ -5779,6 +5955,8 @@ open(os.path.join(OUT,"index.html"),"w",encoding="utf-8").write(index_page()); w
 open(os.path.join(OUT,"promo-codes.html"),"w",encoding="utf-8").write(index_page_en()); written.append("promo-codes.html")
 for b in BOOKMAKERS:
     open(os.path.join(OUT,f"{en_slug(b)}.html"),"w",encoding="utf-8").write(bookmaker_page_en(b)); written.append(f"{en_slug(b)}.html")
+for _c in COUNTRIES_EN:
+    open(os.path.join(OUT, cty_en_slug(_c) + ".html"), "w", encoding="utf-8").write(country_page_en(_c)); written.append(cty_en_slug(_c) + ".html")
 for b in BOOKMAKERS:
     open(os.path.join(OUT,f"{b['slug']}.html"),"w",encoding="utf-8").write(bookmaker_page(b)); written.append(f"{b['slug']}.html")
 open(os.path.join(OUT,"pronostics.html"),"w",encoding="utf-8").write(pronostics_page()); written.append("pronostics.html")
