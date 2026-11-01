@@ -1977,6 +1977,22 @@ BK_GUIDE_FR = {
 </tbody></table></div>
 <p style="margin-top:12px">Pour retirer : menu « Retirer », même moyen de paiement que pour le dépôt, puis confirmation sur ton téléphone. Si un retrait bloque, <a href="code-promo-ne-marche-pas.html">voici les solutions</a>. Pour le pas à pas complet : <a href="deposer-retirer-paris-afrique.html">déposer et retirer sur Melbet, étape par étape</a>.</p>
 </section>
+<section id="par-pays">
+<h2>Code promo Melbet par pays : la liste 2026</h2>
+<p>Bonne nouvelle : <b>le code promo Melbet est le même dans tous les pays</b>, c'est <b>FFN</b>. Il est valable aujourd'hui (dernière vérification : {VERIF_FR}). Ce qui change d'un pays à l'autre, c'est la devise du bonus et les moyens de paiement.</p>
+<h3>Code promo Melbet Cameroun</h3>
+<p>Au Cameroun, inscris-toi en francs CFA (XAF) avec le code <b>FFN</b>, puis dépose avec MTN Mobile Money ou Orange Money. Le guide complet : <a href="code-promo-melbet-cameroun.html">code promo Melbet Cameroun</a>.</p>
+<h3>Code promo Melbet Côte d'Ivoire</h3>
+<p>En Côte d'Ivoire, le code est aussi <b>FFN</b>, en francs CFA (XOF). Les dépôts se font avec Orange Money, MTN, Moov Money ou Wave. Que tu sois à Abidjan, Bouaké ou Yamoussoukro, l'inscription se fait en 2 minutes depuis ton téléphone.</p>
+<h3>Code promo Melbet Sénégal</h3>
+<p>Au Sénégal, mets <b>FFN</b> à l'inscription et choisis le franc CFA (XOF). Wave et Orange Money sont les moyens de dépôt les plus simples.</p>
+<h3>Code promo Melbet Burkina Faso, Mali, Bénin, Togo</h3>
+<p>Même code <b>FFN</b> dans toute la zone franc CFA : Orange Money et Moov Money au Burkina et au Mali, MTN et Moov au Bénin, T-Money et Flooz au Togo. Voir aussi <a href="code-promo-melbet-burkina-faso.html">code promo Melbet Burkina Faso</a>.</p>
+<h3>Code promo Melbet RDC</h3>
+<p>En RDC, le code <b>FFN</b> marche avec un compte en francs congolais ou en dollars. Dépôts avec M-Pesa, Orange Money ou Airtel Money : <a href="code-promo-melbet-rdc.html">code promo Melbet RDC</a>.</p>
+<h3>Code promo Melbet Tunisie, Maroc et Maghreb</h3>
+<p>FFN est un code partenaire international : il se saisit de la même façon partout où Melbet accepte les inscriptions. Choisis ta devise (dinar, dirham…) dans le formulaire : le plafond du bonus s'affiche dans cette devise.</p>
+</section>
 <section id="coupon">
 <h2>Code promo ou code coupon Melbet : quelle différence ?</h2>
 <p>On confond souvent les deux :</p>
@@ -2001,6 +2017,7 @@ BK_FAQ_FR = {
   ("Le code promo Melbet marche-t-il au Cameroun et en Côte d'Ivoire ?", "Oui. FFN fonctionne au Cameroun, en Côte d'Ivoire, au Sénégal, au Burkina Faso, au Bénin, au Mali, au Togo, en RDC et dans la plupart des pays où Melbet est disponible."),
   ("Quelle différence entre code promo et code coupon Melbet ?", "Le code promo (FFN) active le bonus à l'inscription. Le code coupon sert à charger un ticket de paris déjà préparé dans ton coupon Melbet."),
   ("Quel dépôt faire pour avoir le bonus maximum ?", "Avec 300%, un dépôt de 100 000 FCFA donne le bonus maximum de 300 000 FCFA. Un dépôt de 10 000 FCFA donne 30 000 FCFA de bonus."),
+  ("Quel est le code promo Melbet en Côte d'Ivoire en 2026 ?", "C'est FFN, le même code qu'au Cameroun, au Sénégal ou en RDC. Inscris-toi en francs CFA (XOF) et dépose avec Orange Money, MTN, Moov Money ou Wave."),
  ],
 }
 
@@ -2085,6 +2102,22 @@ BK_GUIDE_FR["code-promo-1xbet"] = lambda b: f"""
 <p>Dans le formulaire d'inscription 1xBet, le champ code promo est marqué « facultatif » : tu peux créer ton compte sans le remplir. <b>Mais si tu le laisses vide, tu n'auras pas le bonus de 300%.</b> Et après l'inscription, il est trop tard pour l'ajouter.</p>
 <p>Avant de valider, vérifie donc que <b>FFN</b> est bien écrit dans ce champ, en majuscules, sans espace. Le guide en images : <a href="comment-sinscrire-1xbet-2026.html">comment s'inscrire sur 1xBet en 2026</a>.</p>
 </section>
+<section id="par-pays">
+<h2>Code promo 1xBet par pays : la liste 2026</h2>
+<p><b>Le code promo 1xBet est le même partout : FFN.</b> Il est valable aujourd'hui (dernière vérification : {VERIF_FR}). Seuls la devise du bonus et les moyens de paiement changent selon ton pays.</p>
+<h3>Code promo 1xBet Côte d'Ivoire</h3>
+<p>En Côte d'Ivoire, inscris-toi en francs CFA (XOF) avec <b>FFN</b>. Dépôts et retraits avec Orange Money, MTN, Moov Money ou Wave.</p>
+<h3>Code promo 1xBet Burkina Faso et Mali</h3>
+<p>Au Burkina Faso et au Mali, c'est aussi <b>FFN</b>, en francs CFA. Orange Money et Moov Money sont les plus utilisés pour déposer.</p>
+<h3>Code promo 1xBet Sénégal</h3>
+<p>Au Sénégal, le code <b>FFN</b> s'utilise avec Wave, Orange Money ou Free Money. Le guide dédié : <a href="code-promo-1xbet-senegal.html">code promo 1xBet Sénégal</a>.</p>
+<h3>Code promo 1xBet Cameroun</h3>
+<p>Au Cameroun, choisis le franc CFA (XAF), mets <b>FFN</b> et dépose avec MTN Mobile Money ou Orange Money.</p>
+<h3>Code promo 1xBet RDC et Congo-Brazzaville</h3>
+<p>En RDC, <b>FFN</b> marche avec un compte en francs congolais ou en dollars (M-Pesa, Orange Money, Airtel Money). Au Congo-Brazzaville, inscris-toi en francs CFA (XAF) avec le même code.</p>
+<h3>Code promo 1xBet Maroc et Tunisie</h3>
+<p>FFN est un code partenaire international : il se saisit de la même façon partout où 1xBet accepte les inscriptions. Choisis ta devise (dirham, dinar…) dans le formulaire : le plafond du bonus s'affiche dans cette devise.</p>
+</section>
 <section id="codes-celebrites">
 <h2>Codes promo 1xBet de célébrités : ça change quoi ?</h2>
 <p>Tu as peut-être vu des codes promo 1xBet associés à des artistes ou des influenceurs. Ce sont aussi des codes partenaires : ils activent le bonus de bienvenue de la même façon. Ce qui compte, ce n'est pas le nom derrière le code, c'est <b>le bonus réellement obtenu dans ta devise</b>.</p>
@@ -2107,6 +2140,7 @@ BK_FAQ_FR["code-promo-1xbet"] = [
   ("Pourquoi le code promo est « facultatif » sur 1xBet ?", "Parce que tu peux t'inscrire sans code. Mais sans code, tu n'as pas le bonus de 300%, et tu ne peux plus l'ajouter après l'inscription. Mets FFN avant de valider."),
   ("J'ai oublié le code promo 1xBet à l'inscription, que faire ?", "Contacte le support 1xBet depuis ton compte avant de faire ton premier dépôt et explique que tu voulais utiliser le code FFN. Ne crée pas de deuxième compte : il risque d'être bloqué."),
   ("Combien de bonus pour 10 000 FCFA déposés sur 1xBet ?", "Avec 300%, un dépôt de 10 000 FCFA donne 30 000 FCFA de bonus, soit 40 000 FCFA pour parier. Le bonus maximum de 300 000 FCFA est atteint avec un dépôt de 100 000 FCFA."),
+  ("Quel est le code promo 1xBet au Burkina Faso, au Mali ou en Côte d'Ivoire ?", "C'est FFN dans tous ces pays. Le code est le même partout : seuls la devise du bonus et les moyens de paiement (Orange Money, Moov Money, MTN, Wave) changent."),
 ]
 
 
@@ -2157,6 +2191,11 @@ BK_GUIDE_FR["code-promo-megapari"] = lambda b: _ffn_common(b) + _ffn_best("Megap
 <h2>Vérifier un coupon Megapari</h2>
 <p>Pour savoir où en est ton ticket, ouvre ton compte Megapari puis <b>l'historique des paris</b> : chaque coupon y apparaît avec son statut (en cours, gagné, perdu) et le détail des matchs.</p>
 <p>Si quelqu'un te donne un <b>code coupon</b>, tu peux le charger dans le coupon de paris pour voir les matchs avant de jouer. Méfie-toi des « coupons sûrs à 100% » vendus sur les réseaux : aucun pronostic n'est garanti.</p>
+</section>
+<section id="par-pays">
+<h2>Code promo Megapari au Cameroun, au Sénégal et en Côte d'Ivoire</h2>
+<p>Le code promo Megapari est <b>FFN</b> dans tous les pays. Au Cameroun, inscris-toi en francs CFA (XAF) et dépose avec MTN Mobile Money ou Orange Money. Au Sénégal et en Côte d'Ivoire, choisis le franc CFA (XOF) : Wave, Orange Money, MTN ou Moov Money selon ton pays.</p>
+<p>Le code se met une seule fois, au moment de l'inscription, sur le site comme dans l'application.</p>
 </section>"""
 
 BK_GUIDE_FR["code-promo-goldpari"] = lambda b: _ffn_common(b) + _ffn_best("GoldPari") + """
@@ -4974,6 +5013,11 @@ def match_page(m):
     title = f'Pronostic {e1} vs {e2} ({m["dt"]:%d/%m}) | Cousin Marc'   # court : Google coupe vers 60 caracteres
     desc = f'Pronostic {e1} - {e2} du {m["dt"].day} {_MOIS_FR[m["dt"].month-1]} {m["dt"].year} ({m.get("competition","football")}) : {m["pronostic"]}' + (f' à la cote {m["cote"]}' if m.get("cote") else "") + ". Analyse de Cousin Marc."
     paras = "".join(f"<p>{html.escape(p.strip())}</p>" for p in m.get("analyse", "").split("\n") if p.strip())
+    # liens internes vers les pages code promo (ancre = la recherche Google visée)
+    paras = paras.replace("sur 1xBet, Melbet, Paripesa ou WinWin",
+        'sur <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a>, '
+        '<a href="code-promo-paripesa.html">Paripesa</a> ou <a href="code-promo-winwin.html">WinWin</a>', 1)
+    paras = paras.replace("avec le code promo FFN", 'avec le <a href="code-promo-1xbet.html">code promo FFN</a>', 1)
     imgs = [i.strip() for i in (m.get("images") or m.get("image") or "").split(",") if i.strip()]
     tickets = ("".join(f'<figure class="vproof-card"><img src="{html.escape(i)}" alt="Coupon Cousin Marc : {html.escape(e1)} vs {html.escape(e2)}" loading="lazy"></figure>' for i in imgs))
     tickets = f'<div class="vproofs" style="margin-top:16px">{tickets}</div>' if imgs else ""
