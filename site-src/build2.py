@@ -2540,6 +2540,8 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
                         f'<div class="hsec-head"><div><p class="kicker">Mes tickets joués</p><h2>🎫 Mes coupons Ligue des champions</h2>'
                         f'<p>Les combinés que j\'ai joués avec mon argent. Tu peux reprendre les mêmes matchs sur WinWin (inscription avec le code FFN).</p></div></div>'
                         f'{coupons_ldc_html()}<p class="muted" style="font-size:13px;margin-top:12px">18+ · Un pronostic n\'est jamais sûr. Ne mise que ce que tu peux perdre.</p></div></section>')
+    if lang == "fr" and combine_html():
+        matchs_home += f'<section class="hsec" id="combine"><div class="wrap">{combine_html(wrap=False)}</div></section>'
     if lang == "fr" and MATCHS:
         matchs_home += (f'<section class="hsec" id="pronostics"><div class="wrap">'
                        f'<div class="hsec-head"><div><p class="kicker">Pronostics</p><h2>Les derniers matchs analysés</h2>'
@@ -2665,6 +2667,7 @@ def pronostics_page():
 <div class="astats">{stats}</div>
 </div></header>
 <main class="wrap">
+{combine_html()}
 <section id="a-venir">
 <h2><span class="num">⚽</span> Prochains matchs analysés</h2>
 <div class="afilter chips" role="group" aria-label="Filtrer par compétition">{chips}</div>
@@ -3176,6 +3179,34 @@ COUPON_FAQ_FR = [
     ("Un coupon score exact gratuit, ça vaut le coup ?", "Le score exact paie gros mais se trompe très souvent. Je ne le mets jamais dans la Côte de 2 : si tu en joues un, garde une toute petite mise."),
 ]
 
+def combine_html(wrap=True):
+    """Combine du week-end : matchs a venir marques « combine: oui » dans matchs.txt (choisis chaque jeudi)."""
+    now = datetime.datetime.now()
+    picks = sorted([m for m in MATCHS if m.get("combine", "").lower() in ("oui", "yes", "1") and not m.get("resultat")
+                    and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
+    if len(picks) < 2:
+        return ""
+    total = None
+    try:
+        total = 1.0
+        for m in picks:
+            total *= float(m["cote"].replace(",", "."))
+    except (KeyError, ValueError, AttributeError):
+        total = None
+    rows = "".join(
+        f'<li><a href="{m["slug"]}.html"><b>{_JOURS_FR[m["dt"].weekday()].capitalize()} {m["dt"]:%H}h{m["dt"]:%M}</b> · '
+        f'{html.escape(m["equipe1"])} – {html.escape(m["equipe2"])}</a> : <b>{html.escape(m["pronostic"])}</b>'
+        + (f' (cote {html.escape(m["cote"])})' if m.get("cote") else "") + "</li>" for m in picks)
+    onex = next(b["site"] for b in BOOKMAKERS if b["slug"] == "code-promo-1xbet")
+    tot = (f'<p>Cote totale : <b>{total:.2f}</b> (elle peut varier un peu selon le bookmaker).</p>' if total
+           else '<p>La cote totale dépend de ton bookmaker : ajoute les matchs à ton ticket pour la voir.</p>')
+    inner = (f'<h2><span class="num">🎟️</span> Mon combiné du week-end</h2>'
+             f'<p>{len(picks)} de mes pronostics du week-end réunis en un seul ticket. Clique sur un match pour lire mon analyse.</p>'
+             f'<ul class="steps">{rows}</ul>{tot}'
+             f'<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{onex}" rel="sponsored nofollow">🎯 Joue-le sur 1xBet (code FFN)</a></div>'
+             f'<p style="font-size:13px;color:var(--mist);margin-top:8px">18+ · Un combiné n\'est jamais sûr : ne mise que ce que tu peux perdre.</p>')
+    return f'<section id="combine-week-end">{inner}</section>' if wrap else inner
+
 def _coupon_matchs_html():
     now = datetime.datetime.now()
     up = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
@@ -3216,6 +3247,7 @@ def cote_de_2_page():
 <p>Le coupon ci-dessus, c'est <b>mon coupon gratuit du jour</b> : un combiné de quelques matchs que j'ai analysés, avec une cote totale autour de 2. Il est publié <b>chaque matin</b>, ici et sur ma chaîne Telegram. Pas besoin de payer ni de s'abonner pour l'avoir.</p>
 <p>Tu peux le jouer sur 1xBet, mais aussi sur Melbet, Paripesa ou WinWin : les matchs sont les mêmes, seules les cotes changent un peu d'un bookmaker à l'autre.</p>
 </section>
+{combine_html()}
 <section>
 <h2><span class="num">●</span> Les matchs d'aujourd'hui et de demain</h2>
 <p>Mes analyses complètes des gros matchs, avec mon pronostic. Clique sur un match pour lire l'analyse :</p>
@@ -5163,7 +5195,7 @@ def load_matchs():
         if not lines: continue
         m, key = {}, None
         for l in lines:
-            mm = re.match(r"^\s*(date|competition|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|images?|analyse)\s*:\s*(.*)$", l, re.I)
+            mm = re.match(r"^\s*(date|competition|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|combine|images?|analyse)\s*:\s*(.*)$", l, re.I)
             if mm and key != "analyse":
                 key = mm.group(1).lower(); m[key] = mm.group(2).strip()
             elif key == "analyse":
