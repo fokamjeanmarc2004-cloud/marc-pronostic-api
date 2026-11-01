@@ -522,12 +522,14 @@ pronostic_es: Gana el PSG
 pronostic_ar: فوز باريس سان جيرمان
 cote: 
 bookmaker: 1xbet
+resultat: gagne
 analyse: Coup d'envoi dimanche 25 octobre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
 Le choc de la 8e journée au Parc des Princes. Lyon est dans le haut du classement et vient défier le champion.
 Le PSG est en grande forme : victoire 3-1 à Strasbourg en championnat et un parcours parfait en Ligue des champions. À domicile, l'équipe de Luis Enrique fait très mal.
 Lyon joue bien cette saison, mais au Parc des Princes la marche est haute.
 Mon choix : victoire du PSG. Option plus prudente : le PSG gagne au moins une mi-temps.
 Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : PSG 2-0 Lyon. Pronostic gagné ✅ : victoire du PSG au Parc des Princes.
 ---
 date: 2026-10-30 19:00
 competition: Ligue 1

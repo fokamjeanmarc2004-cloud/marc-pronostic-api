@@ -4393,7 +4393,7 @@ COUNTRIES = [
   "momo":["MTN Mobile Money","Moov Money","Celtiis Cash"],
   "extra_pay":"cartes bancaires et cryptomonnaies (USDT, BTC)",
   "cities":"Cotonou, Porto-Novo, Parakou et Abomey-Calavi",
-  "foot":"les Écureuils, le championnat béninois et les clubs de Cotonou",
+  "foot":"les Guépards (ex-Écureuils), le championnat béninois et les clubs de Cotonou",
   "books":["code-promo-1xbet","code-promo-melbet","code-promo-paripesa","code-promo-winwin"]},
 
  {"slug":"mali","name":"Mali","adj":"malien","the":"au Mali","in":"au Mali",
@@ -4627,7 +4627,7 @@ CTY_EXTRA = {
    "intro": "En RDC, on parie en francs congolais (CDF) ou en dollars, avec M-Pesa, Orange Money et Airtel Money. Le TP Mazembe, l'AS Vita Club et les Léopards font partie des matchs les plus suivis, de Kinshasa à Lubumbashi.",
    "tz_note": "Heures de Kinshasa. À Lubumbashi, Goma et Bukavu (une heure de plus), ajoute 1 h."},
  "benin": {"utc": 1, "op": "la LNB (Loterie Nationale du Bénin)",
-   "intro": "Au Bénin, MTN Mobile Money et Moov Money sont les moyens de dépôt les plus utilisés, en francs CFA (XOF). Cotonou est la première ville béninoise de la communauté, qui suit de près les Écureuils et la Ligue des champions."},
+   "intro": "Au Bénin, MTN Mobile Money et Moov Money sont les moyens de dépôt les plus utilisés, en francs CFA (XOF). Cotonou est la première ville béninoise de la communauté, qui suit de près les Guépards et la Ligue des champions."},
  "mali": {"utc": 0, "op": "le PMU-Mali",
    "intro": "Au Mali, Orange Money et Moov Money permettent de déposer en quelques minutes, en francs CFA (XOF). Les Aigles, le Stade Malien et le Djoliba AC sont les équipes les plus suivies à Bamako."},
  "togo": {"utc": 0, "op": "la LONATO (Loterie Nationale Togolaise)",
@@ -4650,6 +4650,81 @@ def cty_kickoff_rows(c):
         ete = (h - off_ete + utc) % 24; hiver = (h - off_hiver + utc) % 24
         out += f'<tr><td>{lab}<br><small style="color:var(--muted)">{h}h{mi:02d} à {ref}</small></td><td><b>{ete}h{mi:02d}</b></td><td><b>{hiver}h{mi:02d}</b></td></tr>'
     return out
+
+# Contenu propre a chaque pays (evite les pages pays quasi identiques entre elles)
+# team = nom de la selection dans matchs.txt (pour lister ses matchs)
+CTY_GUIDE = {
+ "cameroun": {"team": "Cameroun", "h2": "Le foot et les paris au Cameroun", "p": [
+   "Le Cameroun est l'une des grandes nations du football africain. Les <b>Lions Indomptables</b> ont gagné <b>5 Coupes d'Afrique des Nations</b> (1984, 1988, 2000, 2002 et 2017) et ont marqué l'histoire en atteignant les quarts de finale de la Coupe du monde 1990. Chaque match des Lions fait vibrer Douala, Yaoundé et tout le pays : ce sont, de loin, les matchs les plus joués par les parieurs camerounais.",
+   "Au niveau local, l'<b>Elite One</b> est dominée depuis des années par <b>Coton Sport de Garoua</b>, avec le Canon et le Tonnerre de Yaoundé ou l'Union de Douala comme clubs historiques. Mais la plupart des parieurs camerounais jouent surtout la Premier League, la Ligue des champions, la Liga et la Ligue 1, où les cotes et les statistiques sont plus fiables.",
+   "Côté paiement, tout passe par <b>MTN Mobile Money</b> et <b>Orange Money</b> : ce sont eux qui font du pari en ligne un geste de tous les jours au Cameroun."],
+  "tips": ["Au moment de l'inscription, choisis bien <b>Cameroun</b> et <b>XAF</b> : la devise ne se change pas facilement ensuite.",
+           "Dépose avec le même numéro MTN ou Orange que celui de ton compte : les retraits iront vers ce numéro.",
+           "Les matchs européens du soir se jouent à 21h à Douala de novembre à mars (heure de Paris = heure de Douala)."]},
+ "cote-divoire": {"team": "Côte d'Ivoire", "h2": "Le foot et les paris en Côte d'Ivoire", "p": [
+   "En Côte d'Ivoire, le football est une passion nationale. Les <b>Éléphants</b> ont remporté <b>3 Coupes d'Afrique des Nations</b> (1992, 2015 et 2023), la dernière à domicile, à Abidjan, dans une ambiance historique. Les matchs des Éléphants sont toujours parmi les plus pariés du pays.",
+   "En Ligue 1 ivoirienne, l'<b>ASEC Mimosas</b> et l'<b>Africa Sports</b> d'Abidjan sont les deux grands clubs historiques, rivaux de toujours. Beaucoup de joueurs ivoiriens évoluent en Europe, ce qui explique pourquoi les parieurs d'Abidjan suivent autant la Ligue 1 française et la Premier League.",
+   "La Côte d'Ivoire est aussi le pays où l'on a le plus de choix pour déposer : <b>Orange Money, MTN, Moov Money et Wave</b>. Wave, sans frais sur beaucoup d'opérations, est devenu très populaire chez les jeunes parieurs."],
+  "tips": ["Choisis <b>Côte d'Ivoire</b> et <b>XOF</b> à l'inscription.",
+           "Si tu as Wave, vérifie qu'il est proposé dans la caisse du bookmaker : c'est souvent le moyen le moins cher.",
+           "De novembre à mars, un match de Ligue des champions à 21h à Paris se joue à 20h à Abidjan."]},
+ "senegal": {"team": "Sénégal", "h2": "Le foot et les paris au Sénégal", "p": [
+   "Le Sénégal a gagné sa première <b>Coupe d'Afrique des Nations</b> lors de l'édition 2021 (jouée en 2022), après une finale historique. Les <b>Lions de la Teranga</b> sont aussi restés dans les mémoires pour leur quart de finale de Coupe du monde en 2002. Aujourd'hui, ils font partie des meilleures sélections du continent.",
+   "En championnat local, <b>Génération Foot</b>, le <b>Casa Sports</b> de Ziguinchor ou le Jaraaf de Dakar sont parmi les clubs les plus connus. Mais à Dakar comme à Thiès, les parieurs jouent surtout les grands championnats européens, où brillent de nombreux joueurs sénégalais.",
+   "Le Sénégal est le pays de naissance de <b>Wave</b>, devenu un des moyens de dépôt préférés des parieurs, à côté d'<b>Orange Money</b> et de Free Money."],
+  "tips": ["Choisis <b>Sénégal</b> et <b>XOF</b> à l'inscription.",
+           "Wave et Orange Money sont les plus rapides pour déposer et retirer.",
+           "De novembre à mars, un match de Ligue des champions à 21h à Paris se joue à 20h à Dakar."]},
+ "rdc": {"team": "RDC", "h2": "Le foot et les paris en RDC", "p": [
+   "La RDC a gagné la <b>Coupe d'Afrique des Nations</b> en 1968 et en 1974 (sous le nom de Zaïre). Les <b>Léopards</b> restent une équipe très suivie, et leurs matchs sont parmi les plus pariés de Kinshasa à Lubumbashi.",
+   "La RDC a surtout des clubs parmi les plus titrés d'Afrique : le <b>TP Mazembe</b> de Lubumbashi a gagné la Ligue des champions africaine à 5 reprises, et l'<b>AS Vita Club</b> et le DCMP font vibrer Kinshasa. Le championnat national, la Linafoot, est suivi de près.",
+   "Particularité congolaise : on peut parier en <b>francs congolais (CDF)</b> ou en <b>dollars</b>, et les dépôts passent par <b>M-Pesa</b>, Orange Money, Airtel Money ou Africell Money."],
+  "tips": ["Choisis bien ta devise (CDF ou USD) à l'inscription : elle ne se change pas facilement après.",
+           "À Lubumbashi, Goma et Bukavu, ajoute 1 heure aux horaires de Kinshasa.",
+           "Dépose et retire avec le même numéro M-Pesa, Orange ou Airtel."]},
+ "benin": {"team": "Bénin", "h2": "Le foot et les paris au Bénin", "p": [
+   "La sélection du Bénin, longtemps appelée les Écureuils et rebaptisée les <b>Guépards</b>, a réussi son plus beau parcours à la CAN 2019, avec une qualification pour les quarts de finale. Ses matchs sont très suivis à Cotonou et Porto-Novo.",
+   "Les parieurs béninois jouent surtout les grands championnats européens (Premier League, Ligue 1, Liga) et la Ligue des champions, en plus des matchs des Guépards et du championnat national.",
+   "Pour déposer, <b>MTN Mobile Money</b> et <b>Moov Money</b> sont les plus utilisés, avec Celtiis Cash qui se développe."],
+  "tips": ["Choisis <b>Bénin</b> et <b>XOF</b> à l'inscription.",
+           "Utilise le même numéro MTN ou Moov pour tes dépôts et tes retraits.",
+           "Heure de Cotonou = heure de Paris de novembre à mars : un match à 21h à Paris se joue à 21h à Cotonou."]},
+ "mali": {"team": "Mali", "h2": "Le foot et les paris au Mali", "p": [
+   "Les <b>Aigles du Mali</b> ont atteint la finale de la CAN en 1972 et sont régulièrement parmi les meilleures équipes du continent. Le Mali est aussi réputé pour former de très bons jeunes joueurs, souvent titrés dans les compétitions de jeunes.",
+   "À Bamako, le grand derby oppose le <b>Stade Malien</b> au <b>Djoliba AC</b>, les deux clubs les plus titrés du pays. Les parieurs maliens suivent aussi de près la Ligue 1 française, la Premier League et la Ligue des champions.",
+   "Les dépôts se font surtout avec <b>Orange Money</b>, très présent dans tout le pays, et <b>Moov Money</b>."],
+  "tips": ["Choisis <b>Mali</b> et <b>XOF</b> à l'inscription.",
+           "Orange Money est le moyen le plus simple pour déposer et retirer.",
+           "De novembre à mars, un match à 21h à Paris se joue à 20h à Bamako."]},
+ "togo": {"team": "Togo", "h2": "Le foot et les paris au Togo", "p": [
+   "Les <b>Éperviers du Togo</b> ont vécu leur plus grand moment en 2006 avec leur seule participation à la Coupe du monde, portés notamment par Emmanuel Adebayor. Leurs matchs restent un grand rendez-vous à Lomé.",
+   "En championnat, l'<b>ASKO de Kara</b> fait partie des clubs les plus connus. Mais la majorité des parieurs togolais jouent surtout la Premier League, la Ligue 1 et la Ligue des champions.",
+   "Pour déposer, on utilise <b>T-Money</b> (Togocom) et <b>Flooz</b> (Moov Africa)."],
+  "tips": ["Choisis <b>Togo</b> et <b>XOF</b> à l'inscription.",
+           "T-Money et Flooz sont acceptés par la plupart des bookmakers partenaires : vérifie dans la caisse avant de déposer.",
+           "De novembre à mars, un match à 21h à Paris se joue à 20h à Lomé."]},
+ "burkina-faso": {"team": "Burkina Faso", "h2": "Le foot et les paris au Burkina Faso", "p": [
+   "Les <b>Étalons du Burkina</b> ont atteint la finale de la CAN en 2013 et ont fini troisièmes en 2017. Depuis, ils sont une valeur sûre en Afrique de l'Ouest, et leurs matchs sont parmi les plus joués à Ouagadougou et Bobo-Dioulasso.",
+   "En championnat national, l'<b>ASFA Yennenga</b>, l'EFO et le <b>Rahimo FC</b> de Bobo-Dioulasso sont parmi les clubs les plus suivis. Comme ailleurs, les parieurs burkinabè jouent surtout les grands championnats européens.",
+   "Les dépôts passent par <b>Orange Money</b> et <b>Moov Money</b>, en francs CFA (XOF)."],
+  "tips": ["Choisis <b>Burkina Faso</b> et <b>XOF</b> à l'inscription.",
+           "Dépose et retire avec le même numéro Orange ou Moov.",
+           "De novembre à mars, un match à 21h à Paris se joue à 20h à Ouagadougou."]},
+}
+
+def cty_guide_html(c):
+    g = CTY_GUIDE.get(c["slug"])
+    if not g:
+        return ""
+    out = f'<section id="foot-local"><h2><span class="num">●</span> {g["h2"]}</h2>' + "".join(f"<p>{p}</p>" for p in g["p"])
+    out += f'<h3>Mes conseils pour parier {c["in"]}</h3><ul class="steps">' + "".join(f"<li>{t}</li>" for t in g["tips"]) + "</ul>"
+    team = g["team"]
+    ms = sorted([m for m in MATCHS if team in (m["equipe1"], m["equipe2"])], key=lambda m: m["dt"], reverse=True)[:4]
+    if ms:
+        out += f'<h3>Les matchs de la sélection : mes pronostics</h3><ul class="steps">' + "".join(
+            f'<li><a href="{m["slug"]}.html">{html.escape(m["equipe1"])} – {html.escape(m["equipe2"])}</a> '
+            f'({m["dt"].day} {_MOIS_FR[m["dt"].month-1]} {m["dt"].year}, {html.escape(m.get("competition", ""))}) : {html.escape(m["pronostic"])}</li>' for m in ms) + "</ul>"
+    return out + "</section>"
 
 def country_hub_page(c):
     slug = cty_hub_slug(c)
@@ -4694,6 +4769,7 @@ def country_hub_page(c):
 <p>{CTY_EXTRA.get(c['slug'], {}).get('intro', '')}</p>
 <p>{_cap(CTY_EXTRA.get(c['slug'], {}).get('op', "l'opérateur national"))} est l'opérateur national historique des jeux et paris {c['the']}. Les bookmakers en ligne de ce site sont internationaux : vérifie toujours la réglementation locale avant de jouer. 18+.</p>
 </section>
+{cty_guide_html(c)}
 <section id="heure-des-matchs">
 <h2><span class="num">●</span> À quelle heure sont les grands matchs {c['in']} ?</h2>
 <p>Les horaires annoncés en Europe ne sont pas ceux {c['the']}. Voici la correspondance pour ne plus rater un coup d'envoi (et placer ton pari à temps) :</p>
