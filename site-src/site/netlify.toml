@@ -556,6 +556,78 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-aek-athens-real-madrid-2026-11-04"
+  to = "/prediction-aek-athens-real-madrid-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-atletico-madrid-bayern-munich-2026-11-03"
+  to = "/prediction-atletico-madrid-bayern-munich-2026-11-03.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-barcelona-aston-villa-2026-11-03"
+  to = "/prediction-barcelona-aston-villa-2026-11-03.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-borussia-dortmund-real-betis-2026-11-04"
+  to = "/prediction-borussia-dortmund-real-betis-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-cameroon-namibia-2026-11-11"
+  to = "/prediction-cameroon-namibia-2026-11-11.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-fenerbahce-liverpool-2026-11-04"
+  to = "/prediction-fenerbahce-liverpool-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-juventus-napoli-2026-11-01"
+  to = "/prediction-juventus-napoli-2026-11-01.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-manchester-united-roma-2026-11-03"
+  to = "/prediction-manchester-united-roma-2026-11-03.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-marseille-toulouse-2026-11-01"
+  to = "/prediction-marseille-toulouse-2026-11-01.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-rb-leipzig-manchester-city-2026-11-04"
+  to = "/prediction-rb-leipzig-manchester-city-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-slavia-prague-arsenal-2026-11-04"
+  to = "/prediction-slavia-prague-arsenal-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-villarreal-psg-2026-11-03"
+  to = "/prediction-villarreal-psg-2026-11-03.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/predictions"
   to = "/predictions.html"
   status = 301

@@ -607,6 +607,11 @@ pronostic_es: Gana el Olympique de Marsella
 pronostic_ar: فوز مارسيليا
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Sunday 1 November: 8:45pm in Lagos, Douala and Paris, 7:45pm in Accra and Dakar, 10:45pm in Nairobi.
+Marseille close matchday 9 at the Vélodrome on Sunday night, in front of their fans.
+Marseille are very strong at home and are fighting to stay near the top of the table. Toulouse like to keep the ball, but they rarely win at the Vélodrome.
+My pick: Marseille to win. Safer option: Marseille win or draw and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi dimanche 1er novembre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
 L'OM termine la 9e journée au Vélodrome, dimanche soir, devant son public.
 Marseille est très fort à domicile et joue pour rester dans le haut du classement. Toulouse est une équipe qui joue bien au ballon, mais elle gagne rarement au Vélodrome.
@@ -623,6 +628,12 @@ pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Tuesday 3 November: 9pm in Lagos, Douala and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+The big game of Champions League matchday 4 at the Metropolitano.
+Bayern have a frightening attack, but they are conceding a lot in the Champions League right now: 3 goals at Viking and 2 against Arsenal.
+Simeone's Atlético are solid at home, but they will have to attack to get points: they need them in the table.
+My pick: both teams to score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Le choc de la 4e journée de Ligue des champions au Metropolitano.
 Le Bayern a une attaque redoutable, mais il encaisse beaucoup en ce moment en Ligue des champions : 3 buts à Viking et 2 contre Arsenal.
@@ -640,6 +651,12 @@ pronostic_es: Más de 2,5 goles
 pronostic_ar: أكثر من 2.5 هدف في المباراة
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Tuesday 3 November: 9pm in Lagos, Douala and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+Big game at the Camp Nou between two teams who love to attack.
+Aston Villa have had an impressive start in the Champions League, scoring a lot of goals. Barcelona score heavily at home.
+With two such attacking teams, I expect an open game with goals at both ends.
+My pick: over 2.5 goals. Option: both teams to score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Gros match au Camp Nou entre deux équipes qui adorent attaquer.
 Aston Villa fait un début de Ligue des champions impressionnant, avec beaucoup de buts marqués. Le Barça, lui, marque énormément à domicile.
@@ -657,6 +674,12 @@ pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Tuesday 3 November: 9pm in Lagos, Douala and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+Old Trafford hosts Roma in a key game for qualification.
+Manchester United have lost their last two Champions League games and are conceding a lot. But at home, United have enough to score.
+Roma score regularly in the Champions League (3 goals against Real Madrid in a crazy 4-3 defeat).
+My pick: both teams to score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Old Trafford accueille la Roma pour un match très important pour la qualification.
 Manchester United a perdu ses deux derniers matchs de Ligue des champions et encaisse beaucoup. Mais à domicile, United a de quoi marquer.
@@ -674,6 +697,11 @@ pronostic_es: Gana el PSG
 pronostic_ar: فوز باريس سان جيرمان
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Tuesday 3 November: 9pm in Lagos, Douala and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+PSG travel to Spain with 3 wins from 3 Champions League games, including two big wins against Manchester City and Barcelona.
+Villarreal play well at home, but they concede a lot in the Champions League and lack consistency.
+My pick: PSG to win. For bigger odds: PSG win and both teams score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mardi 3 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Le PSG se déplace en Espagne avec 3 victoires en 3 matchs de Ligue des champions, dont deux gros succès contre Manchester City et le Barça.
 Villarreal joue bien chez lui, mais encaisse beaucoup en Ligue des champions et manque de régularité.
@@ -690,6 +718,11 @@ pronostic_es: Gana el Liverpool
 pronostic_ar: فوز ليفربول
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Wednesday 4 November: 6:45pm in Lagos, Douala and Paris, 5:45pm in Accra and Dakar, 8:45pm in Nairobi.
+A hot atmosphere in Istanbul, but Liverpool are one of the most in-form teams in this Champions League, with an attack that scores a lot.
+Fenerbahçe have not won yet and suffered a very heavy defeat at Aston Villa.
+My pick: Liverpool to win. Option: Liverpool to score at least 2 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mercredi 4 novembre : 18h45 heure de Paris et à Douala, 17h45 à Abidjan et Dakar.
 Ambiance chaude à Istanbul, mais Liverpool est l'une des équipes les plus en forme de cette Ligue des champions, avec une attaque qui marque beaucoup.
 Fenerbahçe n'a pas encore gagné et a pris une très lourde défaite à Aston Villa.
@@ -706,6 +739,11 @@ pronostic_es: Gana el Real Madrid
 pronostic_ar: فوز ريال مدريد
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Wednesday 4 November: 6:45pm in Lagos, Douala and Paris, 5:45pm in Accra and Dakar, 8:45pm in Nairobi.
+Real Madrid have won their first 3 Champions League games, including a 4-1 against Leipzig.
+AEK Athens suffered a heavy defeat at Manchester City and struggle against big teams, even in front of their passionate home crowd.
+My pick: Real Madrid to win. Option: Real win and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mercredi 4 novembre : 18h45 heure de Paris et à Douala, 17h45 à Abidjan et Dakar.
 Le Real Madrid a gagné ses 3 premiers matchs de Ligue des champions, dont un 4-1 contre Leipzig.
 L'AEK Athènes a pris une grosse défaite à Manchester City et a du mal face aux grandes équipes, même devant son public bouillant.
@@ -722,6 +760,11 @@ pronostic_es: Gana el Manchester City
 pronostic_ar: فوز مانشستر سيتي
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Wednesday 4 November: 9pm in Lagos, Douala and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+Manchester City are among the Premier League leaders and won 5-1 against AEK in their last Champions League game.
+Leipzig lost heavily against Como and Real Madrid: their defence suffers against teams that dominate the ball.
+My pick: Manchester City to win. Option: City to score at least 2 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mercredi 4 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Manchester City est co-leader de Premier League et vient de gagner 5-1 contre l'AEK en Ligue des champions.
 Leipzig a perdu lourdement contre Como et le Real Madrid : sa défense souffre face aux équipes qui ont le ballon.
@@ -738,6 +781,11 @@ pronostic_es: Gana el Arsenal
 pronostic_ar: فوز أرسنال
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Wednesday 4 November: 9pm in Lagos, Douala and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+Arsenal are unbeaten in the Champions League and among the Premier League leaders. Their defence is one of the best in Europe.
+Slavia Prague have not won a Champions League game yet this season.
+My pick: Arsenal to win. Safer option: Arsenal to win at least one half.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mercredi 4 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Arsenal est invaincu en Ligue des champions et co-leader de Premier League. Sa défense est l'une des meilleures d'Europe.
 Le Slavia Prague n'a pas encore gagné cette saison en Ligue des champions.
@@ -754,6 +802,11 @@ pronostic_es: Ambos equipos marcan
 pronostic_ar: كلا الفريقين يسجل
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Wednesday 4 November: 9pm in Lagos, Douala and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+Real Betis have made a very good start in the Champions League, with plenty of close games and goals. Dortmund, in front of their Yellow Wall, almost always score.
+Both teams like to attack and leave spaces: a game with goals.
+My pick: both teams to score. Option: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mercredi 4 novembre : 21h heure de Paris et à Douala, 20h à Abidjan et Dakar.
 Le Bétis fait un très bon début de Ligue des champions, avec beaucoup de matchs serrés et des buts. Dortmund, devant son Mur jaune, marque presque toujours.
 Les deux équipes aiment attaquer et laissent des espaces : un match à buts.
@@ -819,6 +872,11 @@ pronostic_es: Menos de 3,5 goles
 pronostic_ar: أقل من 3.5 هدف
 cote: 
 bookmaker: 1xbet
+analyse_en: Kick-off Sunday 1 November: 8:45pm in Lagos, Douala and Paris, 7:45pm in Accra and Dakar, 10:45pm in Nairobi.
+Big game in Turin between Juventus and Napoli, two title contenders.
+These top Serie A clashes are often tight and tactical: both teams defend well and avoid unnecessary risks.
+My pick: under 3.5 goals. Bigger odds: the draw.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi dimanche 1er novembre : 20h45 heure de Paris et à Douala, 19h45 à Abidjan et Dakar.
 Grosse affiche à Turin entre la Juventus et Naples, deux candidats au titre.
 Ces matchs au sommet de la Serie A sont souvent serrés et tactiques : les deux équipes défendent bien et ne prennent pas de risques inutiles.
@@ -867,6 +925,12 @@ pronostic_es: Gana Camerún
 pronostic_ar: فوز الكاميرون
 cote:
 bookmaker: 1xbet
+analyse_en: Kick-off Wednesday 11 November: 6pm in Douala, Lagos and Paris, 5pm in Accra and Dakar, 8pm in Nairobi.
+The Indomitable Lions host Namibia on matchday 3 of AFCON 2027 qualifying group G, before the return game in Namibia on Sunday 15 November.
+At home, in front of their fans, Cameroon are clear favourites: they have more players in Europe's top leagues.
+Namibia often defend deep and play for the draw, so the Lions will need patience to make the difference.
+My pick: Cameroon to win. Bigger odds: Cameroon win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
 analyse: Coup d'envoi mercredi 11 novembre : 18h heure de Douala et de Paris, 17h à Abidjan et Dakar.
 Les Lions Indomptables reçoivent la Namibie pour la 3e journée du groupe G des éliminatoires de la CAN 2027, avant le match retour en Namibie le dimanche 15 novembre.
 À domicile, devant son public, le Cameroun est clairement favori : l'équipe a plus de joueurs qui évoluent dans les grands championnats européens.

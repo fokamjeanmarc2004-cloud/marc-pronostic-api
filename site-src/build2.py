@@ -1714,10 +1714,10 @@ html[data-vt="bulles"]::view-transition-new(root){animation:vt-fadein .5s ease b
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}.cm-bubbles{display:none}}
 """
 
-def match_og_image(m):
+def match_og_image(m, lang="fr"):
     """Image de partage (WhatsApp/Telegram/Facebook) propre a chaque match : site/og/<slug>.jpg.
     Generee en local (Pillow + polices Windows) ; sur Netlify (sans Pillow) on reutilise le fichier deja commite."""
-    rel = f"og/{m['slug']}.jpg"
+    rel = f"og/{m['slug_en'] if lang == 'en' else m['slug']}.jpg"
     path = os.path.join(OUT, rel)
     if os.path.exists(path):
         return f"{BASE}/{rel}"
@@ -1742,21 +1742,30 @@ def match_og_image(m):
         while s > 30 and d.textlength(text, font=F(font, s)) > maxw:
             s -= 4
         return F(font, s)
-    jour = f'{_JOURS_FR[m["dt"].weekday()]} {m["dt"].day} {_MOIS_FR[m["dt"].month - 1]} · {m["dt"]:%H}h{m["dt"]:%M} (Douala)'.upper()
-    d.text((60, 50), (m.get("competition") or "Football").upper(), font=F("segoeuib.ttf", 30), fill=gold)
+    en = lang == "en"
+    tl = lambda t: TEAM_L.get(t, {}).get("en", t) if en else t
+    if en:
+        jour = f'{m["dt"]:%A} {m["dt"].day} {_MOIS_EN[m["dt"].month - 1]} · {m["dt"]:%H:%M} (Lagos / Douala)'.upper()
+        comp = COMP_L.get(m.get("competition", ""), {}).get("en", m.get("competition") or "Football")
+    else:
+        jour = f'{_JOURS_FR[m["dt"].weekday()]} {m["dt"].day} {_MOIS_FR[m["dt"].month - 1]} · {m["dt"]:%H}h{m["dt"]:%M} (Douala)'.upper()
+        comp = m.get("competition") or "Football"
+    pick = (m.get("pronostic_en") or m["pronostic"]) if en else m["pronostic"]
+    lab_txt, promo_txt = ("MY PREDICTION", "PROMO CODE FFN") if en else ("MON PRONOSTIC", "CODE PROMO FFN")
+    d.text((60, 50), comp.upper(), font=F("segoeuib.ttf", 30), fill=gold)
     d.text((60, 92), jour, font=F("segoeuib.ttf", 26), fill=grey)
     d.text((W - 60, 50), "COUSIN MARC", font=F("seguibl.ttf", 30), fill=white, anchor="ra")
-    teams = f'{m["equipe1"]}  –  {m["equipe2"]}'.upper()
+    teams = f'{tl(m["equipe1"])}  –  {tl(m["equipe2"])}'.upper()
     ft = fit(teams, "seguibl.ttf", W - 120, 96)
     d.text((W // 2, 250), teams, font=ft, fill=white, anchor="mm")
     lab = F("segoeuib.ttf", 28)
-    pr = fit(m["pronostic"].upper(), "seguibl.ttf", W - 220, 60)
-    pw = max(d.textlength(m["pronostic"].upper(), font=pr), d.textlength("MON PRONOSTIC", font=lab)) + 80
+    pr = fit(pick.upper(), "seguibl.ttf", W - 220, 60)
+    pw = max(d.textlength(pick.upper(), font=pr), d.textlength(lab_txt, font=lab)) + 80
     d.rounded_rectangle([W // 2 - pw / 2, 330, W // 2 + pw / 2, 470], radius=28, fill=(14, 30, 52), outline=lime, width=4)
-    d.text((W // 2, 365), "MON PRONOSTIC", font=lab, fill=grey, anchor="mm")
-    d.text((W // 2, 425), m["pronostic"].upper(), font=pr, fill=lime, anchor="mm")
+    d.text((W // 2, 365), lab_txt, font=lab, fill=grey, anchor="mm")
+    d.text((W // 2, 425), pick.upper(), font=pr, fill=lime, anchor="mm")
     d.rectangle([0, H - 90, W, H], fill=(5, 10, 20))
-    d.text((60, H - 45), "CODE PROMO FFN", font=F("seguibl.ttf", 38), fill=gold, anchor="lm")
+    d.text((60, H - 45), promo_txt, font=F("seguibl.ttf", 38), fill=gold, anchor="lm")
     d.text((W - 60, H - 45), "cousinmarc-pronostic.com", font=F("segoeuib.ttf", 30), fill=white, anchor="rm")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     im.save(path, "JPEG", quality=86, optimize=True)
@@ -3160,7 +3169,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, HELP_SLUG, "affiche.html"] + [m["slug"] + ".html" for m in MATCHS]
+            + [COMPARE_SLUG, HELP_SLUG, "affiche.html"] + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -5459,11 +5468,11 @@ def load_matchs():
         if not lines: continue
         m, key = {}, None
         for l in lines:
-            mm = re.match(r"^\s*(date|competition|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|combine|images?|analyse)\s*:\s*(.*)$", l, re.I)
+            mm = re.match(r"^\s*(date|competition|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|combine|images?|analyse_en|analyse)\s*:\s*(.*)$", l, re.I)
             if mm and key != "analyse":
                 key = mm.group(1).lower(); m[key] = mm.group(2).strip()
-            elif key == "analyse":
-                m["analyse"] += "\n" + l.strip()
+            elif key in ("analyse", "analyse_en"):
+                m[key] += "\n" + l.strip()
         need = ["date", "equipe1", "equipe2", "pronostic"]
         if any(not m.get(k) for k in need):
             print("  ! match ignore (champ manquant) :", m.get("equipe1", "?"), "-", m.get("equipe2", "?")); continue
@@ -5562,9 +5571,11 @@ def match_page(m):
     tickets = f'<div class="vproofs" style="margin-top:16px">{tickets}</div>' if imgs else ""
     jsonld = json.dumps(sports_event_ld(m, desc), ensure_ascii=False)
     others = matchs_list_html(4, exclude=m["slug"])
-    return head(html.escape(title), html.escape(desc), f'{BASE}/{m["slug"]}.html', extra=f'<script type="application/ld+json">{jsonld}</script>', image=match_og_image(m)) + f"""
+    alt = (f'{BASE}/{m["slug"]}.html', f'{BASE}/{m["slug_en"]}.html') if m.get("slug_en") else None
+    en_link = f' · <a href="{m["slug_en"]}.html" hreflang="en" style="color:inherit">🇬🇧 English</a>' if m.get("slug_en") else ""
+    return head(html.escape(title), html.escape(desc), f'{BASE}/{m["slug"]}.html', extra=f'<script type="application/ld+json">{jsonld}</script>', alternates=alt, image=match_og_image(m)) + f"""
 <header class="hero"><div class="wrap">
-<p class="eyebrow"><a href="pronostics.html" style="color:inherit">📊 Toutes les analyses</a> · {html.escape(m.get("competition", "Football"))} · {_date_fr(m["dt"])}</p>
+<p class="eyebrow"><a href="pronostics.html" style="color:inherit">📊 Toutes les analyses</a> · {html.escape(m.get("competition", "Football"))} · {_date_fr(m["dt"])}{en_link}</p>
 <h1>Pronostic {html.escape(e1)} <span class="hl">vs</span> {html.escape(e2)}</h1>
 {match_card(m, link=False)}
 <div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Jouer ce pronostic sur {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 Code {b["code"]}</button></div>
@@ -5585,6 +5596,53 @@ def match_page(m):
 </main>
 {footer_html()}
 {sticky_bar(b, "fr")}
+</body></html>"""
+
+
+def match_page_en(m):
+    b = m["bk"]
+    e1, e2 = TEAM_L.get(m["equipe1"], {}).get("en", m["equipe1"]), TEAM_L.get(m["equipe2"], {}).get("en", m["equipe2"])
+    comp = COMP_L.get(m.get("competition", ""), {}).get("en", m.get("competition") or "Football")
+    pick = m.get("pronostic_en") or m["pronostic"]
+    d = m["dt"]
+    when = f'{d:%A} {_MOIS_EN[d.month-1]} {d.day}, {d.year}'
+    title = f'{e1} vs {e2} Prediction ({d:%d/%m}) | Cousin Marc'
+    desc = f'{e1} vs {e2} prediction, {when} ({comp}): {pick}' + (f' at odds {m["cote"]}' if m.get("cote") else "") + ". Analysis by Cousin Marc, promo code FFN."
+    paras = "".join(f"<p>{html.escape(p.strip())}</p>" for p in m.get("analyse_en", "").split("\n") if p.strip())
+    paras = paras.replace("on 1xBet, Melbet, Paripesa or WinWin",
+        'on <a href="1xbet-promo-code.html">1xBet</a>, <a href="melbet-promo-code.html">Melbet</a>, '
+        '<a href="paripesa-promo-code.html">Paripesa</a> or <a href="winwin-promo-code.html">WinWin</a>', 1)
+    res = {"gagne": "✅ Won", "gagné": "✅ Won", "perdu": "❌ Lost", "rembourse": "↩️ Void", "remboursé": "↩️ Void"}.get(m.get("resultat", "").lower(), "")
+    canon = f'{BASE}/{m["slug_en"]}.html'
+    ev = sports_event_ld(m, desc)
+    ev["name"] = f"{e1} vs {e2}"
+    others = [x for x in MATCHS if x.get("slug_en") and x is not m][:4]
+    oth = "".join(f'<li><a href="{x["slug_en"]}.html">{html.escape(TEAM_L.get(x["equipe1"], {}).get("en", x["equipe1"]))} vs {html.escape(TEAM_L.get(x["equipe2"], {}).get("en", x["equipe2"]))}</a>: {html.escape(x.get("pronostic_en") or x["pronostic"])}</li>' for x in others)
+    return head(html.escape(title), html.escape(desc), canon, extra=f'<script type="application/ld+json">{json.dumps(ev, ensure_ascii=False)}</script>',
+                nav=nav_en(fr=f'{m["slug"]}.html'), lang="en", alternates=(f'{BASE}/{m["slug"]}.html', canon), image=match_og_image(m, "en")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow"><a href="predictions.html" style="color:inherit">📊 All predictions</a> · {html.escape(comp)} · {when} · <a href="{m["slug"]}.html" hreflang="fr" style="color:inherit">🇫🇷 Français</a></p>
+<h1>{html.escape(e1)} <span class="hl">vs</span> {html.escape(e2)} prediction</h1>
+<div class="mcard big"><div class="mmeta">{html.escape(comp)} · {d:%H:%M} Lagos / Douala time</div>
+<div class="mteams"><b>{html.escape(e1)}</b><span>vs</span><b>{html.escape(e2)}</b></div>
+<div class="mpick"><span>My prediction: {html.escape(pick)}</span>{f'<b>@{html.escape(m["cote"])}</b>' if m.get("cote") else ""}</div>{f'<span class="mstatus">{res}</span>' if res else ""}</div>
+<div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Play this prediction on {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 Code {b["code"]}</button></div>
+</div></header>
+<main class="wrap">
+<section>
+<h2><span class="num">01</span> My analysis</h2>
+{paras}
+<div class="note">A prediction is never a certainty. Only stake what you can afford to lose. 18+</div>
+</section>
+<section>
+<h2><span class="num">02</span> Where to bet on this match</h2>
+<p>No account yet? Sign up on <b>{b["name"]}</b> with the promo code <b>{b["code"]}</b> to activate your welcome bonus ({bk_bonus(b, "en")}). Full guide: <a href="{en_slug(b)}.html">{b["name"]} promo code</a>.</p>
+<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Register on {b["name"]}</a><a class="cta alt" href="odds-of-2.html">Free slip of the day</a></div>
+</section>
+{f'<section><h2><span class="num">03</span> Other predictions</h2><ul class="steps">{oth}</ul></section>' if oth else ""}
+</main>
+{footer_html_en()}
+{sticky_bar(b, "en")}
 </body></html>"""
 
 
@@ -5618,7 +5676,8 @@ COMP_L = {"Ligue des Champions": {"en": "Champions League", "es": "Liga de Campe
           "Liga": {"en": "La Liga", "es": "LaLiga", "ar": "الدوري الإسباني"},
           "Serie A": {"en": "Serie A", "es": "Serie A", "ar": "الدوري الإيطالي"},
           "Bundesliga": {"en": "Bundesliga", "es": "Bundesliga", "ar": "الدوري الألماني"},
-          "CAN": {"en": "AFCON", "es": "Copa Africana", "ar": "كأس أمم أفريقيا"}}
+          "CAN": {"en": "AFCON", "es": "Copa Africana", "ar": "كأس أمم أفريقيا"},
+          "Éliminatoires CAN 2027": {"en": "AFCON 2027 Qualifiers", "es": "Clasificación Copa Africana 2027", "ar": "تصفيات كأس أمم أفريقيا 2027"}}
 TEAM_L = {"Cameroun": {"en": "Cameroon", "es": "Camerún"}, "Namibie": {"en": "Namibia", "es": "Namibia"}, "Milan": {"en": "AC Milan", "es": "AC Milan"}, "Inter": {"en": "Inter Milan", "es": "Inter de Milán"}, "Barcelone": {"en": "Barcelona", "es": "Barcelona"}, "Naples": {"en": "Napoli", "es": "Nápoles"},
           "Sporting Portugal": {"en": "Sporting CP", "es": "Sporting de Portugal"},
           "Séville": {"en": "Sevilla", "es": "Sevilla"},
@@ -5626,6 +5685,13 @@ TEAM_L = {"Cameroun": {"en": "Cameroon", "es": "Camerún"}, "Namibie": {"en": "N
           "Bodø/Glimt": {"en": "Bodø/Glimt", "es": "Bodø/Glimt"},
           "Lyon": {"en": "Lyon", "es": "Olympique de Lyon"}, "Marseille": {"en": "Marseille", "es": "Olympique de Marsella"},
           "AEK Athènes": {"en": "AEK Athens", "es": "AEK Atenas"}, "Alavés": {"en": "Alavés", "es": "Alavés"}}
+
+# fiche anglaise d'un match (si « analyse_en » est rempli dans matchs.txt) : prediction-<equipes en anglais>-<date>.html
+for _m in MATCHS:
+    if _m.get("analyse_en"):
+        _en = lambda t: TEAM_L.get(t, {}).get("en", t)
+        _m["slug_en"] = f'prediction-{_slugify(_en(_m["equipe1"]))}-{_slugify(_en(_m["equipe2"]))}-{_m["dt"]:%Y-%m-%d}'
+
 AN_L = {
  "en": {"h2": "Upcoming analysed matches", "done": "Finished matches", "all": "All", "soon": "Upcoming", "win": "✅ Won", "lose": "❌ Lost", "void": "↩️ Void",
         "stats": ("predictions published", "upcoming matches", "won", "lost", "success rate"),
@@ -5649,7 +5715,8 @@ def match_card_l(m, lang):
     cote = f'<b>@{html.escape(m["cote"])}</b>' if m.get("cote") else ""
     d = m["dt"]
     when = f'{d.day} {_MOIS_L[lang][d.month-1]} · {d:%H:%M}' if lang != "en" else f'{_MOIS_EN[d.month-1]} {d.day} · {d:%H:%M}'
-    return (f'<a class="mcard" href="{m["slug"]}.html" hreflang="fr" data-c="{html.escape(comp)}">'
+    href = f'{m["slug_en"]}.html"' if lang == "en" and m.get("slug_en") else f'{m["slug"]}.html" hreflang="fr"'
+    return (f'<a class="mcard" href="{href} data-c="{html.escape(comp)}">'
             f'<div class="mmeta">{html.escape(comp)} · {when}</div>'
             f'<div class="mteams" dir="ltr"><b>{html.escape(_team_l(m["equipe1"], lang))}</b><span>vs</span><b>{html.escape(_team_l(m["equipe2"], lang))}</b></div>'
             f'<div class="mpick"><span>{html.escape(pick)}</span>{cote}</div>{status}</a>')
@@ -5720,6 +5787,8 @@ open(os.path.join(OUT,HELP_SLUG),"w",encoding="utf-8").write(help_page()); writt
 open(os.path.join(OUT,AFFICHE_SLUG),"w",encoding="utf-8").write(affiche_page()); written.append(AFFICHE_SLUG)
 for _m in MATCHS:
     open(os.path.join(OUT,_m["slug"]+".html"),"w",encoding="utf-8").write(match_page(_m)); written.append(_m["slug"]+".html")
+    if _m.get("slug_en"):
+        open(os.path.join(OUT,_m["slug_en"]+".html"),"w",encoding="utf-8").write(match_page_en(_m)); written.append(_m["slug_en"]+".html")
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
