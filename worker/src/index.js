@@ -471,6 +471,29 @@ async function sendVip(env, date = new Date()) {
   return "rappel VIP publié (texte)";
 }
 
+// ---------------------------------------------------------------- 6h : mes pronostics du jour (liens vers les analyses du site)
+async function sendAnalyses(env, date = new Date()) {
+  const day = new Date(date.getTime() + 3600000).toISOString().slice(0, 10); // date du jour a Douala (UTC+1)
+  let list = [];
+  try { list = await (await fetch(`${SITE}/matchs.json?t=${Date.now()}`)).json(); } catch (e) { return "analyses : matchs.json illisible (" + e.message + ")"; }
+  const today = list.filter((m) => m.d === day).slice(0, 6);
+  if (!today.length) return "analyses : aucun match aujourd'hui";
+  let text = "⚽ MES PRONOSTICS DU JOUR\n";
+  for (const m of today) text += `\n🕘 ${m.h} · ${m.e1} – ${m.e2}\n✅ ${m.p}\n👉 ${SITE}/${m.slug}.html\n`;
+  const en = today.find((m) => m.slug_en);
+  if (en) text += `\n🇬🇧 In English: ${SITE}/${en.slug_en}.html\n`;
+  text += "\n🎁 Pas encore de compte ? Inscris-toi avec le code promo FFN pour ton bonus." + RESP;
+  const photo = `${SITE}/og/${today[0].slug}.jpg`;
+  if (text.length <= 1000) {
+    try {
+      await tg(env, "sendPhoto", { chat_id: channelOf(env), photo, caption: text });
+      return `analyses du jour publiées (${today.length} match(s), image)`;
+    } catch (e) { console.log("image analyses", e.message); }
+  }
+  await tg(env, "sendMessage", { chat_id: channelOf(env), text, disable_web_page_preview: false });
+  return `analyses du jour publiées (${today.length} match(s), texte)`;
+}
+
 // ---------------------------------------------------------------- Entrees du Worker
 export default {
   async fetch(request, env, ctx) {
@@ -518,6 +541,12 @@ export default {
       return new Response(`✅ ${out} dans ${channelOf(env)}`, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
+    if (url.pathname === "/analyses") {
+      if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
+      const out = await sendAnalyses(env);
+      return new Response(`✅ ${out} dans ${channelOf(env)}`, { headers: { "content-type": "text/plain; charset=utf-8" } });
+    }
+
     if (url.pathname === "/vip") {
       if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
       const out = await sendVip(env);
@@ -533,5 +562,7 @@ export default {
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
     if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
     else ctx.waitUntil(sendPromo(env, pickIndex(when), when).then(console.log));
+    // 6h : apres la promo, la liste des analyses du jour (seulement les jours de match)
+    if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, 20000)).then(() => sendAnalyses(env, when)).then(console.log).catch((e) => console.log("analyses", e.message)));
   },
 };

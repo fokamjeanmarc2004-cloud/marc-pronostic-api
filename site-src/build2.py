@@ -1639,6 +1639,8 @@ def related_block(current):
 
 # ===== BANDEAU VIDEO YOUTUBE (haut de toutes les pages) =====
 YT_VID = "Z-vnaLR3jYM"
+# video principale des pages anglaises / arabes : tuto dans leur langue (Paripesa EN = la plus vue en anglais)
+YT_VID_L = {"en": "PhtRhb-uneM", "ar": "r0QYlI6IXww"}
 YT_CHAN = "https://youtube.com/@prossport"
 YT_L = {
  "fr": ("Regarde le tuto en vidéo", "S'abonner à la chaîne"),
@@ -1654,9 +1656,10 @@ VIDEO_L = {
 }
 def video_block(lang):
     kick, title, sub, subscribe, play = VIDEO_L.get(lang, VIDEO_L["fr"])
+    vid = YT_VID_L.get(lang, YT_VID)
     return (f'<section class="vidhero" id="video"><div class="wrap vidgrid">'
-      f'<div class="yt-facade" data-yt="{YT_VID}" data-yt-title="{title}" role="button" tabindex="0" aria-label="{play} : {title}">'
-      f'<img src="https://i.ytimg.com/vi/{YT_VID}/hqdefault.jpg" alt="{title} — Cousin Marc" width="480" height="360" fetchpriority="high">'
+      f'<div class="yt-facade" data-yt="{vid}" data-yt-title="{title}" role="button" tabindex="0" aria-label="{play} : {title}">'
+      f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="{title} — Cousin Marc" width="480" height="360" fetchpriority="high">'
       f'<span class="ytf-play" aria-hidden="true">▶</span></div>'
       f'<div class="vidtext"><p class="kicker">🎥 {kick}</p><h2>{title}</h2><p>{sub}</p>'
       f'<a class="ytsub" href="{YT_CHAN}" target="_blank" rel="nofollow">▶ {subscribe}</a></div>'
@@ -1664,10 +1667,11 @@ def video_block(lang):
 
 def youtube_banner(lang):
     title, sub = YT_L.get(lang, YT_L["fr"])
+    vid = YT_VID_L.get(lang, YT_VID)
     css = ""
     return (f'{css}<div class="ytbar wrap">'
-      f'<a class="ytthumb" href="https://youtu.be/{YT_VID}" target="_blank" rel="nofollow">'
-      f'<img src="https://img.youtube.com/vi/{YT_VID}/hqdefault.jpg" alt="{title} - Cousin Marc" loading="lazy" width="132" height="78">'
+      f'<a class="ytthumb" href="https://youtu.be/{vid}" target="_blank" rel="nofollow">'
+      f'<img src="https://img.youtube.com/vi/{vid}/hqdefault.jpg" alt="{title} - Cousin Marc" loading="lazy" width="132" height="78">'
       f'<span class="ytplay">▶</span></a>'
       f'<div class="ytinfo"><div class="yttitle">🎥 {title}</div>'
       f'<a class="ytsub" href="{YT_CHAN}" target="_blank" rel="nofollow">▶ {sub}</a></div>'
@@ -6036,6 +6040,13 @@ for _m in MATCHS:
         open(os.path.join(OUT,_m["slug_en"]+".html"),"w",encoding="utf-8").write(match_page_en(_m)); written.append(_m["slug_en"]+".html")
     if _m.get("slug_ar"):
         open(os.path.join(OUT,_m["slug_ar"]+".html"),"w",encoding="utf-8").write(match_page_ar(_m)); written.append(_m["slug_ar"]+".html")
+# liste des matchs a venir pour le bot Telegram (message « Mes pronostics du jour » de 6h)
+_now = datetime.datetime.now() - datetime.timedelta(days=1)
+open(os.path.join(OUT, "matchs.json"), "w", encoding="utf-8").write(json.dumps(
+    [{"d": f'{_m["dt"]:%Y-%m-%d}', "h": f'{_m["dt"]:%H:%M}', "comp": _m.get("competition", ""), "e1": _m["equipe1"], "e2": _m["equipe2"],
+      "p": _m["pronostic"], "slug": _m["slug"], "slug_en": _m.get("slug_en", ""), "combine": bool(_m.get("combine"))}
+     for _m in sorted(MATCHS, key=lambda x: x["dt"]) if not _m.get("resultat") and _m["dt"] > _now], ensure_ascii=False))
+written.append("matchs.json")
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
