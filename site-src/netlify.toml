@@ -684,6 +684,12 @@
   force = true
 
 [[redirects]]
+  from = "/promo-codes-tchad-ar"
+  to = "/promo-codes-tchad-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/promo-codes"
   to = "/promo-codes.html"
   status = 301

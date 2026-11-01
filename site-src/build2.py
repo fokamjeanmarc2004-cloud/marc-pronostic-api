@@ -3179,7 +3179,7 @@ def sitemap():
              RESULTS_SLUG["fr"], RESULTS_SLUG["en"], RESULTS_SLUG["es"], RESULTS_SLUG["ar"], VIP_SLUG["fr"], VIP_SLUG["en"], VIP_SLUG["es"], VIP_SLUG["ar"]] \
             + [f"{b['slug']}.html" for b in BOOKMAKERS] + [f"{en_slug(b)}.html" for b in BOOKMAKERS] + [f"{es_slug(b)}.html" for b in BOOKMAKERS] + [f"{ar_slug(b)}.html" for b in BOOKMAKERS] \
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
-            + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] \
+            + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
             + [COMPARE_SLUG, HELP_SLUG, "affiche.html"] + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
@@ -4406,6 +4406,95 @@ def news_page_es():
 
 def ar_slug(b): return b["name"].lower().replace(" ","")+"-promo-ar"
 
+# ===== PAGE PAYS EN ARABE : TCHAD (l'arabe y est langue officielle, franc CFA comme au Cameroun) =====
+TCHAD_AR_SLUG = "promo-codes-tchad-ar"
+
+def country_page_tchad_ar():
+    rows = ""
+    for sl in CTY_EN_BOOKS:
+        b = _bk(sl)
+        bonus = B300["ar"] if sl in FFN300 else bk_bonus(b, "ar")
+        rows += (f'<tr><td><a href="{ar_slug(b)}.html" style="color:{BRAND[sl]};font-weight:800" translate="no">{b["name"]}</a></td>'
+                 f'<td>{bonus}</td><td><b>{b["code"]}</b></td></tr>')
+    kick = "".join(f"<tr><td>{a}</td><td>{e}</td><td><b>{l}</b></td></tr>" for a, e, l in (
+        ("دوري أبطال أوروبا (مباراة المساء)", "21:00 (باريس)", "21:00"),
+        ("دوري أبطال أوروبا (المباراة المبكرة)", "18:45 (باريس)", "18:45"),
+        ("الدوري الإنجليزي (السبت بعد الظهر)", "15:00 (لندن)", "16:00"),
+        ("الدوري الإنجليزي (الأحد)", "16:30 (لندن)", "17:30")))
+    qs = [
+        ("ما هو أفضل رمز ترويجي للمراهنات في تشاد سنة 2026؟", "رمز Cousin Marc هو FFN: يعطيك مكافأة 300% على أول إيداع في 1xBet وMelbet وParipesa وWinWin وMegapari، حتى 300 000 فرنك CFA. يُكتب مرة واحدة فقط عند التسجيل."),
+        ("كيف أودع بـ Airtel Money أو Moov Money في تشاد؟", "اختر تشاد والفرنك CFA (XAF) عند التسجيل، ثم افتح صفحة الإيداع: طرق الدفع المتاحة في تشاد تظهر هناك. أودع واسحب دائمًا بنفس الرقم المسجل في حسابك."),
+        ("في أي ساعة تُلعب مباريات دوري أبطال أوروبا في تشاد؟", "من نوفمبر إلى مارس، مباراة الساعة 21:00 في باريس تبدأ الساعة 21:00 في انجامينا، لأن تشاد على نفس توقيت باريس ودوالا في الشتاء."),
+        ("هل يعمل الرمز الترويجي FFN في تشاد؟", "نعم، إذا قبل الموقع التسجيل من تشاد بالفرنك CFA، فإن الرمز والمكافأة يعملان. الحد الأقصى للمكافأة هو نفسه كما في الكاميرون لأن العملة واحدة."),
+    ]
+    faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qs]}, ensure_ascii=False)
+    return head("رمز ترويجي 1xBet تشاد 2026: مكافأة 300% وAirtel Money | كوزين مارك",
+        "أفضل الرموز الترويجية للمراهنات في تشاد 2026: 1xBet وMelbet وParipesa و1win. مكافأة 300% حتى 300 000 فرنك CFA مع الرمز FFN، والإيداع بـ Airtel Money وMoov Money. دليل كوزين مارك.",
+        f"{BASE}/{TCHAD_AR_SLUG}.html", f'<script type="application/ld+json">{faq}</script>', nav=nav_ar(), lang="ar") + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">⚽ المراهنات الرياضية في تشاد · تحديث نوفمبر 2026</p>
+<h1>رموز ترويجية للمراهنات في <span class="hl">تشاد</span> 2026</h1>
+<p class="sub">أفضل مواقع المراهنة للاعبين في تشاد، مكافأة الترحيب في كل موقع والرمز الذي تستعمله. الإيداع بـ Airtel Money وMoov Money وبالفرنك CFA.</p>
+<div class="btnrow"><a class="cta" href="#bookmakers">شاهد الرموز</a><a class="cta alt" href="https://t.me/marc_prono" rel="nofollow">✈️ تيليغرام</a></div>
+</div></header>
+<main class="wrap">
+<section id="bookmakers" style="padding-top:16px">
+<h2><span class="num">01</span> الرموز الترويجية في تشاد: الجدول</h2>
+<div class="tablecard"><table>
+<thead><tr><th>الموقع</th><th>مكافأة الترحيب</th><th>الرمز</th></tr></thead>
+<tbody>{rows}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:12px">التوفر يختلف من موقع لآخر: إذا قبل الموقع تسجيلك من تشاد بالفرنك CFA، فالرمز يعمل. تحقق دائمًا من القوانين المعمول بها في بلدك قبل المراهنة.</p>
+</section>
+<section id="football">
+<h2><span class="num">02</span> كرة القدم والمراهنات في تشاد</h2>
+<p>في تشاد، اللغتان الرسميتان هما <b>العربية والفرنسية</b>، ولذلك أكتب لك هذا الدليل بالعربية. يتابع المشجعون في <b>انجامينا وأبشي ومندو وسار</b> منتخب <b>الساو</b> بكل حماس، لكن أكثر المباريات التي يراهنون عليها هي مباريات الدوري الإنجليزي ودوري أبطال أوروبا والدوري الإسباني.</p>
+<p>تشاد تستعمل <b>الفرنك CFA (XAF)</b> مثل الكاميرون: نفس العملة ونفس حدود المكافأة، ونفس التوقيت تقريبًا. لذلك تصلح لك كل توقعاتي وقسائمي اليومية كما هي.</p>
+<p>الدفع بالهاتف هو الأكثر استعمالًا: <b>Airtel Money</b> و<b>Moov Money</b> هما الطريقتان المعتادتان للإيداع والسحب.</p>
+</section>
+<section>
+<h2><span class="num">03</span> كيف تفتح حسابًا من تشاد</h2>
+<ol class="steps">
+<li><b>اختر موقعًا</b> من الجدول أعلاه.</li>
+<li><b>اختر تشاد</b> كبلد و<b>الفرنك CFA (XAF)</b> كعملة: من الصعب تغيير العملة بعد ذلك.</li>
+<li><b>اكتب الرمز الترويجي</b> (FFN في 1xBet وMelbet وParipesa وWinWin وMegapari) قبل التأكيد: بدون رمز لا توجد مكافأة.</li>
+<li><b>قم بأول إيداع</b>: تُضاف مكافأة الترحيب تلقائيًا.</li>
+</ol>
+<div class="note">⚠️ استعمل معلوماتك الحقيقية (الاسم، تاريخ الميلاد، رقم الهاتف). الحساب الذي لا يطابق بطاقة هويتك قد يُحظر عند السحب.</div>
+</section>
+<section>
+<h2><span class="num">04</span> الإيداع والسحب في تشاد</h2>
+<div class="tablecard"><table>
+<thead><tr><th>طريقة الدفع</th><th>الاستعمال</th></tr></thead>
+<tbody><tr><td>Airtel Money</td><td>إيداع وسحب</td></tr><tr><td>Moov Money</td><td>إيداع وسحب</td></tr><tr><td>بطاقات / عملات رقمية (USDT)</td><td>حسب الموقع</td></tr></tbody></table></div>
+<p style="margin-top:12px">اسحب دائمًا بنفس الطريقة التي أودعت بها. طرق الدفع قد تتغير: تحقق من صفحة الإيداع في موقعك قبل أن تودع.</p>
+</section>
+<section>
+<h2><span class="num">05</span> نصائحي للمراهنة من تشاد</h2>
+<ul class="steps">
+<li>أودع واسحب <b>بنفس رقم Airtel أو Moov</b> المسجل في حسابك: السحب يعود إلى هذا الرقم.</li>
+<li>ابدأ بمبالغ صغيرة، ولا تراهن أبدًا بمال تحتاجه.</li>
+<li>من نوفمبر إلى مارس، مباراة دوري الأبطال الساعة 21:00 في باريس تبدأ الساعة 21:00 في انجامينا.</li>
+</ul>
+</section>
+<section id="kick-off">
+<h2><span class="num">06</span> في أي ساعة تُلعب المباريات الكبرى في تشاد؟</h2>
+<p>التوقيت في انجامينا من نوفمبر إلى مارس:</p>
+<div class="tablecard"><table>
+<thead><tr><th>المباراة</th><th>توقيت أوروبا</th><th>توقيت تشاد</th></tr></thead>
+<tbody>{kick}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:10px">تنتقل أوروبا إلى التوقيت الصيفي في آخر أحد من مارس: تبدأ المباريات الأوروبية عندها قبل ساعة بالنسبة لك.</p>
+<p>توقعاتي للمباريات الكبرى: <a href="pronostics-ar.html">صفحة التوقعات</a> · قسيمة اليوم المجانية: <a href="cote-2-ar.html">رهان بضعف 2</a>.</p>
+</section>
+<section>
+<h2><span class="num">07</span> أسئلة شائعة: الرموز الترويجية في تشاد</h2>
+{''.join(f'<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in qs)}
+</section>
+<div class="note">التوقع ليس مضمونًا أبدًا. لا تراهن إلا بما يمكنك تحمّل خسارته. +18</div>
+</main>
+{footer_html_ar()}
+</body></html>"""
+
 def buttons_ar(b):
     out = f'<a class="cta" href="{b["site"]}" rel="sponsored nofollow">🌐 التسجيل في الموقع</a>'
     for label, url in b["apps"]:
@@ -4451,6 +4540,7 @@ def footer_html_ar():
 <a href="resultats-ar.html">النتائج</a>
 <a href="actualites-ar.html">أخبار</a>
 <a href="a-propos-ar.html">من نحن</a>
+<a href="promo-codes-tchad-ar.html">الرموز في تشاد</a>
 <a href="jeu-responsable-ar.html">المراهنة المسؤولة</a>
 <a href="index.html">Français</a>
 <a href="promo-codes.html">English</a>
@@ -6026,6 +6116,7 @@ open(os.path.join(OUT,"index.html"),"w",encoding="utf-8").write(index_page()); w
 open(os.path.join(OUT,"promo-codes.html"),"w",encoding="utf-8").write(index_page_en()); written.append("promo-codes.html")
 for b in BOOKMAKERS:
     open(os.path.join(OUT,f"{en_slug(b)}.html"),"w",encoding="utf-8").write(bookmaker_page_en(b)); written.append(f"{en_slug(b)}.html")
+open(os.path.join(OUT, TCHAD_AR_SLUG + ".html"), "w", encoding="utf-8").write(country_page_tchad_ar()); written.append(TCHAD_AR_SLUG + ".html")
 for _c in COUNTRIES_EN:
     open(os.path.join(OUT, cty_en_slug(_c) + ".html"), "w", encoding="utf-8").write(country_page_en(_c)); written.append(cty_en_slug(_c) + ".html")
 for b in BOOKMAKERS:
