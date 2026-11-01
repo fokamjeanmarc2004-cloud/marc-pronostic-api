@@ -3255,6 +3255,27 @@ def combine_html(wrap=True):
              f'<p style="font-size:13px;color:var(--mist);margin-top:8px">18+ · Un combiné n\'est jamais sûr : ne mise que ce que tu peux perdre.</p>')
     return f'<section id="combine-week-end">{inner}</section>' if wrap else inner
 
+COUPON_FAQ_EN = [
+    ("Where can I find a free 1xBet booking code today?", "On this page: every morning I post my free odds of 2 slip, with total odds around 2. It is also sent on my Telegram channel."),
+    ("How do I load a booking code on 1xBet?", "Open 1xBet, go to the bet slip, choose 'Load booking code', paste the code and confirm: the selections are added to your ticket. Check your stake before placing the bet."),
+    ("When is tomorrow's slip posted?", "Tomorrow's slip is posted the same morning, once line-ups and odds are stable. The analyses of tomorrow's big matches are already on this page."),
+    ("Are free correct score tips worth it?", "Correct scores pay big but are wrong very often. I never put them in the odds of 2: if you play one, keep a very small stake."),
+]
+
+def _coupon_matchs_html_en():
+    now = datetime.datetime.now()
+    up = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
+    rows = "".join(
+        f'<li data-d="{m["dt"]:%Y-%m-%d}"><a href="{m["slug"]}.html" hreflang="fr"><b>{m["dt"]:%A} {m["dt"].day} {_MOIS_EN[m["dt"].month-1]}, {m["dt"]:%H:%M}</b> · '
+        f'{html.escape(TEAM_L.get(m["equipe1"], {}).get("en", m["equipe1"]))} – {html.escape(TEAM_L.get(m["equipe2"], {}).get("en", m["equipe2"]))}'
+        f' · my prediction: {html.escape(m.get("pronostic_en") or m["pronostic"])}</a></li>'
+        for m in up[:12])
+    js = ("<script>(function(){try{var f=function(o){return new Date(Date.now()+o*864e5).toLocaleDateString('en-CA',{timeZone:'Africa/Douala'})},"
+          "t=f(0),d=f(1),ls=document.querySelectorAll('#matchs-today li'),n=0;"
+          "ls.forEach(function(l){var k=l.getAttribute('data-d');if(k<t)l.style.display='none';if(k===t||k===d){n++;var b=l.querySelector('b');b.textContent=(k===t?'Today':'Tomorrow')+b.textContent.replace(/^[^,]*/,'')}});"
+          "if(n)ls.forEach(function(l){var k=l.getAttribute('data-d');if(k!==t&&k!==d)l.style.display='none'})}catch(e){}})();</script>")
+    return f'<ul class="steps" id="matchs-today">{rows}</ul>{js}<p style="font-size:13px;color:var(--mist)">Times are Douala/Lagos time (UTC+1).</p>' if rows else '<p>New analyses are coming soon.</p>'
+
 def _coupon_matchs_html():
     now = datetime.datetime.now()
     up = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
@@ -3357,8 +3378,8 @@ def country_rows_en(b):
         rows += f'<tr><td>{html.escape(c)}</td><td>{html.escape(ve)}</td><td>{b["code"]}</td></tr>'
     return rows
 
-def faq_jsonld_en(name, code):
-    qs = [
+def faq_jsonld_en(name, code, extra=()):
+    qs = list(extra) + [
         (f"What is the {name} promo code in 2026?",
          f"The {name} promo code valid in 2026 is {code}. Enter it during registration to unlock the {pct(name, 'en', True)} welcome bonus on your first deposit."),
         (f"How do I use the {name} promo code {code}?",
@@ -3402,10 +3423,168 @@ def footer_html_en():
 </div></footer>
 <script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
+# ---------------------------------------------------------------- Guides detailles EN (meme profondeur que les pages FR)
+# Public anglophone prioritaire : Cameroun anglophone (Buea, Bamenda), Nigeria, Ghana, Kenya, Ouganda, Tanzanie, Zambie...
+VERIF_EN = f"{_MOIS_EN[_VERIF.month - 1]} {_VERIF.day}, {_VERIF.year}"
+_PAY_ROWS_EN = [
+    ("Cameroon (incl. Buea, Bamenda, Limbe)", "MTN Mobile Money, Orange Money"),
+    ("Nigeria", "Bank transfer, cards, mobile wallets (depending on the bookmaker)"),
+    ("Ghana", "MTN MoMo, Telecel Cash, AirtelTigo Money"),
+    ("Kenya", "M-Pesa, Airtel Money"),
+    ("Uganda", "MTN Mobile Money, Airtel Money"),
+    ("Tanzania", "M-Pesa, Airtel Money, other local wallets"),
+    ("Zambia", "MTN Mobile Money, Airtel Money"),
+    ("Côte d'Ivoire, Senegal, Burkina, Mali", "Orange Money, MTN, Moov Money, Wave"),
+    ("DR Congo", "M-Pesa, Orange Money, Airtel Money"),
+]
+
+def _calc_rows_en(rate=3, cap=300000):
+    out = ""
+    for dep in (1000, 5000, 10000, 25000, 50000, 100000):
+        bonus = min(dep * rate, cap)
+        out += f'<tr><td>{dep:,} FCFA</td><td><b>+ {bonus:,} FCFA</b></td><td>{dep + bonus:,} FCFA</td></tr>'
+    return out
+
+def _en_guide(b, extra=""):
+    name, code = b["name"], b["code"]
+    ffn = b["slug"] in FFN300
+    bonus = B300["en"] if ffn else bk_bonus(b, "en")
+    pays = "".join(f"<tr><td>{c}</td><td>{m}</td></tr>" for c, m in _PAY_ROWS_EN)
+    calc = (f"""
+<section id="bonus-calculator">
+<h2>How much you get: {name} bonus calculator</h2>
+<p>With <b>{code}</b> the bonus is 3 times your first deposit (300%), capped at 300,000 FCFA (or the equivalent in your currency). A few examples:</p>
+<div class="tablecard"><table>
+<thead><tr><th>Your 1st deposit</th><th>Bonus with {code}</th><th>Total to bet</th></tr></thead>
+<tbody>{_calc_rows_en()}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:10px">Indicative amounts. In naira, cedis, shillings or kwacha, the cap is converted into your currency and shown in your account after the deposit.</p>
+</section>""" if ffn else "")
+    best = (f"""
+<section id="best-code">
+<h2>What is the best {name} promo code?</h2>
+<p>You will find dozens of "{name} promo codes" online. To compare them, look at two things: <b>the bonus percentage</b> and <b>the cap in your currency</b>. With <b>{code}</b> you get <b>{bonus}</b> on your first deposit{', three times the standard 100% bonus' if ffn else ''}.</p>
+<p>You can only use <b>one code</b>, once, when you create your account. A new code cannot be added to an existing account.</p>
+</section>""")
+    return f"""
+<section id="at-a-glance">
+<h2>{name} promo code {code}: at a glance</h2>
+<div class="tablecard"><table><tbody>
+<tr><td>Promo code</td><td><b>{code}</b> (enter it once, at registration)</td></tr>
+<tr><td>Welcome bonus</td><td><b>{bonus}</b></td></tr>
+<tr><td>Countries</td><td>English-speaking Africa (Cameroon, Nigeria, Ghana, Kenya, Uganda, Tanzania, Zambia…), French-speaking Africa and many other countries where {name} is available</td></tr>
+<tr><td>Payment</td><td>Mobile Money (MTN, Orange, M-Pesa, Airtel…), bank transfer, cards, crypto, depending on the country</td></tr>
+<tr><td>Last checked</td><td>{VERIF_EN}, by Cousin Marc</td></tr>
+</tbody></table></div>
+</section>
+{best}
+{calc}
+<section id="conditions">
+<h2>{name} bonus terms: read this before you deposit</h2>
+<ul class="steps">
+<li><b>The bonus cannot be withdrawn straight away.</b> It must first be wagered a number of times, usually on accumulators of at least 3 selections with minimum odds per selection.</li>
+<li><b>The exact rules depend on your country.</b> You will find them in your account, under "Promotions" or "Bonuses", right after your deposit.</li>
+<li><b>One bonus per person</b> (same phone, same mobile money number, same address). A second account can be blocked.</li>
+<li><b>Complete your profile</b> (name, date of birth, verified phone number) to be able to withdraw your winnings.</li>
+</ul>
+</section>
+<section id="by-country">
+<h2>{name} promo code by country (2026 list)</h2>
+<p>Good news: <b>the {name} promo code is the same in every country: {code}.</b> It is valid today (last checked {VERIF_EN}). What changes from one country to another is the bonus currency and the payment methods.</p>
+<h3>{name} promo code in Cameroon (English-speaking regions included)</h3>
+<p>From Buea, Bamenda or Limbe as from Douala, register in CFA francs (XAF) with <b>{code}</b> and deposit with MTN Mobile Money or Orange Money.</p>
+<h3>{name} promo code in Nigeria</h3>
+<p>Where {name} accepts Nigerian players, choose Nigeria and the naira (NGN) at registration and enter <b>{code}</b>. The bonus cap is shown in naira in your account.</p>
+<h3>{name} promo code in Ghana</h3>
+<p>Choose Ghana and the cedi (GHS), enter <b>{code}</b>, then deposit with MTN MoMo, Telecel Cash or AirtelTigo Money if they are offered in the cashier.</p>
+<h3>{name} promo code in Kenya, Uganda and Tanzania</h3>
+<p>Same code <b>{code}</b> in East Africa. M-Pesa and Airtel Money are the usual ways to deposit; always check the cashier of {name} for your country.</p>
+<h3>{name} promo code in Zambia and other countries</h3>
+<p>{code} is an international partner code: you enter it the same way wherever {name} accepts registrations. Pick your currency in the form and the bonus cap is shown in that currency.</p>
+<div class="tablecard" style="margin-top:14px"><table>
+<thead><tr><th>Country</th><th>Most used payment methods</th></tr></thead>
+<tbody>{pays}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:10px">Online betting is for adults (18+) only. Check the rules in force in your country before playing.</p>
+</section>
+<section id="promo-vs-coupon">
+<h2>{name} promo code vs booking code: what's the difference?</h2>
+<ul class="steps">
+<li><b>The promo code ({code})</b> is used once, at registration, to activate your welcome bonus.</li>
+<li><b>The booking code (coupon code)</b> loads a betting slip someone already prepared: you enter it in the {name} bet slip and the same selections are added to your ticket.</li>
+</ul>
+<p>I share a free daily slip on Telegram and on the <a href="odds-of-2.html">odds of 2 page</a>. My match analyses are on the <a href="predictions.html">predictions page</a>.</p>
+</section>
+{extra}"""
+
+_EN_EXTRA = {
+ "code-promo-1xbet": """
+<section id="generator">
+<h2>"1xBet promo code generator": beware of scams</h2>
+<p>Many people search for a "1xBet promo code generator". <b>It does not exist.</b> A promo code is not created at random by an app: it is a fixed partner code given by 1xBet to one person (like FFN for Cousin Marc).</p>
+<ul class="steps">
+<li>A site or app that "generates" codes, free bonuses or guaranteed winning slips is after your money or your login details.</li>
+<li>Never share your 1xBet password, your mobile money PIN or a code received by SMS.</li>
+</ul>
+</section>
+<section id="optional-field">
+<h2>The "Promo code (optional)" field on 1xBet</h2>
+<p>In the 1xBet sign-up form, the promo code field is marked "optional": you can create your account without it. <b>But if you leave it empty, you will not get the 300% bonus</b>, and it is too late to add it afterwards. Check that <b>FFN</b> is written in capital letters, without spaces, before you confirm. Full guide: <a href="how-to-register-1xbet-2026.html">how to register on 1xBet in 2026</a>.</p>
+</section>
+<section id="celebrity-codes">
+<h2>1xBet celebrity promo codes: what difference does it make?</h2>
+<p>You may have seen 1xBet promo codes linked to artists or influencers. They are partner codes too and activate the welcome bonus the same way. What matters is not the name behind the code, it is <b>the bonus you actually get in your currency</b>.</p>
+</section>""",
+ "code-promo-megapari": """
+<section id="check-coupon">
+<h2>How to check a Megapari coupon</h2>
+<p>To see the status of your ticket, open your Megapari account then <b>bet history</b>: every slip appears with its status (pending, won, lost) and the details of the matches. Be careful with "100% sure coupons" sold on social media: no prediction is ever guaranteed.</p>
+</section>""",
+ "code-promo-winwin": """
+<section id="winwin-2026">
+<h2>The WinWin promo code 2026 in one word: FFN</h2>
+<p>Searching for "WinWin promo code 2026"? The answer is three letters: <b>FFN</b>. The code does not change from one year to the next. WinWin is a mobile-first bookmaker with Android and iPhone apps; the promo code field is in both.</p>
+</section>""",
+ "code-promo-afroparie": """
+<section id="spelling">
+<h2>Afropari or Afroparie: it is the same bookmaker</h2>
+<p>You will see both spellings, <b>Afropari</b> and <b>Afroparie</b>: it is the same betting site, and the promo code is the same in both cases: <b>FFN</b>. "Afropari promo code" and "Afropari bonus code" also mean the same thing.</p>
+</section>""",
+ "code-promo-1win": """
+<section id="bonus-1win">
+<h2>The 1win bonus: up to 500% on your first deposits</h2>
+<p>1win's welcome bonus is <b>spread over your first deposits</b>, with a percentage that goes down each time. In total it can reach <b>500%</b>. The exact details (percentage per deposit, cap in your currency) are shown in your account under "Bonuses".</p>
+</section>""",
+ "code-promo-betwiner": """
+<section id="spelling">
+<h2>Betwiner or Betwinner: it is the same bookmaker</h2>
+<p>You will see both spellings, <b>Betwiner</b> and <b>Betwinner</b>: it is the same betting site. Cousin Marc's promo code is the same in both cases: <b>CMF</b>.</p>
+</section>""",
+ "code-promo-fastparie": """
+<section id="spelling">
+<h2>Fastpari or Fastparie: it is the same bookmaker</h2>
+<p>You will see <b>Fastpari</b> and <b>Fastparie</b>: it is the same betting site. The promo code is the same in both cases: <b>FJM</b>.</p>
+</section>""",
+}
+
+def _en_faq_extra(b):
+    name, code = b["name"], b["code"]
+    ffn = b["slug"] in FFN300
+    qs = [
+        (f"What is the best {name} promo code in 2026?", f"The code {code}: it gives {B300['en'] if ffn else bk_bonus(b, 'en')} on your first deposit. It can only be used once, at registration."),
+        (f"I forgot the {name} promo code at registration, what can I do?", f"The code cannot be added afterwards. Contact {name} support from your account before your first deposit and explain that you wanted to use {code}. Do not create a second account: it may be blocked."),
+        (f"Does the {name} promo code work in Nigeria, Ghana, Kenya and Cameroon?", f"Yes. {code} works in every country where {name} accepts registrations, including English-speaking Cameroon (Buea, Bamenda). Only the bonus cap changes with your currency."),
+        (f"What is the difference between a promo code and a booking code on {name}?", f"The promo code ({code}) activates the welcome bonus at registration. A booking code loads a betting slip already prepared by someone else."),
+    ]
+    if ffn:
+        qs.append((f"How much bonus for a 10,000 FCFA deposit on {name}?", "With 300%, a 10,000 FCFA deposit gives 30,000 FCFA of bonus, so 40,000 FCFA to bet. The 300,000 FCFA maximum is reached with a 100,000 FCFA deposit."))
+    return qs
+
+BK_GUIDE_EN = {b["slug"]: (lambda bb: _en_guide(bb, _EN_EXTRA.get(bb["slug"], ""))) for b in BOOKMAKERS if b["slug"] != "code-promo-1xbit"}
+
 def bookmaker_page_en(b):
     name, code, slug = b["name"], b["code"], b["slug"]
     es = en_slug(b); canonical = f"{BASE}/{es}.html"
-    extra = f'<script type="application/ld+json">\n{faq_jsonld_en(name, code)}\n</script>'
+    faq_x = _en_faq_extra(b) if slug in BK_GUIDE_EN else []
+    extra = f'<script type="application/ld+json">\n{faq_jsonld_en(name, code, faq_x)}\n</script>'
     alternates = (f"{BASE}/{slug}.html", canonical, f"{BASE}/{es_slug(b)}.html", f"{BASE}/{ar_slug(b)}.html")
     appnote = " or the app" if b["apps"] else ""
     _t, _d = _title_desc(b, "en",
@@ -3449,6 +3628,7 @@ def bookmaker_page_en(b):
 <thead><tr><th>Country</th><th>Maximum bonus</th><th>Code</th></tr></thead>
 <tbody>{country_rows_en(b)}</tbody></table></div>
 </section>
+{BK_GUIDE_EN[slug](b) if slug in BK_GUIDE_EN else ""}
 <section>
 <h2><span class="num">04</span> Why trust me?</h2>
 <div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 95,000+ community</div></div></div>
@@ -3459,6 +3639,7 @@ def bookmaker_page_en(b):
 <details open><summary>Is the {name} promo code {code} free?</summary><p>Yes, completely. The code {code} costs nothing. It only activates the maximum welcome bonus at registration.</p></details>
 <details><summary>Where do I enter the promo code on {name}?</summary><p>During account creation, a "Promo code" field appears in the form. Paste {code} there before confirming. If you forget it, you cannot add it afterwards.</p></details>
 <details><summary>Does the code work in my country?</summary><p>Yes. {code} works in every country where {name} is available. Only the maximum bonus amount changes with your currency.</p></details>
+{"".join(f'<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in faq_x)}
 </section>
 <section>
 <h2><span class="num">06</span> Other bookmakers & promo codes</h2>
@@ -3717,13 +3898,15 @@ def responsible_gambling_page_en():
 
 def odds_of_2_page_en():
     onex = next(b["site"] for b in BOOKMAKERS if b["slug"]=="code-promo-1xbet")
+    faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in COUPON_FAQ_EN]}, ensure_ascii=False)
     return head(
-        "Odds of 2 of the Day: Cousin Marc's Coupon",
-        "Cousin Marc's daily Odds of 2 coupon: an accumulator bet with total odds around 2, posted every morning. Promo code FFN.",
-        f"{BASE}/odds-of-2.html", nav=nav_en(fr="cote-de-2.html", es="cuota-de-2.html", ar="cote-2-ar.html"), lang="en",
+        "Free 1xBet Booking Code Today: Odds of 2 | Cousin Marc",
+        "Free 1xBet booking code today: my odds of 2 slip, posted every morning, plus today's and tomorrow's big matches with my predictions. Promo code FFN.",
+        f"{BASE}/odds-of-2.html", f'<script type="application/ld+json">{faq}</script>', nav=nav_en(fr="cote-de-2.html", es="cuota-de-2.html", ar="cote-2-ar.html"), lang="en",
         alternates=(f"{BASE}/cote-de-2.html", f"{BASE}/odds-of-2.html", f"{BASE}/cuota-de-2.html", f"{BASE}/cote-2-ar.html")) + f"""
 <header class="hero" style="padding:30px 0 20px"><div class="wrap">
-<p class="eyebrow">⚽ Coupon of the day</p>
+<p class="eyebrow">⚽ Free 1xBet slip of the day</p>
 <h1>Odds of <span class="hl">2</span></h1>
 </div></header>
 <main class="wrap">
@@ -3736,8 +3919,41 @@ def odds_of_2_page_en():
 </div>
 </section>
 <section>
+<h2><span class="num">●</span> Free 1xBet booking code today</h2>
+<p>The slip above is <b>my free coupon of the day</b>: a short accumulator of matches I have analysed, with total odds around 2. It is posted <b>every morning</b>, here and on my Telegram channel. No payment, no subscription needed.</p>
+<p>You can play it on 1xBet, but also on Melbet, Paripesa or WinWin: the matches are the same, only the odds change slightly from one bookmaker to another.</p>
+</section>
+<section>
+<h2><span class="num">●</span> Today's and tomorrow's matches</h2>
+<p>My full analyses of the big matches, with my prediction (analyses written in French):</p>
+{_coupon_matchs_html_en()}
+<p style="margin-top:10px"><a href="predictions.html" style="color:var(--gold);font-weight:700">See all my predictions →</a></p>
+</section>
+<section>
+<h2><span class="num">●</span> How to load a booking code on 1xBet</h2>
+<ul class="steps">
+<li>Open the 1xBet app or website and log in.</li>
+<li>Go to the <b>bet slip</b> and choose "Load booking code" (or "Coupon code").</li>
+<li>Paste the code I share on Telegram and confirm: the selections are added to your ticket.</li>
+<li>Check the matches and the odds, enter your stake, then place the bet.</li>
+</ul>
+<p>Do not confuse them: the <b>booking code</b> loads a slip, the <a href="1xbet-promo-code.html">1xBet promo code FFN</a> is used once, at registration, to get your bonus.</p>
+</section>
+<section>
+<h2><span class="num">●</span> What about tomorrow's slip?</h2>
+<p>Tomorrow's slip is posted <b>tomorrow morning</b>, when line-ups and odds are more reliable. Meanwhile, the analyses of tomorrow's big matches are already in the list above. To be notified as soon as it is out, join my <a href="https://t.me/marc_prono" rel="nofollow">Telegram</a>.</p>
+</section>
+<section>
+<h2><span class="num">●</span> Free correct score tips: my opinion</h2>
+<p>Many people look for "free correct score tips today". Correct scores pay big, but they are wrong most of the time, even for the best tipsters. That is why I never put one in the odds of 2. If you play one, keep a very small stake, and beware of anyone selling "sure correct scores": they do not exist.</p>
+</section>
+<section>
 <h2><span class="num">●</span> What is the "Odds of 2"?</h2>
-<p>The "Odds of 2" is an accumulator coupon whose total odds are around 2. The idea is simple: aim for a steady win by doubling your stake, with controlled risk. Every morning, I post my coupon of the day here.</p>
+<p>The "Odds of 2" is an accumulator coupon whose total odds are around 2. The idea is simple: aim for a steady win by doubling your stake, with controlled risk. Every morning, I post my coupon of the day here. My results, won and lost, are on the <a href="results.html">results page</a>.</p>
+</section>
+<section>
+<h2><span class="num">●</span> Frequently asked questions</h2>
+{"".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>" for q, a in COUPON_FAQ_EN)}
 </section>
 <section>
 <h2><span class="num">●</span> Play with the promo code</h2>
