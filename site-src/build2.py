@@ -324,9 +324,9 @@ WALL_L = {
 def winners_wall(lang):
     title, sub, paid = WALL_L.get(lang, WALL_L["fr"])
     cards = "".join(
-      f'<div class="wcard"><img src="{img}" alt="Coupon gagnant {gain} Cousin Marc" loading="lazy" width="360" height="760"><div class="wbadge">\u2705 {paid} \u00b7 {gain}</div></div>'
+      f'<div class="wcard"><img src="{img}" alt="Coupon gagnant {gain} Cousin Marc" loading="lazy" decoding="async" width="360" height="760"><div class="wbadge">\u2705 {paid} \u00b7 {gain}</div></div>'
       for img, gain in WINNERS)
-    track = cards + cards
+    track = cards + cards.replace('<div class="wcard">', '<div class="wcard wdup" aria-hidden="true">')
     css = ""
     return (f'<section class="winsec">{css}'
       f'<div class="wrap" style="text-align:center"><h2 style="justify-content:center">{title}</h2>'
@@ -1004,9 +1004,10 @@ details>p,details>div{padding:0 18px 16px}
 .winsec:hover .wtrack{animation-play-state:paused}
 .wcard{width:180px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
 .wcard img{width:100%;height:320px;object-fit:cover;object-position:top;display:block}
+html.cm-lite .wdup{display:none}
 .wbadge{padding:10px 6px;text-align:center;color:var(--green-ink);font-weight:800;font-size:13px}
 @keyframes wmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media(prefers-reduced-motion:reduce){.wtrack{animation:none}.winmarq{overflow-x:auto}}
+@media(prefers-reduced-motion:reduce){.wtrack{animation:none}.winmarq{overflow-x:auto}.wdup{display:none}}
 
 /* ---------- VIDEO / COUPONS / ARTICLES ---------- */
 .video,.yt-facade{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000;margin-top:16px;cursor:pointer}
@@ -1480,9 +1481,7 @@ TICKER_ON = False   # bandeau defilant en haut (desactive a la demande de Marc)
 
 # Mes coupons joues (photos dans site/), affiches sur l'accueil et la page Pronostics
 # (fichier, titre, cote, code coupon WinWin ou "", matchs)
-COUPONS_LDC = [
- ("coupon-ldc-20oct-10-39.jpg", "Combiné Ligue des champions · mardi 20 oct.", "10.39", "", "Fenerbahçe – Slavia · Liverpool – Villarreal · Naples – Bodø · Porto – PSV · Stuttgart – Atlético"),
- ("coupon-ldc-21oct-17-01.jpg", "Combiné Ligue des champions · mercredi 21 oct.", "17.01", "", "Como – Man United · Lille – Galatasaray · Aston Villa – Viking · Bayern – Arsenal"),
+COUPONS_LDC = [   # vide = section masquee (coupons du 20-21 oct. retires le 1er nov.)
 ]
 
 def coupons_ldc_html():
@@ -1678,7 +1677,7 @@ def youtube_banner(lang):
 # ---------------------------------------------------------------- Animations entre les pages (decoratif)
 # Le petit script choisit une animation au hasard au clic, et la page suivante la joue a l'ouverture.
 # Navigateurs sans « View Transitions » : seules les bulles s'affichent, la page s'ouvre normalement.
-VT_HEAD = """<script>(function(){try{var R=matchMedia('(prefers-reduced-motion: reduce)').matches;if(R)return;var d=document.documentElement,k='cmvt',v=JSON.parse(sessionStorage.getItem(k)||'null');if(v&&Date.now()-v.t<4000){d.setAttribute('data-vt',v.a);d.style.setProperty('--vx',v.x+'%');d.style.setProperty('--vy',v.y+'%');if(v.a==='bulles')addEventListener('DOMContentLoaded',function(){cmBubbles(16,null)});}sessionStorage.removeItem(k);
+VT_HEAD = """<script>(function(){try{var R=matchMedia('(prefers-reduced-motion: reduce)').matches,n=navigator,L=(n.deviceMemory&&n.deviceMemory<=4)||(n.connection&&n.connection.saveData)||(/Android/.test(n.userAgent)&&(n.hardwareConcurrency||8)<=4);if(L)document.documentElement.classList.add('cm-lite');if(R||L)return;var d=document.documentElement,k='cmvt',v=JSON.parse(sessionStorage.getItem(k)||'null');if(v&&Date.now()-v.t<4000){d.setAttribute('data-vt',v.a);d.style.setProperty('--vx',v.x+'%');d.style.setProperty('--vy',v.y+'%');if(v.a==='bulles')addEventListener('DOMContentLoaded',function(){cmBubbles(16,null)});}sessionStorage.removeItem(k);
 function mk(c,st){var e=document.createElement('i');e.className=c;e.setAttribute('aria-hidden','true');for(var p in st)e.style[p]=st[p];return e;}
 window.cmBubbles=function(n,pt){var w=document.createElement('div');w.className='cm-bubbles';w.setAttribute('aria-hidden','true');for(var i=0;i<n;i++){var z=10+Math.random()*(pt?22:46);var b=mk('cm-b',{width:z+'px',height:z+'px'});if(pt){b.style.left=pt.x+'px';b.style.top=pt.y+'px';var a=Math.random()*6.283,r=40+Math.random()*90;b.style.setProperty('--dx',Math.cos(a)*r+'px');b.style.setProperty('--dy',Math.sin(a)*r+'px');b.classList.add('burst');}else{b.style.left=(Math.random()*100)+'vw';b.style.animationDelay=(Math.random()*.35)+'s';b.style.animationDuration=(.9+Math.random()*.7)+'s';b.style.setProperty('--sw',(Math.random()*40-20)+'px');}w.appendChild(b);}document.body.appendChild(w);setTimeout(function(){w.remove()},1900);};
 addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta');if(!t||e.button||e.ctrlKey||e.metaKey||e.shiftKey)return;cmBubbles(10,{x:e.clientX,y:e.clientY});var h=t.getAttribute&&t.getAttribute('href');if(!h||h.charAt(0)==='#'||t.target==='_blank'||/^(mailto|tel|javascript):/.test(h))return;var u=new URL(h,location.href);if(u.origin!==location.origin)return;var A=['cercle','glisse','zoom','bulles'];sessionStorage.setItem(k,JSON.stringify({a:A[Math.floor(Math.random()*A.length)],x:Math.round(e.clientX/innerWidth*100),y:Math.round(e.clientY/innerHeight*100),t:Date.now()}));},true);var SQ='a.cta,.tgo,.tmore,.bkjoin,.copybtn-mini,.toptg,.topffn,.chip,.social a,.langlink,.navpanel-links a,button';addEventListener('pointerdown',function(e){var t=e.target.closest&&e.target.closest(SQ);if(!t)return;var r=document.createElement('i');r.className='cm-rip';r.setAttribute('aria-hidden','true');r.style.left=e.clientX+'px';r.style.top=e.clientY+'px';document.body.appendChild(r);setTimeout(function(){r.remove()},750);t.classList.remove('cm-sq');void t.offsetWidth;t.classList.add('cm-sq');setTimeout(function(){t.classList.remove('cm-sq')},520);if(navigator.vibrate&&e.pointerType==='touch')try{navigator.vibrate(8)}catch(_){}},{passive:true});addEventListener('DOMContentLoaded',function(){if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('cm-wet');io.unobserve(x.target);}})},{threshold:.12});document.querySelectorAll('.tcard,.mcard,.coupon-card,.vproof-card,.hubcard,.fact,.tgband,.bkrow').forEach(function(el){var b=el.getBoundingClientRect();if(b.top>innerHeight)io.observe(el);});});}catch(_){}})();</script>"""
@@ -1832,7 +1831,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-10t"><script>
+<link rel="stylesheet" href="style.css?v=2026-11a"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -4942,7 +4941,7 @@ TPI_HISTORY = [
 
 def cote2_history_html(lang, alt):
     u=f"{GH_BASE}/cote2.jpg"
-    return f'<img src="{u}" data-gh="{u}" alt="{alt}" class="couponimg">'
+    return f'<img src="{u}" data-gh="{u}" alt="{alt}" class="couponimg" loading="lazy" decoding="async">'
 
 # ===== PAGES PAYS (SEO local) =====
 # Chaque pays genere :
@@ -6246,6 +6245,14 @@ nav.top{background:linear-gradient(180deg,rgba(255,255,255,.78),rgba(255,255,255
 .cm-wet{animation:cm-wet .9s cubic-bezier(.2,.9,.25,1) both}
 @keyframes cm-wet{0%{transform:scale(.94,.94)}40%{transform:scale(1.025,.975)}65%{transform:scale(.99,1.012)}85%{transform:scale(1.004,.996)}100%{transform:none}}
 @media(prefers-reduced-motion:reduce){.cm-sq,.cm-wet,.navpanel.open .navpanel-links a{animation:none!important}.cm-rip{display:none}}
+
+/* 8. Petits telephones (html.cm-lite, pose par VT_HEAD) : pas de flou ni d'animation, le design reste le meme */
+html.cm-lite *{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+html.cm-lite nav.top{background:#fff!important}
+html.cm-lite .navpanel{background:linear-gradient(170deg,#fff,#eef4ff)!important}
+html.cm-lite .vidhero .cta,html.cm-lite .tgband .cta,html.cm-lite .vhero .cta.alt,html.cm-lite footer .cta.alt{background:rgba(255,255,255,.14)!important}
+html.cm-lite .navpanel.open .navpanel-links a,html.cm-lite .tcode,html.cm-lite .codebox .code,html.cm-lite .wtrack,html.cm-lite .ticker-track{animation:none!important}
+html.cm-lite .winmarq,html.cm-lite .ticker{overflow-x:auto}
 """
 
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")

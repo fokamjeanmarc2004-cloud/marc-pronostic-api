@@ -352,7 +352,13 @@ async function handleUpdate(update, env) {
 
   if (c.toSite && c.file) {
     try {
-      const info = await tg(env, "getFile", { file_id: fileId });
+      // pour le site : version 1280 px de Telegram (3 fois plus legere, toujours lisible sur telephone)
+      let siteId = fileId;
+      if (msg.photo && msg.photo.length) {
+        const okSizes = msg.photo.filter((s) => Math.max(s.width || 0, s.height || 0) <= 1280);
+        if (okSizes.length) siteId = okSizes[okSizes.length - 1].file_id;
+      }
+      const info = await tg(env, "getFile", { file_id: siteId });
       const img = await fetch(`https://api.telegram.org/file/bot${env.TELEGRAM_BOT_TOKEN}/${info.file_path}`);
       const bytes = await img.arrayBuffer();
       await saveToGithub(env, c.file, bytes, c.label);
