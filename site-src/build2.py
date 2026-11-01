@@ -1714,6 +1714,54 @@ html[data-vt="bulles"]::view-transition-new(root){animation:vt-fadein .5s ease b
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}.cm-bubbles{display:none}}
 """
 
+def match_og_image(m):
+    """Image de partage (WhatsApp/Telegram/Facebook) propre a chaque match : site/og/<slug>.jpg.
+    Generee en local (Pillow + polices Windows) ; sur Netlify (sans Pillow) on reutilise le fichier deja commite."""
+    rel = f"og/{m['slug']}.jpg"
+    path = os.path.join(OUT, rel)
+    if os.path.exists(path):
+        return f"{BASE}/{rel}"
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+        fdir = os.path.join(os.environ.get("WINDIR", r"C:\Windows"), "Fonts")
+        F = lambda name, size: ImageFont.truetype(os.path.join(fdir, name), size)
+        F("seguibl.ttf", 10)
+    except Exception:
+        return None
+    W, H = 1200, 630
+    im = Image.new("RGB", (W, H))
+    d = ImageDraw.Draw(im)
+    for y in range(H):  # degrade nuit de stade
+        t = y / H
+        d.line([(0, y), (W, y)], fill=(int(8 + 10 * t), int(14 + 26 * t), int(28 + 40 * t)))
+    d.ellipse([W // 2 - 260, 150, W // 2 + 260, 670], outline=(40, 70, 110), width=3)   # rond central
+    d.line([(W // 2, 0), (W // 2, H)], fill=(30, 55, 90), width=2)
+    lime, gold, white, grey = (182, 255, 59), (255, 200, 61), (255, 255, 255), (170, 185, 205)
+    def fit(text, font, maxw, start):
+        s = start
+        while s > 30 and d.textlength(text, font=F(font, s)) > maxw:
+            s -= 4
+        return F(font, s)
+    jour = f'{_JOURS_FR[m["dt"].weekday()]} {m["dt"].day} {_MOIS_FR[m["dt"].month - 1]} · {m["dt"]:%H}h{m["dt"]:%M} (Douala)'.upper()
+    d.text((60, 50), (m.get("competition") or "Football").upper(), font=F("segoeuib.ttf", 30), fill=gold)
+    d.text((60, 92), jour, font=F("segoeuib.ttf", 26), fill=grey)
+    d.text((W - 60, 50), "COUSIN MARC", font=F("seguibl.ttf", 30), fill=white, anchor="ra")
+    teams = f'{m["equipe1"]}  –  {m["equipe2"]}'.upper()
+    ft = fit(teams, "seguibl.ttf", W - 120, 96)
+    d.text((W // 2, 250), teams, font=ft, fill=white, anchor="mm")
+    lab = F("segoeuib.ttf", 28)
+    pr = fit(m["pronostic"].upper(), "seguibl.ttf", W - 220, 60)
+    pw = max(d.textlength(m["pronostic"].upper(), font=pr), d.textlength("MON PRONOSTIC", font=lab)) + 80
+    d.rounded_rectangle([W // 2 - pw / 2, 330, W // 2 + pw / 2, 470], radius=28, fill=(14, 30, 52), outline=lime, width=4)
+    d.text((W // 2, 365), "MON PRONOSTIC", font=lab, fill=grey, anchor="mm")
+    d.text((W // 2, 425), m["pronostic"].upper(), font=pr, fill=lime, anchor="mm")
+    d.rectangle([0, H - 90, W, H], fill=(5, 10, 20))
+    d.text((60, H - 45), "CODE PROMO FFN", font=F("seguibl.ttf", 38), fill=gold, anchor="lm")
+    d.text((W - 60, H - 45), "cousinmarc-pronostic.com", font=F("segoeuib.ttf", 30), fill=white, anchor="rm")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    im.save(path, "JPEG", quality=86, optimize=True)
+    return f"{BASE}/{rel}"
+
 def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None, image=None, show_youtube=True):
     if nav is None: nav = NAV
     hreflang = ""
@@ -5298,7 +5346,7 @@ def match_page(m):
     tickets = f'<div class="vproofs" style="margin-top:16px">{tickets}</div>' if imgs else ""
     jsonld = json.dumps(sports_event_ld(m, desc), ensure_ascii=False)
     others = matchs_list_html(4, exclude=m["slug"])
-    return head(html.escape(title), html.escape(desc), f'{BASE}/{m["slug"]}.html', extra=f'<script type="application/ld+json">{jsonld}</script>') + f"""
+    return head(html.escape(title), html.escape(desc), f'{BASE}/{m["slug"]}.html', extra=f'<script type="application/ld+json">{jsonld}</script>', image=match_og_image(m)) + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow"><a href="pronostics.html" style="color:inherit">📊 Toutes les analyses</a> · {html.escape(m.get("competition", "Football"))} · {_date_fr(m["dt"])}</p>
 <h1>Pronostic {html.escape(e1)} <span class="hl">vs</span> {html.escape(e2)}</h1>
