@@ -5908,6 +5908,130 @@ def proba_html(m, lang, e1, e2, pick, when):
     return block + "", faq + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
 
 
+
+# ---------------------------------------------------------------- Pages par equipe et par type de pari
+TEAM_INTRO = {  # equipe (nom FR de matchs.txt) -> (intro FR, intro EN)
+ "Real Madrid": ("Le Real Madrid est le club le plus titré de la Ligue des champions et l'un des plus suivis en Afrique. Quand il joue, tout le monde parie : voici toutes mes analyses du Real, avec mon pronostic avant le match et le résultat après.",
+                 "Real Madrid are the most successful club in Champions League history and one of the most followed in Africa. When they play, everybody bets: here are all my Real Madrid analyses, with my pick before the game and the result after."),
+ "PSG": ("Le PSG est le club le plus suivi d'Afrique francophone. Ligue 1 ou Ligue des champions, je publie une analyse pour chaque grand match des Parisiens, et je garde le résultat en ligne.",
+         "PSG are the most followed club in French-speaking Africa. Ligue 1 or Champions League, I publish an analysis of every big Paris game, and the result stays online."),
+ "Barcelone": ("Le FC Barcelone joue toujours pour marquer : ses matchs sont parfaits pour les paris sur les buts. Toutes mes analyses du Barça et leurs résultats.",
+               "Barcelona always play to score, which makes their games perfect for goals markets. All my Barça analyses and their results."),
+ "Manchester United": ("Manchester United reste l'un des clubs les plus populaires au monde, malgré des saisons irrégulières. Mes pronostics des matchs des Red Devils, gagnés ou perdus.",
+                       "Manchester United remain one of the most popular clubs in the world, despite up-and-down seasons. My predictions for every big Red Devils game, won or lost."),
+ "Atlético Madrid": ("L'Atlético de Simeone est redoutable à domicile et souvent sous-coté par les bookmakers. Mes analyses de l'Atlético Madrid et leurs résultats.",
+                     "Simeone's Atlético are tough at home and often underrated by bookmakers. My Atlético Madrid analyses and their results."),
+ "Arsenal": ("Arsenal joue les premiers rôles en Premier League et en Ligue des champions. Voici tous mes pronostics des Gunners, avec le résultat de chacun.",
+             "Arsenal are among the top sides in the Premier League and the Champions League. Here are all my Gunners predictions, with the result of each one."),
+ "Villarreal": ("Le « Sous-marin jaune » est une équipe joueuse, dangereuse chez elle au stade de la Cerámica. Mes analyses de Villarreal et leurs résultats.",
+                "The Yellow Submarine are an attacking side, dangerous at home at La Cerámica. My Villarreal analyses and their results."),
+ "Roma": ("La Roma est une équipe solide, souvent impliquée dans des matchs serrés. Mes pronostics de la Roma en Serie A et en Europe.",
+          "Roma are a solid side, often involved in tight games. My Roma predictions in Serie A and in Europe."),
+ "RB Leipzig": ("Le RB Leipzig joue vite et haut : ses matchs donnent souvent des buts. Mes analyses de Leipzig et leurs résultats.",
+                "RB Leipzig play fast and high up the pitch, so their games often bring goals. My Leipzig analyses and their results."),
+ "Naples": ("Naples est l'une des meilleures équipes d'Italie, avec un stade Diego Maradona bouillant. Mes pronostics du Napoli et leurs résultats.",
+            "Napoli are one of Italy's best teams, with a red-hot Diego Maradona stadium. My Napoli predictions and their results."),
+ "Liverpool": ("Liverpool est l'un des clubs anglais les plus aimés en Afrique, de Lagos à Nairobi. Toutes mes analyses des Reds et leurs résultats.",
+               "Liverpool are one of the most loved English clubs in Africa, from Lagos to Nairobi. All my Reds analyses and their results."),
+ "Borussia Dortmund": ("Le Borussia Dortmund et son « Mur jaune » : des matchs souvent riches en buts. Mes pronostics de Dortmund et leurs résultats.",
+                       "Borussia Dortmund and their Yellow Wall: games that often bring plenty of goals. My Dortmund predictions and their results."),
+ "Bayern Munich": ("Le Bayern Munich domine la Bundesliga et marque énormément. Mes analyses du Bayern en Bundesliga et en Ligue des champions.",
+                   "Bayern Munich dominate the Bundesliga and score a lot. My Bayern analyses in the Bundesliga and the Champions League."),
+ "Cameroun": ("Les Lions indomptables du Cameroun : mes pronostics des matchs de la sélection, en éliminatoires et en compétition.",
+              "Cameroon's Indomitable Lions: my predictions for the national team, in qualifiers and tournaments."),
+}
+
+def _team_ms(team): return [m for m in MATCHS if team in (m["equipe1"], m["equipe2"])]
+def team_page_ok(team): return len(_team_ms(team)) >= 3
+def _team_slugs(team):
+    s = _slugify(team); se = _slugify(_team_l(team, "en"))
+    return f"pronostic-{s}", f"{se}-predictions"
+def team_link(team, lang="fr"):
+    if not team_page_ok(team): return ""
+    sl = _team_slugs(team)[0 if lang == "fr" else 1]
+    nm = team if lang == "fr" else _team_l(team, "en")
+    return f'<a href="{sl}.html">{"Tous mes pronostics " + html.escape(nm) if lang == "fr" else "All my " + html.escape(nm) + " predictions"}</a>'
+def team_links_html(m, lang):
+    ls = [x for x in (team_link(m["equipe1"], lang), team_link(m["equipe2"], lang)) if x]
+    return '<p style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px">' + "".join(x.replace('<a ', '<a style="font-size:14px;font-weight:700;padding:7px 12px;border-radius:999px;border:1px solid var(--line)" ', 1) for x in ls) + '</p>' if ls else ""
+def _team_chips(teams, lang, current=""):
+    items = []
+    for tm in teams:
+        if team_page_ok(tm):
+            sl = _team_slugs(tm)[0 if lang == "fr" else 1]
+            if sl != current: items.append(f'<a href="{sl}.html">{html.escape(tm if lang == "fr" else _team_l(tm, "en"))}</a>')
+    return f'<div class="linkchips">{"".join(items)}</div>' if items else ""
+ALL_TEAMS = sorted({x for m in MATCHS for x in (m["equipe1"], m["equipe2"])}, key=lambda tm: -len(_team_ms(tm)))
+
+# type de pari -> (regex sur le pronostic FR, page FR, page EN, titre FR, titre EN, intro FR, intro EN)
+MARKET_PAGES = [
+ (r"deux équipes marquent", "pronostic-les-deux-equipes-marquent", "btts-predictions",
+  "Les deux équipes marquent", "Both Teams to Score (BTTS)",
+  "« Les deux équipes marquent » (BTTS, ou « oui » dans le marché Les 2 équipes marquent) est l'un des paris les plus joués : peu importe qui gagne, il faut juste un but de chaque côté. Je le choisis quand deux équipes attaquent bien et défendent moyennement. Voici tous mes pronostics BTTS et leurs résultats.",
+  "Both Teams to Score (BTTS \"Yes\") is one of the most popular bets: it doesn't matter who wins, you just need a goal at each end. I pick it when two teams attack well and defend so-so. Here are all my BTTS predictions and their results."),
+ (r"plus de 2,5 buts", "pronostic-plus-de-2-5-buts", "over-2-5-goals-predictions",
+  "Plus de 2,5 buts", "Over 2.5 Goals",
+  "« Plus de 2,5 buts » veut dire au moins 3 buts dans le match (par exemple 2-1 ou 3-0). C'est le pari idéal pour les affiches entre deux équipes offensives. Voici tous mes pronostics plus de 2,5 buts et leurs résultats.",
+  "Over 2.5 goals means at least 3 goals in the game (for example 2-1 or 3-0). It's the ideal bet for games between two attacking sides. Here are all my over 2.5 goals predictions and their results."),
+]
+def _market_ms(rx): return [m for m in MATCHS if re.search(rx, m["pronostic"], re.I)]
+
+def topic_page(lang, slug, alt_slugs, h1, title, desc, intro, ms, chips):
+    now = datetime.datetime.now()
+    up = sorted([m for m in ms if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
+    done = sorted([m for m in ms if m not in up], key=lambda m: m["dt"], reverse=True)[:12]
+    fr = lang == "fr"
+    uph = f'<section><h2><span class="num">⚽</span> {"Prochains matchs" if fr else "Next games"}</h2>{_grid(up, lang)}</section>' if up else ""
+    doneh = f'<section><h2><span class="num">✓</span> {"Mes derniers pronostics et leurs résultats" if fr else "My latest predictions and results"}</h2>{_grid(done, lang)}</section>' if done else ""
+    note = ('Pour jouer mes pronostics, inscris-toi avec le code promo <b>FFN</b> sur <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a> ou <a href="code-promo-paripesa.html">Paripesa</a>. 18+, un pronostic n\'est jamais sûr.' if fr else
+            'To play my predictions, sign up with the promo code <b>FFN</b> on <a href="1xbet-promo-code.html">1xBet</a>, <a href="melbet-promo-code.html">Melbet</a> or <a href="paripesa-promo-code.html">Paripesa</a>. 18+, no prediction is ever certain.')
+    body = f"""<header class="hero"><div class="wrap">
+<p class="eyebrow"><a href="{"pronostics" if fr else "predictions"}.html" style="color:inherit">📊 {"Tous mes pronostics" if fr else "All my predictions"}</a></p>
+<h1>{h1}</h1>
+<p class="sub">{intro}</p>
+{_stats_html(ms, lang)}
+{nav_links_html(lang, slug)}
+</div></header>
+<main class="wrap">
+{uph}{doneh}
+{f'<section><h2><span class="num">+</span> {"Autres équipes" if fr else "Other teams"}</h2>{chips}</section>' if chips else ""}
+<div class="note">{note}</div>
+</main>
+{footer_html() if fr else footer_html_en()}"""
+    nav = nav_fr(en=f"{alt_slugs[1]}.html") if fr else nav_en(fr=f"{alt_slugs[0]}.html")
+    return head(html.escape(title), html.escape(desc), f"{BASE}/{slug}.html", extra=_PG_CSS + f'<script type="application/ld+json">{_itemlist(up + done, lang, title)}</script>',
+                nav=nav, lang=lang, alternates=(f"{BASE}/{alt_slugs[0]}.html", f"{BASE}/{alt_slugs[1]}.html")) + body + "\n</body></html>"
+
+def team_page(team, lang):
+    sls = _team_slugs(team); ms = _team_ms(team)
+    intro = TEAM_INTRO.get(team, ("", ""))
+    if lang == "fr":
+        nm = team
+        return topic_page("fr", sls[0], sls, f'Pronostic <span class="hl">{html.escape(nm)}</span>',
+                          f"Pronostic {nm} : mes analyses et résultats | Cousin Marc",
+                          f"Tous mes pronostics {nm} : analyse de chaque grand match, mon choix, le score probable et le résultat. Code promo FFN.",
+                          intro[0] or f"Toutes mes analyses des matchs de {html.escape(nm)}, avec le résultat de chaque pronostic.", ms,
+                          _team_chips(ALL_TEAMS, "fr", sls[0]))
+    nm = _team_l(team, "en")
+    return topic_page("en", sls[1], sls, f'<span class="hl">{html.escape(nm)}</span> predictions',
+                      f"{nm} Predictions: Analysis & Results | Cousin Marc",
+                      f"All my {nm} predictions: analysis of every big game, my pick, the predicted score and the result. Promo code FFN.",
+                      intro[1] or f"All my analyses of {html.escape(nm)} games, with the result of every prediction.", ms,
+                      _team_chips(ALL_TEAMS, "en", sls[1]))
+
+def market_page(mk, lang):
+    rx, sfr, sen, tfr, ten, ifr, ien = mk
+    ms = _market_ms(rx)
+    if lang == "fr":
+        return topic_page("fr", sfr, (sfr, sen), f'Pronostic <span class="hl">{tfr.lower()}</span>',
+                          f"Pronostic {tfr.lower()} : mes analyses et résultats | Cousin Marc",
+                          f"Mes pronostics « {tfr.lower()} » : les matchs choisis, l'analyse de chacun et le résultat. Code promo FFN.", ifr, ms, "")
+    return topic_page("en", sen, (sfr, sen), f'<span class="hl">{ten}</span> predictions',
+                      f"{ten} Predictions: Analysis & Results | Cousin Marc",
+                      f"My {ten} predictions: the games I pick, the analysis of each one and the result. Promo code FFN.", ien, ms, "")
+
+
+
 def match_page(m):
     b = m["bk"]; e1, e2 = m["equipe1"], m["equipe2"]
     title = f'Pronostic {e1} vs {e2} ({m["dt"]:%d/%m}) | Cousin Marc'   # court : Google coupe vers 60 caracteres
@@ -5939,6 +6063,7 @@ def match_page(m):
 <h2><span class="num">01</span> Mon analyse</h2>
 {paras or "<p>Analyse détaillée publiée sur Telegram.</p>"}
 {_pb[0]}
+{team_links_html(m, "fr")}
 {f'<h3 style="margin-top:22px">🎫 Mes tickets avec ce match</h3>{tickets}' if tickets else ""}
 <div class="note">Un pronostic n'est jamais une certitude. Ne mise que ce que tu peux te permettre de perdre. 18+</div>
 </section>
@@ -5990,6 +6115,7 @@ def match_page_en(m):
 <h2><span class="num">01</span> My analysis</h2>
 {paras}
 {_pb[0]}
+{team_links_html(m, "en")}
 <div class="note">A prediction is never a certainty. Only stake what you can afford to lose. 18+</div>
 </section>
 <section>
@@ -6273,6 +6399,9 @@ def nav_links_html(lang, current=""):
     for comp, v in COMP_PAGES.items():
         if comp_page_ok(comp):
             items.append((v[0] if lang == "fr" else v[1], comp if lang == "fr" else COMP_L.get(comp, {}).get("en", comp)))
+    for mk in MARKET_PAGES:
+        if len(_market_ms(mk[0])) >= 3:
+            items.append((mk[1] if lang == "fr" else mk[2], ("🎯 " + mk[3]) if lang == "fr" else ("🎯 " + mk[4])))
     return '<div class="linkchips">' + "".join(f'<a href="{s}.html">{html.escape(l)}</a>' for s, l in items if s != current) + "</div>"
 
 def _stats_html(ms, lang):
@@ -6373,6 +6502,7 @@ def comp_page(comp, lang):
 </div></header>
 <main class="wrap">
 {uph}{doneh}
+{f'<section><h2><span class="num">+</span> Pronostics par équipe</h2>{_team_chips(sorted({x for m in ms for x in (m["equipe1"], m["equipe2"])}), "fr")}</section>' if _team_chips(sorted({x for m in ms for x in (m["equipe1"], m["equipe2"])}), "fr") else ""}
 <div class="note">Pour jouer mes pronostics {comp}, inscris-toi avec le code promo <b>FFN</b> sur <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a> ou <a href="code-promo-paripesa.html">Paripesa</a>. 18+, un pronostic n'est jamais sûr.</div>
 </main>
 {footer_html()}"""
@@ -6391,12 +6521,24 @@ def comp_page(comp, lang):
 </div></header>
 <main class="wrap">
 {uph}{doneh}
+{f'<section><h2><span class="num">+</span> Predictions by team</h2>{_team_chips(sorted({x for m in ms for x in (m["equipe1"], m["equipe2"])}), "en")}</section>' if _team_chips(sorted({x for m in ms for x in (m["equipe1"], m["equipe2"])}), "en") else ""}
 <div class="note">To play my {name} predictions, sign up with the promo code <b>FFN</b> on <a href="1xbet-promo-code.html">1xBet</a>, <a href="melbet-promo-code.html">Melbet</a> or <a href="paripesa-promo-code.html">Paripesa</a>. 18+, no prediction is ever certain.</div>
 </main>
 {footer_html_en()}"""
         nav = nav_en(fr=f"{fr_sl}.html")
     return head(html.escape(title), html.escape(desc), f"{BASE}/{slug}.html", extra=_PG_CSS + f'<script type="application/ld+json">{_itemlist(up + done, lang, title)}</script>',
                 nav=nav, lang=lang, alternates=alt) + body + "\n</body></html>"
+
+
+for _lang in ("fr", "en"):
+    for _team in ALL_TEAMS:
+        if team_page_ok(_team):
+            _sl = _team_slugs(_team)[0 if _lang == "fr" else 1]
+            open(os.path.join(OUT, _sl + ".html"), "w", encoding="utf-8").write(team_page(_team, _lang)); written.append(_sl + ".html"); NEW_PAGES.append(_sl + ".html")
+    for _mk in MARKET_PAGES:
+        if len(_market_ms(_mk[0])) >= 3:
+            _sl = _mk[1] if _lang == "fr" else _mk[2]
+            open(os.path.join(OUT, _sl + ".html"), "w", encoding="utf-8").write(market_page(_mk, _lang)); written.append(_sl + ".html"); NEW_PAGES.append(_sl + ".html")
 
 for _lang in ("fr", "en"):
     for _off in (0, 1):
