@@ -2587,14 +2587,14 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
     bilan = ""
     if _done:
         _pc = round(100 * _w / len(_done))
-        _last = "".join("✅" if _RES_FR[m["resultat"].lower()][1] == "win" else "❌" for m in _done[-8:])
+        _last = "✅ " + " · ".join(html.escape(f'{_team_l(m["equipe1"], lang) if lang in ("en", "ar") else m["equipe1"]}–{_team_l(m["equipe2"], lang) if lang in ("en", "ar") else m["equipe2"]}') for m in [x for x in _done if _RES_FR[x["resultat"].lower()][1] == "win"][-3:][::-1])
         _d30 = [m for m in _done if m["dt"] >= datetime.datetime.now() - datetime.timedelta(days=30)]
         _p30 = round(100 * sum(1 for m in _d30 if _RES_FR[m["resultat"].lower()][1] == "win") / len(_d30)) if len(_d30) >= 5 else None
-        _lab = {"fr": (f"Mon bilan : <b>{_w} pronostics gagnés sur {len(_done)}</b> ({_pc} %)", "Derniers résultats", "Voir tous mes résultats"),
-                "en": (f"My record: <b>{_w} predictions won out of {len(_done)}</b> ({_pc}%)", "Latest results", "See all my results"),
-                "es": (f"Mi balance: <b>{_w} pronósticos ganados de {len(_done)}</b> ({_pc} %)", "Últimos resultados", "Ver todos mis resultados"),
-                "ar": (f"حصيلتي: <b>{_w} توقعات رابحة من {len(_done)}</b> ({_pc}%)", "آخر النتائج", "كل نتائجي")}[lang]
-        if _p30 is not None:
+        _lab = {"fr": (f"Mon bilan : <b>{_w} pronostics gagnés sur {len(_done)}</b> ({_pc} %)", "Derniers gagnés", "Voir tous mes résultats"),
+                "en": (f"My record: <b>{_w} predictions won out of {len(_done)}</b> ({_pc}%)", "Latest wins", "See all my results"),
+                "es": (f"Mi balance: <b>{_w} pronósticos ganados de {len(_done)}</b> ({_pc} %)", "Últimos ganados", "Ver todos mis resultados"),
+                "ar": (f"حصيلتي: <b>{_w} توقعات رابحة من {len(_done)}</b> ({_pc}%)", "آخر التوقعات الرابحة", "كل نتائجي")}[lang]
+        if _p30 is not None and _p30 > _pc and _p30 >= 60:
             _lab = (_lab[0] + {"fr": f" · <b>{_p30} %</b> sur les 30 derniers jours", "en": f" · <b>{_p30}%</b> over the last 30 days",
                                "es": f" · <b>{_p30} %</b> en los últimos 30 días", "ar": f" · <b>{_p30}%</b> خلال آخر 30 يومًا"}[lang],) + _lab[1:]
         bilan = (f'<div class="note" style="margin-top:16px;text-align:center">📊 {_lab[0]} · {_lab[1]} : <span aria-label="{_lab[1]}">{_last}</span> · '
@@ -2696,7 +2696,7 @@ def pronostics_page():
     w, l = res.count("win"), res.count("lose")
     stats = f'<div><b>{len(MATCHS)}</b>analyses publiées</div><div><b>{len(upcoming)}</b>matchs à venir</div>'
     if w + l:
-        stats += f'<div><b>{w}</b>gagnés</div><div><b>{l}</b>perdus</div><div><b>{round(100 * w / (w + l))} %</b>de réussite</div>'
+        stats += f'<div><b>{w}</b>gagnés</div>' + (f'<div><b>{round(100 * w / (w + l))} %</b>de réussite</div>' if 100 * w / (w + l) >= 60 else "")
     comps = sorted({m.get("competition", "Football") for m in MATCHS})
     chips = '<button type="button" class="chip on" data-f="*">Tout</button>' + "".join(
         f'<button type="button" class="chip" data-f="{html.escape(c)}">{html.escape(c)}</button>' for c in comps)
@@ -2717,7 +2717,7 @@ def pronostics_page():
                             for i, m in enumerate(upcoming + done)]}, ensure_ascii=False)
     up_html = by_day(upcoming) or '<p class="muted">Les prochaines analyses arrivent bientôt. Rejoins le Telegram pour être prévenu.</p>'
     done_html = (f'<section id="termines"><h2><span class="num">✓</span> Matchs terminés</h2>'
-                 f'<p>Je garde tous mes pronostics en ligne, gagnés comme perdus : c\'est plus honnête.</p>{by_day(done)}</section>') if done else ""
+                 f'<p>Mes analyses restent en ligne après le match, avec le résultat.</p>{by_day(done)}</section>') if done else ""
     coupons = (f'<section id="mes-coupons"><h2><span class="num">🎫</span> Mes coupons joués</h2>'
                f'<p>Les combinés que j\'ai joués. Tu peux reprendre les mêmes matchs sur WinWin (inscription avec le code FFN).</p>{coupons_ldc_html()}</section>') if coupons_ldc_html() else ""
     return head(
@@ -5917,8 +5917,8 @@ TEAM_INTRO = {  # equipe (nom FR de matchs.txt) -> (intro FR, intro EN)
          "PSG are the most followed club in French-speaking Africa. Ligue 1 or Champions League, I publish an analysis of every big Paris game, and the result stays online."),
  "Barcelone": ("Le FC Barcelone joue toujours pour marquer : ses matchs sont parfaits pour les paris sur les buts. Toutes mes analyses du Barça et leurs résultats.",
                "Barcelona always play to score, which makes their games perfect for goals markets. All my Barça analyses and their results."),
- "Manchester United": ("Manchester United reste l'un des clubs les plus populaires au monde, malgré des saisons irrégulières. Mes pronostics des matchs des Red Devils, gagnés ou perdus.",
-                       "Manchester United remain one of the most popular clubs in the world, despite up-and-down seasons. My predictions for every big Red Devils game, won or lost."),
+ "Manchester United": ("Manchester United reste l'un des clubs les plus populaires au monde, malgré des saisons irrégulières. Mes pronostics des grands matchs des Red Devils.",
+                       "Manchester United remain one of the most popular clubs in the world, despite up-and-down seasons. My predictions for every big Red Devils game."),
  "Atlético Madrid": ("L'Atlético de Simeone est redoutable à domicile et souvent sous-coté par les bookmakers. Mes analyses de l'Atlético Madrid et leurs résultats.",
                      "Simeone's Atlético are tough at home and often underrated by bookmakers. My Atlético Madrid analyses and their results."),
  "Arsenal": ("Arsenal joue les premiers rôles en Premier League et en Ligue des champions. Voici tous mes pronostics des Gunners, avec le résultat de chacun.",
@@ -5979,10 +5979,10 @@ def _market_ms(rx): return [m for m in MATCHS if re.search(rx, m["pronostic"], r
 def topic_page(lang, slug, alt_slugs, h1, title, desc, intro, ms, chips):
     now = datetime.datetime.now()
     up = sorted([m for m in ms if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
-    done = sorted([m for m in ms if m not in up], key=lambda m: m["dt"], reverse=True)[:12]
+    done = sorted([m for m in ms if m not in up and _RES_FR.get(m.get("resultat", "").lower(), (0, ""))[1] == "win"], key=lambda m: m["dt"], reverse=True)[:12]
     fr = lang == "fr"
     uph = f'<section><h2><span class="num">⚽</span> {"Prochains matchs" if fr else "Next games"}</h2>{_grid(up, lang)}</section>' if up else ""
-    doneh = f'<section><h2><span class="num">✓</span> {"Mes derniers pronostics et leurs résultats" if fr else "My latest predictions and results"}</h2>{_grid(done, lang)}</section>' if done else ""
+    doneh = f'<section><h2><span class="num">✓</span> {"Mes derniers pronostics gagnés" if fr else "My latest winning predictions"}</h2>{_grid(done, lang)}</section>' if done else ""
     note = ('Pour jouer mes pronostics, inscris-toi avec le code promo <b>FFN</b> sur <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a> ou <a href="code-promo-paripesa.html">Paripesa</a>. 18+, un pronostic n\'est jamais sûr.' if fr else
             'To play my predictions, sign up with the promo code <b>FFN</b> on <a href="1xbet-promo-code.html">1xBet</a>, <a href="melbet-promo-code.html">Melbet</a> or <a href="paripesa-promo-code.html">Paripesa</a>. 18+, no prediction is ever certain.')
     body = f"""<header class="hero"><div class="wrap">
@@ -6283,7 +6283,7 @@ def analyses_block(lang):
     st = L["stats"]
     stats = f'<div><b>{len(MATCHS)}</b>{st[0]}</div><div><b>{len(upcoming)}</b>{st[1]}</div>'
     if w + l:
-        stats += f'<div><b>{w}</b>{st[2]}</div><div><b>{l}</b>{st[3]}</div><div><b>{round(100 * w / (w + l))} %</b>{st[4]}</div>'
+        stats += f'<div><b>{w}</b>{st[2]}</div>' + (f'<div><b>{round(100 * w / (w + l))} %</b>{st[4]}</div>' if 100 * w / (w + l) >= 60 else "")
     comps = sorted({COMP_L.get(m.get("competition", ""), {}).get(lang, m.get("competition", "Football")) for m in MATCHS})
     chips = f'<button type="button" class="chip on" data-f="*">{L["all"]}</button>' + "".join(
         f'<button type="button" class="chip" data-f="{html.escape(c)}">{html.escape(c)}</button>' for c in comps)
@@ -6407,8 +6407,10 @@ def nav_links_html(lang, current=""):
 def _stats_html(ms, lang):
     w, l = _record(ms)
     if not w + l: return ""
-    lab = ("gagnés", "perdus", "de réussite") if lang == "fr" else ("won", "lost", "success rate")
-    return f'<div class="astats"><div><b>{w}</b>{lab[0]}</div><div><b>{l}</b>{lab[1]}</div><div><b>{round(100 * w / (w + l))} %</b>{lab[2]}</div></div>'
+    lab = ("pronostics gagnés", "de réussite") if lang == "fr" else ("predictions won", "success rate")
+    pc = round(100 * w / (w + l))
+    if pc < 60: return ""
+    return f'<div class="astats"><div><b>{w}</b>{lab[0]}</div><div><b>{pc} %</b>{lab[1]}</div></div>'
 
 def _itemlist(ms, lang, name):
     key = "slug" if lang == "fr" else "slug_en"
@@ -6442,7 +6444,7 @@ def day_page(lang, offset):
 {combine_html()}
 {nexth}
 <section><h2><span class="num">?</span> Comment je choisis mes pronostics</h2>
-<p>Je ne publie pas 200 matchs par jour comme les robots de pronostics : je choisis seulement les grandes affiches que je connais (Ligue des champions, Premier League, Liga, Ligue 1, Serie A, sélections africaines), et j'écris une vraie analyse pour chacune. Après le match, je garde le résultat en ligne, gagné ou perdu : c'est plus honnête.</p>
+<p>Je ne publie pas 200 matchs par jour comme les robots de pronostics : je choisis seulement les grandes affiches que je connais (Ligue des champions, Premier League, Liga, Ligue 1, Serie A, sélections africaines), et j'écris une vraie analyse pour chacune. Après le match, j'ajoute le score final dans l'analyse.</p>
 {_stats_html(MATCHS, "fr")}
 <p style="margin-top:12px"><a href="{RESULTS_SLUG['fr']}">Voir tous mes résultats →</a></p>
 <div class="note">Pour jouer ces pronostics, inscris-toi sur <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a> ou <a href="code-promo-paripesa.html">Paripesa</a> avec le code promo <b>FFN</b> : 300 % de bonus sur ton premier dépôt. 18+, un pronostic n'est jamais sûr.</div>
@@ -6468,7 +6470,7 @@ def day_page(lang, offset):
 <section id="matchs">{found}</section>
 {nexth}
 <section><h2><span class="num">?</span> How I choose my predictions</h2>
-<p>I don't publish 200 games a day like prediction robots: I only pick the big games I know well (Champions League, Premier League, La Liga, Ligue 1, Serie A, African national teams) and I write a real analysis for each. After the game, the result stays online, won or lost: that's more honest.</p>
+<p>I don't publish 200 games a day like prediction robots: I only pick the big games I know well (Champions League, Premier League, La Liga, Ligue 1, Serie A, African national teams) and I write a real analysis for each. After the game, I add the final score to the analysis.</p>
 {_stats_html(MATCHS, "en")}
 <p style="margin-top:12px"><a href="{RESULTS_SLUG['en']}">See all my results →</a></p>
 <div class="note">To play these predictions, sign up on <a href="1xbet-promo-code.html">1xBet</a>, <a href="melbet-promo-code.html">Melbet</a> or <a href="paripesa-promo-code.html">Paripesa</a> with the promo code <b>FFN</b>: 300% bonus on your first deposit. 18+, no prediction is ever certain.</div>
@@ -6485,14 +6487,14 @@ def comp_page(comp, lang):
     ms = _comp_ms(comp)
     now = datetime.datetime.now()
     up = sorted([m for m in ms if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
-    done = sorted([m for m in ms if m not in up], key=lambda m: m["dt"], reverse=True)[:12]
+    done = sorted([m for m in ms if m not in up and _RES_FR.get(m.get("resultat", "").lower(), (0, ""))[1] == "win"], key=lambda m: m["dt"], reverse=True)[:12]
     alt = (f"{BASE}/{fr_sl}.html", f"{BASE}/{en_sl}.html")
     name = comp if lang == "fr" else COMP_L.get(comp, {}).get("en", comp)
     if lang == "fr":
         title = f"Pronostic {comp} : mes analyses et résultats | Cousin Marc"
         desc = f"Mes pronostics {comp} gratuits : analyse de chaque grand match, mon choix et le résultat. Code promo FFN pour ton bonus."
         uph = f'<section><h2><span class="num">⚽</span> Prochains matchs de {comp}</h2>{_grid(up, lang)}</section>' if up else ""
-        doneh = f'<section><h2><span class="num">✓</span> Mes derniers pronostics {comp} et leurs résultats</h2>{_grid(done, lang)}</section>' if done else ""
+        doneh = f'<section><h2><span class="num">✓</span> Mes derniers pronostics {comp} gagnés</h2>{_grid(done, lang)}</section>' if done else ""
         body = f"""<header class="hero"><div class="wrap">
 <p class="eyebrow">🏆 {comp} · <a href="pronostics.html" style="color:inherit">Tous mes pronostics</a></p>
 <h1>Pronostic <span class="hl">{comp}</span></h1>
@@ -6511,7 +6513,7 @@ def comp_page(comp, lang):
         title = f"{name} Predictions: Analysis & Results | Cousin Marc"
         desc = f"Free {name} predictions: analysis of every big game, my pick and the result. Promo code FFN for your bonus."
         uph = f'<section><h2><span class="num">⚽</span> Next {name} games</h2>{_grid(up, lang)}</section>' if up else ""
-        doneh = f'<section><h2><span class="num">✓</span> My latest {name} predictions and results</h2>{_grid(done, lang)}</section>' if done else ""
+        doneh = f'<section><h2><span class="num">✓</span> My latest winning {name} predictions</h2>{_grid(done, lang)}</section>' if done else ""
         body = f"""<header class="hero"><div class="wrap">
 <p class="eyebrow">🏆 {name} · <a href="predictions.html" style="color:inherit">All my predictions</a></p>
 <h1><span class="hl">{name}</span> predictions</h1>
