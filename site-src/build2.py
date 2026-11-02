@@ -5764,7 +5764,7 @@ def load_matchs():
         if not lines: continue
         m, key = {}, None
         for l in lines:
-            mm = re.match(r"^\s*(date|competition|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|combine|images?|analyse_en|analyse_ar|analyse)\s*:\s*(.*)$", l, re.I)
+            mm = re.match(r"^\s*(date|competition|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|combine|proba|score|images?|analyse_en|analyse_ar|analyse)\s*:\s*(.*)$", l, re.I)
             if mm and key != "analyse":
                 key = mm.group(1).lower(); m[key] = mm.group(2).strip()
             elif key in ("analyse", "analyse_en", "analyse_ar"):
@@ -5852,6 +5852,62 @@ def sports_event_ld(m, desc):
             "location": {"@type": "Place", "name": stade, "address": addr},
             "organizer": {"@type": "Organization", "name": org[0], "url": org[1]}}
 
+# ---------------------------------------------------------------- Probabilites + score probable + FAQ (comme Forebet)
+_PB_TXT = {
+    "fr": {"h": "📈 Mes probabilités", "win": "Victoire {t}", "draw": "Match nul", "score": "Score probable", "note": "Mon estimation personnelle, d'après la forme des deux équipes et les cotes du marché.",
+           "faq": "Questions fréquentes", "q1": "Qui va gagner {a} – {b} ?", "q2": "Quel est le score probable de {a} – {b} ?", "q3": "Quel est le pronostic de Cousin Marc pour {a} – {b} ?", "q4": "À quelle heure se joue {a} – {b} ?",
+           "a1fav": "D'après mon estimation, {f} part favori avec {p} % de chances de gagner. Le match nul est à {d} % et l'autre équipe à {o} %.",
+           "a1eq": "C'est un match très serré : {p1} % pour {a}, {d} % pour le nul et {p2} % pour {b}.",
+           "a2": "Mon score probable est {s}. C'est le résultat le plus logique selon moi, pas une certitude.",
+           "a3": "Mon pronostic : {p}.", "a3c": " Cote : {c}.", "a4": "Le coup d'envoi est le {w} (heure de Douala et de Paris en hiver).", "res": "Score final : voir l'analyse ci-dessus."},
+    "en": {"h": "📈 My probabilities", "win": "{t} win", "draw": "Draw", "score": "Predicted score", "note": "My own estimate, based on both teams' form and market odds.",
+           "faq": "Frequently asked questions", "q1": "Who will win {a} vs {b}?", "q2": "What is the predicted score for {a} vs {b}?", "q3": "What is Cousin Marc's prediction for {a} vs {b}?", "q4": "What time is {a} vs {b}?",
+           "a1fav": "By my estimate, {f} are the favourites with a {p}% chance of winning. The draw is at {d}% and the other side at {o}%.",
+           "a1eq": "It is a very tight game: {p1}% for {a}, {d}% for the draw and {p2}% for {b}.",
+           "a2": "My predicted score is {s}. It is the most logical outcome in my view, not a certainty.",
+           "a3": "My prediction: {p}.", "a3c": " Odds: {c}.", "a4": "Kick-off is on {w} (Lagos and Douala time).", "res": ""},
+    "ar": {"h": "📈 احتمالاتي", "win": "فوز {t}", "draw": "تعادل", "score": "النتيجة المتوقعة", "note": "تقديري الشخصي بناءً على مستوى الفريقين واحتمالات السوق.",
+           "faq": "أسئلة شائعة", "q1": "من سيفوز في مباراة {a} و{b}؟", "q2": "ما هي النتيجة المتوقعة لمباراة {a} و{b}؟", "q3": "ما هو توقع كوزين مارك لمباراة {a} و{b}؟", "q4": "متى تبدأ مباراة {a} و{b}؟",
+           "a1fav": "حسب تقديري، {f} هو المرشح الأوفر حظًا بنسبة فوز {p}٪. التعادل {d}٪ والفريق الآخر {o}٪.",
+           "a1eq": "مباراة متقاربة جدًا: {p1}٪ لـ{a} و{d}٪ للتعادل و{p2}٪ لـ{b}.",
+           "a2": "النتيجة المتوقعة عندي هي {s}. هذه النتيجة الأكثر منطقية في رأيي، وليست مضمونة.",
+           "a3": "توقعي: {p}.", "a3c": " الاحتمال: {c}.", "a4": "تنطلق المباراة يوم {w} (بتوقيت الجزائر وتونس والمغرب).", "res": ""},
+}
+
+def _proba(m):
+    try:
+        p = [int(x) for x in re.split(r"[-/ ]+", m.get("proba", "").strip()) if x]
+        return p if len(p) == 3 and sum(p) in (99, 100, 101) else None
+    except ValueError:
+        return None
+
+def proba_html(m, lang, e1, e2, pick, when):
+    """Bloc probabilites + FAQ (html, json-ld FAQPage). Vide si pas de champ proba."""
+    p = _proba(m)
+    if not p: return "", ""
+    T = _PB_TXT[lang]; es = html.escape
+    rows = [(T["win"].format(t=e1), p[0], "#16a34a"), (T["draw"], p[1], "#94a3b8"), (T["win"].format(t=e2), p[2], "#2563eb")]
+    bars = "".join(f'<div style="display:flex;align-items:center;gap:10px;margin:8px 0"><span style="flex:0 0 42%;font-size:.95em">{es(lab)}</span>'
+                   f'<span style="flex:1;background:rgba(148,163,184,.25);border-radius:99px;height:12px;overflow:hidden"><span style="display:block;height:100%;width:{v}%;background:{c};border-radius:99px"></span></span>'
+                   f'<b style="flex:0 0 3.2em;text-align:end">{v}%</b></div>' for lab, v, c in rows)
+    sc = es(m.get("score", "").strip())
+    block = (f'<div style="margin-top:20px;padding:16px 18px;border-radius:14px;border:1px solid rgba(148,163,184,.4)"><h3 style="margin:0 0 6px">{T["h"]}</h3>{bars}'
+             + (f'<p style="margin:12px 0 4px;font-size:1.1em">{T["score"]}{" :" if lang == "fr" else ":"} <b>{es(e1)} {sc} {es(e2)}</b></p>' if sc else "")
+             + f'<p style="margin:6px 0 0;font-size:.85em;opacity:.75">{T["note"]}</p></div>')
+    if max(p[0], p[2]) - min(p[0], p[2]) <= 8:
+        a1 = T["a1eq"].format(p1=p[0], d=p[1], p2=p[2], a=e1, b=e2)
+    else:
+        fav, pf, po = (e1, p[0], p[2]) if p[0] > p[2] else (e2, p[2], p[0])
+        a1 = T["a1fav"].format(f=fav, p=pf, d=p[1], o=po)
+    qa = [(T["q1"].format(a=e1, b=e2), a1)]
+    if sc: qa.append((T["q2"].format(a=e1, b=e2), T["a2"].format(s=f"{e1} {m['score'].strip()} {e2}")))
+    qa.append((T["q3"].format(a=e1, b=e2), T["a3"].format(p=pick) + (T["a3c"].format(c=m["cote"]) if m.get("cote") else "")))
+    qa.append((T["q4"].format(a=e1, b=e2), T["a4"].format(w=when)))
+    faq = f'<section><h2>{T["faq"]}</h2>' + "".join(f'<h3>{es(q)}</h3><p>{es(a)}</p>' for q, a in qa) + "</section>"
+    ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
+    return block + "", faq + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+
+
 def match_page(m):
     b = m["bk"]; e1, e2 = m["equipe1"], m["equipe2"]
     title = f'Pronostic {e1} vs {e2} ({m["dt"]:%d/%m}) | Cousin Marc'   # court : Google coupe vers 60 caracteres
@@ -5866,6 +5922,7 @@ def match_page(m):
     tickets = ("".join(f'<figure class="vproof-card"><img src="{html.escape(i)}" alt="Coupon Cousin Marc : {html.escape(e1)} vs {html.escape(e2)}" loading="lazy"></figure>' for i in imgs))
     tickets = f'<div class="vproofs" style="margin-top:16px">{tickets}</div>' if imgs else ""
     jsonld = json.dumps(sports_event_ld(m, desc), ensure_ascii=False)
+    _pb = proba_html(m, "fr", e1, e2, m["pronostic"], _date_fr(m["dt"]).replace(":", "h", 1))
     others = matchs_list_html(4, exclude=m["slug"])
     alt = ((f'{BASE}/{m["slug"]}.html', f'{BASE}/{m["slug_en"]}.html') + ((None, f'{BASE}/{m["slug_ar"]}.html') if m.get("slug_ar") else ())) if m.get("slug_en") else None
     en_link = f' · <a href="{m["slug_en"]}.html" hreflang="en" style="color:inherit">🇬🇧 English</a>' if m.get("slug_en") else ""
@@ -5881,6 +5938,7 @@ def match_page(m):
 <section>
 <h2><span class="num">01</span> Mon analyse</h2>
 {paras or "<p>Analyse détaillée publiée sur Telegram.</p>"}
+{_pb[0]}
 {f'<h3 style="margin-top:22px">🎫 Mes tickets avec ce match</h3>{tickets}' if tickets else ""}
 <div class="note">Un pronostic n'est jamais une certitude. Ne mise que ce que tu peux te permettre de perdre. 18+</div>
 </section>
@@ -5890,6 +5948,7 @@ def match_page(m):
 <div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">S'inscrire sur {b["name"]}</a><a class="cta alt" href="{COMPARE_SLUG}">Quel bookmaker pour moi ?</a></div>
 </section>
 {f'<section><h2><span class="num">03</span> Autres pronostics</h2>{others}</section>' if others else ""}
+{_pb[1]}
 </main>
 {footer_html()}
 {sticky_bar(b, "fr")}
@@ -5914,6 +5973,7 @@ def match_page_en(m):
     ev = sports_event_ld(m, desc)
     ev["name"] = f"{e1} vs {e2}"
     others = [x for x in MATCHS if x.get("slug_en") and x is not m][:4]
+    _pb = proba_html(m, "en", e1, e2, pick, f'{when} at {d:%H:%M}')
     oth = "".join(f'<li><a href="{x["slug_en"]}.html">{html.escape(TEAM_L.get(x["equipe1"], {}).get("en", x["equipe1"]))} vs {html.escape(TEAM_L.get(x["equipe2"], {}).get("en", x["equipe2"]))}</a>: {html.escape(x.get("pronostic_en") or x["pronostic"])}</li>' for x in others)
     return head(html.escape(title), html.escape(desc), canon, extra=f'<script type="application/ld+json">{json.dumps(ev, ensure_ascii=False)}</script>',
                 nav=nav_en(fr=f'{m["slug"]}.html', ar=f'{m.get("slug_ar") or "pronostics-ar"}.html'), lang="en", alternates=(f'{BASE}/{m["slug"]}.html', canon) + ((None, f'{BASE}/{m["slug_ar"]}.html') if m.get("slug_ar") else ()), image=match_og_image(m, "en")) + f"""
@@ -5929,6 +5989,7 @@ def match_page_en(m):
 <section>
 <h2><span class="num">01</span> My analysis</h2>
 {paras}
+{_pb[0]}
 <div class="note">A prediction is never a certainty. Only stake what you can afford to lose. 18+</div>
 </section>
 <section>
@@ -5937,6 +5998,7 @@ def match_page_en(m):
 <div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Register on {b["name"]}</a><a class="cta alt" href="odds-of-2.html">Free slip of the day</a></div>
 </section>
 {f'<section><h2><span class="num">03</span> Other predictions</h2><ul class="steps">{oth}</ul></section>' if oth else ""}
+{_pb[1]}
 </main>
 {footer_html_en()}
 {sticky_bar(b, "en")}
@@ -5961,6 +6023,7 @@ def match_page_ar(m):
     ev = sports_event_ld(m, desc)
     ev["name"] = f"{e1} ضد {e2}"
     others = [x for x in MATCHS if x.get("slug_ar") and x is not m][:4]
+    _pb = proba_html(m, "ar", e1, e2, pick, f'{when}، الساعة {d:%H:%M}')
     oth = "".join(f'<li><a href="{x["slug_ar"]}.html">{html.escape(_team_l(x["equipe1"], "ar"))} ضد {html.escape(_team_l(x["equipe2"], "ar"))}</a>: {html.escape(x.get("pronostic_ar") or x["pronostic"])}</li>' for x in others)
     return head(html.escape(title), html.escape(desc), canon, extra=f'<script type="application/ld+json">{json.dumps(ev, ensure_ascii=False)}</script>',
                 nav=nav_ar(fr=f'{m["slug"]}.html', en=f'{m.get("slug_en") or "predictions"}.html', es="pronosticos.html"), lang="ar",
@@ -5977,6 +6040,7 @@ def match_page_ar(m):
 <section>
 <h2><span class="num">01</span> تحليلي للمباراة</h2>
 {paras}
+{_pb[0]}
 <div class="note">التوقع ليس مضمونًا أبدًا. لا تراهن إلا بما يمكنك تحمّل خسارته. +18</div>
 </section>
 <section>
@@ -5985,6 +6049,7 @@ def match_page_ar(m):
 <div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">التسجيل في {b["name"]}</a><a class="cta alt" href="cote-2-ar.html">قسيمة اليوم المجانية</a></div>
 </section>
 {f'<section><h2><span class="num">03</span> توقعات أخرى</h2><ul class="steps">{oth}</ul></section>' if oth else ""}
+{_pb[1]}
 </main>
 {footer_html_ar()}
 {sticky_bar(b, "ar")}
