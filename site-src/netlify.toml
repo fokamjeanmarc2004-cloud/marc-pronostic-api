@@ -264,6 +264,12 @@
   force = true
 
 [[redirects]]
+  from = "/champions-league-predictions-ar"
+  to = "/champions-league-predictions-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/champions-league-predictions"
   to = "/champions-league-predictions.html"
   status = 301
@@ -456,8 +462,20 @@
   force = true
 
 [[redirects]]
+  from = "/football-predictions-today-ar"
+  to = "/football-predictions-today-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/football-predictions-today"
   to = "/football-predictions-today.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/football-predictions-tomorrow-ar"
+  to = "/football-predictions-tomorrow-ar.html"
   status = 301
   force = true
 
