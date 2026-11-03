@@ -1505,7 +1505,7 @@ def topnav(lang, langs_html, top_langs):
     links = "".join(f'<li><a href="{h}">{t}</a></li>' for t,h in TOPLINKS_L[lang])
     links += f'<li><a class="vip" href="{VIP_SLUG[lang]}">VIP</a></li>'
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
-            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><span class="dot"></span>cousin<b>marc</b></a>'
+            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png" width="34" height="34" alt="" style="width:34px;height:34px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
             f'<div class="navright"><ul class="toplinks">{links}</ul><ul class="toplang">{top_langs}</ul>'
             f'<button type="button" class="topffn" onclick="copyCode(this,\'FFN\')" aria-label="Copier le code promo FFN">FFN 📋</button>'
             f'<a class="toptg" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram Cousin Marc"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>{burger_html()}</div>'
@@ -1774,6 +1774,10 @@ def match_og_image(m, lang="fr"):
     im.save(path, "JPEG", quality=86, optimize=True)
     return f"{BASE}/{rel}"
 
+_ORG_LD = '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "Organization", "name": "Cousin Marc Pronostic",
+    "alternateName": ["Cousin Marc", "كوزين مارك"], "url": BASE + "/", "logo": BASE + "/logo-cousin-marc.png",
+    "sameAs": [u for _, u in SOCIAL]}, ensure_ascii=False) + '</script>'
+
 def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None, image=None, show_youtube=True):
     if nav is None: nav = NAV
     hreflang = ""
@@ -1802,9 +1806,9 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
 <link rel="canonical" href="{canonical}">
 {hreflang}
 <meta name="robots" content="index, follow">
-<link rel="icon" href="favicon.ico?v=2" sizes="any"><link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
-<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png?v=2"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png?v=2">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><meta name="theme-color" content="#ffffff"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Cousin Marc"><meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="favicon.ico?v=3" sizes="any"><link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png?v=3"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png?v=3">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3"><meta name="theme-color" content="#ffffff">{_ORG_LD if canonical.rstrip("/") in (BASE, BASE + "/index.html") else ""}<link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Cousin Marc"><meta name="mobile-web-app-capable" content="yes">
 <meta property="og:type" content="website"><meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}"><meta property="og:url" content="{canonical}">
 <meta property="og:locale" content="{oglocale}">
@@ -3196,7 +3200,7 @@ def article_jsonld(a):
     data={"@context":"https://schema.org","@type":"Article","headline":a["title"],
           "datePublished":a["date_iso"],"dateModified":a["date_iso"],
           "author":{"@type":"Person","name":"Cousin Marc"},
-          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic"},
+          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic","logo":{"@type":"ImageObject","url":"https://cousinmarc-pronostic.com/logo-cousin-marc.png"}},
           "mainEntityOfPage":canonical}
     return json.dumps(data,ensure_ascii=False,indent=2)
 
@@ -4170,7 +4174,7 @@ def article_jsonld_en(a):
     data={"@context":"https://schema.org","@type":"Article","headline":a["title"],
           "datePublished":a["date_iso"],"dateModified":a["date_iso"],
           "author":{"@type":"Person","name":"Cousin Marc"},
-          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic"},
+          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic","logo":{"@type":"ImageObject","url":"https://cousinmarc-pronostic.com/logo-cousin-marc.png"}},
           "mainEntityOfPage":canonical}
     return json.dumps(data,ensure_ascii=False,indent=2)
 
@@ -4356,7 +4360,7 @@ def article_jsonld_es(a):
     data={"@context":"https://schema.org","@type":"Article","headline":a["title"],
           "datePublished":a["date_iso"],"dateModified":a["date_iso"],
           "author":{"@type":"Person","name":"Cousin Marc"},
-          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic"},
+          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic","logo":{"@type":"ImageObject","url":"https://cousinmarc-pronostic.com/logo-cousin-marc.png"}},
           "mainEntityOfPage":canonical}
     return json.dumps(data,ensure_ascii=False,indent=2)
 
@@ -4776,7 +4780,7 @@ def article_jsonld_ar(a):
     data={"@context":"https://schema.org","@type":"Article","headline":a["title"],
           "datePublished":a["date_iso"],"dateModified":a["date_iso"],
           "author":{"@type":"Person","name":"Cousin Marc"},
-          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic"},
+          "publisher":{"@type":"Organization","name":"Cousin Marc Pronostic","logo":{"@type":"ImageObject","url":"https://cousinmarc-pronostic.com/logo-cousin-marc.png"}},
           "mainEntityOfPage":canonical}
     return json.dumps(data,ensure_ascii=False,indent=2)
 
