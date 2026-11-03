@@ -5115,6 +5115,14 @@ COUNTRIES = [
   "foot":"les Étalons du Burkina, l'ASFA Yennenga et le Rahimo FC",
   "books":["code-promo-1xbet","code-promo-melbet","code-promo-paripesa","code-promo-winwin"]},
 
+ {"slug":"gabon","name":"Gabon","adj":"gabonais","the":"au Gabon","in":"au Gabon",
+  "cur":"franc CFA (XAF)","cur_short":"FCFA",
+  "momo":["Airtel Money","Moov Money"],
+  "extra_pay":"cartes bancaires et cryptomonnaies (USDT, BTC)",
+  "cities":"Libreville, Port-Gentil, Franceville, Oyem et Moanda",
+  "foot":"les Panthères du Gabon, le championnat national et les grands championnats européens",
+  "books":["code-promo-1xbet","code-promo-melbet","code-promo-paripesa","code-promo-winwin","code-promo-megapari"]},
+
  {"slug":"tchad","name":"Tchad","adj":"tchadien","the":"au Tchad","in":"au Tchad",
   "cur":"franc CFA (XAF)","cur_short":"FCFA",
   "momo":["Airtel Money","Moov Money"],
@@ -5126,7 +5134,7 @@ COUNTRIES = [
 
 COUNTRY_ALIASES = {"rdc":["Congo (RDC)","RDC","Congo"],"cote-divoire":["Côte d'Ivoire"],
                    "cameroun":["Cameroun"],"senegal":["Sénégal"],"benin":["Bénin"],"mali":["Mali"],
-                   "togo":["Togo"],"burkina-faso":["Burkina Faso"],"tchad":["Tchad"]}
+                   "togo":["Togo"],"burkina-faso":["Burkina Faso"],"tchad":["Tchad"],"gabon":["Gabon"]}
 
 # Pages pays x bookmaker a conserver en URL dediee (verifie sur 3 mois de Search Console,
 # 2026-10-06 : 262 / 67 / 18 / 13 impressions respectivement, les 31 autres combos a 0-7
@@ -5155,6 +5163,8 @@ def cty_bonus(b, c):
     for cname, val in b["countries"]:
         if cname in names:
             return val
+    if c.get("cur_short") != "FCFA" and "FCFA" in b["bonus_max"]:
+        return b["bonus_max"].split(" jusqu")[0] + " sur le 1er dépôt"
     return b["bonus_max"]
 
 def cty_bk_slug(b, c):
@@ -5329,6 +5339,8 @@ CTY_EXTRA = {
  "senegal": {"utc": 0, "op": "la LONASE (Loterie Nationale Sénégalaise)",
    "intro": "Au Sénégal, Wave et Orange Money dominent les dépôts, en francs CFA (XOF). Les matchs des Lions de la Teranga et les grands championnats européens sont les plus joués par les parieurs de Dakar et de Thiès."},
  "rdc": {"utc": 1, "op": "la SONAL (Société Nationale de Loterie)",
+   "title": "Code Promo 1xBet RDC 2026 : FFN, M-Pesa, dollars | Cousin Marc",
+   "desc": "Code promo 1xBet et Melbet RDC 2026 : FFN. Parier en dollars ou en francs congolais, dépôt M-Pesa, Orange Money et Airtel Money pas à pas, heures de Kinshasa et Lubumbashi. Guide de Cousin Marc.",
    "intro": "En RDC, on parie en francs congolais (CDF) ou en dollars, avec M-Pesa, Orange Money et Airtel Money. Le TP Mazembe, l'AS Vita Club et les Léopards font partie des matchs les plus suivis, de Kinshasa à Lubumbashi.",
    "tz_note": "Heures de Kinshasa. À Lubumbashi, Goma et Bukavu (une heure de plus), ajoute 1 h."},
  "benin": {"utc": 1, "op": "la LNB (Loterie Nationale du Bénin)",
@@ -5337,6 +5349,10 @@ CTY_EXTRA = {
    "intro": "Au Mali, Orange Money et Moov Money permettent de déposer en quelques minutes, en francs CFA (XOF). Les Aigles, le Stade Malien et le Djoliba AC sont les équipes les plus suivies à Bamako."},
  "togo": {"utc": 0, "op": "la LONATO (Loterie Nationale Togolaise)",
    "intro": "Au Togo, on dépose surtout avec T-Money et Flooz, en francs CFA (XOF). Lomé rassemble la majorité des parieurs togolais de la communauté, qui suivent les Éperviers et les grands championnats européens."},
+ "gabon": {"utc": 1, "op_text": "Au Gabon, les jeux d'argent sont encadrés par l'État.",
+   "title": "Code Promo 1xBet Gabon 2026 : FFN, bonus 300% | Cousin Marc",
+   "desc": "Code promo 1xBet et Melbet Gabon 2026 : FFN. Bonus 300% jusqu'à 300 000 FCFA, dépôt Airtel Money et Moov Money pas à pas, heures des matchs à Libreville. Guide de Cousin Marc.",
+   "intro": "Au Gabon, on parie en francs CFA (XAF), la même monnaie qu'au Cameroun, et à la même heure que Douala : mes pronostics et mes coupons du jour sont donc exactement les mêmes pour toi. Les dépôts se font surtout par Airtel Money et Moov Money, de Libreville à Port-Gentil."},
  "tchad": {"utc": 1, "op_text": "Au Tchad, les jeux d'argent sont encadrés par l'État.",
    "intro": "Au Tchad, on parie en francs CFA (XAF), la même monnaie qu'au Cameroun : les bonus ont donc les mêmes plafonds. Les dépôts se font surtout par Airtel Money et Moov Money, de N'Djamena à Moundou."},
  "burkina-faso": {"utc": 0, "op": "la LONAB (Loterie Nationale Burkinabè)",
@@ -5417,6 +5433,13 @@ CTY_GUIDE = {
   "tips": ["Choisis <b>Burkina Faso</b> et <b>XOF</b> à l'inscription.",
            "Dépose et retire avec le même numéro Orange ou Moov.",
            "De novembre à mars, un match à 21h à Paris se joue à 20h à Ouagadougou."]},
+ "gabon": {"team": "Gabon", "h2": "Le foot et les paris au Gabon", "p": [
+   "Au Gabon, les supporters vibrent pour les <b>Panthères</b>. Le pays a coorganisé la <b>CAN 2012</b> avec la Guinée équatoriale puis organisé seul la <b>CAN 2017</b>, et il a vu grandir des joueurs connus dans toute l'Europe comme Pierre-Emerick <b>Aubameyang</b> ou Mario Lemina.",
+   "Le championnat national compte des clubs comme l'<b>AS Mangasport</b> de Moanda ou le <b>CF Mounana</b>, mais à Libreville comme à Port-Gentil, les paris se font surtout sur la Ligue des champions, la Premier League, la Liga et la Ligue 1 française.",
+   "Pour déposer et retirer, on utilise surtout <b>Airtel Money</b> et <b>Moov Money</b>, en francs CFA (XAF)."],
+  "tips": ["Choisis <b>Gabon</b> et la devise <b>XAF</b> à l'inscription : elle est difficile à changer ensuite.",
+           "Dépose et retire avec le même numéro Airtel Money ou Moov Money que celui de ton compte.",
+           "Libreville est à la même heure que Douala : un match à 21h à Paris en hiver se joue aussi à 21h chez toi."]},
  "tchad": {"team": "Tchad", "h2": "Le foot et les paris au Tchad", "p": [
    "Au Tchad, on parle <b>français et arabe</b> : ce guide existe aussi <a href=\"promo-codes-tchad-ar.html\" hreflang=\"ar\">en arabe</a>. De N'Djamena à Abéché, de Moundou à Sarh, les supporters suivent les <b>Sao</b>, l'équipe nationale, mais les matchs les plus joués restent ceux de la Premier League, de la Ligue des champions, de la Liga et de la Ligue 1.",
    "Le Tchad utilise le <b>franc CFA (XAF)</b> comme le Cameroun et vit à la même heure que Douala : mes pronostics, mes coupons du jour et les plafonds de bonus sont donc exactement les mêmes pour toi.",
@@ -5492,7 +5515,97 @@ def _ci_deep():
 <p>Le code ne peut pas être ajouté après coup. Contacte vite le support du bookmaker par le chat avant ton premier dépôt : il arrive qu'il l'ajoute. Sinon, le bonus de bienvenue est perdu pour ce compte.</p>
 </section>"""
 
-CTY_DEEP = {"cote-divoire": _ci_deep}
+def _chips(items):
+    return ('<style>.cichips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.cichips a{font-size:14px;font-weight:700;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink)}</style>'
+            '<div class="cichips">' + "".join(f'<a href="{s}.html">{l}</a>' for s, l in items) + "</div>")
+def _chips_std(): return ((DAY_SLUGS["fr"][0], "📅 Pronostic foot aujourd'hui"), (DAY_SLUGS["fr"][1], "➡️ Demain"),
+              ("pronostic-ligue-des-champions", "Ligue des champions"), ("pronostic-premier-league", "Premier League"),
+              ("pronostic-liga", "Liga"), ("cote-de-2", "⚽ Coupon du jour"))
+
+def _ga_deep():
+    return f"""<section id="code-promo-1xbet-melbet-gabon">
+<h2><span class="num">●</span> Code promo 1xBet et Melbet Gabon : FFN</h2>
+<p>À Libreville, les bookmakers les plus utilisés sont <b>1xBet</b> et <b>Melbet</b>. Sur les deux, le code promo est le même : <b>FFN</b>. Tu l'entres une seule fois, à l'inscription, et ton premier dépôt est multiplié : <b>300 % de bonus, jusqu'à 300 000 FCFA</b>.</p>
+<p>Voici ce que tu reçois en francs CFA (XAF) selon ton premier dépôt :</p>
+<div class="tablecard"><table>
+<thead><tr><th>Ton 1er dépôt</th><th>Bonus avec le code promo FFN</th><th>Total pour parier</th></tr></thead>
+<tbody>{_calc_rows(3, 300000)}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:10px">Le bonus se rejoue en paris combinés selon les conditions du bookmaker (indiquées dans ton compte, rubrique Bonus). Montants indicatifs, selon la promotion en cours.</p>
+<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="code-promo-1xbet.html">Code promo 1xBet : le guide</a><a class="cta alt" href="code-promo-melbet.html">Code promo Melbet : le guide</a></div>
+</section>
+<section id="depot-airtel-moov-gabon">
+<h2><span class="num">●</span> Déposer avec Airtel Money ou Moov Money : étape par étape</h2>
+<ol class="steps">
+<li>Connecte-toi à ton compte et appuie sur <b>Dépôt</b>.</li>
+<li>Choisis <b>Airtel Money</b> ou <b>Moov Money</b> dans la liste.</li>
+<li>Entre le montant (le minimum est affiché dans la caisse) et ton numéro de téléphone.</li>
+<li>Valide la demande qui arrive sur ton téléphone avec ton <b>code secret</b> Mobile Money.</li>
+<li>Ton compte est crédité en quelques minutes. Au premier dépôt, le bonus du code promo FFN s'ajoute tout seul.</li>
+</ol>
+<div class="note">Pour retirer tes gains, utilise <b>le même numéro et le même opérateur</b> que pour ton dépôt : c'est la règle des bookmakers contre la fraude.</div>
+</section>
+<section id="pronostics-libreville">
+<h2><span class="num">●</span> Mes pronostics pour les parieurs de Libreville</h2>
+<p>Libreville vit à la même heure que Douala : les heures de mes analyses sont donc directement les tiennes. Toutes mes analyses sont gratuites.</p>
+{_chips(_chips_std())}
+</section>
+<section id="faq-gabon">
+<h2><span class="num">?</span> Les questions des parieurs gabonais</h2>
+<h3>Quel est le code promo 1xBet au Gabon ?</h3>
+<p>C'est <b>FFN</b>. Il donne jusqu'à 300 000 FCFA de bonus sur le premier dépôt, en francs CFA (XAF).</p>
+<h3>Quel est le code promo Melbet au Gabon ?</h3>
+<p>Le même : <b>FFN</b>. Choisis bien <b>Gabon</b> et la devise <b>XAF</b> à l'inscription.</p>
+<h3>Mes pronostics du Cameroun sont-ils valables au Gabon ?</h3>
+<p>Oui : même monnaie, même heure, mêmes matchs. Mes coupons et mes analyses marchent exactement pareil pour toi.</p>
+<h3>J'ai oublié le code promo à l'inscription, que faire ?</h3>
+<p>Le code ne peut pas être ajouté après coup. Contacte vite le support du bookmaker par le chat avant ton premier dépôt : il arrive qu'il l'ajoute. Sinon, le bonus de bienvenue est perdu pour ce compte.</p>
+</section>"""
+
+def _rdc_deep():
+    return f"""<section id="code-promo-1xbet-melbet-rdc">
+<h2><span class="num">●</span> Code promo 1xBet et Melbet RDC : FFN</h2>
+<p>À Kinshasa comme à Lubumbashi, les bookmakers les plus demandés sont <b>1xBet</b> et <b>Melbet</b>. Sur les deux, le code promo est le même : <b>FFN</b>. Tu l'entres une seule fois, à l'inscription, pour activer le bonus de bienvenue sur ton premier dépôt.</p>
+<h3>Dollars ou francs congolais : quelle devise choisir ?</h3>
+<p>En RDC, tu peux ouvrir ton compte en <b>dollars (USD)</b> ou en <b>francs congolais (CDF)</b>. Mon conseil : choisis <b>la même devise que ton portefeuille Mobile Money</b>. Si ton M-Pesa est en dollars, ouvre ton compte en USD : tu évites les frais de conversion à chaque dépôt et à chaque retrait. Attention, la devise ne se change pas facilement après l'inscription.</p>
+<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="code-promo-1xbet.html">Code promo 1xBet : le guide</a><a class="cta alt" href="code-promo-melbet-rdc.html">Code promo Melbet RDC</a></div>
+</section>
+<section id="depot-mpesa-orange-airtel">
+<h2><span class="num">●</span> Déposer avec M-Pesa, Orange Money ou Airtel Money : étape par étape</h2>
+<ol class="steps">
+<li>Connecte-toi à ton compte et appuie sur <b>Dépôt</b>.</li>
+<li>Choisis ton moyen de paiement : <b>M-Pesa</b>, <b>Orange Money</b>, <b>Airtel Money</b> ou <b>Africell Money</b>.</li>
+<li>Entre le montant (le minimum est affiché dans la caisse) et ton numéro.</li>
+<li>Valide la demande qui arrive sur ton téléphone avec ton <b>code secret</b> (PIN).</li>
+<li>Ton compte est crédité en quelques minutes. Au premier dépôt, le bonus du code promo FFN s'ajoute tout seul.</li>
+</ol>
+<div class="tablecard"><table>
+<thead><tr><th>Opérateur</th><th>Numéro qui commence par</th></tr></thead>
+<tbody>
+<tr><td><b>M-Pesa</b> (Vodacom)</td><td>081, 082, 083</td></tr>
+<tr><td><b>Orange Money</b></td><td>084, 085, 089</td></tr>
+<tr><td><b>Airtel Money</b></td><td>097, 098, 099</td></tr>
+<tr><td><b>Africell Money</b></td><td>090</td></tr>
+</tbody></table></div>
+<div class="note">Pour retirer tes gains, utilise <b>le même numéro, le même opérateur et la même devise</b> que pour ton dépôt : c'est la règle des bookmakers contre la fraude.</div>
+</section>
+<section id="pronostics-kinshasa">
+<h2><span class="num">●</span> Mes pronostics pour les parieurs de Kinshasa et Lubumbashi</h2>
+<p>Kinshasa vit à la même heure que Douala : les heures de mes analyses sont directement les tiennes. À <b>Lubumbashi, Goma et Bukavu</b>, ajoute 1 heure. Toutes mes analyses sont gratuites.</p>
+{_chips(_chips_std())}
+</section>
+<section id="faq-rdc">
+<h2><span class="num">?</span> Les questions des parieurs congolais</h2>
+<h3>Quel est le code promo 1xBet en RDC ?</h3>
+<p>C'est <b>FFN</b>. Il marche à Kinshasa, Lubumbashi, Goma et dans toute la RDC.</p>
+<h3>Quel est le code promo Melbet en RDC ?</h3>
+<p>Le même : <b>FFN</b>. Choisis bien <b>RDC</b> et ta devise (USD ou CDF) à l'inscription.</p>
+<h3>Peut-on parier en dollars en RDC ?</h3>
+<p>Oui. La plupart des bookmakers partenaires acceptent le dollar en RDC, et M-Pesa permet de déposer directement en USD.</p>
+<h3>J'ai oublié le code promo à l'inscription, que faire ?</h3>
+<p>Le code ne peut pas être ajouté après coup. Contacte vite le support du bookmaker par le chat avant ton premier dépôt : il arrive qu'il l'ajoute. Sinon, le bonus de bienvenue est perdu pour ce compte.</p>
+</section>"""
+
+CTY_DEEP = {"cote-divoire": _ci_deep, "gabon": _ga_deep, "rdc": _rdc_deep}
 
 def country_hub_page(c):
     slug = cty_hub_slug(c)
@@ -5628,7 +5741,7 @@ def country_block_for_bk(b):
 def country_index_cards():
     out = ""
     FLAG = {"cameroun": ("🇨🇲", "#16a34a"), "cote-divoire": ("🇨🇮", "#f97316"), "senegal": ("🇸🇳", "#16a34a"), "rdc": ("🇨🇩", "#0ea5e9"),
-            "benin": ("🇧🇯", "#facc15"), "mali": ("🇲🇱", "#facc15"), "togo": ("🇹🇬", "#16a34a"), "burkina-faso": ("🇧🇫", "#dc2626"), "tchad": ("🇹🇩", "#1d4ed8")}
+            "benin": ("🇧🇯", "#facc15"), "mali": ("🇲🇱", "#facc15"), "togo": ("🇹🇬", "#16a34a"), "burkina-faso": ("🇧🇫", "#dc2626"), "tchad": ("🇹🇩", "#1d4ed8"), "gabon": ("🇬🇦", "#16a34a")}
     for c in COUNTRIES:
         n = len(c["books"])
         fl, fc = FLAG.get(c["slug"], ("🌍", "#2563eb"))
