@@ -6206,6 +6206,20 @@ def market_page(mk, lang):
 
 
 
+def share_html(url, text, lang="fr"):
+    """Boutons de partage : le message contient le pronostic, le lien et le code promo FFN."""
+    from urllib.parse import quote
+    lab = {"fr": ("Partage ce pronostic à tes amis :", "WhatsApp", "Telegram"),
+           "en": ("Share this prediction with your friends:", "WhatsApp", "Telegram"),
+           "ar": ("شارك هذا التوقع مع أصدقائك:", "واتساب", "تيليغرام")}[lang]
+    wa = "https://wa.me/?text=" + quote(text + "\n" + url)
+    tg = "https://t.me/share/url?url=" + quote(url) + "&text=" + quote(text)
+    btn = "display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-weight:800;font-size:15px;color:#fff;text-decoration:none"
+    return (f'<div style="margin-top:18px"><p style="margin:0 0 8px;font-weight:700">{lab[0]}</p><div style="display:flex;flex-wrap:wrap;gap:10px">'
+            f'<a href="{html.escape(wa)}" target="_blank" rel="noopener" style="{btn};background:#25d366">🟢 {lab[1]}</a>'
+            f'<a href="{html.escape(tg)}" target="_blank" rel="noopener" style="{btn};background:#229ed9">✈️ {lab[2]}</a></div></div>')
+
+
 def match_page(m):
     b = m["bk"]; e1, e2 = m["equipe1"], m["equipe2"]
     title = f'Pronostic {e1} vs {e2} ({m["dt"]:%d/%m}) | Cousin Marc'   # court : Google coupe vers 60 caracteres
@@ -6239,6 +6253,7 @@ def match_page(m):
 {_pb[0]}
 {team_links_html(m, "fr")}
 {f'<h3 style="margin-top:22px">🎫 Mes tickets avec ce match</h3>{tickets}' if tickets else ""}
+{share_html(f'{BASE}/{m["slug"]}.html', f'⚽ {e1} – {e2} : le pronostic de Cousin Marc → {m["pronostic"]}. Code promo FFN pour ton bonus.', "fr")}
 <div class="note">Un pronostic n'est jamais une certitude. Ne mise que ce que tu peux te permettre de perdre. 18+</div>
 </section>
 <section>
@@ -6290,6 +6305,7 @@ def match_page_en(m):
 {paras}
 {_pb[0]}
 {team_links_html(m, "en")}
+{share_html(canon, f'⚽ {e1} vs {e2}: Cousin Marc\'s prediction → {pick}. Promo code FFN for your bonus.', "en")}
 <div class="note">A prediction is never a certainty. Only stake what you can afford to lose. 18+</div>
 </section>
 <section>
@@ -6341,6 +6357,7 @@ def match_page_ar(m):
 <h2><span class="num">01</span> تحليلي للمباراة</h2>
 {paras}
 {_pb[0]}
+{share_html(canon, f'⚽ {e1} ضد {e2}: توقع كوزين مارك ← {pick}. الرمز الترويجي FFN للحصول على المكافأة.', "ar")}
 <div class="note">التوقع ليس مضمونًا أبدًا. لا تراهن إلا بما يمكنك تحمّل خسارته. +18</div>
 </section>
 <section>
@@ -6614,7 +6631,7 @@ def day_page(lang, offset):
 {nav_links_html("fr", slug)}
 </div></header>
 <main class="wrap">
-<section id="matchs">{found}</section>
+<section id="matchs">{found}{share_html(f"{BASE}/{slug}.html", f"⚽ Les pronostics foot de Cousin Marc pour {word} ({lab}). Code promo FFN pour ton bonus.", "fr") if ms else ""}</section>
 {combine_html()}
 {nexth}
 <section><h2><span class="num">?</span> Comment je choisis mes pronostics</h2>
@@ -6641,7 +6658,7 @@ def day_page(lang, offset):
 {nav_links_html("en", slug)}
 </div></header>
 <main class="wrap">
-<section id="matchs">{found}</section>
+<section id="matchs">{found}{share_html(f"{BASE}/{slug}.html", f"⚽ Cousin Marc's football predictions for {word} ({lab}). Promo code FFN for your bonus.", "en") if ms else ""}</section>
 {nexth}
 <section><h2><span class="num">?</span> How I choose my predictions</h2>
 <p>I don't publish 200 games a day like prediction robots: I only pick the big games I know well (Champions League, Premier League, La Liga, Ligue 1, Serie A, African national teams) and I write a real analysis for each. After the game, I add the final score to the analysis.</p>
