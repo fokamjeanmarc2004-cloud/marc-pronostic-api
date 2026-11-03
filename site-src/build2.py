@@ -5323,6 +5323,8 @@ CTY_EXTRA = {
  "cameroun": {"utc": 1, "op": "le PMUC (Pari Mutuel Urbain Camerounais)",
    "intro": "Au Cameroun, la grande majorité des parieurs de la communauté déposent avec MTN Mobile Money ou Orange Money, en francs CFA (XAF). Douala et Yaoundé concentrent l'essentiel des joueurs, qui suivent les Lions Indomptables autant que la Premier League et la Ligue des champions."},
  "cote-divoire": {"utc": 0, "op": "la LONACI (Loterie Nationale de Côte d'Ivoire)",
+   "title": "Code Promo 1xBet Côte d'Ivoire 2026 : FFN, bonus 300% | Cousin Marc",
+   "desc": "Code promo 1xBet et Melbet Côte d'Ivoire 2026 : FFN. Bonus 300% jusqu'à 300 000 FCFA, dépôt Wave, Orange Money, MTN et Moov pas à pas, heures des matchs à Abidjan. Guide de Cousin Marc.",
    "intro": "La Côte d'Ivoire est aujourd'hui le premier pays de la communauté Cousin Marc sur le site, avec Abidjan loin devant les autres villes. On y dépose surtout par Orange Money, MTN Mobile Money, Moov Money et Wave, en francs CFA (XOF)."},
  "senegal": {"utc": 0, "op": "la LONASE (Loterie Nationale Sénégalaise)",
    "intro": "Au Sénégal, Wave et Orange Money dominent les dépôts, en francs CFA (XOF). Les matchs des Lions de la Teranga et les grands championnats européens sont les plus joués par les parieurs de Dakar et de Thiès."},
@@ -5438,6 +5440,60 @@ def cty_guide_html(c):
             f'({m["dt"].day} {_MOIS_FR[m["dt"].month-1]} {m["dt"].year}, {html.escape(m.get("competition", ""))}) : {html.escape(m["pronostic"])}</li>' for m in ms) + "</ul>"
     return out + "</section>"
 
+def _ci_deep():
+    chips = "".join(f'<a href="{s}.html">{l}</a>' for s, l in (
+        (DAY_SLUGS["fr"][0], "📅 Pronostic foot aujourd'hui"), (DAY_SLUGS["fr"][1], "➡️ Demain"),
+        ("pronostic-ligue-des-champions", "Ligue des champions"), ("pronostic-premier-league", "Premier League"),
+        ("pronostic-ligue-1", "Ligue 1"), ("cote-de-2", "⚽ Coupon du jour")))
+    return f"""<style>.cichips{{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}}.cichips a{{font-size:14px;font-weight:700;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink)}}</style>
+<section id="code-promo-1xbet-melbet-cote-divoire">
+<h2><span class="num">●</span> Code promo 1xBet et Melbet Côte d'Ivoire : FFN</h2>
+<p>À Abidjan, les deux bookmakers les plus demandés sont <b>1xBet</b> et <b>Melbet</b>. Sur les deux, le code promo est le même : <b>FFN</b>. Tu l'entres une seule fois, au moment de l'inscription, et ton premier dépôt est multiplié : <b>300 % de bonus, jusqu'à 300 000 FCFA</b>.</p>
+<p>Voici ce que tu reçois en francs CFA (XOF) selon ton premier dépôt :</p>
+<div class="tablecard"><table>
+<thead><tr><th>Ton 1er dépôt</th><th>Bonus avec le code promo FFN</th><th>Total pour parier</th></tr></thead>
+<tbody>{_calc_rows(3, 300000)}</tbody></table></div>
+<p style="font-size:13px;color:var(--mist);margin-top:10px">Le bonus se rejoue en paris combinés selon les conditions du bookmaker (indiquées dans ton compte, rubrique Bonus). Montants indicatifs, selon la promotion en cours.</p>
+<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="code-promo-1xbet.html">Code promo 1xBet : le guide</a><a class="cta alt" href="code-promo-melbet.html">Code promo Melbet : le guide</a></div>
+</section>
+<section id="depot-wave-orange-mtn-moov">
+<h2><span class="num">●</span> Déposer avec Wave, Orange Money, MTN ou Moov : étape par étape</h2>
+<ol class="steps">
+<li>Connecte-toi à ton compte et appuie sur <b>Dépôt</b>.</li>
+<li>Choisis ton moyen de paiement : <b>Wave</b>, <b>Orange Money</b>, <b>MTN MoMo</b> ou <b>Moov Money</b>.</li>
+<li>Entre le montant (le minimum est affiché dans la caisse) et ton numéro à <b>10 chiffres</b>.</li>
+<li>Valide sur ton téléphone : demande de confirmation avec ton <b>code secret</b> pour Orange, MTN et Moov, ou validation dans l'<b>application Wave</b>.</li>
+<li>Ton compte est crédité en quelques minutes. Au premier dépôt, le bonus du code promo FFN s'ajoute tout seul.</li>
+</ol>
+<div class="tablecard"><table>
+<thead><tr><th>Opérateur</th><th>Numéro qui commence par</th><th>Pour vérifier ton solde</th></tr></thead>
+<tbody>
+<tr><td><b>Orange Money</b></td><td>07</td><td>#144#</td></tr>
+<tr><td><b>MTN MoMo</b></td><td>05</td><td>*133#</td></tr>
+<tr><td><b>Moov Money</b></td><td>01</td><td>*155#</td></tr>
+<tr><td><b>Wave</b></td><td>tous les numéros</td><td>dans l'application Wave</td></tr>
+</tbody></table></div>
+<div class="note">Pour retirer tes gains, utilise <b>le même numéro et le même opérateur</b> que pour ton dépôt : c'est la règle des bookmakers contre la fraude. Si Wave n'apparaît pas dans la caisse, passe par Orange Money ou MTN.</div>
+</section>
+<section id="pronostics-abidjan">
+<h2><span class="num">●</span> Mes pronostics pour les parieurs d'Abidjan</h2>
+<p>Les Ivoiriens jouent surtout la Ligue des champions, la Premier League, la Ligue 1 française et les matchs des Éléphants. Toutes mes analyses sont gratuites, avec l'heure du match à Abidjan (1 heure de moins qu'à Douala et qu'à Paris en hiver).</p>
+<div class="cichips">{chips}</div>
+</section>
+<section id="faq-cote-divoire">
+<h2><span class="num">?</span> Les questions des parieurs ivoiriens</h2>
+<h3>Quel est le code promo 1xBet en Côte d'Ivoire ?</h3>
+<p>C'est <b>FFN</b>. Il marche en Côte d'Ivoire comme dans toute l'Afrique de l'Ouest, et il donne jusqu'à 300 000 FCFA de bonus sur le premier dépôt.</p>
+<h3>Quel est le code promo Melbet en Côte d'Ivoire ?</h3>
+<p>Le même : <b>FFN</b>. Choisis bien <b>Côte d'Ivoire</b> et la devise <b>XOF</b> à l'inscription.</p>
+<h3>Peut-on déposer avec Wave ?</h3>
+<p>Oui, Wave fait partie des moyens de paiement proposés en Côte d'Ivoire sur la plupart des bookmakers partenaires. S'il n'apparaît pas pour toi, Orange Money, MTN MoMo et Moov Money marchent aussi.</p>
+<h3>J'ai oublié le code promo à l'inscription, que faire ?</h3>
+<p>Le code ne peut pas être ajouté après coup. Contacte vite le support du bookmaker par le chat avant ton premier dépôt : il arrive qu'il l'ajoute. Sinon, le bonus de bienvenue est perdu pour ce compte.</p>
+</section>"""
+
+CTY_DEEP = {"cote-divoire": _ci_deep}
+
 def country_hub_page(c):
     slug = cty_hub_slug(c)
     momo = cty_momo_list(c)
@@ -5454,8 +5510,8 @@ def country_hub_page(c):
     ]
     extra = f'<script type="application/ld+json">\n{cty_faq_jsonld(qs)}\n</script>'
     return head(
-        f"Codes Promo Paris Sportifs {c['name']} 2026 : bonus &amp; Mobile Money | Cousin Marc",
-        f"Tous les codes promo paris sportifs {c['name']} 2026 : {', '.join(_bk(s)['name'] for s in c['books'])}. Bonus de bienvenue jusqu'à 300% avec le code promo FFN, dépôt {momo}. Guide de Cousin Marc.",
+        CTY_EXTRA.get(c['slug'], {}).get("title", "").replace("&", "&amp;") or f"Codes Promo Paris Sportifs {c['name']} 2026 : bonus &amp; Mobile Money | Cousin Marc",
+        CTY_EXTRA.get(c['slug'], {}).get("desc") or f"Tous les codes promo paris sportifs {c['name']} 2026 : {', '.join(_bk(s)['name'] for s in c['books'])}. Bonus de bienvenue jusqu'à 300% avec le code promo FFN, dépôt {momo}. Guide de Cousin Marc.",
         f"{BASE}/{slug}.html", extra, nav=nav_fr(), lang="fr") + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">⚽ Paris sportifs {c['name']} · Mis à jour {MAJ_FR}</p>
@@ -5482,6 +5538,7 @@ def country_hub_page(c):
 <p>{CTY_EXTRA.get(c['slug'], {}).get('op_text') or _cap(CTY_EXTRA.get(c['slug'], {}).get('op', "l'opérateur national")) + " est l'opérateur national historique des jeux et paris " + c['the'] + "."} Les bookmakers en ligne de ce site sont internationaux : vérifie toujours la réglementation locale avant de jouer. 18+.</p>
 </section>
 {cty_guide_html(c)}
+{CTY_DEEP[c['slug']]() if c['slug'] in CTY_DEEP else ""}
 <section id="heure-des-matchs">
 <h2><span class="num">●</span> À quelle heure sont les grands matchs {c['in']} ?</h2>
 <p>Les horaires annoncés en Europe ne sont pas ceux {c['the']}. Voici la correspondance pour ne plus rater un coup d'envoi (et placer ton pari à temps) :</p>
@@ -5516,7 +5573,7 @@ def country_hub_page(c):
 </section>
 <section>
 <h2><span class="num">04</span> Sur quoi parier {c['in']} ?</h2>
-<p>{_cap(c['foot'])} : ce sont les paris les plus suivis par la communauté {c['the']}, de {c['cities']}. À cela s'ajoutent les grands championnats européens, la CAN et la Ligue des Champions CAF.</p>
+<p>{_cap(c['foot'])} : ce sont les paris les plus suivis par la communauté {c['the']}, {"d'" if c['cities'][:1] in "AEIOUÉ" else "de "}{c['cities']}. À cela s'ajoutent les grands championnats européens, la CAN et la Ligue des Champions CAF.</p>
 <p>Je publie chaque jour un coupon gratuit et mes analyses sur Telegram et WhatsApp.</p>
 <div class="btnrow" style="justify-content:flex-start">
 <a class="cta" href="cote-de-2.html">⚽ Coupon Côte de 2</a>
