@@ -50,7 +50,7 @@ async function ensureStickers(env, userId) {
   const form = new FormData();
   form.append("user_id", String(userId));
   form.append("name", name);
-  form.append("title", "Cousin Marc · Code FFN");
+  form.append("title", "Cousin Marc · Code promo FFN");
   const stickers = [];
   for (let i = 0; i < files.length; i++) {
     const img = await fetch(files[i].download_url);

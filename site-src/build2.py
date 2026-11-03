@@ -251,8 +251,8 @@ BK_CONTENT = {
    "ar":"يشتهر 1win بمكافأة ترحيب مرتفعة جدًا (حتى 500% على أول إيداعاتك) وكازينو مدمج وتطبيق سريع."}},
 }
 
-# ---------------------------------------------------------------- Bonus code FFN (300 %)
-# Bookmakers du code FFN : 300 % jusqu'a 300 000 FCFA dans les pays FCFA (1xBit exclu : 100 % crypto, pas de FCFA)
+# ---------------------------------------------------------------- Bonus code promo FFN (300 %)
+# Bookmakers du code promo FFN : 300 % jusqu'a 300 000 FCFA dans les pays FCFA (1xBit exclu : 100 % crypto, pas de FCFA)
 FFN300 = {"code-promo-1xbet", "code-promo-melbet", "code-promo-paripesa", "code-promo-megapari",
           "code-promo-winwin", "code-promo-afroparie", "code-promo-goldpari"}
 B300 = {"fr": "300% jusqu'à 300 000 FCFA", "en": "300% up to 300,000 FCFA", "es": "300% hasta 300 000 FCFA", "ar": "300% حتى 300 000 فرنك CFA"}
@@ -266,7 +266,7 @@ for _b in BOOKMAKERS:
 FFN300_NAMES = {_b["name"] for _b in BOOKMAKERS if _b["slug"] in FFN300}
 
 def pct(x, lang="fr", long=False):
-    """'300%' pour les bookmakers du code FFN, sinon '100%'. x = bookmaker (dict) ou son nom."""
+    """'300%' pour les bookmakers du code promo FFN, sinon '100%'. x = bookmaker (dict) ou son nom."""
     hit = (x.get("slug") in FFN300) if isinstance(x, dict) else (x in FFN300_NAMES)
     if not hit: return "100%"
     return ("300% (" + B300[lang].split(" ", 1)[1] + ")") if long else "300%"
@@ -846,7 +846,7 @@ nav.top .logo b{color:var(--green-ink)}
 .ticker a+a::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:#facc15;margin:0 22px 1px -22px;vertical-align:middle}
 @keyframes tickmove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}.ticker{overflow-x:auto}}
-/* code FFN qui brille doucement + cartes qui se soulevent */
+/* code promo FFN qui brille doucement + cartes qui se soulevent */
 .tcode,.codebox .code{background-image:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.75) 50%,transparent 70%);background-size:220% 100%;background-repeat:no-repeat;background-position:-120% 0;animation:ffnshine 4.5s ease-in-out infinite}
 @keyframes ffnshine{0%,55%{background-position:-120% 0}100%{background-position:220% 0}}
 @media(prefers-reduced-motion:reduce){.tcode,.codebox .code{animation:none}}
@@ -1885,16 +1885,16 @@ BK_EXTRA = {
  "code-promo-winwin": {
   "fr":{"rev":["WinWin est un bookmaker en forte croissance en Afrique francophone, très populaire au Cameroun, au Sénégal, en Côte d'Ivoire et au Bénin. En 2026, il se distingue par une application mobile légère qui fonctionne même avec une connexion lente, des cotes compétitives sur le football africain et international, et des dépôts et retraits en Mobile Money rapides et sans frais cachés.","Avec le code promo WinWin FFN, tu actives le bonus de bienvenue maximum dès ton premier dépôt. Le code se saisit une seule fois, à la création de ton compte. WinWin propose aussi les paris en direct, le cash-out et des promotions régulières, ce qui en fait une vraie alternative aux grands noms du marché."],
    "pros":["Application légère, idéale même en connexion faible","Dépôts et retraits Mobile Money rapides","Cotes attractives sur le football africain","Code promo FFN pour le bonus maximum"],
-   "faq":[("Le code promo WinWin FFN est-il gratuit ?","Oui, le code FFN est 100% gratuit. Tu le saisis à l'inscription pour débloquer ton bonus de bienvenue, sans aucun frais."),("Comment déposer sur WinWin en Afrique ?","WinWin accepte le Mobile Money (Orange Money, MTN MoMo, Moov Money…) selon ton pays. Le dépôt est instantané et le retrait rapide.")]},
+   "faq":[("Le code promo WinWin FFN est-il gratuit ?","Oui, le code promo FFN est 100% gratuit. Tu le saisis à l'inscription pour débloquer ton bonus de bienvenue, sans aucun frais."),("Comment déposer sur WinWin en Afrique ?","WinWin accepte le Mobile Money (Orange Money, MTN MoMo, Moov Money…) selon ton pays. Le dépôt est instantané et le retrait rapide.")]},
   "en":{"rev":["WinWin is a fast-growing bookmaker in French-speaking Africa, very popular in Cameroon, Senegal, Ivory Coast and Benin. In 2026 it stands out with a lightweight mobile app that works even on a slow connection, competitive odds on African and international football, and fast Mobile Money deposits and withdrawals with no hidden fees.","With the WinWin promo code FFN, you unlock the maximum welcome bonus on your first deposit. You enter the code once, when creating your account. WinWin also offers live betting, cash-out and regular promotions, making it a real alternative to the big names."],
    "pros":["Lightweight app, great even on a weak connection","Fast Mobile Money deposits and withdrawals","Attractive odds on African football","FFN promo code for the maximum bonus"],
    "faq":[("Is the WinWin promo code FFN free?","Yes, the FFN code is 100% free. Enter it at registration to unlock your welcome bonus, with no fees."),("How do I deposit on WinWin in Africa?","WinWin accepts Mobile Money (Orange Money, MTN MoMo, Moov Money…) depending on your country. Deposits are instant and withdrawals are fast.")]},
   "es":{"rev":["WinWin es una casa de apuestas en pleno crecimiento en el África francófona, muy popular en Camerún, Senegal, Costa de Marfil y Benín. En 2026 destaca por una aplicación móvil ligera que funciona incluso con conexión lenta, cuotas competitivas en el fútbol africano e internacional, y depósitos y retiros Mobile Money rápidos y sin comisiones ocultas.","Con el código promocional WinWin FFN, activas el bono de bienvenida máximo en tu primer depósito. El código se introduce una sola vez, al crear tu cuenta. WinWin también ofrece apuestas en vivo, cash-out y promociones regulares."],
    "pros":["App ligera, ideal incluso con conexión débil","Depósitos y retiros Mobile Money rápidos","Cuotas atractivas en el fútbol africano","Código FFN para el bono máximo"],
-   "faq":[("¿El código promocional WinWin FFN es gratis?","Sí, el código FFN es 100% gratuito. Introdúcelo al registrarte para desbloquear tu bono de bienvenida, sin comisiones."),("¿Cómo depositar en WinWin?","WinWin acepta Mobile Money (Orange Money, MTN MoMo, Moov Money…) según tu país. El depósito es instantáneo y el retiro rápido.")]},
+   "faq":[("¿El código promocional WinWin FFN es gratis?","Sí, el código promocional FFN es 100% gratuito. Introdúcelo al registrarte para desbloquear tu bono de bienvenida, sin comisiones."),("¿Cómo depositar en WinWin?","WinWin acepta Mobile Money (Orange Money, MTN MoMo, Moov Money…) según tu país. El depósito es instantáneo y el retiro rápido.")]},
   "ar":{"rev":["WinWin شركة مراهنات سريعة النمو في إفريقيا الناطقة بالفرنسية، وتحظى بشعبية كبيرة في الكاميرون والسنغال وساحل العاج وبنين. في 2026 تتميّز بتطبيق خفيف يعمل حتى مع اتصال ضعيف، ونسب تنافسية على كرة القدم الإفريقية والدولية، وإيداعات وسحوبات Mobile Money سريعة دون رسوم خفية.","باستخدام رمز WinWin الترويجي FFN، تفعّل أقصى مكافأة ترحيب عند إيداعك الأول. يُدخل الرمز مرة واحدة عند إنشاء الحساب. كما يوفّر WinWin المراهنة المباشرة وسحب الأرباح المبكر وعروضًا منتظمة."],
    "pros":["تطبيق خفيف مناسب حتى مع اتصال ضعيف","إيداعات وسحوبات Mobile Money سريعة","نسب جذّابة على كرة القدم الإفريقية","رمز FFN للحصول على المكافأة القصوى"],
-   "faq":[("هل رمز WinWin الترويجي FFN مجاني؟","نعم، الرمز FFN مجاني 100%. أدخله عند التسجيل لتفعيل مكافأة الترحيب دون أي رسوم."),("كيف أودع في WinWin؟","يقبل WinWin خدمة Mobile Money (Orange Money، MTN MoMo، Moov Money…) حسب بلدك. الإيداع فوري والسحب سريع.")]},
+   "faq":[("هل رمز WinWin الترويجي FFN مجاني؟","نعم، الرمز الترويجي FFN مجاني 100%. أدخله عند التسجيل لتفعيل مكافأة الترحيب دون أي رسوم."),("كيف أودع في WinWin؟","يقبل WinWin خدمة Mobile Money (Orange Money، MTN MoMo، Moov Money…) حسب بلدك. الإيداع فوري والسحب سريع.")]},
  },
  "code-promo-megapari": {
   "fr":{"rev":["Megapari est une plateforme moderne qui réunit paris sportifs et casino, avec une couverture impressionnante : des milliers d'événements chaque jour, un très large choix de marchés et des cotes parmi les plus élevées. En 2026, Megapari séduit de plus en plus de parieurs grâce à son interface fluide, ses promotions fréquentes et son bonus de bienvenue généreux.","En saisissant le code promo Megapari FFN à l'inscription, tu débloques le bonus maximum sur ton premier dépôt. Megapari accepte de nombreux moyens de paiement, dont le Mobile Money et les cryptomonnaies, et propose un service client réactif."],
@@ -1993,7 +1993,7 @@ BK_GUIDE_FR = {
 <tr><td>Bonus de bienvenue</td><td><b>300% sur ton 1er dépôt</b>, jusqu'à 300 000 FCFA</td></tr>
 <tr><td>Pays</td><td>Cameroun, Côte d'Ivoire, Sénégal, Burkina Faso, Bénin, Mali, Togo, RDC et la plupart des pays d'Afrique</td></tr>
 <tr><td>Paiement</td><td>MTN Mobile Money, Orange Money, Moov Money, Wave, M-Pesa, Airtel Money, crypto (selon le pays)</td></tr>
-<tr><td>Application</td><td>Android et iPhone (le code FFN marche aussi dans l'application)</td></tr>
+<tr><td>Application</td><td>Android et iPhone (le code promo FFN marche aussi dans l'application)</td></tr>
 <tr><td>Dernière vérification</td><td>{VERIF_FR}, par Cousin Marc</td></tr>
 </tbody></table></div>
 </section>
@@ -2075,8 +2075,8 @@ BK_GUIDE_FR = {
 
 BK_FAQ_FR = {
  "code-promo-melbet": [
-  ("Quel est le meilleur code promo Melbet en 2026 ?", "Le code FFN : il donne 300% sur le premier dépôt, jusqu'à 300 000 FCFA, contre 100% pour le bonus de base. Il s'utilise une seule fois, à l'inscription."),
-  ("J'ai oublié de mettre le code promo Melbet, que faire ?", "Le code ne peut pas être ajouté après l'inscription. Contacte le support Melbet depuis ton compte, sans faire de dépôt, et explique que tu voulais utiliser le code FFN. Ne crée pas de deuxième compte : il risque d'être bloqué."),
+  ("Quel est le meilleur code promo Melbet en 2026 ?", "Le code promo FFN : il donne 300% sur le premier dépôt, jusqu'à 300 000 FCFA, contre 100% pour le bonus de base. Il s'utilise une seule fois, à l'inscription."),
+  ("J'ai oublié de mettre le code promo Melbet, que faire ?", "Le code ne peut pas être ajouté après l'inscription. Contacte le support Melbet depuis ton compte, sans faire de dépôt, et explique que tu voulais utiliser le code promo FFN. Ne crée pas de deuxième compte : il risque d'être bloqué."),
   ("Le code promo Melbet marche-t-il au Cameroun et en Côte d'Ivoire ?", "Oui. FFN fonctionne au Cameroun, en Côte d'Ivoire, au Sénégal, au Burkina Faso, au Bénin, au Mali, au Togo, en RDC et dans la plupart des pays où Melbet est disponible."),
   ("Quelle différence entre code promo et code coupon Melbet ?", "Le code promo (FFN) active le bonus à l'inscription. Le code coupon sert à charger un ticket de paris déjà préparé dans ton coupon Melbet."),
   ("Quel dépôt faire pour avoir le bonus maximum ?", "Avec 300%, un dépôt de 100 000 FCFA donne le bonus maximum de 300 000 FCFA. Un dépôt de 10 000 FCFA donne 30 000 FCFA de bonus."),
@@ -2085,7 +2085,7 @@ BK_FAQ_FR = {
 }
 
 
-# Sections communes aux bookmakers du code FFN (fiche, calcul, conditions, paiements, coupon, application)
+# Sections communes aux bookmakers du code promo FFN (fiche, calcul, conditions, paiements, coupon, application)
 _PAY_ROWS = [("Cameroun", "MTN Mobile Money, Orange Money"), ("Côte d'Ivoire", "Orange Money, MTN, Moov Money, Wave"),
              ("Sénégal", "Wave, Orange Money, Free Money"), ("Burkina Faso", "Orange Money, Moov Money"),
              ("Bénin", "MTN Mobile Money, Moov Money"), ("Mali", "Orange Money, Moov Money"), ("Togo", "T-Money, Flooz"),
@@ -2193,15 +2193,15 @@ BK_GUIDE_FR["code-promo-1xbet"] = lambda b: f"""
 </section>
 <section id="application">
 <h2>Application 1xBet : Android et iPhone</h2>
-<p>L'application 1xBet est plus rapide que le site sur un petit réseau. Sur Android, elle s'installe depuis le lien officiel (fichier APK : autorise l'installation depuis cette source si ton téléphone le demande). Sur iPhone, elle se trouve sur l'App Store. Le code FFN fonctionne de la même manière dans l'application.</p>
+<p>L'application 1xBet est plus rapide que le site sur un petit réseau. Sur Android, elle s'installe depuis le lien officiel (fichier APK : autorise l'installation depuis cette source si ton téléphone le demande). Sur iPhone, elle se trouve sur l'App Store. Le code promo FFN fonctionne de la même manière dans l'application.</p>
 </section>
 """
 
 BK_FAQ_FR["code-promo-1xbet"] = [
-  ("Quel est le meilleur code promo 1xBet en 2026 ?", "Le code FFN : il donne 300% sur le premier dépôt, jusqu'à 300 000 FCFA, contre 100% pour le bonus de base. Il s'utilise une seule fois, à l'inscription."),
+  ("Quel est le meilleur code promo 1xBet en 2026 ?", "Le code promo FFN : il donne 300% sur le premier dépôt, jusqu'à 300 000 FCFA, contre 100% pour le bonus de base. Il s'utilise une seule fois, à l'inscription."),
   ("Un générateur de code promo 1xBet, ça marche ?", "Non. Les codes promo 1xBet sont des codes partenaires fixes : aucun site ni application ne peut en générer. Ces « générateurs » sont des arnaques ; ne donne jamais ton mot de passe ni ton code Mobile Money."),
   ("Pourquoi le code promo est « facultatif » sur 1xBet ?", "Parce que tu peux t'inscrire sans code. Mais sans code, tu n'as pas le bonus de 300%, et tu ne peux plus l'ajouter après l'inscription. Mets FFN avant de valider."),
-  ("J'ai oublié le code promo 1xBet à l'inscription, que faire ?", "Contacte le support 1xBet depuis ton compte avant de faire ton premier dépôt et explique que tu voulais utiliser le code FFN. Ne crée pas de deuxième compte : il risque d'être bloqué."),
+  ("J'ai oublié le code promo 1xBet à l'inscription, que faire ?", "Contacte le support 1xBet depuis ton compte avant de faire ton premier dépôt et explique que tu voulais utiliser le code promo FFN. Ne crée pas de deuxième compte : il risque d'être bloqué."),
   ("Combien de bonus pour 10 000 FCFA déposés sur 1xBet ?", "Avec 300%, un dépôt de 10 000 FCFA donne 30 000 FCFA de bonus, soit 40 000 FCFA pour parier. Le bonus maximum de 300 000 FCFA est atteint avec un dépôt de 100 000 FCFA."),
   ("Quel est le code promo 1xBet au Burkina Faso, au Mali ou en Côte d'Ivoire ?", "C'est FFN dans tous ces pays. Le code est le même partout : seuls la devise du bonus et les moyens de paiement (Orange Money, Moov Money, MTN, Wave) changent."),
 ]
@@ -2226,7 +2226,7 @@ def _ffn_app(name, has_app):
 
 def _ffn_faq(name, extra=()):
     return list(extra) + [
-        (f"Quel est le meilleur code promo {name} en 2026 ?", f"Le code FFN : il donne 300% sur le premier dépôt, jusqu'à 300 000 FCFA, contre 100% pour le bonus de base. Il s'utilise une seule fois, à l'inscription."),
+        (f"Quel est le meilleur code promo {name} en 2026 ?", f"Le code promo FFN : il donne 300% sur le premier dépôt, jusqu'à 300 000 FCFA, contre 100% pour le bonus de base. Il s'utilise une seule fois, à l'inscription."),
         (f"J'ai oublié le code promo {name} à l'inscription, que faire ?", f"Le code ne peut pas être ajouté après coup. Contacte le support {name} depuis ton compte, avant ton premier dépôt, et explique que tu voulais utiliser FFN. Ne crée pas de deuxième compte : il risque d'être bloqué."),
         (f"Combien de bonus pour 10 000 FCFA déposés sur {name} ?", "Avec 300%, un dépôt de 10 000 FCFA donne 30 000 FCFA de bonus, soit 40 000 FCFA pour parier. Le maximum de 300 000 FCFA est atteint avec 100 000 FCFA déposés."),
     ]
@@ -2263,9 +2263,9 @@ BK_GUIDE_FR["code-promo-megapari"] = lambda b: _ffn_common(b) + _ffn_best("Megap
 
 BK_GUIDE_FR["code-promo-goldpari"] = lambda b: _ffn_common(b) + _ffn_best("GoldPari") + """
 <section id="goldpari">
-<h2>GoldPari avec le code FFN</h2>
+<h2>GoldPari avec le code promo FFN</h2>
 <p>GoldPari fait partie des bookmakers partenaires du code <b>FFN</b> : même code que sur 1xBet, Melbet, Paripesa, WinWin et Megapari, et même bonus de 300% sur le premier dépôt, jusqu'à 300 000 FCFA.</p>
-<p>Tu peux avoir un compte sur plusieurs bookmakers différents avec le même code FFN : c'est un seul compte par bookmaker qui est interdit, pas l'utilisation du même code chez plusieurs.</p>
+<p>Tu peux avoir un compte sur plusieurs bookmakers différents avec le même code promo FFN : c'est un seul compte par bookmaker qui est interdit, pas l'utilisation du même code chez plusieurs.</p>
 </section>""" + _ffn_app("GoldPari", True)
 
 BK_GUIDE_FR["code-promo-afroparie"] = lambda b: """
@@ -2326,7 +2326,7 @@ def _other_guide(b, extra=""):
 </section>
 {extra}
 <section id="autres-codes">
-<h2>{name} ou un bookmaker avec le code FFN ?</h2>
+<h2>{name} ou un bookmaker avec le code promo FFN ?</h2>
 <p>Tu peux avoir un compte chez plusieurs bookmakers différents. Si tu veux comparer, mon code <b>FFN</b> donne <b>300% sur le premier dépôt, jusqu'à 300 000 FCFA</b> chez mes partenaires principaux : <a href="code-promo-1xbet.html">1xBet</a>, <a href="code-promo-melbet.html">Melbet</a>, <a href="code-promo-paripesa.html">Paripesa</a> et <a href="code-promo-winwin.html">WinWin</a>.</p>
 <p>Mes analyses de match sont dans l'onglet <a href="pronostics.html">Analyses</a>, et mon <a href="cote-de-2.html">coupon gratuit du jour</a> est publié chaque matin : tu peux les jouer sur {name} aussi.</p>
 </section>
@@ -2606,7 +2606,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
     if lang == "fr" and coupons_ldc_html():
         coupons_home = (f'<section class="hsec" id="mes-coupons"><div class="wrap">'
                         f'<div class="hsec-head"><div><p class="kicker">Mes tickets joués</p><h2>🎫 Mes coupons Ligue des champions</h2>'
-                        f'<p>Les combinés que j\'ai joués avec mon argent. Tu peux reprendre les mêmes matchs sur WinWin (inscription avec le code FFN).</p></div></div>'
+                        f'<p>Les combinés que j\'ai joués avec mon argent. Tu peux reprendre les mêmes matchs sur WinWin (inscription avec le code promo FFN).</p></div></div>'
                         f'{coupons_ldc_html()}<p class="muted" style="font-size:13px;margin-top:12px">18+ · Un pronostic n\'est jamais sûr. Ne mise que ce que tu peux perdre.</p></div></section>')
     if lang == "fr" and combine_html():
         matchs_home += f'<section class="hsec" id="combine"><div class="wrap">{combine_html(wrap=False)}</div></section>'
@@ -2719,7 +2719,7 @@ def pronostics_page():
     done_html = (f'<section id="termines"><h2><span class="num">✓</span> Matchs terminés</h2>'
                  f'<p>Mes analyses restent en ligne après le match, avec le résultat.</p>{by_day(done)}</section>') if done else ""
     coupons = (f'<section id="mes-coupons"><h2><span class="num">🎫</span> Mes coupons joués</h2>'
-               f'<p>Les combinés que j\'ai joués. Tu peux reprendre les mêmes matchs sur WinWin (inscription avec le code FFN).</p>{coupons_ldc_html()}</section>') if coupons_ldc_html() else ""
+               f'<p>Les combinés que j\'ai joués. Tu peux reprendre les mêmes matchs sur WinWin (inscription avec le code promo FFN).</p>{coupons_ldc_html()}</section>') if coupons_ldc_html() else ""
     return head(
         "Pronostics foot du jour : analyses des grands matchs | Cousin Marc",
         "Mes analyses et pronostics gratuits des grands matchs : Ligue des champions, Premier League, Liga, Ligue 1… Mon avis, la cote et le résultat, mis à jour chaque semaine.",
@@ -3278,7 +3278,7 @@ def combine_html(wrap=True):
     inner = (f'<h2><span class="num">🎟️</span> Mon combiné du week-end</h2>'
              f'<p>{len(picks)} de mes pronostics du week-end réunis en un seul ticket. Clique sur un match pour lire mon analyse.</p>'
              f'<ul class="steps">{rows}</ul>{tot}'
-             f'<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{onex}" rel="sponsored nofollow">🎯 Joue-le sur 1xBet (code FFN)</a></div>'
+             f'<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{onex}" rel="sponsored nofollow">🎯 Joue-le sur 1xBet (code promo FFN)</a></div>'
              f'<p style="font-size:13px;color:var(--mist);margin-top:8px">18+ · Un combiné n\'est jamais sûr : ne mise que ce que tu peux perdre.</p>')
     return f'<section id="combine-week-end">{inner}</section>' if wrap else inner
 
@@ -3540,7 +3540,7 @@ def country_page_en(c):
             f'{html.escape(TEAM_L.get(m["equipe2"], {}).get("en", m["equipe2"]))}</a> ({_MOIS_EN[m["dt"].month-1]} {m["dt"].day}, {m["dt"].year}): '
             f'{html.escape(m.get("pronostic_en") or m["pronostic"])}</li>' for m in ms) + "</ul>"
     qs = [
-        (f"What is the best betting promo code in {c['name']} in 2026?", f"Cousin Marc's code FFN gives a 300% bonus on your first deposit on 1xBet, Melbet, Paripesa, WinWin and Megapari, capped in your currency. It is entered once, at registration."),
+        (f"What is the best betting promo code in {c['name']} in 2026?", f"Cousin Marc's promo code FFN gives a 300% bonus on your first deposit on 1xBet, Melbet, Paripesa, WinWin and Megapari, capped in your currency. It is entered once, at registration."),
         (f"How do I deposit with mobile money in {c['name']}?", f"Choose {c['name']} and the {c['cur']} at registration, then open the cashier: the payment methods available in {c['name']} ({', '.join(a for a, _ in c['pay'][:2])}…) are listed there."),
         (f"What time are Champions League games in {c['name']}?", f"From November to March, a 9pm Champions League game in Paris kicks off at {(21 + c['utc'] - 1) % 24}:00 in {c['name']}."),
         (f"Does the promo code work in {c['name']}?", f"Yes: the promo code works wherever the bookmaker accepts registrations from {c['name']}. If the site lets you register in your currency, the code and the bonus work. Only the bonus cap changes with your currency."),
@@ -3549,7 +3549,7 @@ def country_page_en(c):
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qs]}, ensure_ascii=False)
     others = "".join(f'<a href="{cty_en_slug(o)}.html"><div class="bk">{o["name"]}</div><div class="cd">Promo codes</div></a>' for o in COUNTRIES_EN if o is not c)
     return head(f"Betting Promo Codes {c['name']} 2026: Bonus & Mobile Money | Cousin Marc",
-        f"Best betting promo codes in {c['name']} for 2026: 1xBet, Melbet, Paripesa, 1win and more. 300% bonus with code FFN, deposits by {c['pay'][0][0]}. Guide by Cousin Marc.",
+        f"Best betting promo codes in {c['name']} for 2026: 1xBet, Melbet, Paripesa, 1win and more. 300% bonus with promo code FFN, deposits by {c['pay'][0][0]}. Guide by Cousin Marc.",
         f"{BASE}/{slug}.html", f'<script type="application/ld+json">{faq}</script>', nav=nav_en(), lang="en") + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">⚽ Sports betting {c['name']} · Updated {MAJ_EN}</p>
@@ -4437,7 +4437,7 @@ def country_page_tchad_ar():
     faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qs]}, ensure_ascii=False)
     return head("رمز ترويجي 1xBet تشاد 2026: مكافأة 300% وAirtel Money | كوزين مارك",
-        "أفضل الرموز الترويجية للمراهنات في تشاد 2026: 1xBet وMelbet وParipesa و1win. مكافأة 300% حتى 300 000 فرنك CFA مع الرمز FFN، والإيداع بـ Airtel Money وMoov Money. دليل كوزين مارك.",
+        "أفضل الرموز الترويجية للمراهنات في تشاد 2026: 1xBet وMelbet وParipesa و1win. مكافأة 300% حتى 300 000 فرنك CFA مع الرمز الترويجي FFN، والإيداع بـ Airtel Money وMoov Money. دليل كوزين مارك.",
         f"{BASE}/{TCHAD_AR_SLUG}.html", f'<script type="application/ld+json">{faq}</script>', nav=nav_ar(), lang="ar") + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">⚽ المراهنات الرياضية في تشاد · تحديث نوفمبر 2026</p>
@@ -4841,8 +4841,8 @@ TPI_COUPONS = [
 
 TPI_L = {
  "fr":{"eyebrow":"⚽ Coupons du jour","h1a":"Total ","h1b":"Pair / Impair",
-   "sub":"Le coupon Total Pair/Impair du jour. Gratuit pour tous les comptes créés avec le code FFN.",
-   "meta_desc":"Coupon Total Pair/Impair gratuit, mis à jour chaque matin par Cousin Marc. Crée ton compte 1xBet ou Melbet avec le code FFN pour le débloquer.",
+   "sub":"Le coupon Total Pair/Impair du jour. Gratuit pour tous les comptes créés avec le code promo FFN.",
+   "meta_desc":"Coupon Total Pair/Impair gratuit, mis à jour chaque matin par Cousin Marc. Crée ton compte 1xBet ou Melbet avec le code promo FFN pour le débloquer.",
    "cond_title":"Conditions pour télécharger ce coupon","cond_intro":"Ce coupon est 100% gratuit, mais réservé aux membres de la communauté. Pour pouvoir le jouer :",
    "steps":["Crée un compte avec le code promo <b>FFN</b> sur Melbet ou 1xBet. <a href='https://youtu.be/EnBk9p_Akvc' rel='nofollow' style='color:var(--gold);font-weight:700;white-space:nowrap'>▶️ Voir comment créer un compte</a>","Recharge ton compte d'au moins <b>3000 FCFA (10$)</b> pour l'activation.","Copie le code du coupon ci-dessous et joue-le sur ton appli."],
    "coupons_title":"Coupons du jour","copy":"📋 Copier le code","register":"🌐 S'inscrire","apk":"📲 APK","tuto":"▶️ Voir le tuto",
@@ -4850,8 +4850,8 @@ TPI_L = {
    "disc":"⚠️ 18+. Aucun coupon n'est garanti à 100%. Joue de façon responsable et mise seulement ce que tu peux te permettre de perdre.",
    "promo_title":"Inscris-toi avec le bon code","promo_p":"Pour télécharger les coupons, ton compte doit être créé avec le code <b>FFN</b> :"},
  "en":{"eyebrow":"⚽ Coupons of the day","h1a":"Total ","h1b":"Odd / Even",
-   "sub":"The Total Odd/Even coupon of the day. Free for all accounts created with code FFN.",
-   "meta_desc":"Free Total Odd/Even coupon, updated every morning by Cousin Marc. Create your 1xBet or Melbet account with code FFN to unlock it.",
+   "sub":"The Total Odd/Even coupon of the day. Free for all accounts created with promo code FFN.",
+   "meta_desc":"Free Total Odd/Even coupon, updated every morning by Cousin Marc. Create your 1xBet or Melbet account with promo code FFN to unlock it.",
    "cond_title":"Conditions to download this coupon","cond_intro":"This coupon is 100% free, but reserved for community members. To play it:",
    "steps":["Create an account with promo code <b>FFN</b> on Melbet or 1xBet. <a href='https://youtu.be/EnBk9p_Akvc' rel='nofollow' style='color:var(--gold);font-weight:700;white-space:nowrap'>▶️ See how to create an account</a>","Top up your account with at least <b>3000 FCFA (10$)</b> for activation.","Copy the coupon code below and play it in your app."],
    "coupons_title":"Today's coupons","copy":"📋 Copy code","register":"🌐 Register","apk":"📲 APK","tuto":"▶️ Watch tutorial",
@@ -4859,8 +4859,8 @@ TPI_L = {
    "disc":"⚠️ 18+. No coupon is 100% guaranteed. Play responsibly and only stake what you can afford to lose.",
    "promo_title":"Register with the right code","promo_p":"To download the coupons, your account must be created with code <b>FFN</b>:"},
  "es":{"eyebrow":"⚽ Cupones del día","h1a":"Total ","h1b":"Par / Impar",
-   "sub":"El cupón Total Par/Impar del día. Gratis para todas las cuentas creadas con el código FFN.",
-   "meta_desc":"Cupón Total Par/Impar gratis, actualizado cada mañana por Cousin Marc. Crea tu cuenta 1xBet o Melbet con el código FFN para desbloquearlo.",
+   "sub":"El cupón Total Par/Impar del día. Gratis para todas las cuentas creadas con el código promocional FFN.",
+   "meta_desc":"Cupón Total Par/Impar gratis, actualizado cada mañana por Cousin Marc. Crea tu cuenta 1xBet o Melbet con el código promocional FFN para desbloquearlo.",
    "cond_title":"Condiciones para descargar este cupón","cond_intro":"Este cupón es 100% gratis, pero reservado a los miembros de la comunidad. Para jugarlo:",
    "steps":["Crea una cuenta con el código promocional <b>FFN</b> en Melbet o 1xBet. <a href='https://youtu.be/EnBk9p_Akvc' rel='nofollow' style='color:var(--gold);font-weight:700;white-space:nowrap'>▶️ Ver cómo crear una cuenta</a>","Recarga tu cuenta con al menos <b>3000 FCFA (10$)</b> para la activación.","Copia el código del cupón abajo y juégalo en tu app."],
    "coupons_title":"Cupones del día","copy":"📋 Copiar código","register":"🌐 Registrarse","apk":"📲 APK","tuto":"▶️ Ver tutorial",
@@ -4868,8 +4868,8 @@ TPI_L = {
    "disc":"⚠️ Solo +18. Ningún cupón está garantizado al 100%. Juega con responsabilidad y apuesta solo lo que puedas permitirte perder.",
    "promo_title":"Regístrate con el código correcto","promo_p":"Para descargar los cupones, tu cuenta debe crearse con el código <b>FFN</b>:"},
  "ar":{"eyebrow":"⚽ قسائم اليوم","h1a":"إجمالي ","h1b":"زوجي / فردي",
-   "sub":"قسيمة إجمالي زوجي/فردي لهذا اليوم. مجانية لكل الحسابات المُنشأة بالرمز FFN.",
-   "meta_desc":"قسيمة إجمالي زوجي/فردي مجانية، تُحدَّث كل صباح من طرف Cousin Marc. أنشئ حسابك على 1xBet أو Melbet بالرمز FFN لفتحها.",
+   "sub":"قسيمة إجمالي زوجي/فردي لهذا اليوم. مجانية لكل الحسابات المُنشأة بالرمز الترويجي FFN.",
+   "meta_desc":"قسيمة إجمالي زوجي/فردي مجانية، تُحدَّث كل صباح من طرف Cousin Marc. أنشئ حسابك على 1xBet أو Melbet بالرمز الترويجي FFN لفتحها.",
    "cond_title":"شروط تحميل هذه القسيمة","cond_intro":"هذه القسيمة مجانية 100%، لكنها مخصّصة لأعضاء المجتمع. لتتمكّن من لعبها:",
    "steps":["أنشئ حسابًا بالرمز الترويجي <b>FFN</b> على Melbet أو 1xBet. <a href='https://youtu.be/EnBk9p_Akvc' rel='nofollow' style='color:var(--gold);font-weight:700;white-space:nowrap'>▶️ شاهد كيفية إنشاء حساب</a>","اشحن حسابك بما لا يقل عن <b>3000 فرنك (10$)</b> للتفعيل.","انسخ رمز القسيمة أدناه والعبها في تطبيقك."],
    "coupons_title":"قسائم اليوم","copy":"📋 نسخ الرمز","register":"🌐 التسجيل","apk":"📲 APK","tuto":"▶️ شاهد الشرح",
@@ -4908,7 +4908,7 @@ def tpi_page(lang):
     alternates=(f"{BASE}/{TPI_SLUG['fr']}",f"{BASE}/{TPI_SLUG['en']}",f"{BASE}/{TPI_SLUG['es']}",f"{BASE}/{TPI_SLUG['ar']}")
     steps="".join(f"<li>{x}</li>" for x in L["steps"])
     return head(
-        f'Coupon {L["h1a"]}{L["h1b"]} Gratuit 2026 (Code FFN) | Cousin Marc' if lang=="fr" else f'{L["h1a"]}{L["h1b"]} Free Coupon 2026 (Code FFN) | Cousin Marc' if lang=="en" else f'Cupón {L["h1a"]}{L["h1b"]} Gratis 2026 (Código FFN) | Cousin Marc' if lang=="es" else f'قسيمة {L["h1a"]}{L["h1b"]} مجانية 2026 (كود FFN) | Cousin Marc',
+        f'Coupon {L["h1a"]}{L["h1b"]} Gratuit 2026 (Code promo FFN) | Cousin Marc' if lang=="fr" else f'{L["h1a"]}{L["h1b"]} Free Coupon 2026 (Promo Code FFN) | Cousin Marc' if lang=="en" else f'Cupón {L["h1a"]}{L["h1b"]} Gratis 2026 (Código FFN) | Cousin Marc' if lang=="es" else f'قسيمة {L["h1a"]}{L["h1b"]} مجانية 2026 (كود FFN) | Cousin Marc',
         L["meta_desc"], canonical, nav=navmap[lang], lang=lang, alternates=alternates) + f"""
 <header class="hero" style="padding:30px 0 20px"><div class="wrap">
 <p class="eyebrow">{L["eyebrow"]}</p>
@@ -4954,22 +4954,22 @@ RESULTS_L = {
  "fr":{"menu":"Résultats","eyebrow":"🏆 Preuves de gains","h1a":"Nos ","h1b":"Résultats",
    "sub":"Les coupons gagnants partagés sur le site. Des preuves réelles, payées.",
    "date":"Date","cote":"Cote","gain":"Gain","status":"Payé","lost":"Perdu","empty":"Les preuves des prochains coupons gagnants apparaîtront ici.","proofalt":"Coupon gagnant Cousin Marc","proofcap":"Preuve filmée depuis l'application",
-   "cta":"Pour jouer les coupons du jour, inscris-toi avec le code FFN :",
+   "cta":"Pour jouer les coupons du jour, inscris-toi avec le code promo FFN :",
    "disc":"⚠️ Les gains passés ne garantissent pas les gains futurs. 18+. Joue de façon responsable et mise seulement ce que tu peux perdre."},
  "en":{"menu":"Results","eyebrow":"🏆 Winning proof","h1a":"Our ","h1b":"Results",
    "sub":"The winning coupons shared on the site. Real, paid proof.",
    "date":"Date","cote":"Odds","gain":"Win","status":"Paid","lost":"Lost","empty":"Proof of the next winning coupons will appear here.","proofalt":"Cousin Marc winning coupon","proofcap":"Proof filmed from the app",
-   "cta":"To play today's coupons, register with code FFN:",
+   "cta":"To play today's coupons, register with promo code FFN:",
    "disc":"⚠️ Past wins do not guarantee future wins. 18+. Play responsibly and only stake what you can afford to lose."},
  "es":{"menu":"Resultados","eyebrow":"🏆 Pruebas de ganancias","h1a":"Nuestros ","h1b":"Resultados",
    "sub":"Los cupones ganadores compartidos en el sitio. Pruebas reales, pagadas.",
    "date":"Fecha","cote":"Cuota","gain":"Ganancia","status":"Pagado","lost":"Perdido","empty":"Las pruebas de los próximos cupones ganadores aparecerán aquí.","proofalt":"Cupón ganador Cousin Marc","proofcap":"Prueba grabada desde la app",
-   "cta":"Para jugar los cupones del día, regístrate con el código FFN:",
+   "cta":"Para jugar los cupones del día, regístrate con el código promocional FFN:",
    "disc":"⚠️ Las ganancias pasadas no garantizan ganancias futuras. +18. Juega con responsabilidad y apuesta solo lo que puedas permitirte perder."},
  "ar":{"menu":"النتائج","eyebrow":"🏆 إثباتات الأرباح","h1a":"","h1b":"النتائج",
    "sub":"القسائم الرابحة المنشورة على الموقع. إثباتات حقيقية ومدفوعة.",
    "date":"التاريخ","cote":"الاحتمال","gain":"الربح","status":"مدفوع","lost":"خسارة","empty":"ستظهر هنا إثباتات القسائم الرابحة القادمة.","proofalt":"قسيمة رابحة Cousin Marc","proofcap":"إثبات مصوّر من التطبيق",
-   "cta":"للعب قسائم اليوم، سجّل بالرمز FFN:",
+   "cta":"للعب قسائم اليوم، سجّل بالرمز الترويجي FFN:",
    "disc":"⚠️ الأرباح السابقة لا تضمن أرباحًا مستقبلية. للبالغين فقط. العب بمسؤولية وراهن فقط بما يمكنك تحمّل خسارته."},
 }
 
@@ -5444,7 +5444,7 @@ def country_hub_page(c):
     first = _bk(c["books"][0])
     qs = [
         (f"Quel est le meilleur code promo paris sportifs {c['name']} en 2026 ?",
-         f"Le code {first['code']} est le code partenaire de Cousin Marc, valable {c['the']} sur {first['name']} et sur la plupart des bookmakers partenaires. Il active le bonus de bienvenue (jusqu'à 300% avec le code FFN, soit jusqu'à 300 000 FCFA dans les pays FCFA) sur le premier dépôt."),
+         f"Le code {first['code']} est le code partenaire de Cousin Marc, valable {c['the']} sur {first['name']} et sur la plupart des bookmakers partenaires. Il active le bonus de bienvenue (jusqu'à 300% avec le code promo FFN, soit jusqu'à 300 000 FCFA dans les pays FCFA) sur le premier dépôt."),
         (f"Comment parier {c['in']} avec Mobile Money ?",
          f"{c['name']} : après l'inscription, choisis la devise {c['cur']} puis dépose via {momo}. Le compte est crédité en quelques minutes et le bonus s'active automatiquement."),
         (f"À quelle heure sont les matchs de Ligue des champions {c['in']} ?",
@@ -5455,7 +5455,7 @@ def country_hub_page(c):
     extra = f'<script type="application/ld+json">\n{cty_faq_jsonld(qs)}\n</script>'
     return head(
         f"Codes Promo Paris Sportifs {c['name']} 2026 : bonus &amp; Mobile Money | Cousin Marc",
-        f"Tous les codes promo paris sportifs {c['name']} 2026 : {', '.join(_bk(s)['name'] for s in c['books'])}. Bonus de bienvenue jusqu'à 300% avec le code FFN, dépôt {momo}. Guide de Cousin Marc.",
+        f"Tous les codes promo paris sportifs {c['name']} 2026 : {', '.join(_bk(s)['name'] for s in c['books'])}. Bonus de bienvenue jusqu'à 300% avec le code promo FFN, dépôt {momo}. Guide de Cousin Marc.",
         f"{BASE}/{slug}.html", extra, nav=nav_fr(), lang="fr") + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">⚽ Paris sportifs {c['name']} · Mis à jour {MAJ_FR}</p>
@@ -5499,7 +5499,7 @@ def country_hub_page(c):
 <li><b>Choisis un bookmaker</b> dans le tableau ci-dessus.</li>
 <li><b>Sélectionne « {c['name']} »</b> comme pays et <b>{c['cur_short']}</b> comme devise.</li>
 <li><b>Entre le code promo</b> dans le champ prévu — sans lui, pas de bonus.</li>
-<li><b>Dépose via {c['momo'][0]}</b> : le bonus (jusqu'à 300% avec le code FFN) est crédité immédiatement.</li>
+<li><b>Dépose via {c['momo'][0]}</b> : le bonus (jusqu'à 300% avec le code promo FFN) est crédité immédiatement.</li>
 </ol>
 <div class="note">⚠️ Utilise tes vraies informations (nom, date de naissance, numéro). Un compte non conforme à ta pièce d'identité est bloqué au moment du retrait.</div>
 </section>
@@ -5533,7 +5533,7 @@ def country_hub_page(c):
 <h2><span class="num">06</span> Questions fréquentes — paris sportifs {c['name']}</h2>
 <details open><summary>Les codes promo sont-ils gratuits {c['in']} ?</summary><p>Oui. Un code promo ne coûte rien : il active simplement le bonus de bienvenue maximum à l'inscription.</p></details>
 <details><summary>À quelle heure sont les matchs de Ligue des champions {c['in']} ?</summary><p>Un match à 21h à Paris se joue à <b>{19 + CTY_EXTRA.get(c['slug'], {}).get('utc', 0)}h</b> {c['in']} jusqu'à fin octobre, puis à <b>{20 + CTY_EXTRA.get(c['slug'], {}).get('utc', 0)}h</b> de novembre à mars. Voir <a href="#heure-des-matchs">le tableau des horaires</a>.</p></details>
-<details><summary>Quel bonus avec le code FFN {c['in']} ?</summary><p>Avec le code FFN, le bonus de bienvenue va jusqu'à 300% sur le premier dépôt chez les bookmakers partenaires{' (jusqu’à 300 000 FCFA)' if c['cur_short'] == 'FCFA' else ''}. Le montant exact dépend du bookmaker : voir le tableau en haut de page.</p></details>
+<details><summary>Quel bonus avec le code promo FFN {c['in']} ?</summary><p>Avec le code promo FFN, le bonus de bienvenue va jusqu'à 300% sur le premier dépôt chez les bookmakers partenaires{' (jusqu’à 300 000 FCFA)' if c['cur_short'] == 'FCFA' else ''}. Le montant exact dépend du bookmaker : voir le tableau en haut de page.</p></details>
 <details><summary>Puis-je parier depuis mon téléphone {c['in']} ?</summary><p>Oui. Toutes les plateformes du tableau ont une application mobile ou un site optimisé, et acceptent le dépôt par {momo}.</p></details>
 <details><summary>Quel est le montant minimum pour parier ?</summary><p>Le dépôt minimum est bas sur la plupart des plateformes. Pour activer certains coupons de la communauté, un dépôt d'environ 3000 {c['cur_short']} (10$) est demandé.</p></details>
 <details><summary>Les paris sportifs sont-ils autorisés {c['in']} ?</summary><p>Les paris sportifs en ligne sont pratiqués {c['the']} et réservés aux personnes majeures (18 ans et +). Renseigne-toi sur la réglementation locale en vigueur avant de jouer.</p></details>
@@ -6056,7 +6056,7 @@ def match_page(m):
 <p class="eyebrow"><a href="pronostics.html" style="color:inherit">📊 Toutes les analyses</a> · {comp_link(m.get("competition", "Football"))} · {_date_fr(m["dt"])}{en_link}</p>
 <h1>Pronostic {html.escape(e1)} <span class="hl">vs</span> {html.escape(e2)}</h1>
 {match_card(m, link=False)}
-<div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Jouer ce pronostic sur {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 Code {b["code"]}</button></div>
+<div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Jouer ce pronostic sur {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 Code promo {b["code"]}</button></div>
 </div></header>
 <main class="wrap">
 <section>
@@ -6069,7 +6069,7 @@ def match_page(m):
 </section>
 <section>
 <h2><span class="num">02</span> Où jouer ce match</h2>
-<p>Pas encore de compte ? Inscris-toi sur <b>{b["name"]}</b> avec le code <b>{b["code"]}</b> pour activer le bonus de bienvenue ({bk_bonus(b, "fr")}).</p>
+<p>Pas encore de compte ? Inscris-toi sur <b>{b["name"]}</b> avec le code promo <b>{b["code"]}</b> pour activer le bonus de bienvenue ({bk_bonus(b, "fr")}).</p>
 <div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">S'inscrire sur {b["name"]}</a><a class="cta alt" href="{COMPARE_SLUG}">Quel bookmaker pour moi ?</a></div>
 </section>
 {f'<section><h2><span class="num">03</span> Autres pronostics</h2>{others}</section>' if others else ""}
@@ -6108,7 +6108,7 @@ def match_page_en(m):
 <div class="mcard big"><div class="mmeta">{html.escape(comp)} · {d:%H:%M} Lagos / Douala time</div>
 <div class="mteams"><b>{html.escape(e1)}</b><span>vs</span><b>{html.escape(e2)}</b></div>
 <div class="mpick"><span>My prediction: {html.escape(pick)}</span>{f'<b>@{html.escape(m["cote"])}</b>' if m.get("cote") else ""}</div>{f'<span class="mstatus">{res}</span>' if res else ""}</div>
-<div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Play this prediction on {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 Code {b["code"]}</button></div>
+<div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">Play this prediction on {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 Code promo {b["code"]}</button></div>
 </div></header>
 <main class="wrap">
 <section>
@@ -6160,7 +6160,7 @@ def match_page_ar(m):
 <div class="mcard big"><div class="mmeta">{html.escape(comp)} · {d:%H:%M} بتوقيت الجزائر وتونس والمغرب</div>
 <div class="mteams"><b>{html.escape(e1)}</b><span>ضد</span><b>{html.escape(e2)}</b></div>
 <div class="mpick"><span>توقعي: {html.escape(pick)}</span>{f'<b>@{html.escape(m["cote"])}</b>' if m.get("cote") else ""}</div>{f'<span class="mstatus">{res}</span>' if res else ""}</div>
-<div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">العب هذا التوقع على {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 الرمز {b["code"]}</button></div>
+<div class="btnrow"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">العب هذا التوقع على {b["name"]}</a><button class="cta alt" onclick="copyCode(this,'{b["code"]}')">📋 الرمز الترويجي {b["code"]}</button></div>
 </div></header>
 <main class="wrap">
 <section>

@@ -52,7 +52,7 @@ nav.top .logo b{color:var(--green-ink)}
 .ticker a+a::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:#facc15;margin:0 22px 1px -22px;vertical-align:middle}
 @keyframes tickmove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}.ticker{overflow-x:auto}}
-/* code FFN qui brille doucement + cartes qui se soulevent */
+/* code promo FFN qui brille doucement + cartes qui se soulevent */
 .tcode,.codebox .code{background-image:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.75) 50%,transparent 70%);background-size:220% 100%;background-repeat:no-repeat;background-position:-120% 0;animation:ffnshine 4.5s ease-in-out infinite}
 @keyframes ffnshine{0%,55%{background-position:-120% 0}100%{background-position:220% 0}}
 @media(prefers-reduced-motion:reduce){.tcode,.codebox .code{animation:none}}

@@ -37,7 +37,7 @@ export const PROMOS = [
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 MES RÉSULTATS, GAGNÉS OU PERDUS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nJe ne cache rien : chaque pronostic du site affiche son résultat après le match ✅ ❌\n\n👉 https://cousinmarc-pronostic.com/resultats.html\n\n🎯 Joue mes pronostics sur 1xBet, Melbet, Paripesa ou WinWin avec le code FFN\n👉 Tous les liens : https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 MES RÉSULTATS, GAGNÉS OU PERDUS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nJe ne cache rien : chaque pronostic du site affiche son résultat après le match ✅ ❌\n\n👉 https://cousinmarc-pronostic.com/resultats.html\n\n🎯 Joue mes pronostics sur 1xBet, Melbet, Paripesa ou WinWin avec le code promo FFN\n👉 Tous les liens : https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-1xbet.jpg",
@@ -104,15 +104,15 @@ export const MIDI = [
  null,
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 BILAN DU WEEK-END\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLe week-end de foot est terminé : tous mes pronostics sont affichés sur le site avec leur résultat, gagné ou perdu ✅ ❌\n\n👉 https://cousinmarc-pronostic.com/resultats.html\n\nNouvelle semaine, nouveaux coupons : la côte de 2 continue chaque jour ici 💪\n\n🎯 Pas encore de compte ? Inscris-toi avec le code FFN :\n👉 https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 BILAN DU WEEK-END\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLe week-end de foot est terminé : tous mes pronostics sont affichés sur le site avec leur résultat, gagné ou perdu ✅ ❌\n\n👉 https://cousinmarc-pronostic.com/resultats.html\n\nNouvelle semaine, nouveaux coupons : la côte de 2 continue chaque jour ici 💪\n\n🎯 Pas encore de compte ? Inscris-toi avec le code promo FFN :\n👉 https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚽ LES GROS MATCHS DE LA SEMAINE\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLigue des champions, Ligue Europa, championnats : j'analyse les matchs les plus attendus.\nForme des équipes, mon pronostic et la cote, tout est sur le site 👇\n\n👉 https://cousinmarc-pronostic.com/pronostics.html\n\n🎯 Joue-les sur 1xBet, Melbet, Paripesa ou WinWin avec le code FFN.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚽ LES GROS MATCHS DE LA SEMAINE\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nLigue des champions, Ligue Europa, championnats : j'analyse les matchs les plus attendus.\nForme des équipes, mon pronostic et la cote, tout est sur le site 👇\n\n👉 https://cousinmarc-pronostic.com/pronostics.html\n\n🎯 Joue-les sur 1xBet, Melbet, Paripesa ou WinWin avec le code promo FFN.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-inscris-toi.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 T'INSCRIRE AVEC LE CODE FFN EN 4 ÉTAPES\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n1️⃣ Ouvre le lien du bookmaker (site ou application)\n2️⃣ Choisis ton pays et ta monnaie (FCFA)\n3️⃣ Dans la case « code promo », écris FFN\n4️⃣ Fais ton 1er dépôt par Mobile Money : bonus jusqu'à 300%\n\n🎯 1XBET\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n\n🎯 MELBET\n🌐 https://tinyurl.com/48f3ukrb\n📲 https://tinyurl.com/4nsmfukc\n\n⚠️ Le code s'entre UNE seule fois, à l'inscription.\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 T'INSCRIRE AVEC LE CODE PROMO FFN EN 4 ÉTAPES\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n1️⃣ Ouvre le lien du bookmaker (site ou application)\n2️⃣ Choisis ton pays et ta monnaie (FCFA)\n3️⃣ Dans la case « code promo », écris FFN\n4️⃣ Fais ton 1er dépôt par Mobile Money : bonus jusqu'à 300%\n\n🎯 1XBET\n🌐 https://tinyurl.com/3vptk7a4\n📲 https://tinyurl.com/7vucc2fu\n\n🎯 MELBET\n🌐 https://tinyurl.com/48f3ukrb\n📲 https://tinyurl.com/4nsmfukc\n\n⚠️ Le code s'entre UNE seule fois, à l'inscription.\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  },
  null,
  {
