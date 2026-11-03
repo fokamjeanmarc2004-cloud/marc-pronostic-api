@@ -1505,7 +1505,7 @@ def topnav(lang, langs_html, top_langs):
     links = "".join(f'<li><a href="{h}">{t}</a></li>' for t,h in TOPLINKS_L[lang])
     links += f'<li><a class="vip" href="{VIP_SLUG[lang]}">VIP</a></li>'
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
-            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png" width="34" height="34" alt="" style="width:34px;height:34px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
+            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png?v=2" width="34" height="34" alt="" style="width:34px;height:34px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
             f'<div class="navright"><ul class="toplinks">{links}</ul><ul class="toplang">{top_langs}</ul>'
             f'<button type="button" class="topffn" onclick="copyCode(this,\'FFN\')" aria-label="Copier le code promo FFN">FFN 📋</button>'
             f'<a class="toptg" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram Cousin Marc"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>{burger_html()}</div>'
