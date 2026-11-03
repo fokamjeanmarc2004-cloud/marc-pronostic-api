@@ -1577,9 +1577,9 @@ def faq_jsonld(name, code, extra=()):
         (f"Quel est le code promo {name} en 2026 ?",
          f"Le code promo {name} valable en 2026 est {code}. Il s'utilise à l'inscription et débloque le bonus de bienvenue de {pct(name, 'fr', True)} sur le premier dépôt."),
         (f"Comment utiliser le code promo {name} {code} ?",
-         f"Pendant l'inscription sur {name}, colle le code {code} dans le champ « Code promo ». Le bonus est crédité automatiquement après le premier dépôt."),
+         f"Pendant l'inscription sur {name}, colle le code promo {code} dans le champ « Code promo ». Le bonus est crédité automatiquement après le premier dépôt."),
         (f"Le code promo {name} est-il gratuit ?",
-         f"Oui, le code {code} est 100% gratuit. Il sert uniquement à activer le bonus de bienvenue."),
+         f"Oui, le code promo {code} est 100% gratuit. Il sert uniquement à activer le bonus de bienvenue."),
     ]
     data = {"@context":"https://schema.org","@type":"FAQPage",
             "mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in qs]}
@@ -2434,12 +2434,12 @@ def bookmaker_page(b):
 <section>
 <h2><span class="num">04</span> Pourquoi me faire confiance ?</h2>
 <div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 95 000+ abonnés</div></div></div>
-<p style="margin-top:16px">Je publie des analyses foot pour l'Afrique depuis plusieurs années. J'utilise {name} moi-même : j'ai testé l'inscription, les dépôts et les retraits avec le code {code} avant de le partager.</p>
+<p style="margin-top:16px">Je publie des analyses foot pour l'Afrique depuis plusieurs années. J'utilise {name} moi-même : j'ai testé l'inscription, les dépôts et les retraits avec le code promo {code} avant de le partager.</p>
 <div class="social">{social_html()}</div>
 </section>
 <section>
 <h2><span class="num">05</span> Questions fréquentes</h2>
-<details open><summary>Le code promo {name} {code} est-il gratuit ?</summary><p>Oui, totalement. Le code {code} ne coûte rien. Il sert uniquement à activer le bonus de bienvenue maximum à l'inscription.</p></details>
+<details open><summary>Le code promo {name} {code} est-il gratuit ?</summary><p>Oui, totalement. Le code promo {code} ne coûte rien. Il sert uniquement à activer le bonus de bienvenue maximum à l'inscription.</p></details>
 <details><summary>Où saisir le code promo sur {name} ?</summary><p>Pendant la création de ton compte, un champ « Code promo » apparaît dans le formulaire. Colles-y {code} avant de valider. Si tu l'oublies, tu ne pourras pas l'ajouter après coup.</p></details>
 <details><summary>Le code marche-t-il dans mon pays ?</summary><p>Oui. {code} fonctionne dans tous les pays où {name} est disponible. Seul le montant maximum du bonus change selon ta devise.</p></details>
 <details><summary>Puis-je utiliser {code} sur l'application mobile ?</summary><p>Absolument. Que tu t'inscrives depuis le site ou l'application, le champ code promo est présent et {code} fonctionne pareil.</p></details>
@@ -3410,9 +3410,9 @@ def faq_jsonld_en(name, code, extra=()):
         (f"What is the {name} promo code in 2026?",
          f"The {name} promo code valid in 2026 is {code}. Enter it during registration to unlock the {pct(name, 'en', True)} welcome bonus on your first deposit."),
         (f"How do I use the {name} promo code {code}?",
-         f"During registration on {name}, paste the code {code} in the 'Promo code' field. The bonus is credited automatically after your first deposit."),
+         f"During registration on {name}, paste the promo code {code} in the 'Promo code' field. The bonus is credited automatically after your first deposit."),
         (f"Is the {name} promo code free?",
-         f"Yes, the code {code} is 100% free. It only serves to activate the welcome bonus."),
+         f"Yes, the promo code {code} is 100% free. It only serves to activate the welcome bonus."),
     ]
     data = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in qs]}
     return json.dumps(data, ensure_ascii=False, indent=2)
@@ -3766,7 +3766,7 @@ def _en_faq_extra(b):
     name, code = b["name"], b["code"]
     ffn = b["slug"] in FFN300
     qs = [
-        (f"What is the best {name} promo code in 2026?", f"The code {code}: it gives {B300['en'] if ffn else bk_bonus(b, 'en')} on your first deposit. It can only be used once, at registration."),
+        (f"What is the best {name} promo code in 2026?", f"The promo code {code}: it gives {B300['en'] if ffn else bk_bonus(b, 'en')} on your first deposit. It can only be used once, at registration."),
         (f"I forgot the {name} promo code at registration, what can I do?", f"The code cannot be added afterwards. Contact {name} support from your account before your first deposit and explain that you wanted to use {code}. Do not create a second account: it may be blocked."),
         (f"Does the {name} promo code work in Nigeria, Ghana, Kenya and Cameroon?", f"Yes. {code} works in every country where {name} accepts registrations, including English-speaking Cameroon (Buea, Bamenda). Only the bonus cap changes with your currency."),
         (f"What is the difference between a promo code and a booking code on {name}?", f"The promo code ({code}) activates the welcome bonus at registration. A booking code loads a betting slip already prepared by someone else."),
@@ -3829,11 +3829,11 @@ def bookmaker_page_en(b):
 <section>
 <h2><span class="num">04</span> Why trust me?</h2>
 <div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 95,000+ community</div></div></div>
-<p style="margin-top:16px">I have been sharing football analysis for Africa for several years. I use {name} myself: I tested registration, deposits and withdrawals with the code {code} before sharing it.</p>
+<p style="margin-top:16px">I have been sharing football analysis for Africa for several years. I use {name} myself: I tested registration, deposits and withdrawals with the promo code {code} before sharing it.</p>
 </section>
 <section>
 <h2><span class="num">05</span> Frequently asked questions</h2>
-<details open><summary>Is the {name} promo code {code} free?</summary><p>Yes, completely. The code {code} costs nothing. It only activates the maximum welcome bonus at registration.</p></details>
+<details open><summary>Is the {name} promo code {code} free?</summary><p>Yes, completely. The promo code {code} costs nothing. It only activates the maximum welcome bonus at registration.</p></details>
 <details><summary>Where do I enter the promo code on {name}?</summary><p>During account creation, a "Promo code" field appears in the form. Paste {code} there before confirming. If you forget it, you cannot add it afterwards.</p></details>
 <details><summary>Does the code work in my country?</summary><p>Yes. {code} works in every country where {name} is available. Only the maximum bonus amount changes with your currency.</p></details>
 {"".join(f'<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in faq_x)}
@@ -5215,8 +5215,8 @@ def country_bk_page(b, c):
          f"Le code promo {name} valable {c['the']} en 2026 est {code}. Il se saisit une seule fois à l'inscription et débloque le bonus de bienvenue de {pct(b)} sur le premier dépôt ({bonus})."),
         (f"Comment déposer sur {name} {c['in']} ?",
          f"{c['name']} : les dépôts se font par Mobile Money ({momo}), ainsi que par {c['extra_pay']}. Le dépôt est crédité en quelques minutes."),
-        (f"Le code {code} fonctionne-t-il {c['in']} ?",
-         f"Oui. Le code {code} est valable {c['the']} tant que tu choisis ce pays et la devise {c['cur']} au moment de l'inscription sur {name}."),
+        (f"Le code promo {code} fonctionne-t-il {c['in']} ?",
+         f"Oui. Le code promo {code} est valable {c['the']} tant que tu choisis ce pays et la devise {c['cur']} au moment de l'inscription sur {name}."),
         (f"Comment retirer ses gains {name} {c['in']} ?",
          f"Le retrait se fait vers le même moyen de paiement que le dépôt, généralement Mobile Money ({momo}). Le compte doit être vérifié et le bonus entièrement joué avant le retrait."),
     ]
@@ -5281,7 +5281,7 @@ def country_bk_page(b, c):
 <a class="cta alt" href="cote-de-2.html">⚽ Coupon Côte de 2</a>
 </div>
 </section>
-{('<section id="calcul-bonus-pays"><h2>Combien tu reçois ' + c['in'] + ' avec le code ' + code + '</h2>'
+{('<section id="calcul-bonus-pays"><h2>Combien tu reçois ' + c['in'] + ' avec le code promo ' + code + '</h2>'
    '<p>Le bonus ' + name + ' est de 3 fois ton premier dépôt (300%), plafonné à 300 000 FCFA. Exemples :</p>'
    '<div class="tablecard"><table><thead><tr><th>Ton 1er dépôt</th><th>Bonus</th><th>Total pour parier</th></tr></thead><tbody>' + _calc_rows() + '</tbody></table></div>'
    '<p style="margin-top:12px">Avec 100 000 FCFA déposés, tu atteins déjà le bonus maximum. Que tu sois à ' + c['cities'] + ', tout se fait en ligne depuis ton téléphone.</p></section>') if b['slug'] in FFN300 and c['cur_short'] == 'FCFA' else ''}
@@ -5295,7 +5295,7 @@ def country_bk_page(b, c):
 <details><summary>Quel est le montant du bonus {c['in']} ?</summary><p>Le bonus correspond à {bonus + ' sur ton premier dépôt' if b['slug'] in FFN300 else pct(b) + ' de ton premier dépôt (' + bonus + ')'}. Montant indicatif, il peut évoluer selon les promotions en cours.</p></details>
 <details><summary>Puis-je déposer avec {c['momo'][0]} ?</summary><p>Oui. {c['momo'][0]} est l'un des moyens de dépôt les plus utilisés {c['the']} sur {name}. Le compte est crédité en quelques minutes.</p></details>
 <details><summary>Faut-il vérifier son compte pour retirer ?</summary><p>Oui. Une pièce d'identité est demandée avant le premier retrait important. Utilise tes vraies informations à l'inscription : un nom qui ne correspond pas à ta pièce bloque le retrait.</p></details>
-<details><summary>Je suis {c['adj']} mais je vis à l'étranger, que choisir ?</summary><p>Choisis le pays où tu résides réellement et où se trouve ton moyen de paiement. Le code {code} reste valable dans tous les cas.</p></details>
+<details><summary>Je suis {c['adj']} mais je vis à l'étranger, que choisir ?</summary><p>Choisis le pays où tu résides réellement et où se trouve ton moyen de paiement. Le code promo {code} reste valable dans tous les cas.</p></details>
 </section>
 <section>
 <h2><span class="num">06</span> Autres codes promo {c['in']}</h2>
@@ -5444,7 +5444,7 @@ def country_hub_page(c):
     first = _bk(c["books"][0])
     qs = [
         (f"Quel est le meilleur code promo paris sportifs {c['name']} en 2026 ?",
-         f"Le code {first['code']} est le code partenaire de Cousin Marc, valable {c['the']} sur {first['name']} et sur la plupart des bookmakers partenaires. Il active le bonus de bienvenue (jusqu'à 300% avec le code promo FFN, soit jusqu'à 300 000 FCFA dans les pays FCFA) sur le premier dépôt."),
+         f"Le code promo {first['code']} est le code partenaire de Cousin Marc, valable {c['the']} sur {first['name']} et sur la plupart des bookmakers partenaires. Il active le bonus de bienvenue (jusqu'à 300% avec le code promo FFN, soit jusqu'à 300 000 FCFA dans les pays FCFA) sur le premier dépôt."),
         (f"Comment parier {c['in']} avec Mobile Money ?",
          f"{c['name']} : après l'inscription, choisis la devise {c['cur']} puis dépose via {momo}. Le compte est crédité en quelques minutes et le bonus s'active automatiquement."),
         (f"À quelle heure sont les matchs de Ligue des champions {c['in']} ?",
