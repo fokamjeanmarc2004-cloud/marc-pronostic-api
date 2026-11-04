@@ -5885,7 +5885,7 @@ def _compare_js_en():
                  ("Ton top 3 '", "Your top 3 '"), ("' · dépôt '", "' · deposit '"), ("⭐ Recommandé", "⭐ Recommended"),
                  ("Bonus : '", "Bonus: '"), ("' · appli mobile'", "' · mobile app'"), (">Copier<", ">Copy<"),
                  ("S\\'inscrire", "Sign up"), ("Les moyens de paiement proposés peuvent varier : vérifie la caisse du bookmaker avant ton dépôt.",
-                  "Payment methods can vary: check the bookmaker's cashier before you deposit."),
+                  "Payment methods can vary: check the bookmaker’s cashier before you deposit."),
                  ("Tout savoir sur les paris '", "All about betting '")):
         assert js.count(a) >= 1, a
         js = js.replace(a, b)

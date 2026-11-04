@@ -151,7 +151,7 @@ function render(){
      +'<div class="tcode"><span translate="no">'+esc(b.code)+'</span><button class="copybtn-mini" onclick="copyCode(this,\''+esc(b.code)+'\')">Copy</button></div>'
      +'<div class="tactions"><a class="tgo" href="'+esc(b.site)+'" rel="sponsored nofollow">Sign up</a><a class="tmore" href="'+esc(b.guide)+'">Guide</a></div></article>';
   });
-  h+='</div><p class="cmp-note">Payment methods can vary: check the bookmaker's cashier before you deposit.'+(C?' <a href="'+esc(C.hub)+'">All about betting '+esc(C['in'])+' →</a>':'')+'</p>';
+  h+='</div><p class="cmp-note">Payment methods can vary: check the bookmaker’s cashier before you deposit.'+(C?' <a href="'+esc(C.hub)+'">All about betting '+esc(C['in'])+' →</a>':'')+'</p>';
   out.innerHTML=h;
   if(window.gtag)gtag('event','comparator_result',{country:st.c,payment:st.p});
 }
