@@ -642,6 +642,7 @@ cote:
 bookmaker: 1xbet
 proba: 32-26-42
 score: 1-2
+resultat: perdu
 analyse_ar: انطلاق المباراة: الثلاثاء 3 نوفمبر، الساعة 21:00 بتوقيت الجزائر وتونس والمغرب، 22:00 بتوقيت القاهرة، 23:00 بتوقيت مكة.
 قمة الجولة الرابعة من دوري أبطال أوروبا على ملعب ميتروبوليتانو.
 يملك بايرن ميونخ هجومًا مرعبًا، لكنه يستقبل أهدافًا كثيرة في دوري الأبطال حاليًا: 3 أهداف أمام فايكينغ وهدفان أمام أرسنال.
@@ -660,6 +661,7 @@ Le Bayern a une attaque redoutable, mais il encaisse beaucoup en ce moment en Li
 L'Atlético de Simeone est solide chez lui, mais il devra attaquer pour prendre des points : il en a besoin pour le classement.
 Mon choix : les deux équipes marquent.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Atlético Madrid 0-2 Bayern Munich. Pronostic perdu ❌ : l'Atlético n'a pas marqué.
 ---
 date: 2026-11-03 21:00
 competition: Ligue des Champions
@@ -673,6 +675,7 @@ cote:
 bookmaker: 1xbet
 proba: 58-22-20
 score: 3-1
+resultat: gagne
 analyse_ar: انطلاق المباراة: الثلاثاء 3 نوفمبر، الساعة 21:00 بتوقيت الجزائر وتونس والمغرب، 22:00 بتوقيت القاهرة، 23:00 بتوقيت مكة.
 مباراة كبيرة في كامب نو بين فريقين يحبان الهجوم.
 بدأ أستون فيلا دوري الأبطال بقوة وسجل أهدافًا كثيرة، وبرشلونة يسجل بغزارة على أرضه.
@@ -691,6 +694,7 @@ Aston Villa fait un début de Ligue des champions impressionnant, avec beaucoup 
 Avec deux équipes aussi offensives, je m'attends à un match ouvert avec des buts des deux côtés.
 Mon choix : plus de 2,5 buts dans le match. Option : les deux équipes marquent.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Barcelone 3-0 Aston Villa. Pronostic gagné ✅ : 3 buts dans le match.
 ---
 date: 2026-11-03 21:00
 competition: Ligue des Champions
@@ -704,6 +708,7 @@ cote:
 bookmaker: 1xbet
 proba: 45-28-27
 score: 2-1
+resultat: gagne
 analyse_ar: انطلاق المباراة: الثلاثاء 3 نوفمبر، الساعة 21:00 بتوقيت الجزائر وتونس والمغرب، 22:00 بتوقيت القاهرة، 23:00 بتوقيت مكة.
 أولد ترافورد يستقبل روما في مباراة مهمة للتأهل.
 خسر مانشستر يونايتد آخر مباراتين في دوري الأبطال ويستقبل أهدافًا كثيرة، لكنه على أرضه يملك ما يكفي للتسجيل.
@@ -722,6 +727,7 @@ Manchester United a perdu ses deux derniers matchs de Ligue des champions et enc
 La Roma marque régulièrement en Ligue des champions (3 buts contre le Real Madrid, un match fou perdu 4-3).
 Mon choix : les deux équipes marquent.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Manchester United 3-2 Roma. Pronostic gagné ✅ : les deux équipes ont marqué (doublé de Cunha en fin de match).
 ---
 date: 2026-11-03 21:00
 competition: Ligue des Champions
@@ -735,6 +741,7 @@ cote:
 bookmaker: 1xbet
 proba: 22-24-54
 score: 1-2
+resultat: gagne
 analyse_ar: انطلاق المباراة: الثلاثاء 3 نوفمبر، الساعة 21:00 بتوقيت الجزائر وتونس والمغرب، 22:00 بتوقيت القاهرة، 23:00 بتوقيت مكة.
 يسافر باريس سان جيرمان إلى إسبانيا بـ3 انتصارات في 3 مباريات بدوري الأبطال، منها فوزان كبيران على مانشستر سيتي وبرشلونة.
 فياريال يلعب جيدًا على أرضه، لكنه يستقبل أهدافًا كثيرة في دوري الأبطال وينقصه الثبات.
@@ -750,6 +757,7 @@ Le PSG se déplace en Espagne avec 3 victoires en 3 matchs de Ligue des champion
 Villarreal joue bien chez lui, mais encaisse beaucoup en Ligue des champions et manque de régularité.
 Mon choix : victoire du PSG. Pour une cote plus haute : le PSG gagne et les deux équipes marquent.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Villarreal 0-6 PSG. Pronostic gagné ✅ : large victoire du PSG.
 ---
 date: 2026-11-04 18:45
 competition: Ligue des Champions
