@@ -5872,7 +5872,9 @@ def _compare_data_en():
             "hub": hub + ".html", "books": [card(_bk(sl), cty_bonus(_bk(sl), c)) for sl in c["books"]]})
     for c in COUNTRIES_EN:
         if c["slug"] == "cameroon": continue
-        pays = [p for p, _ in c["pay"] if "/" not in p] + ["Bank card", "Crypto (USDT, BTC)"]
+        pays = [p for p, _ in c["pay"] if "/" not in p]
+        if not any("card" in p.lower() for p in pays): pays.append("Bank card")
+        if not any("crypto" in p.lower() for p in pays): pays.append("Crypto (USDT, BTC)")
         data["countries"].append({"slug": c["slug"], "name": c["name"], "in": "in " + c["name"], "pay": pays,
             "hub": cty_en_slug(c) + ".html",
             "books": [card(_bk(sl), "300% on your 1st deposit" if sl in FFN300 else bk_bonus(_bk(sl), "en")) for sl in CTY_EN_BOOKS]})
