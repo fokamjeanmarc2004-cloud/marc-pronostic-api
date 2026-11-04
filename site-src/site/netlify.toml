@@ -1444,6 +1444,12 @@
   force = true
 
 [[redirects]]
+  from = "/which-bookmaker"
+  to = "/which-bookmaker.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/winwin-codigo-promocional"
   to = "/winwin-codigo-promocional.html"
   status = 301

@@ -165,7 +165,7 @@ export const EN = {
   `🔔 Sign up now on 1xBet, Paripesa, Melbet or WinWin with promo code FFN (links above).\n📖 ${S}/promo-codes.html`,
   `📊 I hide nothing: every prediction shows its result after the match ✅ ❌\n👉 ${S}/results.html\n🎁 Promo code FFN`,
   `🔥 No 1xBet account yet? Register with promo code FFN: 300% on your 1st deposit.\n📖 ${S}/1xbet-promo-code.html`,
-  `🤔 Which bookmaker should you pick? Tell me your country and payment method (Mobile Money, crypto…), I'll give you your top 3.\n📖 ${S}/promo-codes.html`,
+  `🤔 Which bookmaker should you pick? Tell me your country and payment method (Mobile Money, crypto…), I'll give you your top 3.\n🧭 ${S}/which-bookmaker.html`,
   `🟡 Melbet: register with promo code FFN, 300% on your 1st deposit.\n📖 ${S}/melbet-promo-code.html`,
   `⚽ Free odds-of-2 coupon every day, on the site and here.\n👉 ${S}/odds-of-2.html\n🎁 Promo code FFN (1xBet)`,
   `🚀 1win: up to 500% on your first 4 deposits. For 1win the promo code is ESS22 (not FFN).\n📖 ${S}/1win-promo-code.html`,

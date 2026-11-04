@@ -1168,6 +1168,13 @@ span.rlogo{display:inline-flex;align-items:center;justify-content:center;font-si
 .cmp-c .chip[data-v="mali"]{background:linear-gradient(90deg,#14b53a 0 33.3%,#fcd116 33.3% 66.6%,#ce1126 66.6%)}
 .cmp-c .chip[data-v="togo"]{background:linear-gradient(#d21034,#d21034) 0 0/34% 60% no-repeat,repeating-linear-gradient(180deg,#006a4e 0 20%,#ffce00 20% 40%)}
 .cmp-c .chip[data-v="burkina-faso"]{background:linear-gradient(180deg,#ef2b2d 0 50%,#009e49 50%)}
+.cmp-c .chip[data-v="nigeria"]{background:linear-gradient(90deg,#008751 0 33.3%,#e8e8e8 33.3% 66.6%,#008751 66.6%)}
+.cmp-c .chip[data-v="ghana"]{background:linear-gradient(180deg,#ce1126 0 33.3%,#fcd116 33.3% 66.6%,#006b3f 66.6%)}
+.cmp-c .chip[data-v="kenya"]{background:linear-gradient(180deg,#000 0 30%,#fff 30% 35%,#bb0000 35% 65%,#fff 65% 70%,#006600 70%)}
+.cmp-c .chip[data-v="uganda"]{background:repeating-linear-gradient(180deg,#000 0 16.6%,#fcdc04 16.6% 33.3%,#d90000 33.3% 50%)}
+.cmp-c .chip[data-v="zambia"]{background:linear-gradient(90deg,#198a00 0 60%,#de2010 60% 73%,#000 73% 86%,#ef7d00 86%)}
+.cmp-c .chip[data-v="gabon"]{background:linear-gradient(180deg,#009e60 0 33.3%,#fcd116 33.3% 66.6%,#3a75c4 66.6%)}
+.cmp-c .chip[data-v="tchad"]{background:linear-gradient(90deg,#002664 0 33.3%,#fecb00 33.3% 66.6%,#c60c30 66.6%)}
 .cmp-c .chip[data-v="autre"]{background:linear-gradient(135deg,#3b82f6,#1d4ed8)}
 /* vrai logo Telegram dans les boutons */
 .tgi{display:inline-block;width:20px;height:20px;vertical-align:-4px;margin-right:7px;flex:none}
@@ -1408,7 +1415,7 @@ NAV_L = {
          ("vip","\u2B50","VIP","vip.html")]},
   "en": {"title":"Menu","items":[("accueil","\U0001F3E0","Home","promo-codes.html"),("codes","\U0001F39F\uFE0F","Promo codes","promo-codes.html#bookmakers"),
          ("analyses","\U0001F4CA","Match predictions","predictions.html"),("cote2","\u26BD","Odds of 2","odds-of-2.html"),("tpi","\U0001F3B2","Total Odd/Even","total-odd-even.html"),
-         ("aide","❓","Code not working","promo-code-not-working.html"),
+         ("compare","\U0001F9ED","Which bookmaker?","which-bookmaker.html"),("aide","❓","Code not working","promo-code-not-working.html"),
          ("resultats","\U0001F3C6","Results","results.html"),("vip","\u2B50","VIP","vip-en.html")]},
   "es": {"title":"Menú","items":[("accueil","\U0001F3E0","Inicio","codigos-promocionales.html"),("codes","\U0001F39F\uFE0F","Códigos promo","codigos-promocionales.html#bookmakers"),
          ("analyses","\U0001F4CA","Pronósticos de partidos","pronosticos.html"),("cote2","\u26BD","Cuota de 2","cuota-de-2.html"),("tpi","\U0001F3B2","Total Par/Impar","total-par-impar.html"),
@@ -1508,7 +1515,7 @@ def topnav(lang, langs_html, top_langs):
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
             f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png?v=2" width="34" height="34" alt="" style="width:34px;height:34px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
             f'<div class="navright"><ul class="toplinks">{links}</ul><ul class="toplang">{top_langs}</ul>'
-            f'<button type="button" class="topffn" onclick="copyCode(this,\'FFN\')" aria-label="Copier le code promo FFN">FFN 📋</button>'
+            f'<button type="button" class="topffn" onclick="copyCode(this,\'FFN\')" aria-label="{ {'en':'Copy promo code FFN','es':'Copiar el código promocional FFN','ar':'نسخ الرمز الترويجي FFN'}.get(lang,'Copier le code promo FFN') }">FFN 📋</button>'
             f'<a class="toptg" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram Cousin Marc"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>{burger_html()}</div>'
             f'</div></nav>\n{navpanel_html(lang, langs_html)}')
 
@@ -3197,7 +3204,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, HELP_SLUG, HELP_SLUG_EN, "affiche.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -3442,6 +3449,7 @@ def footer_html_en():
 <a href="odds-of-2.html">Odds of 2</a>
 <a href="predictions.html">Predictions</a>
 <a href="results.html">Results</a>
+<a href="which-bookmaker.html">Which bookmaker?</a>
 <a href="promo-code-not-working.html">Promo code not working</a>
 <a href="news.html">News</a>
 <a href="about.html">About</a>
@@ -5823,7 +5831,7 @@ def comparator_html():
 def compare_page():
     return head("Quel bookmaker choisir ? Comparateur par pays 2026 | Cousin Marc",
         "Trouve en 10 secondes le meilleur bookmaker pour ton pays et ton moyen de paiement (MTN, Orange Money, Wave, crypto), avec le bonus et le code promo.",
-        f"{BASE}/{COMPARE_SLUG}") + f"""
+        f"{BASE}/{COMPARE_SLUG}", nav=nav_fr(en=COMPARE_SLUG_EN), alternates=(f"{BASE}/{COMPARE_SLUG}", f"{BASE}/{COMPARE_SLUG_EN}")) + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Comparateur · Mis à jour {MAJ_FR}</p>
 <h1>Quel bookmaker <span class="hl">pour moi ?</span></h1>
@@ -5838,6 +5846,76 @@ def compare_page():
 </section>
 </main>
 {footer_html()}
+</body></html>"""
+
+COMPARE_SLUG_EN = "which-bookmaker.html"
+_CTY_NAME_EN = {"cameroun": ("Cameroon", "in Cameroon"), "cote-divoire": ("Ivory Coast", "in Ivory Coast"), "senegal": ("Senegal", "in Senegal"),
+                "rdc": ("DR Congo", "in DR Congo"), "benin": ("Benin", "in Benin"), "mali": ("Mali", "in Mali"), "togo": ("Togo", "in Togo"),
+                "burkina-faso": ("Burkina Faso", "in Burkina Faso"), "gabon": ("Gabon", "in Gabon"), "tchad": ("Chad", "in Chad")}
+
+def _bonus_en(txt):
+    return (txt.replace("300% jusqu'à 300 000 FCFA", "300% up to 300,000 FCFA").replace("300% sur le 1er dépôt", "300% on your 1st deposit")
+               .replace("jusqu'à", "up to").replace("Bonus de bienvenue en crypto", "Crypto welcome bonus"))
+
+def _compare_data_en():
+    def card(b, bonus):
+        return {"name": b["name"], "code": b["code"], "bonus": _bonus_en(bonus), "site": b["site"],
+                "guide": en_slug(b) + ".html", "logo": "logos/" + _short(b) + ".png", "app": bool(b["apps"])}
+    pay_en = lambda lst: [p.replace("Carte bancaire", "Bank card") for p in lst]
+    data = {"countries": [], "other": [], "crypto": card(_bk("code-promo-1xbit"), _bk("code-promo-1xbit")["bonus_max"])}
+    en_hubs = {c["slug"]: c for c in COUNTRIES_EN}
+    for c in COUNTRIES:
+        if c["slug"] not in _CTY_NAME_EN: continue
+        nm, inn = _CTY_NAME_EN[c["slug"]]
+        hub = cty_en_slug(en_hubs["cameroon"]) if c["slug"] == "cameroun" else cty_hub_slug(c)
+        data["countries"].append({"slug": c["slug"], "name": nm, "in": inn, "pay": pay_en(c["momo"] + ["Carte bancaire", "Crypto (USDT, BTC)"]),
+            "hub": hub + ".html", "books": [card(_bk(sl), cty_bonus(_bk(sl), c)) for sl in c["books"]]})
+    for c in COUNTRIES_EN:
+        if c["slug"] == "cameroon": continue
+        pays = [p for p, _ in c["pay"] if "/" not in p] + ["Bank card", "Crypto (USDT, BTC)"]
+        data["countries"].append({"slug": c["slug"], "name": c["name"], "in": "in " + c["name"], "pay": pays,
+            "hub": cty_en_slug(c) + ".html",
+            "books": [card(_bk(sl), "300% on your 1st deposit" if sl in FFN300 else bk_bonus(_bk(sl), "en")) for sl in CTY_EN_BOOKS]})
+    data["other"] = [card(_bk(sl), _bk(sl)["bonus_max"]) for sl in ["code-promo-1xbet", "code-promo-melbet", "code-promo-paripesa"]]
+    return json.dumps(data, ensure_ascii=False)
+
+def _compare_js_en():
+    js = COMPARE_JS
+    for a, b in (("'Autre pays'", "'Other country'"), ("'Carte bancaire'", "'Bank card'"), ("'dans ton pays'", "'in your country'"),
+                 ("Ton top 3 '", "Your top 3 '"), ("' · dépôt '", "' · deposit '"), ("⭐ Recommandé", "⭐ Recommended"),
+                 ("Bonus : '", "Bonus: '"), ("' · appli mobile'", "' · mobile app'"), (">Copier<", ">Copy<"),
+                 ("S\\'inscrire", "Sign up"), ("Les moyens de paiement proposés peuvent varier : vérifie la caisse du bookmaker avant ton dépôt.",
+                  "Payment methods can vary: check the bookmaker's cashier before you deposit."),
+                 ("Tout savoir sur les paris '", "All about betting '")):
+        assert js.count(a) >= 1, a
+        js = js.replace(a, b)
+    return js
+
+def compare_page_en():
+    cmp = (f'<div class="cmp" id="cmp">'
+           f'<div class="cmp-step"><p class="cmp-q"><span>1</span> Which country are you in?</p><div class="chips cmp-c"></div></div>'
+           f'<div class="cmp-step cmp-step-p" hidden><p class="cmp-q"><span>2</span> How do you want to deposit?</p><div class="chips cmp-p"></div></div>'
+           f'<div class="cmp-out" aria-live="polite"></div>'
+           f'<script type="application/json" id="cmp-data">{_compare_data_en()}</script>'
+           f'</div>' + _compare_js_en())
+    return head("Which Bookmaker Should I Choose? Comparison by Country 2026 | Cousin Marc",
+        "Find the best bookmaker for your country and payment method in 10 seconds (MTN, Orange Money, M-Pesa, Airtel, crypto), with the bonus and the promo code to use.",
+        f"{BASE}/{COMPARE_SLUG_EN}", nav=nav_en(fr=COMPARE_SLUG), lang="en",
+        alternates=(f"{BASE}/{COMPARE_SLUG}", f"{BASE}/{COMPARE_SLUG_EN}")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Comparison · Updated {MAJ_EN}</p>
+<h1>Which bookmaker <span class="hl">is right for me?</span></h1>
+<p class="sub">Pick your country and your payment method: I show you the 3 best-suited bookmakers, with the bonus and the promo code to use.</p>
+</div></header>
+<main class="wrap">
+<section>{cmp}</section>
+<section>
+<h2><span class="num">?</span> How I choose</h2>
+<p>For each country, I only keep bookmakers that are available locally, accept the local currency and that I use myself. The first one on the list is the one I recommend first.</p>
+<p>A problem with your code? Read my guide <a href="promo-code-not-working.html">"My promo code isn't working"</a>.</p>
+</section>
+</main>
+{footer_html_en()}
 </body></html>"""
 
 # =====================================================================
@@ -6891,6 +6969,7 @@ print(f"  {len(NEW_PAGES)} page(s) aujourd'hui/demain/competition")
 
 open(os.path.join(OUT,"pronostics.html"),"w",encoding="utf-8").write(pronostics_page()); written.append("pronostics.html")
 open(os.path.join(OUT,COMPARE_SLUG),"w",encoding="utf-8").write(compare_page()); written.append(COMPARE_SLUG)
+open(os.path.join(OUT,COMPARE_SLUG_EN),"w",encoding="utf-8").write(compare_page_en()); written.append(COMPARE_SLUG_EN)
 open(os.path.join(OUT,HELP_SLUG),"w",encoding="utf-8").write(help_page()); written.append(HELP_SLUG)
 open(os.path.join(OUT,HELP_SLUG_EN),"w",encoding="utf-8").write(help_page_en()); written.append(HELP_SLUG_EN)
 open(os.path.join(OUT,AFFICHE_SLUG),"w",encoding="utf-8").write(affiche_page()); written.append(AFFICHE_SLUG)

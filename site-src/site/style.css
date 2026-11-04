@@ -374,6 +374,13 @@ span.rlogo{display:inline-flex;align-items:center;justify-content:center;font-si
 .cmp-c .chip[data-v="mali"]{background:linear-gradient(90deg,#14b53a 0 33.3%,#fcd116 33.3% 66.6%,#ce1126 66.6%)}
 .cmp-c .chip[data-v="togo"]{background:linear-gradient(#d21034,#d21034) 0 0/34% 60% no-repeat,repeating-linear-gradient(180deg,#006a4e 0 20%,#ffce00 20% 40%)}
 .cmp-c .chip[data-v="burkina-faso"]{background:linear-gradient(180deg,#ef2b2d 0 50%,#009e49 50%)}
+.cmp-c .chip[data-v="nigeria"]{background:linear-gradient(90deg,#008751 0 33.3%,#e8e8e8 33.3% 66.6%,#008751 66.6%)}
+.cmp-c .chip[data-v="ghana"]{background:linear-gradient(180deg,#ce1126 0 33.3%,#fcd116 33.3% 66.6%,#006b3f 66.6%)}
+.cmp-c .chip[data-v="kenya"]{background:linear-gradient(180deg,#000 0 30%,#fff 30% 35%,#bb0000 35% 65%,#fff 65% 70%,#006600 70%)}
+.cmp-c .chip[data-v="uganda"]{background:repeating-linear-gradient(180deg,#000 0 16.6%,#fcdc04 16.6% 33.3%,#d90000 33.3% 50%)}
+.cmp-c .chip[data-v="zambia"]{background:linear-gradient(90deg,#198a00 0 60%,#de2010 60% 73%,#000 73% 86%,#ef7d00 86%)}
+.cmp-c .chip[data-v="gabon"]{background:linear-gradient(180deg,#009e60 0 33.3%,#fcd116 33.3% 66.6%,#3a75c4 66.6%)}
+.cmp-c .chip[data-v="tchad"]{background:linear-gradient(90deg,#002664 0 33.3%,#fecb00 33.3% 66.6%,#c60c30 66.6%)}
 .cmp-c .chip[data-v="autre"]{background:linear-gradient(135deg,#3b82f6,#1d4ed8)}
 /* vrai logo Telegram dans les boutons */
 .tgi{display:inline-block;width:20px;height:20px;vertical-align:-4px;margin-right:7px;flex:none}
