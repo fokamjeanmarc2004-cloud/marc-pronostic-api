@@ -148,3 +148,65 @@ export const MIDI_BK = [
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n💎 BOOKMAKER DE LA SEMAINE : GOLDPARI\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🎯 GOLDPARI — Code promo : FFN\n🎁 300% sur ton 1er dépôt (jusqu'à 300 000 FCFA)\n💳 Dépôt et retrait par Mobile Money\n\n🌐 https://slim.link/yHtzWdS\n📲 https://slim.link/5gRZnVB\n\n👉 Guide complet : https://cousinmarc-pronostic.com\n\n📺 Tuto création de compte :\n\nhttps://youtu.be/Z-vnaLR3jYM\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  }
 ];
+
+// ---------------------------------------------------------------- Version anglaise (ajoutee sous le texte francais dans le canal)
+// Cle = meme position que dans PROMOS / MIDI / MIDI_BK / VIP_RAPPELS, ou nom du fichier pour TARGETS.
+const S = "https://cousinmarc-pronostic.com";
+export const EN_TITLE = "🇬🇧 ENGLISH";
+export const EN_RESP = "🔞 18+ · Joue de façon responsable / Play responsibly.";
+export const EN = {
+ targets: {
+  "cote2.jpg": `⚽ Today's odds-of-2 coupon\n👉 ${S}/odds-of-2.html\n🎁 Promo code FFN when you register (1xBet).`,
+  "tpi-1xbet.jpg": `🎲 Today's total odd/even\n👉 ${S}/total-odd-even.html\n🎁 Promo code FFN when you register (1xBet).`,
+  "tpi-melbet.jpg": `🎲 Today's total odd/even\n👉 ${S}/total-odd-even.html\n🎁 Promo code FFN when you register (Melbet).`,
+  "result-photo.jpg": `🏆 Another winning coupon! Well done to everyone who followed.\n📊 All results: ${S}/results.html`,
+ },
+ promos: [
+  `🔔 Sign up now on 1xBet, Paripesa, Melbet or WinWin with promo code FFN (links above).\n📖 ${S}/promo-codes.html`,
+  `📊 I hide nothing: every prediction shows its result after the match ✅ ❌\n👉 ${S}/results.html\n🎁 Promo code FFN`,
+  `🔥 No 1xBet account yet? Register with promo code FFN: 300% on your 1st deposit.\n📖 ${S}/1xbet-promo-code.html`,
+  `🤔 Which bookmaker should you pick? Tell me your country and payment method (Mobile Money, crypto…), I'll give you your top 3.\n📖 ${S}/promo-codes.html`,
+  `🟡 Melbet: register with promo code FFN, 300% on your 1st deposit.\n📖 ${S}/melbet-promo-code.html`,
+  `⚽ Free odds-of-2 coupon every day, on the site and here.\n👉 ${S}/odds-of-2.html\n🎁 Promo code FFN (1xBet)`,
+  `🚀 1win: up to 500% on your first 4 deposits. For 1win the promo code is ESS22 (not FFN).\n📖 ${S}/1win-promo-code.html`,
+  `❓ Promo code not working? Code refused, forgotten or bonus not received: send me a screenshot in private.\n📖 ${S}/promo-codes.html`,
+  `🟠 Paripesa: same promo code FFN, same 300% bonus.\n📖 ${S}/paripesa-promo-code.html`,
+  `⚽ Free odds-of-2 coupon every day: ${S}/odds-of-2.html\n🎲 Total odd/even: ${S}/total-odd-even.html\n🔔 Turn on notifications!`,
+  `🟢 WinWin: register with promo code FFN, 300% on your 1st deposit (Android and iPhone links above).`,
+  `💎 Megapari and GoldPari also take promo code FFN: 300% on your 1st deposit.\n📖 ${S}/promo-codes.html`,
+  `🎟️ All my promo codes: FFN, ESS22, FJM, CMF (list above). Enter the code ONCE, when you register.\n📖 ${S}/promo-codes.html`,
+  `📊 Every week I analyse the big matches: form, my pick and the odds. Result shown after the match.\n👉 ${S}/predictions.html`,
+ ],
+ midi: [
+  null,
+  `📊 Weekend review: all my predictions are on the site with their result ✅ ❌\n👉 ${S}/results.html\n🎁 Promo code FFN`,
+  `⚽ The big matches of the week (Champions League, Europa League, leagues): my analyses and picks.\n👉 ${S}/predictions.html`,
+  `📲 Register with promo code FFN in 4 steps: open the link, pick your country and currency, type FFN in the promo code box, make your 1st deposit.\n📖 ${S}/how-to-register-1xbet-2026.html`,
+  null,
+  `🔥 Weekend schedule: Premier League, La Liga, Serie A, Ligue 1, Bundesliga.\n👉 ${S}/predictions.html\n🎁 Get your account ready: promo code FFN`,
+  `📢 Don't miss any coupon: follow me on Telegram, WhatsApp and YouTube (links above). Share the channel with your friends!`,
+ ],
+ midibk: [
+  `🔵 Bookmaker of the week: 1xBet. Promo code FFN, 300% on your 1st deposit, Mobile Money.\n📖 ${S}/1xbet-promo-code.html`,
+  `🟡 Bookmaker of the week: Melbet. Promo code FFN, 300% on your 1st deposit, Mobile Money.\n📖 ${S}/melbet-promo-code.html`,
+  `🟠 Bookmaker of the week: Paripesa. Promo code FFN, 300% on your 1st deposit, Mobile Money.\n📖 ${S}/paripesa-promo-code.html`,
+  `🟢 Bookmaker of the week: WinWin. Promo code FFN, 300% on your 1st deposit, Mobile Money.\n📖 ${S}/promo-codes.html`,
+  `💎 Bookmaker of the week: GoldPari. Promo code FFN, 300% on your 1st deposit, Mobile Money.\n📖 ${S}/goldpari-promo-code.html`,
+ ],
+ vip: [
+  `⭐ Join the VIP: daily VIP odds-of-2, big odds several times a week, live tips.\n👉 ${S}/vip-en.html\nNo win is guaranteed.`,
+  `🔥 The best coupons are in the VIP: big odds, live tips and direct advice.\n👉 ${S}/vip-en.html\nNo win is guaranteed.`,
+  `💎 Why join the VIP? My coupons first, a daily VIP odds-of-2, big odds (5, 8, 10+), and you can ask me directly.\n👉 ${S}/vip-en.html\nNo win is guaranteed.`,
+  `🗓️ New week of coupons starts tomorrow: join the VIP.\n👉 ${S}/vip-en.html\nNo win is guaranteed.`,
+  `🎯 Want to play like me? In the VIP I share the coupons I play myself, with odds and time.\n👉 ${S}/vip-en.html\nNo win is guaranteed.`,
+ ],
+ resp: "🔞 18+ · Joue de façon responsable / Play responsibly.",
+ vip_post: `⭐ Another winning ticket in the VIP!\n👉 ${S}/vip-en.html\nNo win is guaranteed.`,
+};
+
+// Texte francais + bloc anglais (si la legende reste sous la limite Telegram de 1024 caracteres)
+export function withEn(fr, en, max = 1024) {
+  const tail = "\n\n" + EN_RESP;
+  const both = en ? `${fr}\n\n${EN_TITLE}\n${en}${tail}` : fr + tail;
+  return both.length <= max ? both : fr + tail;
+}

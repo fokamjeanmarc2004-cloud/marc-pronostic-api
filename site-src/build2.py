@@ -6848,7 +6848,7 @@ for _m in MATCHS:
 _now = datetime.datetime.now() - datetime.timedelta(days=1)
 open(os.path.join(OUT, "matchs.json"), "w", encoding="utf-8").write(json.dumps(
     [{"d": f'{_m["dt"]:%Y-%m-%d}', "h": f'{_m["dt"]:%H:%M}', "comp": _m.get("competition", ""), "e1": _m["equipe1"], "e2": _m["equipe2"],
-      "p": _m["pronostic"], "slug": _m["slug"], "slug_en": _m.get("slug_en", ""), "combine": bool(_m.get("combine"))}
+      "p": _m["pronostic"], "p_en": _m.get("pronostic_en") or "", "slug": _m["slug"], "slug_en": _m.get("slug_en", ""), "combine": bool(_m.get("combine"))}
      for _m in sorted(MATCHS, key=lambda x: x["dt"]) if not _m.get("resultat") and _m["dt"] > _now], ensure_ascii=False))
 written.append("matchs.json")
 print(f"  {len(MATCHS)} page(s) match du jour")

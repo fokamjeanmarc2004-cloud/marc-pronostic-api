@@ -16,7 +16,7 @@
  * Variable facultative :
  *   TELEGRAM_CHANNEL_ID  ton canal (par defaut @marc_prono)
  */
-import { RESP, FOOTER, HELP as HELP_TXT, COUPON_DU_JOUR, TARGETS, PROMOS, VIP_RAPPELS, VIP_IMAGE, MIDI, MIDI_BK } from "./messages.js";
+import { RESP, FOOTER, HELP as HELP_TXT, COUPON_DU_JOUR, TARGETS, PROMOS, VIP_RAPPELS, VIP_IMAGE, MIDI, MIDI_BK, EN, withEn } from "./messages.js";
 
 const REPO = "fokamjeanmarc2004-cloud/marc-pronostic-api";
 const SITE = "https://cousinmarc-pronostic.com";
@@ -124,9 +124,9 @@ export function parseCaption(caption) {
   return { label: null, file: null, text: null, comment, toChannel, toSite };
 }
 
-export function channelText(text, comment) {
+export function channelText(text, comment, en) {
   const body = [comment, text].filter(Boolean).join("\n\n");
-  return (body || "⚽ Cousin Marc") + FOOTER;
+  return withEn(body || "⚽ Cousin Marc", en);
 }
 
 // ---------------------------------------------------------------- GitHub
@@ -337,7 +337,7 @@ async function handleUpdate(update, env) {
     }
     if (v.toChannel) {
       try {
-        await tg(env, asPhoto ? "sendPhoto" : "sendDocument", { chat_id: channelOf(env), caption: VIP_POST + RESP, [asPhoto ? "photo" : "document"]: fileId });
+        await tg(env, asPhoto ? "sendPhoto" : "sendDocument", { chat_id: channelOf(env), caption: withEn(VIP_POST, EN.vip_post), [asPhoto ? "photo" : "document"]: fileId });
         st += `\n📢 Publié dans le canal ${channelOf(env)}.`;
       } catch (e) { st += "\n⚠️ Impossible de publier dans le canal."; }
     }
@@ -347,7 +347,7 @@ async function handleUpdate(update, env) {
 
   const c = parseCaption(msg.caption);
   if (!c.label) { await reply(env, chatId, "❓ Légende non reconnue.\n\n" + HELP); return; }
-  const post = channelText(c.text, c.comment);
+  const post = channelText(c.text, c.comment, c.file ? EN.targets[c.file] : null);
   let status;
 
   if (c.toSite && c.file) {
@@ -415,7 +415,7 @@ async function sendPromo(env, index, date = new Date()) {
     try { link = await stickerSetLink(env); } catch (e) { console.log("stickers", e.message); }
     body = link ? body.replace("__STICKERS__", link) : body.replace(/🔥 Stickers[^\n]*\n__STICKERS__\n\n/, "");
   }
-  const text = body + RESP;
+  const text = withEn(body, EN.promos[index]);
   for (const img of [fresh, image]) {
     if (!img) continue;
     try {
@@ -438,7 +438,7 @@ async function sendMidi(env, date = new Date()) {
   const wd = date.getUTCDay();
   if (wd === 0) return sendVip(env, date);
   const m = wd === 4 ? MIDI_BK[weekOf(date) % MIDI_BK.length] : MIDI[wd];
-  const text = m.text + RESP;
+  const text = withEn(m.text, wd === 4 ? EN.midibk[weekOf(date) % MIDI_BK.length] : EN.midi[wd]);
   const d = date.toISOString();
   const fresh = `${VISUELS}/${d.slice(0, 7)}/${d.slice(8, 10)}-midi.jpg`;
   let ok = false;
@@ -455,7 +455,8 @@ async function sendMidi(env, date = new Date()) {
 }
 
 async function sendVip(env, date = new Date()) {
-  const text = VIP_RAPPELS[weekOf(date) % VIP_RAPPELS.length] + RESP;
+  const vi = weekOf(date) % VIP_RAPPELS.length;
+  const text = withEn(VIP_RAPPELS[vi], EN.vip[vi]);
   const d = date.toISOString();
   const fresh = `${VISUELS}/${d.slice(0, 7)}/${d.slice(8, 10)}-vip.jpg`;
   let ok = false;
@@ -478,11 +479,19 @@ async function sendAnalyses(env, date = new Date()) {
   try { list = await (await fetch(`${SITE}/matchs.json?t=${Date.now()}`)).json(); } catch (e) { return "analyses : matchs.json illisible (" + e.message + ")"; }
   const today = list.filter((m) => m.d === day).slice(0, 6);
   if (!today.length) return "analyses : aucun match aujourd'hui";
-  let text = "⚽ MES PRONOSTICS DU JOUR\n";
-  for (const m of today) text += `\n🕘 ${m.h} · ${m.e1} – ${m.e2}\n✅ ${m.p}\n👉 ${SITE}/${m.slug}.html\n`;
-  const en = today.find((m) => m.slug_en);
-  if (en) text += `\n🇬🇧 In English: ${SITE}/${en.slug_en}.html\n`;
-  text += "\n🎁 Pas encore de compte ? Inscris-toi avec le code promo FFN pour ton bonus." + RESP;
+  // bilingue : chaque match en francais puis en anglais
+  const build = (withLinksEn) => {
+    let s = "⚽ MES PRONOSTICS DU JOUR\n🇬🇧 TODAY'S PREDICTIONS\n";
+    for (const m of today) {
+      s += `\n🕘 ${m.h} · ${m.e1} – ${m.e2}\n✅ ${m.p}\n`;
+      if (m.p_en && m.p_en !== m.p) s += `🇬🇧 ${m.p_en}\n`;
+      s += `👉 ${SITE}/${m.slug}.html\n`;
+      if (withLinksEn && m.slug_en) s += `🇬🇧 ${SITE}/${m.slug_en}.html\n`;
+    }
+    return s + "\n🎁 Pas encore de compte ? Inscris-toi avec le code promo FFN pour ton bonus.\n🇬🇧 No account yet? Register with promo code FFN for your bonus.\n\n" + EN.resp;
+  };
+  let text = build(true);
+  if (text.length > 1000) { const short = build(false); if (short.length <= 1000) text = short; }
   const photo = `${SITE}/og/${today[0].slug}.jpg`;
   if (text.length <= 1000) {
     try {
