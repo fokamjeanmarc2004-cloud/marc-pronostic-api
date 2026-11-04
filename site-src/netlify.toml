@@ -804,6 +804,12 @@
   force = true
 
 [[redirects]]
+  from = "/promo-code-not-working"
+  to = "/promo-code-not-working.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/promo-codes-ar"
   to = "/promo-codes-ar.html"
   status = 301

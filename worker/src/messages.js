@@ -169,7 +169,7 @@ export const EN = {
   `🟡 Melbet: register with promo code FFN, 300% on your 1st deposit.\n📖 ${S}/melbet-promo-code.html`,
   `⚽ Free odds-of-2 coupon every day, on the site and here.\n👉 ${S}/odds-of-2.html\n🎁 Promo code FFN (1xBet)`,
   `🚀 1win: up to 500% on your first 4 deposits. For 1win the promo code is ESS22 (not FFN).\n📖 ${S}/1win-promo-code.html`,
-  `❓ Promo code not working? Code refused, forgotten or bonus not received: send me a screenshot in private.\n📖 ${S}/promo-codes.html`,
+  `❓ Promo code not working? Code refused, forgotten or bonus not received: send me a screenshot in private.\n🛠️ ${S}/promo-code-not-working.html`,
   `🟠 Paripesa: same promo code FFN, same 300% bonus.\n📖 ${S}/paripesa-promo-code.html`,
   `⚽ Free odds-of-2 coupon every day: ${S}/odds-of-2.html\n🎲 Total odd/even: ${S}/total-odd-even.html\n🔔 Turn on notifications!`,
   `🟢 WinWin: register with promo code FFN, 300% on your 1st deposit (Android and iPhone links above).`,

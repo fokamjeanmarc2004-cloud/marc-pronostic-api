@@ -1408,6 +1408,7 @@ NAV_L = {
          ("vip","\u2B50","VIP","vip.html")]},
   "en": {"title":"Menu","items":[("accueil","\U0001F3E0","Home","promo-codes.html"),("codes","\U0001F39F\uFE0F","Promo codes","promo-codes.html#bookmakers"),
          ("analyses","\U0001F4CA","Match predictions","predictions.html"),("cote2","\u26BD","Odds of 2","odds-of-2.html"),("tpi","\U0001F3B2","Total Odd/Even","total-odd-even.html"),
+         ("aide","❓","Code not working","promo-code-not-working.html"),
          ("resultats","\U0001F3C6","Results","results.html"),("vip","\u2B50","VIP","vip-en.html")]},
   "es": {"title":"Menú","items":[("accueil","\U0001F3E0","Inicio","codigos-promocionales.html"),("codes","\U0001F39F\uFE0F","Códigos promo","codigos-promocionales.html#bookmakers"),
          ("analyses","\U0001F4CA","Pronósticos de partidos","pronosticos.html"),("cote2","\u26BD","Cuota de 2","cuota-de-2.html"),("tpi","\U0001F3B2","Total Par/Impar","total-par-impar.html"),
@@ -3196,7 +3197,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, HELP_SLUG, "affiche.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [COMPARE_SLUG, HELP_SLUG, HELP_SLUG_EN, "affiche.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -3441,6 +3442,7 @@ def footer_html_en():
 <a href="odds-of-2.html">Odds of 2</a>
 <a href="predictions.html">Predictions</a>
 <a href="results.html">Results</a>
+<a href="promo-code-not-working.html">Promo code not working</a>
 <a href="news.html">News</a>
 <a href="about.html">About</a>
 <a href="index.html">Français</a>
@@ -5866,7 +5868,8 @@ def help_page():
     qa = "".join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(HELP_QA))
     return head("Code promo qui ne marche pas ? Les solutions (1xBet, Melbet…) | Cousin Marc",
         "Code promo refusé, oublié à l'inscription, bonus non reçu ou retrait bloqué : toutes les solutions pas à pas pour 1xBet, Melbet, Paripesa et les autres.",
-        f"{BASE}/{HELP_SLUG}", extra=f'<script type="application/ld+json">{jsonld}</script>') + f"""
+        f"{BASE}/{HELP_SLUG}", extra=f'<script type="application/ld+json">{jsonld}</script>', nav=nav_fr(en=HELP_SLUG_EN),
+        alternates=(f"{BASE}/{HELP_SLUG}", f"{BASE}/{HELP_SLUG_EN}")) + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Aide · Mis à jour {MAJ_FR}</p>
 <h1>Mon code promo <span class="hl">ne marche pas ?</span></h1>
@@ -5890,6 +5893,58 @@ def help_page():
 </section>
 </main>
 {footer_html()}
+</body></html>"""
+
+HELP_SLUG_EN = "promo-code-not-working.html"
+HELP_QA_EN = [
+ ("I forgot to enter the promo code when I registered",
+  "With most bookmakers, the code cannot be added once the account is created. Contact the bookmaker's support right away (live chat) and explain that you forgot the code: some will add it if you have not made a deposit yet. <b>Never open a second account</b>: it is forbidden and can get your winnings blocked."),
+ ("The site says the code is invalid",
+  "Check three things: the code is typed <b>in capital letters with no space</b>; you enter it in the \"Promo code\" field (not \"Referral code\" or \"Friend code\"); and it is the right code for that bookmaker (see the table below). If the message stays, copy and paste the code from this page."),
+ ("My bonus did not show up after my deposit",
+  "The bonus is often credited only if: your first deposit reaches the <b>required minimum</b>; your <b>profile is complete</b> (name, date of birth, confirmed phone number); and the sports welcome bonus is <b>activated in your profile</b> (\"Bonuses\" or \"Account settings\", depending on the bookmaker). Wait a few minutes, then contact support with your proof of deposit."),
+ ("I can't withdraw my bonus",
+  "A welcome bonus cannot be withdrawn straight away: you first have to <b>wager it a number of times</b> on accumulators with a minimum odds (the \"wagering requirements\"). They are shown on the bookmaker's Promotions page. Your real money, on the other hand, can always be withdrawn."),
+ ("I'm asked for an identity check",
+  "This is normal and required before a withdrawal: send a clear ID document and, if asked, a selfie. Use the same first and last name as on your account. Without verification, the withdrawal stays blocked."),
+ ("My withdrawal is blocked or refused",
+  "The most common causes: bonus wagering not finished, account not verified, or a withdrawal requested to a different payment method than the deposit. Withdraw to the same Mobile Money number you used to deposit."),
+]
+
+def help_page_en():
+    jsonld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage",
+        "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub("<[^>]+>", "", a)}} for q, a in HELP_QA_EN]},
+        ensure_ascii=False)
+    rows = "".join(f'<tr><td><span translate="no">{bk_logo(b, "rlogo", 28)}{b["name"]}</span></td><td>{b["code"]}</td>'
+                   f'<td><a href="{en_slug(b)}.html">Guide</a></td></tr>' for b in BOOKMAKERS)
+    qa = "".join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(HELP_QA_EN))
+    return head("Promo Code Not Working? The Fixes (1xBet, Melbet…) | Cousin Marc",
+        "Promo code refused, forgotten at sign-up, bonus not received or withdrawal blocked: step-by-step fixes for 1xBet, Melbet, Paripesa and the other bookmakers.",
+        f"{BASE}/{HELP_SLUG_EN}", extra=f'<script type="application/ld+json">{jsonld}</script>', nav=nav_en(fr=HELP_SLUG), lang="en",
+        alternates=(f"{BASE}/{HELP_SLUG}", f"{BASE}/{HELP_SLUG_EN}")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Help · Updated {MAJ_EN}</p>
+<h1>My promo code <span class="hl">isn't working?</span></h1>
+<p class="sub">Code refused, forgotten, bonus missing or withdrawal blocked: here are the fixes that work 9 times out of 10.</p>
+<div class="btnrow"><a class="cta" href="#solutions">See the fixes</a><a class="cta alt" href="https://t.me/marc_prono" rel="nofollow">Ask me</a></div>
+</div></header>
+<main class="wrap">
+<section id="solutions">
+<h2><span class="num">01</span> The most common problems</h2>
+{qa}
+</section>
+<section>
+<h2><span class="num">02</span> The right code for each bookmaker</h2>
+<p>Careful: not every bookmaker uses the same promo code.</p>
+<div class="tablecard"><table><thead><tr><th>Bookmaker</th><th>Promo code</th><th></th></tr></thead><tbody>{rows}</tbody></table></div>
+</section>
+<section>
+<h2><span class="num">03</span> Still stuck?</h2>
+<p>Send me a screenshot on Telegram with the bookmaker and your country: I'll help you sort it out.</p>
+<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="https://t.me/marc_prono" rel="nofollow">Message me on Telegram</a><a class="cta alt" href="promo-codes.html">All my promo codes</a></div>
+</section>
+</main>
+{footer_html_en()}
 </body></html>"""
 
 # =====================================================================
@@ -6837,6 +6892,7 @@ print(f"  {len(NEW_PAGES)} page(s) aujourd'hui/demain/competition")
 open(os.path.join(OUT,"pronostics.html"),"w",encoding="utf-8").write(pronostics_page()); written.append("pronostics.html")
 open(os.path.join(OUT,COMPARE_SLUG),"w",encoding="utf-8").write(compare_page()); written.append(COMPARE_SLUG)
 open(os.path.join(OUT,HELP_SLUG),"w",encoding="utf-8").write(help_page()); written.append(HELP_SLUG)
+open(os.path.join(OUT,HELP_SLUG_EN),"w",encoding="utf-8").write(help_page_en()); written.append(HELP_SLUG_EN)
 open(os.path.join(OUT,AFFICHE_SLUG),"w",encoding="utf-8").write(affiche_page()); written.append(AFFICHE_SLUG)
 for _m in MATCHS:
     open(os.path.join(OUT,_m["slug"]+".html"),"w",encoding="utf-8").write(match_page(_m)); written.append(_m["slug"]+".html")
