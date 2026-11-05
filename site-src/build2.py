@@ -321,11 +321,26 @@ WALL_L = {
  "ar": ("\U0001F3C6 \u0644\u0642\u062f \u0631\u0628\u062d\u0648\u0627 \u0645\u0639 Cousin Marc",
         "\u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u062e\u062a\u0627\u0631\u0629 \u0645\u0646 \u0627\u0644\u0642\u0633\u0627\u0626\u0645 \u0627\u0644\u0645\u062f\u0641\u0648\u0639\u0629 \u0645\u0624\u062e\u0631\u064b\u0627 \u0648\u0627\u0644\u062a\u064a \u0634\u0627\u0631\u0643\u0647\u0627 \u0623\u0641\u0631\u0627\u062f \u0627\u0644\u0645\u062c\u062a\u0645\u0639. \u0627\u0644\u0646\u062a\u0627\u0626\u062c \u0627\u0644\u0633\u0627\u0628\u0642\u0629 \u0644\u0627 \u062a\u0636\u0645\u0646 \u0646\u062a\u0627\u0626\u062c \u0645\u0633\u062a\u0642\u0628\u0644\u064a\u0629.","\u0645\u062f\u0641\u0648\u0639"),
 }
+WALL_RECENT = 15   # on ne garde que les 15 derniers tickets de la page VIP...
+WALL_SHOW = 10     # ...et on affiche les 10 plus grosses cotes parmi eux
+WALL_ODDS = {"fr": "Cote", "en": "Odds", "es": "Cuota", "ar": "النسبة"}
+
+def _wall_items():
+    """Les plus grosses cotes parmi les tickets les plus recents (VIP_PROOFS, du plus recent au plus ancien).
+    Mis a jour tout seul a chaque ajout de ticket : les vieux coupons sortent du carrousel."""
+    def odd(c):
+        try: return float(str(c).replace(",", "."))
+        except ValueError: return 0
+    recent = [p for p in VIP_PROOFS[:WALL_RECENT] if os.path.exists(os.path.join(OUT, p[0]))]
+    return sorted(recent, key=lambda p: -odd(p[2]))[:WALL_SHOW]
+
 def winners_wall(lang):
     title, sub, paid = WALL_L.get(lang, WALL_L["fr"])
+    ol = WALL_ODDS.get(lang, "Cote")
     cards = "".join(
-      f'<div class="wcard"><img src="{img}" alt="Coupon gagnant {gain} Cousin Marc" loading="lazy" decoding="async" width="360" height="760"><div class="wbadge">\u2705 {paid} \u00b7 {gain}</div></div>'
-      for img, gain in WINNERS)
+      f'<div class="wcard"><img src="{img}" alt="{html.escape(titre)} : coupon gagnant {gain}" loading="lazy" decoding="async" width="720" height="760">'
+      f'<div class="wbadge">✅ {paid} · {gain}<span class="wodd">{ol} {cote}</span></div></div>'
+      for img, titre, cote, _live, gain in _wall_items())
     track = cards + cards.replace('<div class="wcard">', '<div class="wcard wdup" aria-hidden="true">')
     css = ""
     return (f'<section class="winsec">{css}'
@@ -1002,8 +1017,9 @@ details>p,details>div{padding:0 18px 16px}
 .winmarq{overflow:hidden;margin-top:26px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
 .wtrack{display:flex;gap:14px;width:max-content;animation:wmarq 60s linear infinite}
 .winsec:hover .wtrack{animation-play-state:paused}
-.wcard{width:180px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-.wcard img{width:100%;height:320px;object-fit:cover;object-position:top;display:block}
+.wcard{width:200px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.wcard img{width:100%;height:300px;object-fit:cover;object-position:top;display:block;background:#fff}
+.wodd{display:block;margin-top:3px;font-size:12px;color:var(--mist);font-weight:700}
 html.cm-lite .wdup{display:none}
 .wbadge{padding:10px 6px;text-align:center;color:var(--green-ink);font-weight:800;font-size:13px}
 @keyframes wmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
