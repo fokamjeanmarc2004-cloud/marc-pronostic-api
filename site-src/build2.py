@@ -1018,7 +1018,7 @@ details>p,details>div{padding:0 18px 16px}
 .wtrack{display:flex;gap:14px;width:max-content;animation:wmarq 60s linear infinite}
 .winsec:hover .wtrack{animation-play-state:paused}
 .wcard{width:200px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-.wcard img{width:100%;height:300px;object-fit:cover;object-position:top;display:block;background:#fff}
+.wcard img{width:100%;height:300px;object-fit:contain;object-position:center top;display:block;background:#fff}
 .wodd{display:block;margin-top:3px;font-size:12px;color:var(--mist);font-weight:700}
 html.cm-lite .wdup{display:none}
 .wbadge{padding:10px 6px;text-align:center;color:var(--green-ink);font-weight:800;font-size:13px}
