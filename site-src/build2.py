@@ -1000,6 +1000,8 @@ details>p,details>div{padding:0 18px 16px}
 .social a[href*="facebook"]{background:#1877f2}
 .social a[href*="instagram"]{background:linear-gradient(45deg,#f9a825,#e1306c 45%,#833ab4)}
 .social a[href*="snapchat"]{background:#fffc00;color:#111}
+.social a[href*="tiktok"]{background:#010101;color:#fff}
+.social a[href*="tiktok"] svg{filter:drop-shadow(-1.5px -1px 0 #25f4ee) drop-shadow(1.5px 1px 0 #fe2c55)}
 .truststats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
 .truststat{background:var(--soft);border-radius:14px;padding:14px;text-align:center}
 .truststat b{display:block;font-family:var(--display);font-size:26px}
@@ -1867,7 +1869,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11b"><script>
+<link rel="stylesheet" href="style.css?v=2026-11c"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
