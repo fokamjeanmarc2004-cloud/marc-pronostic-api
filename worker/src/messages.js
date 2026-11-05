@@ -85,7 +85,7 @@ export const PROMOS = [
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 MES PRONOSTICS ET ANALYSES\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChaque semaine, j'analyse les grands matchs : forme des équipes, mon pronostic et la cote.\nLe résultat est affiché après le match, gagné ou perdu.\n\n👉 https://cousinmarc-pronostic.com/pronostics.html\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 SUIS-MOI PARTOUT\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n✈️ Telegram : https://t.me/marc_prono\n💬 WhatsApp : https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h\n▶️ YouTube : https://youtube.com/@prossport\n🌐 Site : https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 MES PRONOSTICS ET ANALYSES\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nChaque semaine, j'analyse les grands matchs : forme des équipes, mon pronostic et la cote.\nLe résultat est affiché après le match, gagné ou perdu.\n\n👉 https://cousinmarc-pronostic.com/pronostics.html\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 SUIS-MOI PARTOUT\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n✈️ Telegram : https://t.me/marc_prono\n💬 WhatsApp : https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h\n▶️ YouTube : https://youtube.com/@prossport\n🎵 TikTok : https://www.tiktok.com/@cousinmarcc\n🌐 Site : https://cousinmarc-pronostic.com\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  }
 ];
 
@@ -121,7 +121,7 @@ export const MIDI = [
  },
  {
   "image": "https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/promo-tous-les-codes.jpg",
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📢 NE RATE AUCUN DE MES COUPONS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nAbonne-toi partout pour recevoir mes pronostics dès qu'ils sortent 👇\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 SUIS-MOI PARTOUT\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n✈️ Telegram : https://t.me/marc_prono\n💬 WhatsApp : https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h\n▶️ YouTube : https://youtube.com/@prossport\n🌐 Site : https://cousinmarc-pronostic.com\n\n👥 Partage le canal à tes amis parieurs !\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━\n📢 NE RATE AUCUN DE MES COUPONS\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nAbonne-toi partout pour recevoir mes pronostics dès qu'ils sortent 👇\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n📲 SUIS-MOI PARTOUT\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n✈️ Telegram : https://t.me/marc_prono\n💬 WhatsApp : https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h\n▶️ YouTube : https://youtube.com/@prossport\n🎵 TikTok : https://www.tiktok.com/@cousinmarcc\n🌐 Site : https://cousinmarc-pronostic.com\n\n👥 Partage le canal à tes amis parieurs !\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎁 CODE PROMO OBLIGATOIRE À L'INSCRIPTION :\n🔥 FFN 🔥\n━━━━━━━━━━━━━━━━━━━━━━━━━━"
  }
 ];
 
