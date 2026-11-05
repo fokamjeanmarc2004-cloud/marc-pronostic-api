@@ -717,8 +717,8 @@ ARTICLES_EN = [
 </ol>
 <h2>🎥 Video tutorial</h2>
 <p>I show the full registration and how to create a genuine account, step by step:</p>
-<div class="video yt-facade" data-yt="EnBk9p_Akvc" data-yt-title="How to register - Cousin Marc tutorial"><img src="https://img.youtube.com/vi/EnBk9p_Akvc/hqdefault.jpg" alt="How to register - Cousin Marc tutorial" loading="lazy"><span class="ytf-play">▶</span></div>
-<p style="margin-top:12px"><a href="https://youtu.be/EnBk9p_Akvc" rel="nofollow" style="color:var(--gold);font-weight:700">▶️ Watch on YouTube</a> &nbsp;·&nbsp; <a href="https://youtube.com/@prossport" rel="nofollow" style="color:var(--gold);font-weight:700">Subscribe to the channel</a></p>
+<div class="video yt-facade" data-yt="mb_spbpV_0s" data-yt-title="How to register - Cousin Marc tutorial"><img src="https://img.youtube.com/vi/mb_spbpV_0s/hqdefault.jpg" alt="How to register - Cousin Marc tutorial" loading="lazy"><span class="ytf-play">▶</span></div>
+<p style="margin-top:12px"><a href="https://youtu.be/mb_spbpV_0s" rel="nofollow" style="color:var(--gold);font-weight:700">▶️ Watch on YouTube</a> &nbsp;·&nbsp; <a href="https://youtube.com/@prossport" rel="nofollow" style="color:var(--gold);font-weight:700">Subscribe to the channel</a></p>
 <p style="margin-top:10px">📱 New 1xBet sign-up tutorial (short version, with code <b>FFN</b>), pick your language: <a href="https://youtube.com/shorts/SJKZVnmO65M" rel="nofollow" style="color:var(--gold);font-weight:700">🇫🇷 Français</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/Gl9BeZE_FxE" rel="nofollow" style="color:var(--gold);font-weight:700">🇬🇧 English</a> &nbsp;·&nbsp; <a href="https://youtube.com/shorts/vUIsSVGUUEE" rel="nofollow" style="color:var(--gold);font-weight:700"><bdi>🇸🇦 العربية</bdi></a></p>
 <p style="margin-top:6px">🎬 Full video guide (3 min, chapters + 3 mistakes to avoid), pick your language: <a href="https://youtu.be/AbdDsUazc_8" rel="nofollow" style="color:var(--gold);font-weight:700">🇫🇷 Français</a> &nbsp;·&nbsp; <a href="https://youtu.be/mb_spbpV_0s" rel="nofollow" style="color:var(--gold);font-weight:700">🇬🇧 English</a> &nbsp;·&nbsp; <a href="https://youtu.be/r0QYlI6IXww" rel="nofollow" style="color:var(--gold);font-weight:700"><bdi>🇸🇦 العربية</bdi></a></p>
 <h2>Don't forget the promo code</h2>
@@ -1664,7 +1664,7 @@ def related_block(current):
 # ===== BANDEAU VIDEO YOUTUBE (haut de toutes les pages) =====
 YT_VID = "Z-vnaLR3jYM"
 # video principale des pages anglaises / arabes : tuto dans leur langue (Paripesa EN = la plus vue en anglais)
-YT_VID_L = {"en": "PhtRhb-uneM", "ar": "r0QYlI6IXww"}
+YT_VID_L = {"en": "mb_spbpV_0s", "ar": "r0QYlI6IXww"}
 YT_CHAN = "https://youtube.com/@prossport"
 YT_L = {
  "fr": ("Regarde le tuto en vidéo", "S'abonner à la chaîne"),
@@ -1865,7 +1865,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11a"><script>
+<link rel="stylesheet" href="style.css?v=2026-11b"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -2461,7 +2461,7 @@ def bookmaker_page(b):
 {BK_GUIDE_FR[slug](b) if slug in BK_GUIDE_FR else ""}
 <section>
 <h2><span class="num">04</span> Pourquoi me faire confiance ?</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 95 000+ abonnés</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <p style="margin-top:16px">Je publie des analyses foot pour l'Afrique depuis plusieurs années. J'utilise {name} moi-même : j'ai testé l'inscription, les dépôts et les retraits avec le code promo {code} avant de le partager.</p>
 <div class="social">{social_html()}</div>
 </section>
@@ -2497,7 +2497,7 @@ HOME_T = {
  "fr": dict(eyebrow="Cousin Marc · Mis à jour {maj}", h1="Pronostics foot &amp; codes promo <em>vérifiés.</em>",
    lead="Le coupon du jour, les codes officiels des bookmakers et les guides pour s'inscrire, déposer et retirer en Afrique. Simple, clair, gratuit.",
    verified="Codes vérifiés le {d}", bar_copy="📋 Copier", bar_video="▶ Vidéo", more="Voir les {n} autres bookmakers", cta1="Voir les codes promo", cta2="Coupon du jour",
-   trust=[("95K+","abonnés"),("{n}","bookmakers"),("4","langues"),("18+","jeu responsable")],
+   trust=[("100K+","abonnés"),("{n}","bookmakers"),("4","langues"),("18+","jeu responsable")],
    copy="Copier", copy_aria="Copier le code promo", join="S'inscrire", guide="Guide",
    c_kick="Aujourd'hui", c_h2="Le coupon du jour", c_p="Publié sur le site et sur Telegram. Vérifie toujours le ticket avant de miser.",
    c_alt="Coupon Côte de 2 du jour — Cousin Marc",
@@ -2513,7 +2513,7 @@ HOME_T = {
  "en": dict(eyebrow="Cousin Marc · Updated {maj}", h1="Football tips &amp; <em>verified</em> promo codes.",
    lead="Today's coupon, official bookmaker promo codes and simple guides to sign up, deposit and withdraw in Africa. Clear and free.",
    verified="Codes checked on {d}", bar_copy="📋 Copy", bar_video="▶ Video", more="See the other {n} bookmakers", cta1="See the promo codes", cta2="Today's coupon",
-   trust=[("95K+","followers"),("{n}","bookmakers"),("4","languages"),("18+","play responsibly")],
+   trust=[("100K+","followers"),("{n}","bookmakers"),("4","languages"),("18+","play responsibly")],
    copy="Copy", copy_aria="Copy promo code", join="Sign up", guide="Guide",
    c_kick="Today", c_h2="Today's coupon", c_p="Posted on the site and on Telegram. Always check the ticket before you bet.",
    c_alt="Today's odds of 2 coupon — Cousin Marc",
@@ -2528,7 +2528,7 @@ HOME_T = {
  "es": dict(eyebrow="Cousin Marc · Actualizado {maj}", h1="Pronósticos de fútbol y códigos promo <em>verificados.</em>",
    lead="El cupón del día, los códigos oficiales de las casas de apuestas y guías para registrarte, depositar y retirar. Claro y gratis.",
    verified="Códigos verificados el {d}", bar_copy="📋 Copiar", bar_video="▶ Vídeo", more="Ver las otras {n} casas", cta1="Ver los códigos", cta2="Cupón del día",
-   trust=[("95K+","seguidores"),("{n}","casas de apuestas"),("4","idiomas"),("18+","juego responsable")],
+   trust=[("100K+","seguidores"),("{n}","casas de apuestas"),("4","idiomas"),("18+","juego responsable")],
    copy="Copiar", copy_aria="Copiar el código promocional", join="Registrarse", guide="Guía",
    c_kick="Hoy", c_h2="El cupón del día", c_p="Publicado en el sitio y en Telegram. Revisa siempre el ticket antes de apostar.",
    c_alt="Cupón cuota de 2 del día — Cousin Marc",
@@ -2543,7 +2543,7 @@ HOME_T = {
  "ar": dict(eyebrow="Cousin Marc · تحديث {maj}", h1="توقعات كرة القدم ورموز ترويجية <em>موثوقة.</em>",
    lead="قسيمة اليوم، الرموز الترويجية الرسمية لمواقع المراهنات، وأدلة بسيطة للتسجيل والإيداع والسحب. واضح ومجاني.",
    verified="تم التحقق من الرموز في {d}", bar_copy="📋 نسخ", bar_video="▶ شاهد الفيديو", more="عرض {n} مواقع أخرى", cta1="عرض الرموز الترويجية", cta2="قسيمة اليوم",
-   trust=[("95K+","متابع"),("{n}","موقع مراهنات"),("4","لغات"),("18+","لعب مسؤول")],
+   trust=[("100K+","متابع"),("{n}","موقع مراهنات"),("4","لغات"),("18+","لعب مسؤول")],
    copy="نسخ", copy_aria="نسخ الرمز الترويجي", join="التسجيل", guide="الدليل",
    c_kick="اليوم", c_h2="قسيمة اليوم", c_p="تُنشر على الموقع وعلى تيليغرام. تحقق دائمًا من التذكرة قبل المراهنة.",
    c_alt="قسيمة رهان بضعف 2 لليوم — Cousin Marc",
@@ -2808,12 +2808,12 @@ document.querySelectorAll('.daygroup').forEach(function(g){{var v=[].some.call(g
 def apropos_page():
     return head(
         "Cousin Marc Pronostic : qui suis-je, code promo FFN, Telegram & WhatsApp",
-        "Cousin Marc, pronostiqueur foot Afrique (95 000+ abonnés). Mon code promo FFN testé sur 1xBet, Melbet, Paripesa, WinWin. Rejoins mes pronostics gratuits sur Telegram et WhatsApp.",
+        "Cousin Marc, pronostiqueur foot Afrique (100 000+ abonnés). Mon code promo FFN testé sur 1xBet, Melbet, Paripesa, WinWin. Rejoins mes pronostics gratuits sur Telegram et WhatsApp.",
         f"{BASE}/a-propos.html", nav=nav_fr(en="about.html", es="acerca-de.html", ar="a-propos-ar.html"), alternates=(f"{BASE}/a-propos.html", f"{BASE}/about.html", f"{BASE}/acerca-de.html", f"{BASE}/a-propos-ar.html")) + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Qui suis-je ?</p>
 <h1>Cousin Marc <span class="hl">Pronostic</span></h1>
-<p class="sub">Pronostiqueur foot pour l'Afrique francophone. 95 000+ abonnés sur Telegram, WhatsApp, Facebook, YouTube et Snapchat.</p>
+<p class="sub">Pronostiqueur foot pour l'Afrique francophone. 100 000+ abonnés sur Telegram, WhatsApp, Facebook, YouTube et Snapchat.</p>
 <div class="codebox"><div class="stamp"><span class="st-txt">Vérifié par CM</span></div>
 <div class="lab">Mon code promo (tous bookmakers)</div>
 <div class="code">FFN</div>
@@ -2823,7 +2823,7 @@ def apropos_page():
 <div class="btnrow"><a class="cta" href="https://t.me/marc_prono" rel="nofollow">✈️ Pronostics Telegram</a><a class="cta alt" href="https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h" rel="nofollow">💬 WhatsApp</a></div>
 </div></header>
 <main class="wrap legalbody">
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 95 000+ abonnés</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <p>Je suis Cousin Marc, pronostiqueur passionné de football. Depuis plusieurs années, j'accompagne une large communauté de parieurs à travers l'Afrique francophone avec des analyses de matchs, des conseils, et une sélection de bons plans bookmakers.</p>
 <h2>Ma mission</h2>
 <p>T'aider à parier de façon plus informée : comprendre les cotes, choisir les bonnes plateformes, profiter des meilleurs bonus de bienvenue, et le faire de manière responsable.</p>
@@ -2991,7 +2991,7 @@ VIP_L = {
   "sub":"Sur les canaux gratuits, tu vois une partie de mon travail. Dans le VIP, tu reçois tout : les coupons exclusifs, mes analyses complètes et un accès direct à moi.",
   "cta":"Rejoindre le VIP · 25 000 FCFA", "cta2":"Ce que tu reçois",
   "perday":"<b>25 000 FCFA le mois</b>, ou <b>240 000 FCFA l'année</b> : moins de <b>700 FCFA par jour</b>",
-  "trust":[("95K+","personnes suivent Cousin Marc"),("3","formules au choix"),("0","renouvellement automatique")],
+  "trust":[("100K+","personnes suivent Cousin Marc"),("3","formules au choix"),("0","renouvellement automatique")],
   "cmp_title":"Gratuit ou VIP : la différence", "cmp_free":"Gratuit", "cmp_vip":"VIP",
   "cmp_rows":[('Coupon du jour gratuit (côte de 2)', '✓', '✓'), ('Côte de 2 VIP tous les jours', '—', '✓'), ('Grosses cotes (combinés)', '—', '✓'), ('Pronostics en live', '—', '✓'), ('Sélections haute confiance', '—', '✓'), ('Analyse complète de chaque sélection', 'Résumé', '✓'), ('Canal privé + questions directes', '—', '✓')],
   "how_title":"Comment ça se passe dans le VIP",
@@ -3022,7 +3022,7 @@ VIP_L = {
   "sub":"On the free channels you see part of my work. In the VIP you get everything: exclusive coupons, my full analysis and direct access to me.",
   "cta":"Join the VIP · 25,000 FCFA", "cta2":"What you get",
   "perday":"<b>25,000 FCFA a month</b>, or <b>240,000 FCFA a year</b>: less than <b>700 FCFA a day</b>",
-  "trust":[("95K+","people follow Cousin Marc"),("3","plans to choose from"),("0","automatic renewal")],
+  "trust":[("100K+","people follow Cousin Marc"),("3","plans to choose from"),("0","automatic renewal")],
   "cmp_title":"Free vs VIP: the difference", "cmp_free":"Free", "cmp_vip":"VIP",
   "cmp_rows":[('Free daily coupon (odds of 2)', '✓', '✓'), ('VIP odds of 2 every day', '—', '✓'), ('Big odds (accumulators)', '—', '✓'), ('Live tips', '—', '✓'), ('High-confidence picks', '—', '✓'), ('Full analysis of each pick', 'Summary', '✓'), ('Private channel + direct questions', '—', '✓')],
   "how_title":"How the VIP works",
@@ -3053,7 +3053,7 @@ VIP_L = {
   "sub":"En los canales gratuitos ves una parte de mi trabajo. En el VIP lo recibes todo: cupones exclusivos, mis análisis completos y acceso directo a mí.",
   "cta":"Unirme al VIP · 25 000 FCFA", "cta2":"Qué recibes",
   "perday":"<b>25 000 FCFA al mes</b>, o <b>240 000 FCFA al año</b>: menos de <b>700 FCFA al día</b>",
-  "trust":[("95K+","personas siguen a Cousin Marc"),("3","planes a elegir"),("0","renovación automática")],
+  "trust":[("100K+","personas siguen a Cousin Marc"),("3","planes a elegir"),("0","renovación automática")],
   "cmp_title":"Gratis o VIP: la diferencia", "cmp_free":"Gratis", "cmp_vip":"VIP",
   "cmp_rows":[('Cupón diario gratis (cuota de 2)', '✓', '✓'), ('Cuota de 2 VIP todos los días', '—', '✓'), ('Cuotas altas (combinadas)', '—', '✓'), ('Pronósticos en vivo', '—', '✓'), ('Selecciones de alta confianza', '—', '✓'), ('Análisis completo de cada selección', 'Resumen', '✓'), ('Canal privado + preguntas directas', '—', '✓')],
   "how_title":"Cómo funciona el VIP",
@@ -3084,7 +3084,7 @@ VIP_L = {
   "sub":"في القنوات المجانية ترى جزءًا من عملي. في VIP تحصل على كل شيء: القسائم الحصرية وتحليلاتي الكاملة وتواصل مباشر معي.",
   "cta":"انضم إلى VIP · 25 000 فرنك", "cta2":"ماذا تحصل عليه",
   "perday":"<b>25 000 فرنك شهريًا</b>، أو <b>240 000 فرنك للسنة</b>: أقل من <b>700 فرنك في اليوم</b>",
-  "trust":[("95K+","شخص يتابعون Cousin Marc"),("3","خطط للاختيار"),("0","تجديد تلقائي")],
+  "trust":[("100K+","شخص يتابعون Cousin Marc"),("3","خطط للاختيار"),("0","تجديد تلقائي")],
   "cmp_title":"مجاني أم VIP: الفرق", "cmp_free":"مجاني", "cmp_vip":"VIP",
   "cmp_rows":[('قسيمة يومية مجانية (رهان بضعف 2)', '✓', '✓'), ('رهان بضعف 2 VIP يوميًا', '—', '✓'), ('نسب كبيرة (رهانات مركبة)', '—', '✓'), ('توقعات مباشرة (لايف)', '—', '✓'), ('اختيارات عالية الثقة', '—', '✓'), ('تحليل كامل لكل اختيار', 'ملخص', '✓'), ('قناة خاصة + أسئلة مباشرة', '—', '✓')],
   "how_title":"كيف يعمل VIP",
@@ -3255,7 +3255,7 @@ def article_page(a):
 {a['body']}
 <section style="border-bottom:none">
 <h3>À propos de l'auteur</h3>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 95 000+ abonnés</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <div class="social" style="margin-top:16px">{social_html()}</div>
 </section>
 {article_cta(a)}
@@ -3868,7 +3868,7 @@ def bookmaker_page_en(b):
 {BK_GUIDE_EN[slug](b) if slug in BK_GUIDE_EN else ""}
 <section>
 <h2><span class="num">04</span> Why trust me?</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 95,000+ community</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
 <p style="margin-top:16px">I have been sharing football analysis for Africa for several years. I use {name} myself: I tested registration, deposits and withdrawals with the promo code {code} before sharing it.</p>
 </section>
 <section>
@@ -4078,7 +4078,7 @@ def predictions_page_en():
 def about_page_en():
     return head(
         "About Cousin Marc Pronostic",
-        "Who is Cousin Marc? Football tipster for Africa, community of 95,000+ followers. Analysis, verified promo codes and bettor support.",
+        "Who is Cousin Marc? Football tipster for Africa, community of 100,000+ followers. Analysis, verified promo codes and bettor support.",
         f"{BASE}/about.html", nav=nav_en(fr="a-propos.html", es="acerca-de.html", ar="a-propos-ar.html"), lang="en",
         alternates=(f"{BASE}/a-propos.html", f"{BASE}/about.html", f"{BASE}/acerca-de.html", f"{BASE}/a-propos-ar.html")) + f"""
 <header class="hero"><div class="wrap">
@@ -4086,7 +4086,7 @@ def about_page_en():
 <h1>About <span class="hl">Cousin Marc</span></h1>
 </div></header>
 <main class="wrap legalbody">
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 95,000+ community</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
 <p>I'm Cousin Marc, a football tipster who's passionate about the game. For several years, I have been guiding a large community of bettors across Africa with match analysis, tips, and a selection of bookmaker deals.</p>
 <h2>My mission</h2>
 <p>To help you bet in a more informed way: understand the odds, choose the right platforms, take advantage of the best welcome bonuses, and do it responsibly.</p>
@@ -4233,7 +4233,7 @@ def article_page_en(a):
 {a['body']}
 <section style="border-bottom:none">
 <h3>About the author</h3>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 95,000+ community</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
 <div class="social" style="margin-top:16px">{social_html()}</div>
 </section>
 {article_cta_en(a)}
@@ -4654,7 +4654,7 @@ def bookmaker_page_ar(b):
 </section>
 <section>
 <h2><span class="num">04</span> لماذا تثق بي؟</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 95,000</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
 <p style="margin-top:16px">أشارك تحليلات كرة القدم منذ سنوات. أستخدم {name} بنفسي: جرّبت التسجيل والإيداع والسحب بالرمز {code} قبل مشاركته.</p>
 </section>
 <section>
@@ -4719,7 +4719,7 @@ def predictions_page_ar():
 def about_page_ar():
     return head(
         "من نحن - Cousin Marc Pronostic",
-        "من هو Cousin Marc؟ خبير توقعات كرة القدم، مجتمع من أكثر من 95,000 متابع. تحليلات، رموز ترويجية مُتحقَّق منها ومرافقة المراهنين.",
+        "من هو Cousin Marc؟ خبير توقعات كرة القدم، مجتمع من أكثر من 100,000 متابع. تحليلات، رموز ترويجية مُتحقَّق منها ومرافقة المراهنين.",
         f"{BASE}/a-propos-ar.html", nav=nav_ar(fr="a-propos.html", en="about.html", es="acerca-de.html"), lang="ar",
         alternates=(f"{BASE}/a-propos.html", f"{BASE}/about.html", f"{BASE}/acerca-de.html", f"{BASE}/a-propos-ar.html")) + f"""
 <header class="hero"><div class="wrap">
@@ -4727,7 +4727,7 @@ def about_page_ar():
 <h1>من نحن · <span class="hl">Cousin Marc</span></h1>
 </div></header>
 <main class="wrap legalbody">
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 95,000</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
 <p>أنا Cousin Marc، خبير توقعات شغوف بكرة القدم. منذ سنوات، أرافق مجتمعًا واسعًا من المراهنين بتحليلات المباريات والنصائح ومجموعة مختارة من عروض المراهنات.</p>
 <h2>مهمتي</h2>
 <p>مساعدتك على المراهنة بطريقة أكثر وعيًا: فهم الاحتمالات، اختيار المنصات المناسبة، الاستفادة من أفضل مكافآت الترحيب، والقيام بذلك بمسؤولية.</p>
@@ -4840,7 +4840,7 @@ def article_page_ar(a):
 {a['body']}
 <section style="border-bottom:none">
 <h3>عن الكاتب</h3>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 95,000</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
 <div class="social" style="margin-top:16px">{social_html()}</div>
 </section>
 {article_cta_ar(a)}
@@ -4893,7 +4893,7 @@ TPI_L = {
    "sub":"The Total Odd/Even coupon of the day. Free for all accounts created with promo code FFN.",
    "meta_desc":"Free Total Odd/Even coupon, updated every morning by Cousin Marc. Create your 1xBet or Melbet account with promo code FFN to unlock it.",
    "cond_title":"Conditions to download this coupon","cond_intro":"This coupon is 100% free, but reserved for community members. To play it:",
-   "steps":["Create an account with promo code <b>FFN</b> on Melbet or 1xBet. <a href='https://youtu.be/EnBk9p_Akvc' rel='nofollow' style='color:var(--gold);font-weight:700;white-space:nowrap'>▶️ See how to create an account</a>","Top up your account with at least <b>3000 FCFA (10$)</b> for activation.","Copy the coupon code below and play it in your app."],
+   "steps":["Create an account with promo code <b>FFN</b> on Melbet or 1xBet. <a href='https://youtu.be/mb_spbpV_0s' rel='nofollow' style='color:var(--gold);font-weight:700;white-space:nowrap'>▶️ See how to create an account</a>","Top up your account with at least <b>3000 FCFA (10$)</b> for activation.","Copy the coupon code below and play it in your app."],
    "coupons_title":"Today's coupons","copy":"📋 Copy code","register":"🌐 Register","apk":"📲 APK","tuto":"▶️ Watch tutorial",
    "cote_label":"Odds","code_word":"Code","min_note":"Minimum activation deposit: 3000 FCFA / 10$.",
    "disc":"⚠️ 18+. No coupon is 100% guaranteed. Play responsibly and only stake what you can afford to lose.",
@@ -5735,7 +5735,7 @@ def country_hub_page(c):
 </section>
 <section>
 <h2><span class="num">05</span> Pourquoi me faire confiance ?</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 95 000+ abonnés</div></div></div>
+<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <p style="margin-top:16px">Je teste personnellement chaque plateforme (inscription, dépôt Mobile Money, retrait) avant de la recommander. Une grande partie de ma communauté parie depuis {c['name']}.</p>
 <div class="social">{social_html()}</div>
 </section>
@@ -6164,7 +6164,7 @@ HOME_VENUE = {
     "Racing Santander": ("El Sardinero", "Santander", "ES"), "Cameroun": ("Cameroun", "", "CM"),
     "Slavia Prague": ("Fortuna Arena", "Prague", "CZ"),
 }
-ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"),
+ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"), "Ligue Conférence": ("UEFA", "https://www.uefa.com"),
              "Ligue 1": ("Ligue de Football Professionnel", "https://www.lfp.fr"), "Premier League": ("Premier League", "https://www.premierleague.com"),
              "Liga": ("LaLiga", "https://www.laliga.com"), "CAN": ("CAF", "https://www.cafonline.com")}
 
@@ -6559,6 +6559,7 @@ _JOURS_L = {"en": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satu
 _MOIS_L = {"en": _MOIS_EN, "es": _MOIS_ES, "ar": _MOIS_AR}
 COMP_L = {"Ligue des Champions": {"en": "Champions League", "es": "Liga de Campeones", "ar": "دوري أبطال أوروبا"},
           "Ligue Europa": {"en": "Europa League", "es": "Europa League", "ar": "الدوري الأوروبي"},
+          "Ligue Conférence": {"en": "Conference League", "es": "Conference League", "ar": "دوري المؤتمر الأوروبي"},
           "Ligue 1": {"en": "Ligue 1", "es": "Ligue 1", "ar": "الدوري الفرنسي"},
           "Premier League": {"en": "Premier League", "es": "Premier League", "ar": "الدوري الإنجليزي"},
           "Liga": {"en": "La Liga", "es": "LaLiga", "ar": "الدوري الإسباني"},
@@ -6702,6 +6703,12 @@ COMP_PAGES = {
  "Ligue des Champions": ("pronostic-ligue-des-champions", "champions-league-predictions",
    "La Ligue des champions est la compétition la plus jouée par les parieurs africains : les meilleurs clubs d'Europe, des matchs le mardi et le mercredi soir, et des cotes très suivies. Voici toutes mes analyses de la phase de ligue, avec mon pronostic avant le match et le résultat après.",
    "The Champions League is the most bet-on competition among African punters: Europe's best clubs, Tuesday and Wednesday night games and closely watched odds. Here are all my league-phase analyses, with my pick before the game and the result after."),
+ "Ligue Europa": ("pronostic-ligue-europa", "europa-league-predictions",
+   "La Ligue Europa se joue le jeudi soir : Milan, la Juventus, Leverkusen, Lyon, Marseille, Crystal Palace… Des affiches très suivies en Afrique et des matchs ouverts, parfaits pour les paris sur les buts. Mes analyses et mes résultats.",
+   "The Europa League is played on Thursday nights: Milan, Juventus, Leverkusen, Lyon, Marseille, Crystal Palace… Big games followed all over Africa and open matches, ideal for goals markets. My analysis and results."),
+ "Ligue Conférence": ("pronostic-ligue-conference", "conference-league-predictions",
+   "La Ligue Conférence, troisième coupe d'Europe, se joue aussi le jeudi : Monaco, Brighton, l'Atalanta, Ajax… Souvent un gros favori face à un petit club, de quoi trouver des cotes intéressantes. Mes pronostics et leurs résultats.",
+   "The Conference League, Europe's third cup, is also played on Thursdays: Monaco, Brighton, Atalanta, Ajax… Often a big favourite against a smaller club, a good place to find value. My predictions and their results."),
  "Premier League": ("pronostic-premier-league", "premier-league-predictions",
    "La Premier League est le championnat le plus regardé en Afrique. Arsenal, Manchester City, Liverpool, Chelsea et Manchester United : j'analyse les grosses affiches du week-end.",
    "The Premier League is the most watched league in Africa, from Lagos to Nairobi. Arsenal, Manchester City, Liverpool, Chelsea and Manchester United: I analyse the big weekend games."),
