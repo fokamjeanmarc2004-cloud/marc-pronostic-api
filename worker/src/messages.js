@@ -184,7 +184,7 @@ export const EN = {
   `📲 Register with promo code FFN in 4 steps: open the link, pick your country and currency, type FFN in the promo code box, make your 1st deposit.\n📖 ${S}/how-to-register-1xbet-2026.html`,
   null,
   `🔥 Weekend schedule: Premier League, La Liga, Serie A, Ligue 1, Bundesliga.\n👉 ${S}/predictions.html\n🎁 Get your account ready: promo code FFN`,
-  `📢 Don't miss any coupon: follow me on Telegram, WhatsApp and YouTube (links above). Share the channel with your friends!`,
+  `📢 Don't miss any coupon: follow me on Telegram, WhatsApp, YouTube and TikTok (links above). Share the channel with your friends!`,
  ],
  midibk: [
   `🔵 Bookmaker of the week: 1xBet. Promo code FFN, 300% on your 1st deposit, Mobile Money.\n📖 ${S}/1xbet-promo-code.html`,

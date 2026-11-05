@@ -142,6 +142,7 @@ SOCIAL = [
     ("Telegram", "https://t.me/marc_prono"),
     ("WhatsApp", "https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h"),
     ("YouTube", "https://youtube.com/@prossport"),
+    ("TikTok", "https://www.tiktok.com/@cousinmarcc"),
     ("Facebook", "https://www.facebook.com/1041369209050714"),
     ("Instagram", "https://instagram.com/mr.f.fn"),
     ("Snapchat", "https://www.snapchat.com/add/cousinmarc"),
@@ -804,6 +805,7 @@ ICONS = {
 "YouTube":'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M23 7.5c-.3-1-1-1.8-2-2C19 5 12 5 12 5s-7 0-9 .5c-1 .2-1.7 1-2 2C.5 9.5.5 12 .5 12s0 2.5.5 4.5c.3 1 1 1.8 2 2C5 19 12 19 12 19s7 0 9-.5c1-.2 1.7-1 2-2 .5-2 .5-4.5.5-4.5s0-2.5-.5-4.5zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg>',
 "Facebook":'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>',
 "Instagram":'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 4.5c2.5 0 2.8 0 3.8.1.9 0 1.4.2 1.7.3.4.2.7.4 1 .7.3.3.5.6.7 1 .1.3.3.8.3 1.7.1 1 .1 1.3.1 3.7s0 2.7-.1 3.7c0 .9-.2 1.4-.3 1.7-.2.4-.4.7-.7 1-.3.3-.6.5-1 .7-.3.1-.8.3-1.7.3-1 .1-1.3.1-3.8.1s-2.8 0-3.8-.1c-.9 0-1.4-.2-1.7-.3-.4-.2-.7-.4-1-.7-.3-.3-.5-.6-.7-1-.1-.3-.3-.8-.3-1.7-.1-1-.1-1.3-.1-3.7s0-2.7.1-3.7c0-.9.2-1.4.3-1.7.2-.4.4-.7.7-1 .3-.3.6-.5 1-.7.3-.1.8-.3 1.7-.3 1-.1 1.3-.1 3.8-.1zM12 8.1a3.9 3.9 0 1 0 0 7.8 3.9 3.9 0 0 0 0-7.8zm0 6.4a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm4-6.6a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0z"/></svg>',
+"TikTok":'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.6 2.6 0 0 1-2.59-2.6 2.6 2.6 0 0 1 3.38-2.48V9.66a5.73 5.73 0 0 0-.79-.05 5.68 5.68 0 0 0-5.68 5.68A5.68 5.68 0 0 0 9.86 21a5.68 5.68 0 0 0 5.68-5.68V9.01a7.33 7.33 0 0 0 4.3 1.38V7.3a4.3 4.3 0 0 1-3.24-1.48z"/></svg>',
 "Snapchat":'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.5c2.5 0 4.2 1.8 4.3 4.3 0 .6 0 1.1-.1 1.7.3.2.7.2 1 0 .2-.1.4-.1.6-.1.5 0 .8.4.8.8 0 .5-.4.7-.9 1-.5.2-1 .4-1.1.7-.1.3.1.6.3.9.6 1 1.7 1.8 2.8 2.1.3.1.6.3.6.6 0 .6-1.1 1-1.9 1.1-.2 0-.3.2-.4.4-.1.3-.1.6-.4.7-.2.1-.5.1-.8.1-.5 0-1 0-1.5.2-.5.2-1 .7-1.9.7s-1.4-.5-1.9-.7c-.5-.2-1-.2-1.5-.2-.4 0-.6 0-.8-.1-.3-.1-.3-.4-.4-.7-.1-.2-.2-.4-.4-.4-.8-.1-1.9-.5-1.9-1.1 0-.3.2-.5.6-.6 1.1-.3 2.2-1.1 2.8-2.1.2-.3.4-.6.3-.9-.1-.3-.6-.5-1.1-.7-.5-.3-.9-.5-.9-1 0-.4.4-.8.9-.8.2 0 .4 0 .6.1.3.2.7.2 1 0-.1-.6-.1-1.1-.1-1.7C7.8 4.3 9.5 2.5 12 2.5z"/></svg>',
 }
 
@@ -2813,7 +2815,7 @@ def apropos_page():
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Qui suis-je ?</p>
 <h1>Cousin Marc <span class="hl">Pronostic</span></h1>
-<p class="sub">Pronostiqueur foot pour l'Afrique francophone. 100 000+ abonnés sur Telegram, WhatsApp, Facebook, YouTube et Snapchat.</p>
+<p class="sub">Pronostiqueur foot pour l'Afrique francophone. 100 000+ abonnés sur Telegram, WhatsApp, Facebook, YouTube, TikTok et Snapchat.</p>
 <div class="codebox"><div class="stamp"><span class="st-txt">Vérifié par CM</span></div>
 <div class="lab">Mon code promo (tous bookmakers)</div>
 <div class="code">FFN</div>
