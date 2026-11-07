@@ -1315,3 +1315,328 @@ Brighton a plus de qualité avec le ballon : c'est mon favori, mais je couvre le
 Mon choix : Brighton ou match nul. Option plus grosse cote : victoire de Brighton.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
 Score final : Getafe 0-1 Brighton. Pronostic gagné ✅ : victoire de Brighton.
+---
+date: 2026-11-07 20:45
+competition: Serie A
+equipe1: Roma
+equipe2: Sassuolo
+pronostic: Victoire de la Roma
+pronostic_en: Roma to win
+pronostic_es: Gana la Roma
+pronostic_ar: فوز روما
+cote:
+bookmaker: 1xbet
+proba: 68-20-12
+score: 2-0
+analyse_en: Kick-off Saturday 7 November: 8:45pm in Douala, Lagos and Paris, 7:45pm in Accra and Dakar, 10:45pm in Nairobi.
+Roma are 3rd and unbeaten at the Olimpico this season: 4 wins and 1 draw in 5 home games.
+Sassuolo are 17th and have lost their last 4 games. Away from home, they have just 1 point from 5 trips.
+The gap is big: Roma should control the game in front of their fans.
+My pick: Roma to win. Bigger odds: Roma win and Sassuolo don't score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 7 novembre : 20h45 à Douala et à Paris, 19h45 à Abidjan et Dakar.
+La Roma est 3e et invaincue à l'Olimpico cette saison : 4 victoires et 1 nul en 5 matchs à domicile.
+Sassuolo est 17e et reste sur 4 défaites de suite. À l'extérieur, le club n'a pris qu'1 point en 5 déplacements.
+L'écart est grand : la Roma devrait contrôler le match devant son public.
+Mon choix : victoire de la Roma. Option plus grosse cote : la Roma gagne et Sassuolo ne marque pas.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-07 21:00
+competition: Liga
+equipe1: Valence
+equipe2: Real Madrid
+pronostic: Victoire du Real Madrid
+pronostic_en: Real Madrid to win
+pronostic_es: Gana el Real Madrid
+pronostic_ar: فوز ريال مدريد
+cote:
+bookmaker: 1xbet
+proba: 15-21-64
+score: 0-2
+analyse_en: Kick-off Saturday 7 November: 9pm in Douala, Lagos and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+Real Madrid are 3rd, have won 4 in a row and just beat AEK 3-2 in the Champions League. Away from home in La Liga, they have 4 wins in 6 games.
+Valencia are 19th, in the relegation zone, and still haven't won at Mestalla this season (2 draws, 4 defeats).
+Mestalla is always a hostile ground, but the gap in quality is huge.
+My pick: Real Madrid to win. Bigger odds: Real Madrid win and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 7 novembre : 21h à Douala et à Paris, 20h à Abidjan et Dakar.
+Le Real Madrid est 3e, reste sur 4 victoires de suite et vient de battre l'AEK 3-2 en Ligue des champions. À l'extérieur en Liga, il a gagné 4 de ses 6 matchs.
+Valence est 19e, en zone de relégation, et n'a toujours pas gagné à Mestalla cette saison (2 nuls, 4 défaites).
+Mestalla est toujours un stade chaud, mais l'écart de niveau est énorme.
+Mon choix : victoire du Real Madrid. Option plus grosse cote : le Real gagne et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-07 21:05
+competition: Ligue 1
+equipe1: PSG
+equipe2: Troyes
+pronostic: Victoire du PSG
+pronostic_en: PSG to win
+pronostic_es: Gana el PSG
+pronostic_ar: فوز باريس سان جيرمان
+cote:
+bookmaker: 1xbet
+proba: 76-15-9
+score: 3-0
+analyse_en: Kick-off Saturday 7 November: 9:05pm in Douala, Lagos and Paris, 8:05pm in Accra and Dakar, 11:05pm in Nairobi.
+PSG are top of Ligue 1 with 5 wins in a row, and they just won 6-0 in Villarreal in the Champions League.
+Troyes are 16th, in the relegation play-off spot, with 3 defeats in their last 5 games.
+At the Parc des Princes, Paris should dominate from start to finish.
+My pick: PSG to win. Bigger odds: PSG win and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 7 novembre : 21h05 à Douala et à Paris, 20h05 à Abidjan et Dakar.
+Le PSG est leader de Ligue 1 avec 5 victoires de suite, et vient de gagner 6-0 à Villarreal en Ligue des champions.
+Troyes est 16e, place de barragiste, avec 3 défaites lors de ses 5 derniers matchs.
+Au Parc des Princes, Paris devrait dominer du début à la fin.
+Mon choix : victoire du PSG. Option plus grosse cote : le PSG gagne et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 12:30
+competition: Serie A
+equipe1: Naples
+equipe2: Lazio
+pronostic: Lazio ou match nul
+pronostic_en: Lazio or draw
+pronostic_es: Lazio o empate
+pronostic_ar: لاتسيو أو التعادل
+cote:
+bookmaker: 1xbet
+proba: 33-30-37
+score: 1-1
+analyse_en: Kick-off Sunday 8 November: 12:30pm in Douala, Lagos and Paris, 11:30am in Accra and Dakar, 2:30pm in Nairobi.
+Lazio are top of Serie A with 5 wins in a row, and they have won all 5 of their away games this season.
+Napoli have been up and down (2 defeats in their last 5) and just lost 4-1 in Porto in the Champions League.
+At the Maradona, Napoli will push, but Lazio arrive full of confidence.
+My pick: Lazio or draw. Bigger odds: Lazio to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 12h30 à Douala et à Paris, 11h30 à Abidjan et Dakar.
+La Lazio est leader de Serie A avec 5 victoires de suite, et elle a gagné ses 5 matchs à l'extérieur cette saison.
+Naples souffle le chaud et le froid (2 défaites lors des 5 derniers matchs) et vient de prendre 4-1 à Porto en Ligue des champions.
+Au stade Maradona, Naples va pousser, mais la Lazio arrive en pleine confiance.
+Mon choix : Lazio ou match nul. Option plus grosse cote : victoire de la Lazio.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 15:00
+competition: Premier League
+equipe1: Crystal Palace
+equipe2: Liverpool
+pronostic: Victoire de Liverpool
+pronostic_en: Liverpool to win
+pronostic_es: Gana el Liverpool
+pronostic_ar: فوز ليفربول
+cote:
+bookmaker: 1xbet
+proba: 20-24-56
+score: 1-2
+analyse_en: Kick-off Sunday 8 November: 3pm in Douala, Lagos and Paris, 2pm in Accra and Dakar, 5pm in Nairobi.
+Crystal Palace are 18th and have lost their last 3 league games. At home, they have only 1 win in 4.
+Liverpool are unbeaten away in the Premier League this season (3 wins, 1 draw), even if they lost 3-2 in Istanbul on Wednesday.
+Palace also played on Thursday in the Europa League (1-1 against Hoffenheim), so legs will be heavy on both sides.
+My pick: Liverpool to win. Bigger odds: Liverpool win and both teams to score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
+Crystal Palace est 18e et reste sur 3 défaites de suite en championnat. À domicile, le club n'a gagné qu'1 match sur 4.
+Liverpool est invaincu à l'extérieur en Premier League cette saison (3 victoires, 1 nul), même s'il a perdu 3-2 à Istanbul mercredi.
+Palace a aussi joué jeudi en Ligue Europa (1-1 contre Hoffenheim) : les jambes seront lourdes des deux côtés.
+Mon choix : victoire de Liverpool. Option plus grosse cote : Liverpool gagne et les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 15:00
+competition: Premier League
+equipe1: Sunderland
+equipe2: Chelsea
+pronostic: Victoire de Chelsea
+pronostic_en: Chelsea to win
+pronostic_es: Gana el Chelsea
+pronostic_ar: فوز تشيلسي
+cote:
+bookmaker: 1xbet
+proba: 18-24-58
+score: 0-2
+analyse_en: Kick-off Sunday 8 November: 3pm in Douala, Lagos and Paris, 2pm in Accra and Dakar, 5pm in Nairobi.
+Sunderland are bottom of the Premier League with only 1 win in 9 games, and they haven't won in their last 5.
+Chelsea are 4th, with 3 wins in their last 5 games.
+The Blues have far more quality and Sunderland struggle to score.
+My pick: Chelsea to win. Bigger odds: Chelsea win and Sunderland don't score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
+Sunderland est dernier de Premier League avec 1 seule victoire en 9 matchs, et n'a plus gagné depuis 5 matchs.
+Chelsea est 4e, avec 3 victoires lors de ses 5 derniers matchs.
+Les Blues ont beaucoup plus de qualité, et Sunderland a du mal à marquer.
+Mon choix : victoire de Chelsea. Option plus grosse cote : Chelsea gagne et Sunderland ne marque pas.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 15:00
+competition: Premier League
+equipe1: Brighton
+equipe2: Brentford
+pronostic: Brighton ou match nul
+pronostic_en: Brighton or draw
+pronostic_es: Brighton o empate
+pronostic_ar: برايتون أو التعادل
+cote:
+bookmaker: 1xbet
+proba: 50-27-23
+score: 2-1
+analyse_en: Kick-off Sunday 8 November: 3pm in Douala, Lagos and Paris, 2pm in Accra and Dakar, 5pm in Nairobi.
+Brighton are 3rd with the best goal difference in the league (+17) and are unbeaten at home (3 wins, 1 draw).
+Brentford are 7th and hard to beat away: 4 draws in 4 trips.
+Brighton also won in Getafe on Thursday, and they are in great shape.
+My pick: Brighton or draw. Bigger odds: Brighton to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
+Brighton est 3e avec la meilleure différence de buts du championnat (+17), et reste invaincu à domicile (3 victoires, 1 nul).
+Brentford est 7e et difficile à battre à l'extérieur : 4 nuls en 4 déplacements.
+Brighton a aussi gagné jeudi à Getafe et il est en grande forme.
+Mon choix : Brighton ou match nul. Option plus grosse cote : victoire de Brighton.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 15:00
+competition: Ligue 1
+equipe1: Rennes
+equipe2: Lille
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote:
+bookmaker: 1xbet
+proba: 40-27-33
+score: 2-1
+analyse_en: Kick-off Sunday 8 November: 3pm in Douala, Lagos and Paris, 2pm in Accra and Dakar, 5pm in Nairobi.
+A big game at the top: Lille are 2nd and Rennes 5th, just 2 points apart.
+Rennes are unbeaten at home in Ligue 1 (4 wins, 1 draw), while Lille have 2 wins and 1 draw in 4 away games.
+Two teams that like to attack: I expect goals on both sides.
+My pick: both teams to score. Bigger odds: Rennes win and both teams to score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
+Un choc du haut de tableau : Lille est 2e et Rennes 5e, à seulement 2 points.
+Rennes est invaincu à domicile en Ligue 1 (4 victoires, 1 nul), et Lille a 2 victoires et 1 nul en 4 déplacements.
+Deux équipes qui aiment attaquer : j'attends des buts des deux côtés.
+Mon choix : les deux équipes marquent. Option plus grosse cote : Rennes gagne et les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 17:30
+competition: Premier League
+equipe1: Manchester United
+equipe2: Aston Villa
+pronostic: Aston Villa ou match nul
+pronostic_en: Aston Villa or draw
+pronostic_es: Aston Villa o empate
+pronostic_ar: أستون فيلا أو التعادل
+cote:
+bookmaker: 1xbet
+proba: 32-28-40
+score: 1-1
+analyse_en: Kick-off Sunday 8 November: 5:30pm in Douala, Lagos and Paris, 4:30pm in Accra and Dakar, 7:30pm in Nairobi.
+Manchester United are 17th in the Premier League with no win in their last 5 league games, despite beating Roma 3-2 in the Champions League.
+Aston Villa are unbeaten in 5 (3 wins, 2 draws) and have 2 wins in 4 away games.
+Old Trafford is not a fortress any more: United have only 1 home win this season.
+My pick: Aston Villa or draw. Bigger odds: Aston Villa to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 17h30 à Douala et à Paris, 16h30 à Abidjan et Dakar.
+Manchester United est 17e de Premier League, sans victoire lors de ses 5 derniers matchs de championnat, malgré son succès 3-2 contre la Roma en Ligue des champions.
+Aston Villa est invaincu depuis 5 matchs (3 victoires, 2 nuls) et a gagné 2 de ses 4 déplacements.
+Old Trafford n'est plus une forteresse : United n'y a gagné qu'1 fois cette saison.
+Mon choix : Aston Villa ou match nul. Option plus grosse cote : victoire d'Aston Villa.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 18:00
+competition: Serie A
+equipe1: Inter
+equipe2: Como
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote:
+bookmaker: 1xbet
+proba: 50-25-25
+score: 2-1
+analyse_en: Kick-off Sunday 8 November: 6pm in Douala, Lagos and Paris, 5pm in Accra and Dakar, 8pm in Nairobi.
+A top-four clash: Inter are 2nd and Como 4th, just 2 points behind.
+Inter have won all 5 home games this season. Como have won 4 in a row and just scored 9 in Lens in the Champions League.
+Como's attack is on fire and Inter always score at San Siro.
+My pick: both teams to score. Bigger odds: Inter win and both teams to score.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+Un choc du haut de tableau : l'Inter est 2e et Côme 4e, à seulement 2 points.
+L'Inter a gagné ses 5 matchs à domicile cette saison. Côme reste sur 4 victoires de suite et vient de marquer 9 buts à Lens en Ligue des champions.
+L'attaque de Côme est en feu, et l'Inter marque toujours à San Siro.
+Mon choix : les deux équipes marquent. Option plus grosse cote : l'Inter gagne et les deux équipes marquent.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 20:45
+competition: Ligue 1
+equipe1: Lens
+equipe2: Marseille
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote:
+bookmaker: 1xbet
+proba: 40-26-34
+score: 2-1
+analyse_en: Kick-off Sunday 8 November: 8:45pm in Douala, Lagos and Paris, 7:45pm in Accra and Dakar, 10:45pm in Nairobi.
+Marseille have won their last 4 Ligue 1 games and just won 1-0 in Leverkusen on Thursday.
+Lens are strong at Bollaert (3 wins in 4), even if they just lost 9-1 to Como in the Champions League.
+Two teams that attack, a hot stadium: goals are expected on both sides.
+My pick: both teams to score. Bigger odds: both teams to score and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 20h45 à Douala et à Paris, 19h45 à Abidjan et Dakar.
+Marseille a gagné ses 4 derniers matchs de Ligue 1 et vient de s'imposer 1-0 à Leverkusen jeudi.
+Lens est solide à Bollaert (3 victoires en 4 matchs), même s'il vient de prendre 9-1 contre Côme en Ligue des champions.
+Deux équipes qui attaquent et un stade bouillant : j'attends des buts des deux côtés.
+Mon choix : les deux équipes marquent. Option plus grosse cote : les deux équipes marquent et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 20:45
+competition: Serie A
+equipe1: Fiorentina
+equipe2: Juventus
+pronostic: Juventus ou match nul
+pronostic_en: Juventus or draw
+pronostic_es: Juventus o empate
+pronostic_ar: يوفنتوس أو التعادل
+cote:
+bookmaker: 1xbet
+proba: 28-30-42
+score: 1-1
+analyse_en: Kick-off Sunday 8 November: 8:45pm in Douala, Lagos and Paris, 7:45pm in Accra and Dakar, 10:45pm in Nairobi.
+Fiorentina are 16th and haven't won at home this season (2 draws, 3 defeats).
+Juventus are 7th but are coming back into form: they won 2-1 in Alkmaar on Thursday in the Europa League.
+This derby is always intense, but Juve have more quality.
+My pick: Juventus or draw. Bigger odds: Juventus to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 20h45 à Douala et à Paris, 19h45 à Abidjan et Dakar.
+La Fiorentina est 16e et n'a pas encore gagné à domicile cette saison (2 nuls, 3 défaites).
+La Juventus est 7e mais retrouve la forme : elle a gagné 2-1 à Alkmaar jeudi en Ligue Europa.
+Ce match est toujours très disputé, mais la Juve a plus de qualité.
+Mon choix : Juventus ou match nul. Option plus grosse cote : victoire de la Juventus.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-08 21:00
+competition: Liga
+equipe1: Atlético Madrid
+equipe2: Barcelone
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+pronostic_ar: كلا الفريقين يسجل
+cote:
+bookmaker: 1xbet
+proba: 36-26-38
+score: 2-2
+analyse_en: Kick-off Sunday 8 November: 9pm in Douala, Lagos and Paris, 8pm in Accra and Dakar, 11pm in Nairobi.
+The match of the weekend: Barcelona are top of La Liga, and Atlético are 2nd, just 2 points behind.
+Atlético have won their last 5 league games. Barça have won 4 of their last 5 and just beat Aston Villa 3-0 in the Champions League.
+Barça score a lot, and Atlético, at home at the Metropolitano, almost always find the net.
+My pick: both teams to score. Bigger odds: both teams to score and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 8 novembre : 21h à Douala et à Paris, 20h à Abidjan et Dakar.
+Le match du week-end : le Barça est leader de la Liga et l'Atlético 2e, à seulement 2 points.
+L'Atlético a gagné ses 5 derniers matchs de championnat. Le Barça en a gagné 4 sur 5 et vient de battre Aston Villa 3-0 en Ligue des champions.
+Le Barça marque beaucoup, et l'Atlético, au Metropolitano, trouve presque toujours le chemin des filets.
+Mon choix : les deux équipes marquent. Option plus grosse cote : les deux équipes marquent et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.

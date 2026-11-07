@@ -6571,7 +6571,7 @@ COMP_L = {"Ligue des Champions": {"en": "Champions League", "es": "Liga de Campe
           "Bundesliga": {"en": "Bundesliga", "es": "Bundesliga", "ar": "الدوري الألماني"},
           "CAN": {"en": "AFCON", "es": "Copa Africana", "ar": "كأس أمم أفريقيا"},
           "Éliminatoires CAN 2027": {"en": "AFCON 2027 Qualifiers", "es": "Clasificación Copa Africana 2027", "ar": "تصفيات كأس أمم أفريقيا 2027"}}
-TEAM_L = {"Cameroun": {"en": "Cameroon", "es": "Camerún"}, "Namibie": {"en": "Namibia", "es": "Namibia"}, "Milan": {"en": "AC Milan", "es": "AC Milan"}, "Inter": {"en": "Inter Milan", "es": "Inter de Milán"}, "Barcelone": {"en": "Barcelona", "es": "Barcelona"}, "Naples": {"en": "Napoli", "es": "Nápoles"},
+TEAM_L = {"Cameroun": {"en": "Cameroon", "es": "Camerún"}, "Valence": {"en": "Valencia", "es": "Valencia"}, "Namibie": {"en": "Namibia", "es": "Namibia"}, "Milan": {"en": "AC Milan", "es": "AC Milan"}, "Inter": {"en": "Inter Milan", "es": "Inter de Milán"}, "Barcelone": {"en": "Barcelona", "es": "Barcelona"}, "Naples": {"en": "Napoli", "es": "Nápoles"},
           "Sporting Portugal": {"en": "Sporting CP", "es": "Sporting de Portugal"},
           "Séville": {"en": "Sevilla", "es": "Sevilla"},
           "Slavia Prague": {"en": "Slavia Prague", "es": "Slavia de Praga"}, "Bayern Munich": {"en": "Bayern Munich", "es": "Bayern de Múnich"},
