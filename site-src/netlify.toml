@@ -660,6 +660,12 @@
   force = true
 
 [[redirects]]
+  from = "/nba-predictions"
+  to = "/nba-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/news"
   to = "/news.html"
   status = 301
@@ -780,6 +786,12 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-atlanta-hawks-los-angeles-lakers-2026-11-10"
+  to = "/prediction-atlanta-hawks-los-angeles-lakers-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-atletico-madrid-barcelona-2026-11-08"
   to = "/prediction-atletico-madrid-barcelona-2026-11-08.html"
   status = 301
@@ -834,6 +846,12 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-charlotte-hornets-cleveland-cavaliers-2026-11-10"
+  to = "/prediction-charlotte-hornets-cleveland-cavaliers-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-crystal-palace-hoffenheim-2026-11-05"
   to = "/prediction-crystal-palace-hoffenheim-2026-11-05.html"
   status = 301
@@ -842,6 +860,12 @@
 [[redirects]]
   from = "/prediction-crystal-palace-liverpool-2026-11-08"
   to = "/prediction-crystal-palace-liverpool-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-detroit-pistons-washington-wizards-2026-11-10"
+  to = "/prediction-detroit-pistons-washington-wizards-2026-11-10.html"
   status = 301
   force = true
 
@@ -860,6 +884,18 @@
 [[redirects]]
   from = "/prediction-getafe-brighton-2026-11-05"
   to = "/prediction-getafe-brighton-2026-11-05.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-golden-state-warriors-new-orleans-pelicans-2026-11-10"
+  to = "/prediction-golden-state-warriors-new-orleans-pelicans-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-houston-rockets-denver-nuggets-2026-11-10"
+  to = "/prediction-houston-rockets-denver-nuggets-2026-11-10.html"
   status = 301
   force = true
 
@@ -908,6 +944,12 @@
 [[redirects]]
   from = "/prediction-napoli-lazio-2026-11-08"
   to = "/prediction-napoli-lazio-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-phoenix-suns-san-antonio-spurs-2026-11-10"
+  to = "/prediction-phoenix-suns-san-antonio-spurs-2026-11-10.html"
   status = 301
   force = true
 
@@ -1034,6 +1076,12 @@
 [[redirects]]
   from = "/pronostic-atalanta-kairat-almaty-2026-11-05"
   to = "/pronostic-atalanta-kairat-almaty-2026-11-05.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-atlanta-hawks-los-angeles-lakers-2026-11-10"
+  to = "/pronostic-atlanta-hawks-los-angeles-lakers-2026-11-10.html"
   status = 301
   force = true
 
@@ -1176,6 +1224,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-charlotte-hornets-cleveland-cavaliers-2026-11-10"
+  to = "/pronostic-charlotte-hornets-cleveland-cavaliers-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-chelsea-manchester-united-2026-10-31"
   to = "/pronostic-chelsea-manchester-united-2026-10-31.html"
   status = 301
@@ -1208,6 +1262,12 @@
 [[redirects]]
   from = "/pronostic-crystal-palace-liverpool-2026-11-08"
   to = "/pronostic-crystal-palace-liverpool-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-detroit-pistons-washington-wizards-2026-11-10"
+  to = "/pronostic-detroit-pistons-washington-wizards-2026-11-10.html"
   status = 301
   force = true
 
@@ -1268,6 +1328,18 @@
 [[redirects]]
   from = "/pronostic-getafe-brighton-2026-11-05"
   to = "/pronostic-getafe-brighton-2026-11-05.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-golden-state-warriors-new-orleans-pelicans-2026-11-10"
+  to = "/pronostic-golden-state-warriors-new-orleans-pelicans-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-houston-rockets-denver-nuggets-2026-11-10"
+  to = "/pronostic-houston-rockets-denver-nuggets-2026-11-10.html"
   status = 301
   force = true
 
@@ -1452,8 +1524,20 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-nba"
+  to = "/pronostic-nba.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-nottingham-forest-arsenal-2026-10-18"
   to = "/pronostic-nottingham-forest-arsenal-2026-10-18.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-phoenix-suns-san-antonio-spurs-2026-11-10"
+  to = "/pronostic-phoenix-suns-san-antonio-spurs-2026-11-10.html"
   status = 301
   force = true
 

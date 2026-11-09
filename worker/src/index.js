@@ -477,7 +477,9 @@ async function sendAnalyses(env, date = new Date()) {
   const day = new Date(date.getTime() + 3600000).toISOString().slice(0, 10); // date du jour a Douala (UTC+1)
   let list = [];
   try { list = await (await fetch(`${SITE}/matchs.json?t=${Date.now()}`)).json(); } catch (e) { return "analyses : matchs.json illisible (" + e.message + ")"; }
-  const today = list.filter((m) => m.d === day).slice(0, 10);
+  // matchs du jour + matchs de la nuit suivante avant 6h (NBA, joues entre 1h et 4h30 a Douala)
+  const next = new Date(new Date(day + "T00:00:00Z").getTime() + 86400000).toISOString().slice(0, 10);
+  const today = list.filter((m) => m.d === day || (m.d === next && m.h < "06:00")).slice(0, 10);
   if (!today.length) return "analyses : aucun match aujourd'hui";
   // bilingue : chaque match en francais puis en anglais
   const build = (withLinksEn) => {

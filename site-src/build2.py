@@ -6103,7 +6103,7 @@ def load_matchs():
         if not lines: continue
         m, key = {}, None
         for l in lines:
-            mm = re.match(r"^\s*(date|competition|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|combine|proba|score|images?|analyse_en|analyse_ar|analyse)\s*:\s*(.*)$", l, re.I)
+            mm = re.match(r"^\s*(date|competition|sport|equipe1|equipe2|pronostic_en|pronostic_es|pronostic_ar|pronostic|cote|bookmaker|resultat|combine|proba|score|images?|analyse_en|analyse_ar|analyse)\s*:\s*(.*)$", l, re.I)
             if mm and key != "analyse":
                 key = mm.group(1).lower(); m[key] = mm.group(2).strip()
             elif key in ("analyse", "analyse_en", "analyse_ar"):
@@ -6129,11 +6129,19 @@ def _date_fr(dt):
 
 _RES_FR = {"gagne": ("✅ Gagné", "win"), "gagné": ("✅ Gagné", "win"), "perdu": ("❌ Perdu", "lose"), "rembourse": ("↩️ Remboursé", "void"), "remboursé": ("↩️ Remboursé", "void")}
 
+SPORT_EMO = {"foot": "⚽", "basket": "🏀", "tennis": "🎾"}
+SPORT_LD = {"foot": "Football", "basket": "Basketball", "tennis": "Tennis"}
+def sport_of(m):
+    s = (m.get("sport") or "foot").strip().lower()
+    return {"football": "foot", "basketball": "basket", "nba": "basket"}.get(s, s) if s else "foot"
+def is_foot(m): return sport_of(m) == "foot"
+def emo(m): return SPORT_EMO.get(sport_of(m), "⚽")
+
 def match_card(m, link=True):
     res = _RES_FR.get(m.get("resultat", "").lower())
     status = f'<span class="mstatus {res[1]}">{res[0]}</span>' if res else '<span class="mstatus soon">À venir</span>'
     cote = f'<b>@{html.escape(m["cote"])}</b>' if m.get("cote") else ""
-    inner = (f'<div class="mmeta">{html.escape(m.get("competition", "Football"))} · {m["dt"].day} {_MOIS_FR[m["dt"].month-1]} · {m["dt"]:%H:%M}</div>'
+    inner = (f'<div class="mmeta">{"" if is_foot(m) else emo(m) + " "}{html.escape(m.get("competition", "Football"))} · {m["dt"].day} {_MOIS_FR[m["dt"].month-1]} · {m["dt"]:%H:%M}</div>'
              f'<div class="mteams"><b>{html.escape(m["equipe1"])}</b><span>vs</span><b>{html.escape(m["equipe2"])}</b></div>'
              f'<div class="mpick"><span>{html.escape(m["pronostic"])}</span>{cote}</div>{status}')
     return f'<a class="mcard" href="{m["slug"]}.html">{inner}</a>' if link else f'<div class="mcard big">{inner}</div>'
@@ -6168,44 +6176,45 @@ HOME_VENUE = {
     "Racing Santander": ("El Sardinero", "Santander", "ES"), "Cameroun": ("Cameroun", "", "CM"),
     "Slavia Prague": ("Fortuna Arena", "Prague", "CZ"),
 }
-ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"), "Ligue Conférence": ("UEFA", "https://www.uefa.com"),
+ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"), "Ligue Conférence": ("UEFA", "https://www.uefa.com"), "NBA": ("NBA", "https://www.nba.com"), "Tennis": ("ATP Tour", "https://www.atptour.com"),
              "Ligue 1": ("Ligue de Football Professionnel", "https://www.lfp.fr"), "Premier League": ("Premier League", "https://www.premierleague.com"),
              "Liga": ("LaLiga", "https://www.laliga.com"), "CAN": ("CAF", "https://www.cafonline.com")}
 
 def sports_event_ld(m, desc):
     e1, e2 = m["equipe1"], m["equipe2"]
-    t1, t2 = {"@type": "SportsTeam", "name": e1}, {"@type": "SportsTeam", "name": e2}
-    start = m["dt"]; end = start + datetime.timedelta(hours=2)
-    stade, ville, pays = HOME_VENUE.get(e1, (f"Stade de {e1}", "", ""))
+    _typ = "Person" if sport_of(m) == "tennis" else "SportsTeam"
+    t1, t2 = {"@type": _typ, "name": e1}, {"@type": _typ, "name": e2}
+    start = m["dt"]; end = start + datetime.timedelta(hours=2 if is_foot(m) else 3)
+    stade, ville, pays = HOME_VENUE.get(e1, (f"Stade de {e1}" if is_foot(m) else (m.get("competition") or "Arena"), "", ""))
     addr = {"@type": "PostalAddress", "addressLocality": ville or e1}
     if pays: addr["addressCountry"] = pays
     org = ORGANIZER.get(m.get("competition", ""), (m.get("competition", "Football"), BASE))
     return {"@context": "https://schema.org", "@type": "SportsEvent", "name": f"{e1} vs {e2}",
-            "description": desc, "sport": "Football",
+            "description": desc, "sport": SPORT_LD.get(sport_of(m), "Football"),
             "startDate": start.strftime("%Y-%m-%dT%H:%M") + "+01:00",   # heures saisies en heure du Cameroun
             "endDate": end.strftime("%Y-%m-%dT%H:%M") + "+01:00",
             "eventStatus": "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "image": [f"{BASE}/og-cousinmarc-v3.jpg"],
-            "homeTeam": t1, "awayTeam": t2, "competitor": [t1, t2], "performer": [t1, t2],
+            **({"homeTeam": t1, "awayTeam": t2} if _typ == "SportsTeam" else {}), "competitor": [t1, t2], "performer": [t1, t2],
             "location": {"@type": "Place", "name": stade, "address": addr},
             "organizer": {"@type": "Organization", "name": org[0], "url": org[1]}}
 
 # ---------------------------------------------------------------- Probabilites + score probable + FAQ (comme Forebet)
 _PB_TXT = {
-    "fr": {"h": "📈 Mes probabilités", "win": "Victoire {t}", "draw": "Match nul", "score": "Score probable", "note": "Mon estimation personnelle, d'après la forme des deux équipes et les cotes du marché.",
+    "fr": {"a1two": "D'après mon estimation, {f} part favori avec {p} % de chances de gagner, contre {o} % pour l'adversaire.", "a4b": 'Le match commence le {w} (heure de Douala).', "h": "📈 Mes probabilités", "win": "Victoire {t}", "draw": "Match nul", "score": "Score probable", "note": "Mon estimation personnelle, d'après la forme des deux équipes et les cotes du marché.",
            "faq": "Questions fréquentes", "q1": "Qui va gagner {a} – {b} ?", "q2": "Quel est le score probable de {a} – {b} ?", "q3": "Quel est le pronostic de Cousin Marc pour {a} – {b} ?", "q4": "À quelle heure se joue {a} – {b} ?",
            "a1fav": "D'après mon estimation, {f} part favori avec {p} % de chances de gagner. Le match nul est à {d} % et l'autre équipe à {o} %.",
            "a1eq": "C'est un match très serré : {p1} % pour {a}, {d} % pour le nul et {p2} % pour {b}.",
            "a2": "Mon score probable est {s}. C'est le résultat le plus logique selon moi, pas une certitude.",
            "a3": "Mon pronostic : {p}.", "a3c": " Cote : {c}.", "a4": "Le coup d'envoi est le {w} (heure de Douala et de Paris en hiver).", "res": "Score final : voir l'analyse ci-dessus."},
-    "en": {"h": "📈 My probabilities", "win": "{t} win", "draw": "Draw", "score": "Predicted score", "note": "My own estimate, based on both teams' form and market odds.",
+    "en": {"a1two": 'By my estimate, {f} are the favourites with a {p}% chance of winning, against {o}% for the opponent.', "a4b": 'The game starts on {w} (Lagos and Douala time).', "h": "📈 My probabilities", "win": "{t} win", "draw": "Draw", "score": "Predicted score", "note": "My own estimate, based on both teams' form and market odds.",
            "faq": "Frequently asked questions", "q1": "Who will win {a} vs {b}?", "q2": "What is the predicted score for {a} vs {b}?", "q3": "What is Cousin Marc's prediction for {a} vs {b}?", "q4": "What time is {a} vs {b}?",
            "a1fav": "By my estimate, {f} are the favourites with a {p}% chance of winning. The draw is at {d}% and the other side at {o}%.",
            "a1eq": "It is a very tight game: {p1}% for {a}, {d}% for the draw and {p2}% for {b}.",
            "a2": "My predicted score is {s}. It is the most logical outcome in my view, not a certainty.",
            "a3": "My prediction: {p}.", "a3c": " Odds: {c}.", "a4": "Kick-off is on {w} (Lagos and Douala time).", "res": ""},
-    "ar": {"h": "📈 احتمالاتي", "win": "فوز {t}", "draw": "تعادل", "score": "النتيجة المتوقعة", "note": "تقديري الشخصي بناءً على مستوى الفريقين واحتمالات السوق.",
+    "ar": {"a1two": 'حسب تقديري، {f} هو المرشح الأوفر حظًا بنسبة فوز {p}٪ مقابل {o}٪ للمنافس.', "a4b": 'تبدأ المباراة يوم {w}.', "h": "📈 احتمالاتي", "win": "فوز {t}", "draw": "تعادل", "score": "النتيجة المتوقعة", "note": "تقديري الشخصي بناءً على مستوى الفريقين واحتمالات السوق.",
            "faq": "أسئلة شائعة", "q1": "من سيفوز في مباراة {a} و{b}؟", "q2": "ما هي النتيجة المتوقعة لمباراة {a} و{b}؟", "q3": "ما هو توقع كوزين مارك لمباراة {a} و{b}؟", "q4": "متى تبدأ مباراة {a} و{b}؟",
            "a1fav": "حسب تقديري، {f} هو المرشح الأوفر حظًا بنسبة فوز {p}٪. التعادل {d}٪ والفريق الآخر {o}٪.",
            "a1eq": "مباراة متقاربة جدًا: {p1}٪ لـ{a} و{d}٪ للتعادل و{p2}٪ لـ{b}.",
@@ -6216,6 +6225,7 @@ _PB_TXT = {
 def _proba(m):
     try:
         p = [int(x) for x in re.split(r"[-/ ]+", m.get("proba", "").strip()) if x]
+        if len(p) == 2 and sum(p) in (99, 100, 101): return [p[0], 0, p[1]]
         return p if len(p) == 3 and sum(p) in (99, 100, 101) else None
     except ValueError:
         return None
@@ -6225,7 +6235,8 @@ def proba_html(m, lang, e1, e2, pick, when):
     p = _proba(m)
     if not p: return "", ""
     T = _PB_TXT[lang]; es = html.escape
-    rows = [(T["win"].format(t=e1), p[0], "#16a34a"), (T["draw"], p[1], "#94a3b8"), (T["win"].format(t=e2), p[2], "#2563eb")]
+    two = not is_foot(m)
+    rows = [(T["win"].format(t=e1), p[0], "#16a34a")] + ([] if two else [(T["draw"], p[1], "#94a3b8")]) + [(T["win"].format(t=e2), p[2], "#2563eb")]
     bars = "".join(f'<div style="display:flex;align-items:center;gap:10px;margin:8px 0"><span style="flex:0 0 42%;font-size:.95em">{es(lab)}</span>'
                    f'<span style="flex:1;background:rgba(148,163,184,.25);border-radius:99px;height:12px;overflow:hidden"><span style="display:block;height:100%;width:{v}%;background:{c};border-radius:99px"></span></span>'
                    f'<b style="flex:0 0 3.2em;text-align:end">{v}%</b></div>' for lab, v, c in rows)
@@ -6233,7 +6244,10 @@ def proba_html(m, lang, e1, e2, pick, when):
     block = (f'<div style="margin-top:20px;padding:16px 18px;border-radius:14px;border:1px solid rgba(148,163,184,.4)"><h3 style="margin:0 0 6px">{T["h"]}</h3>{bars}'
              + (f'<p style="margin:12px 0 4px;font-size:1.1em">{T["score"]}{" :" if lang == "fr" else ":"} <b>{es(e1)} {sc} {es(e2)}</b></p>' if sc else "")
              + f'<p style="margin:6px 0 0;font-size:.85em;opacity:.75">{T["note"]}</p></div>')
-    if max(p[0], p[2]) - min(p[0], p[2]) <= 8:
+    if two:
+        fav, pf, po = (e1, p[0], p[2]) if p[0] >= p[2] else (e2, p[2], p[0])
+        a1 = T["a1two"].format(f=fav, p=pf, o=po)
+    elif max(p[0], p[2]) - min(p[0], p[2]) <= 8:
         a1 = T["a1eq"].format(p1=p[0], d=p[1], p2=p[2], a=e1, b=e2)
     else:
         fav, pf, po = (e1, p[0], p[2]) if p[0] > p[2] else (e2, p[2], p[0])
@@ -6241,7 +6255,7 @@ def proba_html(m, lang, e1, e2, pick, when):
     qa = [(T["q1"].format(a=e1, b=e2), a1)]
     if sc: qa.append((T["q2"].format(a=e1, b=e2), T["a2"].format(s=f"{e1} {m['score'].strip()} {e2}")))
     qa.append((T["q3"].format(a=e1, b=e2), T["a3"].format(p=pick) + (T["a3c"].format(c=m["cote"]) if m.get("cote") else "")))
-    qa.append((T["q4"].format(a=e1, b=e2), T["a4"].format(w=when)))
+    qa.append((T["q4"].format(a=e1, b=e2), (T["a4"] if not two else T["a4b"]).format(w=when)))
     faq = f'<section><h2>{T["faq"]}</h2>' + "".join(f'<h3>{es(q)}</h3><p>{es(a)}</p>' for q, a in qa) + "</section>"
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
     return block + "", faq + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
@@ -6418,7 +6432,7 @@ def match_page(m):
 {_pb[0]}
 {team_links_html(m, "fr")}
 {f'<h3 style="margin-top:22px">🎫 Mes tickets avec ce match</h3>{tickets}' if tickets else ""}
-{share_html(f'{BASE}/{m["slug"]}.html', f'⚽ {e1} – {e2} : le pronostic de Cousin Marc → {m["pronostic"]}. Code promo FFN pour ton bonus.', "fr")}
+{share_html(f'{BASE}/{m["slug"]}.html', f'{emo(m)} {e1} – {e2} : le pronostic de Cousin Marc → {m["pronostic"]}. Code promo FFN pour ton bonus.', "fr")}
 <div class="note">Un pronostic n'est jamais une certitude. Ne mise que ce que tu peux te permettre de perdre. 18+</div>
 </section>
 <section>
@@ -6470,7 +6484,7 @@ def match_page_en(m):
 {paras}
 {_pb[0]}
 {team_links_html(m, "en")}
-{share_html(canon, f'⚽ {e1} vs {e2}: Cousin Marc\'s prediction → {pick}. Promo code FFN for your bonus.', "en")}
+{share_html(canon, f'{emo(m)} {e1} vs {e2}: Cousin Marc\'s prediction → {pick}. Promo code FFN for your bonus.', "en")}
 <div class="note">A prediction is never a certainty. Only stake what you can afford to lose. 18+</div>
 </section>
 <section>
@@ -6522,7 +6536,7 @@ def match_page_ar(m):
 <h2><span class="num">01</span> تحليلي للمباراة</h2>
 {paras}
 {_pb[0]}
-{share_html(canon, f'⚽ {e1} ضد {e2}: توقع كوزين مارك ← {pick}. الرمز الترويجي FFN للحصول على المكافأة.', "ar")}
+{share_html(canon, f'{emo(m)} {e1} ضد {e2}: توقع كوزين مارك ← {pick}. الرمز الترويجي FFN للحصول على المكافأة.', "ar")}
 <div class="note">التوقع ليس مضمونًا أبدًا. لا تراهن إلا بما يمكنك تحمّل خسارته. +18</div>
 </section>
 <section>
@@ -6564,6 +6578,8 @@ _MOIS_L = {"en": _MOIS_EN, "es": _MOIS_ES, "ar": _MOIS_AR}
 COMP_L = {"Ligue des Champions": {"en": "Champions League", "es": "Liga de Campeones", "ar": "دوري أبطال أوروبا"},
           "Ligue Europa": {"en": "Europa League", "es": "Europa League", "ar": "الدوري الأوروبي"},
           "Ligue Conférence": {"en": "Conference League", "es": "Conference League", "ar": "دوري المؤتمر الأوروبي"},
+          "NBA": {"en": "NBA", "es": "NBA", "ar": "الدوري الأمريكي لكرة السلة"},
+          "Tennis": {"en": "Tennis", "es": "Tenis", "ar": "التنس"},
           "Ligue 1": {"en": "Ligue 1", "es": "Ligue 1", "ar": "الدوري الفرنسي"},
           "Premier League": {"en": "Premier League", "es": "Premier League", "ar": "الدوري الإنجليزي"},
           "Liga": {"en": "La Liga", "es": "LaLiga", "ar": "الدوري الإسباني"},
@@ -6713,6 +6729,12 @@ COMP_PAGES = {
  "Ligue Conférence": ("pronostic-ligue-conference", "conference-league-predictions",
    "La Ligue Conférence, troisième coupe d'Europe, se joue aussi le jeudi : Monaco, Brighton, l'Atalanta, Ajax… Souvent un gros favori face à un petit club, de quoi trouver des cotes intéressantes. Mes pronostics et leurs résultats.",
    "The Conference League, Europe's third cup, is also played on Thursdays: Monaco, Brighton, Atalanta, Ajax… Often a big favourite against a smaller club, a good place to find value. My predictions and their results."),
+ "NBA": ("pronostic-nba", "nba-predictions",
+   "Mes pronostics NBA : les Lakers, les Celtics, les Warriors, le Thunder… Les matchs se jouent la nuit en Afrique (entre 1h et 4h30 à Douala) : je publie mon analyse la veille, avec mes probabilités et le score probable, puis le résultat le lendemain.",
+   "My NBA predictions: the Lakers, Celtics, Warriors, Thunder… Games are played overnight in Africa (between 1am and 4:30am in Douala and Lagos): I post my analysis the day before, with my probabilities and predicted score, then the result the next day."),
+ "Tennis": ("pronostic-tennis", "tennis-predictions",
+   "Mes pronostics tennis sur les grands tournois (Masters de Turin, Grand Chelem, Masters 1000) : pas de match nul, donc des paris simples sur le vainqueur, le nombre de sets ou de jeux. Mon analyse et le résultat de chaque match.",
+   "My tennis predictions for the big tournaments (ATP Finals, Grand Slams, Masters 1000): no draws, so simple bets on the winner, the number of sets or games. My analysis and the result of every match."),
  "Premier League": ("pronostic-premier-league", "premier-league-predictions",
    "La Premier League est le championnat le plus regardé en Afrique. Arsenal, Manchester City, Liverpool, Chelsea et Manchester United : j'analyse les grosses affiches du week-end.",
    "The Premier League is the most watched league in Africa, from Lagos to Nairobi. Arsenal, Manchester City, Liverpool, Chelsea and Manchester United: I analyse the big weekend games."),
@@ -6783,8 +6805,8 @@ def _itemlist(ms, lang, name):
 def day_page(lang, offset):
     d = (_DLA_NOW + datetime.timedelta(days=offset)).date()
     slug = DAY_SLUGS[lang][offset]
-    ms = sorted([m for m in MATCHS if m["dt"].date() == d], key=lambda m: m["dt"])
-    nxt = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"].date() > d], key=lambda m: m["dt"])[:6]
+    ms = sorted([m for m in MATCHS if m["dt"].date() == d and is_foot(m)], key=lambda m: m["dt"])
+    nxt = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"].date() > d and is_foot(m)], key=lambda m: m["dt"])[:6]
     lab = _day_lab(d, lang)
     names = ", ".join(f'{_team_l(m["equipe1"], lang) if lang != "fr" else m["equipe1"]}–{_team_l(m["equipe2"], lang) if lang != "fr" else m["equipe2"]}' for m in ms[:3])
     alt = (f"{BASE}/{DAY_SLUGS['fr'][offset]}.html", f"{BASE}/{DAY_SLUGS['en'][offset]}.html", None, f"{BASE}/{DAY_SLUGS_AR[offset]}.html")
@@ -6927,7 +6949,7 @@ def day_page_ar(offset):
     d = (_DLA_NOW + datetime.timedelta(days=offset)).date()
     slug = DAY_SLUGS_AR[offset]
     ar = _ar_ms()
-    ms = sorted([m for m in ar if m["dt"].date() == d], key=lambda m: m["dt"])
+    ms = sorted([m for m in ar if m["dt"].date() == d and is_foot(m)], key=lambda m: m["dt"])
     nxt = sorted([m for m in ar if not m.get("resultat") and m["dt"].date() > d], key=lambda m: m["dt"])[:6]
     lab = _day_lab_ar(d)
     word = "اليوم" if offset == 0 else "الغد"
