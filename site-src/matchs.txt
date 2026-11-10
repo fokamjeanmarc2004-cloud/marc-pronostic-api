@@ -1853,3 +1853,133 @@ Les Warriors sont lancés : je les vois gagner chez eux.
 Mon choix : victoire des Warriors. Option plus grosse cote : les Warriors gagnent et plus de 225,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
 Score final : Golden State Warriors 138-87 New Orleans Pelicans. Pronostic gagné ✅ : large victoire des Warriors.
+---
+date: 2026-11-11 01:30
+competition: NBA
+sport: basket
+equipe1: New York Knicks
+equipe2: Milwaukee Bucks
+pronostic: Victoire des Knicks
+pronostic_en: Knicks to win
+pronostic_es: Ganan los Knicks
+pronostic_ar: فوز نيكس
+cote:
+bookmaker: 1xbet
+proba: 85-15
+score: 118-102
+analyse_en: Tip-off Wednesday 11 November at 1:30am in Douala and Lagos (Tuesday 7:30pm in New York), 12:30am in Accra and Dakar.
+Milwaukee are in crisis: 1 win and 9 defeats, and still without a win on the road (0-4).
+New York are 5-4 and play at home at Madison Square Garden.
+Bookmakers make the Knicks huge favourites (around -15.5 points).
+My pick: Knicks to win. Bigger odds: Knicks win by more than 9.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mercredi 11 novembre à 1h30 du matin à Douala (mardi 19h30 à New York), 0h30 à Abidjan et Dakar.
+Milwaukee est en crise : 1 victoire et 9 défaites, et toujours aucune victoire à l'extérieur (0-4).
+New York est à 5 victoires et 4 défaites et joue à domicile, au Madison Square Garden.
+Les bookmakers font des Knicks de très grands favoris (environ 15,5 points d'avance).
+Mon choix : victoire des Knicks. Option plus grosse cote : les Knicks gagnent avec plus de 9,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-11 03:00
+competition: NBA
+sport: basket
+equipe1: Utah Jazz
+equipe2: Miami Heat
+pronostic: Victoire du Heat
+pronostic_en: Heat to win
+pronostic_es: Gana el Heat
+pronostic_ar: فوز هيت
+cote:
+bookmaker: 1xbet
+proba: 25-75
+score: 108-119
+analyse_en: Tip-off Wednesday 11 November at 3am in Douala and Lagos (Tuesday 7pm in Salt Lake City), 2am in Accra and Dakar.
+Utah are 1-9 and have lost 4 of their 5 home games.
+Miami are 4-6, but much better on the road (3-3) than at home.
+Bookmakers make the Heat favourites by around 9.5 points.
+My pick: Heat to win. Bigger odds: Heat win and over 220.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mercredi 11 novembre à 3h du matin à Douala (mardi 19h à Salt Lake City), 2h à Abidjan et Dakar.
+Utah est à 1 victoire et 9 défaites et a perdu 4 de ses 5 matchs à domicile.
+Miami est à 4-6, mais bien meilleur à l'extérieur (3-3) qu'à domicile.
+Les bookmakers donnent le Heat favori d'environ 9,5 points.
+Mon choix : victoire du Heat. Option plus grosse cote : le Heat gagne et plus de 220,5 points.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-11 03:00
+competition: NBA
+sport: basket
+equipe1: Phoenix Suns
+equipe2: LA Clippers
+pronostic: Victoire des Suns
+pronostic_en: Suns to win
+pronostic_es: Ganan los Suns
+pronostic_ar: فوز صنز
+cote:
+bookmaker: 1xbet
+proba: 64-36
+score: 116-109
+analyse_en: Tip-off Wednesday 11 November at 3am in Douala and Lagos (Tuesday 7pm in Phoenix), 2am in Accra and Dakar.
+Phoenix lost heavily to San Antonio last night, but all 3 of their wins have come at home (3-3).
+The Clippers are 2-7 and have lost all 4 of their road games.
+Bookmakers make Phoenix favourites by around 4.5 points.
+My pick: Suns to win. Bigger odds: Suns win by more than 4.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mercredi 11 novembre à 3h du matin à Douala (mardi 19h à Phoenix), 2h à Abidjan et Dakar.
+Phoenix a pris une lourde défaite contre San Antonio la nuit dernière, mais ses 3 victoires ont toutes été obtenues à domicile (3-3).
+Les Clippers sont à 2 victoires et 7 défaites et ont perdu leurs 4 matchs à l'extérieur.
+Les bookmakers donnent Phoenix favori d'environ 4,5 points.
+Mon choix : victoire des Suns. Option plus grosse cote : les Suns gagnent avec plus de 4,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-11 04:00
+competition: NBA
+sport: basket
+equipe1: Sacramento Kings
+equipe2: Orlando Magic
+pronostic: Victoire du Magic
+pronostic_en: Magic to win
+pronostic_es: Gana el Magic
+pronostic_ar: فوز ماجيك
+cote:
+bookmaker: 1xbet
+proba: 32-68
+score: 105-113
+analyse_en: Tip-off Wednesday 11 November at 4am in Douala and Lagos (Tuesday 7pm in Sacramento), 3am in Accra and Dakar.
+Sacramento are 1-9 and have lost all 5 of their home games.
+Orlando are only 2-7, but both their wins came on the road (2-3).
+Bookmakers make the Magic favourites by around 5.5 points.
+My pick: Magic to win. Bigger odds: Magic win and under 221.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mercredi 11 novembre à 4h du matin à Douala (mardi 19h à Sacramento), 3h à Abidjan et Dakar.
+Sacramento est à 1 victoire et 9 défaites et a perdu ses 5 matchs à domicile.
+Orlando n'est qu'à 2-7, mais ses deux victoires ont été obtenues à l'extérieur (2-3).
+Les bookmakers donnent le Magic favori d'environ 5,5 points.
+Mon choix : victoire du Magic. Option plus grosse cote : le Magic gagne et moins de 221,5 points.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-11 05:00
+competition: NBA
+sport: basket
+equipe1: Portland Trail Blazers
+equipe2: Oklahoma City Thunder
+pronostic: Victoire du Thunder
+pronostic_en: Thunder to win
+pronostic_es: Gana el Thunder
+pronostic_ar: فوز ثاندر
+cote:
+bookmaker: 1xbet
+proba: 42-58
+score: 110-116
+analyse_en: Tip-off Wednesday 11 November at 5am in Douala and Lagos (Tuesday 8pm in Portland), 4am in Accra and Dakar.
+Oklahoma City are 8-2 and unbeaten at home (5-0).
+Portland are a good surprise (6-3), but they are much stronger on the road (5-1) than at home (1-2).
+Bookmakers make the Thunder slight favourites (around -2.5 points): I back them.
+My pick: Thunder to win. Bigger odds: Thunder win and over 225.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mercredi 11 novembre à 5h du matin à Douala (mardi 20h à Portland), 4h à Abidjan et Dakar.
+Oklahoma City est à 8 victoires et 2 défaites, invaincu à domicile (5-0).
+Portland est une bonne surprise (6-3), mais beaucoup plus fort à l'extérieur (5-1) qu'à domicile (1-2).
+Les bookmakers donnent le Thunder légèrement favori (environ 2,5 points d'avance) : je le suis.
+Mon choix : victoire du Thunder. Option plus grosse cote : le Thunder gagne et plus de 225,5 points.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
