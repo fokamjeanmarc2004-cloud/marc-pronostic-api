@@ -1691,6 +1691,7 @@ pronostic_es: Ganan los Lakers
 pronostic_ar: فوز ليكرز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 45-55
 score: 114-119
 analyse_en: Tip-off Tuesday 10 November at 1am in Douala and Lagos (Monday 7pm in Atlanta), midnight in Accra and Dakar.
@@ -1699,12 +1700,14 @@ The Hawks are also hot (4 wins in a row, 7-4), but they concede a lot: 115.5 poi
 The Lakers score more than anyone in the West (121.9 points per game): I back them in a high-scoring game.
 My pick: Lakers to win. Bigger odds: Lakers win and over 225.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Atlanta Hawks 114-124 Los Angeles Lakers. Prediction won ✅: Lakers win.
 analyse: Début du match mardi 10 novembre à 1h du matin à Douala (lundi 19h à Atlanta), minuit à Abidjan et Dakar.
 Les Lakers sont leaders de la Conférence Ouest (9 victoires, 2 défaites) et restent sur 5 victoires de suite. À l'extérieur, ils ont gagné 4 matchs sur 5.
 Les Hawks sont aussi en forme (4 victoires de suite, 7-4), mais ils encaissent beaucoup : 115,5 points par match.
 Les Lakers ont la meilleure attaque de l'Ouest (121,9 points par match) : je les vois gagner dans un match à beaucoup de points.
 Mon choix : victoire des Lakers. Option plus grosse cote : les Lakers gagnent et plus de 225,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Atlanta Hawks 114-124 Los Angeles Lakers. Pronostic gagné ✅ : victoire des Lakers.
 ---
 date: 2026-11-10 01:00
 competition: NBA
@@ -1717,6 +1720,7 @@ pronostic_es: Ganan los Cavaliers
 pronostic_ar: فوز كافالييرز
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 28-72
 score: 101-112
 analyse_en: Tip-off Tuesday 10 November at 1am in Douala and Lagos (Monday 7pm in Charlotte), midnight in Accra and Dakar.
@@ -1725,12 +1729,14 @@ Cleveland are 5-5 and inconsistent, but they have far more talent, and bookmaker
 Charlotte are just 2-4 at home.
 My pick: Cavaliers to win. Bigger odds: Cavaliers win by more than 8.5 points (handicap -8.5).
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Charlotte Hornets 124-112 Cleveland Cavaliers. Prediction lost ❌: Charlotte pulled off the upset.
 analyse: Début du match mardi 10 novembre à 1h du matin à Douala (lundi 19h à Charlotte), minuit à Abidjan et Dakar.
 Charlotte reste sur 6 défaites de suite et a la pire attaque de la ligue : seulement 96,3 points par match.
 Cleveland est à 5 victoires et 5 défaites, irrégulier, mais a beaucoup plus de talent, et les bookmakers en font un net favori (environ 8,5 points d'avance).
 Charlotte n'a gagné que 2 matchs sur 6 à domicile.
 Mon choix : victoire des Cavaliers. Option plus grosse cote : les Cavaliers gagnent avec plus de 8,5 points d'écart (handicap -8,5).
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Charlotte Hornets 124-112 Cleveland Cavaliers. Pronostic perdu ❌ : Charlotte a créé la surprise.
 ---
 date: 2026-11-10 01:00
 competition: NBA
@@ -1743,6 +1749,7 @@ pronostic_es: Ganan los Pistons
 pronostic_ar: فوز بيستونز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 80-20
 score: 116-103
 analyse_en: Tip-off Tuesday 10 November at 1am in Douala and Lagos (Monday 7pm in Detroit), midnight in Accra and Dakar.
@@ -1751,12 +1758,14 @@ Washington have lost 3 in a row and concede 112.5 points per game.
 The Pistons are big favourites (around -11.5 points) and should bounce back after two defeats.
 My pick: Pistons to win. Bigger odds: Pistons win by more than 8.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Detroit Pistons 122-111 Washington Wizards. Prediction won ✅: Pistons win.
 analyse: Début du match mardi 10 novembre à 1h du matin à Douala (lundi 19h à Detroit), minuit à Abidjan et Dakar.
 Detroit est 3e à l'Est (6-3), avec l'une des meilleures défenses de la ligue (103,9 points encaissés par match).
 Washington reste sur 3 défaites de suite et encaisse 112,5 points par match.
 Les Pistons sont grands favoris (environ 11,5 points d'avance) et devraient se relancer après deux défaites.
 Mon choix : victoire des Pistons. Option plus grosse cote : les Pistons gagnent avec plus de 8,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Detroit Pistons 122-111 Washington Wizards. Pronostic gagné ✅ : victoire des Pistons.
 ---
 date: 2026-11-10 02:30
 competition: NBA
@@ -1769,6 +1778,7 @@ pronostic_es: Ganan los Rockets
 pronostic_ar: فوز روكتس
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 66-34
 score: 115-107
 analyse_en: Tip-off Tuesday 10 November at 2:30am in Douala and Lagos (Monday 7:30pm in Houston), 1:30am in Accra and Dakar.
@@ -1777,12 +1787,14 @@ Denver are 5-3 and have won their last 2, but they concede a lot (113.1 points p
 Bookmakers make Houston favourites by around 8.5 points.
 My pick: Rockets to win. Bigger odds: Rockets win and under 225.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Houston Rockets 110-100 Denver Nuggets. Prediction won ✅: Rockets win.
 analyse: Début du match mardi 10 novembre à 2h30 du matin à Douala (lundi 19h30 à Houston), 1h30 à Abidjan et Dakar.
 Houston est à 7 victoires et 3 défaites, solide à domicile (4-1), avec une bonne défense (107 points encaissés par match).
 Denver est à 5-3 et reste sur 2 victoires, mais encaisse beaucoup (113,1 points par match).
 Les bookmakers donnent Houston favori d'environ 8,5 points.
 Mon choix : victoire des Rockets. Option plus grosse cote : les Rockets gagnent et moins de 225,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Houston Rockets 110-100 Denver Nuggets. Pronostic gagné ✅ : victoire des Rockets.
 ---
 date: 2026-11-10 03:00
 competition: NBA
@@ -1795,6 +1807,7 @@ pronostic_es: Ganan los Spurs
 pronostic_ar: فوز سبيرز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 28-72
 score: 108-120
 analyse_en: Tip-off Tuesday 10 November at 3am in Douala and Lagos (Monday 7pm in Phoenix), 2am in Accra and Dakar.
@@ -1803,12 +1816,14 @@ Phoenix are 3-5, even if they are better at home (3-2).
 The Spurs are favourites by around 8.5 points.
 My pick: Spurs to win. Bigger odds: Spurs win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Phoenix Suns 96-122 San Antonio Spurs. Prediction won ✅: big Spurs win.
 analyse: Début du match mardi 10 novembre à 3h du matin à Douala (lundi 19h à Phoenix), 2h à Abidjan et Dakar.
 San Antonio reste sur 8 victoires de suite et est invaincu à l'extérieur (4-0), avec le meilleur écart de points de l'Ouest (+10,3 par match).
 Phoenix est à 3 victoires et 5 défaites, même si l'équipe est meilleure à domicile (3-2).
 Les Spurs sont favoris d'environ 8,5 points.
 Mon choix : victoire des Spurs. Option plus grosse cote : les Spurs gagnent avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Phoenix Suns 96-122 San Antonio Spurs. Pronostic gagné ✅ : large victoire des Spurs.
 ---
 date: 2026-11-10 04:00
 competition: NBA
@@ -1821,6 +1836,7 @@ pronostic_es: Ganan los Warriors
 pronostic_ar: فوز ووريرز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 72-28
 score: 121-112
 analyse_en: Tip-off Tuesday 10 November at 4am in Douala and Lagos (Monday 7pm in San Francisco), 3am in Accra and Dakar.
@@ -1829,9 +1845,11 @@ New Orleans are 4-5 and weak on the road (1-2).
 The Warriors are rolling: I back them at home.
 My pick: Warriors to win. Bigger odds: Warriors win and over 225.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Golden State Warriors 138-87 New Orleans Pelicans. Prediction won ✅: big Warriors win.
 analyse: Début du match mardi 10 novembre à 4h du matin à Douala (lundi 19h à San Francisco), 3h à Abidjan et Dakar.
 Golden State reste sur 7 victoires de suite et a gagné 5 de ses 6 matchs à domicile.
 La Nouvelle-Orléans est à 4 victoires et 5 défaites, et faible à l'extérieur (1-2).
 Les Warriors sont lancés : je les vois gagner chez eux.
 Mon choix : victoire des Warriors. Option plus grosse cote : les Warriors gagnent et plus de 225,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Golden State Warriors 138-87 New Orleans Pelicans. Pronostic gagné ✅ : large victoire des Warriors.
