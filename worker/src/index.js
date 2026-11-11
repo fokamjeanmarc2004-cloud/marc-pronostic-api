@@ -473,23 +473,29 @@ async function sendVip(env, date = new Date()) {
 }
 
 // ---------------------------------------------------------------- 6h : mes pronostics du jour (liens vers les analyses du site)
-async function sendAnalyses(env, date = new Date()) {
+// Treve internationale : jusqu'a cette date (heure de Douala), le canal ne recoit QUE les pronostics (minuit et 6h), pas de promo
+const PAUSE_PROMO_JUSQUA = "2026-11-20";
+function enPause(date) { return new Date(date.getTime() + 3600000).toISOString().slice(0, 10) < PAUSE_PROMO_JUSQUA; }
+
+// moment = "nuit" (envoi de minuit : matchs avant 6h, NBA) ou "jour" (envoi de 6h : matchs a partir de 6h)
+async function sendAnalyses(env, date = new Date(), moment = "jour") {
   const day = new Date(date.getTime() + 3600000).toISOString().slice(0, 10); // date du jour a Douala (UTC+1)
   let list = [];
   try { list = await (await fetch(`${SITE}/matchs.json?t=${Date.now()}`)).json(); } catch (e) { return "analyses : matchs.json illisible (" + e.message + ")"; }
-  // matchs du jour + matchs de la nuit suivante avant 6h (NBA, joues entre 1h et 4h30 a Douala)
-  const next = new Date(new Date(day + "T00:00:00Z").getTime() + 86400000).toISOString().slice(0, 10);
-  const today = list.filter((m) => m.d === day || (m.d === next && m.h < "06:00")).slice(0, 10);
-  if (!today.length) return "analyses : aucun match aujourd'hui";
+  const nuit = moment === "nuit";
+  const today = list.filter((m) => m.d === day && (nuit ? m.h < "06:00" : m.h >= "06:00")).slice(0, 10);
+  if (!today.length) return `analyses (${moment}) : aucun match`;
+  const pause = enPause(date);
   // bilingue : chaque match en francais puis en anglais
   const build = (withLinksEn) => {
-    let s = "⚽ MES PRONOSTICS DU JOUR\n🇬🇧 TODAY'S PREDICTIONS\n";
+    let s = nuit ? "🌙 MES PRONOSTICS DE LA NUIT\n🇬🇧 TONIGHT'S PREDICTIONS\n" : "⚽ MES PRONOSTICS DU JOUR\n🇬🇧 TODAY'S PREDICTIONS\n";
     for (const m of today) {
       s += `\n🕘 ${m.h} · ${m.e1} – ${m.e2}\n✅ ${m.p}\n`;
       if (m.p_en && m.p_en !== m.p) s += `🇬🇧 ${m.p_en}\n`;
       s += `👉 ${SITE}/${m.slug}.html\n`;
       if (withLinksEn && m.slug_en) s += `🇬🇧 ${SITE}/${m.slug_en}.html\n`;
     }
+    if (pause) return s + "\n" + EN.resp;
     return s + "\n🎁 Pas encore de compte ? Inscris-toi avec le code promo FFN pour ton bonus.\n🇬🇧 No account yet? Register with promo code FFN for your bonus.\n\n" + EN.resp;
   };
   let text = build(true);
@@ -570,12 +576,16 @@ export default {
   // 5h00 et 20h00 UTC = 6h00 et 21h00 au Cameroun
   async scheduled(event, env, ctx) {
     const when = new Date(event.scheduledTime);
+    // 23h00 UTC = minuit au Cameroun : pronostics de la nuit (NBA...)
+    if (when.getUTCHours() === 23) { ctx.waitUntil(sendAnalyses(env, when, "nuit").then(console.log).catch((e) => console.log("nuit", e.message))); return; }
+    const pause = enPause(when);
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
-    if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
+    if (pause) console.log("treve : pas de promo");
+    else if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
     else ctx.waitUntil(sendPromo(env, pickIndex(when), when).then(console.log));
     // 6h : reconstruit le site (pages « pronostic foot aujourd'hui / demain » a la bonne date)
     if (when.getUTCHours() === 5) ctx.waitUntil(saveToGithub(env, "site-src/jour.txt", new TextEncoder().encode(when.toISOString().slice(0, 10) + "\n"), "reconstruction du jour").catch((e) => console.log("jour", e.message)));
     // 6h : apres la promo, la liste des analyses du jour (seulement les jours de match)
-    if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, 20000)).then(() => sendAnalyses(env, when)).then(console.log).catch((e) => console.log("analyses", e.message)));
+    if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, pause ? 0 : 20000)).then(() => sendAnalyses(env, when, "jour")).then(console.log).catch((e) => console.log("analyses", e.message)));
   },
 };
