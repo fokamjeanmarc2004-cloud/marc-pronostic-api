@@ -301,6 +301,106 @@ async function handleScores(env, chatId, msgText) {
   }
 }
 
+// ---------------------------------------------------------------- Resultats NBA automatiques (scores ESPN, sans intervention)
+// Chaque matin a 6h et chaque soir a 21h (Douala) : pour chaque match NBA du site deja termine et sans resultat,
+// le bot lit le score officiel sur ESPN, decide gagne / perdu d'apres le pronostic « X to win », et ecrit le resultat dans matchs.txt.
+const AR_RES = { gagne: "التوقع ناجح ✅", perdu: "التوقع خاسر ❌" };
+
+function etDateOf(douala) { // "2026-11-11 01:30" (heure de Douala, UTC+1) -> "20261110" (date du match aux Etats-Unis, heure de New York)
+  const utc = Date.parse(douala.trim().replace(" ", "T") + ":00+01:00");
+  return new Date(utc - 5 * 3600000).toISOString().slice(0, 10).replace(/-/g, "");
+}
+
+export function nbaPending(text, now = new Date()) {
+  const out = [];
+  text.split("\n---\n").forEach((b, i) => {
+    if (!/^competition:\s*NBA\s*$/m.test(b) || /^resultat:/m.test(b)) return;
+    const d = (b.match(/^date:\s*(.+)$/m) || [])[1];
+    if (!d) return;
+    const start = Date.parse(d.trim().replace(" ", "T") + ":00+01:00");
+    // termine (au moins 3h apres le debut) et pas plus vieux que 5 jours
+    if (start + 3 * 3600000 > now.getTime() || start < now.getTime() - 5 * 86400000) return;
+    out.push({ i, et: etDateOf(d) });
+  });
+  return out;
+}
+
+export function nbaApply(block, game) {
+  // game = { home, away, hs, as } (noms ESPN « displayName » et points)
+  const get = (k) => ((block.match(new RegExp(`^${k}:\\s*(.+)$`, "m")) || [])[1] || "").trim();
+  const e1 = get("equipe1"), e2 = get("equipe2"), p = get("pronostic"), pen = get("pronostic_en");
+  const s1 = plain(e1) === plain(game.home) ? game.hs : game.as, s2 = plain(e1) === plain(game.home) ? game.as : game.hs;
+  const winner = s1 > s2 ? e1 : e2;
+  const pick = (pen.match(/^(.+?)\s+to win$/i) || [])[1];
+  if (!pick || s1 === s2) return null; // pronostic non « vainqueur » : on laisse le resultat a la main
+  const res = plain(winner).includes(plain(pick)) ? "gagne" : "perdu";
+  const sc = `${s1}-${s2}`;
+  const fr = `Score final : ${e1} ${sc} ${e2}. ` + (res === "gagne" ? `Pronostic gagné ✅ : ${p.charAt(0).toLowerCase() + p.slice(1)}.` : `Pronostic perdu ❌ : ${winner} a gagné.`);
+  const en = `Final score: ${e1} ${sc} ${e2}. ` + (res === "gagne" ? `Prediction won ✅: ${pen}.` : `Prediction lost ❌: ${winner} won.`);
+  const ar = `النتيجة النهائية: ${sc}. ${AR_RES[res]}`;
+  const lines = block.split("\n");
+  const k = lines.findIndex((l) => l.startsWith("bookmaker:"));
+  lines.splice(k + 1, 0, `resultat: ${res}`);
+  const starts = lines.map((l, j) => (/^(analyse_en|analyse_ar|analyse)\s*:/.test(l) ? j : -1)).filter((j) => j >= 0);
+  let last = lines.length - 1;
+  while (last > 0 && !lines[last].trim()) last--;
+  const ins = starts.map((s, n) => {
+    const end = n + 1 < starts.length ? starts[n + 1] - 1 : last;
+    const key = lines[s].split(":")[0].trim();
+    return [end, key === "analyse" ? fr : key === "analyse_en" ? en : ar];
+  }).sort((a, b) => b[0] - a[0]);
+  for (const [end, txt] of ins) lines.splice(end + 1, 0, txt);
+  return { block: lines.join("\n"), line: `🏀 ${e1} ${sc} ${e2} : ${res === "gagne" ? "✅ gagné" : "❌ perdu"}` };
+}
+
+export async function nbaResults(env, now = new Date(), dryText = null) {
+  const path = "site-src/matchs.txt";
+  let text = dryText, sha = null;
+  if (text === null) {
+    const cur = await gh(env, `contents/${path}?ref=main`);
+    if (!cur.ok) throw new Error(`GitHub ${cur.status}`);
+    const meta = await cur.json();
+    sha = meta.sha;
+    const bin = atob(meta.content.replace(/\n/g, ""));
+    text = new TextDecoder().decode(Uint8Array.from(bin, (ch) => ch.charCodeAt(0)));
+  }
+  const pending = nbaPending(text, now);
+  if (!pending.length) return "NBA : aucun résultat à mettre";
+  const games = {};
+  for (const et of [...new Set(pending.map((x) => x.et))]) {
+    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${et}`);
+    if (!r.ok) continue;
+    for (const ev of (await r.json()).events || []) {
+      if (!ev.status?.type?.completed) continue;
+      const c = ev.competitions[0].competitors;
+      const h = c.find((t) => t.homeAway === "home"), a = c.find((t) => t.homeAway === "away");
+      games[`${et}|${plain(h.team.displayName)}|${plain(a.team.displayName)}`] = { home: h.team.displayName, away: a.team.displayName, hs: +h.score, as: +a.score };
+    }
+  }
+  const blocks = text.split("\n---\n");
+  const done = [];
+  for (const { i, et } of pending) {
+    const e1 = plain((blocks[i].match(/^equipe1:\s*(.+)$/m) || [])[1] || ""), e2 = plain((blocks[i].match(/^equipe2:\s*(.+)$/m) || [])[1] || "");
+    const g = games[`${et}|${e1}|${e2}`] || games[`${et}|${e2}|${e1}`];
+    if (!g) continue;
+    const r = nbaApply(blocks[i], g);
+    if (!r) continue;
+    blocks[i] = r.block;
+    done.push(r.line);
+  }
+  if (!done.length) return "NBA : scores pas encore disponibles";
+  const out = blocks.join("\n---\n");
+  if (dryText !== null) return { text: out, done };
+  const put = await gh(env, `contents/${path}`, {
+    method: "PUT",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ message: "Resultats NBA automatiques (ESPN)", content: toBase64(new TextEncoder().encode(out)), branch: "main", sha,
+      committer: { name: "cousinmarc-bot", email: "cousinmarc-bot@users.noreply.github.com" } }),
+  });
+  if (!put.ok) throw new Error(`GitHub ${put.status}: ${(await put.text()).slice(0, 150)}`);
+  return "NBA : résultats mis sur le site\n" + done.join("\n");
+}
+
 // ---------------------------------------------------------------- Message recu
 async function handleUpdate(update, env) {
   const msg = update.message;
@@ -579,6 +679,8 @@ export default {
     // 23h00 UTC = minuit au Cameroun : pronostics de la nuit (NBA...)
     if (when.getUTCHours() === 23) { ctx.waitUntil(sendAnalyses(env, when, "nuit").then(console.log).catch((e) => console.log("nuit", e.message))); return; }
     const pause = enPause(when);
+    // 6h et 21h : resultats NBA automatiques (scores ESPN)
+    if (when.getUTCHours() === 5 || when.getUTCHours() === 20) ctx.waitUntil(nbaResults(env, when).then(console.log).catch((e) => console.log("nba", e.message)));
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
     if (pause) console.log("treve : pas de promo");
     else if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
