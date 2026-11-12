@@ -760,6 +760,12 @@
   force = true
 
 [[redirects]]
+  from = "/phoenix-suns-predictions"
+  to = "/phoenix-suns-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-ac-milan-ferencvaros-2026-11-05"
   to = "/prediction-ac-milan-ferencvaros-2026-11-05.html"
   status = 301
@@ -826,8 +832,8 @@
   force = true
 
 [[redirects]]
-  from = "/prediction-cameroon-namibia-2026-11-11"
-  to = "/prediction-cameroon-namibia-2026-11-11.html"
+  from = "/prediction-cameroon-namibia-2026-11-12"
+  to = "/prediction-cameroon-namibia-2026-11-12.html"
   status = 301
   force = true
 
@@ -928,6 +934,12 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-minnesota-timberwolves-dallas-mavericks-2026-11-13"
+  to = "/prediction-minnesota-timberwolves-dallas-mavericks-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-monaco-nordsjlland-2026-11-05"
   to = "/prediction-monaco-nordsjlland-2026-11-05.html"
   status = 301
@@ -942,6 +954,18 @@
 [[redirects]]
   from = "/prediction-new-york-knicks-milwaukee-bucks-2026-11-11"
   to = "/prediction-new-york-knicks-milwaukee-bucks-2026-11-11.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-philadelphia-76ers-toronto-raptors-2026-11-13"
+  to = "/prediction-philadelphia-76ers-toronto-raptors-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-phoenix-suns-charlotte-hornets-2026-11-13"
+  to = "/prediction-phoenix-suns-charlotte-hornets-2026-11-13.html"
   status = 301
   force = true
 
@@ -1026,6 +1050,12 @@
 [[redirects]]
   from = "/prediction-villarreal-psg-2026-11-03"
   to = "/prediction-villarreal-psg-2026-11-03.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-washington-wizards-detroit-pistons-2026-11-13"
+  to = "/prediction-washington-wizards-detroit-pistons-2026-11-13.html"
   status = 301
   force = true
 
@@ -1228,14 +1258,14 @@
   force = true
 
 [[redirects]]
-  from = "/pronostic-cameroun-namibie-2026-11-11-ar"
-  to = "/pronostic-cameroun-namibie-2026-11-11-ar.html"
+  from = "/pronostic-cameroun-namibie-2026-11-12-ar"
+  to = "/pronostic-cameroun-namibie-2026-11-12-ar.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/pronostic-cameroun-namibie-2026-11-11"
-  to = "/pronostic-cameroun-namibie-2026-11-11.html"
+  from = "/pronostic-cameroun-namibie-2026-11-12"
+  to = "/pronostic-cameroun-namibie-2026-11-12.html"
   status = 301
   force = true
 
@@ -1522,6 +1552,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-minnesota-timberwolves-dallas-mavericks-2026-11-13"
+  to = "/pronostic-minnesota-timberwolves-dallas-mavericks-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-monaco-nordsjlland-2026-11-05"
   to = "/pronostic-monaco-nordsjlland-2026-11-05.html"
   status = 301
@@ -1564,6 +1600,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-philadelphia-76ers-toronto-raptors-2026-11-13"
+  to = "/pronostic-philadelphia-76ers-toronto-raptors-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-phoenix-suns-charlotte-hornets-2026-11-13"
+  to = "/pronostic-phoenix-suns-charlotte-hornets-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-phoenix-suns-la-clippers-2026-11-11"
   to = "/pronostic-phoenix-suns-la-clippers-2026-11-11.html"
   status = 301
@@ -1572,6 +1620,12 @@
 [[redirects]]
   from = "/pronostic-phoenix-suns-san-antonio-spurs-2026-11-10"
   to = "/pronostic-phoenix-suns-san-antonio-spurs-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-phoenix-suns"
+  to = "/pronostic-phoenix-suns.html"
   status = 301
   force = true
 
@@ -1794,6 +1848,12 @@
 [[redirects]]
   from = "/pronostic-villarreal"
   to = "/pronostic-villarreal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-washington-wizards-detroit-pistons-2026-11-13"
+  to = "/pronostic-washington-wizards-detroit-pistons-2026-11-13.html"
   status = 301
   force = true
 

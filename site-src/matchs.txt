@@ -1033,7 +1033,7 @@ Mon choix : victoire du Real Madrid. Option plus grosse cote : Real Madrid gagne
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
 Score final : Racing Santander 0-3 Real Madrid. Pronostic gagné ✅ : victoire du Real (Mbappé, Bellingham, Diomande).
 ---
-date: 2026-11-11 18:00
+date: 2026-11-12 20:00
 competition: Éliminatoires CAN 2027
 equipe1: Cameroun
 equipe2: Namibie
@@ -1045,19 +1045,19 @@ cote:
 bookmaker: 1xbet
 proba: 68-22-10
 score: 2-0
-analyse_ar: انطلاق المباراة: الأربعاء 11 نوفمبر، الساعة 18:00 بتوقيت الجزائر وتونس والمغرب، 19:00 بتوقيت القاهرة، 20:00 بتوقيت مكة.
+analyse_ar: انطلاق المباراة: الخميس 12 نوفمبر، الساعة 20:00 بتوقيت الجزائر وتونس والمغرب، 21:00 بتوقيت القاهرة، 22:00 بتوقيت مكة.
 الأسود غير المروّضة يستقبلون ناميبيا في الجولة الثالثة من المجموعة G لتصفيات كأس أمم أفريقيا 2027، قبل مباراة الإياب في ناميبيا يوم الأحد 15 نوفمبر.
 على أرضها وأمام جماهيرها، الكاميرون مرشحة واضحة: لديها لاعبون أكثر في كبرى الدوريات الأوروبية.
 ناميبيا تدافع غالبًا بخط متأخر وتلعب من أجل التعادل، لذا سيحتاج الأسود إلى الصبر لصنع الفارق.
 اختياري: فوز الكاميرون. لاحتمال أكبر: فوز الكاميرون وأقل من 3.5 هدف.
 تختلف الاحتمالات من موقع مراهنة إلى آخر، لذا قارن قبل أن تراهن. يمكنك لعب هذا التوقع على 1xBet أو Melbet أو Paripesa أو WinWin: سجّل بالرمز الترويجي FFN للحصول على مكافأة الترحيب.
-analyse_en: Kick-off Wednesday 11 November: 6pm in Douala, Lagos and Paris, 5pm in Accra and Dakar, 8pm in Nairobi.
+analyse_en: Kick-off Thursday 12 November: 8pm in Douala, Lagos and Paris, 7pm in Accra and Dakar, 10pm in Nairobi.
 The Indomitable Lions host Namibia on matchday 3 of AFCON 2027 qualifying group G, before the return game in Namibia on Sunday 15 November.
 At home, in front of their fans, Cameroon are clear favourites: they have more players in Europe's top leagues.
 Namibia often defend deep and play for the draw, so the Lions will need patience to make the difference.
 My pick: Cameroon to win. Bigger odds: Cameroon win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
-analyse: Coup d'envoi mercredi 11 novembre : 18h heure de Douala et de Paris, 17h à Abidjan et Dakar.
+analyse: Coup d'envoi jeudi 12 novembre : 20h heure de Douala et de Paris, 19h à Abidjan et Dakar.
 Les Lions Indomptables reçoivent la Namibie pour la 3e journée du groupe G des éliminatoires de la CAN 2027, avant le match retour en Namibie le dimanche 15 novembre.
 À domicile, devant son public, le Cameroun est clairement favori : l'équipe a plus de joueurs qui évoluent dans les grands championnats européens.
 La Namibie défend souvent bas et cherche à tenir le nul, il faudra de la patience aux Lions pour faire la différence.
@@ -1865,6 +1865,7 @@ pronostic_es: Ganan los Knicks
 pronostic_ar: فوز نيكس
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 85-15
 score: 118-102
 analyse_en: Tip-off Wednesday 11 November at 1:30am in Douala and Lagos (Tuesday 7:30pm in New York), 12:30am in Accra and Dakar.
@@ -1873,12 +1874,14 @@ New York are 5-4 and play at home at Madison Square Garden.
 Bookmakers make the Knicks huge favourites (around -15.5 points).
 My pick: Knicks to win. Bigger odds: Knicks win by more than 9.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: New York Knicks 117-85 Milwaukee Bucks. Prediction won ✅: big Knicks win.
 analyse: Début du match mercredi 11 novembre à 1h30 du matin à Douala (mardi 19h30 à New York), 0h30 à Abidjan et Dakar.
 Milwaukee est en crise : 1 victoire et 9 défaites, et toujours aucune victoire à l'extérieur (0-4).
 New York est à 5 victoires et 4 défaites et joue à domicile, au Madison Square Garden.
 Les bookmakers font des Knicks de très grands favoris (environ 15,5 points d'avance).
 Mon choix : victoire des Knicks. Option plus grosse cote : les Knicks gagnent avec plus de 9,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : New York Knicks 117-85 Milwaukee Bucks. Pronostic gagné ✅ : large victoire des Knicks.
 ---
 date: 2026-11-11 03:00
 competition: NBA
@@ -1891,6 +1894,7 @@ pronostic_es: Gana el Heat
 pronostic_ar: فوز هيت
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 25-75
 score: 108-119
 analyse_en: Tip-off Wednesday 11 November at 3am in Douala and Lagos (Tuesday 7pm in Salt Lake City), 2am in Accra and Dakar.
@@ -1899,12 +1903,14 @@ Miami are 4-6, but much better on the road (3-3) than at home.
 Bookmakers make the Heat favourites by around 9.5 points.
 My pick: Heat to win. Bigger odds: Heat win and over 220.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Utah Jazz 109-115 Miami Heat. Prediction won ✅: Heat win.
 analyse: Début du match mercredi 11 novembre à 3h du matin à Douala (mardi 19h à Salt Lake City), 2h à Abidjan et Dakar.
 Utah est à 1 victoire et 9 défaites et a perdu 4 de ses 5 matchs à domicile.
 Miami est à 4-6, mais bien meilleur à l'extérieur (3-3) qu'à domicile.
 Les bookmakers donnent le Heat favori d'environ 9,5 points.
 Mon choix : victoire du Heat. Option plus grosse cote : le Heat gagne et plus de 220,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Utah Jazz 109-115 Miami Heat. Pronostic gagné ✅ : victoire du Heat.
 ---
 date: 2026-11-11 03:00
 competition: NBA
@@ -1917,6 +1923,7 @@ pronostic_es: Ganan los Suns
 pronostic_ar: فوز صنز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 64-36
 score: 116-109
 analyse_en: Tip-off Wednesday 11 November at 3am in Douala and Lagos (Tuesday 7pm in Phoenix), 2am in Accra and Dakar.
@@ -1925,12 +1932,14 @@ The Clippers are 2-7 and have lost all 4 of their road games.
 Bookmakers make Phoenix favourites by around 4.5 points.
 My pick: Suns to win. Bigger odds: Suns win by more than 4.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Phoenix Suns 133-110 LA Clippers. Prediction won ✅: Suns win.
 analyse: Début du match mercredi 11 novembre à 3h du matin à Douala (mardi 19h à Phoenix), 2h à Abidjan et Dakar.
 Phoenix a pris une lourde défaite contre San Antonio la nuit dernière, mais ses 3 victoires ont toutes été obtenues à domicile (3-3).
 Les Clippers sont à 2 victoires et 7 défaites et ont perdu leurs 4 matchs à l'extérieur.
 Les bookmakers donnent Phoenix favori d'environ 4,5 points.
 Mon choix : victoire des Suns. Option plus grosse cote : les Suns gagnent avec plus de 4,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Phoenix Suns 133-110 LA Clippers. Pronostic gagné ✅ : victoire des Suns.
 ---
 date: 2026-11-11 04:00
 competition: NBA
@@ -1943,6 +1952,7 @@ pronostic_es: Gana el Magic
 pronostic_ar: فوز ماجيك
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 32-68
 score: 105-113
 analyse_en: Tip-off Wednesday 11 November at 4am in Douala and Lagos (Tuesday 7pm in Sacramento), 3am in Accra and Dakar.
@@ -1951,12 +1961,14 @@ Orlando are only 2-7, but both their wins came on the road (2-3).
 Bookmakers make the Magic favourites by around 5.5 points.
 My pick: Magic to win. Bigger odds: Magic win and under 221.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sacramento Kings 100-107 Orlando Magic. Prediction won ✅: Magic win.
 analyse: Début du match mercredi 11 novembre à 4h du matin à Douala (mardi 19h à Sacramento), 3h à Abidjan et Dakar.
 Sacramento est à 1 victoire et 9 défaites et a perdu ses 5 matchs à domicile.
 Orlando n'est qu'à 2-7, mais ses deux victoires ont été obtenues à l'extérieur (2-3).
 Les bookmakers donnent le Magic favori d'environ 5,5 points.
 Mon choix : victoire du Magic. Option plus grosse cote : le Magic gagne et moins de 221,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sacramento Kings 100-107 Orlando Magic. Pronostic gagné ✅ : victoire du Magic.
 ---
 date: 2026-11-11 05:00
 competition: NBA
@@ -1969,6 +1981,7 @@ pronostic_es: Gana el Thunder
 pronostic_ar: فوز ثاندر
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 42-58
 score: 110-116
 analyse_en: Tip-off Wednesday 11 November at 5am in Douala and Lagos (Tuesday 8pm in Portland), 4am in Accra and Dakar.
@@ -1977,9 +1990,115 @@ Portland are a good surprise (6-3), but they are much stronger on the road (5-1)
 Bookmakers make the Thunder slight favourites (around -2.5 points): I back them.
 My pick: Thunder to win. Bigger odds: Thunder win and over 225.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Portland Trail Blazers 123-103 Oklahoma City Thunder. Prediction lost ❌: Portland beat the Thunder.
 analyse: Début du match mercredi 11 novembre à 5h du matin à Douala (mardi 20h à Portland), 4h à Abidjan et Dakar.
 Oklahoma City est à 8 victoires et 2 défaites, invaincu à domicile (5-0).
 Portland est une bonne surprise (6-3), mais beaucoup plus fort à l'extérieur (5-1) qu'à domicile (1-2).
 Les bookmakers donnent le Thunder légèrement favori (environ 2,5 points d'avance) : je le suis.
 Mon choix : victoire du Thunder. Option plus grosse cote : le Thunder gagne et plus de 225,5 points.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Portland Trail Blazers 123-103 Oklahoma City Thunder. Pronostic perdu ❌ : Portland a battu le Thunder.
+---
+date: 2026-11-13 01:00
+competition: NBA
+sport: basket
+equipe1: Philadelphia 76ers
+equipe2: Toronto Raptors
+pronostic: Victoire des 76ers
+pronostic_en: 76ers to win
+pronostic_es: Ganan los 76ers
+pronostic_ar: فوز سيفنتي سيكسرز
+cote:
+bookmaker: 1xbet
+proba: 78-22
+score: 116-104
+analyse_en: Tip-off Friday 13 November at 1am in Douala and Lagos (Thursday 7pm in Philadelphia), midnight in Accra and Dakar.
+Philadelphia are 9-3, one of the best records in the East, even after their defeat to Boston on Tuesday.
+Toronto are 5-6 and only managed 93 points against Boston last night, so they arrive on the second night of a back-to-back.
+Bookmakers make the 76ers big favourites (around -10.5 points).
+My pick: 76ers to win. Bigger odds: 76ers win by more than 6.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match vendredi 13 novembre à 1h du matin à Douala (jeudi 19h à Philadelphie), minuit à Abidjan et Dakar.
+Philadelphie est à 9 victoires et 3 défaites, l'un des meilleurs bilans de l'Est, malgré sa défaite contre Boston mardi.
+Toronto est à 5-6 et n'a marqué que 93 points contre Boston la nuit dernière : l'équipe joue deux soirs de suite.
+Les bookmakers font des 76ers de grands favoris (environ 10,5 points d'avance).
+Mon choix : victoire des 76ers. Option plus grosse cote : les 76ers gagnent avec plus de 6,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-13 01:00
+competition: NBA
+sport: basket
+equipe1: Washington Wizards
+equipe2: Detroit Pistons
+pronostic: Victoire des Pistons
+pronostic_en: Pistons to win
+pronostic_es: Ganan los Pistons
+pronostic_ar: فوز بيستونز
+cote:
+bookmaker: 1xbet
+proba: 24-76
+score: 104-115
+analyse_en: Tip-off Friday 13 November at 1am in Douala and Lagos (Thursday 7pm in Washington), midnight in Accra and Dakar.
+Detroit are 7-3 and already beat Washington 122-111 on Monday.
+Washington are 4-8 and lost again last night in Indiana (114-101).
+Bookmakers make the Pistons favourites by around 9.5 points.
+My pick: Pistons to win. Bigger odds: Pistons win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match vendredi 13 novembre à 1h du matin à Douala (jeudi 19h à Washington), minuit à Abidjan et Dakar.
+Detroit est à 7 victoires et 3 défaites et a déjà battu Washington 122-111 lundi.
+Washington est à 4-8 et a encore perdu la nuit dernière à Indiana (114-101).
+Les bookmakers donnent les Pistons favoris d'environ 9,5 points.
+Mon choix : victoire des Pistons. Option plus grosse cote : les Pistons gagnent avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-13 02:00
+competition: NBA
+sport: basket
+equipe1: Minnesota Timberwolves
+equipe2: Dallas Mavericks
+pronostic: Victoire des Timberwolves
+pronostic_en: Timberwolves to win
+pronostic_es: Ganan los Timberwolves
+pronostic_ar: فوز تمبروولفز
+cote:
+bookmaker: 1xbet
+proba: 66-34
+score: 117-110
+analyse_en: Tip-off Friday 13 November at 2am in Douala and Lagos (Thursday 7pm in Minneapolis), 1am in Accra and Dakar.
+Minnesota are 8-3 and strong at home (4-1).
+Dallas are 7-4, but only 2-2 on the road.
+Bookmakers make the Timberwolves favourites by around 5.5 points.
+My pick: Timberwolves to win. Bigger odds: Timberwolves win and over 220.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match vendredi 13 novembre à 2h du matin à Douala (jeudi 19h à Minneapolis), 1h à Abidjan et Dakar.
+Minnesota est à 8 victoires et 3 défaites et solide à domicile (4-1).
+Dallas est à 7-4, mais seulement 2-2 à l'extérieur.
+Les bookmakers donnent les Timberwolves favoris d'environ 5,5 points.
+Mon choix : victoire des Timberwolves. Option plus grosse cote : les Timberwolves gagnent et plus de 220,5 points.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-13 03:00
+competition: NBA
+sport: basket
+equipe1: Phoenix Suns
+equipe2: Charlotte Hornets
+pronostic: Victoire des Suns
+pronostic_en: Suns to win
+pronostic_es: Ganan los Suns
+pronostic_ar: فوز صنز
+cote:
+bookmaker: 1xbet
+proba: 68-32
+score: 113-105
+analyse_en: Tip-off Friday 13 November at 3am in Douala and Lagos (Thursday 7pm in Phoenix), 2am in Accra and Dakar.
+Phoenix crushed the Clippers 133-110 on Tuesday, and all 4 of their wins have come at home (4-3).
+Charlotte are 4-7 and weak on the road (1-3), even if they surprised Cleveland on Monday.
+Bookmakers make the Suns favourites by around 6.5 points.
+My pick: Suns to win. Bigger odds: Suns win and under 220.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match vendredi 13 novembre à 3h du matin à Douala (jeudi 19h à Phoenix), 2h à Abidjan et Dakar.
+Phoenix a écrasé les Clippers 133-110 mardi, et ses 4 victoires ont toutes été obtenues à domicile (4-3).
+Charlotte est à 4-7 et faible à l'extérieur (1-3), même si l'équipe a surpris Cleveland lundi.
+Les bookmakers donnent les Suns favoris d'environ 6,5 points.
+Mon choix : victoire des Suns. Option plus grosse cote : les Suns gagnent et moins de 220,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
