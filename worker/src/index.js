@@ -714,6 +714,17 @@ export default {
       return new Response(`✅ ${out} dans ${channelOf(env)}`, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
+    // Envoi unique du bilan demande par Cousin Marc le 13/11 (une seule fois : un fichier temoin est cree sur GitHub)
+    if (url.pathname === "/bilan-13nov") {
+      const flag = "promo/bilan-13nov.txt";
+      const ex = await gh(env, `contents/${flag}?ref=main`);
+      if (ex.ok) return new Response("déjà envoyé", { headers: { "content-type": "text/plain; charset=utf-8" } });
+      await saveToGithub(env, flag, new TextEncoder().encode(new Date().toISOString() + "\n"), "bilan 13 novembre envoye");
+      let out;
+      try { out = await sendBilan(env, new Date(), 36); } catch (e) { out = "erreur : " + e.message; }
+      return new Response(out, { headers: { "content-type": "text/plain; charset=utf-8" } });
+    }
+
     // Test des resultats NBA automatiques (lecture seule, n ecrit rien) : /nba-test
     if (url.pathname === "/nba-test") {
       let out;
