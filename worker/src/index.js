@@ -425,6 +425,26 @@ async function nbaResultsOnce(env, now, dryText, dry) {
   return "NBA : résultats mis sur le site\n" + done.join("\n");
 }
 
+// ---------------------------------------------------------------- Résultats validés (message « bilan » ou 21h chaque jour)
+async function sendBilan(env, date = new Date(), hours = 26) {
+  let list = [];
+  try { list = await (await fetch(`${SITE}/resultats.json?t=${Date.now()}`)).json(); } catch (e) { return "bilan : resultats.json illisible (" + e.message + ")"; }
+  const t = date.getTime();
+  const res = list.filter((m) => { const s = Date.parse(`${m.d}T${m.h}:00+01:00`); return s <= t && s >= t - hours * 3600000 && (m.res === "gagne" || m.res === "perdu"); });
+  if (!res.length) return "bilan : aucun résultat récent";
+  const won = res.filter((m) => m.res === "gagne").length;
+  let s = "✅ RÉSULTATS VALIDÉS\n🇬🇧 CONFIRMED RESULTS\n";
+  for (const m of res) {
+    const sc = m.sc ? ` ${m.sc} ` : " – ";
+    s += `\n${m.res === "gagne" ? "✅" : "❌"} ${m.e1}${sc}${m.e2}\n   ${m.p}${m.p_en && m.p_en !== m.p ? " · " + m.p_en : ""}\n`;
+  }
+  s += `\n📊 ${won}/${res.length} pronostics gagnés · ${won}/${res.length} predictions won\n`;
+  s += `🔎 Vérifie toi-même sur le site, tout est publié AVANT les matchs :\n🇬🇧 Check it yourself, everything is posted BEFORE kick-off:\n👉 ${SITE}/resultats.html\n\n` + EN.resp;
+  if (s.length > 4000) s = s.slice(0, 3990) + "…";
+  await tg(env, "sendMessage", { chat_id: channelOf(env), text: s, disable_web_page_preview: true });
+  return `bilan publié (${won}/${res.length})`;
+}
+
 // ---------------------------------------------------------------- Message recu
 async function handleUpdate(update, env) {
   const msg = update.message;
@@ -438,6 +458,12 @@ async function handleUpdate(update, env) {
   }
 
   if (msg.text && msg.text.trim().startsWith("/")) { await handleCommand(env, chatId, userId, msg.text); return; }
+  if (msg.text && /^\s*\/?(bilan|resultats|résultats)\s*$/i.test(msg.text)) {
+    let out;
+    try { out = await sendBilan(env, new Date(), 36); } catch (e) { out = "erreur : " + e.message; }
+    await reply(env, chatId, out.startsWith("bilan publié") ? `✅ Résultats publiés dans le canal ${channelOf(env)} ${out.slice(13)}` : "ℹ️ " + out);
+    return;
+  }
   if (msg.text && /^\s*(score|scores)\b/i.test(msg.text)) { await handleScores(env, chatId, msg.text); return; }
 
   let fileId = null, asPhoto = true;
@@ -714,6 +740,8 @@ export default {
     // (a 6h, d abord les resultats NBA, PUIS la reconstruction du jour : deux ecritures GitHub en meme temps se bloquent)
     const nba = (when.getUTCHours() === 5 || when.getUTCHours() === 20) ? nbaResults(env, when).then(console.log).catch((e) => console.log("nba", e.message)) : Promise.resolve();
     ctx.waitUntil(nba);
+    // 21h : les résultats validés des dernières 26 heures (preuve pour les abonnés)
+    if (when.getUTCHours() === 20) ctx.waitUntil(sendBilan(env, when, 26).then(console.log).catch((e) => console.log("bilan", e.message)));
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
     if (pause) console.log("treve : pas de promo");
     else if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));

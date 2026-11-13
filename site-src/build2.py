@@ -7042,6 +7042,16 @@ open(os.path.join(OUT, "matchs.json"), "w", encoding="utf-8").write(json.dumps(
       "p": _m["pronostic"], "p_en": _m.get("pronostic_en") or "", "slug": _m["slug"], "slug_en": _m.get("slug_en", ""), "combine": bool(_m.get("combine"))}
      for _m in sorted(MATCHS, key=lambda x: x["dt"]) if not _m.get("resultat") and _m["dt"] > _now], ensure_ascii=False))
 written.append("matchs.json")
+# resultats des 7 derniers jours pour le bot (message « Résultats validés » dans le canal)
+def _final_score(_m):
+    _r = re.search(r"Score final\s*:\s*.*?(\d+)\s*-\s*(\d+)", _m.get("analyse", ""))
+    return f"{_r.group(1)}-{_r.group(2)}" if _r else ""
+_past = datetime.datetime.now() - datetime.timedelta(days=7)
+open(os.path.join(OUT, "resultats.json"), "w", encoding="utf-8").write(json.dumps(
+    [{"d": f'{_m["dt"]:%Y-%m-%d}', "h": f'{_m["dt"]:%H:%M}', "comp": _m.get("competition", ""), "e1": _m["equipe1"], "e2": _m["equipe2"],
+      "p": _m["pronostic"], "p_en": _m.get("pronostic_en") or "", "res": _m["resultat"], "sc": _final_score(_m), "slug": _m["slug"], "slug_en": _m.get("slug_en", "")}
+     for _m in sorted(MATCHS, key=lambda x: x["dt"]) if _m.get("resultat") and _m["dt"] > _past], ensure_ascii=False))
+written.append("resultats.json")
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
