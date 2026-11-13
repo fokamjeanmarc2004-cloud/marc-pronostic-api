@@ -362,7 +362,9 @@ export async function nbaResults(env, now = new Date(), dryText = null, dry = fa
   throw new Error(last);
 }
 
+let NBA_DBG = [];
 async function nbaResultsOnce(env, now, dryText, dry) {
+  NBA_DBG = [];
   const path = "site-src/matchs.txt";
   let text = dryText, sha = null;
   if (text === null) {
@@ -377,9 +379,21 @@ async function nbaResultsOnce(env, now, dryText, dry) {
   if (!pending.length) return "NBA : aucun résultat à mettre";
   const games = {};
   for (const et of [...new Set(pending.map((x) => x.et))]) {
-    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${et}`, { headers: { "User-Agent": "Mozilla/5.0 (cousinmarc-bot)", "Accept": "application/json" } });
-    if (!r.ok) { console.log("espn", et, r.status); continue; }
-    for (const ev of (await r.json()).events || []) {
+    let data = null;
+    for (const host of ["https://site.api.espn.com", "https://site.web.api.espn.com", "https://cdn.espn.com/core"]) {
+      const u = host.includes("core") ? `${host}/nba/scoreboard?xhr=1&dates=${et}` : `${host}/apis/site/v2/sports/basketball/nba/scoreboard?dates=${et}`;
+      try {
+        const r = await fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/json" } });
+        NBA_DBG.push(`${u} -> ${r.status}`);
+        if (!r.ok) continue;
+        const j = await r.json();
+        data = j.events ? j : (j.content?.sbData || null);
+        NBA_DBG.push(`events: ${data?.events?.length ?? "?"}`);
+        if (data?.events?.length) break;
+      } catch (e) { NBA_DBG.push(`${u} -> ${e.message}`); }
+    }
+    if (!data) continue;
+    for (const ev of data.events || []) {
       if (!ev.status?.type?.completed) continue;
       const c = ev.competitions[0].competitors;
       const h = c.find((t) => t.homeAway === "home"), a = c.find((t) => t.homeAway === "away");
@@ -397,7 +411,7 @@ async function nbaResultsOnce(env, now, dryText, dry) {
     blocks[i] = r.block;
     done.push(r.line);
   }
-  if (!done.length) return "NBA : scores pas encore disponibles";
+  if (!done.length) return "NBA : scores pas encore disponibles\n" + NBA_DBG.join("\n") + "\nmatchs: " + Object.keys(games).join(" ; ");
   const out = blocks.join("\n---\n");
   if (dryText !== null) return { text: out, done };
   if (dry) return "TEST (rien écrit) :\n" + done.join("\n");
