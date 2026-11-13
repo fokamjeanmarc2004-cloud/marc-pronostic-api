@@ -400,9 +400,7 @@ async function nbaResultsOnce(env, now, dryText, dry) {
   if (!done.length) return "NBA : scores pas encore disponibles";
   const out = blocks.join("\n---\n");
   if (dryText !== null) return { text: out, done };
-  if (dry) return "TEST (rien écrit) :
-" + done.join("
-");
+  if (dry) return "TEST (rien écrit) :\n" + done.join("\n");
   const put = await gh(env, `contents/${path}`, {
     method: "PUT",
     headers: { "content-type": "application/json" },
