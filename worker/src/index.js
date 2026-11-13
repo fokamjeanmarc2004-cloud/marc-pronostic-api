@@ -353,7 +353,16 @@ export function nbaApply(block, game) {
   return { block: lines.join("\n"), line: `🏀 ${e1} ${sc} ${e2} : ${res === "gagne" ? "✅ gagné" : "❌ perdu"}` };
 }
 
-export async function nbaResults(env, now = new Date(), dryText = null) {
+export async function nbaResults(env, now = new Date(), dryText = null, dry = false) {
+  let last = "";
+  for (let essai = 0; essai < 4; essai++) {
+    try { return await nbaResultsOnce(env, now, dryText, dry); }
+    catch (e) { last = e.message; console.log("nba essai", essai + 1, last); if (dryText !== null || !/409|422/.test(last)) break; await new Promise((r) => setTimeout(r, 4000)); }
+  }
+  throw new Error(last);
+}
+
+async function nbaResultsOnce(env, now, dryText, dry) {
   const path = "site-src/matchs.txt";
   let text = dryText, sha = null;
   if (text === null) {
@@ -368,8 +377,8 @@ export async function nbaResults(env, now = new Date(), dryText = null) {
   if (!pending.length) return "NBA : aucun résultat à mettre";
   const games = {};
   for (const et of [...new Set(pending.map((x) => x.et))]) {
-    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${et}`);
-    if (!r.ok) continue;
+    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${et}`, { headers: { "User-Agent": "Mozilla/5.0 (cousinmarc-bot)", "Accept": "application/json" } });
+    if (!r.ok) { console.log("espn", et, r.status); continue; }
     for (const ev of (await r.json()).events || []) {
       if (!ev.status?.type?.completed) continue;
       const c = ev.competitions[0].competitors;
@@ -391,6 +400,9 @@ export async function nbaResults(env, now = new Date(), dryText = null) {
   if (!done.length) return "NBA : scores pas encore disponibles";
   const out = blocks.join("\n---\n");
   if (dryText !== null) return { text: out, done };
+  if (dry) return "TEST (rien écrit) :
+" + done.join("
+");
   const put = await gh(env, `contents/${path}`, {
     method: "PUT",
     headers: { "content-type": "application/json" },
@@ -664,6 +676,13 @@ export default {
       return new Response(`✅ ${out} dans ${channelOf(env)}`, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
+    // Test des resultats NBA automatiques (lecture seule, n ecrit rien) : /nba-test
+    if (url.pathname === "/nba-test") {
+      let out;
+      try { out = await nbaResults(env, new Date(), null, true); } catch (e) { out = "erreur : " + e.message; }
+      return new Response(typeof out === "string" ? out : JSON.stringify(out), { headers: { "content-type": "text/plain; charset=utf-8" } });
+    }
+
     if (url.pathname === "/vip") {
       if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
       const out = await sendVip(env);
@@ -680,13 +699,15 @@ export default {
     if (when.getUTCHours() === 23) { ctx.waitUntil(sendAnalyses(env, when, "nuit").then(console.log).catch((e) => console.log("nuit", e.message))); return; }
     const pause = enPause(when);
     // 6h et 21h : resultats NBA automatiques (scores ESPN)
-    if (when.getUTCHours() === 5 || when.getUTCHours() === 20) ctx.waitUntil(nbaResults(env, when).then(console.log).catch((e) => console.log("nba", e.message)));
+    // (a 6h, d abord les resultats NBA, PUIS la reconstruction du jour : deux ecritures GitHub en meme temps se bloquent)
+    const nba = (when.getUTCHours() === 5 || when.getUTCHours() === 20) ? nbaResults(env, when).then(console.log).catch((e) => console.log("nba", e.message)) : Promise.resolve();
+    ctx.waitUntil(nba);
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
     if (pause) console.log("treve : pas de promo");
     else if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
     else ctx.waitUntil(sendPromo(env, pickIndex(when), when).then(console.log));
     // 6h : reconstruit le site (pages « pronostic foot aujourd'hui / demain » a la bonne date)
-    if (when.getUTCHours() === 5) ctx.waitUntil(saveToGithub(env, "site-src/jour.txt", new TextEncoder().encode(when.toISOString().slice(0, 10) + "\n"), "reconstruction du jour").catch((e) => console.log("jour", e.message)));
+    if (when.getUTCHours() === 5) ctx.waitUntil(nba.then(() => saveToGithub(env, "site-src/jour.txt", new TextEncoder().encode(when.toISOString().slice(0, 10) + "\n"), "reconstruction du jour")).catch((e) => console.log("jour", e.message)));
     // 6h : apres la promo, la liste des analyses du jour (seulement les jours de match)
     if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, pause ? 0 : 20000)).then(() => sendAnalyses(env, when, "jour")).then(console.log).catch((e) => console.log("analyses", e.message)));
   },
