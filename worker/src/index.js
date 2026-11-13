@@ -439,7 +439,7 @@ async function sendBilan(env, date = new Date(), hours = 26) {
     s += `\n${m.res === "gagne" ? "✅" : "❌"} ${m.e1}${sc}${m.e2}\n   ${m.p}${m.p_en && m.p_en !== m.p ? " · " + m.p_en : ""}\n`;
   }
   s += `\n📊 ${won}/${res.length} pronostics gagnés · ${won}/${res.length} predictions won\n`;
-  s += `🔎 Vérifie toi-même sur le site, tout est publié AVANT les matchs :\n🇬🇧 Check it yourself, everything is posted BEFORE kick-off:\n👉 ${SITE}/resultats.html\n\n` + EN.resp;
+  s += `🔎 Vérifie toi-même sur le site, tout est publié AVANT les matchs :\n🇬🇧 Check it yourself, everything is posted BEFORE kick-off:\n👉 ${SITE}/pronostics.html#termines\n\n` + EN.resp;
   if (s.length > 4000) s = s.slice(0, 3990) + "…";
   await tg(env, "sendMessage", { chat_id: channelOf(env), text: s, disable_web_page_preview: true });
   return `bilan publié (${won}/${res.length})`;
