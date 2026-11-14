@@ -825,6 +825,17 @@ export default {
     }
 
     // Envoi unique du bilan demande par Cousin Marc le 13/11 (une seule fois : un fichier temoin est cree sur GitHub)
+    // Rattrapage unique du 14/11 au soir (resultats valides + pronostics de la nuit) : une seule fois
+    if (url.pathname === "/rattrapage-14nov") {
+      const flag = "promo/rattrapage-14nov.txt";
+      if ((await gh(env, `contents/${flag}?ref=main`)).ok) return new Response("déjà envoyé");
+      await saveToGithub(env, flag, new TextEncoder().encode(new Date().toISOString()), "rattrapage 14 novembre");
+      let out = "";
+      try { out += await sendBilan(env, new Date(), 26); } catch (e) { out += "bilan erreur : " + e.message; }
+      try { out += " | " + await sendAnalyses(env, new Date(), "nuit"); } catch (e) { out += " | nuit erreur : " + e.message; }
+      return new Response(out, { headers: { "content-type": "text/plain; charset=utf-8" } });
+    }
+
     if (url.pathname === "/bilan-13nov") {
       const flag = "promo/bilan-13nov.txt";
       const ex = await gh(env, `contents/${flag}?ref=main`);
@@ -867,24 +878,33 @@ export default {
     return new Response("Bot Cousin Marc : en ligne ✅", { headers: { "content-type": "text/plain; charset=utf-8" } });
   },
 
-  // 5h00 et 20h00 UTC = 6h00 et 21h00 au Cameroun
+  // Réveils Cloudflare réellement actifs : 5h, 12h et 20h UTC = 6h, 13h et 21h au Cameroun.
   async scheduled(event, env, ctx) {
-    const when = new Date(event.scheduledTime);
-    // 23h00 UTC = minuit au Cameroun : pronostics de la nuit (NBA...)
-    // (les messages de 21h « résultats validés » et de minuit « pronostics de la nuit » partent de GitHub : .github/workflows/bot-soir.yml -> /tick)
-    if (when.getUTCHours() === 23) return;
-    const pause = enPause(when);
-    // 6h et 21h : resultats NBA automatiques (scores ESPN)
-    // (a 6h, d abord les resultats NBA, PUIS la reconstruction du jour : deux ecritures GitHub en meme temps se bloquent)
-    const nba = (when.getUTCHours() === 5 || when.getUTCHours() === 20) ? nbaResults(env, when).then(console.log).catch((e) => console.log("nba", e.message)) : Promise.resolve();
-    ctx.waitUntil(nba);
-    // 21h : les résultats validés des dernières 26 heures (preuve pour les abonnés)
-    // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
-    // Promo : UNE seule par jour, a 13h, envoyee par GitHub (bot-soir.yml -> /tick?slot=midi). Plus de promo a 6h ni a 21h.
-    if (when.getUTCHours() === 12) return;
-    // 6h : reconstruit le site (pages « pronostic foot aujourd'hui / demain » a la bonne date)
-    if (when.getUTCHours() === 5) ctx.waitUntil(nba.then(() => saveToGithub(env, "site-src/jour.txt", new TextEncoder().encode(when.toISOString().slice(0, 10) + "\n"), "reconstruction du jour")).catch((e) => console.log("jour", e.message)));
-    // 6h : apres la promo, la liste des analyses du jour (seulement les jours de match)
-    if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, 0)).then(() => sendAnalyses(env, when, "jour")).then(console.log).catch((e) => console.log("analyses", e.message)));
+    const when = new Date(event.scheduledTime), h = when.getUTCHours();
+    const admin = (env.TELEGRAM_ALLOWED_ID || "").split(",")[0].trim();
+    // en cas d'erreur, le bot previent Cousin Marc en prive
+    const safe = (label, fn) => fn().then((r) => { console.log(label, r); return r; }).catch(async (e) => {
+      console.log(label, "ERREUR", e.message);
+      if (admin) { try { await reply(env, admin, `⚠️ Bot : « ${label} » n'a pas marché (${e.message.slice(0, 150)})`); } catch (x) { /* rien */ } }
+      return "";
+    });
+    const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+    if (h === 5) {
+      // 6h : resultats (NBA + foot), puis reconstruction du jour, et les pronostics du jour
+      ctx.waitUntil(safe("résultats 6h", () => nbaResults(env, when)).then(() => safe("reconstruction du jour", () => saveToGithub(env, "site-src/jour.txt", new TextEncoder().encode(when.toISOString().slice(0, 10) + "\n"), "reconstruction du jour"))));
+      ctx.waitUntil(safe("pronostics du jour", () => sendAnalyses(env, when, "jour")));
+    } else if (h === 12) {
+      // 13h : la seule promo du jour (rien pendant la trêve)
+      if (!enPause(when)) ctx.waitUntil(safe("promo 13h", () => sendMidi(env, when)));
+    } else if (h === 20) {
+      // 21h : resultats, puis « Résultats validés », puis les pronostics de la nuit (NBA)
+      ctx.waitUntil((async () => {
+        const r = await safe("résultats 21h", () => nbaResults(env, when));
+        if (String(r).includes("mis sur le site")) await wait(170000); // le temps que le site se reconstruise
+        await safe("résultats validés", () => sendBilan(env, when, 26));
+        await wait(3000);
+        await safe("pronostics de la nuit", () => sendAnalyses(env, new Date(when.getTime() + 4 * 3600000), "nuit"));
+      })());
+    }
   },
 };
