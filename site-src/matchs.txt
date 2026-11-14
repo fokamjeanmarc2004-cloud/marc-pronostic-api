@@ -2367,3 +2367,107 @@ Chicago est à 2-9 et a perdu 5 de ses 6 matchs à l'extérieur.
 Les bookmakers font des Timberwolves de très grands favoris (environ 15,5 points d'avance).
 Mon choix : victoire des Timberwolves. Option plus grosse cote : les Timberwolves gagnent avec plus de 9,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 14:00
+competition: Tennis
+sport: tennis
+equipe1: Rafael Jodar
+equipe2: Alexander Zverev
+pronostic: Victoire de Zverev
+pronostic_en: Zverev to win
+pronostic_es: Gana Zverev
+pronostic_ar: فوز زفيريف
+cote:
+bookmaker: 1xbet
+proba: 22-78
+score: 0-2
+analyse_en: Start Sunday 15 November, not before 2pm in Douala, Lagos and Turin (1pm in Accra and Dakar). ATP Finals in Turin, John McEnroe Group, indoor hard court.
+Alexander Zverev is world No. 1 and the top seed of the tournament.
+Rafael Jodar is the 8th and last qualified player: it is his first match at this level, against the best player of the season.
+With Sinner out injured, Zverev is one of the two big favourites for the title with Alcaraz.
+My pick: Zverev to win. Bigger odds: Zverev wins 2 sets to 0.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 15 novembre, pas avant 14h à Douala et à Turin (13h à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe John McEnroe, sur dur en salle.
+Alexander Zverev est numéro 1 mondial et tête de série numéro 1 du tournoi.
+Rafael Jodar est le 8e et dernier qualifié : c'est son premier match à ce niveau, contre le meilleur joueur de la saison.
+Sans Sinner, blessé, Zverev est l'un des deux grands favoris pour le titre avec Alcaraz.
+Mon choix : victoire de Zverev. Option plus grosse cote : Zverev gagne 2 sets à 0.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 20:30
+competition: Tennis
+sport: tennis
+equipe1: Arthur Fils
+equipe2: Ben Shelton
+pronostic: Victoire de Shelton
+pronostic_en: Shelton to win
+pronostic_es: Gana Shelton
+pronostic_ar: فوز شيلتون
+cote:
+bookmaker: 1xbet
+proba: 42-58
+score: 1-2
+analyse_en: Start Sunday 15 November, not before 8:30pm in Douala, Lagos and Turin (7:30pm in Accra and Dakar). ATP Finals in Turin, John McEnroe Group, indoor hard court.
+Ben Shelton is the 3rd seed; Arthur Fils is the 6th seed.
+Shelton's big left-handed serve is a real weapon on a fast indoor court.
+Fils can match him in power, so I expect a tight match, maybe in three sets.
+My pick: Shelton to win. Bigger odds: over 2.5 sets in the match.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 15 novembre, pas avant 20h30 à Douala et à Turin (19h30 à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe John McEnroe, sur dur en salle.
+Ben Shelton est tête de série numéro 3 ; Arthur Fils est tête de série numéro 6.
+Le gros service de gaucher de Shelton est une vraie arme sur un court rapide en salle.
+Fils peut lui répondre en puissance : je m'attends à un match serré, peut-être en trois sets.
+Mon choix : victoire de Shelton. Option plus grosse cote : plus de 2,5 sets dans le match.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 14:00
+competition: Tennis
+sport: tennis
+equipe1: Frances Tiafoe
+equipe2: Carlos Alcaraz
+pronostic: Victoire d'Alcaraz
+pronostic_en: Alcaraz to win
+pronostic_es: Gana Alcaraz
+pronostic_ar: فوز ألكاراز
+cote:
+bookmaker: 1xbet
+proba: 20-80
+score: 0-2
+analyse_en: Start Monday 16 November, not before 2pm in Douala, Lagos and Turin (1pm in Accra and Dakar). ATP Finals in Turin, Ivan Lendl Group, indoor hard court.
+Carlos Alcaraz is the 2nd seed and leads this group.
+Frances Tiafoe is the 7th seed, one of the last players to qualify.
+With Sinner out injured, Alcaraz is one of the two big favourites for the title with Zverev.
+My pick: Alcaraz to win. Bigger odds: Alcaraz wins 2 sets to 0.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 16 novembre, pas avant 14h à Douala et à Turin (13h à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe Ivan Lendl, sur dur en salle.
+Carlos Alcaraz est tête de série numéro 2 et leader de ce groupe.
+Frances Tiafoe est tête de série numéro 7, l'un des derniers qualifiés.
+Sans Sinner, blessé, Alcaraz est l'un des deux grands favoris pour le titre avec Zverev.
+Mon choix : victoire d'Alcaraz. Option plus grosse cote : Alcaraz gagne 2 sets à 0.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 20:30
+competition: Tennis
+sport: tennis
+equipe1: Flavio Cobolli
+equipe2: Daniil Medvedev
+pronostic: Victoire de Medvedev
+pronostic_en: Medvedev to win
+pronostic_es: Gana Medvedev
+pronostic_ar: فوز ميدفيديف
+cote:
+bookmaker: 1xbet
+proba: 40-60
+score: 1-2
+analyse_en: Start Monday 16 November, not before 8:30pm in Douala, Lagos and Turin (7:30pm in Accra and Dakar). ATP Finals in Turin, Ivan Lendl Group, indoor hard court.
+Daniil Medvedev is the 4th seed and a former winner of this tournament (2020): indoor hard court is his best surface.
+Flavio Cobolli is the 5th seed and plays at home, in front of the Italian crowd.
+The crowd will push Cobolli, but Medvedev has much more experience at this level.
+My pick: Medvedev to win. Bigger odds: over 2.5 sets in the match.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 16 novembre, pas avant 20h30 à Douala et à Turin (19h30 à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe Ivan Lendl, sur dur en salle.
+Daniil Medvedev est tête de série numéro 4 et ancien vainqueur de ce tournoi (2020) : le dur en salle est sa meilleure surface.
+Flavio Cobolli est tête de série numéro 5 et joue à domicile, devant le public italien.
+Le public va pousser Cobolli, mais Medvedev a beaucoup plus d'expérience à ce niveau.
+Mon choix : victoire de Medvedev. Option plus grosse cote : plus de 2,5 sets dans le match.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
