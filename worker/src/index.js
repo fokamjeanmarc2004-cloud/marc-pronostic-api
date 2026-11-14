@@ -363,6 +363,8 @@ export async function nbaResults(env, now = new Date(), dryText = null, dry = fa
 }
 
 let NBA_DBG = [];
+let FOOT_FORCE = false; // tests seulement
+export function setFootForce(v) { FOOT_FORCE = v; }
 async function nbaResultsOnce(env, now, dryText, dry) {
   NBA_DBG = [];
   const path = "site-src/matchs.txt";
@@ -376,7 +378,6 @@ async function nbaResultsOnce(env, now, dryText, dry) {
     text = new TextDecoder().decode(Uint8Array.from(bin, (ch) => ch.charCodeAt(0)));
   }
   const pending = nbaPending(text, now);
-  if (!pending.length) return "NBA : aucun résultat à mettre";
   const games = {};
   for (const et of [...new Set(pending.map((x) => x.et))]) {
     let data = null;
@@ -411,7 +412,8 @@ async function nbaResultsOnce(env, now, dryText, dry) {
     blocks[i] = r.block;
     done.push(r.line);
   }
-  if (!done.length) return "NBA : scores pas encore disponibles\n" + NBA_DBG.join("\n") + "\nmatchs: " + Object.keys(games).join(" ; ");
+  try { done.push(...(await footPass(blocks, now, FOOT_FORCE))); } catch (e) { console.log("foot", e.message); }
+  if (!done.length) return "Résultats : rien à mettre pour l'instant";
   const out = blocks.join("\n---\n");
   if (dryText !== null) return { text: out, done };
   if (dry) return "TEST (rien écrit) :\n" + done.join("\n");
@@ -423,6 +425,111 @@ async function nbaResultsOnce(env, now, dryText, dry) {
   });
   if (!put.ok) throw new Error(`GitHub ${put.status}: ${(await put.text()).slice(0, 150)}`);
   return "NBA : résultats mis sur le site\n" + done.join("\n");
+}
+
+// ---------------------------------------------------------------- Resultats FOOT automatiques (scores ESPN)
+// Meme principe que la NBA. Le bot ne tranche que les pronostics simples (victoire, double chance, les deux marquent,
+// plus/moins de buts, buts d'une equipe). Tout le reste (mi-temps, combinés...) est laissé à la main.
+const FOOT_LEAGUE = { "Ligue des Champions": "uefa.champions", "Ligue Europa": "uefa.europa", "Ligue Conférence": "uefa.europa.conf",
+  "Premier League": "eng.1", "Liga": "esp.1", "Ligue 1": "fra.1", "Serie A": "ita.1", "Bundesliga": "ger.1" };
+const FOOT_ALIAS = { barcelone: "barcelona", seville: "sevilla", naples: "napoli", valence: "valencia", inter: "internazionale", psg: "paris saint germain",
+  "aek athenes": "aek athens", "sporting portugal": "sporting cp", rennes: "stade rennais", "kairat almaty": "kairat", atletico: "atletico madrid",
+  dortmund: "borussia dortmund", leverkusen: "bayer leverkusen", "inter milan": "internazionale", "man city": "manchester city", "man united": "manchester united" };
+const FOOT_STOP = new Set(["fc", "afc", "ac", "as", "sc", "cf", "rc", "ssc", "tsg", "vfb", "1"]);
+function footTokens(name) {
+  let p = plain(name);
+  p = FOOT_ALIAS[p] || p;
+  return p.split(" ").filter((w) => w && !FOOT_STOP.has(w));
+}
+export function footSame(a, b) { // tous les mots du nom le plus court sont dans le plus long
+  const A = footTokens(a), B = footTokens(b);
+  if (!A.length || !B.length) return false;
+  const [s, l] = A.length <= B.length ? [A, B] : [B, A];
+  return s.every((w) => l.includes(w));
+}
+
+// g = { home, away, hs, as } ; renvoie "gagne" / "perdu" / null (pronostic non reconnu)
+export function footVerdict(pen, g) {
+  const p = (pen || "").trim(), tot = g.hs + g.as;
+  const side = (name) => { const h = footSame(name, g.home), a = footSame(name, g.away); return h === a ? null : h ? "h" : "a"; };
+  const gf = (s) => (s === "h" ? g.hs : g.as), ga = (s) => (s === "h" ? g.as : g.hs);
+  const ok = (b) => (b ? "gagne" : "perdu");
+  let m;
+  if (/half[- ]?time|first half|second half|corner|card/i.test(p)) return null;
+  if (/^both teams to score$/i.test(p)) return ok(g.hs > 0 && g.as > 0);
+  if ((m = p.match(/^over (\d+(?:\.\d)?) goals$/i))) return ok(tot > +m[1]);
+  if ((m = p.match(/^under (\d+(?:\.\d)?) goals$/i))) return ok(tot < +m[1]);
+  if ((m = p.match(/^(.+?) (?:to )?win and over (\d+(?:\.\d)?) goals$/i))) { const s = side(m[1]); return s ? ok(gf(s) > ga(s) && tot > +m[2]) : null; }
+  if ((m = p.match(/^(.+?) to win$/i))) { const s = side(m[1]); return s ? ok(gf(s) > ga(s)) : null; }
+  if ((m = p.match(/^(.+?) or draw$/i))) { const s = side(m[1]); return s ? ok(gf(s) >= ga(s)) : null; }
+  if ((m = p.match(/^(.+?) to score (\d)\+ goals$/i))) { const s = side(m[1]); return s ? ok(gf(s) >= +m[2]) : null; }
+  if ((m = p.match(/^(.+?) to score$/i))) { const s = side(m[1]); return s ? ok(gf(s) >= 1) : null; }
+  if ((m = p.match(/^(.+?) over (\d+(?:\.\d)?) goals$/i))) { const s = side(m[1]); return s ? ok(gf(s) > +m[2]) : null; }
+  return null;
+}
+
+function insertResult(block, res, fr, en, ar) {
+  const lines = block.split("\n");
+  const k = lines.findIndex((l) => l.startsWith("bookmaker:"));
+  lines.splice(k + 1, 0, `resultat: ${res}`);
+  const starts = lines.map((l, j) => (/^(analyse_en|analyse_ar|analyse)\s*:/.test(l) ? j : -1)).filter((j) => j >= 0);
+  let last = lines.length - 1;
+  while (last > 0 && !lines[last].trim()) last--;
+  const ins = starts.map((s, n) => {
+    const end = n + 1 < starts.length ? starts[n + 1] - 1 : last;
+    const key = lines[s].split(":")[0].trim();
+    return [end, key === "analyse" ? fr : key === "analyse_en" ? en : ar];
+  }).sort((a, b) => b[0] - a[0]);
+  for (const [end, txt] of ins) lines.splice(end + 1, 0, txt);
+  return lines.join("\n");
+}
+
+const ESPN_UA = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/json" };
+
+// Modifie blocks (tableau) sur place ; renvoie les lignes « fait ». force = ignorer le filtre de date (tests)
+export async function footPass(blocks, now = new Date(), force = false) {
+  const todo = [];
+  blocks.forEach((b, i) => {
+    if (/^resultat:/m.test(b) || /^sport:\s*(basket|tennis)/m.test(b) || /^combine:/m.test(b)) return;
+    const comp = ((b.match(/^competition:\s*(.+)$/m) || [])[1] || "").trim(), d = (b.match(/^date:\s*(.+)$/m) || [])[1];
+    if (!FOOT_LEAGUE[comp] || !d) return;
+    const start = Date.parse(d.trim().replace(" ", "T") + ":00+01:00");
+    if (isNaN(start)) return;
+    // termine (2h15 apres le coup d'envoi) et pas plus vieux que 5 jours
+    if (!force && (start + 135 * 60000 > now.getTime() || start < now.getTime() - 5 * 86400000)) return;
+    todo.push({ i, start, lg: FOOT_LEAGUE[comp], day: new Date(start).toISOString().slice(0, 10).replace(/-/g, "") });
+  });
+  const cache = {}, done = [];
+  for (const t of todo) {
+    const key = `${t.lg}|${t.day}`;
+    if (!(key in cache)) {
+      cache[key] = [];
+      for (const host of ["https://site.api.espn.com", "https://site.web.api.espn.com"]) {
+        try {
+          const r = await fetch(`${host}/apis/site/v2/sports/soccer/${t.lg}/scoreboard?dates=${t.day}`, { headers: ESPN_UA });
+          if (!r.ok) continue;
+          cache[key] = ((await r.json()).events || []).filter((ev) => ev.status?.type?.completed && /FULL_TIME|FINAL/.test(ev.status.type.name || "")).map((ev) => {
+            const c = ev.competitions[0].competitors, h = c.find((x) => x.homeAway === "home"), a = c.find((x) => x.homeAway === "away");
+            return { t: Date.parse(ev.date), home: h.team.displayName, away: a.team.displayName, hs: +h.score, as: +a.score };
+          });
+          break;
+        } catch (e) { console.log("espn foot", e.message); }
+      }
+    }
+    const b = blocks[t.i];
+    const get = (k) => ((b.match(new RegExp("^" + k + ":\\s*(.+)$", "m")) || [])[1] || "").trim();
+    const e1 = get("equipe1"), e2 = get("equipe2"), pen = get("pronostic_en");
+    const g = cache[key].find((x) => Math.abs(x.t - t.start) <= 100 * 60000 && footSame(e1, x.home) && footSame(e2, x.away));
+    if (!g || !pen) continue;
+    const res = footVerdict(pen, g);
+    if (!res) continue;
+    const sc = `${g.hs}-${g.as}`;
+    const fr = `Score final : ${e1} ${sc} ${e2}. ` + (res === "gagne" ? "Pronostic gagné ✅." : "Pronostic perdu ❌.");
+    const en = `Final score: ${g.home} ${sc} ${g.away}. ` + (res === "gagne" ? "Prediction won ✅." : "Prediction lost ❌.");
+    blocks[t.i] = insertResult(b, res, fr, en, `النتيجة النهائية: ${sc}. ${AR_RES[res]}`);
+    done.push(`⚽ ${e1} ${sc} ${e2} : ${res === "gagne" ? "✅ gagné" : "❌ perdu"}`);
+  }
+  return done;
 }
 
 // ---------------------------------------------------------------- Résultats validés (message « bilan » ou 21h chaque jour)
@@ -439,6 +546,9 @@ async function sendBilan(env, date = new Date(), hours = 26) {
     s += `\n${m.res === "gagne" ? "✅" : "❌"} ${m.e1}${sc}${m.e2}\n   ${m.p}${m.p_en && m.p_en !== m.p ? " · " + m.p_en : ""}\n`;
   }
   s += `\n📊 ${won}/${res.length} pronostics gagnés · ${won}/${res.length} predictions won\n`;
+  const week = list.filter((m) => { const x = Date.parse(`${m.d}T${m.h}:00+01:00`); return x <= t && x >= t - 7 * 86400000 && (m.res === "gagne" || m.res === "perdu"); });
+  const wWon = week.filter((m) => m.res === "gagne").length;
+  if (week.length > res.length) s += `📈 7 derniers jours : ${wWon}/${week.length} gagnés (${Math.round(100 * wWon / week.length)} %) · Last 7 days: ${wWon}/${week.length} won\n`;
   s += `🔎 Vérifie toi-même sur le site, tout est publié AVANT les matchs :\n🇬🇧 Check it yourself, everything is posted BEFORE kick-off:\n👉 ${SITE}/pronostics.html#termines\n\n` + EN.resp;
   if (s.length > 4000) s = s.slice(0, 3990) + "…";
   await tg(env, "sendMessage", { chat_id: channelOf(env), text: s, disable_web_page_preview: true });
@@ -734,6 +844,7 @@ export default {
       try {
         if (slot === "nba") out = await nbaResults(env, new Date());
         else if (slot === "bilan") out = await sendBilan(env, new Date(), 26);
+        else if (slot === "midi") out = enPause(new Date()) ? "trêve : pas de promo" : await sendMidi(env, new Date());
         else if (slot === "nuit") out = await sendAnalyses(env, new Date(Date.now() + 2 * 3600000), "nuit");
         else out = "slot inconnu";
       } catch (e) { out = "erreur : " + e.message; }
@@ -769,12 +880,11 @@ export default {
     ctx.waitUntil(nba);
     // 21h : les résultats validés des dernières 26 heures (preuve pour les abonnés)
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
-    if (pause) console.log("treve : pas de promo");
-    else if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));
-    else ctx.waitUntil(sendPromo(env, pickIndex(when), when).then(console.log));
+    // Promo : UNE seule par jour, a 13h, envoyee par GitHub (bot-soir.yml -> /tick?slot=midi). Plus de promo a 6h ni a 21h.
+    if (when.getUTCHours() === 12) return;
     // 6h : reconstruit le site (pages « pronostic foot aujourd'hui / demain » a la bonne date)
     if (when.getUTCHours() === 5) ctx.waitUntil(nba.then(() => saveToGithub(env, "site-src/jour.txt", new TextEncoder().encode(when.toISOString().slice(0, 10) + "\n"), "reconstruction du jour")).catch((e) => console.log("jour", e.message)));
     // 6h : apres la promo, la liste des analyses du jour (seulement les jours de match)
-    if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, pause ? 0 : 20000)).then(() => sendAnalyses(env, when, "jour")).then(console.log).catch((e) => console.log("analyses", e.message)));
+    if (when.getUTCHours() === 5) ctx.waitUntil(new Promise((r) => setTimeout(r, 0)).then(() => sendAnalyses(env, when, "jour")).then(console.log).catch((e) => console.log("analyses", e.message)));
   },
 };
