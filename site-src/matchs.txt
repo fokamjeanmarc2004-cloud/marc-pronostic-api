@@ -2130,6 +2130,7 @@ pronostic_es: Ganan los Knicks
 pronostic_ar: فوز نيكس
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 30-70
 score: 106-115
 analyse_en: Tip-off Saturday 14 November at 1am in Douala and Lagos (Friday 7pm in Indianapolis), midnight in Accra and Dakar.
@@ -2138,12 +2139,14 @@ New York are 6-5 and crushed Milwaukee 117-85 on Tuesday, even if they lost to C
 Bookmakers make the Knicks favourites by around 8.5 points.
 My pick: Knicks to win. Bigger odds: Knicks win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Indiana Pacers 106-104 New York Knicks. Prediction lost ❌: Indiana Pacers won.
 analyse: Début du match samedi 14 novembre à 1h du matin à Douala (vendredi 19h à Indianapolis), minuit à Abidjan et Dakar.
 Indiana est à 4 victoires et 8 défaites et très faible à domicile (1-4).
 New York est à 6-5 et a écrasé Milwaukee 117-85 mardi, même s'il a perdu contre Cleveland mercredi.
 Les bookmakers donnent les Knicks favoris d'environ 8,5 points.
 Mon choix : victoire des Knicks. Option plus grosse cote : les Knicks gagnent avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Indiana Pacers 106-104 New York Knicks. Pronostic perdu ❌ : Indiana Pacers a gagné.
 ---
 date: 2026-11-14 01:00
 competition: NBA
@@ -2156,6 +2159,7 @@ pronostic_es: Gana el Magic
 pronostic_ar: فوز ماجيك
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 76-24
 score: 116-104
 analyse_en: Tip-off Saturday 14 November at 1am in Douala and Lagos (Friday 7pm in Orlando), midnight in Accra and Dakar.
@@ -2164,12 +2168,14 @@ Orlando have won their last 2 games (in Sacramento and Utah) and are back home.
 Bookmakers make the Magic big favourites (around -9.5 points).
 My pick: Magic to win. Bigger odds: Magic win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Orlando Magic 107-99 Milwaukee Bucks. Prediction won ✅: Magic to win.
 analyse: Début du match samedi 14 novembre à 1h du matin à Douala (vendredi 19h à Orlando), minuit à Abidjan et Dakar.
 Milwaukee est en pleine crise : 1 victoire et 11 défaites, et toujours aucune victoire à l'extérieur (0-5).
 Orlando reste sur 2 victoires (à Sacramento et à Utah) et rentre à la maison.
 Les bookmakers font du Magic un grand favori (environ 9,5 points d'avance).
 Mon choix : victoire du Magic. Option plus grosse cote : le Magic gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Orlando Magic 107-99 Milwaukee Bucks. Pronostic gagné ✅ : victoire du Magic.
 ---
 date: 2026-11-14 02:30
 competition: NBA
@@ -2182,6 +2188,7 @@ pronostic_es: Ganan los Rockets
 pronostic_ar: فوز روكتس
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 88-12
 score: 119-101
 analyse_en: Tip-off Saturday 14 November at 2:30am in Douala and Lagos (Friday 7:30pm in Houston), 1:30am in Accra and Dakar.
@@ -2190,12 +2197,14 @@ Utah are 1-11 and have lost all 5 of their road games.
 Bookmakers make the Rockets huge favourites (around -15.5 points).
 My pick: Rockets to win. Bigger odds: Rockets win by more than 9.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Houston Rockets 125-118 Utah Jazz. Prediction won ✅: Rockets to win.
 analyse: Début du match samedi 14 novembre à 2h30 du matin à Douala (vendredi 19h30 à Houston), 1h30 à Abidjan et Dakar.
 Houston est à 9 victoires et 3 défaites et presque imbattable à domicile (6-1) ; l'équipe vient de battre Golden State.
 Utah est à 1 victoire et 11 défaites et a perdu ses 5 matchs à l'extérieur.
 Les bookmakers font des Rockets de très grands favoris (environ 15,5 points d'avance).
 Mon choix : victoire des Rockets. Option plus grosse cote : les Rockets gagnent avec plus de 9,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Houston Rockets 125-118 Utah Jazz. Pronostic gagné ✅ : victoire des Rockets.
 ---
 date: 2026-11-14 03:30
 competition: NBA
