@@ -1,0 +1,38 @@
+# Messages du soir du bot dans le canal Telegram (secours : les horaires Cloudflare de 21h et minuit ne partaient pas).
+# 20h00 UTC = 21h00 Cameroun : résultats validés.  22h45 UTC = 23h45 Cameroun : pronostics de la nuit (NBA).
+# La clé envoyée au bot est une empreinte du jeton Telegram (jamais le jeton lui-même).
+name: Bot - messages du soir
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+    - cron: "45 22 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "bilan (résultats validés) ou nuit (pronostics de la nuit)"
+        required: true
+        default: "bilan"
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Appeler le bot
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          SLOT_IN: ${{ github.event.inputs.slot }}
+          SCHED: ${{ github.event.schedule }}
+        run: |
+          SLOT="$SLOT_IN"
+          if [ -z "$SLOT" ]; then
+            if [ "$SCHED" = "45 22 * * *" ]; then SLOT=nuit; else SLOT=bilan; fi
+          fi
+          KEY=$(printf '%s' "$TOKEN" | sha256sum | cut -d' ' -f1)
+          BOT=https://cousinmarc-bot.fokamjeanmarc2004.workers.dev
+          if [ "$SLOT" = "bilan" ]; then
+            curl -sS -H "X-Tick-Key: $KEY" "$BOT/tick?slot=nba"; echo
+            sleep 200
+          fi
+          curl -sS -H "X-Tick-Key: $KEY" "$BOT/tick?slot=$SLOT"; echo

@@ -460,6 +460,12 @@
   force = true
 
 [[redirects]]
+  from = "/detroit-pistons-predictions"
+  to = "/detroit-pistons-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/europa-league-predictions"
   to = "/europa-league-predictions.html"
   status = 301
@@ -946,6 +952,24 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-memphis-grizzlies-brooklyn-nets-2026-11-15"
+  to = "/prediction-memphis-grizzlies-brooklyn-nets-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-miami-heat-detroit-pistons-2026-11-15"
+  to = "/prediction-miami-heat-detroit-pistons-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-minnesota-timberwolves-chicago-bulls-2026-11-15"
+  to = "/prediction-minnesota-timberwolves-chicago-bulls-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-minnesota-timberwolves-dallas-mavericks-2026-11-13"
   to = "/prediction-minnesota-timberwolves-dallas-mavericks-2026-11-13.html"
   status = 301
@@ -960,6 +984,12 @@
 [[redirects]]
   from = "/prediction-napoli-lazio-2026-11-08"
   to = "/prediction-napoli-lazio-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-new-orleans-pelicans-denver-nuggets-2026-11-15"
+  to = "/prediction-new-orleans-pelicans-denver-nuggets-2026-11-15.html"
   status = 301
   force = true
 
@@ -1354,6 +1384,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-detroit-pistons"
+  to = "/pronostic-detroit-pistons.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-everton-chelsea-2026-10-17"
   to = "/pronostic-everton-chelsea-2026-10-17.html"
   status = 301
@@ -1582,6 +1618,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-memphis-grizzlies-brooklyn-nets-2026-11-15"
+  to = "/pronostic-memphis-grizzlies-brooklyn-nets-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-miami-heat-detroit-pistons-2026-11-15"
+  to = "/pronostic-miami-heat-detroit-pistons-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-milan-ferencvaros-2026-11-05"
   to = "/pronostic-milan-ferencvaros-2026-11-05.html"
   status = 301
@@ -1590,6 +1638,12 @@
 [[redirects]]
   from = "/pronostic-milan-inter-2026-10-31"
   to = "/pronostic-milan-inter-2026-10-31.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-minnesota-timberwolves-chicago-bulls-2026-11-15"
+  to = "/pronostic-minnesota-timberwolves-chicago-bulls-2026-11-15.html"
   status = 301
   force = true
 
@@ -1626,6 +1680,12 @@
 [[redirects]]
   from = "/pronostic-nba"
   to = "/pronostic-nba.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-new-orleans-pelicans-denver-nuggets-2026-11-15"
+  to = "/pronostic-new-orleans-pelicans-denver-nuggets-2026-11-15.html"
   status = 301
   force = true
 

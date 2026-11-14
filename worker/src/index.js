@@ -725,6 +725,21 @@ export default {
       return new Response(out, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
+    // Messages du soir declenches par GitHub (bot-soir.yml). Cle = empreinte SHA-256 du jeton Telegram.
+    if (url.pathname === "/tick") {
+      const hash = [...new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(env.TELEGRAM_BOT_TOKEN || "")))].map((b) => b.toString(16).padStart(2, "0")).join("");
+      if (!env.TELEGRAM_BOT_TOKEN || request.headers.get("X-Tick-Key") !== hash) return new Response("interdit", { status: 403 });
+      const slot = url.searchParams.get("slot");
+      let out;
+      try {
+        if (slot === "nba") out = await nbaResults(env, new Date());
+        else if (slot === "bilan") out = await sendBilan(env, new Date(), 26);
+        else if (slot === "nuit") out = await sendAnalyses(env, new Date(Date.now() + 2 * 3600000), "nuit");
+        else out = "slot inconnu";
+      } catch (e) { out = "erreur : " + e.message; }
+      return new Response(String(out), { headers: { "content-type": "text/plain; charset=utf-8" } });
+    }
+
     // Test des resultats NBA automatiques (lecture seule, n ecrit rien) : /nba-test
     if (url.pathname === "/nba-test") {
       let out;
@@ -745,14 +760,14 @@ export default {
   async scheduled(event, env, ctx) {
     const when = new Date(event.scheduledTime);
     // 23h00 UTC = minuit au Cameroun : pronostics de la nuit (NBA...)
-    if (when.getUTCHours() === 23) { ctx.waitUntil(sendAnalyses(env, when, "nuit").then(console.log).catch((e) => console.log("nuit", e.message))); return; }
+    // (les messages de 21h « résultats validés » et de minuit « pronostics de la nuit » partent de GitHub : .github/workflows/bot-soir.yml -> /tick)
+    if (when.getUTCHours() === 23) return;
     const pause = enPause(when);
     // 6h et 21h : resultats NBA automatiques (scores ESPN)
     // (a 6h, d abord les resultats NBA, PUIS la reconstruction du jour : deux ecritures GitHub en meme temps se bloquent)
     const nba = (when.getUTCHours() === 5 || when.getUTCHours() === 20) ? nbaResults(env, when).then(console.log).catch((e) => console.log("nba", e.message)) : Promise.resolve();
     ctx.waitUntil(nba);
     // 21h : les résultats validés des dernières 26 heures (preuve pour les abonnés)
-    if (when.getUTCHours() === 20) ctx.waitUntil(sendBilan(env, when, 26).then(console.log).catch((e) => console.log("bilan", e.message)));
     // 12h00 UTC = 13h00 au Cameroun : VIP le dimanche, sujet du jour sinon ; sinon promo de 6h ou 21h
     if (pause) console.log("treve : pas de promo");
     else if (when.getUTCHours() === 12) ctx.waitUntil(sendMidi(env, when).then(console.log));

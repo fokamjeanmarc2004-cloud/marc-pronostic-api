@@ -2217,6 +2217,7 @@ pronostic_es: Ganan los Spurs
 pronostic_ar: فوز سبيرز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 78-22
 score: 117-104
 analyse_en: Tip-off Saturday 14 November at 3:30am in Douala and Lagos (Friday 8:30pm in San Antonio), 2:30am in Accra and Dakar.
@@ -2225,12 +2226,14 @@ Golden State are 8-4 but only 2-3 on the road, and they lost in Houston on Wedne
 Bookmakers make the Spurs big favourites (around -11.5 points).
 My pick: Spurs to win. Bigger odds: Spurs win by more than 6.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: San Antonio Spurs 123-85 Golden State Warriors. Prediction won ✅: Spurs to win.
 analyse: Début du match samedi 14 novembre à 3h30 du matin à Douala (vendredi 20h30 à San Antonio), 2h30 à Abidjan et Dakar.
 San Antonio est à 10 victoires et 2 défaites, l'une des meilleures équipes de la ligue, et vient de gagner à Chicago.
 Golden State est à 8-4 mais seulement 2-3 à l'extérieur, et a perdu à Houston mercredi.
 Les bookmakers font des Spurs de grands favoris (environ 11,5 points d'avance).
 Mon choix : victoire des Spurs. Option plus grosse cote : les Spurs gagnent avec plus de 6,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : San Antonio Spurs 123-85 Golden State Warriors. Pronostic gagné ✅ : victoire des Spurs.
 ---
 date: 2026-11-14 04:00
 competition: NBA
@@ -2243,6 +2246,7 @@ pronostic_es: Ganan los Trail Blazers
 pronostic_ar: فوز تريل بليزرز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 24-76
 score: 106-118
 analyse_en: Tip-off Saturday 14 November at 4am in Douala and Lagos (Friday 7pm in Sacramento), 3am in Accra and Dakar.
@@ -2251,9 +2255,115 @@ Sacramento are 1-10 and have lost all 6 of their home games.
 Bookmakers make the Trail Blazers favourites by around 10.5 points.
 My pick: Trail Blazers to win. Bigger odds: Trail Blazers win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sacramento Kings 107-120 Portland Trail Blazers. Prediction won ✅: Trail Blazers to win.
 analyse: Début du match samedi 14 novembre à 4h du matin à Douala (vendredi 19h à Sacramento), 3h à Abidjan et Dakar.
 Portland est à 8 victoires et 3 défaites, solide à l'extérieur (5-1), et vient de battre Oklahoma City deux fois de suite.
 Sacramento est à 1 victoire et 10 défaites et a perdu ses 6 matchs à domicile.
 Les bookmakers donnent les Trail Blazers favoris d'environ 10,5 points.
 Mon choix : victoire des Trail Blazers. Option plus grosse cote : les Trail Blazers gagnent avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sacramento Kings 107-120 Portland Trail Blazers. Pronostic gagné ✅ : victoire des Trail Blazers.
+---
+date: 2026-11-15 01:00
+competition: NBA
+sport: basket
+equipe1: New Orleans Pelicans
+equipe2: Denver Nuggets
+pronostic: Victoire des Nuggets
+pronostic_en: Nuggets to win
+pronostic_es: Ganan los Nuggets
+pronostic_ar: فوز ناغتس
+cote:
+bookmaker: 1xbet
+proba: 20-80
+score: 108-121
+analyse_en: Tip-off Sunday 15 November at 1am in Douala and Lagos (Saturday 6pm in New Orleans), midnight in Accra and Dakar.
+Denver are 6-4 and solid on the road (3-2).
+New Orleans are 4-9 and have lost 5 of their 8 home games.
+Bookmakers make the Nuggets big favourites (around -12.5 points).
+My pick: Nuggets to win. Bigger odds: Nuggets win by more than 7.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 15 novembre à 1h du matin à Douala (samedi 18h à La Nouvelle-Orléans), minuit à Abidjan et Dakar.
+Denver est à 6 victoires et 4 défaites et solide à l'extérieur (3-2).
+La Nouvelle-Orléans est à 4-9 et a perdu 5 de ses 8 matchs à domicile.
+Les bookmakers font des Nuggets de grands favoris (environ 12,5 points d'avance).
+Mon choix : victoire des Nuggets. Option plus grosse cote : les Nuggets gagnent avec plus de 7,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 02:00
+competition: NBA
+sport: basket
+equipe1: Miami Heat
+equipe2: Detroit Pistons
+pronostic: Victoire des Pistons
+pronostic_en: Pistons to win
+pronostic_es: Ganan los Pistons
+pronostic_ar: فوز بيستونز
+cote:
+bookmaker: 1xbet
+proba: 36-64
+score: 109-116
+analyse_en: Tip-off Sunday 15 November at 2am in Douala and Lagos (Saturday 8pm in Miami), 1am in Accra and Dakar.
+Detroit are 8-3 and excellent on the road (5-1).
+Miami are 6-6 and only 2-3 at home.
+Bookmakers make the Pistons favourites by around 4.5 points.
+My pick: Pistons to win. Bigger odds: Pistons win by more than 4.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 15 novembre à 2h du matin à Douala (samedi 20h à Miami), 1h à Abidjan et Dakar.
+Detroit est à 8 victoires et 3 défaites et excellent à l'extérieur (5-1).
+Miami est à 6-6 et seulement 2-3 à domicile.
+Les bookmakers donnent les Pistons favoris d'environ 4,5 points.
+Mon choix : victoire des Pistons. Option plus grosse cote : les Pistons gagnent avec plus de 4,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 02:00
+competition: NBA
+sport: basket
+equipe1: Memphis Grizzlies
+equipe2: Brooklyn Nets
+pronostic: Victoire des Grizzlies
+pronostic_en: Grizzlies to win
+pronostic_es: Ganan los Grizzlies
+pronostic_ar: فوز غريزليز
+cote:
+bookmaker: 1xbet
+proba: 62-38
+score: 118-112
+analyse_en: Tip-off Sunday 15 November at 2am in Douala and Lagos (Saturday 7pm in Memphis), 1am in Accra and Dakar.
+Memphis are 8-4, even if they are better on the road (6-0) than at home (2-4).
+Brooklyn are 3-8 and only 2-5 away from home.
+Bookmakers make the Grizzlies favourites by around 3.5 points.
+My pick: Grizzlies to win. Bigger odds: Grizzlies win and over 220.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 15 novembre à 2h du matin à Douala (samedi 19h à Memphis), 1h à Abidjan et Dakar.
+Memphis est à 8 victoires et 4 défaites, même si l'équipe est meilleure à l'extérieur (6-0) qu'à domicile (2-4).
+Brooklyn est à 3-8 et seulement 2-5 à l'extérieur.
+Les bookmakers donnent les Grizzlies favoris d'environ 3,5 points.
+Mon choix : victoire des Grizzlies. Option plus grosse cote : les Grizzlies gagnent et plus de 220,5 points.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 02:00
+competition: NBA
+sport: basket
+equipe1: Minnesota Timberwolves
+equipe2: Chicago Bulls
+pronostic: Victoire des Timberwolves
+pronostic_en: Timberwolves to win
+pronostic_es: Ganan los Timberwolves
+pronostic_ar: فوز تمبروولفز
+cote:
+bookmaker: 1xbet
+proba: 88-12
+score: 124-106
+analyse_en: Tip-off Sunday 15 November at 2am in Douala and Lagos (Saturday 7pm in Minneapolis), 1am in Accra and Dakar.
+Minnesota are 9-3 and very strong at home (5-1).
+Chicago are 2-9 and have lost 5 of their 6 road games.
+Bookmakers make the Timberwolves huge favourites (around -15.5 points).
+My pick: Timberwolves to win. Bigger odds: Timberwolves win by more than 9.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 15 novembre à 2h du matin à Douala (samedi 19h à Minneapolis), 1h à Abidjan et Dakar.
+Minnesota est à 9 victoires et 3 défaites et très fort à domicile (5-1).
+Chicago est à 2-9 et a perdu 5 de ses 6 matchs à l'extérieur.
+Les bookmakers font des Timberwolves de très grands favoris (environ 15,5 points d'avance).
+Mon choix : victoire des Timberwolves. Option plus grosse cote : les Timberwolves gagnent avec plus de 9,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
