@@ -268,6 +268,12 @@
   force = true
 
 [[redirects]]
+  from = "/bookmaker-promo-codes"
+  to = "/bookmaker-promo-codes.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/borussia-dortmund-predictions"
   to = "/borussia-dortmund-predictions.html"
   status = 301
@@ -406,6 +412,24 @@
   force = true
 
 [[redirects]]
+  from = "/codes-promo-ar"
+  to = "/codes-promo-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/codes-promo"
+  to = "/codes-promo.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/codigos-promocionales-casas"
+  to = "/codigos-promocionales-casas.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/codigos-promocionales"
   to = "/codigos-promocionales.html"
   status = 301
@@ -534,18 +558,6 @@
 [[redirects]]
   from = "/football-predictions-tomorrow"
   to = "/football-predictions-tomorrow.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/gains-ar"
-  to = "/gains-ar.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/gains"
-  to = "/gains.html"
   status = 301
   force = true
 
@@ -2860,12 +2872,6 @@
   force = true
 
 [[redirects]]
-  from = "/tickets-ganadores"
-  to = "/tickets-ganadores.html"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/total-odd-even"
   to = "/total-odd-even.html"
   status = 301
@@ -2928,12 +2934,6 @@
 [[redirects]]
   from = "/which-bookmaker"
   to = "/which-bookmaker.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/winning-tickets"
-  to = "/winning-tickets.html"
   status = 301
   force = true
 
@@ -3483,6 +3483,54 @@
 [[redirects]]
   from = "/pronostic-cameroun-namibie-2026-11-11-ar.html"
   to = "/pronostic-cameroun-namibie-2026-11-12-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gains.html"
+  to = "/resultats.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gains"
+  to = "/resultats.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/winning-tickets.html"
+  to = "/results.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/winning-tickets"
+  to = "/results.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tickets-ganadores.html"
+  to = "/resultados.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tickets-ganadores"
+  to = "/resultados.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gains-ar.html"
+  to = "/resultats-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gains-ar"
+  to = "/resultats-ar.html"
   status = 301
   force = true
 

@@ -350,7 +350,7 @@ GAINS_L = {
 def gains_band(lang):
     L = GAINS_L[lang]
     return (f'<section class="gainsband"><div class="wrap"><div class="gb"><div><b>{L["band"]}</b><span>{L["bandsub"]}</span></div>'
-            f'<a class="cta" href="{GAINS_SLUG[lang]}">{L["btn"]} →</a></div></div></section>')
+            f'<a class="cta" href="{RESULTS_SLUG[lang]}">{L["btn"]} →</a></div></div></section>')
 
 
 def winners_wall(lang):
@@ -1341,7 +1341,7 @@ p.vwarn[style]{background:var(--green-soft);color:var(--green-ink);font-weight:6
 .tb-ffn.ok{background:#0f7a3d}
 body.has-sticky .tabbar{display:none}
 @media(min-width:960px){.tabbar,.toptg{display:none}}
-@media(max-width:959px){body{padding-bottom:76px}}
+
 
 /* ---------- LISTE REPLIABLE ---------- */
 .bklist.folded .bkrow:nth-child(n+6){display:none}
@@ -1449,22 +1449,43 @@ BURGER_SCRIPT = """<script>(function(){
   if(key){var el=p.querySelector('a[data-key="'+key+'"]');if(el)el.classList.add('active');}
 })();</script>"""
 
+
+# ---------------------------------------------------------------- Icones du menu : vraies images (ballon, trophee, logos) + SVG dores
+def _ic(src):
+    return f'<img src="{src}" alt="" width="34" height="34" loading="lazy" decoding="async">'
+def _crown(gid="cg", solid=False):
+    if solid:
+        return ('<svg class="crown" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 17.6 2 7.2l5.2 4.1L12 3.6l4.8 7.7L22 7.2l-1 10.4z"/>'
+                '<rect x="3" y="18.6" width="18" height="2.4" rx="1.1" fill="currentColor"/></svg>')
+    return (f'<svg class="crown" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><defs><linearGradient id="{gid}" x1="0" y1="0" x2="0" y2="1">'
+            f'<stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#facc15"/><stop offset="1" stop-color="#b7791f"/></linearGradient></defs>'
+            f'<path fill="url(#{gid})" stroke="#7a4b00" stroke-width=".5" d="M3 17.6 2 7.2l5.2 4.1L12 3.6l4.8 7.7L22 7.2l-1 10.4z"/>'
+            f'<circle cx="12" cy="3.4" r="1.4" fill="url(#{gid})"/><circle cx="2" cy="7" r="1.2" fill="url(#{gid})"/><circle cx="22" cy="7" r="1.2" fill="url(#{gid})"/>'
+            f'<rect x="3" y="18.6" width="18" height="2.4" rx="1.1" fill="url(#{gid})"/></svg>')
+_DICE = ('<svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><defs><linearGradient id="dgm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7d1"/>'
+         '<stop offset="1" stop-color="#e0a800"/></linearGradient></defs><rect x="4" y="4" width="24" height="24" rx="6" fill="url(#dgm)"/>'
+         '<g fill="#1a1205"><circle cx="11" cy="11" r="2.3"/><circle cx="21" cy="21" r="2.3"/><circle cx="16" cy="16" r="2.3"/><circle cx="21" cy="11" r="2.3"/><circle cx="11" cy="21" r="2.3"/></g></svg>')
+_FFN = '<span class="icffn" translate="no">FFN</span>'
+_I = {"home": _ic("logo-cm-96.png?v=1"), "codes": _FFN, "prono": _ic("ico/multisport.webp"), "comps": _ic("logos/comp-uefa-champions-d.webp"),
+      "cote2": _ic("ico/ballon.webp"), "tpi": _DICE, "res": _ic("ico/trophee.webp"), "shop": _ic("livre-cv-multi.webp"), "vip": _crown("cgm")}
+CODES_SLUG = {"fr": "codes-promo.html", "en": "bookmaker-promo-codes.html", "es": "codigos-promocionales-casas.html", "ar": "codes-promo-ar.html"}
 NAV_L = {
-  "fr": {"title":"Menu","items":[("accueil","\U0001F3E0","Accueil","index.html"),("codes","\U0001F39F\uFE0F","Codes promo","index.html#bookmakers"),
-         ("analyses","\U0001F4CA","Analyses des matchs","pronostics.html"),("comps","\U0001F3C6","Compétitions","competitions.html"),("cote2","\u26BD","Côte de 2","cote-de-2.html"),("tpi","\U0001F3B2","Total Pair/Impair","total-pair-impair.html"),
-         ("compare","\U0001F9ED","Quel bookmaker choisir ?","quel-bookmaker-choisir.html"),("aide","❓","Code qui ne marche pas","code-promo-ne-marche-pas.html"),
-         ("resultats","\U0001F3C6","Résultats","resultats.html"),
-         ("livres","\U0001F4DA","Mes livres","livres.html"),("vip","\u2B50","VIP","vip.html")]},
-  "en": {"title":"Menu","items":[("accueil","\U0001F3E0","Home","promo-codes.html"),("codes","\U0001F39F\uFE0F","Promo codes","promo-codes.html#bookmakers"),
-         ("analyses","\U0001F4CA","Match predictions","predictions.html"),("comps","\U0001F3C6","All competitions","all-competitions.html"),("cote2","\u26BD","Odds of 2","odds-of-2.html"),("tpi","\U0001F3B2","Total Odd/Even","total-odd-even.html"),
-         ("compare","\U0001F9ED","Which bookmaker?","which-bookmaker.html"),("aide","❓","Code not working","promo-code-not-working.html"),
-         ("resultats","\U0001F3C6","Results","results.html"),("livres","\U0001F4DA","Books (in French)","livres.html"),("vip","\u2B50","VIP","vip-en.html")]},
-  "es": {"title":"Menú","items":[("accueil","\U0001F3E0","Inicio","codigos-promocionales.html"),("codes","\U0001F39F\uFE0F","Códigos promo","codigos-promocionales.html#bookmakers"),
-         ("analyses","\U0001F4CA","Pronósticos de partidos","pronosticos.html"),("comps","\U0001F3C6","Competiciones (EN)","all-competitions.html"),("cote2","\u26BD","Cuota de 2","cuota-de-2.html"),("tpi","\U0001F3B2","Total Par/Impar","total-par-impar.html"),
-         ("resultats","\U0001F3C6","Resultados","resultados.html"),("livres","\U0001F4DA","Libros (en francés)","livres.html"),("vip","\u2B50","VIP","vip-es.html")]},
-  "ar": {"title":"القائمة","items":[("accueil","\U0001F3E0","الرئيسية","promo-codes-ar.html"),("codes","\U0001F39F\uFE0F","الرموز الترويجية","promo-codes-ar.html#bookmakers"),
-         ("analyses","\U0001F4CA","توقعات المباريات","pronostics-ar.html"),("comps","\U0001F3C6","المسابقات (EN)","all-competitions.html"),("cote2","\u26BD","رهان بضعف 2","cote-2-ar.html"),("tpi","\U0001F3B2","زوجي/فردي","total-pair-impair-ar.html"),
-         ("resultats","\U0001F3C6","النتائج","resultats-ar.html"),("livres","\U0001F4DA","كتب (بالفرنسية)","livres.html"),("vip","\u2B50","VIP","vip-ar.html")]},
+  "fr": {"title": "Menu", "items": [("accueil", _I["home"], "Accueil", "index.html"), ("codes", _I["codes"], "Codes promo", "codes-promo.html"),
+         ("analyses", _I["prono"], "Pronostics", "pronostics.html"), ("comps", _I["comps"], "Compétitions", "competitions.html"), ("cote2", _I["cote2"], "Côte de 2", "cote-de-2.html"),
+         ("tpi", _I["tpi"], "Total Pair/Impair", "total-pair-impair.html"), ("resultats", _I["res"], "Résultats", "resultats.html"),
+         ("livres", _I["shop"], "Boutique", "livres.html"), ("vip", _I["vip"], "VIP", "vip.html")]},
+  "en": {"title": "Menu", "items": [("accueil", _I["home"], "Home", "promo-codes.html"), ("codes", _I["codes"], "Promo codes", "bookmaker-promo-codes.html"),
+         ("analyses", _I["prono"], "Predictions", "predictions.html"), ("comps", _I["comps"], "All competitions", "all-competitions.html"), ("cote2", _I["cote2"], "Odds of 2", "odds-of-2.html"),
+         ("tpi", _I["tpi"], "Total Odd/Even", "total-odd-even.html"), ("resultats", _I["res"], "Results", "results.html"),
+         ("livres", _I["shop"], "Shop", "livres.html"), ("vip", _I["vip"], "VIP", "vip-en.html")]},
+  "es": {"title": "Menú", "items": [("accueil", _I["home"], "Inicio", "codigos-promocionales.html"), ("codes", _I["codes"], "Códigos promo", "codigos-promocionales-casas.html"),
+         ("analyses", _I["prono"], "Pronósticos", "pronosticos.html"), ("comps", _I["comps"], "Competiciones", "all-competitions.html"), ("cote2", _I["cote2"], "Cuota de 2", "cuota-de-2.html"),
+         ("tpi", _I["tpi"], "Total Par/Impar", "total-par-impar.html"), ("resultats", _I["res"], "Resultados", "resultados.html"),
+         ("livres", _I["shop"], "Tienda", "livres.html"), ("vip", _I["vip"], "VIP", "vip-es.html")]},
+  "ar": {"title": "القائمة", "items": [("accueil", _I["home"], "الرئيسية", "promo-codes-ar.html"), ("codes", _I["codes"], "الرموز الترويجية", "codes-promo-ar.html"),
+         ("analyses", _I["prono"], "التوقعات", "pronostics-ar.html"), ("comps", _I["comps"], "المسابقات", "all-competitions.html"), ("cote2", _I["cote2"], "رهان بضعف 2", "cote-2-ar.html"),
+         ("tpi", _I["tpi"], "زوجي/فردي", "total-pair-impair-ar.html"), ("resultats", _I["res"], "النتائج", "resultats-ar.html"),
+         ("livres", _I["shop"], "المتجر", "livres.html"), ("vip", _I["vip"], "VIP", "vip-ar.html")]},
 }
 
 def burger_html():
@@ -1481,10 +1502,10 @@ def navpanel_html(lang="fr", lang_links=""):
 
 VIP_SLUG = {"fr":"vip.html","en":"vip-en.html","es":"vip-es.html","ar":"vip-ar.html"}
 TOPLINKS_L = {
-  "fr": [("Codes promo","index.html#bookmakers"),("Pronostics","pronostics.html"),("Côte de 2","cote-de-2.html"),("Résultats","resultats.html"),("Livres","livres.html")],
-  "en": [("Promo codes","promo-codes.html#bookmakers"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Results","results.html"),("Books (FR)","livres.html")],
-  "es": [("Códigos","codigos-promocionales.html#bookmakers"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Resultados","resultados.html"),("Libros (FR)","livres.html")],
-  "ar": [("الرموز","promo-codes-ar.html#bookmakers"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("النتائج","resultats-ar.html"),("كتب (FR)","livres.html")],
+  "fr": [("Codes promo","codes-promo.html"),("Pronostics","pronostics.html"),("Côte de 2","cote-de-2.html"),("Résultats","resultats.html"),("Boutique","livres.html")],
+  "en": [("Promo codes","bookmaker-promo-codes.html"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Results","results.html"),("Shop","livres.html")],
+  "es": [("Códigos","codigos-promocionales-casas.html"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Resultados","resultados.html"),("Tienda","livres.html")],
+  "ar": [("الرموز","codes-promo-ar.html"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("النتائج","resultats-ar.html"),("المتجر","livres.html")],
 }
 HOME_L = {"fr":"index.html","en":"promo-codes.html","es":"codigos-promocionales.html","ar":"promo-codes-ar.html"}
 
@@ -1553,20 +1574,27 @@ def ticker_html(lang):
 
 TOPCART_SCRIPT = "<script>(function(){try{var c=JSON.parse(sessionStorage.getItem('cm_cart')||'[]'),a=document.getElementById('topcart');if(a&&c.length){a.hidden=false;a.querySelector('span').textContent=c.length}}catch(e){}})()</script>"
 
+LANG_NAMES = {"fr": "Français", "en": "English", "es": "Español", "ar": "العربية"}
+LANG_ARIA = {"fr": "Choisir la langue", "en": "Choose language", "es": "Elegir idioma", "ar": "اختر اللغة"}
+GLOBE_SVG = ('<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/>'
+             '<path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 5.7 3.9 9.2s-1.3 6.6-3.9 9.2M12 2.8C9.4 5.4 8.1 8.5 8.1 12s1.3 6.6 3.9 9.2"/></svg>')
+LANGDD_SCRIPT = ("<script>document.addEventListener('click',function(e){document.querySelectorAll('details.langdd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});"
+                 "document.addEventListener('keydown',function(e){if(e.key==='Escape')document.querySelectorAll('details.langdd[open]').forEach(function(d){d.removeAttribute('open')})});</script>")
+
 def topnav(lang, langs_html, top_langs):
     links = "".join(f'<li><a href="{h}">{t}</a></li>' for t,h in TOPLINKS_L[lang])
-    links += f'<li><a class="vip" href="{VIP_SLUG[lang]}">VIP</a></li>'
+    links += f'<li><a class="vip" href="{VIP_SLUG[lang]}">{_crown(solid=True)}VIP</a></li>'
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
             f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm-96.png?v=1" width="40" height="40" alt="" style="width:40px;height:40px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
-            f'<div class="navright"><ul class="toplinks">{links}</ul><ul class="toplang">{top_langs}</ul>'
+            f'<div class="navright"><ul class="toplinks">{links}</ul>{top_langs}'
             f'<a class="topcart" id="topcart" href="livres.html" hidden aria-label="Panier">🛒<span></span></a>{TOPCART_SCRIPT}'
-            f'<a class="topico wa" href="{dict(SOCIAL)["WhatsApp"]}" target="_blank" rel="nofollow" aria-label="WhatsApp">{ICONS["WhatsApp"]}</a>'
-            f'<a class="topico tgi" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram">{ICONS["Telegram"]}</a>'
-            f'<a class="topico ct" href="https://t.me/Barcilone" target="_blank" rel="nofollow" aria-label="{ {'en':'Message me on Telegram','es':'Escríbeme en Telegram','ar':'راسلني على تيليجرام'}.get(lang,'Me joindre sur Telegram') }"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg></a>{burger_html()}</div>'
-            f'</div></nav>\n{navpanel_html(lang, langs_html)}{tabbar_html(lang)}')
+            f'{burger_html()}</div>'
+            f'</div></nav>\n{navpanel_html(lang, langs_html)}{LANGDD_SCRIPT}')
 
 def _top_langs(current, **kw):
-    return "".join(f'<li><a href="{kw[k]}" hreflang="{k}">{k.upper()}</a></li>' for k in ("fr","en","es","ar") if k != current and kw.get(k))
+    items = "".join(f'<a href="{kw[k]}" hreflang="{k}" lang="{k}"><b>{k.upper()}</b>{LANG_NAMES[k]}</a>' for k in ("fr","en","es","ar") if k != current and kw.get(k))
+    return (f'<details class="langdd"><summary aria-label="{LANG_ARIA[current]}" title="{LANG_ARIA[current]}">{GLOBE_SVG}<b>{current.upper()}</b></summary>'
+            f'<div class="langmenu"><span class="cur"><b>{current.upper()}</b>{LANG_NAMES[current]}<i>✓</i></span>{items}</div></details>')
 
 def nav_fr(en="promo-codes.html", es=None, ar="promo-codes-ar.html"):
     return topnav("fr", f'<ul class="langrow">{_lang_items("fr", en=en, es=es, ar=ar)}</ul>', _top_langs("fr", en=en, es=es, ar=ar))
@@ -1585,10 +1613,10 @@ NAV = nav_fr(es="codigos-promocionales.html")
 def social_html():
     return "\n".join(f'<a href="{u}" rel="nofollow">{ICONS.get(n,"")}<span>{n}</span></a>' for n,u in SOCIAL)
 
-_BAND_L = {"fr": ("📚 Mes livres", "14 manuels en 3 niveaux : formation, pronostics par sport, expert.", "Voir la boutique"),
-           "en": ("📚 My books", "Learn my analysis method: guides by Cousin Marc (in French).", "See the books"),
-           "es": ("📚 Mis libros", "Aprende mi método de análisis: guías de Cousin Marc (en francés).", "Ver los libros"),
-           "ar": ("📚 كتبي", "تعلّم طريقتي في التحليل: أدلة كوزين مارك (بالفرنسية).", "عرض الكتب")}
+_BAND_L = {"fr": ("Boutique", "Livres et manuels de pronostics : formation, par sport, expert.", "Entrer dans la boutique"),
+           "en": ("Shop", "Betting books and manuals: training, by sport, expert.", "Visit the shop"),
+           "es": ("Tienda", "Libros y manuales de pronósticos: formación, por deporte, experto.", "Entrar en la tienda"),
+           "ar": ("المتجر", "كتب وأدلة التوقعات: تدريب، حسب الرياضة، مستوى الخبراء.", "ادخل المتجر")}
 def livres_band(lang):
     a, b, c = _BAND_L[lang]
     a = a.replace("📚 ", "")
@@ -1604,13 +1632,13 @@ def footer_html():
 <div class="cols">
 <div>
 <h4>Navigation</h4>
-<a href="index.html">Codes promo</a>
+<a href="codes-promo.html">Codes promo</a>
 <a href="cote-de-2.html">Côte de 2</a>
 <a href="pronostics.html">Pronostics</a>
 <a href="resultats.html">Résultats</a>
 <a href="competitions.html">Compétitions</a>
 <a href="bilan.html">Mon bilan</a>
-<a href="livres.html">Mes livres</a>
+<a href="livres.html">Boutique</a>
 <a href="actualites.html">Actualités</a>
 <a href="a-propos.html">À propos</a>
 </div>
@@ -1879,7 +1907,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
 <meta name="robots" content="index, follow">
 <link rel="icon" href="favicon.ico?v=3" sizes="any"><link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png?v=3"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png?v=3">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3"><meta name="theme-color" content="#ffffff">{_ORG_LD if canonical.rstrip("/") in (BASE, BASE + "/index.html") else ""}<link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Cousin Marc"><meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3"><meta name="theme-color" content="#070d1a">{_ORG_LD if canonical.rstrip("/") in (BASE, BASE + "/index.html") else ""}<link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Cousin Marc"><meta name="mobile-web-app-capable" content="yes">
 <meta property="og:type" content="website"><meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}"><meta property="og:url" content="{canonical}">
 <meta property="og:locale" content="{oglocale}">
@@ -1912,7 +1940,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11r"><script>
+<link rel="stylesheet" href="style.css?v=2026-11t"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -1929,7 +1957,7 @@ document.addEventListener("DOMContentLoaded",function(){{
       t.setAttribute("aria-label","Telegram Cousin Marc");
       t.innerHTML='<svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>';
       var sb=document.querySelector(".stickybar");
-      if(window.innerWidth<1280||matchMedia("(pointer:coarse)").matches){{ /* telephone et tablette : Telegram est dans l'en-tete, barre du bas visible */ }}
+      if(true){{ /* bulle Telegram retiree : bas de page libre (Telegram est dans le bas de page) */ }}
       else if(sb&&window.innerWidth<900){{
         /* mobile avec barre du bas : le bouton Telegram s'integre a la barre (ne cache plus le contenu) */
         t.className="sb-tg"; t.querySelector("svg").setAttribute("width","24"); t.querySelector("svg").setAttribute("height","24");
@@ -2963,10 +2991,32 @@ VIP_PRICE = "400 $"  # prix annuel (voir VIP_PLANS pour toutes les formules)
 VIP_PRICE_XAF = "25 000 / 65 000 / 240 000 FCFA"   # montants Mobile Money des 3 formules
 # Formules VIP : (cle, prix $, prix FCFA, prix mensuel equivalent, meilleure offre ?)
 VIP_PLANS = [
- ("m1", "42 $", "25 000 FCFA", "25 000 FCFA", False),
+ ("m1", "45 $", "25 000 FCFA", "25 000 FCFA", False),
  ("m3", "108 $", "65 000 FCFA", "≈ 21 700 FCFA", False),
  ("y1", "400 $", "240 000 FCFA", "20 000 FCFA", True),
 ]
+
+# ---------------------------------------------------------------- VIP : prix dans chaque monnaie (taux du 15 nov. 2026, arrondis ; mettre a jour VIP_FX si les taux bougent beaucoup)
+VIP_FX = [("🇨🇲 🇬🇦 🇹🇩 🇨🇬", "FCFA (XAF)", 1, 1000), ("🇨🇮 🇸🇳 🇧🇯 🇹🇬 🇲🇱 🇧🇫", "FCFA (XOF)", 1, 1000), ("🇳🇬 Nigeria", "Naira (NGN)", 2.2444, 1000), ("🇬🇭 Ghana", "Cedi (GHS)", 0.019818, 5),
+          ("🇨🇩 RD Congo", "Franc (CDF)", 3.9179, 1000), ("🇬🇳 Guinée", "Franc (GNF)", 14.9209, 5000), ("🇰🇪 Kenya", "Shilling (KES)", 0.21931, 100), ("🇷🇼 Rwanda", "Franc (RWF)", 2.4993, 1000),
+          ("🇹🇿 Tanzanie", "Shilling (TZS)", 4.4207, 1000), ("🇺🇬 Ouganda", "Shilling (UGX)", 6.7418, 1000), ("🇲🇦 Maroc", "Dirham (MAD)", 0.016699, 5), ("🇩🇿 Algérie", "Dinar (DZD)", 0.23123, 100),
+          ("🇹🇳 Tunisie", "Dinar (TND)", 0.005085, 1), ("🇪🇬 Égypte", "Livre (EGP)", 0.08998, 10), ("🇿🇦 Afrique du Sud", "Rand (ZAR)", 0.028472, 5), ("🇿🇲 Zambie", "Kwacha (ZMW)", 0.034451, 5),
+          ("🇦🇴 Angola", "Kwanza (AOA)", 1.5905, 500), ("🇪🇹 Éthiopie", "Birr (ETB)", 0.28678, 100), ("🇲🇬 Madagascar", "Ariary (MGA)", 7.6649, 1000), ("🇧🇮 Burundi", "Franc (BIF)", 5.0767, 1000),
+          ("🇬🇲 Gambie", "Dalasi (GMD)", 0.126135, 50), ("🇲🇷 Mauritanie", "Ouguiya (MRU)", 0.068473, 10), ("🇱🇷 Liberia", "Dollar (LRD)", 0.28868, 100), ("🌍 Crypto / autres pays", "Dollar (USD)", None, 1), ("🇪🇺 Europe", "Euro (EUR)", 0.001524, 1)]
+VIP_FX_L = {"fr": ("💱 Le prix dans ta monnaie", "Montants arrondis au taux du jour. Tu paies par Mobile Money (FCFA) ou en crypto ($) ; ce tableau t'aide à savoir combien ça fait chez toi.", "Pays", "Monnaie", "1 mois", "3 mois", "1 an"),
+            "en": ("💱 The price in your currency", "Rounded amounts at today's rate. You pay by Mobile Money (FCFA) or crypto ($); this table shows what it costs in your country.", "Country", "Currency", "1 month", "3 months", "1 year"),
+            "es": ("💱 El precio en tu moneda", "Importes redondeados al tipo de cambio del día. Pagas por Mobile Money (FCFA) o cripto ($).", "País", "Moneda", "1 mes", "3 meses", "1 año"),
+            "ar": ("💱 السعر بعملتك", "مبالغ تقريبية بسعر صرف اليوم. الدفع عبر Mobile Money (فرنك) أو العملات الرقمية ($).", "البلد", "العملة", "شهر", "3 أشهر", "سنة")}
+def vip_fx_html(lang):
+    import math
+    L = VIP_FX_L[lang]
+    def f(x, rate, step, usd):
+        if rate is None: return usd
+        v = math.ceil(x * rate / step) * step
+        return f"{v:,}".replace(",", " ")
+    rows = "".join(f'<tr><td>{c}</td><td>{m}</td><td><b>{f(25000, r, st, "45")}</b></td><td>{f(65000, r, st, "108")}</td><td>{f(240000, r, st, "400")}</td></tr>' for c, m, r, st in VIP_FX)
+    return (f'<details class="vcbox vfx"><summary>{L[0]}</summary><p class="muted" style="margin:0 0 10px">{L[1]}</p>'
+            f'<div class="vfxwrap"><table><thead><tr><th>{L[2]}</th><th>{L[3]}</th><th>{L[4]}</th><th>{L[5]}</th><th>{L[6]}</th></tr></thead><tbody>{rows}</tbody></table></div></details>')
 # Photos de grosses cotes gagnantes (fichiers a placer dans le dossier site/), ex. "vip-proof-01.jpg"
 # (fichier, match, cote, en direct ?, gain paye ou "")
 VIP_PROOFS = [
@@ -3074,7 +3124,7 @@ VIP_L = {
   "price_title":"Choisis ta formule", "price_label":"Inclus dans toutes les formules", "per_month":"/ mois", "plan_cta":"Choisir", "plans":{"m1":("1 mois",""),"m3":("3 mois","Économise 10 000 FCFA"),"y1":("1 an","Économise 60 000 FCFA")}, "best":"Meilleure offre",
   "price_list":['Côte de 2 VIP tous les jours', 'Grosses cotes pour viser gros (petite mise)', 'Pronostics en live pendant les matchs', 'Sélections haute confiance', 'Analyses complètes + canal privé', "Paiement unique : pas d'abonnement caché"],
   "price_cta":"Payer maintenant ↓",
-  "pay_title":"Payer en 2 minutes", "choose":"Choisis ta crypto et envoie le montant de ta formule (42 $, 108 $ ou 400 $) :",
+  "pay_title":"Payer en 2 minutes", "choose":"Choisis ta crypto et envoie le montant de ta formule (45 $, 108 $ ou 400 $) :",
   "steps":["Choisis ta formule et envoie le montant par Orange Money, MTN ou Wave (en FCFA), ou en crypto (en $).","Fais une capture d'écran de ton paiement.","Envoie-moi la capture sur Telegram en précisant ta formule : je vérifie et je t'ajoute au canal VIP."],
   "copy":"Copier l'adresse","copied":"✓ Copiée","reco":"Recommandé · stable",
   "vol_note":"Cours variable : envoie l'équivalent en $ de ta formule.",
@@ -3105,7 +3155,7 @@ VIP_L = {
   "price_title":"Choose your plan", "price_label":"Included in every plan", "per_month":"/ month", "plan_cta":"Choose", "plans":{"m1":("1 month",""),"m3":("3 months","Save 10,000 FCFA"),"y1":("1 year","Save 60,000 FCFA")}, "best":"Best value",
   "price_list":['VIP odds of 2 every day', 'Big odds to aim high (small stake)', 'Live tips during matches', 'High-confidence picks', 'Full analysis + private channel', 'One-time payment: no hidden subscription'],
   "price_cta":"Pay now ↓",
-  "pay_title":"Pay in 2 minutes", "choose":"Choose your crypto and send your plan amount (42 $, 108 $ or 400 $):",
+  "pay_title":"Pay in 2 minutes", "choose":"Choose your crypto and send your plan amount (45 $, 108 $ or 400 $):",
   "steps":["Choose your plan and send the amount via Orange Money, MTN or Wave (in FCFA), or in crypto (in $).","Take a screenshot of your payment.","Send me the screenshot on Telegram with your plan: I check it and add you to the VIP channel."],
   "copy":"Copy address","copied":"✓ Copied","reco":"Recommended · stable",
   "vol_note":"Variable rate: send the $ equivalent of your plan.",
@@ -3136,7 +3186,7 @@ VIP_L = {
   "price_title":"Elige tu plan", "price_label":"Incluido en todos los planes", "per_month":"/ mes", "plan_cta":"Elegir", "plans":{"m1":("1 mes",""),"m3":("3 meses","Ahorra 10 000 FCFA"),"y1":("1 año","Ahorra 60 000 FCFA")}, "best":"Mejor oferta",
   "price_list":['Cuota de 2 VIP todos los días', 'Cuotas altas para apuntar alto (apuesta pequeña)', 'Pronósticos en vivo durante los partidos', 'Selecciones de alta confianza', 'Análisis completos + canal privado', 'Pago único: sin suscripción oculta'],
   "price_cta":"Pagar ahora ↓",
-  "pay_title":"Paga en 2 minutos", "choose":"Elige tu cripto y envía el importe de tu plan (42 $, 108 $ o 400 $):",
+  "pay_title":"Paga en 2 minutos", "choose":"Elige tu cripto y envía el importe de tu plan (45 $, 108 $ o 400 $):",
   "steps":["Elige tu plan y envía el importe por Orange Money, MTN o Wave (en FCFA), o en cripto (en $).","Haz una captura de pantalla de tu pago.","Envíame la captura por Telegram indicando tu plan: la verifico y te añado al canal VIP."],
   "copy":"Copiar dirección","copied":"✓ Copiada","reco":"Recomendado · estable",
   "vol_note":"Cotización variable: envía el equivalente en $ de tu plan.",
@@ -3167,7 +3217,7 @@ VIP_L = {
   "price_title":"اختر خطتك", "price_label":"مشمول في كل الخطط", "per_month":"/ شهر", "plan_cta":"اختيار", "plans":{"m1":("شهر واحد",""),"m3":("3 أشهر","وفّر 10 000 فرنك"),"y1":("سنة","وفّر 60 000 فرنك")}, "best":"أفضل عرض",
   "price_list":['رهان بضعف 2 VIP يوميًا', 'نسب كبيرة لأرباح أكبر (رهان صغير)', 'توقعات مباشرة أثناء المباريات', 'اختيارات عالية الثقة', 'تحليلات كاملة + قناة خاصة', 'دفعة واحدة: بدون اشتراك مخفي'],
   "price_cta":"ادفع الآن ↓",
-  "pay_title":"ادفع في دقيقتين", "choose":"اختر عملتك وأرسل مبلغ خطتك (42 $ أو 108 $ أو 400 $):",
+  "pay_title":"ادفع في دقيقتين", "choose":"اختر عملتك وأرسل مبلغ خطتك (45 $ أو 108 $ أو 400 $):",
   "steps":["اختر خطتك وأرسل المبلغ عبر Orange Money أو MTN أو Wave (بالفرنك) أو بالعملات الرقمية (بالدولار).","التقط لقطة شاشة لعملية الدفع.","أرسل لي اللقطة عبر تيليغرام مع ذكر خطتك: أتحقق منها وأضيفك إلى قناة VIP."],
   "copy":"نسخ العنوان","copied":"✓ تم النسخ","reco":"موصى به · مستقر",
   "vol_note":"السعر متغير: أرسل ما يعادل خطتك بالدولار.",
@@ -3244,6 +3294,7 @@ def vip_page(lang):
 <section id="formules">
 <h2>{L["price_title"]}</h2>
 <div class="vplans">{plans}</div>
+{vip_fx_html(lang)}
 </section>
 <section id="paiement">
 <h2>{L["pay_title"]}</h2>
@@ -3301,7 +3352,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html", "livres.html", "competitions.html", "all-competitions.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [CODES_SLUG["fr"], CODES_SLUG["en"], CODES_SLUG["es"], CODES_SLUG["ar"]] + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html", "livres.html", "competitions.html", "all-competitions.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -5063,10 +5114,7 @@ RESULTS_SLUG = {"fr":"resultats.html","en":"results.html","es":"resultados.html"
 
 # Liste des preuves (ajouter en HAUT pour que le plus récent soit affiché en premier).
 # "type": "img" (jpg/png) ou "video" (mp4). "media": nom du fichier dans le dossier.
-RESULTS = [
- {"media":"result-video.mp4","type":"video"},
- {"media":"result-photo.jpg","type":"img"},
-]
+RESULTS = []  # anciennes preuves (photo + video de juin) retirees : la page montre maintenant tous les tickets gagnants
 
 RESULTS_L = {
  "fr":{"menu":"Résultats","eyebrow":"🏆 Preuves de gains","h1a":"Nos ","h1b":"Résultats",
@@ -5110,6 +5158,29 @@ def _result_cards(L, lang):
 </div>'''
     return out
 
+
+def _results_wall(lang):
+    G = GAINS_L[lang]
+    ok = [p for p in VIP_PROOFS if os.path.exists(os.path.join(OUT, p[0]))]
+    n, nlive = len(ok), sum(1 for p in ok if p[3])
+    lab = {"fr": (f"{n} tickets gagnants", f"dont {nlive} en live", "Du plus récent au plus ancien"),
+           "en": (f"{n} winning tickets", f"{nlive} of them live", "Newest first"),
+           "es": (f"{n} tickets ganadores", f"{nlive} en directo", "Del más reciente al más antiguo"),
+           "ar": (f"{n} تذكرة رابحة", f"منها {nlive} مباشرة", "من الأحدث إلى الأقدم")}[lang]
+    imgs = "".join(f'<figure class="gcard"><img src="{f}" alt="{html.escape(m)} : ticket gagnant {paid}" loading="lazy" decoding="async">'
+                   f'<figcaption><b>{html.escape(m)}</b><span>{G["odds"]} {c}{" · LIVE" if live else ""}</span>{f"<strong>✅ {paid}</strong>" if paid else ""}</figcaption></figure>'
+                   for f, m, c, live, paid in ok)
+    js = ('<script>(function(){var R="https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/preuves/";var g=document.querySelector(".gwall");'
+          'if(!g||!window.fetch)return;fetch(R+"preuves.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(l){'
+          'l.filter(function(p){return /^tg-/.test(p.file)}).slice(0,60).reverse().forEach(function(p){var f=document.createElement("figure");f.className="gcard";'
+          'var i=document.createElement("img");i.src=R+p.file;i.loading="lazy";i.alt=(p.titre||"")+" - Cousin Marc";var c=document.createElement("figcaption");'
+          'var b=document.createElement("b");b.textContent=(p.titre||"").replace(/^[^\\w(]+/,"");c.appendChild(b);'
+          'if(p.cote){var s=document.createElement("span");s.textContent="' + G["odds"] + ' "+p.cote;c.appendChild(s)}'
+          'if(p.gain){var t=document.createElement("strong");t.textContent="\\u2705 "+p.gain;c.appendChild(t)}f.appendChild(i);f.appendChild(c);g.insertBefore(f,g.firstChild)})}).catch(function(){})})();</script>')
+    return (f'<div class="reshead"><div><b>{lab[0]}</b><span>{lab[1]}</span></div><p>{lab[2]}</p></div>'
+            f'<div class="gwall">{imgs}</div>{js}'
+            f'<div class="gvip"><div><b>{G["vip"]}</b><span>{G["vipsub"]}</span></div><a class="cta" href="{VIP_SLUG[lang]}#paiement">VIP →</a></div>')
+
 def results_page(lang):
     L=RESULTS_L[lang]; slug=RESULTS_SLUG[lang]; canonical=f"{BASE}/{slug}"
     navmap={"fr":nav_fr(en=RESULTS_SLUG["en"],es=RESULTS_SLUG["es"],ar=RESULTS_SLUG["ar"]),
@@ -5128,10 +5199,7 @@ def results_page(lang):
 <p class="sub">{L["sub"]}</p>
 </div></header>
 <main class="wrap">
-<section style="border-bottom:none;padding-top:18px">
-{_result_cards(L, lang)}
-</section>
-{gains_band(lang)}
+{_results_wall(lang)}
 <section>
 <h2><span class="num">●</span> {L["cta"]}</h2>
 <div class="related">{relmap[lang]}</div>
@@ -7329,10 +7397,16 @@ for _g in COMP_CAT:
     for _fr, _en, _fl in _g[2]:
         COMP_L.setdefault(_fr, {}).setdefault("en", _en)
         COMP_L[_fr].setdefault("es", _en)
+COMP_LOGO = {"Éliminatoires CAN 2027": "logos/comp-caf-nations.webp", "Ligue des nations UEFA": "logos/comp-uefa-nations.webp", "Matchs amicaux": "logos/comp-fifa-friendly.webp", "Ligue des nations CONCACAF": "logos/comp-concacaf-nations-league.webp", "Ligue des Champions": "logos/comp-uefa-champions.webp", "Ligue Europa": "logos/comp-uefa-europa.webp", "Ligue Conférence": "logos/comp-uefa-europa-conf.webp", "Premier League": "logos/comp-eng-1.webp", "Liga": "logos/comp-esp-1.webp", "Serie A": "logos/comp-ita-1.webp", "Bundesliga": "logos/comp-ger-1.webp", "Ligue 1": "logos/comp-fra-1.webp", "Championship": "logos/comp-eng-2.webp", "Liga 2": "logos/comp-esp-2.webp", "Serie B": "logos/comp-ita-2.webp", "2. Bundesliga": "logos/comp-ger-2.webp", "Ligue 2": "logos/comp-fra-2.webp", "Liga Portugal 2": "logos/comp-por-2.webp", "Eerste Divisie": "logos/comp-ned-2.webp", "Eredivisie": "logos/comp-ned-1.webp", "Liga Portugal": "logos/comp-por-1.webp", "Süper Lig": "logos/comp-tur-1.webp", "Pro League": "logos/comp-bel-1.webp", "Scottish Premiership": "logos/comp-sco-1.webp", "Super League Grèce": "logos/comp-gre-1.webp", "Championnat d'Ukraine": "logos/comp-ukr-1.webp", "Championnat de Russie": "logos/comp-rus-1.webp", "Ekstraklasa": "logos/comp-pol-1.webp", "Bundesliga autrichienne": "logos/comp-aut-1.webp", "Super League Suisse": "logos/comp-sui-1.webp", "Superliga Danemark": "logos/comp-den-1.webp", "Allsvenskan": "logos/comp-swe-1.webp", "Eliteserien": "logos/comp-nor-1.webp", "Ligue des champions CAF": "logos/comp-caf-champions.webp", "Coupe de la Confédération CAF": "ico/trophee.webp", "Championnat d'Égypte": "logos/comp-egy-1.webp", "Championnat d'Afrique du Sud": "logos/comp-rsa-1.webp", "MLS": "logos/comp-usa-1.webp", "Brasileirão": "logos/comp-bra-1.webp", "Liga argentine": "logos/comp-arg-1.webp", "Liga MX": "logos/comp-mex-1.webp", "J1 League": "logos/comp-jpn-1.webp", "K League 1": "logos/comp-kor-1.webp", "Saudi Pro League": "logos/comp-ksa-1.webp", "A-League": "logos/comp-aus-1.webp", "NBA": "logos/comp-nba.webp", "Tennis": "logos/comp-atp.webp"}
+def comp_logo(c, size=40):
+    src = COMP_LOGO.get(c)
+    if not src:
+        return ""
+    return f'<span class="clogo"><img src="{src}" alt="Logo {html.escape(c)}" width="{size}" height="{size}" loading="lazy" decoding="async"></span>'
 _COMP_CSS = """<style>
 .cgroup{margin:26px 0 8px;font-size:20px}
 .cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
-.ccard{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer}
+.ccard{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer}
 .ccard:hover,.ccard.on{border-color:#f59e0b;box-shadow:0 6px 18px rgba(245,158,11,.25)}
 .ccard .fl{font-size:28px;line-height:1}
 .ccard b{display:block;font-size:15px;line-height:1.2}
@@ -7367,7 +7441,7 @@ def comps_page(lang):
         for fr, en, fl in items:
             u = ups(fr); n = len(u); nm = fr if lang == "fr" else en
             st = (T["n1"] if n == 1 else T["nn"].format(n=n)) if n else T["soon"]
-            cards += f'<a class="ccard{" has" if n else ""}" href="#{slug_of(fr)}" data-t="{slug_of(fr)}"><span class="fl">{fl}</span><span><b>{es(nm)}</b><small>{st}</small></span></a>'
+            cards += f'<a class="ccard{" has" if n else ""}" href="#{slug_of(fr)}" data-t="{slug_of(fr)}">{comp_logo(fr) or f'<span class="fl">{fl}</span>'}<span><b>{es(nm)}</b><small>{st}</small></span></a>'
             body = ""
             if u: body += f'<h3>{T["up"]}</h3>{_grid(u, lang)}'
             lr = lastres(fr)
@@ -7375,7 +7449,7 @@ def comps_page(lang):
             if not body: body = f'<div class="cmpempty">{T["none"]}</div>'
             link = ""
             if comp_page_ok(fr): link = f'<p><a href="{COMP_PAGES[fr][0 if lang == "fr" else 1]}.html" style="color:var(--gold);font-weight:700">{T["all"]} {es(nm)} →</a></p>'
-            secs += f'<section class="cmpsec" id="{slug_of(fr)}"><h2>{fl} {es(nm)}</h2>{body}{link}</section>'
+            secs += f'<section class="cmpsec" id="{slug_of(fr)}"><h2>{comp_logo(fr, 48) or fl} {es(nm)}</h2>{body}{link}</section>'
         grids += f'<h2 class="cgroup">{es(gname)}</h2><div class="cgrid">{cards}</div>'
     nxt = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])[:12]
     nxth = f'<section class="nextall"><h2>{T["next"]}</h2>{_grid(nxt, lang)}</section>' if nxt else ""
@@ -7424,8 +7498,64 @@ def gains_page(lang):
 </main>
 {foot()}"""
 
+
+# ---------------------------------------------------------------- Page « Codes promo » (4 langues) : seulement les bookmakers, leurs codes et les tutos vidéo
+CODES_L = {
+ "fr": {"title": "Codes promo bookmakers 2026 : FFN et tous mes codes | Cousin Marc", "desc": "Tous les codes promo de Cousin Marc pour 1xBet, Melbet, Paripesa, Linebet, Megapari et les autres : copie le code, inscris-toi et récupère ton bonus de bienvenue.",
+        "eyebrow": "Codes promo 2026 · vérifiés le {d}", "h1": 'Mes codes <span class="hl">promo</span>', "sub": "Copie le code, inscris-toi avec le bouton, ton bonus de bienvenue est activé au premier dépôt.",
+        "vids": "Mes tutos vidéo", "vsub": "Regarde avant de t'inscrire : tout est expliqué pas à pas.", "v": [("EnBk9p_Akvc", "Comment s'inscrire avec le code promo"), ("ogsHWfjycBE", "Comment retirer ses gains"), ("_ZuV0yzf95g", "Télécharger WinWin et créer son compte")],
+        "steps": ["Copie le code", "Clique sur « S'inscrire »", "Colle le code à l'inscription"]},
+ "en": {"title": "Bookmaker promo codes 2026: FFN and all my codes | Cousin Marc", "desc": "All of Cousin Marc's promo codes for 1xBet, Melbet, Paripesa, Linebet, Megapari and more: copy the code, sign up and claim your welcome bonus.",
+        "eyebrow": "Promo codes 2026 · checked on {d}", "h1": 'My promo <span class="hl">codes</span>', "sub": "Copy the code, sign up with the button, your welcome bonus is activated on your first deposit.",
+        "vids": "My video tutorials", "vsub": "Watch before you sign up: everything step by step.", "v": [("mb_spbpV_0s", "How to register with the promo code"), ("ogsHWfjycBE", "How to withdraw your winnings")],
+        "steps": ["Copy the code", "Tap “Sign up”", "Paste the code when registering"]},
+ "es": {"title": "Códigos promocionales de casas de apuestas 2026: FFN | Cousin Marc", "desc": "Todos los códigos promocionales de Cousin Marc para 1xBet, Melbet, Paripesa, Linebet, Megapari y más: copia el código, regístrate y recibe tu bono de bienvenida.",
+        "eyebrow": "Códigos 2026 · verificados el {d}", "h1": 'Mis códigos <span class="hl">promocionales</span>', "sub": "Copia el código, regístrate con el botón y tu bono de bienvenida se activa con el primer depósito.",
+        "vids": "Mis tutoriales en vídeo", "vsub": "Míralos antes de registrarte: todo paso a paso.", "v": [("EnBk9p_Akvc", "Cómo registrarse con el código promocional"), ("ogsHWfjycBE", "Cómo retirar tus ganancias")],
+        "steps": ["Copia el código", "Pulsa «Registrarse»", "Pega el código al registrarte"]},
+ "ar": {"title": "الرموز الترويجية لمواقع المراهنات 2026: FFN | Cousin Marc", "desc": "كل الرموز الترويجية من Cousin Marc لمواقع 1xBet وMelbet وParipesa وLinebet وMegapari وغيرها: انسخ الرمز وسجّل واحصل على مكافأة الترحيب.",
+        "eyebrow": "الرموز الترويجية 2026 · تم التحقق في {d}", "h1": 'رموزي <span class="hl">الترويجية</span>', "sub": "انسخ الرمز، سجّل عبر الزر، وتتفعّل مكافأة الترحيب مع أول إيداع.",
+        "vids": "شروحاتي بالفيديو", "vsub": "شاهدها قبل التسجيل: كل شيء خطوة بخطوة.", "v": [("EnBk9p_Akvc", "كيفية التسجيل بالرمز الترويجي"), ("ogsHWfjycBE", "كيفية سحب الأرباح")],
+        "steps": ["انسخ الرمز", "اضغط «التسجيل»", "الصق الرمز عند التسجيل"]},
+}
+
+def codes_page(lang):
+    C, T = CODES_L[lang], HOME_T[lang]
+    day = {"fr": f"{_NOW.day} {_MOIS_FR[_NOW.month-1]} {_NOW.year}", "en": f"{_MOIS_EN[_NOW.month-1]} {_NOW.day}, {_NOW.year}",
+           "es": f"{_NOW.day} de {_MOIS_ES[_NOW.month-1]} de {_NOW.year}", "ar": f"{_NOW.day} {_MOIS_AR[_NOW.month-1]} {_NOW.year}"}[lang]
+    cards = ""
+    for i, b in enumerate(BOOKMAKERS, 1):
+        cards += (f'<article class="codecard"><span class="ccrank">#{i}</span>'
+                  f'<div class="cchead">{bk_logo(b, size=48)}<div><b translate="no">{b["name"]}</b><span>{home_bonus(b, lang)}</span></div></div>'
+                  f'<div class="cccode"><span translate="no">{b["code"]}</span><button class="copybtn-mini" aria-label="{T["copy_aria"]} {b["code"]}" onclick="copyCode(this,\'{b["code"]}\')">{T["copy"]}</button></div>'
+                  f'<div class="ccact"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">{T["join"]}</a>'
+                  f'<a class="cta alt" href="{_home_slug(b, lang)}.html">{T["guide"]}</a></div></article>')
+    steps = "".join(f'<li><b>{k}</b>{t}</li>' for k, t in enumerate(C["steps"], 1))
+    vids = "".join(f'<figure class="cvid"><div class="video yt-facade" data-yt="{v}" data-yt-title="{html.escape(t)}" role="button" tabindex="0" aria-label="{html.escape(t)}">'
+                   f'<img src="https://i.ytimg.com/vi/{v}/hqdefault.jpg" alt="{html.escape(t)} : tuto Cousin Marc" width="480" height="360" loading="lazy"><span class="ytf-play" aria-hidden="true">▶</span></div>'
+                   f'<figcaption>{html.escape(t)}</figcaption></figure>' for v, t in C["v"])
+    navs = {"fr": nav_fr(en=CODES_SLUG["en"], es=CODES_SLUG["es"], ar=CODES_SLUG["ar"]), "en": nav_en(fr=CODES_SLUG["fr"], es=CODES_SLUG["es"], ar=CODES_SLUG["ar"]),
+            "es": nav_es(fr=CODES_SLUG["fr"], en=CODES_SLUG["en"], ar=CODES_SLUG["ar"]), "ar": nav_ar(fr=CODES_SLUG["fr"], en=CODES_SLUG["en"], es=CODES_SLUG["es"])}
+    foot = {"fr": footer_html, "en": footer_html_en, "es": footer_html_es, "ar": footer_html_ar}[lang]
+    return head(C["title"], C["desc"], f"{BASE}/{CODES_SLUG[lang]}", nav=navs[lang], lang=lang,
+                alternates=tuple(f"{BASE}/{CODES_SLUG[k]}" for k in ("fr", "en", "es", "ar"))) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">{C["eyebrow"].replace("{d}", day)}</p>
+<h1>{C["h1"]}</h1>
+<p class="sub">{C["sub"]}</p>
+<ol class="csteps">{steps}</ol>
+</div></header>
+<main class="wrap codesmain">
+<div class="codegrid">{cards}</div>
+<section class="cvids"><h2>{C["vids"]}</h2><p>{C["vsub"]}</p><div class="cvgrid">{vids}</div></section>
+</main>
+{foot()}"""
+
 for _lg in ("fr", "en", "es", "ar"):
-    open(os.path.join(OUT, GAINS_SLUG[_lg]), "w", encoding="utf-8").write(gains_page(_lg)); written.append(GAINS_SLUG[_lg])
+    open(os.path.join(OUT, CODES_SLUG[_lg]), "w", encoding="utf-8").write(codes_page(_lg)); written.append(CODES_SLUG[_lg])
+for _lg in ("fr", "en", "es", "ar"):   # « Mes gains » est maintenant la page Résultats (redirection 301 plus bas)
+    _gp = os.path.join(OUT, GAINS_SLUG[_lg])
+    if os.path.exists(_gp): os.remove(_gp)
 # ---------------------------------------------------------------- Page de vente du livre « Analyser un match comme Cousin Marc »
 LIVRE_SLUG = "livre-analyse-match.html"
 LIVRE_PRIX_FCFA, LIVRE_PRIX_USD = "50 000", "83"
@@ -7710,7 +7840,7 @@ def livres_page():
         items = [b for b in LIVRES if b["niv"] == key]
         if not items:
             continue
-        secs += (f'<section class="lvsec" id="niv-{key}" data-niv="{key}"><div class="lvh"><span class="n">{num}</span><div><h2>{lab}</h2><p>{sub}</p></div>'
+        secs += (f'<section class="lvsec" id="niv-{key}" data-niv="{key}"><div class="lvlh"><span class="n">{num}</span><div><h2>{lab}</h2><p>{sub}</p></div>'
                  f'<span class="cnt">{len(items)} livre{"s" if len(items) > 1 else ""}</span></div>'
                  f'<div class="lbgrid">{"".join(card(b) for b in items)}</div></section>')
     chips = '<button type="button" class="lbc on" data-f="*">Tous les livres</button>' + "".join(
@@ -7722,20 +7852,21 @@ def livres_page():
 cs.forEach(function(x){x.classList.toggle('on',x===c)});document.querySelectorAll('.lvsec').forEach(function(s){s.style.display=(f==='*'||s.getAttribute('data-niv')===f)?'':'none'});
 var g=document.getElementById('guides');if(g&&g.getBoundingClientRect().top<0)g.scrollIntoView({behavior:'smooth'});});});})();</script>"""
     nb = len(LIVRES)
-    return head("Mes livres : manuels de pronostics par Cousin Marc",
+    return head("Boutique Cousin Marc : livres et manuels de pronostics",
         "Les manuels de Cousin Marc en 3 niveaux : formation, pronostics par sport (football, tennis, hockey, baseball), expert (cotes et live), jeux virtuels. PDF, paiement Mobile Money ou crypto.",
         f"{BASE}/{LIVRES_SLUG}", nav=nav_fr(), lang="fr") + f"""
 <header class="hero hero-shop"><div class="wrap"><div class="shhero">
 <div>
-<p class="eyebrow">Boutique · manuels de pronostics</p>
-<h1>Mes <span class="hl">livres</span></h1>
-<p>Les méthodes d'un pronostiqueur actif depuis 2021, rangées en 3 niveaux. Simple, clair, sans promesse magique.</p>
+<p class="eyebrow">Boutique Cousin Marc</p>
+<h1>Ma <span class="hl">boutique</span></h1>
+<p>Mes livres et manuels de pronostics, rangés en 3 niveaux. D'autres produits arrivent bientôt.</p>
 <div class="shkpi"><div><b>{nb}</b>livres</div><div><b>3</b>niveaux</div><div><b>5</b>sports</div></div>
 <div class="btnrow"><a class="cta" href="#guides">Voir les livres</a><a class="cta alt" href="bilan.html">Mon bilan public</a></div>
 </div>
 <div class="shfan" aria-hidden="true">{fan}</div>
 </div></div></header>
 <section class="shopbg" id="guides"><div class="wrap">
+<div class="shcat"><h2>📚 Livres et manuels</h2><span>{nb} produits</span></div>
 <div class="lbchips" role="toolbar" aria-label="Filtrer par niveau">{chips}</div>
 {secs}
 <div class="shsteps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
@@ -7833,6 +7964,9 @@ for _old, _new in (("pronostic-cameroun-namibie-2026-11-11", "pronostic-cameroun
                    ("pronostic-cameroun-namibie-2026-11-11-ar", "pronostic-cameroun-namibie-2026-11-12-ar.html")):
     for _f in (_old, _old + ".html"):
         _retired_redirects += f'\n[[redirects]]\n  from = "/{_f}"\n  to = "/{_new}"\n  status = 301\n  force = true\n'
+for _lg in ("fr", "en", "es", "ar"):
+    for _f in (GAINS_SLUG[_lg], GAINS_SLUG[_lg][:-5]):
+        _retired_redirects += f'\n[[redirects]]\n  from = "/{_f}"\n  to = "/{RESULTS_SLUG[_lg]}"\n  status = 301\n  force = true\n'
 # Anciennes affiches PNG (2 Mo) -> JPG legers : garde valides les liens deja partages
 _affiche_redirects = "\n# Affiches : anciens PNG remplaces par des JPG legers (< 300 Ko)\n"
 for _fn in sorted(AFFICHE_DIMS):
@@ -8363,14 +8497,11 @@ CSS += r'''
 
 CSS += r'''
 /* ---------- tablette : barre du bas visible (comme sur téléphone), menu du haut visible dès 760 px ---------- */
-@media (max-width:1279px),(pointer:coarse){.tabbar{display:grid!important}body{padding-bottom:76px}}
-@media (min-width:1280px) and (pointer:fine){.tabbar{display:none!important}body{padding-bottom:0}}
-body.has-sticky .tabbar{display:none!important}
+.tabbar{display:none!important}
 @media (min-width:760px) and (max-width:959px){
  .toplinks{display:flex!important;gap:0}
  .toplinks a{font-size:13px!important;padding:7px 7px!important}
  .toplinks a.vip{padding:7px 12px!important}
- .topico.wa,.topico.tgi{display:none!important}
 }
 /* ---------- bandeau « Mes livres » en bas des pages : vraies couvertures ---------- */
 .lvband{background:radial-gradient(420px 200px at 10% 50%,rgba(250,204,21,.16),transparent 70%),linear-gradient(120deg,#0a1633,#13235a)!important;color:#fff;padding:20px 0!important}
@@ -8397,14 +8528,14 @@ body.has-sticky .tabbar{display:none!important}
 .lbc.on{background:linear-gradient(90deg,#facc15,#f97316);color:#1a1205;border-color:transparent}
 @media(max-width:759px){.lbchips{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;margin:0 -20px 6px;padding:10px 20px;scrollbar-width:none}.lbchips::-webkit-scrollbar{display:none}}
 .lvsec{padding-top:26px}
-.lvh{display:flex;align-items:center;gap:14px;margin-bottom:16px}
-.lvh .n{flex:none;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(249,115,22,.35)}
-.lvh h2{color:#fff!important;font-size:22px!important;margin:0!important;display:block!important}
-.lvh h2::after{display:none!important}
-.lvh h2,.lvh p{text-align:left!important}
-.lvh>div{flex:1;min-width:0}
-.lvh p{color:#b9c6ea;font-size:14.5px;margin:2px 0 0}
-.lvh .cnt{margin-left:auto;flex:none;font-size:12.5px;font-weight:700;color:#fde68a;background:rgba(250,204,21,.12);border:1px solid rgba(250,204,21,.3);border-radius:999px;padding:4px 10px}
+.lvlh{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.lvlh .n{flex:none;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(249,115,22,.35)}
+.lvlh h2{color:#fff!important;font-size:22px!important;margin:0!important;display:block!important}
+.lvlh h2::after{display:none!important}
+.lvlh h2,.lvlh p{text-align:left!important}
+.lvlh>div{flex:1;min-width:0}
+.lvlh p{color:#b9c6ea;font-size:14.5px;margin:2px 0 0}
+.lvlh .cnt{margin-left:auto;flex:none;font-size:12.5px;font-weight:700;color:#fde68a;background:rgba(250,204,21,.12);border:1px solid rgba(250,204,21,.3);border-radius:999px;padding:4px 10px}
 .lbgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
 .lb{display:flex;flex-direction:column;background:linear-gradient(170deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s}
 @media(hover:hover){.lb:hover{transform:translateY(-4px);border-color:rgba(250,204,21,.5)}}
@@ -8432,8 +8563,218 @@ body.has-sticky .tabbar{display:none!important}
  .lbbody{padding:11px 11px 13px}
  .lb h3{font-size:14.5px}.lbsub{font-size:12.5px}.lbprice{font-size:16px}
  .lb .shb{font-size:13.5px;padding:10px 8px}
- .lvh h2{font-size:19px!important}.lvh .cnt{display:none}
+ .lvlh h2{font-size:19px!important}.lvlh .cnt{display:none}
 }
+'''
+
+CSS += r'''
+/* ==========================================================
+   THÈME SOMBRE 2026 (dernier calque) : bleu nuit en 4 tons + orange (action) + or (marque)
+   Fond #070d1a · sections #0b1424 · cartes #101b31 · surélevé #18253f · bordures #233350
+   Le texte et les liens ne changent pas (SEO) : seulement les couleurs et la mise en forme.
+   ========================================================== */
+:root{--bg0:#070d1a;--bg1:#0b1424;--bg2:#101b31;--bg3:#18253f;--bd:#233350;--tx:#eef2fa;--tx2:#c5cfe2;--mut:#8f9bb5;
+  --or:#f97316;--or2:#fb923c;--ord:#ea580c;--gold:#fbbf24;--ok:#22c55e;--ko:#f87171;
+  --bg:var(--bg0);--soft:var(--bg2);--soft2:var(--bg3);--tint:var(--bg1);--pitch:var(--bg2);--pitch-deep:var(--bg1);
+  --ink:#eef2fa;--ink2:#c5cfe2;--muted:#8f9bb5;--mist:#8f9bb5;--floodlight:#eef2fa;--text2:#c5cfe2;--line:#233350;
+  --green:#f97316;--green-d:#ea580c;--green-ink:#fdba74;--green-soft:rgba(249,115,22,.12);--turf:rgba(249,115,22,.12);--home-green:#fdba74;
+  --blue1:#fb923c;--blue2:#f97316;--navy:#0b1424;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 24px rgba(0,0,0,.28);--shadow-lg:0 2px 6px rgba(0,0,0,.35),0 22px 48px rgba(0,0,0,.45);color-scheme:dark}
+html,body{background:var(--bg0)!important;color:var(--tx)}
+p,li,dd,td{color:var(--tx2)}
+b,strong,h1,h2,h3,h4,dt,th{color:var(--tx)}
+a{color:inherit}
+main a:not([class]){color:#fdba74}
+::selection{background:rgba(249,115,22,.4);color:#fff}
+.muted,small{color:var(--mut)}
+hr{border-color:var(--bd)}
+main section{border-color:var(--bd)!important}
+.hsec{background:var(--bg0)!important}
+.hsec:nth-of-type(even){background:var(--bg1)!important}
+
+/* ---------- en-tête : libre et net (logo, liens, VIP, rond de langue, menu) ---------- */
+nav.top,html.cm-lite nav.top{background:rgba(8,14,28,.94)!important;border-bottom:1px solid var(--bd)!important;box-shadow:0 6px 20px rgba(0,0,0,.35)!important}
+nav.top .logo,nav.top .logo b{text-shadow:none}
+.toplinks a{color:#d7deec!important;font-weight:700!important}
+.toplinks a:hover{background:var(--bg3)!important;color:#fff!important}
+.toplinks a.vip{display:inline-flex!important;align-items:center;gap:6px;background:linear-gradient(135deg,#fde68a,#fbbf24 50%,#f59e0b)!important;color:#1a1205!important;padding:8px 14px!important;border-radius:999px;box-shadow:0 4px 14px rgba(251,191,36,.3)}
+.toplinks a.vip .crown{color:#1a1205}
+.toplang{display:none!important}
+.navright{display:flex;align-items:center;gap:8px!important}
+.langdd{position:relative;flex:none}
+.langdd>summary{list-style:none;display:flex;align-items:center;gap:6px;height:40px;padding:0 12px 0 10px;border-radius:999px;background:var(--bg3);border:1px solid #34486e;color:#fff;cursor:pointer;font-weight:800;font-size:13px;letter-spacing:.04em;user-select:none}
+.langdd>summary::-webkit-details-marker{display:none}
+.langdd>summary svg{color:var(--gold)}
+.langdd>summary:hover,.langdd[open]>summary{border-color:var(--or);background:#1d2c4b}
+.langmenu{position:absolute;right:0;top:calc(100% + 8px);min-width:200px;background:var(--bg2);border:1px solid var(--bd);border-radius:14px;padding:6px;box-shadow:0 18px 44px rgba(0,0,0,.55);z-index:90;display:flex;flex-direction:column;gap:2px}
+[dir="rtl"] .langmenu{right:auto;left:0}
+.langmenu a,.langmenu .cur{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;color:var(--tx)!important;text-decoration:none;font-size:14.5px;font-weight:600}
+.langmenu b{display:inline-flex;justify-content:center;min-width:30px;font-size:11.5px;color:var(--gold);background:rgba(251,191,36,.12);border-radius:6px;padding:2px 4px}
+.langmenu .cur{background:var(--bg3)}
+.langmenu .cur i{margin-left:auto;color:var(--ok);font-style:normal}
+.langmenu a:hover{background:var(--bg3)}
+.burger,html.cm-lite .burger{background:var(--bg3)!important;border:1px solid #34486e!important}
+.burger span{background:#fff!important}
+.topcart{background:var(--bg3)!important}
+@media(max-width:480px){.langdd>summary{height:38px;padding:0 10px}.langdd>summary b{font-size:12px}}
+
+/* ---------- menu déroulant ---------- */
+.navpanel,html.cm-lite .navpanel{background:var(--bg1)!important;border-left:1px solid var(--bd)!important;box-shadow:-24px 0 60px rgba(0,0,0,.6)!important}
+.navpanel-head{color:#fff!important;border-bottom:1px solid var(--bd)!important}
+.navpanel-links a{display:flex!important;align-items:center;gap:12px;color:var(--tx)!important;background:var(--bg2)!important;border:1px solid var(--bd)!important;border-radius:14px!important;font-weight:700}
+.navpanel-links a:hover,.navpanel-links a.active{background:var(--bg3)!important;border-color:var(--or)!important;color:#fff!important}
+.navpanel-links .ic{flex:none;width:40px!important;height:40px!important;border-radius:12px!important;background:#0a1222!important;border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.navpanel-links .ic img{width:32px;height:32px;object-fit:contain;display:block}
+.navpanel-links a[data-key="livres"] .ic img{width:40px;height:40px;object-fit:cover}
+.navpanel-links a[data-key="accueil"] .ic img{width:34px;height:34px;border-radius:50%}
+.icffn{font-family:var(--display);font-weight:800;font-size:12.5px;letter-spacing:.04em;color:#1a1205;background:linear-gradient(135deg,#fde68a,#fbbf24 55%,#f59e0b);border-radius:8px;padding:4px 5px;line-height:1}
+.navpanel-lang a,.navpanel-lang .langlink{color:var(--tx2)!important;background:var(--bg2)!important;border:1px solid var(--bd)!important}
+.navmask{background:rgba(2,6,16,.7)!important}
+
+/* ---------- haut des pages ---------- */
+.hero,.vhero{background:radial-gradient(560px 280px at 92% 0%,rgba(249,115,22,.18),transparent 62%),radial-gradient(640px 320px at 0% 120%,rgba(59,130,246,.16),transparent 62%),linear-gradient(160deg,#0b1424,#0f1d38 60%,#0b1424)!important}
+.hero::after,.home-hero::after{background:url("ico/ballon-256.webp") center/contain no-repeat!important;filter:drop-shadow(0 18px 30px rgba(0,0,0,.55))}
+.hero .wrap>p,.hero .wrap>.sub,.vhero p{color:#d3dbea!important}
+.eyebrow{color:var(--gold)!important}
+.kicker{background:rgba(249,115,22,.14)!important;color:#fdba74!important;border:1px solid rgba(249,115,22,.3)!important}
+.hl,h1 .hl,.home-hero h1 em,.vhero h1 em{background:none!important;background-image:linear-gradient(90deg,#fde68a,#fbbf24 40%,#fb923c)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent;color:transparent}
+
+/* ---------- boutons ---------- */
+.cta:not(.alt),.tgo,.bkjoin,.sb-go,.shb:not(.alt),.vproof .cta{background:linear-gradient(135deg,#fdba74,#fb923c 30%,#f97316 65%,#ea580c)!important;color:#1c0d02!important;border:0!important;box-shadow:0 8px 20px rgba(249,115,22,.28)!important;font-weight:800!important}
+.cta:not(.alt):hover,.tgo:hover,.bkjoin:hover,.shb:not(.alt):hover{filter:brightness(1.07)}
+.cta.alt,.tmore,.shb.alt{background:var(--bg3)!important;color:var(--tx)!important;border:1px solid #34486e!important;box-shadow:none!important}
+.cta.alt:hover,.tmore:hover,.shb.alt:hover{border-color:var(--or)!important;color:#fff!important}
+.copybtn-mini,.sb-copy,.vcopy{background:var(--gold)!important;color:#1a1205!important;border:0!important;font-weight:800!important}
+.copybtn-mini{padding:8px 13px!important;border-radius:10px!important;font-size:13.5px!important;line-height:1.1!important;cursor:pointer;flex:none}
+.bkrow .bkcode{border:0!important;background:none!important;padding:0 4px!important;color:#fde68a!important}
+.langdd>summary{gap:7px!important}.langdd>summary svg{flex:none}
+.ytsub{background:#e11d2a!important;color:#fff!important}
+
+/* ---------- cartes et blocs : surfaces sombres ---------- */
+.tcard,.mcard,.coupon-card,.vproof-card,.hubcard,.fact,.wcard,.related a,.postcard,.cmp,.cmp-card,.vplan,.vmode,.vprice,.vstep,.vincluded,.vrisk,.truststat,
+.countrygrid a,.astats div,.lvgrid div,.lvpay div,.bklist,.bkrow,.codebox,.ytbar,.resbox,.tablecard,.author,.faq,details,.cmpempty,.ccard,.hub,.winsec,.vmomo,.vcrypto,.combadge,.vstep,.bigcard{
+  background:var(--bg2)!important;border-color:var(--bd)!important;color:var(--tx)}
+.related a:hover,.hubcard:hover,a.mcard:hover,.ccard:hover,.ccard.on{border-color:var(--or)!important;box-shadow:0 8px 24px rgba(0,0,0,.4)!important}
+.related a .cd,.related a small,.hubcard p{color:var(--mut)!important}
+.bkrow:hover{background:var(--bg3)!important}
+.bklist .bkrow+.bkrow{border-top:1px solid var(--bd)!important}
+.tcode,.bkcodebox,.hubcard .cd,.sb-code,.codebox .code,.cccode{background:rgba(251,191,36,.07)!important;border:1.5px dashed rgba(251,191,36,.55)!important;color:#fde68a!important}
+.tcode span,.bkcode,.codebox .code{color:#fde68a!important}
+img.blogo{background:#fff!important;box-shadow:0 0 0 2px rgba(255,255,255,.08)!important}
+.mpick{background:rgba(249,115,22,.08)!important;border:1px solid rgba(249,115,22,.32)!important;color:var(--tx)!important}
+.mpick b{color:var(--gold)!important}
+.mstatus.soon{background:var(--bg3)!important;color:var(--tx2)!important}
+.mstatus.win{background:rgba(34,197,94,.15)!important;color:#4ade80!important}
+.mstatus.lose{background:rgba(248,113,113,.15)!important;color:#fca5a5!important}
+.mstatus.void{background:rgba(251,191,36,.15)!important;color:#fde68a!important}
+.note,.warn,p.vwarn,.vwarn{background:var(--bg2)!important;border:1px solid var(--bd)!important;border-left:3px solid var(--or)!important;color:var(--tx2)!important}
+.num{background:rgba(249,115,22,.16)!important;color:#fdba74!important}
+.stamp,.verified{background:rgba(34,197,94,.12)!important;color:#86efac!important}
+.chip,.chips .chip:not([data-v]):not(.on),.linkchips a,.lbc{background:var(--bg3)!important;color:var(--tx)!important;border:1px solid #34486e!important;box-shadow:none!important}
+.chip.on,.chips .chip:not([data-v]).on,.lbc.on{background:linear-gradient(135deg,#fbbf24,#f97316)!important;color:#1a1205!important;border-color:transparent!important}
+.social a{background:var(--bg3)!important;color:var(--tx)!important;border:1px solid var(--bd)!important}
+table{border-color:var(--bd)!important}
+th{background:var(--bg3)!important;color:var(--tx)!important}
+td{border-color:var(--bd)!important}
+table tbody tr:nth-child(even){background:rgba(255,255,255,.025)!important}
+input,select,textarea{background:var(--bg3)!important;color:var(--tx)!important;border:1px solid #34486e!important}
+.vaddr{background:var(--bg3)!important;color:var(--tx)!important}
+.vcrypto img,.coupon-card img,.gcard img,.vproof-card img{background:#fff}
+.vprice li::before,.vincluded li::before{background:rgba(34,197,94,.18)!important;color:#4ade80!important}
+.vcmp td:last-child,.vcmp th:last-child{background:rgba(249,115,22,.1)!important;color:#fdba74!important}
+.vproof-period{background:rgba(251,191,36,.1)!important;color:#fde68a!important}
+.vplan.best,.cmp-card.best,.vcrypto.reco{border:2px solid var(--or)!important}
+ol.steps li{background:var(--bg2)!important;color:var(--tx2)!important;border:1px solid var(--bd)}
+.fact .fi,.vmode-h .fi,.vstep .fi{background:var(--bg3)!important}
+.yt-facade{border:1px solid var(--bd)}
+.vidhero,.tgband{background:radial-gradient(520px 260px at 90% 0%,rgba(249,115,22,.2),transparent 65%),linear-gradient(160deg,#0b1424,#0f1d38)!important;border-bottom:1px solid var(--bd)}
+.gainsband{background:transparent!important}
+.gainsband .gb,.gvip{background:linear-gradient(120deg,#101b31,#18253f)!important;border:1px solid rgba(251,191,36,.35)!important}
+.lvband{background:radial-gradient(420px 200px at 10% 50%,rgba(251,191,36,.12),transparent 70%),var(--bg1)!important;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
+footer{background:#050a14!important;border-top:1px solid var(--bd)!important;color:var(--tx2)!important}
+footer h4{color:#fff!important}
+footer a{color:var(--tx2)!important}
+footer a:hover{color:var(--gold)!important}
+.mmeta{color:var(--mut)!important}
+.mteams,.mteams b{color:var(--tx)!important}
+.daygroup h3{color:var(--gold)!important}
+.vpaywrap{background:radial-gradient(520px 260px at 90% 0%,rgba(251,191,36,.12),transparent 62%),linear-gradient(160deg,#0b1424,#101b31)!important;border:1px solid var(--bd)}
+.vpaywrap .vplan{background:var(--bg2)!important}
+.vdown{color:var(--tx)!important}
+.shopbg{background:radial-gradient(800px 340px at 50% 0%,rgba(251,191,36,.08),transparent 65%),var(--bg0)!important}
+.lbchips{background:linear-gradient(180deg,var(--bg0) 70%,rgba(7,13,26,0))!important}
+.shcat{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 8px;padding-bottom:10px;border-bottom:1px solid var(--bd)}
+.shcat h2{color:#fff!important;font-size:24px!important;margin:0!important;display:block!important;text-align:left!important}
+.shcat h2::after{display:none!important}
+.shcat span{font-size:13px;font-weight:700;color:var(--mut)}
+
+/* ---------- compétitions : vrais logos ---------- */
+.clogo{flex:none;width:44px;height:44px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.clogo img{width:36px;height:36px;object-fit:contain;display:block}
+.cmpsec h2 .clogo{width:52px;height:52px;display:inline-flex;vertical-align:middle;margin-right:8px}
+.cmpsec h2 .clogo img{width:44px;height:44px}
+.ccard{color:var(--tx)!important}
+.ccard small{color:var(--mut)!important}
+.ccard.has small{color:#4ade80!important}
+.cgroup{color:#fff}
+
+/* ---------- page Codes promo ---------- */
+.csteps{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:18px 0 0;padding:0}
+.csteps li{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:6px 14px 6px 6px;color:#e6ecf7;font-size:14px;font-weight:600}
+.csteps li b{width:24px;height:24px;border-radius:50%;background:var(--gold);color:#1a1205;display:inline-flex;align-items:center;justify-content:center;font-size:13px}
+.codesmain{max-width:1120px!important;padding-top:28px}
+.codegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.codecard{position:relative;display:flex;flex-direction:column;gap:12px;background:var(--bg2);border:1px solid var(--bd);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+.codecard:hover{border-color:rgba(249,115,22,.6)}
+.ccrank{position:absolute;top:14px;right:14px;font-size:12px;font-weight:800;color:var(--mut)}
+[dir="rtl"] .ccrank{right:auto;left:14px}
+.cchead{display:flex;align-items:center;gap:12px}
+.cchead b{display:block;font-size:19px;color:#fff;font-family:var(--display)}
+.cchead span{display:block;color:var(--tx2);font-size:14px;margin-top:2px}
+.cccode{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:14px;padding:10px 12px 10px 16px}
+.cccode span{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:.12em;color:#fde68a}
+.ccact{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ccact .cta{padding:12px 10px!important;font-size:15px}
+.cvids{margin:40px 0 10px}
+.cvids h2{color:#fff}
+.cvgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:14px}
+.cvid{margin:0;background:var(--bg2);border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+.cvid .video{margin:0!important;border-radius:0!important;aspect-ratio:16/9}
+.cvid figcaption{padding:10px 14px 12px;color:var(--tx);font-weight:700;font-size:14.5px}
+
+/* ---------- page Résultats : tous les tickets gagnants ---------- */
+.reshead{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin:26px 0 4px}
+.reshead b{display:block;font-size:24px;color:#fff;font-family:var(--display)}
+.reshead span{color:#4ade80;font-weight:700}
+.reshead p{color:var(--mut);margin:0}
+.gcard{background:var(--bg2)!important;border:1px solid var(--bd)}
+.gcard figcaption b{color:#fff!important}
+.gcard figcaption span{color:var(--tx2)!important}
+.gcard figcaption strong{color:#4ade80!important}
+'''
+CSS += r'''
+/* ---------- corrections après contrôle ---------- */
+details.langdd,.langdd{overflow:visible!important;border:0!important;border-radius:0!important;background:none!important;margin:0!important;box-shadow:none!important;padding:0!important}
+.langdd>summary::after,.langdd[open]>summary::after{content:none!important;display:none!important}
+.langdd>summary{padding:0 12px 0 10px!important}
+[dir="rtl"] .langmenu .cur i{margin-left:0;margin-right:auto}
+.copybtn{background:linear-gradient(135deg,#fbbf24,#f97316)!important;color:#1a1205!important;font-weight:800!important;border:0!important}
+ol.steps li::before,.cmp-q span,.shsteps b{background:linear-gradient(135deg,#fbbf24,#f97316)!important;color:#1a1205!important}
+.cmp-q{color:var(--tx)!important}
+ol.steps{grid-template-columns:minmax(0,1fr)}ol.steps li{min-width:0}ol.steps li a[style*="nowrap"]{white-space:normal!important}
+.cmp-c .chip[data-v*=" "]:not(.on),.chip[data-v*=" "]:not(.on),.chip[data-v]:not(.on){background:var(--bg3)!important;color:var(--tx)!important;border:1px solid #34486e!important;box-shadow:none!important;text-shadow:none!important}
+.cmp-c .chip[data-v*=" "].on,.chip[data-v*=" "].on,.chip[data-v].on{background:linear-gradient(135deg,#fbbf24,#f97316)!important;color:#1a1205!important;border-color:transparent!important;box-shadow:none!important;outline:none!important}
+table thead th{background:var(--bg3)!important;color:var(--tx)!important;border-bottom:1px solid var(--bd)!important}table thead th small{color:var(--mut)!important}
+@media(min-width:900px){.hero .wrap>h1,.hero .wrap>p,.hero .wrap>.sub,.hero .wrap>.lead,.hero .wrap>.btnrow,.hero .linkchips,.hero .astats{max-width:calc(100% - 300px)}
+ [dir="rtl"] .hero::after,[dir="rtl"] .home-hero::after{right:auto!important;left:7%!important}}
+[dir="rtl"] .hero::after,[dir="rtl"] .home-hero::after{right:auto!important;left:-22px}
+img.rlogo,img.cblogo{background:#fff!important;padding:2px;border-radius:8px;object-fit:contain!important}
+.tgband{margin:56px auto!important}@media(max-width:640px){.tgband{margin:40px 0!important}}
+a[href^="https://wa.me/?text"]{background:#128c4a!important;color:#fff!important}
+.vfx{margin-top:18px}.vfxwrap{overflow-x:auto}.vfx table{width:100%;min-width:520px;border-collapse:collapse;font-size:14px}
+.vfx td,.vfx th{padding:9px 10px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--bd)}
+[dir="rtl"] .vfx td,[dir="rtl"] .vfx th{text-align:right}
+.vfx td b{color:var(--gold)}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
