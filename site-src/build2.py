@@ -1888,7 +1888,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11g"><script>
+<link rel="stylesheet" href="style.css?v=2026-11h"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -7785,6 +7785,8 @@ CSS += r'''
 .hero .wrap{position:relative;z-index:1}
 .hero .wrap>h1,.hero .wrap>h2{color:#fff}
 .hero .wrap>p,.hero .wrap>.sub{color:#d6def5}
+.hero .wrap>p b,.hero .wrap>p strong,.hero .wrap>.sub b{color:#fff}
+.hero .eyebrow a{color:#fde68a!important;text-decoration:underline;text-underline-offset:3px}
 .hero .eyebrow{color:#f6d56a}.hero .eyebrow::before{background:#facc15;box-shadow:0 0 0 4px rgba(250,204,21,.25)}
 .hero h1 .hl,.hero .hl{background:none!important;background-image:linear-gradient(90deg,#facc15,#fb923c)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent;color:transparent!important}
 .hero a.cta.alt{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
