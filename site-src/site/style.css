@@ -512,6 +512,7 @@ p.vwarn[style]{background:var(--green-soft);color:var(--green-ink);font-weight:6
 .tb-ffn.ok{background:#0f7a3d}
 body.has-sticky .tabbar{display:none}
 @media(min-width:960px){.tabbar,.toptg{display:none}}
+@media(max-width:959px){body{padding-bottom:76px}}
 
 /* ---------- LISTE REPLIABLE ---------- */
 .bklist.folded .bkrow:nth-child(n+6){display:none}

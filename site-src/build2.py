@@ -1341,6 +1341,7 @@ p.vwarn[style]{background:var(--green-soft);color:var(--green-ink);font-weight:6
 .tb-ffn.ok{background:#0f7a3d}
 body.has-sticky .tabbar{display:none}
 @media(min-width:960px){.tabbar,.toptg{display:none}}
+@media(max-width:959px){body{padding-bottom:76px}}
 
 /* ---------- LISTE REPLIABLE ---------- */
 .bklist.folded .bkrow:nth-child(n+6){display:none}
@@ -1562,7 +1563,7 @@ def topnav(lang, langs_html, top_langs):
             f'<a class="topico wa" href="{dict(SOCIAL)["WhatsApp"]}" target="_blank" rel="nofollow" aria-label="WhatsApp">{ICONS["WhatsApp"]}</a>'
             f'<a class="topico tgi" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram">{ICONS["Telegram"]}</a>'
             f'<a class="topico ct" href="https://t.me/Barcilone" target="_blank" rel="nofollow" aria-label="{ {'en':'Message me on Telegram','es':'Escríbeme en Telegram','ar':'راسلني على تيليجرام'}.get(lang,'Me joindre sur Telegram') }"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg></a>{burger_html()}</div>'
-            f'</div></nav>\n{navpanel_html(lang, langs_html)}')
+            f'</div></nav>\n{navpanel_html(lang, langs_html)}{tabbar_html(lang)}')
 
 def _top_langs(current, **kw):
     return "".join(f'<li><a href="{kw[k]}" hreflang="{k}">{k.upper()}</a></li>' for k in ("fr","en","es","ar") if k != current and kw.get(k))
@@ -1908,7 +1909,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11l"><script>
+<link rel="stylesheet" href="style.css?v=2026-11m"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
