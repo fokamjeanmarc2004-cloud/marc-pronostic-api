@@ -1557,7 +1557,7 @@ def topnav(lang, langs_html, top_langs):
     links = "".join(f'<li><a href="{h}">{t}</a></li>' for t,h in TOPLINKS_L[lang])
     links += f'<li><a class="vip" href="{VIP_SLUG[lang]}">VIP</a></li>'
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
-            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png?v=3" width="40" height="40" alt="" style="width:40px;height:40px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
+            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm-96.png?v=1" width="40" height="40" alt="" style="width:40px;height:40px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
             f'<div class="navright"><ul class="toplinks">{links}</ul><ul class="toplang">{top_langs}</ul>'
             f'<a class="topcart" id="topcart" href="livres.html" hidden aria-label="Panier">🛒<span></span></a>{TOPCART_SCRIPT}'
             f'<a class="topico wa" href="{dict(SOCIAL)["WhatsApp"]}" target="_blank" rel="nofollow" aria-label="WhatsApp">{ICONS["WhatsApp"]}</a>'
@@ -1909,7 +1909,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11p"><script>
+<link rel="stylesheet" href="style.css?v=2026-11q"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -8173,10 +8173,10 @@ CSS += r'''
 .hero-photo h1,.hero-photo .lead,.hero-photo p{color:#fff}
 .hero-photo .eyebrow{color:#fde68a}
 .hero-photo .eyebrow::before{background:#facc15}
-.home-hero.hero-accueil{background:linear-gradient(180deg,rgba(6,16,36,.55),rgba(6,16,36,.88)),url("fond-accueil.jpg")!important;background-size:cover!important;background-position:center!important}
-.hero.hero-analyse{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse.jpg")!important;background-size:cover!important;background-position:center!important}
-.vhero.hero-vip{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip.jpg")!important;background-size:cover!important;background-position:center!important}
-.hero.hero-gains{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains.jpg")!important;background-size:cover!important;background-position:center!important}
+.home-hero.hero-accueil{background:linear-gradient(180deg,rgba(6,16,36,.55),rgba(6,16,36,.88)),url("fond-accueil.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
+.hero.hero-analyse{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
+.vhero.hero-vip{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
+.hero.hero-gains{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
 '''
 
 CSS += r'''
@@ -8312,6 +8312,15 @@ CSS += r'''
 header.hero+main.wrap>p:first-child{margin-top:28px}
 /* vidéos de preuve (filmées au téléphone) : hauteur limitée */
 main video{max-height:560px;width:auto!important;max-width:100%;margin:0 auto}
+'''
+CSS += r'''
+/* téléphone : photos de fond plus légères (820 px au lieu de 1440 px) */
+@media(max-width:760px){
+ .home-hero.hero-accueil{background-image:linear-gradient(180deg,rgba(6,16,36,.55),rgba(6,16,36,.88)),url("fond-accueil-m.jpg?v=2")!important}
+ .hero.hero-analyse{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse-m.jpg?v=2")!important}
+ .vhero.hero-vip{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip-m.jpg?v=2")!important}
+ .hero.hero-gains{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains-m.jpg?v=2")!important}
+}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")

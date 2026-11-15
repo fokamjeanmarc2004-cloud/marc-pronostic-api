@@ -919,10 +919,10 @@ nav.top .logo img{box-shadow:0 0 0 2px rgba(250,204,21,.55),0 4px 14px rgba(0,0,
 .hero-photo h1,.hero-photo .lead,.hero-photo p{color:#fff}
 .hero-photo .eyebrow{color:#fde68a}
 .hero-photo .eyebrow::before{background:#facc15}
-.home-hero.hero-accueil{background:linear-gradient(180deg,rgba(6,16,36,.55),rgba(6,16,36,.88)),url("fond-accueil.jpg")!important;background-size:cover!important;background-position:center!important}
-.hero.hero-analyse{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse.jpg")!important;background-size:cover!important;background-position:center!important}
-.vhero.hero-vip{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip.jpg")!important;background-size:cover!important;background-position:center!important}
-.hero.hero-gains{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains.jpg")!important;background-size:cover!important;background-position:center!important}
+.home-hero.hero-accueil{background:linear-gradient(180deg,rgba(6,16,36,.55),rgba(6,16,36,.88)),url("fond-accueil.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
+.hero.hero-analyse{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
+.vhero.hero-vip{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
+.hero.hero-gains{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains.jpg?v=2")!important;background-size:cover!important;background-position:center!important}
 
 /* ==========================================================
    PRO (nov. 2026) : bleu nuit + orange (comme le logo or), boutons nets,
@@ -1051,3 +1051,11 @@ body:has(.shopbg) .vidlow{margin-top:0}
 header.hero+main.wrap>p:first-child{margin-top:28px}
 /* vidéos de preuve (filmées au téléphone) : hauteur limitée */
 main video{max-height:560px;width:auto!important;max-width:100%;margin:0 auto}
+
+/* téléphone : photos de fond plus légères (820 px au lieu de 1440 px) */
+@media(max-width:760px){
+ .home-hero.hero-accueil{background-image:linear-gradient(180deg,rgba(6,16,36,.55),rgba(6,16,36,.88)),url("fond-accueil-m.jpg?v=2")!important}
+ .hero.hero-analyse{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse-m.jpg?v=2")!important}
+ .vhero.hero-vip{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip-m.jpg?v=2")!important}
+ .hero.hero-gains{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains-m.jpg?v=2")!important}
+}
