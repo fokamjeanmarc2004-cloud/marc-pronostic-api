@@ -1569,6 +1569,7 @@ def footer_html():
 <a href="pronostics.html">Pronostics</a>
 <a href="resultats.html">Résultats</a>
 <a href="bilan.html">Mon bilan</a>
+<a href="livre-analyse-match.html">Le livre</a>
 <a href="actualites.html">Actualités</a>
 <a href="a-propos.html">À propos</a>
 </div>
@@ -3230,7 +3231,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -7171,6 +7172,118 @@ def bilan_page(lang="fr"):
 
 open(os.path.join(OUT, BILAN_SLUG), "w", encoding="utf-8").write(bilan_page("fr")); written.append(BILAN_SLUG)
 open(os.path.join(OUT, BILAN_SLUG_EN), "w", encoding="utf-8").write(bilan_page("en")); written.append(BILAN_SLUG_EN)
+# ---------------------------------------------------------------- Page de vente du livre « Analyser un match comme Cousin Marc »
+LIVRE_SLUG = "livre-analyse-match.html"
+LIVRE_PRIX_FCFA, LIVRE_PRIX_USD = "15 000", "25"
+_LIVRE_CSS = """<style>
+.lvh{display:grid;grid-template-columns:1fr;gap:22px;align-items:center}
+@media(min-width:760px){.lvh{grid-template-columns:230px 1fr}}
+.lvcover{background:#0b1a3a;color:#fff;border-radius:14px;padding:22px 18px;box-shadow:0 14px 34px rgba(0,0,0,.28);max-width:230px;margin:0 auto}
+.lvcover small{color:#e0a800;letter-spacing:1.5px;font-size:11px;font-weight:700;text-transform:uppercase}
+.lvcover b{display:block;font-size:22px;line-height:1.15;margin:8px 0 10px}
+.lvcover b span{color:#e0a800}
+.lvcover i{font-style:normal;font-size:12px;color:#c9d3ea}
+.lvprice{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin:14px 0}
+.lvprice b{font-size:36px;color:var(--gold);line-height:1}
+.lvprice span{color:var(--ink2)}
+.lvgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0}
+.lvgrid div{background:var(--soft);border-radius:14px;padding:14px 16px}
+.lvgrid b{display:block;margin-bottom:4px}
+.lvpay{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:12px 0}
+.lvpay div{background:var(--soft);border-radius:14px;padding:14px 16px}
+.lvpay b{display:block}
+.lvpay code{display:block;margin-top:6px;word-break:break-all;font-size:15px}
+</style>"""
+
+def livre_page():
+    toc = ["Ce qu'est un pronostic (et ce qu'il n'est pas)", "Comprendre les cotes : probabilité, marge du bookmaker, « value »", "Mes 7 étapes d'analyse d'un match",
+           "Choisir le bon type de pari (victoire, double chance, buts, handicap)", "Donner ta propre probabilité", "La gestion de la mise (bankroll) : 1 à 3 % par pari",
+           "Les combinés : le piège de la grosse cote", "NBA et tennis : les mêmes idées, des détails différents",
+           "Trois analyses complètes (deux gagnées, une perdue)", "Les 12 erreurs classiques", "Ton carnet de paris", "Jeu responsable",
+           "Annexes : fiche d'analyse à imprimer, carnet de paris, mini-lexique"]
+    toc_html = "".join(f"<li>{t}</li>" for t in toc)
+    faq = [("Est-ce que ce livre garantit des gains ?", "Non, et aucun livre honnête ne peut le faire. Les paris comportent toujours un risque de perte. Ce guide t'apprend à analyser, à comprendre les cotes et à protéger ton argent."),
+           ("Je suis débutant, est-ce pour moi ?", "Oui. Tout est expliqué simplement, avec des exemples chiffrés. Il n'y a besoin d'aucune connaissance en mathématiques au-delà de la division et de la multiplication."),
+           ("Dans quel format est le livre ?", "Un fichier PDF d'environ 26 pages, lisible sur téléphone, tablette ou ordinateur, avec une fiche d'analyse et un carnet de paris à imprimer."),
+           ("Comment je reçois le livre ?", "Tu paies par Mobile Money ou en crypto, tu m'envoies la capture sur Telegram, et je t'envoie le PDF dès que j'ai vérifié le paiement."),
+           ("Le livre est-il en anglais aussi ?", "Pas encore. Cette première édition est en français."),
+           ("Le prix change-t-il ?", "Le prix de lancement est de 15 000 FCFA. Il peut évoluer, donc ne tarde pas."),
+           ("Y a-t-il un remboursement ?", "C'est un produit numérique livré tout de suite : il n'est pas remboursable une fois envoyé. Lis bien l'extrait et le sommaire avant d'acheter.")]
+    jsonld = json.dumps({"@context": "https://schema.org", "@type": "Book", "name": "Analyser un match comme Cousin Marc", "author": {"@type": "Person", "name": "Cousin Marc"},
+                         "inLanguage": "fr", "bookFormat": "https://schema.org/EBook", "numberOfPages": 26,
+                         "description": "Guide pratique : comprendre les cotes, analyser un match en 7 étapes, choisir son pari et gérer sa mise.",
+                         "offers": {"@type": "Offer", "price": "15000", "priceCurrency": "XAF", "availability": "https://schema.org/InStock", "url": f"{BASE}/{LIVRE_SLUG}"}},
+                        ensure_ascii=False)
+    jsonld_faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}, ensure_ascii=False)
+    faq_html = "".join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(faq))
+    momo = "".join(f'<div><b>{n}</b><span class="small">{ben}</span><code translate="no">{aff}</code></div>' for n, aff, _c, ben, _col, _l in MOMO)
+    usdt = CRYPTOS[0]
+    return head("Livre : Analyser un match comme Cousin Marc (guide PDF) | Cousin Marc",
+        "Mon guide PDF de 26 pages : comprendre les cotes, analyser un match en 7 étapes, choisir ton pari et gérer ta mise. Exemples réels, fiche d'analyse et carnet de paris. 15 000 FCFA.",
+        f"{BASE}/{LIVRE_SLUG}", extra=_LIVRE_CSS + f'<script type="application/ld+json">{jsonld}</script><script type="application/ld+json">{jsonld_faq}</script>',
+        nav=nav_fr(), lang="fr") + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Nouveau · guide PDF</p>
+<div class="lvh">
+<div class="lvcover"><small>Guide pratique · 2026</small><b>Analyser un match comme <span>Cousin Marc</span></b><i>Ma méthode en 7 étapes · 26 pages · exemples réels</i></div>
+<div>
+<h1>Analyser un match <span class="hl">comme Cousin Marc</span></h1>
+<p>Ma méthode, étape par étape, pour choisir un pronostic, comprendre les cotes et gérer ta mise sans te faire plumer. Les mêmes étapes que j'utilise pour mes analyses publiées sur ce site.</p>
+<div class="lvprice"><b>{LIVRE_PRIX_FCFA} FCFA</b><span>≈ {LIVRE_PRIX_USD} $ en crypto · PDF · paiement unique</span></div>
+<p><a class="btn" href="#payer">Obtenir le livre</a> &nbsp; <a href="#sommaire" style="color:var(--gold);font-weight:700">Voir le sommaire →</a></p>
+</div></div>
+</div></header>
+<main class="wrap legalbody">
+<div class="note" style="margin-top:0"><b>Honnêteté d'abord :</b> ce livre ne promet aucun gain et ne contient pas de « méthode secrète ». Il t'apprend à réfléchir avant de parier et à protéger ton argent. 18+ · Les paris comportent un risque de perte.</div>
+
+<h2>Ce que tu vas apprendre</h2>
+<div class="lvgrid">
+<div><b>🔢 Lire une cote</b>Transformer une cote en probabilité, comprendre la marge du bookmaker et repérer un pari qui a de la valeur.</div>
+<div><b>🧭 Analyser en 7 étapes</b>Contexte, forme à domicile et à l'extérieur, attaque et défense, absents, confrontations, marché, probabilité.</div>
+<div><b>🎯 Bien choisir son pari</b>Victoire, double chance, les deux équipes marquent, plus ou moins de buts, handicap : quand utiliser lequel.</div>
+<div><b>💰 Gérer sa mise</b>Ta bankroll, la règle des 1 à 3 %, pourquoi on perd sur une mauvaise série et comment l'éviter.</div>
+<div><b>🧮 Comprendre les combinés</b>Pourquoi trois bons pronostics à 70 % ne passent qu'une fois sur trois, et comment jouer les combinés sans te ruiner.</div>
+<div><b>📓 Tenir un carnet</b>La fiche d'analyse et le carnet de paris à imprimer, pour savoir si tu progresses vraiment.</div>
+</div>
+
+<h2 id="sommaire">Le sommaire</h2>
+<ol>{toc_html}</ol>
+
+<h2>Un extrait : la « value », le seul vrai secret</h2>
+<div class="note"><p>Un pari a de la valeur quand <b>la probabilité que tu estimes est plus grande que celle de la cote</b>. La formule : <b>Valeur = (ta probabilité × la cote) − 1</b>.</p>
+<p>Exemple : tu penses qu'une équipe gagne 6 fois sur 10 (60 %). À la cote 1,80 : 0,60 × 1,80 − 1 = <b>+0,08</b>, un pari intéressant. À la cote 1,50 : 0,60 × 1,50 − 1 = <b>−0,10</b>, un pari à éviter, même si ton pronostic est bon.</p>
+<p style="margin-bottom:0"><b>Un bon pronostic à une mauvaise cote est un mauvais pari.</b></p></div>
+
+<h2>Pour qui ?</h2>
+<ul>
+<li>Pour toi qui suis mes pronostics et qui veux comprendre <b>pourquoi</b> je choisis un match.</li>
+<li>Pour le débutant qui veut des bases solides avant de miser de l'argent.</li>
+<li>Pour celui qui perd souvent et veut comprendre où il se trompe.</li>
+</ul>
+<p class="small">Ce livre est un contenu éducatif, réservé aux personnes de 18 ans et plus.</p>
+
+<h2 id="payer">Comment l'obtenir (2 minutes)</h2>
+<ol>
+<li>Envoie <b>{LIVRE_PRIX_FCFA} FCFA</b> par Mobile Money (ou <b>{LIVRE_PRIX_USD} $</b> en crypto) sur l'un des numéros ci-dessous.</li>
+<li>Fais une capture d'écran de ton paiement.</li>
+<li>Envoie-la-moi sur Telegram avec le message « <b>LIVRE</b> » : <a href="{VIP_TG}" style="color:var(--gold);font-weight:700">{VIP_TG.replace("https://", "")}</a>.</li>
+<li>Je vérifie le paiement et je t'envoie le PDF.</li>
+</ol>
+<h3>📱 Mobile Money</h3>
+<div class="lvpay">{momo}</div>
+<p class="small">✅ Avant de valider, vérifie que le nom affiché correspond au bénéficiaire indiqué.</p>
+<h3>💰 Crypto (tous pays)</h3>
+<div class="lvpay"><div><b>{usdt[0]} · {usdt[1]}</b><code translate="no">{usdt[2]}</code><span class="small">⚠️ Envoie UNIQUEMENT via le réseau {usdt[1]}. Un autre réseau = fonds perdus.</span></div></div>
+<p><a class="btn" href="{VIP_TG}">Envoyer ma capture sur Telegram</a></p>
+
+<h2>Questions fréquentes</h2>
+{faq_html}
+
+<div class="note">Les résultats passés ne garantissent pas les gains futurs. Ce guide ne constitue pas un conseil financier. 18+ · Joue de façon responsable. Voir aussi : <a href="jeu-responsable.html">jeu responsable</a> · <a href="bilan.html">mon bilan public</a> · <a href="pronostics.html">pronostics du jour</a>.</div>
+</main>
+{footer_html()}"""
+
+open(os.path.join(OUT, LIVRE_SLUG), "w", encoding="utf-8").write(livre_page()); written.append(LIVRE_SLUG)
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
