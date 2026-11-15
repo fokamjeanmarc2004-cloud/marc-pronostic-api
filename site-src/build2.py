@@ -1585,15 +1585,18 @@ NAV = nav_fr(es="codigos-promocionales.html")
 def social_html():
     return "\n".join(f'<a href="{u}" rel="nofollow">{ICONS.get(n,"")}<span>{n}</span></a>' for n,u in SOCIAL)
 
-_BAND_L = {"fr": ("📚 Mes livres", "Apprends ma méthode d'analyse : guides PDF de Cousin Marc.", "Voir les livres"),
+_BAND_L = {"fr": ("📚 Mes livres", "14 manuels en 3 niveaux : formation, pronostics par sport, expert.", "Voir la boutique"),
            "en": ("📚 My books", "Learn my analysis method: guides by Cousin Marc (in French).", "See the books"),
            "es": ("📚 Mis libros", "Aprende mi método de análisis: guías de Cousin Marc (en francés).", "Ver los libros"),
            "ar": ("📚 كتبي", "تعلّم طريقتي في التحليل: أدلة كوزين مارك (بالفرنسية).", "عرض الكتب")}
 def livres_band(lang):
     a, b, c = _BAND_L[lang]
-    return (f'<aside class="lvband" id="lvband" style="background:#0b1a3a;color:#fff;padding:18px 0"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between">'
-            f'<div><b style="font-size:18px;color:#fff">{a}</b><br><span style="color:#d6def0;font-size:14.5px">{b}</span></div>'
-            f'<a href="livres.html" style="background:#e0a800;color:#0b1a3a;font-weight:800;text-decoration:none;border-radius:12px;padding:12px 18px">{c} →</a></div>'
+    a = a.replace("📚 ", "")
+    covers = "".join(f'<img src="livre-cv-{k}.webp" alt="" width="60" height="80" loading="lazy" decoding="async">' for k in ("p-foot", "multi", "p-tennis", "p-hockey", "virtuels"))
+    return (f'<aside class="lvband" id="lvband"><div class="wrap lvin">'
+            f'<a class="lvcovers" href="livres.html" aria-hidden="true" tabindex="-1">{covers}</a>'
+            f'<div class="lvtxt"><b>{a}</b><span>{b}</span></div>'
+            f'<a class="lvgo" href="livres.html">{c} →</a></div>'
             f'<script>if(/livre/.test(location.pathname)){{var x=document.getElementById("lvband");if(x)x.remove()}}</script></aside>\n')
 
 def footer_html():
@@ -1909,7 +1912,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11q"><script>
+<link rel="stylesheet" href="style.css?v=2026-11r"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -1926,7 +1929,7 @@ document.addEventListener("DOMContentLoaded",function(){{
       t.setAttribute("aria-label","Telegram Cousin Marc");
       t.innerHTML='<svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>';
       var sb=document.querySelector(".stickybar");
-      if(window.innerWidth<960){{ /* mobile : Telegram est dans l'en-tete */ }}
+      if(window.innerWidth<1280||matchMedia("(pointer:coarse)").matches){{ /* telephone et tablette : Telegram est dans l'en-tete, barre du bas visible */ }}
       else if(sb&&window.innerWidth<900){{
         /* mobile avec barre du bas : le bouton Telegram s'integre a la barre (ne cache plus le contenu) */
         t.className="sb-tg"; t.querySelector("svg").setAttribute("width","24"); t.querySelector("svg").setAttribute("height","24");
@@ -2683,9 +2686,6 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
         _tgt = {"fr": "bilan.html", "en": "track-record.html"}.get(lang, U["res"])
         bilan = f'<a class="reslink" href="{_tgt}"><span>📊</span><b>{_pc} %</b> {_short}<i>→</i></a>'
     countries = ""
-    video_home = video_block(lang).replace(' fetchpriority="high">', ' loading="lazy" decoding="async">').replace('class="vidhero"', 'class="vidhero vidhome"')
-    _more = (f'<div class="bkmorewrap"><button type="button" class="cta alt" onclick="document.getElementById(\'bklist\').classList.remove(\'bkfold\');this.parentNode.remove()">'
-             f'{BKMORE_L[lang].replace("{n}", str(len(BOOKMAKERS)))}</button></div>') if len(BOOKMAKERS) > 6 else ""
     matchs_home = ""
     compare_home = ""
     coupons_home = ""
@@ -2716,7 +2716,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
         countries = (f'<section class="hsec" id="pays"><div class="wrap">'
                      f'<div class="hsec-head"><div><p class="kicker">{T["p_kick"]}</p><h2>{T["p_h2"]}</h2><p>{T["p_p"]}</p></div></div>'
                      f'<div class="related">{country_index_cards()}</div></div></section>')
-    return head(title, desc, canonical, nav=nav, lang=lang, alternates=alternates, show_youtube=False) + f"""
+    return head(title, desc, canonical, nav=nav, lang=lang, alternates=alternates, show_youtube=True) + f"""
 <header class="home-hero hero-photo hero-accueil"><div class="wrap">
 <p class="eyebrow">{T["eyebrow"].replace("{maj}", maj)}</p>
 <h1>{T["h1"]}</h1>
@@ -2726,9 +2726,9 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 <div class="topcodes">{top}</div>
 </div></header>
 
-{matchs_home}
-
 {coupons_home}
+
+{compare_home}
 
 <section class="hsec" id="coupon-du-jour"><div class="wrap">
 <div class="hsec-head"><div><p class="kicker">{T["c_kick"]}</p><h2>{T["c_h2"]}</h2></div></div>
@@ -2739,17 +2739,14 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 </div>
 </div></section>
 
-{gains_band(lang)}
-
-{video_home}
-
 <section class="hsec" id="bookmakers"><div class="wrap">
 <div class="hsec-head"><div><p class="kicker">{T["b_kick"]}</p><h2>{T["b_h2"]}</h2></div></div>
-<div class="bklist{" bkfold" if _more else ""}" id="bklist">{rows}</div>
-{_more}
+<div class="bklist">{rows}</div>
 </div></section>
 
-{compare_home}
+{gains_band(lang)}
+
+{matchs_home}
 
 {countries}
 
@@ -7618,15 +7615,42 @@ def _book_icons():
 
 # ---------------------------------------------------------------- Boutique : « Mes livres » (catalogue + panier -> commande Telegram)
 LIVRES_SLUG = "livres.html"
+LIVRES_NIV = [
+ ("formation", "1", "Niveau 1 · Formation", "Apprendre à analyser un match, sport par sport. Pour bien commencer."),
+ ("pratique", "2", "Niveau 2 · Pronostics par sport", "Passer à la pratique : ma méthode de pronostic pour chaque sport."),
+ ("expert", "3", "Niveau 3 · Expert", "Cotes, live et décisions : pour ceux qui maîtrisent déjà les bases."),
+ ("virtuel", "★", "Jeux virtuels et esports", "Comprendre comment ces jeux fonctionnent avant de miser."),
+ ("collection", "∞", "La collection complète", "Tous les manuels réunis, du niveau 1 au niveau 3."),
+]
 LIVRES = [
- {"id": "analyse", "titre": "Analyser un match comme Cousin Marc", "cov": "Analyser un match", "sous": "Ma méthode en 7 étapes", "prix": 50000, "usd": 83, "status": "dispo", "ico": "ball", "c1": "#0b1a3a", "c2": "#2563eb",
-  "chips": ["Cotes", "7 étapes", "Mise", "26 pages"], "lien": "livre-analyse-match.html"},
- {"id": "equipes", "titre": "Les équipes à surveiller", "cov": "Les équipes à surveiller", "sous": "Profils, tendances, pièges", "prix": 50000, "usd": 83, "status": "bientot", "ico": "shield", "c1": "#4a0d1c", "c2": "#dc2626",
-  "chips": ["Favoris piégeux", "Domicile / extérieur", "Régularité"]},
- {"id": "cotes", "titre": "Repérer les grosses cotes", "cov": "Repérer les grosses cotes", "sous": "Mes stratégies, tous sports", "prix": 50000, "usd": 83, "status": "bientot", "ico": "target", "c1": "#064a25", "c2": "#22c55e",
-  "chips": ["Foot", "Tennis", "Basket", "Mouvements de cotes"]},
- {"id": "virtuel", "titre": "Jeux virtuels et crash : comprendre avant de jouer", "cov": "Jeux virtuels et crash", "sous": "Comprendre, tester, limiter ses pertes", "prix": 50000, "usd": 83, "status": "bientot", "ico": "plane", "c1": "#2e0b4a", "c2": "#9333ea",
-  "chips": ["Comment ça marche", "Test 300 manches", "Anti-arnaque"]},
+ {"id": "analyse", "niv": "formation", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes · 26 pages", "img": "livre-analyse-static.webp",
+  "pts": ["Lire et comparer les cotes", "Ma grille d'analyse en 7 étapes", "Gérer sa mise"], "prix": 50000, "usd": 83, "status": "dispo", "lien": "livre-analyse-match.html"},
+ {"id": "multi", "niv": "formation", "vol": "Vol. 01", "titre": "Manuel de pronostic : tous les sports", "sous": "Analyser, comparer les cotes, décider avec méthode",
+  "pts": ["Transformer une cote en probabilité", "Le dossier complet d'un match", "Suivre ses paris pour progresser"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "f-foot", "niv": "formation", "titre": "Guide d'analyse du football", "sous": "Paris sportifs et analyse stratégique",
+  "pts": ["Repérer les équipes en forme", "Lire les statistiques clés", "Les marchés : 1X2, buts, les deux marquent"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "f-tennis", "niv": "formation", "titre": "Guide d'analyse du tennis", "sous": "Spécial paris sportifs",
+  "pts": ["Forme, surface et face-à-face", "Le service et le retour", "Repérer une cote qui a de la valeur"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "f-hockey", "niv": "formation", "titre": "Guide d'analyse du hockey sur glace", "sous": "Analyse, stratégie, paris sportifs",
+  "pts": ["Équipes solides et équipes fragiles", "Le rôle du gardien", "Forme et tendances des matchs"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "f-baseball", "niv": "formation", "titre": "Guide d'analyse du baseball", "sous": "Analyse, stratégie, valeur",
+  "pts": ["Lanceurs partants et releveurs", "Lire les alignements", "Les moments clés d'un match"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "p-foot", "niv": "pratique", "vol": "Vol. 04", "titre": "Manuel de pronostics : football", "sous": "Équipes et cotes",
+  "pts": ["Profils offensifs et défensifs", "Absences, calendrier, motivation", "Choisir le bon marché"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "p-tennis", "niv": "pratique", "vol": "Vol. 02", "titre": "Manuel de pronostics : tennis", "sous": "Lire le match",
+  "pts": ["Match-ups et surfaces", "Les signaux à suivre en live", "Ma fiche avant de parier"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "p-hockey", "niv": "pratique", "vol": "Vol. 03", "titre": "Manuel de pronostics : hockey sur glace", "sous": "Gardiens, unités spéciales, LNH",
+  "pts": ["Favori médiatique ou vraie domination", "Supériorité numérique", "Paris sur la LNH"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "p-baseball", "niv": "pratique", "vol": "Vol. 05", "titre": "Manuel de pronostics : baseball", "sous": "Lanceurs, bullpen, alignements",
+  "pts": ["Le duel des lanceurs", "La fatigue du bullpen", "Repérer les cotes mal placées"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "live", "niv": "expert", "vol": "Vol. 07", "titre": "Analyse des cotes et des failles", "sous": "Live, écarts de prix et cotes de 2",
+  "pts": ["Repérer un écart de prix en direct", "Filtrer les paris trop risqués", "Limiter les pertes inutiles"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "art", "niv": "expert", "titre": "L'art de l'analyse sportive", "sous": "Penser comme un analyste, tous sports",
+  "pts": ["Décider avec méthode", "Comparer plusieurs sports", "Garder la discipline"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "virtuels", "niv": "virtuel", "vol": "Vol. 06", "titre": "Jeux virtuels et esports : comprendre", "sous": "Crash, Aviator, simulations, esports",
+  "pts": ["Comment le résultat est tiré (RNG)", "Esports : là où l'analyse compte", "Les erreurs qui coûtent cher"], "prix": 50000, "usd": 83, "status": "bientot"},
+ {"id": "collection", "niv": "collection", "titre": "Manuel de tous les sports : la collection", "sous": "Tous les manuels réunis",
+  "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": None, "usd": None, "status": "bientot"},
 ]
 LIVRES_SPORTS = [("foot", "Football"), ("tennis", "Tennis"), ("basket", "Basket"), ("hockey", "Hockey"), ("baseball", "Baseball"), ("cricket", "Cricket"), ("tt", "Tennis de table")]
 _SHOP_JS = """<script>
@@ -7658,57 +7682,71 @@ render();
 
 def livres_page():
     import json as _j
-    ico = _book_icons(); sv = _sport_svgs()
-    def book3d(b):
-        return (f'<div class="bk3"><img src="livre-{b["id"]}-static.webp" alt="Livre : {html.escape(b["titre"])}" width="360" height="553" loading="lazy" decoding="async" '
-                f'style="height:236px;width:auto;max-width:100%;margin:0 auto;display:block;border-radius:6px;box-shadow:0 18px 26px rgba(0,0,0,.55)"></div>')
     def card(b):
         dispo = b["status"] == "dispo"
-        st = '<span class="st">DISPONIBLE</span>' if dispo else '<span class="st soon">BIENTÔT</span>'
+        img = b.get("img") or f'livre-cv-{b["id"]}.webp'
+        st = '<span class="lbst">DISPONIBLE</span>' if dispo else '<span class="lbst soon">BIENTÔT</span>'
+        vol = f'<span class="lbvol">{b["vol"]}</span>' if b.get("vol") else ""
+        niv = next(n[2] for n in LIVRES_NIV if n[0] == b["niv"])
         if dispo:
             btn = (f'<button type="button" class="shb" data-add="{b["id"]}">Ajouter au panier</button>'
                    f'<a class="shb alt" href="{b["lien"]}">Voir le détail</a>')
         else:
             msg = urllib.parse.quote(f"Préviens-moi quand le livre « {b['titre']} » sera disponible.")
-            btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">Me prévenir</a>'
-        fcfa = f'{b["prix"]:,}'.replace(",", " ")
-        chips = "".join(f"<span>{c}</span>" for c in b["chips"])
-        return (f'<article class="shc">{st}{book3d(b)}<h3>{b["titre"]}</h3><p class="tg">{b["sous"]}</p><div class="chips">{chips}</div>'
-                f'<div class="shp">{fcfa} FCFA<small>≈ {b["usd"]} $</small></div>{btn}</article>')
-    cards = "".join(card(b) for b in LIVRES)
-    sports = "".join(f'<div>{sv[k]}{n}<small>bientôt</small></div>' for k, n in LIVRES_SPORTS)
-    minibook = ('<svg class="minibook" viewBox="0 0 64 64"><rect x="10" y="6" width="42" height="52" rx="4" fill="#1d4ed8"/><rect x="10" y="6" width="9" height="52" rx="3" fill="#0b1a3a"/>'
-                '<circle cx="36" cy="26" r="9" fill="#fff"/><path d="M36 20l5 4-2 6h-6l-2-6z" fill="#12182b"/><rect x="24" y="42" width="22" height="3" rx="1.5" fill="#facc15"/><rect x="24" y="48" width="14" height="3" rx="1.5" fill="#fff" opacity=".8"/></svg>')
+            btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">🔔 Me prévenir</a>'
+        if b["prix"]:
+            fcfa = f'{b["prix"]:,}'.replace(",", " ")
+            price = f'{fcfa} FCFA<small>≈ {b["usd"]} $ · PDF</small>' if dispo else f'<em>dès</em> {fcfa} FCFA<small>sortie bientôt</small>'
+        else:
+            price = 'Prix bientôt<small>offre groupée</small>'
+        pts = "".join(f"<li>{html.escape(p)}</li>" for p in b["pts"])
+        href = b.get("lien", f"{VIP_TG}?text=" + urllib.parse.quote(f"Préviens-moi quand le livre « {b['titre']} » sera disponible."))
+        return (f'<article class="lb" data-niv="{b["niv"]}"><a class="lbimg" href="{href}">'
+                f'<img src="{img}" alt="Livre de Cousin Marc : {html.escape(b["titre"])}" width="420" height="560" loading="lazy" decoding="async">{st}{vol}</a>'
+                f'<div class="lbbody"><p class="lbniv">{niv}</p><h3>{html.escape(b["titre"])}</h3><p class="lbsub">{html.escape(b["sous"])}</p>'
+                f'<ul>{pts}</ul><div class="lbprice">{price}</div>{btn}</div></article>')
+    secs = ""
+    for key, num, lab, sub in LIVRES_NIV:
+        items = [b for b in LIVRES if b["niv"] == key]
+        if not items:
+            continue
+        secs += (f'<section class="lvsec" id="niv-{key}" data-niv="{key}"><div class="lvh"><span class="n">{num}</span><div><h2>{lab}</h2><p>{sub}</p></div>'
+                 f'<span class="cnt">{len(items)} livre{"s" if len(items) > 1 else ""}</span></div>'
+                 f'<div class="lbgrid">{"".join(card(b) for b in items)}</div></section>')
+    chips = '<button type="button" class="lbc on" data-f="*">Tous les livres</button>' + "".join(
+        f'<button type="button" class="lbc" data-f="{k}">{lab.split(" · ")[-1]}</button>' for k, n, lab, sub in LIVRES_NIV)
+    fan = "".join(f'<img src="livre-cv-{k}.webp" alt="" width="420" height="560" decoding="async" class="f{i}">' for i, k in enumerate(("f-foot", "multi", "p-tennis")))
     books_json = _j.dumps([{k: b[k] for k in ("id", "titre", "prix", "usd", "status")} for b in LIVRES], ensure_ascii=False)
     js = _SHOP_JS.replace("__BOOKS__", books_json).replace("__TG__", VIP_TG)
-    return head("Mes livres : guides de pronostics par Cousin Marc",
-        "Les guides de Cousin Marc : analyser un match, repérer les grosses cotes, les équipes à surveiller, les jeux virtuels. Version PDF, paiement Mobile Money ou crypto.",
+    filt = """<script>(function(){var cs=document.querySelectorAll('.lbc');cs.forEach(function(c){c.addEventListener('click',function(){var f=c.getAttribute('data-f');
+cs.forEach(function(x){x.classList.toggle('on',x===c)});document.querySelectorAll('.lvsec').forEach(function(s){s.style.display=(f==='*'||s.getAttribute('data-niv')===f)?'':'none'});
+var g=document.getElementById('guides');if(g&&g.getBoundingClientRect().top<0)g.scrollIntoView({behavior:'smooth'});});});})();</script>"""
+    nb = len(LIVRES)
+    return head("Mes livres : manuels de pronostics par Cousin Marc",
+        "Les manuels de Cousin Marc en 3 niveaux : formation, pronostics par sport (football, tennis, hockey, baseball), expert (cotes et live), jeux virtuels. PDF, paiement Mobile Money ou crypto.",
         f"{BASE}/{LIVRES_SLUG}", nav=nav_fr(), lang="fr") + f"""
 <header class="hero hero-shop"><div class="wrap"><div class="shhero">
 <div>
-<p class="eyebrow">Boutique · guides pratiques</p>
+<p class="eyebrow">Boutique · manuels de pronostics</p>
 <h1>Mes <span class="hl">livres</span></h1>
-<p>Les méthodes d'un pronostiqueur actif depuis 2021. Simple, clair, sans promesse magique.</p>
-<div class="btnrow"><a class="cta" href="#guides">Voir les guides</a><a class="cta alt" href="bilan.html">Mon bilan public</a></div>
+<p>Les méthodes d'un pronostiqueur actif depuis 2021, rangées en 3 niveaux. Simple, clair, sans promesse magique.</p>
+<div class="shkpi"><div><b>{nb}</b>livres</div><div><b>3</b>niveaux</div><div><b>5</b>sports</div></div>
+<div class="btnrow"><a class="cta" href="#guides">Voir les livres</a><a class="cta alt" href="bilan.html">Mon bilan public</a></div>
 </div>
-<div class="shlogo"><img src="logo-cm-512.png" alt="Cousin Marc" width="150" height="150">{minibook}</div>
+<div class="shfan" aria-hidden="true">{fan}</div>
 </div></div></header>
 <section class="shopbg" id="guides"><div class="wrap">
-<h2>Choisis ton guide</h2>
-<p class="shsub">PDF · paiement Mobile Money ou crypto · livré sur Telegram</p>
-<div class="shgrid2">{cards}</div>
+<div class="lbchips" role="toolbar" aria-label="Filtrer par niveau">{chips}</div>
+{secs}
 <div class="shsteps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
-<h2 style="margin-top:34px">Un livre par sport</h2>
-<p class="shsub">À venir</p>
-<div class="spt">{sports}</div>
-<p class="shnote">Paiement : <a href="livre-analyse-match.html#payer">voir les numéros</a> · Aucun gain n'est garanti · 18+ · <a href="jeu-responsable.html">Jeu responsable</a></p>
+<p class="shnote">Les livres marqués « Bientôt » sont en cours d'écriture : clique sur « Me prévenir » pour être averti à la sortie. Paiement : <a href="livre-analyse-match.html#payer">voir les numéros</a> · Aucun gain n'est garanti · 18+ · <a href="jeu-responsable.html">Jeu responsable</a></p>
 </div></section>
 <div id="shcart"><div class="wrap in">
 <div><ul></ul><div class="tot"></div><div class="shfmt"><label><input type="radio" name="shfmt" value="PDF" checked> PDF</label><label><input type="radio" name="shfmt" value="Papier (retrait en agence)"> Papier (bientôt)</label></div></div>
 <a class="shb go" style="width:auto" href="{VIP_TG}">Commander sur Telegram</a>
 </div></div>
 {footer_html()}
-{js}"""
+{js}{filt}"""
 
 open(os.path.join(OUT, LIVRES_SLUG), "w", encoding="utf-8").write(livres_page()); written.append(LIVRES_SLUG)
 print(f"  {len(MATCHS)} page(s) match du jour")
@@ -8322,6 +8360,81 @@ CSS += r'''
  .hero.hero-gains{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains-m.jpg?v=2")!important}
 }
 '''
+
+CSS += r'''
+/* ---------- tablette : barre du bas visible (comme sur téléphone), menu du haut visible dès 760 px ---------- */
+@media (max-width:1279px),(pointer:coarse){.tabbar{display:grid!important}body{padding-bottom:76px}}
+@media (min-width:1280px) and (pointer:fine){.tabbar{display:none!important}body{padding-bottom:0}}
+body.has-sticky .tabbar{display:none!important}
+@media (min-width:760px) and (max-width:959px){
+ .toplinks{display:flex!important;gap:0}
+ .toplinks a{font-size:13px!important;padding:7px 7px!important}
+ .toplinks a.vip{padding:7px 12px!important}
+ .topico.wa,.topico.tgi{display:none!important}
+}
+/* ---------- bandeau « Mes livres » en bas des pages : vraies couvertures ---------- */
+.lvband{background:radial-gradient(420px 200px at 10% 50%,rgba(250,204,21,.16),transparent 70%),linear-gradient(120deg,#0a1633,#13235a)!important;color:#fff;padding:20px 0!important}
+.lvin{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.lvcovers{display:flex;flex:none;text-decoration:none;padding-left:12px}
+.lvcovers img{width:56px;height:75px;object-fit:cover;border-radius:4px;margin-left:-12px;box-shadow:0 8px 16px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);transition:transform .2s}
+.lvcovers img:nth-child(odd){transform:rotate(-4deg)}.lvcovers img:nth-child(even){transform:rotate(3deg) translateY(-3px)}
+.lvcovers:hover img{transform:none}
+.lvtxt{flex:1 1 220px;display:flex;flex-direction:column;gap:2px}
+.lvtxt b{font-size:18px;color:#fff}.lvtxt span{color:#d6def0;font-size:14.5px}
+.lvgo{background:linear-gradient(90deg,#facc15,#f97316);color:#1a1205!important;font-weight:800;text-decoration:none;border-radius:12px;padding:12px 18px;white-space:nowrap}
+/* ---------- boutique : livres par niveau ---------- */
+.shkpi{display:flex;gap:10px;margin:18px 0 4px;flex-wrap:wrap}
+.shkpi div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:8px 14px;color:#d6def5;font-size:13px;font-weight:600}
+.shkpi b{display:block;font-size:22px;color:#facc15;line-height:1.1}
+.shfan{position:relative;height:300px;max-width:380px;margin:0 auto;width:100%}
+.shfan img{position:absolute;top:10px;width:170px;height:227px;object-fit:cover;border-radius:6px;box-shadow:0 22px 40px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.12)}
+.shfan .f0{left:6%;transform:rotate(-10deg)}.shfan .f2{right:6%;transform:rotate(10deg)}
+.shfan .f1{left:50%;margin-left:-90px;width:180px;height:240px;top:0;z-index:2}
+@media(max-width:799px){.shfan{height:230px;max-width:320px}.shfan img{width:128px;height:171px}.shfan .f1{width:140px;height:187px;margin-left:-70px}}
+.shopbg{background:radial-gradient(800px 340px at 50% 0%,rgba(250,204,21,.10),transparent 65%),linear-gradient(180deg,#0a1226,#0d1838 50%,#0a1226)!important;padding-top:26px!important}
+.lbchips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 8px;position:sticky;top:64px;z-index:20;padding:10px 0;background:linear-gradient(180deg,#0a1226 70%,rgba(10,18,38,0))}
+.lbc{font:inherit;font-size:14px;font-weight:700;cursor:pointer;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 15px;white-space:nowrap}
+.lbc.on{background:linear-gradient(90deg,#facc15,#f97316);color:#1a1205;border-color:transparent}
+@media(max-width:759px){.lbchips{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;margin:0 -20px 6px;padding:10px 20px;scrollbar-width:none}.lbchips::-webkit-scrollbar{display:none}}
+.lvsec{padding-top:26px}
+.lvh{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.lvh .n{flex:none;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(249,115,22,.35)}
+.lvh h2{color:#fff!important;font-size:22px!important;margin:0!important;display:block!important}
+.lvh h2::after{display:none!important}
+.lvh h2,.lvh p{text-align:left!important}
+.lvh>div{flex:1;min-width:0}
+.lvh p{color:#b9c6ea;font-size:14.5px;margin:2px 0 0}
+.lvh .cnt{margin-left:auto;flex:none;font-size:12.5px;font-weight:700;color:#fde68a;background:rgba(250,204,21,.12);border:1px solid rgba(250,204,21,.3);border-radius:999px;padding:4px 10px}
+.lbgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.lb{display:flex;flex-direction:column;background:linear-gradient(170deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s}
+@media(hover:hover){.lb:hover{transform:translateY(-4px);border-color:rgba(250,204,21,.5)}}
+.lbimg{position:relative;display:block;aspect-ratio:3/4;background:#1b140d;overflow:hidden}
+.lbimg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+@media(hover:hover){.lb:hover .lbimg img{transform:scale(1.05)}}
+.lbst{position:absolute;bottom:10px;left:10px;font-size:10.5px;font-weight:800;letter-spacing:.5px;padding:4px 9px;border-radius:99px;background:#16a34a;color:#fff}
+.lbst.soon{background:rgba(15,23,42,.85);color:#fde68a;border:1px solid rgba(250,204,21,.45)}
+.lbvol{position:absolute;bottom:10px;right:10px;font-size:11px;font-weight:800;padding:4px 8px;border-radius:8px;background:rgba(0,0,0,.6);color:#fff}
+.lbbody{display:flex;flex-direction:column;gap:6px;padding:14px 14px 16px;flex:1}
+.lbniv{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fbbf24;margin:0}
+.lb h3{color:#fff;font-size:16.5px;line-height:1.25;margin:0}
+.lbsub{color:#b9c6ea;font-size:13.5px;margin:0}
+.lb ul{list-style:none;margin:4px 0 2px;padding:0;display:flex;flex-direction:column;gap:3px}
+.lb li{color:#dbe3f7;font-size:13px;padding-left:20px;position:relative;line-height:1.35}
+.lb li::before{content:"✓";position:absolute;left:0;color:#facc15;font-weight:800}
+.lbprice{font-size:19px;font-weight:800;color:#facc15;margin-top:auto;padding-top:6px}
+.lbprice em{font-style:normal;font-size:13px;color:#fde68a;font-weight:600}
+.lbprice small{display:block;font-size:12px;font-weight:500;color:#9fb0dd}
+.lb .shb{width:100%;margin-top:6px}
+@media(max-width:559px){
+ .lbgrid{grid-template-columns:1fr 1fr;gap:12px}
+ .lb ul{display:none}
+ .lbniv{display:none}
+ .lbbody{padding:11px 11px 13px}
+ .lb h3{font-size:14.5px}.lbsub{font-size:12.5px}.lbprice{font-size:16px}
+ .lb .shb{font-size:13.5px;padding:10px 8px}
+ .lvh h2{font-size:19px!important}.lvh .cnt{display:none}
+}
+'''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
 open(os.path.join(OUT,"google5d6ef3eb30a3bfc3.html"),"w",encoding="utf-8").write("google-site-verification: google5d6ef3eb30a3bfc3.html\n"); written.append("google5d6ef3eb30a3bfc3.html")
@@ -8364,27 +8477,4 @@ for _f in os.listdir(OUT):
 print(f"  rappels 18+ allégés dans {_n18} page(s)")
 
 
-# ---------------------------------------------------------------- Rangement : la vidéo « Regarde la vidéo avant de t'inscrire » passe en bas des pages
-# (juste avant le bandeau Livres) pour que chaque page montre d'abord son contenu. L'accueil la place lui-même (après les gains).
-_VB = [video_block(l) for l in ("fr", "en", "es", "ar")]
-_nv = 0
-for _f in os.listdir(OUT):
-    if not _f.endswith(".html"):
-        continue
-    _p = os.path.join(OUT, _f)
-    _t = _t0 = open(_p, encoding="utf-8").read()
-    _hp = [x for x in (_t.find("<header"), _t.find("<main")) if x >= 0]
-    for _vb in _VB:
-        _pos = _t.find(_vb)
-        if _pos >= 0 and _hp and _pos < min(_hp):   # vidéo tout en haut (avant le contenu de la page)
-            _low = _vb.replace(' fetchpriority="high">', ' loading="lazy" decoding="async">').replace('class="vidhero"', 'class="vidhero vidlow"')
-            _t2 = _t[:_pos] + _t[_pos + len(_vb):]
-            _i = _t2.find('<aside class="lvband')
-            if _i < 0:
-                _i = _t2.find("<footer")
-            if _i >= 0:
-                _t = _t2[:_i] + _low + _t2[_i:]
-            break
-    if _t != _t0:
-        open(_p, "w", encoding="utf-8").write(_t); _nv += 1
-print(f"  vidéo placée en bas de {_nv} page(s)")
+

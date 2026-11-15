@@ -1059,3 +1059,76 @@ main video{max-height:560px;width:auto!important;max-width:100%;margin:0 auto}
  .vhero.hero-vip{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip-m.jpg?v=2")!important}
  .hero.hero-gains{background-image:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains-m.jpg?v=2")!important}
 }
+
+/* ---------- tablette : barre du bas visible (comme sur téléphone), menu du haut visible dès 760 px ---------- */
+@media (max-width:1279px),(pointer:coarse){.tabbar{display:grid!important}body{padding-bottom:76px}}
+@media (min-width:1280px) and (pointer:fine){.tabbar{display:none!important}body{padding-bottom:0}}
+body.has-sticky .tabbar{display:none!important}
+@media (min-width:760px) and (max-width:959px){
+ .toplinks{display:flex!important;gap:0}
+ .toplinks a{font-size:13px!important;padding:7px 7px!important}
+ .toplinks a.vip{padding:7px 12px!important}
+ .topico.wa,.topico.tgi{display:none!important}
+}
+/* ---------- bandeau « Mes livres » en bas des pages : vraies couvertures ---------- */
+.lvband{background:radial-gradient(420px 200px at 10% 50%,rgba(250,204,21,.16),transparent 70%),linear-gradient(120deg,#0a1633,#13235a)!important;color:#fff;padding:20px 0!important}
+.lvin{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.lvcovers{display:flex;flex:none;text-decoration:none;padding-left:12px}
+.lvcovers img{width:56px;height:75px;object-fit:cover;border-radius:4px;margin-left:-12px;box-shadow:0 8px 16px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);transition:transform .2s}
+.lvcovers img:nth-child(odd){transform:rotate(-4deg)}.lvcovers img:nth-child(even){transform:rotate(3deg) translateY(-3px)}
+.lvcovers:hover img{transform:none}
+.lvtxt{flex:1 1 220px;display:flex;flex-direction:column;gap:2px}
+.lvtxt b{font-size:18px;color:#fff}.lvtxt span{color:#d6def0;font-size:14.5px}
+.lvgo{background:linear-gradient(90deg,#facc15,#f97316);color:#1a1205!important;font-weight:800;text-decoration:none;border-radius:12px;padding:12px 18px;white-space:nowrap}
+/* ---------- boutique : livres par niveau ---------- */
+.shkpi{display:flex;gap:10px;margin:18px 0 4px;flex-wrap:wrap}
+.shkpi div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:8px 14px;color:#d6def5;font-size:13px;font-weight:600}
+.shkpi b{display:block;font-size:22px;color:#facc15;line-height:1.1}
+.shfan{position:relative;height:300px;max-width:380px;margin:0 auto;width:100%}
+.shfan img{position:absolute;top:10px;width:170px;height:227px;object-fit:cover;border-radius:6px;box-shadow:0 22px 40px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.12)}
+.shfan .f0{left:6%;transform:rotate(-10deg)}.shfan .f2{right:6%;transform:rotate(10deg)}
+.shfan .f1{left:50%;margin-left:-90px;width:180px;height:240px;top:0;z-index:2}
+@media(max-width:799px){.shfan{height:230px;max-width:320px}.shfan img{width:128px;height:171px}.shfan .f1{width:140px;height:187px;margin-left:-70px}}
+.shopbg{background:radial-gradient(800px 340px at 50% 0%,rgba(250,204,21,.10),transparent 65%),linear-gradient(180deg,#0a1226,#0d1838 50%,#0a1226)!important;padding-top:26px!important}
+.lbchips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 8px;position:sticky;top:64px;z-index:20;padding:10px 0;background:linear-gradient(180deg,#0a1226 70%,rgba(10,18,38,0))}
+.lbc{font:inherit;font-size:14px;font-weight:700;cursor:pointer;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 15px;white-space:nowrap}
+.lbc.on{background:linear-gradient(90deg,#facc15,#f97316);color:#1a1205;border-color:transparent}
+@media(max-width:759px){.lbchips{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;margin:0 -20px 6px;padding:10px 20px;scrollbar-width:none}.lbchips::-webkit-scrollbar{display:none}}
+.lvsec{padding-top:26px}
+.lvh{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.lvh .n{flex:none;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(249,115,22,.35)}
+.lvh h2{color:#fff!important;font-size:22px!important;margin:0!important;display:block!important}
+.lvh h2::after{display:none!important}
+.lvh h2,.lvh p{text-align:left!important}
+.lvh>div{flex:1;min-width:0}
+.lvh p{color:#b9c6ea;font-size:14.5px;margin:2px 0 0}
+.lvh .cnt{margin-left:auto;flex:none;font-size:12.5px;font-weight:700;color:#fde68a;background:rgba(250,204,21,.12);border:1px solid rgba(250,204,21,.3);border-radius:999px;padding:4px 10px}
+.lbgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.lb{display:flex;flex-direction:column;background:linear-gradient(170deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s}
+@media(hover:hover){.lb:hover{transform:translateY(-4px);border-color:rgba(250,204,21,.5)}}
+.lbimg{position:relative;display:block;aspect-ratio:3/4;background:#1b140d;overflow:hidden}
+.lbimg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+@media(hover:hover){.lb:hover .lbimg img{transform:scale(1.05)}}
+.lbst{position:absolute;bottom:10px;left:10px;font-size:10.5px;font-weight:800;letter-spacing:.5px;padding:4px 9px;border-radius:99px;background:#16a34a;color:#fff}
+.lbst.soon{background:rgba(15,23,42,.85);color:#fde68a;border:1px solid rgba(250,204,21,.45)}
+.lbvol{position:absolute;bottom:10px;right:10px;font-size:11px;font-weight:800;padding:4px 8px;border-radius:8px;background:rgba(0,0,0,.6);color:#fff}
+.lbbody{display:flex;flex-direction:column;gap:6px;padding:14px 14px 16px;flex:1}
+.lbniv{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fbbf24;margin:0}
+.lb h3{color:#fff;font-size:16.5px;line-height:1.25;margin:0}
+.lbsub{color:#b9c6ea;font-size:13.5px;margin:0}
+.lb ul{list-style:none;margin:4px 0 2px;padding:0;display:flex;flex-direction:column;gap:3px}
+.lb li{color:#dbe3f7;font-size:13px;padding-left:20px;position:relative;line-height:1.35}
+.lb li::before{content:"✓";position:absolute;left:0;color:#facc15;font-weight:800}
+.lbprice{font-size:19px;font-weight:800;color:#facc15;margin-top:auto;padding-top:6px}
+.lbprice em{font-style:normal;font-size:13px;color:#fde68a;font-weight:600}
+.lbprice small{display:block;font-size:12px;font-weight:500;color:#9fb0dd}
+.lb .shb{width:100%;margin-top:6px}
+@media(max-width:559px){
+ .lbgrid{grid-template-columns:1fr 1fr;gap:12px}
+ .lb ul{display:none}
+ .lbniv{display:none}
+ .lbbody{padding:11px 11px 13px}
+ .lb h3{font-size:14.5px}.lbsub{font-size:12.5px}.lbprice{font-size:16px}
+ .lb .shb{font-size:13.5px;padding:10px 8px}
+ .lvh h2{font-size:19px!important}.lvh .cnt{display:none}
+}
