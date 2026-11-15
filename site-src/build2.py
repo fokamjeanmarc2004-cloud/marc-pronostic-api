@@ -1940,7 +1940,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11w"><script>
+<link rel="stylesheet" href="style.css?v=2026-11x"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -7885,7 +7885,10 @@ def livres_page():
             btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">Précommander</a>'
         if b["prix"]:
             fcfa = f'{b["prix"]:,}'.replace(",", " ")
-            price = f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo</small>' if dispo else f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo · livré dès la sortie</small>'
+            _pct = 40 if b["id"] == "collection" else 30
+            _norm = int(round(b["prix"] / (1 - _pct / 100) / 5000.0) * 5000)
+            _old = f'<span class="lbold"><s>{_norm:,} FCFA</s><i>-{round(100 * (1 - b["prix"] / _norm))} %</i></span>'.replace(",", " ")
+            price = _old + (f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo</small>' if dispo else f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo · livré dès la sortie</small>')
         else:
             price = 'Prix sur demande<small>offre groupée</small>'
         pts = "".join(f"<li>{html.escape(p)}</li>" for p in b["pts"])
@@ -7908,7 +7911,7 @@ def livres_page():
              f'<div class="fpro"><div><p class="lbniv">Formation · suivi 1 an</p><h3>Formation professionnelle avec suivi</h3>'
              f'<ul><li>Ma méthode d\'analyse expliquée pas à pas</li><li>Un suivi personnel sur Telegram pendant 12 mois</li><li>Tes analyses relues et corrigées</li><li>Gestion de la mise et discipline</li></ul>'
              f'<p class="fnote">Une formation apprend une méthode. Elle ne garantit aucun gain.</p></div>'
-             f'<div class="fbuy"><div class="lbprice">{_ffc} FCFA<small>par an · ≈ {FORMATION_USD} $</small></div>'
+             f'<div class="fbuy"><div class="lbprice"><span class="lbold"><s>215 000 FCFA</s><i>-30 %</i></span>{_ffc} FCFA<small>par an · ≈ {FORMATION_USD} $</small></div>'
              f'<a class="shb" href="{VIP_TG}?text={_fmsg}">M\'inscrire sur Telegram</a></div></div></section>')
     chips = '<button type="button" class="lbc on" data-f="*">Tout</button>' + "".join(
         f'<button type="button" class="lbc" data-f="{k}">{lab.split(" · ")[-1]}</button>' for k, n, lab, sub in LIVRES_NIV)
@@ -7933,7 +7936,7 @@ var g=document.getElementById('guides');if(g&&g.getBoundingClientRect().top<0)g.
 <div class="shfan" aria-hidden="true">{fan}</div>
 </div></div></header>
 <section class="shopbg" id="guides"><div class="wrap">
-<div class="promo"><b>🏷️ Prix promo</b><span>Tous les prix affichés sont des prix promo, valables jusqu'au {PROMO_FIN}. Ils augmentent en 2027.</span></div>
+<div class="promo"><b>🏷️ Prix promo</b><span>Tous les prix sont en promotion jusqu'au {PROMO_FIN}. Le prix barré est le prix normal, appliqué à partir de janvier 2027.</span></div>
 <div class="shcat"><h2>📚 Livres, manuels et formation</h2><span>{nb + 1} produits</span></div>
 <div class="lbchips" role="toolbar" aria-label="Filtrer par niveau">{chips}</div>
 {secs}
@@ -8870,6 +8873,11 @@ CSS += r'''
 .vm-num{color:#fde68a!important;font-size:clamp(24px,3.4vw,30px)!important;font-weight:800!important;letter-spacing:.03em}
 .vm-row span,.vc-head span{color:var(--tx2)!important}.vm-row b,.vm-head b,.vc-head b{color:#fff!important}
 .vaddr{color:#fde68a!important}
+'''
+CSS += r'''
+.lbold{display:flex;align-items:center;gap:8px;margin-bottom:2px}
+.lbold s{color:#8f9bb5;font-size:14px;font-weight:600;text-decoration-thickness:2px;text-decoration-color:#f87171}
+.lbold i{font-style:normal;font-size:12px;font-weight:800;color:#fff;background:#dc2626;border-radius:6px;padding:2px 6px}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")

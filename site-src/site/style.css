@@ -1360,3 +1360,7 @@ main h2[id],main section[id]{scroll-margin-top:84px}
 .vm-num{color:#fde68a!important;font-size:clamp(24px,3.4vw,30px)!important;font-weight:800!important;letter-spacing:.03em}
 .vm-row span,.vc-head span{color:var(--tx2)!important}.vm-row b,.vm-head b,.vc-head b{color:#fff!important}
 .vaddr{color:#fde68a!important}
+
+.lbold{display:flex;align-items:center;gap:8px;margin-bottom:2px}
+.lbold s{color:#8f9bb5;font-size:14px;font-weight:600;text-decoration-thickness:2px;text-decoration-color:#f87171}
+.lbold i{font-style:normal;font-size:12px;font-weight:800;color:#fff;background:#dc2626;border-radius:6px;padding:2px 6px}
