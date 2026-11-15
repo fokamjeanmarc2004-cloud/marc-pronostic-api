@@ -430,9 +430,9 @@ async function nbaResultsOnce(env, now, dryText, dry) {
 // ---------------------------------------------------------------- Resultats FOOT automatiques (scores ESPN)
 // Meme principe que la NBA. Le bot ne tranche que les pronostics simples (victoire, double chance, les deux marquent,
 // plus/moins de buts, buts d'une equipe). Tout le reste (mi-temps, combinés...) est laissé à la main.
-const FOOT_LEAGUE = { "Ligue des Champions": "uefa.champions", "Ligue Europa": "uefa.europa", "Ligue Conférence": "uefa.europa.conf",
+const FOOT_LEAGUE = { "Éliminatoires CAN 2027": "caf.nations_qual", "Ligue des Champions": "uefa.champions", "Ligue Europa": "uefa.europa", "Ligue Conférence": "uefa.europa.conf",
   "Premier League": "eng.1", "Liga": "esp.1", "Ligue 1": "fra.1", "Serie A": "ita.1", "Bundesliga": "ger.1" };
-const FOOT_ALIAS = { barcelone: "barcelona", seville: "sevilla", naples: "napoli", valence: "valencia", inter: "internazionale", psg: "paris saint germain",
+const FOOT_ALIAS = { cameroun: "cameroon", namibie: "namibia", soudan: "sudan", zimbabwe: "zimbabwe", "guinee equatoriale": "equatorial guinea", somalie: "somalia", centrafrique: "central african republic", erythree: "eritrea", guinee: "guinea", zambie: "zambia", ethiopie: "ethiopia", egypte: "egypt", "soudan du sud": "south sudan", tanzanie: "tanzania", gambie: "gambia", "cote d ivoire": "ivory coast", "guinee bissau": "guinea bissau", libye: "libya", tunisie: "tunisia", "rd congo": "congo dr", algerie: "algeria", ouganda: "uganda", comores: "comoros", "cap vert": "cape verde", mauritanie: "mauritania", maroc: "morocco", "afrique du sud": "south africa", benin: "benin", barcelone: "barcelona", seville: "sevilla", naples: "napoli", valence: "valencia", inter: "internazionale", psg: "paris saint germain",
   "aek athenes": "aek athens", "sporting portugal": "sporting cp", rennes: "stade rennais", "kairat almaty": "kairat", atletico: "atletico madrid",
   dortmund: "borussia dortmund", leverkusen: "bayer leverkusen", "inter milan": "internazionale", "man city": "manchester city", "man united": "manchester united" };
 const FOOT_STOP = new Set(["fc", "afc", "ac", "as", "sc", "cf", "rc", "ssc", "tsg", "vfb", "1"]);
@@ -743,32 +743,44 @@ async function sendAnalyses(env, date = new Date(), moment = "jour") {
   let list = [];
   try { list = await (await fetch(`${SITE}/matchs.json?t=${Date.now()}`)).json(); } catch (e) { return "analyses : matchs.json illisible (" + e.message + ")"; }
   const nuit = moment === "nuit";
-  const today = list.filter((m) => m.d === day && (nuit ? m.h < "06:00" : m.h >= "06:00")).slice(0, 10);
+  const today = list.filter((m) => m.d === day && (nuit ? m.h < "06:00" : m.h >= "06:00")).sort((a, b) => (a.h < b.h ? -1 : a.h > b.h ? 1 : 0));
   if (!today.length) return `analyses (${moment}) : aucun match`;
   const pause = enPause(date);
+  const CHUNK = 8; // 8 matchs par message (limite Telegram : 4096 caracteres)
+  const parts = [];
+  for (let i = 0; i < today.length; i += CHUNK) parts.push(today.slice(i, i + CHUNK));
   // bilingue : chaque match en francais puis en anglais
-  const build = (withLinksEn) => {
-    let s = nuit ? "🌙 MES PRONOSTICS DE LA NUIT\n🇬🇧 TONIGHT'S PREDICTIONS\n" : "⚽ MES PRONOSTICS DU JOUR\n🇬🇧 TODAY'S PREDICTIONS\n";
-    for (const m of today) {
+  const build = (items, k, withLinksEn) => {
+    let s = k > 0 ? "⚽ SUITE DE MES PRONOSTICS\n🇬🇧 MORE PREDICTIONS\n"
+      : nuit ? "🌙 MES PRONOSTICS DE LA NUIT\n🇬🇧 TONIGHT'S PREDICTIONS\n" : "⚽ MES PRONOSTICS DU JOUR\n🇬🇧 TODAY'S PREDICTIONS\n";
+    for (const m of items) {
       s += `\n🕘 ${m.h} · ${m.e1} – ${m.e2}\n✅ ${m.p}\n`;
       if (m.p_en && m.p_en !== m.p) s += `🇬🇧 ${m.p_en}\n`;
       s += `👉 ${SITE}/${m.slug}.html\n`;
       if (withLinksEn && m.slug_en) s += `🇬🇧 ${SITE}/${m.slug_en}.html\n`;
     }
+    if (k < parts.length - 1) return s;
     if (pause) return s + "\n" + EN.resp;
     return s + "\n🎁 Pas encore de compte ? Inscris-toi avec le code promo FFN pour ton bonus.\n🇬🇧 No account yet? Register with promo code FFN for your bonus.\n\n" + EN.resp;
   };
-  let text = build(true);
-  if (text.length > 1000) { const short = build(false); if (short.length <= 1000) text = short; }
-  const photo = `${SITE}/og/${today[0].slug}.jpg`;
-  if (text.length <= 1000) {
-    try {
-      await tg(env, "sendPhoto", { chat_id: channelOf(env), photo, caption: text });
-      return `analyses du jour publiées (${today.length} match(s), image)`;
-    } catch (e) { console.log("image analyses", e.message); }
+  let sent = 0;
+  for (let k = 0; k < parts.length; k++) {
+    let text = build(parts[k], k, true);
+    if (text.length > 4000) text = build(parts[k], k, false);
+    const photo = `${SITE}/og/${parts[k][0].slug}.jpg`;
+    let done = false;
+    if (k === 0 && parts.length === 1) {
+      let cap = text;
+      if (cap.length > 1000) cap = build(parts[k], k, false);
+      if (cap.length <= 1000) {
+        try { await tg(env, "sendPhoto", { chat_id: channelOf(env), photo, caption: cap }); done = true; } catch (e) { console.log("image analyses", e.message); }
+      }
+    }
+    if (!done) await tg(env, "sendMessage", { chat_id: channelOf(env), text, disable_web_page_preview: true });
+    sent++;
+    if (k < parts.length - 1) await new Promise((r) => setTimeout(r, 1500));
   }
-  await tg(env, "sendMessage", { chat_id: channelOf(env), text, disable_web_page_preview: false });
-  return `analyses du jour publiées (${today.length} match(s), texte)`;
+  return `analyses du jour publiées (${today.length} match(s), ${sent} message(s))`;
 }
 
 // ---------------------------------------------------------------- Entrees du Worker
