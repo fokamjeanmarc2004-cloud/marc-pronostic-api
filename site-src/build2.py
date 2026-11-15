@@ -7230,7 +7230,7 @@ def livre_page():
 <h1>Analyser un match <span class="hl">comme Cousin Marc</span></h1>
 <p>Ma méthode, étape par étape, pour choisir un pronostic, comprendre les cotes et gérer ta mise sans te faire plumer. Les mêmes étapes que j'utilise pour mes analyses publiées sur ce site.</p>
 <div class="lvprice"><b>{LIVRE_PRIX_FCFA} FCFA</b><span>≈ {LIVRE_PRIX_USD} $ en crypto · PDF · paiement unique</span></div>
-<p><a class="btn" href="#payer">Obtenir le livre</a> &nbsp; <a href="#sommaire" style="color:var(--gold);font-weight:700">Voir le sommaire →</a></p>
+<div class="btnrow" style="justify-content:flex-start;margin-top:14px"><a class="cta" href="#payer">Obtenir le livre</a><a class="cta alt" href="#sommaire">Voir le sommaire</a></div>
 </div></div>
 </div></header>
 <main class="wrap legalbody">
@@ -7274,7 +7274,7 @@ def livre_page():
 <p class="small">✅ Avant de valider, vérifie que le nom affiché correspond au bénéficiaire indiqué.</p>
 <h3>💰 Crypto (tous pays)</h3>
 <div class="lvpay"><div><b>{usdt[0]} · {usdt[1]}</b><code translate="no">{usdt[2]}</code><span class="small">⚠️ Envoie UNIQUEMENT via le réseau {usdt[1]}. Un autre réseau = fonds perdus.</span></div></div>
-<p><a class="btn" href="{VIP_TG}">Envoyer ma capture sur Telegram</a></p>
+<div class="btnrow" style="justify-content:flex-start"><a class="cta" href="{VIP_TG}">Envoyer ma capture sur Telegram</a></div>
 
 <h2>Questions fréquentes</h2>
 {faq_html}
