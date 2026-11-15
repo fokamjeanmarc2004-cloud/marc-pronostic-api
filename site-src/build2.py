@@ -2537,7 +2537,7 @@ def bookmaker_page(b):
 
 HOME_T = {
  "fr": dict(eyebrow="Cousin Marc · Mis à jour {maj}", h1="Pronostics foot &amp; codes promo <em>vérifiés.</em>",
-   lead="Le coupon du jour, les codes officiels des bookmakers et les guides pour s'inscrire, déposer et retirer en Afrique. Simple, clair, gratuit.",
+   lead="Coupon du jour · codes officiels · guides d'inscription.",
    verified="Codes vérifiés le {d}", bar_copy="📋 Copier", bar_video="▶ Vidéo", more="Voir les {n} autres bookmakers", cta1="Voir les codes promo", cta2="Coupon du jour",
    trust=[("100K+","abonnés"),("{n}","bookmakers"),("4","langues"),("18+","jeu responsable")],
    copy="Copier", copy_aria="Copier le code promo", join="S'inscrire", guide="Guide",
