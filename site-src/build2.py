@@ -1940,7 +1940,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11u"><script>
+<link rel="stylesheet" href="style.css?v=2026-11v"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -7614,7 +7614,8 @@ for _lg in ("fr", "en", "es", "ar"):   # « Mes gains » est maintenant la page 
     if os.path.exists(_gp): os.remove(_gp)
 # ---------------------------------------------------------------- Page de vente du livre « Analyser un match comme Cousin Marc »
 LIVRE_SLUG = "livre-analyse-match.html"
-LIVRE_PRIX_FCFA, LIVRE_PRIX_USD = "50 000", "83"
+PROMO_FIN = "31 décembre 2026"
+LIVRE_PRIX_FCFA, LIVRE_PRIX_USD = "80 000", "135"
 _LIVRE_CSS = """<style>
 .lvh{display:grid;grid-template-columns:1fr;gap:22px;align-items:center}
 @media(min-width:760px){.lvh{grid-template-columns:230px 1fr}}
@@ -7644,7 +7645,7 @@ def livre_page():
     toc_html = "".join(f"<li>{t}</li>" for t in toc)
     faq = [("Est-ce que ce livre garantit des gains ?", "Non, et aucun livre honnête ne peut le faire. Les paris comportent toujours un risque de perte. Ce guide t'apprend à analyser, à comprendre les cotes et à protéger ton argent."),
            ("Je suis débutant, est-ce pour moi ?", "Oui. Tout est expliqué simplement, avec des exemples chiffrés. Il n'y a besoin d'aucune connaissance en mathématiques au-delà de la division et de la multiplication."),
-           ("Dans quel format est le livre ?", "Un fichier PDF d'environ 26 pages, lisible sur téléphone, tablette ou ordinateur, avec une fiche d'analyse et un carnet de paris à imprimer."),
+           ("Dans quel format est le livre ?", "Un fichier PDF, lisible sur téléphone, tablette ou ordinateur, avec une fiche d'analyse et un carnet de paris à imprimer."),
            ("Comment je reçois le livre ?", "Tu paies par Mobile Money ou en crypto, tu m'envoies la capture sur Telegram, et je t'envoie le PDF dès que j'ai vérifié le paiement."),
            ("Le livre est-il en anglais aussi ?", "Pas encore. Cette première édition est en français."),
            ("Le prix change-t-il ?", "Le prix est de 50 000 FCFA. Il reflète plusieurs années d'expérience et des analyses détaillées."),
@@ -7659,17 +7660,17 @@ def livre_page():
     momo = "".join(f'<div><b>{n}</b><span class="small">{ben}</span><code translate="no">{aff}</code></div>' for n, aff, _c, ben, _col, _l in MOMO)
     usdt = CRYPTOS[0]
     return head("Livre : Analyser un match comme Cousin Marc (guide PDF) | Cousin Marc",
-        "Mon guide PDF de 26 pages : comprendre les cotes, analyser un match en 7 étapes, choisir ton pari et gérer ta mise. Exemples réels, fiche d'analyse et carnet de paris. 15 000 FCFA.",
+        "Mon guide PDF : comprendre les cotes, analyser un match en 7 étapes, choisir ton pari et gérer ta mise. Exemples réels, fiche d'analyse et carnet de paris. 80 000 FCFA (prix promo).",
         f"{BASE}/{LIVRE_SLUG}", extra=_LIVRE_CSS + f'<script type="application/ld+json">{jsonld}</script><script type="application/ld+json">{jsonld_faq}</script>',
         nav=nav_fr(), lang="fr") + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Nouveau · guide PDF</p>
 <div class="lvh">
-<div class="lvcover"><img src="livre-cv-analyse.webp" alt="Livre : Analyser un match comme Cousin Marc" width="420" height="560" style="width:100%;height:auto;display:block;border-radius:10px"><small>Guide pratique · 2026</small><b>Analyser un match comme <span>Cousin Marc</span></b><i>Ma méthode en 7 étapes · 26 pages · exemples réels</i></div>
+<div class="lvcover"><img src="livre-cv-analyse.webp" alt="Livre : Analyser un match comme Cousin Marc" width="420" height="560" style="width:100%;height:auto;display:block;border-radius:10px"><small>Guide pratique · 2026</small><b>Analyser un match comme <span>Cousin Marc</span></b><i>Ma méthode en 7 étapes · exemples réels</i></div>
 <div>
 <h1>Analyser un match <span class="hl">comme Cousin Marc</span></h1>
 <p>Ma méthode, étape par étape, pour choisir un pronostic, comprendre les cotes et gérer ta mise sans te faire plumer. Les mêmes étapes que j'utilise pour mes analyses publiées sur ce site.</p>
-<div class="lvprice"><b>{LIVRE_PRIX_FCFA} FCFA</b><span>≈ {LIVRE_PRIX_USD} $ en crypto · PDF · paiement unique</span></div>
+<div class="lvprice"><b>{LIVRE_PRIX_FCFA} FCFA</b><span>≈ {LIVRE_PRIX_USD} $ en crypto · PDF · paiement unique · prix promo jusqu'au {PROMO_FIN}</span></div>
 <div class="btnrow" style="justify-content:flex-start;margin-top:14px"><a class="cta" href="#payer">Obtenir le livre</a><a class="cta alt" href="#sommaire">Voir le sommaire</a></div>
 </div></div>
 </div></header>
@@ -7806,37 +7807,39 @@ LIVRES_NIV = [
  ("pratique", "2", "Niveau 2 · Pronostics par sport", "Passer à la pratique : ma méthode de pronostic pour chaque sport."),
  ("expert", "3", "Niveau 3 · Expert", "Cotes, live et décisions : pour ceux qui maîtrisent déjà les bases."),
  ("virtuel", "★", "Jeux virtuels et esports", "Comprendre comment ces jeux fonctionnent avant de miser."),
- ("collection", "∞", "La collection complète", "Tous les manuels réunis, du niveau 1 au niveau 3."),
+ ("collection", "∞", "Manuel universel", "Tous les sports réunis dans un seul manuel."),
+ ("pro", "🎓", "Formation professionnelle", "Un suivi personnel avec Cousin Marc pendant un an."),
 ]
+FORMATION_PRIX, FORMATION_USD = 150000, 250
 LIVRES = [
- {"id": "analyse", "niv": "formation", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes · 26 pages", "img": "livre-cv-analyse.webp",
-  "pts": ["Lire et comparer les cotes", "Ma grille d'analyse en 7 étapes", "Gérer sa mise"], "prix": 50000, "usd": 83, "status": "dispo", "lien": "livre-analyse-match.html"},
+ {"id": "analyse", "niv": "formation", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes", "img": "livre-cv-analyse.webp",
+  "pts": ["Lire et comparer les cotes", "Ma grille d'analyse en 7 étapes", "Gérer sa mise"], "prix": 80000, "usd": 135, "status": "dispo", "lien": "livre-analyse-match.html"},
  {"id": "multi", "niv": "formation", "vol": "Vol. 01", "titre": "Manuel de pronostic : tous les sports", "sous": "Analyser, comparer les cotes, décider avec méthode",
-  "pts": ["Transformer une cote en probabilité", "Le dossier complet d'un match", "Suivre ses paris pour progresser"], "prix": 50000, "usd": 83, "status": "dispo"},
+  "pts": ["Transformer une cote en probabilité", "Le dossier complet d'un match", "Suivre ses paris pour progresser"], "prix": 60000, "usd": 100, "status": "dispo"},
  {"id": "f-foot", "niv": "formation", "titre": "Guide d'analyse du football", "sous": "Paris sportifs et analyse stratégique",
-  "pts": ["Repérer les équipes en forme", "Lire les statistiques clés", "Les marchés : 1X2, buts, les deux marquent"], "prix": 50000, "usd": 83, "status": "precommande"},
+  "pts": ["Repérer les équipes en forme", "Lire les statistiques clés", "Les marchés : 1X2, buts, les deux marquent"], "prix": 65000, "usd": 110, "status": "precommande"},
  {"id": "f-tennis", "niv": "formation", "titre": "Guide d'analyse du tennis", "sous": "Spécial paris sportifs",
-  "pts": ["Forme, surface et face-à-face", "Le service et le retour", "Repérer une cote qui a de la valeur"], "prix": 50000, "usd": 83, "status": "precommande"},
+  "pts": ["Forme, surface et face-à-face", "Le service et le retour", "Repérer une cote qui a de la valeur"], "prix": 45000, "usd": 75, "status": "precommande"},
  {"id": "f-hockey", "niv": "formation", "titre": "Guide d'analyse du hockey sur glace", "sous": "Analyse, stratégie, paris sportifs",
-  "pts": ["Équipes solides et équipes fragiles", "Le rôle du gardien", "Forme et tendances des matchs"], "prix": 50000, "usd": 83, "status": "precommande"},
+  "pts": ["Équipes solides et équipes fragiles", "Le rôle du gardien", "Forme et tendances des matchs"], "prix": 35000, "usd": 60, "status": "precommande"},
  {"id": "f-baseball", "niv": "formation", "titre": "Guide d'analyse du baseball", "sous": "Analyse, stratégie, valeur",
-  "pts": ["Lanceurs partants et releveurs", "Lire les alignements", "Les moments clés d'un match"], "prix": 50000, "usd": 83, "status": "precommande"},
+  "pts": ["Lanceurs partants et releveurs", "Lire les alignements", "Les moments clés d'un match"], "prix": 38000, "usd": 65, "status": "precommande"},
  {"id": "p-foot", "niv": "pratique", "vol": "Vol. 04", "titre": "Manuel de pronostics : football", "sous": "Équipes et cotes",
-  "pts": ["Profils offensifs et défensifs", "Absences, calendrier, motivation", "Choisir le bon marché"], "prix": 50000, "usd": 83, "status": "dispo"},
+  "pts": ["Profils offensifs et défensifs", "Absences, calendrier, motivation", "Choisir le bon marché"], "prix": 25000, "usd": 45, "status": "dispo"},
  {"id": "p-tennis", "niv": "pratique", "vol": "Vol. 02", "titre": "Manuel de pronostics : tennis", "sous": "Lire le match",
-  "pts": ["Match-ups et surfaces", "Les signaux à suivre en live", "Ma fiche avant de parier"], "prix": 50000, "usd": 83, "status": "dispo"},
+  "pts": ["Match-ups et surfaces", "Les signaux à suivre en live", "Ma fiche avant de parier"], "prix": 33000, "usd": 55, "status": "dispo"},
  {"id": "p-hockey", "niv": "pratique", "vol": "Vol. 03", "titre": "Manuel de pronostics : hockey sur glace", "sous": "Gardiens, unités spéciales, LNH",
-  "pts": ["Favori médiatique ou vraie domination", "Supériorité numérique", "Paris sur la LNH"], "prix": 50000, "usd": 83, "status": "dispo"},
+  "pts": ["Favori médiatique ou vraie domination", "Supériorité numérique", "Paris sur la LNH"], "prix": 30000, "usd": 50, "status": "dispo"},
  {"id": "p-baseball", "niv": "pratique", "vol": "Vol. 05", "titre": "Manuel de pronostics : baseball", "sous": "Lanceurs, bullpen, alignements",
-  "pts": ["Le duel des lanceurs", "La fatigue du bullpen", "Repérer les cotes mal placées"], "prix": 50000, "usd": 83, "status": "dispo"},
+  "pts": ["Le duel des lanceurs", "La fatigue du bullpen", "Repérer les cotes mal placées"], "prix": 30000, "usd": 50, "status": "dispo"},
  {"id": "live", "niv": "expert", "vol": "Vol. 07", "titre": "Analyse des cotes et des failles", "sous": "Live, écarts de prix et cotes de 2",
-  "pts": ["Repérer un écart de prix en direct", "Filtrer les paris trop risqués", "Limiter les pertes inutiles"], "prix": 50000, "usd": 83, "status": "dispo"},
+  "pts": ["Repérer un écart de prix en direct", "Filtrer les paris trop risqués", "Limiter les pertes inutiles"], "prix": 65000, "usd": 110, "status": "dispo"},
  {"id": "art", "niv": "expert", "titre": "L'art de l'analyse sportive", "sous": "Penser comme un analyste, tous sports",
-  "pts": ["Décider avec méthode", "Comparer plusieurs sports", "Garder la discipline"], "prix": 50000, "usd": 83, "status": "precommande"},
+  "pts": ["Décider avec méthode", "Comparer plusieurs sports", "Garder la discipline"], "prix": 45000, "usd": 75, "status": "precommande"},
  {"id": "virtuels", "niv": "virtuel", "vol": "Vol. 06", "titre": "Jeux virtuels et esports : comprendre", "sous": "Crash, Aviator, simulations, esports",
-  "pts": ["Comment le résultat est tiré (RNG)", "Esports : là où l'analyse compte", "Les erreurs qui coûtent cher"], "prix": 50000, "usd": 83, "status": "dispo"},
- {"id": "collection", "niv": "collection", "titre": "Manuel de tous les sports : la collection", "sous": "Tous les manuels réunis",
-  "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": None, "usd": None, "status": "precommande"},
+  "pts": ["Comment le résultat est tiré (RNG)", "Esports : là où l'analyse compte", "Les erreurs qui coûtent cher"], "prix": 90000, "usd": 150, "status": "dispo"},
+ {"id": "collection", "niv": "collection", "titre": "Manuel universel : tous les sports", "sous": "Tous les sports dans un seul manuel",
+  "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": 105000, "usd": 175, "status": "precommande"},
 ]
 LIVRES_SPORTS = [("foot", "Football"), ("tennis", "Tennis"), ("basket", "Basket"), ("hockey", "Hockey"), ("baseball", "Baseball"), ("cricket", "Cricket"), ("tt", "Tennis de table")]
 _SHOP_JS = """<script>
@@ -7882,7 +7885,7 @@ def livres_page():
             btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">Précommander</a>'
         if b["prix"]:
             fcfa = f'{b["prix"]:,}'.replace(",", " ")
-            price = f'{fcfa} FCFA<small>≈ {b["usd"]} $ · PDF</small>' if dispo else f'{fcfa} FCFA<small>livré dès la sortie</small>'
+            price = f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo</small>' if dispo else f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo · livré dès la sortie</small>'
         else:
             price = 'Prix sur demande<small>offre groupée</small>'
         pts = "".join(f"<li>{html.escape(p)}</li>" for p in b["pts"])
@@ -7899,7 +7902,15 @@ def livres_page():
         secs += (f'<section class="lvsec" id="niv-{key}" data-niv="{key}"><div class="lvlh"><span class="n">{num}</span><div><h2>{lab}</h2><p>{sub}</p></div>'
                  f'<span class="cnt">{len(items)} livre{"s" if len(items) > 1 else ""}</span></div>'
                  f'<div class="lbgrid">{"".join(card(b) for b in items)}</div></section>')
-    chips = '<button type="button" class="lbc on" data-f="*">Tous les livres</button>' + "".join(
+    _fmsg = urllib.parse.quote("FORMATION — Bonjour Cousin Marc, je viens pour la formation professionnelle avec suivi (150 000 FCFA / an). Comment je m'inscris ?")
+    _ffc = f"{FORMATION_PRIX:,}".replace(",", " ")
+    secs += (f'<section class="lvsec" id="niv-pro" data-niv="pro"><div class="lvlh"><span class="n">🎓</span><div><h2>Formation professionnelle</h2><p>Un suivi personnel avec Cousin Marc pendant un an.</p></div></div>'
+             f'<div class="fpro"><div><p class="lbniv">Formation · suivi 1 an</p><h3>Formation professionnelle avec suivi</h3>'
+             f'<ul><li>Ma méthode d\'analyse expliquée pas à pas</li><li>Un suivi personnel sur Telegram pendant 12 mois</li><li>Tes analyses relues et corrigées</li><li>Gestion de la mise et discipline</li></ul>'
+             f'<p class="fnote">Une formation apprend une méthode. Elle ne garantit aucun gain.</p></div>'
+             f'<div class="fbuy"><div class="lbprice">{_ffc} FCFA<small>par an · ≈ {FORMATION_USD} $</small></div>'
+             f'<a class="shb" href="{VIP_TG}?text={_fmsg}">M\'inscrire sur Telegram</a></div></div></section>')
+    chips = '<button type="button" class="lbc on" data-f="*">Tout</button>' + "".join(
         f'<button type="button" class="lbc" data-f="{k}">{lab.split(" · ")[-1]}</button>' for k, n, lab, sub in LIVRES_NIV)
     fan = "".join(f'<img src="livre-cv-{k}.webp" alt="" width="420" height="560" decoding="async" class="f{i}">' for i, k in enumerate(("f-foot", "multi", "p-tennis")))
     books_json = _j.dumps([{k: b[k] for k in ("id", "titre", "prix", "usd", "status")} for b in LIVRES], ensure_ascii=False)
@@ -7922,7 +7933,8 @@ var g=document.getElementById('guides');if(g&&g.getBoundingClientRect().top<0)g.
 <div class="shfan" aria-hidden="true">{fan}</div>
 </div></div></header>
 <section class="shopbg" id="guides"><div class="wrap">
-<div class="shcat"><h2>📚 Livres et manuels</h2><span>{nb} produits</span></div>
+<div class="promo"><b>🏷️ Prix promo</b><span>Tous les prix affichés sont des prix promo, valables jusqu'au {PROMO_FIN}. Ils augmentent en 2027.</span></div>
+<div class="shcat"><h2>📚 Livres, manuels et formation</h2><span>{nb + 1} produits</span></div>
 <div class="lbchips" role="toolbar" aria-label="Filtrer par niveau">{chips}</div>
 {secs}
 <div class="shsteps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
@@ -8841,6 +8853,17 @@ CSS += r'''
 .ccact .cta{font-size:14px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tmore{font-size:13.5px!important}
 main h2[id],main section[id]{scroll-margin-top:84px}
+'''
+CSS += r'''
+.promo{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;background:rgba(239,68,68,.1);border:1px solid rgba(248,113,113,.45);border-radius:14px;padding:12px 16px;margin:0 0 18px}
+.promo b{color:#fca5a5;font-size:16px;white-space:nowrap}.promo span{color:var(--tx2);font-size:14.5px}
+.fpro{display:grid;gap:18px;background:linear-gradient(135deg,rgba(251,191,36,.1),rgba(249,115,22,.06)),var(--bg2);border:1px solid rgba(251,191,36,.45);border-radius:18px;padding:20px}
+@media(min-width:760px){.fpro{grid-template-columns:1fr 280px;align-items:center}}
+.fpro h3{color:#fff;font-size:21px;margin:4px 0 8px}
+.fpro ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.fpro li{color:#dbe3f7;padding-left:22px;position:relative}.fpro li::before{content:"✓";position:absolute;left:0;color:#facc15;font-weight:800}
+.fpro .fnote{color:var(--mut);font-size:13px;margin:10px 0 0}
+.fbuy{display:flex;flex-direction:column;gap:10px}.fbuy .lbprice{font-size:26px}.fbuy .shb{width:100%}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
