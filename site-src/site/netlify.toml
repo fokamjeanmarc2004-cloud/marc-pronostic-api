@@ -280,6 +280,12 @@
   force = true
 
 [[redirects]]
+  from = "/boutique-ar"
+  to = "/boutique-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/btts-predictions"
   to = "/btts-predictions.html"
   status = 301
@@ -2866,8 +2872,20 @@
   force = true
 
 [[redirects]]
+  from = "/shop"
+  to = "/shop.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/tennis-predictions"
   to = "/tennis-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tienda"
+  to = "/tienda.html"
   status = 301
   force = true
 

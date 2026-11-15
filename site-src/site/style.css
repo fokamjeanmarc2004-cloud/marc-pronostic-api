@@ -74,7 +74,7 @@ nav.top .logo b{color:var(--green-ink)}
 .navright{display:flex;align-items:center;gap:4px}
 .burger{width:44px;height:44px;border:1px solid var(--line);background:#fff;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
 .burger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px}
-@media(min-width:960px){.toplinks,.toplang{display:flex}.burger{display:none}}
+@media(min-width:960px){.toplinks,.toplang{display:flex}}
 
 /* panneau mobile */
 .navmask{position:fixed;inset:0;background:rgba(10,13,11,.35);opacity:0;pointer-events:none;transition:opacity .2s;z-index:90}
@@ -1364,3 +1364,40 @@ main h2[id],main section[id]{scroll-margin-top:84px}
 .lbold{display:flex;align-items:center;gap:8px;margin-bottom:2px}
 .lbold s{color:#8f9bb5;font-size:14px;font-weight:600;text-decoration-thickness:2px;text-decoration-color:#f87171}
 .lbold i{font-style:normal;font-size:12px;font-weight:800;color:#fff;background:#dc2626;border-radius:6px;padding:2px 6px}
+
+/* ---------- menu identique partout : bouton menu visible aussi sur ordinateur et tablette ---------- */
+.burger{display:flex!important}
+/* ---------- corrections après la vérification complète ---------- */
+.author{background:none!important;border:0!important;box-shadow:none!important}
+.navpanel:not(.open){box-shadow:none!important}
+.navpanel-links{padding-bottom:14px}
+.social a,.langlink,.navpanel-lang a{box-shadow:none!important}
+[dir="rtl"] .reslink i,[dir="rtl"] .resbox i{display:inline-block;transform:scaleX(-1)}
+@media(max-width:759px){[dir="rtl"] .eyebrow::before{margin-right:0!important;margin-left:8px!important}}
+img[src*="ico/trophee.webp"]{clip-path:inset(0 18% 0 0);transform:translateX(9%)}
+section p+h3,section ul+h3,section ol+h3,section .tablecard+h3{margin-top:22px}section h3+p{margin-top:6px}
+main section>h3{margin:18px 0 4px}main section>h2+h3{margin-top:4px}
+.legalbody h3{margin-top:22px}
+[dir="rtl"] .related .bk{direction:rtl}
+@media(min-width:900px){.hero:has(.codebox)::after,.hero:has(.lvh)::after{display:none!important}}
+@media(max-width:899px){.hero::after{width:96px!important;height:96px!important;right:-30px!important;bottom:-34px!important;opacity:.25!important}}
+.clogo img[src*="comp-esp-2"],.clogo img[src*="comp-jpn-1"],.clogo img[src*="comp-mex-1"]{width:42px;height:42px}
+@media(max-width:600px){main section>h2{display:block}main section>h2 .num{display:inline-flex;vertical-align:middle;margin-right:8px}[dir="rtl"] main section>h2 .num{margin-right:0;margin-left:8px}main section>h2::after{margin-top:10px}}
+[dir="rtl"] .note,[dir="rtl"] .warn,[dir="rtl"] .vwarn{border-left:1px solid var(--bd)!important;border-right:3px solid var(--or)!important}
+.mstatus{background:var(--bg3);color:var(--tx)}
+.vcbox>summary::after{position:static!important;transform:none!important;inset:auto!important;margin-inline-start:auto}
+.vproof-card figcaption strong,.vp-save{color:#4ade80!important}
+.vc-head .vbadge{color:#1a1205!important}
+.vvol{color:#fbbf24!important}
+.vpaywrap .vcrypto .vwarn,.vpaywrap .vmomo .vwarn{background:#18253f!important;color:#fde68a!important;border:1px solid #233350!important;border-left:3px solid #f97316!important}.vpaywrap .vcrypto .vwarn b{color:#fff!important}
+[dir="rtl"] .vp-price,[dir="rtl"] .vp-xaf,[dir="rtl"] .vm-row b,[dir="rtl"] .vpaywrap p.muted b,[dir="rtl"] .vproof-card figcaption strong,[dir="rtl"] .gcard figcaption strong,[dir="rtl"] .lbprice,[dir="rtl"] .vfx td{direction:ltr;unicode-bidi:isolate}
+[dir="rtl"] .vproof-card figcaption strong,[dir="rtl"] .gcard figcaption strong,[dir="rtl"] .lbprice,[dir="rtl"] .vfx td{text-align:right}
+[dir="rtl"] .vp-pm{unicode-bidi:plaintext;text-align:center}
+#shcart{bottom:0!important}
+.lbold{flex-wrap:wrap;gap:4px 6px}.lbold s,.lbold i{white-space:nowrap}@media(max-width:640px){.lbold s{font-size:13px}}
+.legalbody ol,.legalbody ul{padding-left:1.6em}[dir="rtl"] .legalbody ol,[dir="rtl"] .legalbody ul{padding-left:0;padding-right:1.6em}
+footer{padding-bottom:48px!important}
+main.legalbody{padding-bottom:48px!important}
+footer bdi{unicode-bidi:isolate}
+[dir="rtl"] .lb li{padding-left:0;padding-right:20px}[dir="rtl"] .lb li::before,[dir="rtl"] .fpro li::before{left:auto;right:0}[dir="rtl"] .fpro li{padding-left:0;padding-right:22px}
+[dir="rtl"] .lvlh h2,[dir="rtl"] .lvlh p,[dir="rtl"] .shcat h2{text-align:right!important}

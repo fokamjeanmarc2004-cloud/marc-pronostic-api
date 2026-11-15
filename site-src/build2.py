@@ -903,7 +903,7 @@ nav.top .logo b{color:var(--green-ink)}
 .navright{display:flex;align-items:center;gap:4px}
 .burger{width:44px;height:44px;border:1px solid var(--line);background:#fff;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
 .burger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px}
-@media(min-width:960px){.toplinks,.toplang{display:flex}.burger{display:none}}
+@media(min-width:960px){.toplinks,.toplang{display:flex}}
 
 /* panneau mobile */
 .navmask{position:fixed;inset:0;background:rgba(10,13,11,.35);opacity:0;pointer-events:none;transition:opacity .2s;z-index:90}
@@ -1468,6 +1468,7 @@ _DICE = ('<svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><de
 _FFN = '<span class="icffn" translate="no">FFN</span>'
 _I = {"home": _ic("logo-cm-96.png?v=1"), "codes": _FFN, "prono": _ic("ico/multisport.webp"), "comps": _ic("logos/comp-uefa-champions-d.webp"),
       "cote2": _ic("ico/ballon.webp"), "tpi": _DICE, "res": _ic("ico/trophee.webp"), "shop": _ic("livre-cv-multi.webp"), "vip": _crown("cgm")}
+SHOP_SLUG = {"fr": "livres.html", "en": "shop.html", "es": "tienda.html", "ar": "boutique-ar.html"}
 CODES_SLUG = {"fr": "codes-promo.html", "en": "bookmaker-promo-codes.html", "es": "codigos-promocionales-casas.html", "ar": "codes-promo-ar.html"}
 NAV_L = {
   "fr": {"title": "Menu", "items": [("accueil", _I["home"], "Accueil", "index.html"), ("codes", _I["codes"], "Codes promo", "codes-promo.html"),
@@ -1477,15 +1478,15 @@ NAV_L = {
   "en": {"title": "Menu", "items": [("accueil", _I["home"], "Home", "promo-codes.html"), ("codes", _I["codes"], "Promo codes", "bookmaker-promo-codes.html"),
          ("analyses", _I["prono"], "Predictions", "predictions.html"), ("comps", _I["comps"], "All competitions", "all-competitions.html"), ("cote2", _I["cote2"], "Odds of 2", "odds-of-2.html"),
          ("tpi", _I["tpi"], "Total Odd/Even", "total-odd-even.html"), ("resultats", _I["res"], "Results", "results.html"),
-         ("livres", _I["shop"], "Shop", "livres.html"), ("vip", _I["vip"], "VIP", "vip-en.html")]},
+         ("livres", _I["shop"], "Shop", "shop.html"), ("vip", _I["vip"], "VIP", "vip-en.html")]},
   "es": {"title": "Menú", "items": [("accueil", _I["home"], "Inicio", "codigos-promocionales.html"), ("codes", _I["codes"], "Códigos promo", "codigos-promocionales-casas.html"),
          ("analyses", _I["prono"], "Pronósticos", "pronosticos.html"), ("comps", _I["comps"], "Competiciones", "all-competitions.html"), ("cote2", _I["cote2"], "Cuota de 2", "cuota-de-2.html"),
          ("tpi", _I["tpi"], "Total Par/Impar", "total-par-impar.html"), ("resultats", _I["res"], "Resultados", "resultados.html"),
-         ("livres", _I["shop"], "Tienda", "livres.html"), ("vip", _I["vip"], "VIP", "vip-es.html")]},
+         ("livres", _I["shop"], "Tienda", "tienda.html"), ("vip", _I["vip"], "VIP", "vip-es.html")]},
   "ar": {"title": "القائمة", "items": [("accueil", _I["home"], "الرئيسية", "promo-codes-ar.html"), ("codes", _I["codes"], "الرموز الترويجية", "codes-promo-ar.html"),
          ("analyses", _I["prono"], "التوقعات", "pronostics-ar.html"), ("comps", _I["comps"], "المسابقات", "all-competitions.html"), ("cote2", _I["cote2"], "رهان بضعف 2", "cote-2-ar.html"),
          ("tpi", _I["tpi"], "زوجي/فردي", "total-pair-impair-ar.html"), ("resultats", _I["res"], "النتائج", "resultats-ar.html"),
-         ("livres", _I["shop"], "المتجر", "livres.html"), ("vip", _I["vip"], "VIP", "vip-ar.html")]},
+         ("livres", _I["shop"], "المتجر", "boutique-ar.html"), ("vip", _I["vip"], "VIP", "vip-ar.html")]},
 }
 
 def burger_html():
@@ -1503,9 +1504,9 @@ def navpanel_html(lang="fr", lang_links=""):
 VIP_SLUG = {"fr":"vip.html","en":"vip-en.html","es":"vip-es.html","ar":"vip-ar.html"}
 TOPLINKS_L = {
   "fr": [("Codes promo","codes-promo.html"),("Pronostics","pronostics.html"),("Côte de 2","cote-de-2.html"),("Résultats","resultats.html"),("Boutique","livres.html")],
-  "en": [("Promo codes","bookmaker-promo-codes.html"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Results","results.html"),("Shop","livres.html")],
-  "es": [("Códigos","codigos-promocionales-casas.html"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Resultados","resultados.html"),("Tienda","livres.html")],
-  "ar": [("الرموز","codes-promo-ar.html"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("النتائج","resultats-ar.html"),("المتجر","livres.html")],
+  "en": [("Promo codes","bookmaker-promo-codes.html"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Results","results.html"),("Shop","shop.html")],
+  "es": [("Códigos","codigos-promocionales-casas.html"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Resultados","resultados.html"),("Tienda","tienda.html")],
+  "ar": [("الرموز","codes-promo-ar.html"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("النتائج","resultats-ar.html"),("المتجر","boutique-ar.html")],
 }
 HOME_L = {"fr":"index.html","en":"promo-codes.html","es":"codigos-promocionales.html","ar":"promo-codes-ar.html"}
 
@@ -1587,7 +1588,7 @@ def topnav(lang, langs_html, top_langs):
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
             f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm-96.png?v=1" width="40" height="40" alt="" style="width:40px;height:40px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
             f'<div class="navright"><ul class="toplinks">{links}</ul>{top_langs}'
-            f'<a class="topcart" id="topcart" href="livres.html" hidden aria-label="Panier">🛒<span></span></a>{TOPCART_SCRIPT}'
+            f'<a class="topcart" id="topcart" href="{SHOP_SLUG[lang]}" hidden aria-label="Panier">🛒<span></span></a>{TOPCART_SCRIPT}'
             f'{burger_html()}</div>'
             f'</div></nav>\n{navpanel_html(lang, langs_html)}{LANGDD_SCRIPT}')
 
@@ -1622,10 +1623,10 @@ def livres_band(lang):
     a = a.replace("📚 ", "")
     covers = "".join(f'<img src="livre-cv-{k}.webp" alt="" width="60" height="80" loading="lazy" decoding="async">' for k in ("p-foot", "multi", "p-tennis", "p-hockey", "virtuels"))
     return (f'<aside class="lvband" id="lvband"><div class="wrap lvin">'
-            f'<a class="lvcovers" href="livres.html" aria-hidden="true" tabindex="-1">{covers}</a>'
+            f'<a class="lvcovers" href="{SHOP_SLUG[lang]}" aria-hidden="true" tabindex="-1">{covers}</a>'
             f'<div class="lvtxt"><b>{a}</b><span>{b}</span></div>'
-            f'<a class="lvgo" href="livres.html">{c} →</a></div>'
-            f'<script>if(/livre/.test(location.pathname)){{var x=document.getElementById("lvband");if(x)x.remove()}}</script></aside>\n')
+            f'<a class="lvgo" href="{SHOP_SLUG[lang]}">{c} {"←" if lang == "ar" else "→"}</a></div>'
+            f'<script>if(/livre|shop|tienda|boutique/.test(location.pathname)){{var x=document.getElementById("lvband");if(x)x.remove()}}</script></aside>\n')
 
 def footer_html():
     return livres_band("fr") + f"""<footer><div class="wrap">
@@ -1940,7 +1941,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11x"><script>
+<link rel="stylesheet" href="style.css?v=2026-11y"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -3408,7 +3409,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [CODES_SLUG["fr"], CODES_SLUG["en"], CODES_SLUG["es"], CODES_SLUG["ar"]] + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html", "livres.html", "competitions.html", "all-competitions.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [CODES_SLUG["fr"], CODES_SLUG["en"], CODES_SLUG["es"], CODES_SLUG["ar"]] + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html", "livres.html", "shop.html", "tienda.html", "boutique-ar.html", "competitions.html", "all-competitions.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -7869,88 +7870,180 @@ render();
 })();
 </script>"""
 
-def livres_page():
+
+SHOP_T = {
+ "fr": dict(title="Boutique Cousin Marc : livres et manuels de pronostics", desc="Les manuels de Cousin Marc en 3 niveaux : formation, pronostics par sport (football, tennis, hockey, baseball), expert (cotes et live), jeux virtuels. PDF, paiement Mobile Money ou crypto.",
+   eyebrow="Boutique Cousin Marc", h1='Ma <span class="hl">boutique</span>', intro="Mes livres et manuels de pronostics, rangés en 3 niveaux. D'autres produits arrivent bientôt.", k=("livres", "niveaux", "sports"),
+   see="Voir les livres", bilan="Mon bilan public", bilan_href="bilan.html", promo_b="🏷️ Prix promo", promo="Tous les prix sont en promotion jusqu'au {d}. Le prix barré est le prix normal, appliqué à partir de janvier 2027.",
+   cat="📚 Livres, manuels et formation", prods="produits", all="Tout", avail="DISPONIBLE", pre="PRÉCOMMANDE", add="Ajouter au panier", incart="✓ Dans le panier", detail="Voir le détail", preorder="Précommander",
+   premsg="LIVRE — Je veux précommander « {t} ».", promo_s="prix promo", later="livré dès la sortie", book1="livre", bookn="livres",
+   steps=("Ajoute au panier", "Commande sur Telegram", "Paie et reçois ton livre"), note='Les livres marqués « Précommande » sont livrés dès leur sortie. Paiement : <a href="livre-analyse-match.html#payer">voir les numéros</a> · Aucun gain n\'est garanti · 18+ · <a href="jeu-responsable.html">Jeu responsable</a>',
+   order="Commander sur Telegram", paper="Papier (bientôt)", total="Total", ordermsg="LIVRE — Ma commande :", fmt="Format", remove="Retirer",
+   f_h="Formation professionnelle", f_sub="Un suivi personnel avec Cousin Marc pendant un an.", f_tag="Formation · suivi 1 an", f_t="Formation professionnelle avec suivi",
+   f_pts=("Ma méthode d'analyse expliquée pas à pas", "Un suivi personnel sur Telegram pendant 12 mois", "Tes analyses relues et corrigées", "Gestion de la mise et discipline"),
+   f_note="Une formation apprend une méthode. Elle ne garantit aucun gain.", f_year="par an", f_btn="M'inscrire sur Telegram",
+   f_msg="FORMATION — Bonjour Cousin Marc, je viens pour la formation professionnelle avec suivi (150 000 FCFA / an). Comment je m'inscris ?", alt="Livre de Cousin Marc"),
+ "en": dict(title="Cousin Marc Shop: betting books and manuals", desc="Cousin Marc's manuals in 3 levels: training, predictions by sport (football, tennis, ice hockey, baseball), expert (odds and live), virtual games. PDF, Mobile Money or crypto payment.",
+   eyebrow="Cousin Marc Shop", h1='My <span class="hl">shop</span>', intro="My betting books and manuals, in 3 levels. More products are coming soon.", k=("books", "levels", "sports"),
+   see="See the books", bilan="My public record", bilan_href="track-record.html", promo_b="🏷️ Promo prices", promo="All prices are on promotion until 31 December 2026. The crossed-out price is the normal price, applied from January 2027.",
+   cat="📚 Books, manuals and training", prods="products", all="All", avail="AVAILABLE", pre="PRE-ORDER", add="Add to cart", incart="✓ In the cart", detail="See details", preorder="Pre-order",
+   premsg="BOOK — I want to pre-order “{t}”.", promo_s="promo price", later="delivered on release", book1="book", bookn="books",
+   steps=("Add to cart", "Order on Telegram", "Pay and receive your book"), note='Books marked “Pre-order” are delivered as soon as they are released. No win is guaranteed · 18+ · <a href="responsible-gambling.html">Responsible gambling</a>',
+   order="Order on Telegram", paper="Paper (soon)", total="Total", ordermsg="BOOK — My order:", fmt="Format", remove="Remove",
+   f_h="Professional training", f_sub="Personal coaching with Cousin Marc for one year.", f_tag="Training · 1-year coaching", f_t="Professional training with coaching",
+   f_pts=("My analysis method explained step by step", "Personal follow-up on Telegram for 12 months", "Your analyses reviewed and corrected", "Stake management and discipline"),
+   f_note="Training teaches a method. It does not guarantee any win.", f_year="per year", f_btn="Sign up on Telegram",
+   f_msg="TRAINING — Hello Cousin Marc, I am here for the professional training with coaching (150,000 FCFA / year). How do I sign up?", alt="Book by Cousin Marc"),
+ "es": dict(title="Tienda Cousin Marc: libros y manuales de pronósticos", desc="Los manuales de Cousin Marc en 3 niveles: formación, pronósticos por deporte (fútbol, tenis, hockey, béisbol), experto (cuotas y directo), juegos virtuales. PDF, pago por Mobile Money o cripto.",
+   eyebrow="Tienda Cousin Marc", h1='Mi <span class="hl">tienda</span>', intro="Mis libros y manuales de pronósticos, en 3 niveles. Pronto habrá más productos.", k=("libros", "niveles", "deportes"),
+   see="Ver los libros", bilan="Mi balance público", bilan_href="track-record.html", promo_b="🏷️ Precios promo", promo="Todos los precios están en promoción hasta el 31 de diciembre de 2026. El precio tachado es el precio normal, aplicado desde enero de 2027.",
+   cat="📚 Libros, manuales y formación", prods="productos", all="Todo", avail="DISPONIBLE", pre="RESERVA", add="Añadir al carrito", incart="✓ En el carrito", detail="Ver detalle", preorder="Reservar",
+   premsg="LIBRO — Quiero reservar «{t}».", promo_s="precio promo", later="entrega al salir", book1="libro", bookn="libros",
+   steps=("Añade al carrito", "Pide por Telegram", "Paga y recibe tu libro"), note='Los libros marcados «Reserva» se entregan en cuanto salen. Ninguna ganancia está garantizada · +18 · <a href="juego-responsable.html">Juego responsable</a>',
+   order="Pedir por Telegram", paper="Papel (pronto)", total="Total", ordermsg="LIBRO — Mi pedido:", fmt="Formato", remove="Quitar",
+   f_h="Formación profesional", f_sub="Un seguimiento personal con Cousin Marc durante un año.", f_tag="Formación · seguimiento 1 año", f_t="Formación profesional con seguimiento",
+   f_pts=("Mi método de análisis explicado paso a paso", "Seguimiento personal por Telegram durante 12 meses", "Tus análisis revisados y corregidos", "Gestión de la apuesta y disciplina"),
+   f_note="Una formación enseña un método. No garantiza ninguna ganancia.", f_year="al año", f_btn="Inscribirme por Telegram",
+   f_msg="FORMACIÓN — Hola Cousin Marc, vengo por la formación profesional con seguimiento (150 000 FCFA / año). ¿Cómo me inscribo?", alt="Libro de Cousin Marc"),
+ "ar": dict(title="متجر Cousin Marc: كتب وأدلة التوقعات", desc="أدلة Cousin Marc في 3 مستويات: التدريب، التوقعات حسب الرياضة (كرة القدم، التنس، الهوكي، البيسبول)، مستوى الخبراء، الألعاب الافتراضية. PDF والدفع عبر Mobile Money أو العملات الرقمية.",
+   eyebrow="متجر Cousin Marc", h1='<span class="hl">متجري</span>', intro="كتبي وأدلتي في التوقعات، مرتبة في 3 مستويات. منتجات أخرى قريبًا.", k=("كتابًا", "مستويات", "رياضات"),
+   see="عرض الكتب", bilan="حصيلتي العلنية", bilan_href="track-record.html", promo_b="🏷️ أسعار العرض", promo="كل الأسعار في عرض ترويجي حتى 31 ديسمبر 2026. السعر المشطوب هو السعر العادي ابتداءً من يناير 2027.",
+   cat="📚 الكتب والأدلة والتدريب", prods="منتجًا", all="الكل", avail="متوفر", pre="طلب مسبق", add="أضف إلى السلة", incart="✓ في السلة", detail="التفاصيل", preorder="اطلب مسبقًا",
+   premsg="كتاب — أريد طلب «{t}» مسبقًا.", promo_s="سعر العرض", later="يُسلَّم عند الصدور", book1="كتاب", bookn="كتب",
+   steps=("أضف إلى السلة", "اطلب عبر تيليجرام", "ادفع واستلم كتابك"), note='الكتب المعلَّمة «طلب مسبق» تُسلَّم فور صدورها. لا ربح مضمون · +18 · <a href="jeu-responsable-ar.html">المراهنة المسؤولة</a>',
+   order="اطلب عبر تيليجرام", paper="ورقي (قريبًا)", total="المجموع", ordermsg="كتاب — طلبي:", fmt="الصيغة", remove="حذف",
+   f_h="تدريب احترافي", f_sub="متابعة شخصية مع Cousin Marc لمدة سنة.", f_tag="تدريب · متابعة سنة", f_t="تدريب احترافي مع متابعة",
+   f_pts=("طريقتي في التحليل خطوة بخطوة", "متابعة شخصية عبر تيليجرام لمدة 12 شهرًا", "مراجعة وتصحيح تحليلاتك", "إدارة الرهان والانضباط"),
+   f_note="التدريب يعلّم طريقة ولا يضمن أي ربح.", f_year="في السنة", f_btn="سجّل عبر تيليجرام",
+   f_msg="تدريب — مرحبًا Cousin Marc، أريد التسجيل في التدريب الاحترافي مع المتابعة (150 000 فرنك / سنة). كيف أسجّل؟", alt="كتاب Cousin Marc"),
+}
+SHOP_NIV_T = {
+ "en": {"formation": ("Level 1 · Training", "Learn to analyse a game, sport by sport."), "pratique": ("Level 2 · Predictions by sport", "My prediction method for each sport."),
+        "expert": ("Level 3 · Expert", "Odds, live and decisions: for those who know the basics."), "virtuel": ("Virtual games and esports", "Understand how these games work before staking."),
+        "collection": ("Universal manual", "All sports in a single manual."), "pro": ("Professional training", "")},
+ "es": {"formation": ("Nivel 1 · Formación", "Aprende a analizar un partido, deporte por deporte."), "pratique": ("Nivel 2 · Pronósticos por deporte", "Mi método de pronóstico para cada deporte."),
+        "expert": ("Nivel 3 · Experto", "Cuotas, directo y decisiones: para quien domina lo básico."), "virtuel": ("Juegos virtuales y esports", "Entiende cómo funcionan antes de apostar."),
+        "collection": ("Manual universal", "Todos los deportes en un solo manual."), "pro": ("Formación profesional", "")},
+ "ar": {"formation": ("المستوى 1 · التدريب", "تعلّم تحليل المباراة، رياضة برياضة."), "pratique": ("المستوى 2 · التوقعات حسب الرياضة", "طريقتي في التوقع لكل رياضة."),
+        "expert": ("المستوى 3 · الخبراء", "الاحتمالات والمباشر والقرارات."), "virtuel": ("الألعاب الافتراضية والرياضات الإلكترونية", "افهم كيف تعمل هذه الألعاب قبل الرهان."),
+        "collection": ("الدليل الشامل", "كل الرياضات في دليل واحد."), "pro": ("تدريب احترافي", "")},
+}
+SHOP_BOOK_T = {
+ "en": {"analyse": ("Analyse a match like Cousin Marc", "My 7-step method"), "multi": ("Prediction manual: all sports", "Analyse, compare odds, decide with method"),
+        "f-foot": ("Football analysis guide", "Sports betting and strategic analysis"), "f-tennis": ("Tennis analysis guide", "Sports betting special"),
+        "f-hockey": ("Ice hockey analysis guide", "Analysis, strategy, sports betting"), "f-baseball": ("Baseball analysis guide", "Analysis, strategy, value"),
+        "p-foot": ("Predictions manual: football", "Teams and odds"), "p-tennis": ("Predictions manual: tennis", "Reading the match"),
+        "p-hockey": ("Predictions manual: ice hockey", "Goalies, special teams, NHL"), "p-baseball": ("Predictions manual: baseball", "Pitchers, bullpen, line-ups"),
+        "live": ("Odds analysis", "Live, price gaps and odds of 2"), "art": ("The art of sports analysis", "Think like an analyst, all sports"),
+        "virtuels": ("Virtual games and esports: understand", "Crash, Aviator, simulations, esports"), "collection": ("Universal manual: all sports", "All sports in a single manual")},
+ "es": {"analyse": ("Analizar un partido como Cousin Marc", "Mi método en 7 pasos"), "multi": ("Manual de pronósticos: todos los deportes", "Analizar, comparar cuotas, decidir con método"),
+        "f-foot": ("Guía de análisis del fútbol", "Apuestas deportivas y análisis estratégico"), "f-tennis": ("Guía de análisis del tenis", "Especial apuestas deportivas"),
+        "f-hockey": ("Guía de análisis del hockey sobre hielo", "Análisis, estrategia, apuestas"), "f-baseball": ("Guía de análisis del béisbol", "Análisis, estrategia, valor"),
+        "p-foot": ("Manual de pronósticos: fútbol", "Equipos y cuotas"), "p-tennis": ("Manual de pronósticos: tenis", "Leer el partido"),
+        "p-hockey": ("Manual de pronósticos: hockey sobre hielo", "Porteros, unidades especiales, NHL"), "p-baseball": ("Manual de pronósticos: béisbol", "Lanzadores, bullpen, alineaciones"),
+        "live": ("Análisis de las cuotas", "Directo, diferencias de precio y cuotas de 2"), "art": ("El arte del análisis deportivo", "Pensar como un analista"),
+        "virtuels": ("Juegos virtuales y esports: entender", "Crash, Aviator, simulaciones, esports"), "collection": ("Manual universal: todos los deportes", "Todos los deportes en un solo manual")},
+ "ar": {"analyse": ("حلّل المباراة مثل Cousin Marc", "طريقتي في 7 خطوات"), "multi": ("دليل التوقعات: كل الرياضات", "حلّل، قارن الاحتمالات، وقرّر بمنهج"),
+        "f-foot": ("دليل تحليل كرة القدم", "المراهنات الرياضية والتحليل"), "f-tennis": ("دليل تحليل التنس", "خاص بالمراهنات الرياضية"),
+        "f-hockey": ("دليل تحليل هوكي الجليد", "تحليل واستراتيجية"), "f-baseball": ("دليل تحليل البيسبول", "تحليل واستراتيجية وقيمة"),
+        "p-foot": ("دليل التوقعات: كرة القدم", "الفرق والاحتمالات"), "p-tennis": ("دليل التوقعات: التنس", "قراءة المباراة"),
+        "p-hockey": ("دليل التوقعات: هوكي الجليد", "الحراس والوحدات الخاصة"), "p-baseball": ("دليل التوقعات: البيسبول", "الرماة والتشكيلات"),
+        "live": ("تحليل الاحتمالات", "المباشر وفروق الأسعار واحتمال 2"), "art": ("فن التحليل الرياضي", "فكّر مثل المحلل"),
+        "virtuels": ("الألعاب الافتراضية والرياضات الإلكترونية", "Crash وAviator والمحاكاة"), "collection": ("الدليل الشامل: كل الرياضات", "كل الرياضات في دليل واحد")},
+}
+
+def livres_page(lang="fr"):
+    T = SHOP_T[lang]
+    def bt(b): return SHOP_BOOK_T.get(lang, {}).get(b["id"], (b["titre"], b["sous"]))
+    def nt(key, lab, sub): return SHOP_NIV_T.get(lang, {}).get(key, (lab, sub))
     import json as _j
     def card(b):
         dispo = b["status"] == "dispo"
         img = b.get("img") or f'livre-cv-{b["id"]}.webp'
-        st = '<span class="lbst">DISPONIBLE</span>' if dispo else '<span class="lbst soon">PRÉCOMMANDE</span>'
+        st = f'<span class="lbst">{T["avail"]}</span>' if dispo else f'<span class="lbst soon">{T["pre"]}</span>'
         vol = f'<span class="lbvol">{b["vol"]}</span>' if b.get("vol") else ""
-        niv = next(n[2] for n in LIVRES_NIV if n[0] == b["niv"])
+        niv = next(nt(n[0], n[2], n[3])[0] for n in LIVRES_NIV if n[0] == b["niv"])
+        titre, sous = bt(b)
         if dispo:
-            btn = (f'<button type="button" class="shb" data-add="{b["id"]}">Ajouter au panier</button>'
-                   + (f'<a class="shb alt" href="{b["lien"]}">Voir le détail</a>' if b.get("lien") else ""))
+            btn = (f'<button type="button" class="shb" data-add="{b["id"]}">{T["add"]}</button>'
+                   + (f'<a class="shb alt" href="{b["lien"]}">{T["detail"]}</a>' if b.get("lien") and lang == "fr" else ""))
         else:
-            msg = urllib.parse.quote(f"LIVRE — Je veux précommander « {b['titre']} ».")
-            btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">Précommander</a>'
+            msg = urllib.parse.quote(T["premsg"].replace("{t}", titre))
+            btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">{T["preorder"]}</a>'
         if b["prix"]:
             fcfa = f'{b["prix"]:,}'.replace(",", " ")
             _pct = 40 if b["id"] == "collection" else 30
             _norm = int(round(b["prix"] / (1 - _pct / 100) / 5000.0) * 5000)
             _old = f'<span class="lbold"><s>{_norm:,} FCFA</s><i>-{round(100 * (1 - b["prix"] / _norm))} %</i></span>'.replace(",", " ")
-            price = _old + (f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo</small>' if dispo else f'{fcfa} FCFA<small>≈ {b["usd"]} $ · prix promo · livré dès la sortie</small>')
+            price = _old + (f'{fcfa} FCFA<small>≈ {b["usd"]} $ · {T["promo_s"]}</small>' if dispo else f'{fcfa} FCFA<small>≈ {b["usd"]} $ · {T["promo_s"]} · {T["later"]}</small>')
         else:
             price = 'Prix sur demande<small>offre groupée</small>'
-        pts = "".join(f"<li>{html.escape(p)}</li>" for p in b["pts"])
-        href = b.get("lien", f"{VIP_TG}?text=" + urllib.parse.quote(f"Préviens-moi quand le livre « {b['titre']} » sera disponible."))
+        pts = "".join(f"<li>{html.escape(p)}</li>" for p in b["pts"]) if lang == "fr" else ""
+        href = b["lien"] if b.get("lien") and lang == "fr" else f"{VIP_TG}?text=" + urllib.parse.quote(T["premsg"].replace("{t}", titre))
         return (f'<article class="lb" data-niv="{b["niv"]}"><a class="lbimg" href="{href}">'
-                f'<img src="{img}" alt="Livre de Cousin Marc : {html.escape(b["titre"])}" width="420" height="560" loading="lazy" decoding="async">{st}{vol}</a>'
-                f'<div class="lbbody"><p class="lbniv">{niv}</p><h3>{html.escape(b["titre"])}</h3><p class="lbsub">{html.escape(b["sous"])}</p>'
+                f'<img src="{img}" alt="{T["alt"]} : {html.escape(titre)}" width="420" height="560" loading="lazy" decoding="async">{st}{vol}</a>'
+                f'<div class="lbbody"><p class="lbniv">{niv}</p><h3>{html.escape(titre)}</h3><p class="lbsub">{html.escape(sous)}</p>'
                 f'<ul>{pts}</ul><div class="lbprice">{price}</div>{btn}</div></article>')
     secs = ""
     for key, num, lab, sub in LIVRES_NIV:
         items = [b for b in LIVRES if b["niv"] == key]
         if not items:
             continue
+        lab, sub = nt(key, lab, sub)
         secs += (f'<section class="lvsec" id="niv-{key}" data-niv="{key}"><div class="lvlh"><span class="n">{num}</span><div><h2>{lab}</h2><p>{sub}</p></div>'
-                 f'<span class="cnt">{len(items)} livre{"s" if len(items) > 1 else ""}</span></div>'
+                 f'<span class="cnt">{len(items)} {T["bookn"] if len(items) > 1 else T["book1"]}</span></div>'
                  f'<div class="lbgrid">{"".join(card(b) for b in items)}</div></section>')
-    _fmsg = urllib.parse.quote("FORMATION — Bonjour Cousin Marc, je viens pour la formation professionnelle avec suivi (150 000 FCFA / an). Comment je m'inscris ?")
+    _fmsg = urllib.parse.quote(T["f_msg"])
     _ffc = f"{FORMATION_PRIX:,}".replace(",", " ")
-    secs += (f'<section class="lvsec" id="niv-pro" data-niv="pro"><div class="lvlh"><span class="n">🎓</span><div><h2>Formation professionnelle</h2><p>Un suivi personnel avec Cousin Marc pendant un an.</p></div></div>'
-             f'<div class="fpro"><div><p class="lbniv">Formation · suivi 1 an</p><h3>Formation professionnelle avec suivi</h3>'
-             f'<ul><li>Ma méthode d\'analyse expliquée pas à pas</li><li>Un suivi personnel sur Telegram pendant 12 mois</li><li>Tes analyses relues et corrigées</li><li>Gestion de la mise et discipline</li></ul>'
-             f'<p class="fnote">Une formation apprend une méthode. Elle ne garantit aucun gain.</p></div>'
-             f'<div class="fbuy"><div class="lbprice"><span class="lbold"><s>215 000 FCFA</s><i>-30 %</i></span>{_ffc} FCFA<small>par an · ≈ {FORMATION_USD} $</small></div>'
-             f'<a class="shb" href="{VIP_TG}?text={_fmsg}">M\'inscrire sur Telegram</a></div></div></section>')
-    chips = '<button type="button" class="lbc on" data-f="*">Tout</button>' + "".join(
-        f'<button type="button" class="lbc" data-f="{k}">{lab.split(" · ")[-1]}</button>' for k, n, lab, sub in LIVRES_NIV)
+    secs += (f'<section class="lvsec" id="niv-pro" data-niv="pro"><div class="lvlh"><span class="n">🎓</span><div><h2>{T["f_h"]}</h2><p>{T["f_sub"]}</p></div></div>'
+             f'<div class="fpro"><div><p class="lbniv">{T["f_tag"]}</p><h3>{T["f_t"]}</h3>'
+             f'<ul>{"".join(f"<li>{x}</li>" for x in T["f_pts"])}</ul>'
+             f'<p class="fnote">{T["f_note"]}</p></div>'
+             f'<div class="fbuy"><div class="lbprice"><span class="lbold"><s>215 000 FCFA</s><i>-30 %</i></span>{_ffc} FCFA<small>{T["f_year"]} · ≈ {FORMATION_USD} $</small></div>'
+             f'<a class="shb" href="{VIP_TG}?text={_fmsg}">{T["f_btn"]}</a></div></div></section>')
+    chips = f'<button type="button" class="lbc on" data-f="*">{T["all"]}</button>' + "".join(
+        f'<button type="button" class="lbc" data-f="{k}">{nt(k, lab, sub)[0].split(" · ")[-1]}</button>' for k, n, lab, sub in LIVRES_NIV)
     fan = "".join(f'<img src="livre-cv-{k}.webp" alt="" width="420" height="560" decoding="async" class="f{i}">' for i, k in enumerate(("f-foot", "multi", "p-tennis")))
-    books_json = _j.dumps([{k: b[k] for k in ("id", "titre", "prix", "usd", "status")} for b in LIVRES], ensure_ascii=False)
-    js = _SHOP_JS.replace("__BOOKS__", books_json).replace("__TG__", VIP_TG)
+    books_json = _j.dumps([{"id": b["id"], "titre": bt(b)[0], "prix": b["prix"], "usd": b["usd"], "status": b["status"]} for b in LIVRES], ensure_ascii=False)
+    js = (_SHOP_JS.replace("__BOOKS__", books_json).replace("__TG__", VIP_TG).replace("\\u2713 Dans le panier", T["incart"]).replace("Ajouter au panier", T["add"])
+          .replace('"Total : "', _j.dumps(T["total"] + " : ", ensure_ascii=False)).replace('"LIVRE \\u2014 Ma commande :"', _j.dumps(T["ordermsg"], ensure_ascii=False))
+          .replace('"Format : "', _j.dumps(T["fmt"] + " : ", ensure_ascii=False)).replace('"Retirer"', _j.dumps(T["remove"], ensure_ascii=False)))
+    _sl = SHOP_SLUG
+    navs = {"fr": lambda: nav_fr(en=_sl["en"], es=_sl["es"], ar=_sl["ar"]), "en": lambda: nav_en(fr=_sl["fr"], es=_sl["es"], ar=_sl["ar"]),
+            "es": lambda: nav_es(fr=_sl["fr"], en=_sl["en"], ar=_sl["ar"]), "ar": lambda: nav_ar(fr=_sl["fr"], en=_sl["en"], es=_sl["es"])}
+    foot = {"fr": footer_html, "en": footer_html_en, "es": footer_html_es, "ar": footer_html_ar}[lang]
     filt = """<script>(function(){var cs=document.querySelectorAll('.lbc');cs.forEach(function(c){c.addEventListener('click',function(){var f=c.getAttribute('data-f');
 cs.forEach(function(x){x.classList.toggle('on',x===c)});document.querySelectorAll('.lvsec').forEach(function(s){s.style.display=(f==='*'||s.getAttribute('data-niv')===f)?'':'none'});
 var g=document.getElementById('guides');if(g&&g.getBoundingClientRect().top<0)g.scrollIntoView({behavior:'smooth'});});});})();</script>"""
     nb = len(LIVRES)
-    return head("Boutique Cousin Marc : livres et manuels de pronostics",
-        "Les manuels de Cousin Marc en 3 niveaux : formation, pronostics par sport (football, tennis, hockey, baseball), expert (cotes et live), jeux virtuels. PDF, paiement Mobile Money ou crypto.",
-        f"{BASE}/{LIVRES_SLUG}", nav=nav_fr(), lang="fr") + f"""
+    return head(T["title"], T["desc"], f"{BASE}/{_sl[lang]}", nav=navs[lang](), lang=lang, alternates=tuple(f"{BASE}/{_sl[k]}" for k in ("fr", "en", "es", "ar"))) + f"""
 <header class="hero hero-shop"><div class="wrap"><div class="shhero">
 <div>
-<p class="eyebrow">Boutique Cousin Marc</p>
-<h1>Ma <span class="hl">boutique</span></h1>
-<p>Mes livres et manuels de pronostics, rangés en 3 niveaux. D'autres produits arrivent bientôt.</p>
-<div class="shkpi"><div><b>{nb}</b>livres</div><div><b>3</b>niveaux</div><div><b>5</b>sports</div></div>
-<div class="btnrow"><a class="cta" href="#guides">Voir les livres</a><a class="cta alt" href="bilan.html">Mon bilan public</a></div>
+<p class="eyebrow">{T["eyebrow"]}</p>
+<h1>{T["h1"]}</h1>
+<p>{T["intro"]}</p>
+<div class="shkpi"><div><b>{nb}</b>{T["k"][0]}</div><div><b>3</b>{T["k"][1]}</div><div><b>5</b>{T["k"][2]}</div></div>
+<div class="btnrow"><a class="cta" href="#guides">{T["see"]}</a><a class="cta alt" href="{T["bilan_href"]}">{T["bilan"]}</a></div>
 </div>
 <div class="shfan" aria-hidden="true">{fan}</div>
 </div></div></header>
 <section class="shopbg" id="guides"><div class="wrap">
-<div class="promo"><b>🏷️ Prix promo</b><span>Tous les prix sont en promotion jusqu'au {PROMO_FIN}. Le prix barré est le prix normal, appliqué à partir de janvier 2027.</span></div>
-<div class="shcat"><h2>📚 Livres, manuels et formation</h2><span>{nb + 1} produits</span></div>
+<div class="promo"><b>{T["promo_b"]}</b><span>{T["promo"].replace("{d}", PROMO_FIN)}</span></div>
+<div class="shcat"><h2>{T["cat"]}</h2><span>{nb + 1} {T["prods"]}</span></div>
 <div class="lbchips" role="toolbar" aria-label="Filtrer par niveau">{chips}</div>
 {secs}
-<div class="shsteps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
-<p class="shnote">Les livres marqués « Précommande » sont livrés dès leur sortie. Paiement : <a href="livre-analyse-match.html#payer">voir les numéros</a> · Aucun gain n'est garanti · 18+ · <a href="jeu-responsable.html">Jeu responsable</a></p>
+<div class="shsteps"><div><b>1</b>{T["steps"][0]}</div><div><b>2</b>{T["steps"][1]}</div><div><b>3</b>{T["steps"][2]}</div></div>
+<p class="shnote">{T["note"]}</p>
 </div></section>
 <div id="shcart"><div class="wrap in">
-<div><ul></ul><div class="tot"></div><div class="shfmt"><label><input type="radio" name="shfmt" value="PDF" checked> PDF</label><label><input type="radio" name="shfmt" value="Papier (retrait en agence)"> Papier (bientôt)</label></div></div>
-<a class="shb go" style="width:auto" href="{VIP_TG}">Commander sur Telegram</a>
+<div><ul></ul><div class="tot"></div><div class="shfmt"><label><input type="radio" name="shfmt" value="PDF" checked> PDF</label><label><input type="radio" name="shfmt" value="Papier (retrait en agence)"> {T["paper"]}</label></div></div>
+<a class="shb go" style="width:auto" href="{VIP_TG}">{T["order"]}</a>
 </div></div>
-{footer_html()}
+{foot()}
 {js}{filt}"""
 
-open(os.path.join(OUT, LIVRES_SLUG), "w", encoding="utf-8").write(livres_page()); written.append(LIVRES_SLUG)
+for _lg in ("fr", "en", "es", "ar"):
+    open(os.path.join(OUT, SHOP_SLUG[_lg]), "w", encoding="utf-8").write(livres_page(_lg)); written.append(SHOP_SLUG[_lg])
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
@@ -8878,6 +8971,44 @@ CSS += r'''
 .lbold{display:flex;align-items:center;gap:8px;margin-bottom:2px}
 .lbold s{color:#8f9bb5;font-size:14px;font-weight:600;text-decoration-thickness:2px;text-decoration-color:#f87171}
 .lbold i{font-style:normal;font-size:12px;font-weight:800;color:#fff;background:#dc2626;border-radius:6px;padding:2px 6px}
+'''
+CSS += r'''
+/* ---------- menu identique partout : bouton menu visible aussi sur ordinateur et tablette ---------- */
+.burger{display:flex!important}
+/* ---------- corrections après la vérification complète ---------- */
+.author{background:none!important;border:0!important;box-shadow:none!important}
+.navpanel:not(.open){box-shadow:none!important}
+.navpanel-links{padding-bottom:14px}
+.social a,.langlink,.navpanel-lang a{box-shadow:none!important}
+[dir="rtl"] .reslink i,[dir="rtl"] .resbox i{display:inline-block;transform:scaleX(-1)}
+@media(max-width:759px){[dir="rtl"] .eyebrow::before{margin-right:0!important;margin-left:8px!important}}
+img[src*="ico/trophee.webp"]{clip-path:inset(0 18% 0 0);transform:translateX(9%)}
+section p+h3,section ul+h3,section ol+h3,section .tablecard+h3{margin-top:22px}section h3+p{margin-top:6px}
+main section>h3{margin:18px 0 4px}main section>h2+h3{margin-top:4px}
+.legalbody h3{margin-top:22px}
+[dir="rtl"] .related .bk{direction:rtl}
+@media(min-width:900px){.hero:has(.codebox)::after,.hero:has(.lvh)::after{display:none!important}}
+@media(max-width:899px){.hero::after{width:96px!important;height:96px!important;right:-30px!important;bottom:-34px!important;opacity:.25!important}}
+.clogo img[src*="comp-esp-2"],.clogo img[src*="comp-jpn-1"],.clogo img[src*="comp-mex-1"]{width:42px;height:42px}
+@media(max-width:600px){main section>h2{display:block}main section>h2 .num{display:inline-flex;vertical-align:middle;margin-right:8px}[dir="rtl"] main section>h2 .num{margin-right:0;margin-left:8px}main section>h2::after{margin-top:10px}}
+[dir="rtl"] .note,[dir="rtl"] .warn,[dir="rtl"] .vwarn{border-left:1px solid var(--bd)!important;border-right:3px solid var(--or)!important}
+.mstatus{background:var(--bg3);color:var(--tx)}
+.vcbox>summary::after{position:static!important;transform:none!important;inset:auto!important;margin-inline-start:auto}
+.vproof-card figcaption strong,.vp-save{color:#4ade80!important}
+.vc-head .vbadge{color:#1a1205!important}
+.vvol{color:#fbbf24!important}
+.vpaywrap .vcrypto .vwarn,.vpaywrap .vmomo .vwarn{background:#18253f!important;color:#fde68a!important;border:1px solid #233350!important;border-left:3px solid #f97316!important}.vpaywrap .vcrypto .vwarn b{color:#fff!important}
+[dir="rtl"] .vp-price,[dir="rtl"] .vp-xaf,[dir="rtl"] .vm-row b,[dir="rtl"] .vpaywrap p.muted b,[dir="rtl"] .vproof-card figcaption strong,[dir="rtl"] .gcard figcaption strong,[dir="rtl"] .lbprice,[dir="rtl"] .vfx td{direction:ltr;unicode-bidi:isolate}
+[dir="rtl"] .vproof-card figcaption strong,[dir="rtl"] .gcard figcaption strong,[dir="rtl"] .lbprice,[dir="rtl"] .vfx td{text-align:right}
+[dir="rtl"] .vp-pm{unicode-bidi:plaintext;text-align:center}
+#shcart{bottom:0!important}
+.lbold{flex-wrap:wrap;gap:4px 6px}.lbold s,.lbold i{white-space:nowrap}@media(max-width:640px){.lbold s{font-size:13px}}
+.legalbody ol,.legalbody ul{padding-left:1.6em}[dir="rtl"] .legalbody ol,[dir="rtl"] .legalbody ul{padding-left:0;padding-right:1.6em}
+footer{padding-bottom:48px!important}
+main.legalbody{padding-bottom:48px!important}
+footer bdi{unicode-bidi:isolate}
+[dir="rtl"] .lb li{padding-left:0;padding-right:20px}[dir="rtl"] .lb li::before,[dir="rtl"] .fpro li::before{left:auto;right:0}[dir="rtl"] .fpro li{padding-left:0;padding-right:22px}
+[dir="rtl"] .lvlh h2,[dir="rtl"] .lvlh p,[dir="rtl"] .shcat h2{text-align:right!important}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
