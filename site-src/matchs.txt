@@ -2275,6 +2275,7 @@ pronostic_es: Ganan los Nuggets
 pronostic_ar: فوز ناغتس
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 20-80
 score: 108-121
 analyse_en: Tip-off Sunday 15 November at 1am in Douala and Lagos (Saturday 6pm in New Orleans), midnight in Accra and Dakar.
@@ -2283,12 +2284,14 @@ New Orleans are 4-9 and have lost 5 of their 8 home games.
 Bookmakers make the Nuggets big favourites (around -12.5 points).
 My pick: Nuggets to win. Bigger odds: Nuggets win by more than 7.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: New Orleans Pelicans 108-116 Denver Nuggets. Prediction won ✅: Nuggets to win.
 analyse: Début du match dimanche 15 novembre à 1h du matin à Douala (samedi 18h à La Nouvelle-Orléans), minuit à Abidjan et Dakar.
 Denver est à 6 victoires et 4 défaites et solide à l'extérieur (3-2).
 La Nouvelle-Orléans est à 4-9 et a perdu 5 de ses 8 matchs à domicile.
 Les bookmakers font des Nuggets de grands favoris (environ 12,5 points d'avance).
 Mon choix : victoire des Nuggets. Option plus grosse cote : les Nuggets gagnent avec plus de 7,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : New Orleans Pelicans 108-116 Denver Nuggets. Pronostic gagné ✅ : victoire des Nuggets.
 ---
 date: 2026-11-15 02:00
 competition: NBA
@@ -2301,6 +2304,7 @@ pronostic_es: Ganan los Pistons
 pronostic_ar: فوز بيستونز
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 36-64
 score: 109-116
 analyse_en: Tip-off Sunday 15 November at 2am in Douala and Lagos (Saturday 8pm in Miami), 1am in Accra and Dakar.
@@ -2309,12 +2313,14 @@ Miami are 6-6 and only 2-3 at home.
 Bookmakers make the Pistons favourites by around 4.5 points.
 My pick: Pistons to win. Bigger odds: Pistons win by more than 4.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Miami Heat 137-117 Detroit Pistons. Prediction lost ❌: Miami Heat won.
 analyse: Début du match dimanche 15 novembre à 2h du matin à Douala (samedi 20h à Miami), 1h à Abidjan et Dakar.
 Detroit est à 8 victoires et 3 défaites et excellent à l'extérieur (5-1).
 Miami est à 6-6 et seulement 2-3 à domicile.
 Les bookmakers donnent les Pistons favoris d'environ 4,5 points.
 Mon choix : victoire des Pistons. Option plus grosse cote : les Pistons gagnent avec plus de 4,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Miami Heat 137-117 Detroit Pistons. Pronostic perdu ❌ : Miami Heat a gagné.
 ---
 date: 2026-11-15 02:00
 competition: NBA
@@ -2327,6 +2333,7 @@ pronostic_es: Ganan los Grizzlies
 pronostic_ar: فوز غريزليز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 62-38
 score: 118-112
 analyse_en: Tip-off Sunday 15 November at 2am in Douala and Lagos (Saturday 7pm in Memphis), 1am in Accra and Dakar.
@@ -2335,12 +2342,14 @@ Brooklyn are 3-8 and only 2-5 away from home.
 Bookmakers make the Grizzlies favourites by around 3.5 points.
 My pick: Grizzlies to win. Bigger odds: Grizzlies win and over 220.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Memphis Grizzlies 129-110 Brooklyn Nets. Prediction won ✅: Grizzlies to win.
 analyse: Début du match dimanche 15 novembre à 2h du matin à Douala (samedi 19h à Memphis), 1h à Abidjan et Dakar.
 Memphis est à 8 victoires et 4 défaites, même si l'équipe est meilleure à l'extérieur (6-0) qu'à domicile (2-4).
 Brooklyn est à 3-8 et seulement 2-5 à l'extérieur.
 Les bookmakers donnent les Grizzlies favoris d'environ 3,5 points.
 Mon choix : victoire des Grizzlies. Option plus grosse cote : les Grizzlies gagnent et plus de 220,5 points.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Memphis Grizzlies 129-110 Brooklyn Nets. Pronostic gagné ✅ : victoire des Grizzlies.
 ---
 date: 2026-11-15 02:00
 competition: NBA
@@ -2353,6 +2362,7 @@ pronostic_es: Ganan los Timberwolves
 pronostic_ar: فوز تمبروولفز
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 88-12
 score: 124-106
 analyse_en: Tip-off Sunday 15 November at 2am in Douala and Lagos (Saturday 7pm in Minneapolis), 1am in Accra and Dakar.
@@ -2361,12 +2371,14 @@ Chicago are 2-9 and have lost 5 of their 6 road games.
 Bookmakers make the Timberwolves huge favourites (around -15.5 points).
 My pick: Timberwolves to win. Bigger odds: Timberwolves win by more than 9.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Minnesota Timberwolves 106-117 Chicago Bulls. Prediction lost ❌: Chicago Bulls won.
 analyse: Début du match dimanche 15 novembre à 2h du matin à Douala (samedi 19h à Minneapolis), 1h à Abidjan et Dakar.
 Minnesota est à 9 victoires et 3 défaites et très fort à domicile (5-1).
 Chicago est à 2-9 et a perdu 5 de ses 6 matchs à l'extérieur.
 Les bookmakers font des Timberwolves de très grands favoris (environ 15,5 points d'avance).
 Mon choix : victoire des Timberwolves. Option plus grosse cote : les Timberwolves gagnent avec plus de 9,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Minnesota Timberwolves 106-117 Chicago Bulls. Pronostic perdu ❌ : Chicago Bulls a gagné.
 ---
 date: 2026-11-15 14:00
 competition: Tennis
