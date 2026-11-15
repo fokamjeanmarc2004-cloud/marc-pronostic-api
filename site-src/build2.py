@@ -335,6 +335,24 @@ def _wall_items():
     recent = [p for p in VIP_PROOFS[:WALL_RECENT] if os.path.exists(os.path.join(OUT, p[0]))]
     return sorted(recent, key=lambda p: -odd(p[2]))[:WALL_SHOW]
 
+# ---------------------------------------------------------------- Page « Mes gains » (tous les tickets gagnants) + bandeau-lien
+GAINS_SLUG = {"fr": "gains.html", "en": "winning-tickets.html", "es": "tickets-ganadores.html", "ar": "gains-ar.html"}
+GAINS_L = {
+ "fr": {"band": "🏆 Mes tickets gagnants", "bandsub": "Toutes les photos des gains, gagnés ensemble", "btn": "Voir tous les gains", "title": "Mes gains : tous les tickets gagnants | Cousin Marc",
+        "h1": "Mes <span class=\"hl\">gains</span>", "desc": "Tous les tickets gagnants de Cousin Marc, en photos : grosses cotes, combinés et paris en direct.", "eyebrow": "Tickets gagnants", "odds": "Cote", "vip": "Rejoindre le VIP", "vipsub": "Reçois mes coupons avant les matchs"},
+ "en": {"band": "🏆 My winning tickets", "bandsub": "Every photo of the wins we cashed together", "btn": "See all wins", "title": "My wins: all winning tickets | Cousin Marc",
+        "h1": "My <span class=\"hl\">wins</span>", "desc": "All of Cousin Marc's winning tickets in photos: big odds, combos and live bets.", "eyebrow": "Winning tickets", "odds": "Odds", "vip": "Join the VIP", "vipsub": "Get my coupons before the games"},
+ "es": {"band": "🏆 Mis tickets ganadores", "bandsub": "Todas las fotos de las ganancias", "btn": "Ver todas", "title": "Mis ganancias: todos los tickets ganadores | Cousin Marc",
+        "h1": "Mis <span class=\"hl\">ganancias</span>", "desc": "Todos los tickets ganadores de Cousin Marc en fotos: cuotas altas, combinadas y apuestas en directo.", "eyebrow": "Tickets ganadores", "odds": "Cuota", "vip": "Unirme al VIP", "vipsub": "Recibe mis cupones antes de los partidos"},
+ "ar": {"band": "🏆 تذاكري الرابحة", "bandsub": "كل صور الأرباح", "btn": "عرض كل الأرباح", "title": "أرباحي: كل التذاكر الرابحة | كوزين مارك",
+        "h1": "<span class=\"hl\">أرباحي</span>", "desc": "كل التذاكر الرابحة لكوزين مارك بالصور: احتمالات عالية ورهانات مباشرة.", "eyebrow": "تذاكر رابحة", "odds": "النسبة", "vip": "انضم إلى VIP", "vipsub": "احصل على قسائمي قبل المباريات"},
+}
+def gains_band(lang):
+    L = GAINS_L[lang]
+    return (f'<section class="gainsband"><div class="wrap"><div class="gb"><div><b>{L["band"]}</b><span>{L["bandsub"]}</span></div>'
+            f'<a class="cta" href="{GAINS_SLUG[lang]}">{L["btn"]} →</a></div></div></section>')
+
+
 def winners_wall(lang):
     title, sub, paid = WALL_L.get(lang, WALL_L["fr"])
     ol = WALL_ODDS.get(lang, "Cote")
@@ -1538,11 +1556,12 @@ def topnav(lang, langs_html, top_langs):
     links = "".join(f'<li><a href="{h}">{t}</a></li>' for t,h in TOPLINKS_L[lang])
     links += f'<li><a class="vip" href="{VIP_SLUG[lang]}">VIP</a></li>'
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
-            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png?v=2" width="34" height="34" alt="" style="width:34px;height:34px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
+            f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png?v=3" width="40" height="40" alt="" style="width:40px;height:40px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
             f'<div class="navright"><ul class="toplinks">{links}</ul><ul class="toplang">{top_langs}</ul>'
             f'<a class="topcart" id="topcart" href="livres.html" hidden aria-label="Panier">🛒<span></span></a>{TOPCART_SCRIPT}'
-            f'<button type="button" class="topffn" onclick="copyCode(this,\'FFN\')" aria-label="{ {'en':'Copy promo code FFN','es':'Copiar el código promocional FFN','ar':'نسخ الرمز الترويجي FFN'}.get(lang,'Copier le code promo FFN') }">FFN 📋</button>'
-            f'<a class="toptg" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram Cousin Marc"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>{burger_html()}</div>'
+            f'<a class="topico wa" href="{dict(SOCIAL)["WhatsApp"]}" target="_blank" rel="nofollow" aria-label="WhatsApp">{ICONS["WhatsApp"]}</a>'
+            f'<a class="topico tgi" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram">{ICONS["Telegram"]}</a>'
+            f'<a class="topico ct" href="https://t.me/Barcilone" target="_blank" rel="nofollow" aria-label="{ {'en':'Message me on Telegram','es':'Escríbeme en Telegram','ar':'راسلني على تيليجرام'}.get(lang,'Me joindre sur Telegram') }"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg></a>{burger_html()}</div>'
             f'</div></nav>\n{navpanel_html(lang, langs_html)}')
 
 def _top_langs(current, **kw):
@@ -1614,7 +1633,7 @@ def footer_html():
 </div>
 </div>
 <div class="warn">⚠️ Réservé aux 18 ans et +. Le jeu comporte des risques : endettement, dépendance, isolement. Jouez de manière responsable et ne misez que ce que vous pouvez vous permettre de perdre. <a href="jeu-responsable.html" style="color:var(--gold)">En savoir plus</a></div>
-<p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · Pronostics foot Afrique</p>
+<p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · 18+ · Joue de façon responsable</p>
 </div></footer>
 <script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
@@ -1888,7 +1907,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11h"><script>
+<link rel="stylesheet" href="style.css?v=2026-11i"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -2687,7 +2706,6 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 <h1>{T["h1"]}</h1>
 <p class="lead">{T["lead"]}</p>
 <div class="btnrow"><a class="cta" href="#bookmakers">{T["cta1"]}</a><a class="cta alt" href="#coupon-du-jour">{T["cta2"]}</a></div>
-<div class="home-trust">{trust}</div>
 {bilan}
 <div class="topcodes">{top}</div>
 </div></header>
@@ -2697,23 +2715,20 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 {compare_home}
 
 <section class="hsec" id="coupon-du-jour"><div class="wrap">
-<div class="hsec-head"><div><p class="kicker">{T["c_kick"]}</p><h2>{T["c_h2"]}</h2><p>{T["c_p"]}</p></div></div>
+<div class="hsec-head"><div><p class="kicker">{T["c_kick"]}</p><h2>{T["c_h2"]}</h2></div></div>
 <div class="coupon-grid">
 <div class="coupon-card">{cote2_history_html(lang, T["c_alt"])}</div>
-<div class="facts">{facts}
-<div class="btnrow" style="justify-content:flex-start;margin-top:6px"><a class="cta" href="{U["cote2"]}">{T["c_full"]}</a><a class="cta alt" href="{U["res"]}">{T["c_res"]}</a></div>
-</div>
+<div class="facts facts1"><div class="btnrow" style="justify-content:flex-start;margin-top:0"><a class="cta" href="{U["cote2"]}">{T["c_full"]}</a></div>
+<a class="resbox" href="{U["res"]}"><span>📊</span><b>{T["c_res"]}</b><i>→</i></a></div>
 </div>
 </div></section>
 
 <section class="hsec" id="bookmakers"><div class="wrap">
-<div class="hsec-head"><div><p class="kicker">{T["b_kick"]}</p><h2>{T["b_h2"]}</h2><p>{T["b_p"]}</p></div></div>
-<p class="verified">✅ {verified}</p>
+<div class="hsec-head"><div><p class="kicker">{T["b_kick"]}</p><h2>{T["b_h2"]}</h2></div></div>
 <div class="bklist">{rows}</div>
-<p style="font-size:13px;color:var(--muted);margin-top:12px">{T["b_note"]}</p>
 </div></section>
 
-{winners_wall(lang)}
+{gains_band(lang)}
 
 {matchs_home}
 
@@ -3187,29 +3202,13 @@ def vip_page(lang):
 <header class="vhero"><div class="wrap">
 <p class="eyebrow">⭐ {L["eyebrow"]}</p>
 <h1>{L["h1"]}</h1>
-<p class="lead">{L["sub"]}</p>
 <div class="btnrow"><a class="cta" href="#paiement">{L["cta"]}</a><a class="cta alt" href="#preuves">{L["proofs"]}</a></div>
-<p class="vperday">{L["perday"]}</p>
-<div class="home-trust">{trust}</div>
 </div></header>
 <main class="wrap">
-<section id="contenu">
-<h2>{L["cmp_title"]}</h2>
-<div class="tablecard vcmp"><table><thead><tr><th></th><th>{L["cmp_free"]}</th><th>⭐ {L["cmp_vip"]}</th></tr></thead><tbody>{rows}</tbody></table></div>
-</section>
-{proofs}
-<section>
-<h2>{L["modes_title"]}</h2>
-<div class="vmodes">{modes}</div>
-</section>
-<section>
-<h2>{L["how_title"]}</h2>
-<div class="vsteps">{how}</div>
-</section>
-<section>
+<div class="vpaywrap">
+<section id="formules">
 <h2>{L["price_title"]}</h2>
 <div class="vplans">{plans}</div>
-<div class="vincluded"><p class="label">{L["price_label"]}</p><ul>{plist}</ul></div>
 </section>
 <section id="paiement">
 <h2>{L["pay_title"]}</h2>
@@ -3222,6 +3221,24 @@ def vip_page(lang):
 <p class="muted" style="margin:6px 0 12px">{L["choose"]}</p>
 <div class="vcryptos">{cards}</div>
 <div class="vproof"><a class="cta" href="{VIP_TG}" target="_blank" rel="nofollow">{L["tg_btn"]}</a><p>{L["after"]}</p></div>
+</section>
+</div>
+<a class="vdown" href="#preuves"><span>{ {"fr": "Mes coupons et analyses validés", "en": "My validated coupons and analyses", "es": "Mis cupones y análisis validados", "ar": "قسائمي وتحليلاتي المؤكدة"}[lang] }</span><i>⬇</i></a>
+{proofs}
+<section>
+<div class="vincluded"><p class="label">{L["price_label"]}</p><ul>{plist}</ul></div>
+</section>
+<section id="contenu">
+<h2>{L["cmp_title"]}</h2>
+<div class="tablecard vcmp"><table><thead><tr><th></th><th>{L["cmp_free"]}</th><th>⭐ {L["cmp_vip"]}</th></tr></thead><tbody>{rows}</tbody></table></div>
+</section>
+<section>
+<h2>{L["modes_title"]}</h2>
+<div class="vmodes">{modes}</div>
+</section>
+<section>
+<h2>{L["how_title"]}</h2>
+<div class="vsteps">{how}</div>
 </section>
 <section>
 <h2>{L["faq_title"]}</h2>
@@ -3513,7 +3530,7 @@ def footer_html_en():
 </div>
 </div>
 <div class="warn">⚠️ 18+ only. Gambling involves risks: debt, addiction, isolation. Play responsibly and only bet what you can afford to lose.</div>
-<p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Promo code FFN · Football tips Africa</p>
+<p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Promo code FFN · 18+ · Play responsibly</p>
 </div></footer>
 <script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
@@ -3984,7 +4001,7 @@ def footer_html_es():
 </div>
 </div>
 <div class="warn">⚠️ Solo mayores de 18 años. El juego implica riesgos: deudas, adicción, aislamiento. Juega de forma responsable y apuesta solo lo que puedas permitirte perder.</div>
-<p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Código promocional FFN · Pronósticos de fútbol</p>
+<p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Código promocional FFN · +18 · Juega con responsabilidad</p>
 </div></footer>
 <script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ ¡Copiado!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
@@ -4626,7 +4643,7 @@ def footer_html_ar():
 </div>
 </div>
 <div class="warn">⚠️ للبالغين فقط (18 عامًا فأكثر). المراهنة تنطوي على مخاطر: ديون، إدمان، عزلة. العب بمسؤولية وراهن فقط بما يمكنك تحمّل خسارته.</div>
-<p style="margin-top:18px">© 2026 كوزين مارك (Cousin Marc Pronostic) · الرمز الترويجي FFN · توقعات كرة القدم</p>
+<p style="margin-top:18px">© 2026 كوزين مارك (Cousin Marc Pronostic) · الرمز الترويجي FFN · +18 · العب بمسؤولية</p>
 </div></footer>
 <script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
@@ -5077,7 +5094,7 @@ def results_page(lang):
 <section style="border-bottom:none;padding-top:18px">
 {_result_cards(L, lang)}
 </section>
-{winners_wall(lang)}
+{gains_band(lang)}
 <section>
 <h2><span class="num">●</span> {L["cta"]}</h2>
 <div class="related">{relmap[lang]}</div>
@@ -7189,6 +7206,28 @@ def bilan_page(lang="fr"):
 
 open(os.path.join(OUT, BILAN_SLUG), "w", encoding="utf-8").write(bilan_page("fr")); written.append(BILAN_SLUG)
 open(os.path.join(OUT, BILAN_SLUG_EN), "w", encoding="utf-8").write(bilan_page("en")); written.append(BILAN_SLUG_EN)
+def gains_page(lang):
+    L = GAINS_L[lang]
+    imgs = "".join(f'<figure class="gcard"><img src="{f}" alt="{html.escape(m)} : ticket gagnant {paid}" loading="lazy" decoding="async">'
+                   f'<figcaption><b>{html.escape(m)}</b><span>{L["odds"]} {c}{" · LIVE" if live else ""}</span>{f"<strong>✅ {paid}</strong>" if paid else ""}</figcaption></figure>'
+                   for f, m, c, live, paid in VIP_PROOFS if os.path.exists(os.path.join(OUT, f)))
+    navs = {"fr": nav_fr(en=GAINS_SLUG["en"], es=GAINS_SLUG["es"], ar=GAINS_SLUG["ar"]), "en": nav_en(fr=GAINS_SLUG["fr"], es=GAINS_SLUG["es"], ar=GAINS_SLUG["ar"]),
+            "es": nav_es(fr=GAINS_SLUG["fr"], en=GAINS_SLUG["en"], ar=GAINS_SLUG["ar"]), "ar": nav_ar(fr=GAINS_SLUG["fr"], en=GAINS_SLUG["en"], es=GAINS_SLUG["es"])}
+    foot = {"fr": footer_html, "en": footer_html_en, "es": footer_html_es, "ar": footer_html_ar}[lang]
+    return head(L["title"], L["desc"], f"{BASE}/{GAINS_SLUG[lang]}", nav=navs[lang], lang=lang,
+                alternates=(f"{BASE}/{GAINS_SLUG['fr']}", f"{BASE}/{GAINS_SLUG['en']}", f"{BASE}/{GAINS_SLUG['es']}", f"{BASE}/{GAINS_SLUG['ar']}")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">{L["eyebrow"]}</p>
+<h1>{L["h1"]}</h1>
+</div></header>
+<main class="wrap">
+<div class="gwall">{imgs}</div>
+<div class="gvip"><div><b>{L["vip"]}</b><span>{L["vipsub"]}</span></div><a class="cta" href="{VIP_SLUG[lang]}#paiement">⭐ VIP →</a></div>
+</main>
+{foot()}"""
+
+for _lg in ("fr", "en", "es", "ar"):
+    open(os.path.join(OUT, GAINS_SLUG[_lg]), "w", encoding="utf-8").write(gains_page(_lg)); written.append(GAINS_SLUG[_lg])
 # ---------------------------------------------------------------- Page de vente du livre « Analyser un match comme Cousin Marc »
 LIVRE_SLUG = "livre-analyse-match.html"
 LIVRE_PRIX_FCFA, LIVRE_PRIX_USD = "15 000", "25"
@@ -7458,7 +7497,7 @@ def livres_page():
 <h2>Choisis ton guide</h2>
 <p class="shsub">PDF · paiement Mobile Money ou crypto · livré sur Telegram</p>
 <div class="shgrid2">{cards}</div>
-<div class="steps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
+<div class="shsteps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
 <h2 style="margin-top:34px">Un livre par sport</h2>
 <p class="shsub">À venir</p>
 <div class="spt">{sports}</div>
@@ -7823,9 +7862,9 @@ CSS += r'''
 .bk3 .back{width:150px;height:210px;transform:translateZ(-11px);background:#10162b;border-radius:9px 3px 3px 9px}
 .bk3 .spine{left:-11px;width:22px;height:210px;transform:rotateY(-90deg);background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(255,255,255,.14))}
 .bk3 .pgs{left:139px;width:22px;height:206px;top:2px;transform:rotateY(90deg);background:repeating-linear-gradient(90deg,#f4efe1 0 1px,#d8d1bd 1px 2px)}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:26px 0 8px}
-.steps div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px;text-align:center;font-size:14.5px;color:#e6ecff}
-.steps b{display:flex;margin:0 auto 6px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;align-items:center;justify-content:center;font-size:16px}
+.shsteps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:26px 0 8px}
+.shsteps div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px;text-align:center;font-size:14.5px;color:#e6ecff}
+.shsteps b{display:flex;margin:0 auto 6px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;align-items:center;justify-content:center;font-size:16px}
 .spt{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:12px;margin:14px 0 4px}
 .spt div{text-align:center;color:#c3cff0;font-size:13px}
 .spt svg{width:56px;height:56px;display:block;margin:0 auto 6px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));animation:cmfloat 7s ease-in-out infinite}
@@ -7843,6 +7882,71 @@ CSS += r'''
 .shnote a{color:#fde68a}
 #shcart{background:#0a1740!important;color:#fff;border-top:1px solid rgba(255,255,255,.2)!important}
 #shcart li button{color:#fca5a5}
+'''
+CSS += r'''
+/* ==========================================================
+   RANGEMENT : en-tete sombre, menu colore, page gains, VIP (paiement d'abord)
+   ========================================================== */
+nav.top{background:linear-gradient(90deg,#061024,#0b1d5c)!important;border-bottom:1px solid rgba(255,255,255,.12)!important;backdrop-filter:none!important}
+nav.top .logo{color:#fff!important}
+nav.top .logo b{color:#facc15!important}
+nav.top .logo img{box-shadow:0 0 0 2px rgba(250,204,21,.55),0 4px 14px rgba(0,0,0,.4)}
+.toplinks a{color:#d6def5!important}
+.toplinks a:hover{background:rgba(255,255,255,.12)!important;color:#fff!important}
+.toplinks a.vip{background:linear-gradient(90deg,#facc15,#f97316)!important;color:#1a1205!important}
+.toplang{border-left-color:rgba(255,255,255,.2)!important}
+.toplang a{color:#9fb0dd!important}
+.toplang a:hover{color:#fff!important;background:rgba(255,255,255,.12)!important}
+.burger{background:rgba(255,255,255,.1)!important;border-color:rgba(255,255,255,.25)!important}
+.burger span{background:#fff!important}
+.topico{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:#fff;text-decoration:none;flex:none}
+.topico svg{width:19px;height:19px}
+.topico.wa{background:#25d366}.topico.tgi{background:#229ed9}.topico.ct{background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205}
+.topcart{background:rgba(255,255,255,.14)!important}
+.navright{gap:6px!important}
+@media(max-width:480px){.topico{width:32px;height:32px}.topico svg{width:17px;height:17px}.navright{gap:4px!important}nav.top .logo{font-size:17px!important;gap:6px!important}nav.top .logo img{width:36px!important;height:36px!important}.burger{width:38px!important;height:38px!important}}
+/* menu : tuiles colorees */
+.navpanel{background:linear-gradient(170deg,#061024,#0b1d5c 70%,#13338a)!important;border-left:1px solid rgba(255,255,255,.12)}
+.navpanel-head{color:#fff!important;border-bottom-color:rgba(255,255,255,.15)!important}
+.navpanel-links{gap:8px!important}
+.navpanel-links a{color:#fff!important;background:rgba(255,255,255,.07)!important;border:1px solid rgba(255,255,255,.12)!important;box-shadow:none!important;animation:none!important}
+.navpanel-links a:hover,.navpanel-links a.active{background:rgba(250,204,21,.16)!important;border-color:rgba(250,204,21,.55)!important;color:#fde68a!important;box-shadow:none!important}
+.navpanel-links .ic{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,rgba(250,204,21,.28),rgba(249,115,22,.28));display:flex;align-items:center;justify-content:center;font-size:18px}
+.navpanel-lang{border-top-color:rgba(255,255,255,.15)!important}
+.navpanel-lang a{color:#c9d6f5!important}
+.navmask{background:rgba(3,8,22,.6)!important}
+/* accueil : bandeau gains + lien resultats */
+.gainsband{padding:20px 0}
+.gainsband .gb{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;background:linear-gradient(120deg,#0b1d5c,#13338a);border:1px solid rgba(250,204,21,.4);border-radius:20px;padding:20px 22px;color:#fff;box-shadow:0 12px 30px rgba(11,29,92,.25)}
+.gainsband b{display:block;font-size:20px;color:#fde68a}
+.gainsband span{color:#c9d6f5;font-size:14.5px}
+.facts1{display:flex;flex-direction:column;gap:14px;justify-content:center}
+.resbox{display:flex;align-items:center;gap:12px;text-decoration:none;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:16px 18px;color:var(--ink)}
+.resbox span{font-size:24px}.resbox b{flex:1}.resbox i{font-style:normal;font-size:20px;color:var(--green-ink)}
+/* page gains */
+.gwall{columns:2 160px;column-gap:12px;margin:26px 0}
+@media(min-width:760px){.gwall{columns:4 200px}}
+.gcard{break-inside:avoid;margin:0 0 12px;background:#0b1d5c;border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(11,29,92,.2)}
+.gcard img{display:block;width:100%;height:auto;background:#fff}
+.gcard figcaption{padding:9px 11px 11px;color:#fff;font-size:12.5px;display:flex;flex-direction:column;gap:2px}
+.gcard figcaption b{font-size:13px;line-height:1.25}
+.gcard figcaption span{color:#c9d6f5}
+.gcard figcaption strong{color:#4ade80;font-size:14px}
+.gvip{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;background:linear-gradient(120deg,#0b1d5c,#13338a);border-radius:20px;padding:22px;color:#fff;margin-bottom:36px}
+.gvip b{display:block;font-size:20px;color:#fde68a}.gvip span{color:#c9d6f5}
+/* VIP : formules + paiement en premier, sur fond fonce */
+.vpaywrap{background:radial-gradient(520px 260px at 90% 0%,rgba(250,204,21,.18),transparent 62%),linear-gradient(160deg,#061024,#0b1d5c 60%,#13338a);border-radius:26px;padding:26px 16px 30px;margin:26px 0 8px;color:#fff}
+.vpaywrap h2,.vpaywrap h3{color:#fff;border:0}
+.vpaywrap .muted,.vpaywrap p.muted{color:#b9c6ea}
+.vpaywrap ol.steps li{background:rgba(255,255,255,.08);color:#e6ecff}
+.vpaywrap ol.steps li::before{background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205}
+.vpaywrap .vmomo,.vpaywrap .vcrypto{background:#fff;color:#0a0d0b;border-color:#facc15}
+.vpaywrap .vplan{border-color:rgba(255,255,255,.2)}
+.vpaywrap .vwarn{background:rgba(250,204,21,.12);color:#fde68a;border-color:rgba(250,204,21,.4)}
+.vpaywrap .vproof p{color:#b9c6ea}
+.vdown{display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;font-weight:800;font-size:18px;color:var(--ink);padding:22px 0 8px}
+.vdown i{font-style:normal;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;display:flex;align-items:center;justify-content:center;animation:vbounce 1.6s ease-in-out infinite}
+@keyframes vbounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
@@ -7866,3 +7970,21 @@ for _f in os.listdir(OUT):
         if _t != _t0:
             open(_p, "w", encoding="utf-8").write(_t); _n += 1
 print(f"  logos Telegram/WhatsApp mis dans {_n} page(s)")
+
+
+# ---------------------------------------------------------------- Allègement : le rappel « 18+ » n'est répété que dans le bas de page (pas dans chaque bloc)
+_EXEMPT = ("jeu-responsable", "responsible-gambling", "juego-responsable")
+_PAT = [re.compile(r'<div class="(?:note|warn)"[^>]*>(?:(?!</div>).){0,500}?18\+(?:(?!</div>).){0,500}</div>\s*', re.S),
+        re.compile(r'<p class="note"[^>]*>(?:(?!</p>).){0,500}?18\+(?:(?!</p>).){0,500}</p>\s*', re.S),
+        re.compile(r'<p style="[^"]*">(?:(?!</p>).){0,300}?18\+(?:(?!</p>).){0,300}</p>\s*', re.S)]
+_n18 = 0
+for _f in os.listdir(OUT):
+    if not _f.endswith(".html") or any(x in _f for x in _EXEMPT):
+        continue
+    _p = os.path.join(OUT, _f)
+    _t = _t0 = open(_p, encoding="utf-8").read()
+    for _rx in _PAT:
+        _t = _rx.sub(lambda m: m.group(0) if "©" in m.group(0) else "", _t)
+    if _t != _t0:
+        open(_p, "w", encoding="utf-8").write(_t); _n18 += 1
+print(f"  rappels 18+ allégés dans {_n18} page(s)")

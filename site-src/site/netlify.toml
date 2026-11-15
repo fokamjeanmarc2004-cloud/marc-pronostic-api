@@ -520,6 +520,18 @@
   force = true
 
 [[redirects]]
+  from = "/gains-ar"
+  to = "/gains-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gains"
+  to = "/gains.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/goldpari-codigo-promocional"
   to = "/goldpari-codigo-promocional.html"
   status = 301
@@ -2140,6 +2152,12 @@
   force = true
 
 [[redirects]]
+  from = "/tickets-ganadores"
+  to = "/tickets-ganadores.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/total-odd-even"
   to = "/total-odd-even.html"
   status = 301
@@ -2202,6 +2220,12 @@
 [[redirects]]
   from = "/which-bookmaker"
   to = "/which-bookmaker.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/winning-tickets"
+  to = "/winning-tickets.html"
   status = 301
   force = true
 
