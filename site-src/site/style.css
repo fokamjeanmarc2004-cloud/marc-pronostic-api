@@ -923,3 +923,69 @@ nav.top .logo img{box-shadow:0 0 0 2px rgba(250,204,21,.55),0 4px 14px rgba(0,0,
 .hero.hero-analyse{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse.jpg")!important;background-size:cover!important;background-position:center!important}
 .vhero.hero-vip{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip.jpg")!important;background-size:cover!important;background-position:center!important}
 .hero.hero-gains{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains.jpg")!important;background-size:cover!important;background-position:center!important}
+
+/* ==========================================================
+   PRO (nov. 2026) : bleu nuit + orange (comme le logo or), boutons nets,
+   cartes blanches simples. Dernier calque : remplace les reflets « verre liquide ».
+   CSS seulement : textes et liens inchangés (SEO).
+   ========================================================== */
+:root{--green:#f97316;--green-d:#ea580c;--green-ink:#c2410c;--green-soft:#fff4ec;
+  --blue1:#fb923c;--blue2:#ea580c;--navy:#0a1633;--tint:#f6f7fb;--line:#e6e9f2;
+  --shadow:0 1px 2px rgba(10,22,51,.05),0 6px 18px rgba(10,22,51,.06);
+  --shadow-lg:0 2px 6px rgba(10,22,51,.06),0 18px 40px rgba(10,22,51,.12)}
+::selection{background:rgba(249,115,22,.3)}
+:focus-visible{outline-color:#f97316}
+/* boutons : orange plein (action), blanc bordé (secondaire), sans reflet */
+.cta::after,.tgo::after,.bkjoin::after,.copybtn-mini::after,.toptg::after,.topffn::after,.chip::after,.social a::after,.tmore::after{display:none!important}
+.cta:not(.alt),.tgo,.bkjoin,.sb-go{background:linear-gradient(180deg,#fb8a2e,#ea580c)!important;border-color:#ea580c!important;color:#fff!important;box-shadow:0 6px 16px rgba(234,88,12,.24)!important}
+.cta:not(.alt):hover,.tgo:hover,.bkjoin:hover,.sb-go:hover{filter:brightness(1.06)}
+.cta.alt,.tmore{background:#fff!important;color:#0a1633!important;border:1.5px solid #d5dbea!important;box-shadow:0 1px 2px rgba(10,22,51,.06)!important}
+.cta.alt:hover,.tmore:hover{border-color:#0a1633!important}
+.copybtn-mini{background:#0a1633!important;color:#fff!important;border-color:#0a1633!important;box-shadow:none!important}
+.tgband .cta{background:linear-gradient(180deg,#fb8a2e,#ea580c)!important;border:0!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+/* cartes blanches, bord fin, ombre légère */
+.tcard,.mcard,.coupon-card,.vproof-card,.hubcard,.fact,.wcard{background:#fff!important;border:1px solid var(--line)!important;box-shadow:var(--shadow)!important}
+.bklist{background:#fff!important;box-shadow:var(--shadow)!important}
+.tcode,.bkcodebox,.bkrow .bkcode,.hubcard .cd,.sb-code{background:#fff7f0!important;border:1.5px dashed #f5a35c!important;box-shadow:none!important}
+img.blogo{background:#fff!important;padding:2px!important;box-shadow:0 0 0 1px var(--line)!important}
+.mpick{background:#fff7f0!important;border:1px solid #fbd5b5!important}
+.note{border-color:#fbd5b5!important}
+.kicker{background:#fff1e6!important;color:#c2410c!important;border:0!important;box-shadow:none!important}
+.vidtext .kicker,.tgband .kicker,.vhero .kicker{background:rgba(251,146,60,.16)!important;color:#fdba74!important;border:1px solid rgba(251,146,60,.35)!important}
+/* date des cartes de match : plus cachée par le badge « À venir » */
+.mcard .mmeta{padding-right:84px}
+[dir="rtl"] .mcard .mmeta{padding-right:0;padding-left:84px}
+/* zones sombres : bleu nuit + halo orange discret */
+.vidhero,.tgband{background:radial-gradient(520px 260px at 88% 0%,rgba(249,115,22,.22),transparent 65%),linear-gradient(135deg,#071027,#0a1633 55%,#13235a)!important}
+.gainsband .gb{background:linear-gradient(120deg,#0a1633,#13235a)!important;border-color:rgba(249,115,22,.45)!important}
+.vidlow{margin-top:56px}
+/* accueil : ballon du haut qui ne passe plus sur les cartes */
+@media(min-width:900px){.home-hero::after{top:110px!important;margin-top:0!important;width:210px!important;height:210px!important}}
+/* accueil : 6 bookmakers visibles, les autres au clic */
+.bkfold .bkrow:nth-child(n+7){display:none}
+.bkmorewrap{text-align:center;margin-top:16px}
+/* coupon du jour plus compact */
+@media(min-width:860px){.coupon-grid{grid-template-columns:minmax(0,400px) minmax(0,1fr)!important}}
+.coupon-card img,.coupon-card .couponimg{max-height:560px;object-fit:contain;background:#fff}
+/* animations sobres : léger appui au toucher, apparition en fondu */
+.cm-sq{animation:cm-press .22s ease!important}
+@keyframes cm-press{50%{transform:scale(.97)}}
+.cm-rip{display:none!important}
+.cm-wet{animation:cm-up .45s ease both!important}
+@keyframes cm-up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.cm-sq,.cm-wet{animation:none!important}}
+
+/* téléphone : les 3 codes du haut défilent de côté, cartes de match et pays plus compactes */
+@media(max-width:759px){
+ .topcodes{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:28px -20px 0;padding:4px 20px 14px;scrollbar-width:none}
+ .topcodes::-webkit-scrollbar{display:none}
+ .topcodes .tcard{flex:0 0 86%;scroll-snap-align:center}
+ .mcard{padding:14px 16px}
+ .mteams{font-size:18px;margin:6px 0 10px}
+ .mpick{padding:8px 12px}
+ .related{grid-template-columns:1fr 1fr!important}
+ .related a{padding:12px}
+}
+.bkrow .bkcode{border:0!important;background:none!important;padding:0 4px!important}
+.lvband+footer{margin-top:0!important}
+img.av{object-fit:cover;background:#0a1633;padding:0}

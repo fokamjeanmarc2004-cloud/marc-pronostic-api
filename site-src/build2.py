@@ -1752,7 +1752,7 @@ def youtube_banner(lang):
 VT_HEAD = """<script>(function(){try{var R=matchMedia('(prefers-reduced-motion: reduce)').matches,n=navigator,L=(n.deviceMemory&&n.deviceMemory<=4)||(n.connection&&n.connection.saveData)||(/Android/.test(n.userAgent)&&(n.hardwareConcurrency||8)<=4);if(L)document.documentElement.classList.add('cm-lite');if(R||L)return;var d=document.documentElement,k='cmvt',v=JSON.parse(sessionStorage.getItem(k)||'null');if(v&&Date.now()-v.t<4000){d.setAttribute('data-vt',v.a);d.style.setProperty('--vx',v.x+'%');d.style.setProperty('--vy',v.y+'%');if(v.a==='bulles')addEventListener('DOMContentLoaded',function(){cmBubbles(16,null)});}sessionStorage.removeItem(k);
 function mk(c,st){var e=document.createElement('i');e.className=c;e.setAttribute('aria-hidden','true');for(var p in st)e.style[p]=st[p];return e;}
 window.cmBubbles=function(n,pt){var w=document.createElement('div');w.className='cm-bubbles';w.setAttribute('aria-hidden','true');for(var i=0;i<n;i++){var z=10+Math.random()*(pt?22:46);var b=mk('cm-b',{width:z+'px',height:z+'px'});if(pt){b.style.left=pt.x+'px';b.style.top=pt.y+'px';var a=Math.random()*6.283,r=40+Math.random()*90;b.style.setProperty('--dx',Math.cos(a)*r+'px');b.style.setProperty('--dy',Math.sin(a)*r+'px');b.classList.add('burst');}else{b.style.left=(Math.random()*100)+'vw';b.style.animationDelay=(Math.random()*.35)+'s';b.style.animationDuration=(.9+Math.random()*.7)+'s';b.style.setProperty('--sw',(Math.random()*40-20)+'px');}w.appendChild(b);}document.body.appendChild(w);setTimeout(function(){w.remove()},1900);};
-addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta');if(!t||e.button||e.ctrlKey||e.metaKey||e.shiftKey)return;cmBubbles(10,{x:e.clientX,y:e.clientY});var h=t.getAttribute&&t.getAttribute('href');if(!h||h.charAt(0)==='#'||t.target==='_blank'||/^(mailto|tel|javascript):/.test(h))return;var u=new URL(h,location.href);if(u.origin!==location.origin)return;var A=['cercle','glisse','zoom','bulles'];sessionStorage.setItem(k,JSON.stringify({a:A[Math.floor(Math.random()*A.length)],x:Math.round(e.clientX/innerWidth*100),y:Math.round(e.clientY/innerHeight*100),t:Date.now()}));},true);var SQ='a.cta,.tgo,.tmore,.bkjoin,.copybtn-mini,.toptg,.topffn,.chip,.social a,.langlink,.navpanel-links a,button';addEventListener('pointerdown',function(e){var t=e.target.closest&&e.target.closest(SQ);if(!t)return;var r=document.createElement('i');r.className='cm-rip';r.setAttribute('aria-hidden','true');r.style.left=e.clientX+'px';r.style.top=e.clientY+'px';document.body.appendChild(r);setTimeout(function(){r.remove()},750);t.classList.remove('cm-sq');void t.offsetWidth;t.classList.add('cm-sq');setTimeout(function(){t.classList.remove('cm-sq')},520);if(navigator.vibrate&&e.pointerType==='touch')try{navigator.vibrate(8)}catch(_){}},{passive:true});addEventListener('DOMContentLoaded',function(){if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('cm-wet');io.unobserve(x.target);}})},{threshold:.12});document.querySelectorAll('.tcard,.mcard,.coupon-card,.vproof-card,.hubcard,.fact,.tgband,.bkrow').forEach(function(el){var b=el.getBoundingClientRect();if(b.top>innerHeight)io.observe(el);});});}catch(_){}})();</script>"""
+addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta');if(!t||e.button||e.ctrlKey||e.metaKey||e.shiftKey)return;var h=t.getAttribute&&t.getAttribute('href');if(!h||h.charAt(0)==='#'||t.target==='_blank'||/^(mailto|tel|javascript):/.test(h))return;var u=new URL(h,location.href);if(u.origin!==location.origin)return;var A=['glisse'];sessionStorage.setItem(k,JSON.stringify({a:A[Math.floor(Math.random()*A.length)],x:Math.round(e.clientX/innerWidth*100),y:Math.round(e.clientY/innerHeight*100),t:Date.now()}));},true);var SQ='a.cta,.tgo,.tmore,.bkjoin,.copybtn-mini,.toptg,.topffn,.chip,.social a,.langlink,.navpanel-links a,button';addEventListener('pointerdown',function(e){var t=e.target.closest&&e.target.closest(SQ);if(!t)return;var r=document.createElement('i');r.className='cm-rip';r.setAttribute('aria-hidden','true');r.style.left=e.clientX+'px';r.style.top=e.clientY+'px';document.body.appendChild(r);setTimeout(function(){r.remove()},750);t.classList.remove('cm-sq');void t.offsetWidth;t.classList.add('cm-sq');setTimeout(function(){t.classList.remove('cm-sq')},520);if(navigator.vibrate&&e.pointerType==='touch')try{navigator.vibrate(8)}catch(_){}},{passive:true});addEventListener('DOMContentLoaded',function(){if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('cm-wet');io.unobserve(x.target);}})},{threshold:.12});document.querySelectorAll('.tcard,.mcard,.coupon-card,.vproof-card,.hubcard,.fact,.tgband,.bkrow').forEach(function(el){var b=el.getBoundingClientRect();if(b.top>innerHeight)io.observe(el);});});}catch(_){}})();</script>"""
 
 CSS += r"""
 /* ---------- Animations entre les pages (decoratif, desactive si « reduire les animations ») ---------- */
@@ -1909,7 +1909,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11m"><script>
+<link rel="stylesheet" href="style.css?v=2026-11n"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -2505,7 +2505,7 @@ def bookmaker_page(b):
 {BK_GUIDE_FR[slug](b) if slug in BK_GUIDE_FR else ""}
 <section>
 <h2><span class="num">04</span> Pourquoi me faire confiance ?</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <p style="margin-top:16px">Je publie des analyses foot pour l'Afrique depuis plusieurs années. J'utilise {name} moi-même : j'ai testé l'inscription, les dépôts et les retraits avec le code promo {code} avant de le partager.</p>
 <div class="social">{social_html()}</div>
 </section>
@@ -2627,6 +2627,16 @@ def bk_logo(b, cls="blogo", size=40):
     col = BRAND.get(b["slug"], "#0a0d0b")
     return f'<span class="{cls}" style="background:{col};color:{_logo_txt(col)}" aria-hidden="true">{b["name"][:2].upper()}</span>'
 
+BKMORE_L = {"fr": "Voir les {n} bookmakers", "en": "See all {n} bookmakers", "es": "Ver los {n} bookmakers", "ar": "عرض كل المواقع ({n})"}
+
+def home_matchs_html(n=6):
+    """Accueil : les prochains matchs (le plus proche d'abord), complétés par les derniers résultats."""
+    lim = datetime.datetime.utcnow() + datetime.timedelta(hours=1) - datetime.timedelta(hours=2)   # heure de Douala - 2 h
+    nxt = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"] >= lim], key=lambda m: m["dt"])[:n]
+    ids = {id(m) for m in nxt}
+    items = nxt + [m for m in MATCHS if id(m) not in ids][:n - len(nxt)]
+    return f'<div class="mgrid">{"".join(match_card(m) for m in items)}</div>' if items else ""
+
 def home_page(lang, title, desc, canonical, nav, alternates, footer):
     T = HOME_T[lang]
     maj = {"fr": MAJ_FR, "en": MAJ_EN, "es": MAJ_ES, "ar": MAJ_AR}[lang]
@@ -2673,6 +2683,9 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
         _tgt = {"fr": "bilan.html", "en": "track-record.html"}.get(lang, U["res"])
         bilan = f'<a class="reslink" href="{_tgt}"><span>📊</span><b>{_pc} %</b> {_short}<i>→</i></a>'
     countries = ""
+    video_home = video_block(lang).replace(' fetchpriority="high">', ' loading="lazy" decoding="async">').replace('class="vidhero"', 'class="vidhero vidhome"')
+    _more = (f'<div class="bkmorewrap"><button type="button" class="cta alt" onclick="document.getElementById(\'bklist\').classList.remove(\'bkfold\');this.parentNode.remove()">'
+             f'{BKMORE_L[lang].replace("{n}", str(len(BOOKMAKERS)))}</button></div>') if len(BOOKMAKERS) > 6 else ""
     matchs_home = ""
     compare_home = ""
     coupons_home = ""
@@ -2685,9 +2698,9 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
         matchs_home += f'<section class="hsec" id="combine"><div class="wrap">{combine_html(wrap=False)}</div></section>'
     if lang == "fr" and MATCHS:
         matchs_home += (f'<section class="hsec" id="pronostics"><div class="wrap">'
-                       f'<div class="hsec-head"><div><p class="kicker">Pronostics</p><h2>Les derniers matchs analysés</h2>'
-                       f'<p>Mon pronostic, la cote et l\'analyse pour chaque grand match.</p></div><a class="cta alt" href="pronostics.html">Tous les pronostics</a></div>'
-                       f'{matchs_list_html(6)}</div></section>')
+                       f'<div class="hsec-head"><div><p class="kicker">À jouer</p><h2>Mes prochains pronostics</h2>'
+                       f'<p>Le pronostic et la cote de chaque match. Clique pour lire l\'analyse.</p></div><a class="cta alt" href="pronostics.html">Tous les pronostics</a></div>'
+                       f'{home_matchs_html(6)}</div></section>')
     if lang == "fr":
         compare_home = (f'<section class="hsec" id="comparateur"><div class="wrap">'
                         f'<div class="hsec-head"><div><p class="kicker">En 10 secondes</p><h2>Quel bookmaker pour toi ?</h2>'
@@ -2703,7 +2716,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
         countries = (f'<section class="hsec" id="pays"><div class="wrap">'
                      f'<div class="hsec-head"><div><p class="kicker">{T["p_kick"]}</p><h2>{T["p_h2"]}</h2><p>{T["p_p"]}</p></div></div>'
                      f'<div class="related">{country_index_cards()}</div></div></section>')
-    return head(title, desc, canonical, nav=nav, lang=lang, alternates=alternates, show_youtube=True) + f"""
+    return head(title, desc, canonical, nav=nav, lang=lang, alternates=alternates, show_youtube=False) + f"""
 <header class="home-hero hero-photo hero-accueil"><div class="wrap">
 <p class="eyebrow">{T["eyebrow"].replace("{maj}", maj)}</p>
 <h1>{T["h1"]}</h1>
@@ -2713,9 +2726,9 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 <div class="topcodes">{top}</div>
 </div></header>
 
-{coupons_home}
+{matchs_home}
 
-{compare_home}
+{coupons_home}
 
 <section class="hsec" id="coupon-du-jour"><div class="wrap">
 <div class="hsec-head"><div><p class="kicker">{T["c_kick"]}</p><h2>{T["c_h2"]}</h2></div></div>
@@ -2726,14 +2739,17 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 </div>
 </div></section>
 
-<section class="hsec" id="bookmakers"><div class="wrap">
-<div class="hsec-head"><div><p class="kicker">{T["b_kick"]}</p><h2>{T["b_h2"]}</h2></div></div>
-<div class="bklist">{rows}</div>
-</div></section>
-
 {gains_band(lang)}
 
-{matchs_home}
+{video_home}
+
+<section class="hsec" id="bookmakers"><div class="wrap">
+<div class="hsec-head"><div><p class="kicker">{T["b_kick"]}</p><h2>{T["b_h2"]}</h2></div></div>
+<div class="bklist{" bkfold" if _more else ""}" id="bklist">{rows}</div>
+{_more}
+</div></section>
+
+{compare_home}
 
 {countries}
 
@@ -2741,7 +2757,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 <div><p class="kicker">{T["a_kick"]}</p><h2>Cousin Marc</h2>
 <p>{T["a_p"]}</p>
 <div class="btnrow" style="justify-content:flex-start"><a class="cta alt" href="{U["prono"]}">{T["a_l1"]}</a><a class="cta alt" href="{U["about"]}">{T["a_l2"]}</a></div></div>
-<div><div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">{T["a_ro"]}</div></div></div>
+<div><div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">{T["a_ro"]}</div></div></div>
 <div class="social">{social_html()}</div></div>
 </div></section>
 
@@ -2864,7 +2880,7 @@ def apropos_page():
 <div class="btnrow"><a class="cta" href="https://t.me/marc_prono" rel="nofollow">✈️ Pronostics Telegram</a><a class="cta alt" href="https://whatsapp.com/channel/0029VbBBh2u9xVJnAVMu833h" rel="nofollow">💬 WhatsApp</a></div>
 </div></header>
 <main class="wrap legalbody">
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <p>Je suis Cousin Marc, pronostiqueur passionné de football. Depuis plusieurs années, j'accompagne une large communauté de parieurs à travers l'Afrique francophone avec des analyses de matchs, des conseils, et une sélection de bons plans bookmakers.</p>
 <h2>Ma mission</h2>
 <p>T'aider à parier de façon plus informée : comprendre les cotes, choisir les bonnes plateformes, profiter des meilleurs bonus de bienvenue, et le faire de manière responsable.</p>
@@ -3317,7 +3333,7 @@ def article_page(a):
 {a['body']}
 <section style="border-bottom:none">
 <h3>À propos de l'auteur</h3>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <div class="social" style="margin-top:16px">{social_html()}</div>
 </section>
 {article_cta(a)}
@@ -3932,7 +3948,7 @@ def bookmaker_page_en(b):
 {BK_GUIDE_EN[slug](b) if slug in BK_GUIDE_EN else ""}
 <section>
 <h2><span class="num">04</span> Why trust me?</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
 <p style="margin-top:16px">I have been sharing football analysis for Africa for several years. I use {name} myself: I tested registration, deposits and withdrawals with the promo code {code} before sharing it.</p>
 </section>
 <section>
@@ -4076,7 +4092,7 @@ def bookmaker_page_es(b):
 </section>
 <section>
 <h2><span class="num">04</span> ¿Por qué confiar en mí?</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronosticador de fútbol · comunidad de más de 95.000</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Pronosticador de fútbol · comunidad de más de 95.000</div></div></div>
 <p style="margin-top:16px">Llevo varios años compartiendo análisis de fútbol. Yo mismo uso {name}: probé el registro, los depósitos y los retiros con el código {code} antes de compartirlo.</p>
 </section>
 <section>
@@ -4150,7 +4166,7 @@ def about_page_en():
 <h1>About <span class="hl">Cousin Marc</span></h1>
 </div></header>
 <main class="wrap legalbody">
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
 <p>I'm Cousin Marc, a football tipster who's passionate about the game. For several years, I have been guiding a large community of bettors across Africa with match analysis, tips, and a selection of bookmaker deals.</p>
 <h2>My mission</h2>
 <p>To help you bet in a more informed way: understand the odds, choose the right platforms, take advantage of the best welcome bonuses, and do it responsibly.</p>
@@ -4297,7 +4313,7 @@ def article_page_en(a):
 {a['body']}
 <section style="border-bottom:none">
 <h3>About the author</h3>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Football tipster · 100,000+ community</div></div></div>
 <div class="social" style="margin-top:16px">{social_html()}</div>
 </section>
 {article_cta_en(a)}
@@ -4371,7 +4387,7 @@ def about_page_es():
 <h1>Acerca de <span class="hl">Cousin Marc</span></h1>
 </div></header>
 <main class="wrap legalbody">
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronosticador de fútbol · comunidad de más de 95.000</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Pronosticador de fútbol · comunidad de más de 95.000</div></div></div>
 <p>Soy Cousin Marc, pronosticador apasionado del fútbol. Desde hace varios años, acompaño a una amplia comunidad de apostadores con análisis de partidos, consejos y una selección de ofertas de casas de apuestas.</p>
 <h2>Mi misión</h2>
 <p>Ayudarte a apostar de forma más informada: entender las cuotas, elegir las plataformas adecuadas, aprovechar los mejores bonos de bienvenida y hacerlo de manera responsable.</p>
@@ -4484,7 +4500,7 @@ def article_page_es(a):
 {a['body']}
 <section style="border-bottom:none">
 <h3>Sobre el autor</h3>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronosticador de fútbol · comunidad de más de 95.000</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Pronosticador de fútbol · comunidad de más de 95.000</div></div></div>
 <div class="social" style="margin-top:16px">{social_html()}</div>
 </section>
 {article_cta_es(a)}
@@ -4718,7 +4734,7 @@ def bookmaker_page_ar(b):
 </section>
 <section>
 <h2><span class="num">04</span> لماذا تثق بي؟</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
 <p style="margin-top:16px">أشارك تحليلات كرة القدم منذ سنوات. أستخدم {name} بنفسي: جرّبت التسجيل والإيداع والسحب بالرمز {code} قبل مشاركته.</p>
 </section>
 <section>
@@ -4791,7 +4807,7 @@ def about_page_ar():
 <h1>من نحن · <span class="hl">Cousin Marc</span></h1>
 </div></header>
 <main class="wrap legalbody">
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
 <p>أنا Cousin Marc، خبير توقعات شغوف بكرة القدم. منذ سنوات، أرافق مجتمعًا واسعًا من المراهنين بتحليلات المباريات والنصائح ومجموعة مختارة من عروض المراهنات.</p>
 <h2>مهمتي</h2>
 <p>مساعدتك على المراهنة بطريقة أكثر وعيًا: فهم الاحتمالات، اختيار المنصات المناسبة، الاستفادة من أفضل مكافآت الترحيب، والقيام بذلك بمسؤولية.</p>
@@ -4904,7 +4920,7 @@ def article_page_ar(a):
 {a['body']}
 <section style="border-bottom:none">
 <h3>عن الكاتب</h3>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">خبير توقعات كرة القدم · مجتمع من أكثر من 100,000</div></div></div>
 <div class="social" style="margin-top:16px">{social_html()}</div>
 </section>
 {article_cta_ar(a)}
@@ -5799,7 +5815,7 @@ def country_hub_page(c):
 </section>
 <section>
 <h2><span class="num">05</span> Pourquoi me faire confiance ?</h2>
-<div class="author"><div class="av">CM</div><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
+<div class="author"><img class="av" src="logo-cm.png?v=3" alt="Cousin Marc" width="52" height="52" loading="lazy"><div><div class="nm">Cousin Marc</div><div class="ro">Pronostiqueur foot · communauté de 100 000+ abonnés</div></div></div>
 <p style="margin-top:16px">Je teste personnellement chaque plateforme (inscription, dépôt Mobile Money, retrait) avant de la recommander. Une grande partie de ma communauté parie depuis {c['name']}.</p>
 <div class="social">{social_html()}</div>
 </section>
@@ -8161,6 +8177,75 @@ CSS += r'''
 .vhero.hero-vip{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip.jpg")!important;background-size:cover!important;background-position:center!important}
 .hero.hero-gains{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains.jpg")!important;background-size:cover!important;background-position:center!important}
 '''
+
+CSS += r'''
+/* ==========================================================
+   PRO (nov. 2026) : bleu nuit + orange (comme le logo or), boutons nets,
+   cartes blanches simples. Dernier calque : remplace les reflets « verre liquide ».
+   CSS seulement : textes et liens inchangés (SEO).
+   ========================================================== */
+:root{--green:#f97316;--green-d:#ea580c;--green-ink:#c2410c;--green-soft:#fff4ec;
+  --blue1:#fb923c;--blue2:#ea580c;--navy:#0a1633;--tint:#f6f7fb;--line:#e6e9f2;
+  --shadow:0 1px 2px rgba(10,22,51,.05),0 6px 18px rgba(10,22,51,.06);
+  --shadow-lg:0 2px 6px rgba(10,22,51,.06),0 18px 40px rgba(10,22,51,.12)}
+::selection{background:rgba(249,115,22,.3)}
+:focus-visible{outline-color:#f97316}
+/* boutons : orange plein (action), blanc bordé (secondaire), sans reflet */
+.cta::after,.tgo::after,.bkjoin::after,.copybtn-mini::after,.toptg::after,.topffn::after,.chip::after,.social a::after,.tmore::after{display:none!important}
+.cta:not(.alt),.tgo,.bkjoin,.sb-go{background:linear-gradient(180deg,#fb8a2e,#ea580c)!important;border-color:#ea580c!important;color:#fff!important;box-shadow:0 6px 16px rgba(234,88,12,.24)!important}
+.cta:not(.alt):hover,.tgo:hover,.bkjoin:hover,.sb-go:hover{filter:brightness(1.06)}
+.cta.alt,.tmore{background:#fff!important;color:#0a1633!important;border:1.5px solid #d5dbea!important;box-shadow:0 1px 2px rgba(10,22,51,.06)!important}
+.cta.alt:hover,.tmore:hover{border-color:#0a1633!important}
+.copybtn-mini{background:#0a1633!important;color:#fff!important;border-color:#0a1633!important;box-shadow:none!important}
+.tgband .cta{background:linear-gradient(180deg,#fb8a2e,#ea580c)!important;border:0!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+/* cartes blanches, bord fin, ombre légère */
+.tcard,.mcard,.coupon-card,.vproof-card,.hubcard,.fact,.wcard{background:#fff!important;border:1px solid var(--line)!important;box-shadow:var(--shadow)!important}
+.bklist{background:#fff!important;box-shadow:var(--shadow)!important}
+.tcode,.bkcodebox,.bkrow .bkcode,.hubcard .cd,.sb-code{background:#fff7f0!important;border:1.5px dashed #f5a35c!important;box-shadow:none!important}
+img.blogo{background:#fff!important;padding:2px!important;box-shadow:0 0 0 1px var(--line)!important}
+.mpick{background:#fff7f0!important;border:1px solid #fbd5b5!important}
+.note{border-color:#fbd5b5!important}
+.kicker{background:#fff1e6!important;color:#c2410c!important;border:0!important;box-shadow:none!important}
+.vidtext .kicker,.tgband .kicker,.vhero .kicker{background:rgba(251,146,60,.16)!important;color:#fdba74!important;border:1px solid rgba(251,146,60,.35)!important}
+/* date des cartes de match : plus cachée par le badge « À venir » */
+.mcard .mmeta{padding-right:84px}
+[dir="rtl"] .mcard .mmeta{padding-right:0;padding-left:84px}
+/* zones sombres : bleu nuit + halo orange discret */
+.vidhero,.tgband{background:radial-gradient(520px 260px at 88% 0%,rgba(249,115,22,.22),transparent 65%),linear-gradient(135deg,#071027,#0a1633 55%,#13235a)!important}
+.gainsband .gb{background:linear-gradient(120deg,#0a1633,#13235a)!important;border-color:rgba(249,115,22,.45)!important}
+.vidlow{margin-top:56px}
+/* accueil : ballon du haut qui ne passe plus sur les cartes */
+@media(min-width:900px){.home-hero::after{top:110px!important;margin-top:0!important;width:210px!important;height:210px!important}}
+/* accueil : 6 bookmakers visibles, les autres au clic */
+.bkfold .bkrow:nth-child(n+7){display:none}
+.bkmorewrap{text-align:center;margin-top:16px}
+/* coupon du jour plus compact */
+@media(min-width:860px){.coupon-grid{grid-template-columns:minmax(0,400px) minmax(0,1fr)!important}}
+.coupon-card img,.coupon-card .couponimg{max-height:560px;object-fit:contain;background:#fff}
+/* animations sobres : léger appui au toucher, apparition en fondu */
+.cm-sq{animation:cm-press .22s ease!important}
+@keyframes cm-press{50%{transform:scale(.97)}}
+.cm-rip{display:none!important}
+.cm-wet{animation:cm-up .45s ease both!important}
+@keyframes cm-up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.cm-sq,.cm-wet{animation:none!important}}
+'''
+CSS += r'''
+/* téléphone : les 3 codes du haut défilent de côté, cartes de match et pays plus compactes */
+@media(max-width:759px){
+ .topcodes{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:28px -20px 0;padding:4px 20px 14px;scrollbar-width:none}
+ .topcodes::-webkit-scrollbar{display:none}
+ .topcodes .tcard{flex:0 0 86%;scroll-snap-align:center}
+ .mcard{padding:14px 16px}
+ .mteams{font-size:18px;margin:6px 0 10px}
+ .mpick{padding:8px 12px}
+ .related{grid-template-columns:1fr 1fr!important}
+ .related a{padding:12px}
+}
+.bkrow .bkcode{border:0!important;background:none!important;padding:0 4px!important}
+.lvband+footer{margin-top:0!important}
+img.av{object-fit:cover;background:#0a1633;padding:0}
+'''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
 open(os.path.join(OUT,"google5d6ef3eb30a3bfc3.html"),"w",encoding="utf-8").write("google-site-verification: google5d6ef3eb30a3bfc3.html\n"); written.append("google5d6ef3eb30a3bfc3.html")
@@ -8201,3 +8286,29 @@ for _f in os.listdir(OUT):
     if _t != _t0:
         open(_p, "w", encoding="utf-8").write(_t); _n18 += 1
 print(f"  rappels 18+ allégés dans {_n18} page(s)")
+
+
+# ---------------------------------------------------------------- Rangement : la vidéo « Regarde la vidéo avant de t'inscrire » passe en bas des pages
+# (juste avant le bandeau Livres) pour que chaque page montre d'abord son contenu. L'accueil la place lui-même (après les gains).
+_VB = [video_block(l) for l in ("fr", "en", "es", "ar")]
+_nv = 0
+for _f in os.listdir(OUT):
+    if not _f.endswith(".html"):
+        continue
+    _p = os.path.join(OUT, _f)
+    _t = _t0 = open(_p, encoding="utf-8").read()
+    _hp = [x for x in (_t.find("<header"), _t.find("<main")) if x >= 0]
+    for _vb in _VB:
+        _pos = _t.find(_vb)
+        if _pos >= 0 and _hp and _pos < min(_hp):   # vidéo tout en haut (avant le contenu de la page)
+            _low = _vb.replace(' fetchpriority="high">', ' loading="lazy" decoding="async">').replace('class="vidhero"', 'class="vidhero vidlow"')
+            _t2 = _t[:_pos] + _t[_pos + len(_vb):]
+            _i = _t2.find('<aside class="lvband')
+            if _i < 0:
+                _i = _t2.find("<footer")
+            if _i >= 0:
+                _t = _t2[:_i] + _low + _t2[_i:]
+            break
+    if _t != _t0:
+        open(_p, "w", encoding="utf-8").write(_t); _nv += 1
+print(f"  vidéo placée en bas de {_nv} page(s)")
