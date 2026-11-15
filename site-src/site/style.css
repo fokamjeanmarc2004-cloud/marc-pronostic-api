@@ -64,6 +64,9 @@ nav.top .logo b{color:var(--green-ink)}
 .toplinks a{display:block;text-decoration:none;font-weight:600;font-size:14.5px;color:var(--ink2);padding:8px 12px;border-radius:999px;transition:background .15s,color .15s}
 .toplinks a:hover{background:var(--soft);color:var(--ink)}
 .toplinks a.vip{background:var(--ink);color:#fff;padding:8px 16px}
+.topcart{position:relative;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--soft);text-decoration:none;font-size:19px}
+.topcart[hidden]{display:none}
+.topcart span{position:absolute;top:-4px;right:-4px;min-width:18px;height:18px;border-radius:9px;background:#e0a800;color:#0b1a3a;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
 .toplinks a.vip:hover{background:#000}
 .toplang{display:none;gap:2px;list-style:none;margin-left:6px;padding-left:10px;border-left:1px solid var(--line)}
 .toplang a{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--muted);padding:6px 7px;border-radius:8px}

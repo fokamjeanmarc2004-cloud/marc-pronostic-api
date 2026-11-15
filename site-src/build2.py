@@ -875,6 +875,9 @@ nav.top .logo b{color:var(--green-ink)}
 .toplinks a{display:block;text-decoration:none;font-weight:600;font-size:14.5px;color:var(--ink2);padding:8px 12px;border-radius:999px;transition:background .15s,color .15s}
 .toplinks a:hover{background:var(--soft);color:var(--ink)}
 .toplinks a.vip{background:var(--ink);color:#fff;padding:8px 16px}
+.topcart{position:relative;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--soft);text-decoration:none;font-size:19px}
+.topcart[hidden]{display:none}
+.topcart span{position:absolute;top:-4px;right:-4px;min-width:18px;height:18px;border-radius:9px;background:#e0a800;color:#0b1a3a;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
 .toplinks a.vip:hover{background:#000}
 .toplang{display:none;gap:2px;list-style:none;margin-left:6px;padding-left:10px;border-left:1px solid var(--line)}
 .toplang a{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--muted);padding:6px 7px;border-radius:8px}
@@ -1529,12 +1532,15 @@ def ticker_html(lang):
     one = "".join(f'<a href="{h}"{ext(h)}>{t}</a>' for t, h in TICKER_L[lang])
     return f'<div class="ticker" aria-label="Infos"><div class="ticker-track">{one}{one}</div></div>'
 
+TOPCART_SCRIPT = "<script>(function(){try{var c=JSON.parse(sessionStorage.getItem('cm_cart')||'[]'),a=document.getElementById('topcart');if(a&&c.length){a.hidden=false;a.querySelector('span').textContent=c.length}}catch(e){}})()</script>"
+
 def topnav(lang, langs_html, top_langs):
     links = "".join(f'<li><a href="{h}">{t}</a></li>' for t,h in TOPLINKS_L[lang])
     links += f'<li><a class="vip" href="{VIP_SLUG[lang]}">VIP</a></li>'
     return (ticker_html(lang) + f'<nav class="top"><div class="wrap">'
             f'<a class="logo" href="{HOME_L[lang]}" translate="no"><img src="logo-cm.png?v=2" width="34" height="34" alt="" style="width:34px;height:34px;border-radius:50%;flex:none">cousin<b>marc</b></a>'
             f'<div class="navright"><ul class="toplinks">{links}</ul><ul class="toplang">{top_langs}</ul>'
+            f'<a class="topcart" id="topcart" href="livres.html" hidden aria-label="Panier">🛒<span></span></a>{TOPCART_SCRIPT}'
             f'<button type="button" class="topffn" onclick="copyCode(this,\'FFN\')" aria-label="{ {'en':'Copy promo code FFN','es':'Copiar el código promocional FFN','ar':'نسخ الرمز الترويجي FFN'}.get(lang,'Copier le code promo FFN') }">FFN 📋</button>'
             f'<a class="toptg" href="https://t.me/marc_prono" target="_blank" rel="nofollow" aria-label="Telegram Cousin Marc"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>{burger_html()}</div>'
             f'</div></nav>\n{navpanel_html(lang, langs_html)}')
@@ -1882,7 +1888,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11c"><script>
+<link rel="stylesheet" href="style.css?v=2026-11d"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -7499,6 +7505,11 @@ for _c in COUNTRIES:
         _target = f'{_s}.html'
         _retired_redirects += f'\n[[redirects]]\n  from = "/{_old}"\n  to = "/{_target}"\n  status = 301\n  force = true\n'
         _retired_redirects += f'\n[[redirects]]\n  from = "/{_old}.html"\n  to = "/{_target}"\n  status = 301\n  force = true\n'
+for _old, _new in (("pronostic-cameroun-namibie-2026-11-11", "pronostic-cameroun-namibie-2026-11-12.html"),
+                   ("prediction-cameroon-namibia-2026-11-11", "prediction-cameroon-namibia-2026-11-12.html"),
+                   ("pronostic-cameroun-namibie-2026-11-11-ar", "pronostic-cameroun-namibie-2026-11-12-ar.html")):
+    for _f in (_old, _old + ".html"):
+        _retired_redirects += f'\n[[redirects]]\n  from = "/{_f}"\n  to = "/{_new}"\n  status = 301\n  force = true\n'
 # Anciennes affiches PNG (2 Mo) -> JPG legers : garde valides les liens deja partages
 _affiche_redirects = "\n# Affiches : anciens PNG remplaces par des JPG legers (< 300 Ko)\n"
 for _fn in sorted(AFFICHE_DIMS):

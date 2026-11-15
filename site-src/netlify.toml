@@ -2726,6 +2726,42 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/pronostic-cameroun-namibie-2026-11-11"
+  to = "/pronostic-cameroun-namibie-2026-11-12.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-cameroun-namibie-2026-11-11.html"
+  to = "/pronostic-cameroun-namibie-2026-11-12.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-cameroon-namibia-2026-11-11"
+  to = "/prediction-cameroon-namibia-2026-11-12.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-cameroon-namibia-2026-11-11.html"
+  to = "/prediction-cameroon-namibia-2026-11-12.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-cameroun-namibie-2026-11-11-ar"
+  to = "/pronostic-cameroun-namibie-2026-11-12-ar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-cameroun-namibie-2026-11-11-ar.html"
+  to = "/pronostic-cameroun-namibie-2026-11-12-ar.html"
+  status = 301
+  force = true
+
 # Affiches : anciens PNG remplaces par des JPG legers (< 300 Ko)
 
 [[redirects]]
