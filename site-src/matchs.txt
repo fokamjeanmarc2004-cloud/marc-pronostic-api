@@ -2391,6 +2391,7 @@ pronostic_es: Gana Zverev
 pronostic_ar: فوز زفيريف
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 22-78
 score: 0-2
 analyse_en: Start Sunday 15 November, not before 2pm in Douala, Lagos and Turin (1pm in Accra and Dakar). ATP Finals in Turin, John McEnroe Group, indoor hard court.
@@ -2399,12 +2400,14 @@ Rafael Jodar is the 8th and last qualified player: it is his first match at this
 With Sinner out injured, Zverev is one of the two big favourites for the title with Alcaraz.
 My pick: Zverev to win. Bigger odds: Zverev wins 2 sets to 0.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Rafael Jodar 0-2 Alexander Zverev (4-6, 4-6). Prediction won ✅.
 analyse: Début du match dimanche 15 novembre, pas avant 14h à Douala et à Turin (13h à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe John McEnroe, sur dur en salle.
 Alexander Zverev est numéro 1 mondial et tête de série numéro 1 du tournoi.
 Rafael Jodar est le 8e et dernier qualifié : c'est son premier match à ce niveau, contre le meilleur joueur de la saison.
 Sans Sinner, blessé, Zverev est l'un des deux grands favoris pour le titre avec Alcaraz.
 Mon choix : victoire de Zverev. Option plus grosse cote : Zverev gagne 2 sets à 0.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Rafael Jodar 0-2 Alexander Zverev (4-6, 4-6). Pronostic gagné ✅.
 ---
 date: 2026-11-15 20:30
 competition: Tennis
@@ -3045,18 +3048,21 @@ pronostic_en: Tenerife to win
 pronostic_es: Gana Tenerife
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 58-27-15
 analyse_en: Kick-off Sunday 15 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar.
 Tenerife host Ceuta in the Segunda División (Spanish second tier).
 Ceuta have won just one game in 13. Tenerife draw a lot (6), so I stay careful about the score.
 My pick: Tenerife to win. Bigger odds: Tenerife win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Tenerife 2-0 Ceuta. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar.
 Tenerife reçoit Ceuta en Liga 2 (Segunda División).
 Classement : Tenerife 14e, 15 pts, 3 victoires, 6 nuls, 3 défaites ; Ceuta 22e et dernier, 5 pts, 1 victoire, 2 nuls, 10 défaites.
 Ceuta n'a gagné qu'un match sur 13 et en a perdu 10. Tenerife fait beaucoup de nuls (6), donc je reste prudent sur le score.
 Mon choix : victoire de Tenerife. Option plus grosse cote : Tenerife gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Tenerife 2-0 Ceuta. Pronostic gagné ✅.
 ---
 date: 2026-11-15 16:00
 competition: Liga 2
@@ -3067,18 +3073,21 @@ pronostic_en: Granada or draw
 pronostic_es: Granada o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 45-28-27
 analyse_en: Kick-off Sunday 15 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar.
 Granada host Las Palmas in the Segunda División (Spanish second tier).
 Two teams close in the table: a very open game. Granada have the better record of the two, so I take the double chance to limit the risk.
 My pick: Granada or draw. Bigger odds: Granada don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Granada 1-0 Las Palmas. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar.
 Granada reçoit Las Palmas en Liga 2 (Segunda División).
 Classement : Granada 7e, 23 pts, 7 victoires, 2 nuls, 3 défaites ; Las Palmas 11e, 20 pts, 6 victoires, 2 nuls, 5 défaites.
 Deux équipes proches au classement : un match très ouvert. Granada a un bilan légèrement meilleur (23 points contre 20), donc je choisis la double chance pour limiter le risque.
 Mon choix : Granada ou nul. Option plus grosse cote : Granada ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Granada 1-0 Las Palmas. Pronostic gagné ✅.
 ---
 date: 2026-11-15 18:00
 competition: Liga 2
@@ -3089,18 +3098,21 @@ pronostic_en: Eibar to win
 pronostic_es: Gana Eibar
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 62-24-14
 analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
 Eibar host Cádiz in the Segunda División (Spanish second tier).
 Eibar are high in the table (6th) while Cádiz are 20th with only 2 wins. Bookmakers also make Eibar favourites.
 My pick: Eibar to win. Bigger odds: Eibar win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Eibar 1-1 Cádiz. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
 Eibar reçoit Cádiz en Liga 2 (Segunda División).
 Classement : Eibar 6e, 23 pts, 7 victoires, 2 nuls, 3 défaites ; Cádiz 20e, 10 pts, 2 victoires, 4 nuls, 7 défaites.
 Eibar est dans le haut du classement (6e) et Cadix est 20e avec seulement 2 victoires. Les bookmakers donnent aussi Eibar favori.
 Mon choix : victoire d'Eibar. Option plus grosse cote : Eibar gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Eibar 1-1 Cádiz. Pronostic perdu ❌.
 ---
 date: 2026-11-15 18:00
 competition: Liga 2
@@ -3111,18 +3123,21 @@ pronostic_en: Sabadell or draw
 pronostic_es: Sabadell o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 30-32-38
 analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
 Eldense host Sabadell in the Segunda División (Spanish second tier).
 Sabadell are hard to beat: 6 draws and only 3 defeats in 13 games. Eldense have lost 7 of their 13. I take the double chance.
 My pick: Sabadell or draw. Bigger odds: Sabadell don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Eldense 2-0 CD Sabadell. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
 Eldense reçoit Sabadell en Liga 2 (Segunda División).
 Classement : Eldense 16e, 14 pts, 4 victoires, 2 nuls, 7 défaites ; Sabadell 13e, 18 pts, 4 victoires, 6 nuls, 3 défaites.
 Sabadell est une équipe difficile à battre : 6 nuls et seulement 3 défaites en 13 matchs. Eldense a perdu 7 de ses 13 matchs. Je choisis la double chance.
 Mon choix : Sabadell ou nul. Option plus grosse cote : Sabadell ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Eldense 2-0 Sabadell. Pronostic perdu ❌.
 ---
 date: 2026-11-16 20:00
 competition: Liga 2
@@ -3178,6 +3193,7 @@ pronostic_en: Montenegro or draw
 pronostic_es: Montenegro o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 22-24-54
 analyse_en: Kick-off Sunday 15 November: 15:00 in Douala, Lagos and Paris, 14:00 in Accra and Dakar.
 Cyprus host Montenegro in the UEFA Nations League (league phase).
@@ -3185,12 +3201,14 @@ Nations League record: Cyprus: 2 wins, 2 draws, 1 defeat (8 pts); Montenegro: 4 
 This looks tight, so I take the double chance to limit the risk.
 My pick: Montenegro or draw. Bigger odds: Montenegro don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Cyprus 1-4 Montenegro. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
 Chypre reçoit le Monténégro en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Chypre : 2 victoires, 2 nuls, 1 défaite (8 pts) ; Monténégro : 4 victoires, 1 nul (13 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Monténégro ou nul. Option plus grosse cote : Monténégro ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Chypre 1-4 Monténégro. Pronostic gagné ✅.
 ---
 date: 2026-11-15 15:00
 competition: Ligue des nations UEFA
@@ -3201,6 +3219,7 @@ pronostic_en: Armenia or draw
 pronostic_es: Armenia o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 26-25-49
 analyse_en: Kick-off Sunday 15 November: 15:00 in Douala, Lagos and Paris, 14:00 in Accra and Dakar.
 Latvia host Armenia in the UEFA Nations League (league phase).
@@ -3208,12 +3227,14 @@ Nations League record: Latvia: 1 draw, 4 defeats (1 pts); Armenia: 1 win, 2 draw
 This looks tight, so I take the double chance to limit the risk.
 My pick: Armenia or draw. Bigger odds: Armenia don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Latvia 0-0 Armenia. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
 La Lettonie reçoit l'Arménie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Lettonie : 1 nul, 4 défaites (1 pts) ; Arménie : 1 victoire, 2 nuls, 2 défaites (5 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Arménie ou nul. Option plus grosse cote : Arménie ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lettonie 0-0 Arménie. Pronostic gagné ✅.
 ---
 date: 2026-11-15 18:00
 competition: Ligue des nations UEFA
@@ -3224,6 +3245,7 @@ pronostic_en: Albania or draw
 pronostic_es: Albania o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-27-39
 analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
 Belarus host Albania in the UEFA Nations League (league phase).
@@ -3231,12 +3253,14 @@ Nations League record: Belarus: 3 wins, 1 draw, 1 defeat (10 pts); Albania: 4 wi
 This looks tight, so I take the double chance to limit the risk.
 My pick: Albania or draw. Bigger odds: Albania don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Belarus 0-2 Albania. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
 La Biélorussie reçoit l'Albanie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Biélorussie : 3 victoires, 1 nul, 1 défaite (10 pts) ; Albanie : 4 victoires, 1 défaite (12 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Albanie ou nul. Option plus grosse cote : Albanie ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Biélorussie 0-2 Albanie. Pronostic gagné ✅.
 ---
 date: 2026-11-15 18:00
 competition: Ligue des nations UEFA
@@ -3247,6 +3271,7 @@ pronostic_en: Finland to win
 pronostic_es: Gana Finlandia
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 84-13-3
 analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
 Finland host San Marino in the UEFA Nations League (league phase).
@@ -3254,12 +3279,14 @@ Nations League record: Finland: 2 wins, 1 draw, 2 defeats (7 pts); San Marino: 5
 Finland are the stronger side on paper and play at home. Bookmakers also make Finland favourites.
 My pick: Finland to win. Bigger odds: Finland win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Finland 7-2 San Marino. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
 La Finlande reçoit Saint-Marin en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Finlande : 2 victoires, 1 nul, 2 défaites (7 pts) ; Saint-Marin : 5 défaites (0 pts).
 La Finlande est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Finlande favori.
 Mon choix : victoire de la Finlande. Option plus grosse cote : Finlande gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Finlande 7-2 Saint-Marin. Pronostic gagné ✅.
 ---
 date: 2026-11-15 20:45
 competition: Ligue des nations UEFA
