@@ -3133,3 +3133,624 @@ Classement : Albacete 21e, 10 pts, 3 victoires, 1 nul, 9 défaites ; Celta Fortu
 Deux équipes de bas de tableau. Albacete a perdu 9 matchs sur 13, Celta Fortuna fait plus de nuls. Match à risque, donc double chance.
 Mon choix : Celta Fortuna ou nul. Option plus grosse cote : Celta Fortuna ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 14:30
+competition: Eerste Divisie
+equipe1: MVV Maastricht
+equipe2: Vitesse
+pronostic: MVV Maastricht ou nul
+pronostic_en: MVV Maastricht or draw
+pronostic_es: MVV Maastricht o empate
+cote:
+bookmaker: 1xbet
+proba: 42-28-30
+analyse_en: Kick-off Sunday 15 November: 2:30pm in Douala, Lagos and Paris, 1:30pm in Accra and Dakar.
+MVV Maastricht host Vitesse in the Eerste Divisie (Dutch second tier).
+Standings: MVV Maastricht 8th, 20 pts (6 wins, 2 draws, 6 defeats); Vitesse 11th, 18 pts (5 wins, 3 draws, 5 defeats).
+Two teams close in the table, with MVV at home: I take the double chance to limit the risk.
+My pick: MVV Maastricht or draw. Bigger odds: MVV Maastricht don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 14h30 à Douala et à Paris, 13h30 à Abidjan et Dakar.
+MVV Maastricht reçoit Vitesse en Eerste Divisie (deuxième division néerlandaise).
+Classement : MVV Maastricht 8e, 20 pts (6 victoires, 2 nuls, 6 défaites) ; Vitesse 11e, 18 pts (5 victoires, 3 nuls, 5 défaites).
+Deux équipes proches au classement, avec MVV à domicile : je choisis la double chance pour limiter le risque.
+Mon choix : MVV Maastricht ou nul. Option plus grosse cote : MVV Maastricht ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 15:00
+competition: Ligue des nations UEFA
+equipe1: Chypre
+equipe2: Monténégro
+pronostic: Monténégro ou nul
+pronostic_en: Montenegro or draw
+pronostic_es: Montenegro o empate
+cote:
+bookmaker: 1xbet
+proba: 22-24-54
+analyse_en: Kick-off Sunday 15 November: 15:00 in Douala, Lagos and Paris, 14:00 in Accra and Dakar.
+Cyprus host Montenegro in the UEFA Nations League (league phase).
+Nations League record: Cyprus: 2 wins, 2 draws, 1 defeat (8 pts); Montenegro: 4 wins, 1 draw (13 pts).
+This looks tight, so I take the double chance to limit the risk.
+My pick: Montenegro or draw. Bigger odds: Montenegro don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
+Chypre reçoit le Monténégro en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Chypre : 2 victoires, 2 nuls, 1 défaite (8 pts) ; Monténégro : 4 victoires, 1 nul (13 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque.
+Mon choix : Monténégro ou nul. Option plus grosse cote : Monténégro ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 15:00
+competition: Ligue des nations UEFA
+equipe1: Lettonie
+equipe2: Arménie
+pronostic: Arménie ou nul
+pronostic_en: Armenia or draw
+pronostic_es: Armenia o empate
+cote:
+bookmaker: 1xbet
+proba: 26-25-49
+analyse_en: Kick-off Sunday 15 November: 15:00 in Douala, Lagos and Paris, 14:00 in Accra and Dakar.
+Latvia host Armenia in the UEFA Nations League (league phase).
+Nations League record: Latvia: 1 draw, 4 defeats (1 pts); Armenia: 1 win, 2 draws, 2 defeats (5 pts).
+This looks tight, so I take the double chance to limit the risk.
+My pick: Armenia or draw. Bigger odds: Armenia don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
+La Lettonie reçoit l'Arménie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Lettonie : 1 nul, 4 défaites (1 pts) ; Arménie : 1 victoire, 2 nuls, 2 défaites (5 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque.
+Mon choix : Arménie ou nul. Option plus grosse cote : Arménie ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 18:00
+competition: Ligue des nations UEFA
+equipe1: Biélorussie
+equipe2: Albanie
+pronostic: Albanie ou nul
+pronostic_en: Albania or draw
+pronostic_es: Albania o empate
+cote:
+bookmaker: 1xbet
+proba: 34-27-39
+analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
+Belarus host Albania in the UEFA Nations League (league phase).
+Nations League record: Belarus: 3 wins, 1 draw, 1 defeat (10 pts); Albania: 4 wins, 1 defeat (12 pts).
+This looks tight, so I take the double chance to limit the risk.
+My pick: Albania or draw. Bigger odds: Albania don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+La Biélorussie reçoit l'Albanie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Biélorussie : 3 victoires, 1 nul, 1 défaite (10 pts) ; Albanie : 4 victoires, 1 défaite (12 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque.
+Mon choix : Albanie ou nul. Option plus grosse cote : Albanie ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 18:00
+competition: Ligue des nations UEFA
+equipe1: Finlande
+equipe2: Saint-Marin
+pronostic: Victoire de la Finlande
+pronostic_en: Finland to win
+pronostic_es: Gana Finlandia
+cote:
+bookmaker: 1xbet
+proba: 84-13-3
+analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
+Finland host San Marino in the UEFA Nations League (league phase).
+Nations League record: Finland: 2 wins, 1 draw, 2 defeats (7 pts); San Marino: 5 defeats (0 pts).
+Finland are the stronger side on paper and play at home. Bookmakers also make Finland favourites.
+My pick: Finland to win. Bigger odds: Finland win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+La Finlande reçoit Saint-Marin en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Finlande : 2 victoires, 1 nul, 2 défaites (7 pts) ; Saint-Marin : 5 défaites (0 pts).
+La Finlande est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Finlande favori.
+Mon choix : victoire de la Finlande. Option plus grosse cote : Finlande gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 20:45
+competition: Ligue des nations UEFA
+equipe1: Belgique
+equipe2: Italie
+pronostic: Belgique ou nul
+pronostic_en: Belgium or draw
+pronostic_es: Bélgica o empate
+cote:
+bookmaker: 1xbet
+proba: 38-27-35
+analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Belgium host Italy in the UEFA Nations League (league phase).
+Nations League record: Belgium: 3 wins, 2 defeats (9 pts); Italy: 3 wins, 1 draw, 1 defeat (10 pts).
+This looks tight, so I take the double chance to limit the risk.
+My pick: Belgium or draw. Bigger odds: Belgium don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Belgique reçoit l'Italie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Belgique : 3 victoires, 2 défaites (9 pts) ; Italie : 3 victoires, 1 nul, 1 défaite (10 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque.
+Mon choix : Belgique ou nul. Option plus grosse cote : Belgique ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 20:45
+competition: Ligue des nations UEFA
+equipe1: Croatie
+equipe2: Tchéquie
+pronostic: Victoire de la Croatie
+pronostic_en: Croatia to win
+pronostic_es: Gana Croacia
+cote:
+bookmaker: 1xbet
+proba: 60-23-17
+analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Croatia host Czechia in the UEFA Nations League (league phase).
+Nations League record: Croatia: 1 win, 4 defeats (3 pts); Czechia: 5 defeats (0 pts).
+Croatia are the stronger side on paper and play at home. Bookmakers also make Croatia favourites.
+My pick: Croatia to win. Bigger odds: Croatia win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Croatie reçoit la Tchéquie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Croatie : 1 victoire, 4 défaites (3 pts) ; Tchéquie : 5 défaites (0 pts).
+La Croatie est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Croatie favori.
+Mon choix : victoire de la Croatie. Option plus grosse cote : Croatie gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 20:45
+competition: Ligue des nations UEFA
+equipe1: France
+equipe2: Turquie
+pronostic: Victoire de la France
+pronostic_en: France to win
+pronostic_es: Gana Francia
+cote:
+bookmaker: 1xbet
+proba: 78-19-3
+analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+France host Turkey in the UEFA Nations League (league phase).
+Nations League record: France: 3 wins, 1 draw, 1 defeat (10 pts); Turkey: 5 defeats (0 pts).
+France are the stronger side on paper and play at home. Bookmakers also make France favourites.
+My pick: France to win. Bigger odds: France win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La France reçoit la Turquie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : France : 3 victoires, 1 nul, 1 défaite (10 pts) ; Turquie : 5 défaites (0 pts).
+La France est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la France favori.
+Mon choix : victoire de la France. Option plus grosse cote : France gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 20:45
+competition: Ligue des nations UEFA
+equipe1: Espagne
+equipe2: Angleterre
+pronostic: Victoire de l'Espagne
+pronostic_en: Spain to win
+pronostic_es: Gana España
+cote:
+bookmaker: 1xbet
+proba: 57-24-19
+analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Spain host England in the UEFA Nations League (league phase).
+Nations League record: Spain: 5 wins (15 pts); England: 4 wins, 1 defeat (12 pts).
+Spain are the stronger side on paper and play at home. Bookmakers also make Spain favourites.
+My pick: Spain to win. Bigger odds: Spain win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+L'Espagne reçoit l'Angleterre en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Espagne : 5 victoires (15 pts) ; Angleterre : 4 victoires, 1 défaite (12 pts).
+L'Espagne est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi l'Espagne favori.
+Mon choix : victoire de l'Espagne. Option plus grosse cote : Espagne gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 16:00
+competition: Ligue des nations UEFA
+equipe1: Îles Féroé
+equipe2: Moldavie
+pronostic: Îles Féroé ou nul
+pronostic_en: Faroe Islands or draw
+pronostic_es: Islas Feroe o empate
+cote:
+bookmaker: 1xbet
+proba: 44-23-33
+analyse_en: Kick-off Monday 16 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar.
+Faroe Islands host Moldova in the UEFA Nations League (league phase).
+Nations League record: Faroe Islands: 5 draws (5 pts); Moldova: 2 wins, 1 draw, 2 defeats (7 pts).
+This looks tight, so I take the double chance to limit the risk. Bookmakers also make Faroe Islands favourites.
+My pick: Faroe Islands or draw. Bigger odds: Faroe Islands don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar.
+Les Îles Féroé reçoit la Moldavie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Îles Féroé : 5 nuls (5 pts) ; Moldavie : 2 victoires, 1 nul, 2 défaites (7 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque. Les bookmakers donnent aussi les Îles Féroé favori.
+Mon choix : Îles Féroé ou nul. Option plus grosse cote : Îles Féroé ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 16:00
+competition: Ligue des nations UEFA
+equipe1: Kazakhstan
+equipe2: Slovaquie
+pronostic: Victoire de la Slovaquie
+pronostic_en: Slovakia to win
+pronostic_es: Gana Eslovaquia
+cote:
+bookmaker: 1xbet
+proba: 6-29-65
+analyse_en: Kick-off Monday 16 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar.
+Kazakhstan host Slovakia in the UEFA Nations League (league phase).
+Nations League record: Kazakhstan: 2 draws, 3 defeats (2 pts); Slovakia: 3 wins, 2 draws (11 pts).
+Slovakia are the stronger side on paper, even away. Bookmakers also make Slovakia favourites.
+My pick: Slovakia to win. Bigger odds: Slovakia win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar.
+Le Kazakhstan reçoit la Slovaquie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Kazakhstan : 2 nuls, 3 défaites (2 pts) ; Slovaquie : 3 victoires, 2 nuls (11 pts).
+La Slovaquie est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi la Slovaquie favori.
+Mon choix : victoire de la Slovaquie. Option plus grosse cote : Slovaquie gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 18:00
+competition: Ligue des nations UEFA
+equipe1: Estonie
+equipe2: Bulgarie
+pronostic: Victoire de l'Estonie
+pronostic_en: Estonia to win
+pronostic_es: Gana Estonia
+cote:
+bookmaker: 1xbet
+proba: 70-21-9
+analyse_en: Kick-off Monday 16 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
+Estonia host Bulgaria in the UEFA Nations League (league phase).
+Nations League record: Estonia: 2 wins, 3 draws (9 pts); Bulgaria: 1 win, 1 draw, 3 defeats (4 pts).
+Estonia are the stronger side on paper and play at home.
+My pick: Estonia to win. Bigger odds: Estonia win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+L'Estonie reçoit la Bulgarie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Estonie : 2 victoires, 3 nuls (9 pts) ; Bulgarie : 1 victoire, 1 nul, 3 défaites (4 pts).
+L'Estonie est le mieux placé sur le papier et joue à domicile.
+Mon choix : victoire de l'Estonie. Option plus grosse cote : Estonie gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 18:00
+competition: Ligue des nations UEFA
+equipe1: Islande
+equipe2: Luxembourg
+pronostic: Victoire de l'Islande
+pronostic_en: Iceland to win
+pronostic_es: Gana Islandia
+cote:
+bookmaker: 1xbet
+proba: 74-21-5
+analyse_en: Kick-off Monday 16 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
+Iceland host Luxembourg in the UEFA Nations League (league phase).
+Nations League record: Iceland: 3 wins, 2 draws (11 pts); Luxembourg: 1 win, 4 defeats (3 pts).
+Iceland are the stronger side on paper and play at home. Bookmakers also make Iceland favourites.
+My pick: Iceland to win. Bigger odds: Iceland win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+L'Islande reçoit le Luxembourg en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Islande : 3 victoires, 2 nuls (11 pts) ; Luxembourg : 1 victoire, 4 défaites (3 pts).
+L'Islande est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi l'Islande favori.
+Mon choix : victoire de l'Islande. Option plus grosse cote : Islande gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 18:00
+competition: Ligue des nations UEFA
+equipe1: Lituanie
+equipe2: Liechtenstein
+pronostic: Victoire de la Lituanie
+pronostic_en: Lithuania to win
+pronostic_es: Gana Lituania
+cote:
+bookmaker: 1xbet
+proba: 79-15-6
+analyse_en: Kick-off Monday 16 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
+Lithuania host Liechtenstein in the UEFA Nations League (league phase).
+Nations League record: Lithuania: 1 win, 1 draw, 1 defeat (4 pts); Liechtenstein: 1 draw, 2 defeats (1 pts).
+Lithuania are the stronger side on paper and play at home. Bookmakers also make Lithuania favourites.
+My pick: Lithuania to win. Bigger odds: Lithuania win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+La Lituanie reçoit le Liechtenstein en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Lituanie : 1 victoire, 1 nul, 1 défaite (4 pts) ; Liechtenstein : 1 nul, 2 défaites (1 pts).
+La Lituanie est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Lituanie favori.
+Mon choix : victoire de la Lituanie. Option plus grosse cote : Lituanie gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 20:45
+competition: Ligue des nations UEFA
+equipe1: Allemagne
+equipe2: Pays-Bas
+pronostic: Allemagne ou nul
+pronostic_en: Germany or draw
+pronostic_es: Alemania o empate
+cote:
+bookmaker: 1xbet
+proba: 41-22-37
+analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Germany host Netherlands in the UEFA Nations League (league phase).
+Nations League record: Germany: 2 wins, 2 draws, 1 defeat (8 pts); Netherlands: 3 wins, 2 draws (11 pts).
+This looks tight, so I take the double chance to limit the risk. Bookmakers also make Germany favourites.
+My pick: Germany or draw. Bigger odds: Germany don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+L'Allemagne reçoit les Pays-Bas en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Allemagne : 2 victoires, 2 nuls, 1 défaite (8 pts) ; Pays-Bas : 3 victoires, 2 nuls (11 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque. Les bookmakers donnent aussi l'Allemagne favori.
+Mon choix : Allemagne ou nul. Option plus grosse cote : Allemagne ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 20:45
+competition: Ligue des nations UEFA
+equipe1: Gibraltar
+equipe2: Malte
+pronostic: Victoire de Malte
+pronostic_en: Malta to win
+pronostic_es: Gana Malta
+cote:
+bookmaker: 1xbet
+proba: 8-23-69
+analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Gibraltar host Malta in the UEFA Nations League (league phase).
+Nations League record: Gibraltar: 2 draws, 1 defeat (2 pts); Malta: 2 wins, 1 draw (7 pts).
+Malta are the stronger side on paper, even away. Bookmakers also make Malta favourites.
+My pick: Malta to win. Bigger odds: Malta win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+Gibraltar reçoit Malte en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Gibraltar : 2 nuls, 1 défaite (2 pts) ; Malte : 2 victoires, 1 nul (7 pts).
+Malte est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi Malte favori.
+Mon choix : victoire de Malte. Option plus grosse cote : Malte gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 20:45
+competition: Ligue des nations UEFA
+equipe1: Grèce
+equipe2: Serbie
+pronostic: Victoire de la Grèce
+pronostic_en: Greece to win
+pronostic_es: Gana Grecia
+cote:
+bookmaker: 1xbet
+proba: 71-24-5
+analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Greece host Serbia in the UEFA Nations League (league phase).
+Nations League record: Greece: 2 wins, 2 draws, 1 defeat (8 pts); Serbia: 5 defeats (0 pts).
+Greece are the stronger side on paper and play at home. Bookmakers also make Greece favourites.
+My pick: Greece to win. Bigger odds: Greece win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Grèce reçoit la Serbie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Grèce : 2 victoires, 2 nuls, 1 défaite (8 pts) ; Serbie : 5 défaites (0 pts).
+La Grèce est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Grèce favori.
+Mon choix : victoire de la Grèce. Option plus grosse cote : Grèce gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 20:45
+competition: Ligue des nations UEFA
+equipe1: Macédoine du Nord
+equipe2: Slovénie
+pronostic: Victoire de la Slovénie
+pronostic_en: Slovenia to win
+pronostic_es: Gana Eslovenia
+cote:
+bookmaker: 1xbet
+proba: 10-24-66
+analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+North Macedonia host Slovenia in the UEFA Nations League (league phase).
+Nations League record: North Macedonia: 5 defeats (0 pts); Slovenia: 2 wins, 2 draws, 1 defeat (8 pts).
+Slovenia are the stronger side on paper, even away. Bookmakers also make Slovenia favourites.
+My pick: Slovenia to win. Bigger odds: Slovenia win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Macédoine du Nord reçoit la Slovénie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Macédoine du Nord : 5 défaites (0 pts) ; Slovénie : 2 victoires, 2 nuls, 1 défaite (8 pts).
+La Slovénie est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi la Slovénie favori.
+Mon choix : victoire de la Slovénie. Option plus grosse cote : Slovénie gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 20:45
+competition: Ligue des nations UEFA
+equipe1: Suisse
+equipe2: Écosse
+pronostic: Victoire de la Suisse
+pronostic_en: Switzerland to win
+pronostic_es: Gana Suiza
+cote:
+bookmaker: 1xbet
+proba: 66-28-6
+analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Switzerland host Scotland in the UEFA Nations League (league phase).
+Nations League record: Switzerland: 4 wins, 1 draw (13 pts); Scotland: 2 wins, 1 draw, 2 defeats (7 pts).
+Switzerland are the stronger side on paper and play at home. Bookmakers also make Switzerland favourites.
+My pick: Switzerland to win. Bigger odds: Switzerland win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Suisse reçoit l'Écosse en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Suisse : 4 victoires, 1 nul (13 pts) ; Écosse : 2 victoires, 1 nul, 2 défaites (7 pts).
+La Suisse est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Suisse favori.
+Mon choix : victoire de la Suisse. Option plus grosse cote : Suisse gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Bosnie-Herzégovine
+equipe2: Roumanie
+pronostic: Victoire de la Bosnie-Herzégovine
+pronostic_en: Bosnia and Herzegovina to win
+pronostic_es: Gana Bosnia y Herzegovina
+cote:
+bookmaker: 1xbet
+proba: 61-28-11
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Bosnia and Herzegovina host Romania in the UEFA Nations League (league phase).
+Nations League record: Bosnia and Herzegovina: 2 wins, 2 draws, 1 defeat (8 pts); Romania: 1 win, 4 defeats (3 pts).
+Bosnia and Herzegovina are the stronger side on paper and play at home. Bookmakers also make Bosnia and Herzegovina favourites.
+My pick: Bosnia and Herzegovina to win. Bigger odds: Bosnia and Herzegovina win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Bosnie-Herzégovine reçoit la Roumanie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Bosnie-Herzégovine : 2 victoires, 2 nuls, 1 défaite (8 pts) ; Roumanie : 1 victoire, 4 défaites (3 pts).
+La Bosnie-Herzégovine est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Bosnie-Herzégovine favori.
+Mon choix : victoire de la Bosnie-Herzégovine. Option plus grosse cote : Bosnie-Herzégovine gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Danemark
+equipe2: Norvège
+pronostic: Victoire du Danemark
+pronostic_en: Denmark to win
+pronostic_es: Gana Dinamarca
+cote:
+bookmaker: 1xbet
+proba: 59-23-18
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Denmark host Norway in the UEFA Nations League (league phase).
+Nations League record: Denmark: 3 wins, 2 defeats (9 pts); Norway: 2 wins, 3 defeats (6 pts).
+Denmark are the stronger side on paper and play at home.
+My pick: Denmark to win. Bigger odds: Denmark win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+Le Danemark reçoit la Norvège en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Danemark : 3 victoires, 2 défaites (9 pts) ; Norvège : 2 victoires, 3 défaites (6 pts).
+Le Danemark est le mieux placé sur le papier et joue à domicile.
+Mon choix : victoire du Danemark. Option plus grosse cote : Danemark gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Hongrie
+equipe2: Irlande du Nord
+pronostic: Hongrie ou nul
+pronostic_en: Hungary or draw
+pronostic_es: Hungría o empate
+cote:
+bookmaker: 1xbet
+proba: 44-25-31
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Hungary host Northern Ireland in the UEFA Nations League (league phase).
+Nations League record: Hungary: 3 wins, 1 draw, 1 defeat (10 pts); Northern Ireland: 3 wins, 2 draws (11 pts).
+This looks tight, so I take the double chance to limit the risk. Bookmakers also make Hungary favourites.
+My pick: Hungary or draw. Bigger odds: Hungary don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Hongrie reçoit l'Irlande du Nord en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Hongrie : 3 victoires, 1 nul, 1 défaite (10 pts) ; Irlande du Nord : 3 victoires, 2 nuls (11 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque. Les bookmakers donnent aussi la Hongrie favori.
+Mon choix : Hongrie ou nul. Option plus grosse cote : Hongrie ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Israël
+equipe2: Autriche
+pronostic: Victoire de l'Autriche
+pronostic_en: Austria to win
+pronostic_es: Gana Austria
+cote:
+bookmaker: 1xbet
+proba: 10-24-66
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Israel host Austria in the UEFA Nations League (league phase).
+Nations League record: Israel: 3 draws, 2 defeats (3 pts); Austria: 3 wins, 2 draws (11 pts).
+Austria are the stronger side on paper, even away. Bookmakers also make Austria favourites.
+My pick: Austria to win. Bigger odds: Austria win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+Israël reçoit l'Autriche en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Israël : 3 nuls, 2 défaites (3 pts) ; Autriche : 3 victoires, 2 nuls (11 pts).
+L'Autriche est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi l'Autriche favori.
+Mon choix : victoire de l'Autriche. Option plus grosse cote : Autriche gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Pologne
+equipe2: Suède
+pronostic: Victoire de la Suède
+pronostic_en: Sweden to win
+pronostic_es: Gana Suecia
+cote:
+bookmaker: 1xbet
+proba: 4-20-76
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Poland host Sweden in the UEFA Nations League (league phase).
+Nations League record: Poland: 1 win, 1 draw, 3 defeats (4 pts); Sweden: 4 wins, 1 draw (13 pts).
+Sweden are the stronger side on paper, even away.
+My pick: Sweden to win. Bigger odds: Sweden win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+La Pologne reçoit la Suède en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Pologne : 1 victoire, 1 nul, 3 défaites (4 pts) ; Suède : 4 victoires, 1 nul (13 pts).
+La Suède est le mieux placé sur le papier, même en déplacement.
+Mon choix : victoire de la Suède. Option plus grosse cote : Suède gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Irlande
+equipe2: Kosovo
+pronostic: Irlande ou nul
+pronostic_en: Republic of Ireland or draw
+pronostic_es: Irlanda o empate
+cote:
+bookmaker: 1xbet
+proba: 38-27-35
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Republic of Ireland host Kosovo in the UEFA Nations League (league phase).
+Nations League record: Republic of Ireland: 1 win, 2 draws, 2 defeats (5 pts); Kosovo: 1 win, 3 draws, 1 defeat (6 pts).
+This looks tight, so I take the double chance to limit the risk.
+My pick: Republic of Ireland or draw. Bigger odds: Republic of Ireland don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+L'Irlande reçoit le Kosovo en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Irlande : 1 victoire, 2 nuls, 2 défaites (5 pts) ; Kosovo : 1 victoire, 3 nuls, 1 défaite (6 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque.
+Mon choix : Irlande ou nul. Option plus grosse cote : Irlande ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Ukraine
+equipe2: Géorgie
+pronostic: Ukraine ou nul
+pronostic_en: Ukraine or draw
+pronostic_es: Ucrania o empate
+cote:
+bookmaker: 1xbet
+proba: 54-24-22
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Ukraine host Georgia in the UEFA Nations League (league phase).
+Nations League record: Ukraine: 1 win, 1 draw, 3 defeats (4 pts); Georgia: 2 draws, 3 defeats (2 pts).
+This looks tight, so I take the double chance to limit the risk.
+My pick: Ukraine or draw. Bigger odds: Ukraine don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+L'Ukraine reçoit la Géorgie en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Ukraine : 1 victoire, 1 nul, 3 défaites (4 pts) ; Géorgie : 2 nuls, 3 défaites (2 pts).
+Le match s'annonce serré : je choisis la double chance pour limiter le risque.
+Mon choix : Ukraine ou nul. Option plus grosse cote : Ukraine ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-17 20:45
+competition: Ligue des nations UEFA
+equipe1: Pays de Galles
+equipe2: Portugal
+pronostic: Victoire du Portugal
+pronostic_en: Portugal to win
+pronostic_es: Gana Portugal
+cote:
+bookmaker: 1xbet
+proba: 5-24-71
+analyse_en: Kick-off Tuesday 17 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Wales host Portugal in the UEFA Nations League (league phase).
+Nations League record: Wales: 1 win, 4 defeats (3 pts); Portugal: 4 wins, 1 defeat (12 pts).
+Portugal are the stronger side on paper, even away. Bookmakers also make Portugal favourites.
+My pick: Portugal to win. Bigger odds: Portugal win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 17 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+Le Pays de Galles reçoit le Portugal en Ligue des nations UEFA (phase de ligue).
+Bilan en Ligue des nations : Pays de Galles : 1 victoire, 4 défaites (3 pts) ; Portugal : 4 victoires, 1 défaite (12 pts).
+Le Portugal est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi le Portugal favori.
+Mon choix : victoire du Portugal. Option plus grosse cote : Portugal gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.

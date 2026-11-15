@@ -1450,19 +1450,19 @@ BURGER_SCRIPT = """<script>(function(){
 
 NAV_L = {
   "fr": {"title":"Menu","items":[("accueil","\U0001F3E0","Accueil","index.html"),("codes","\U0001F39F\uFE0F","Codes promo","index.html#bookmakers"),
-         ("analyses","\U0001F4CA","Analyses des matchs","pronostics.html"),("cote2","\u26BD","Côte de 2","cote-de-2.html"),("tpi","\U0001F3B2","Total Pair/Impair","total-pair-impair.html"),
+         ("analyses","\U0001F4CA","Analyses des matchs","pronostics.html"),("comps","\U0001F3C6","Compétitions","competitions.html"),("cote2","\u26BD","Côte de 2","cote-de-2.html"),("tpi","\U0001F3B2","Total Pair/Impair","total-pair-impair.html"),
          ("compare","\U0001F9ED","Quel bookmaker choisir ?","quel-bookmaker-choisir.html"),("aide","❓","Code qui ne marche pas","code-promo-ne-marche-pas.html"),
          ("resultats","\U0001F3C6","Résultats","resultats.html"),
          ("livres","\U0001F4DA","Mes livres","livres.html"),("vip","\u2B50","VIP","vip.html")]},
   "en": {"title":"Menu","items":[("accueil","\U0001F3E0","Home","promo-codes.html"),("codes","\U0001F39F\uFE0F","Promo codes","promo-codes.html#bookmakers"),
-         ("analyses","\U0001F4CA","Match predictions","predictions.html"),("cote2","\u26BD","Odds of 2","odds-of-2.html"),("tpi","\U0001F3B2","Total Odd/Even","total-odd-even.html"),
+         ("analyses","\U0001F4CA","Match predictions","predictions.html"),("comps","\U0001F3C6","All competitions","all-competitions.html"),("cote2","\u26BD","Odds of 2","odds-of-2.html"),("tpi","\U0001F3B2","Total Odd/Even","total-odd-even.html"),
          ("compare","\U0001F9ED","Which bookmaker?","which-bookmaker.html"),("aide","❓","Code not working","promo-code-not-working.html"),
          ("resultats","\U0001F3C6","Results","results.html"),("livres","\U0001F4DA","Books (in French)","livres.html"),("vip","\u2B50","VIP","vip-en.html")]},
   "es": {"title":"Menú","items":[("accueil","\U0001F3E0","Inicio","codigos-promocionales.html"),("codes","\U0001F39F\uFE0F","Códigos promo","codigos-promocionales.html#bookmakers"),
-         ("analyses","\U0001F4CA","Pronósticos de partidos","pronosticos.html"),("cote2","\u26BD","Cuota de 2","cuota-de-2.html"),("tpi","\U0001F3B2","Total Par/Impar","total-par-impar.html"),
+         ("analyses","\U0001F4CA","Pronósticos de partidos","pronosticos.html"),("comps","\U0001F3C6","Competiciones (EN)","all-competitions.html"),("cote2","\u26BD","Cuota de 2","cuota-de-2.html"),("tpi","\U0001F3B2","Total Par/Impar","total-par-impar.html"),
          ("resultats","\U0001F3C6","Resultados","resultados.html"),("livres","\U0001F4DA","Libros (en francés)","livres.html"),("vip","\u2B50","VIP","vip-es.html")]},
   "ar": {"title":"القائمة","items":[("accueil","\U0001F3E0","الرئيسية","promo-codes-ar.html"),("codes","\U0001F39F\uFE0F","الرموز الترويجية","promo-codes-ar.html#bookmakers"),
-         ("analyses","\U0001F4CA","توقعات المباريات","pronostics-ar.html"),("cote2","\u26BD","رهان بضعف 2","cote-2-ar.html"),("tpi","\U0001F3B2","زوجي/فردي","total-pair-impair-ar.html"),
+         ("analyses","\U0001F4CA","توقعات المباريات","pronostics-ar.html"),("comps","\U0001F3C6","المسابقات (EN)","all-competitions.html"),("cote2","\u26BD","رهان بضعف 2","cote-2-ar.html"),("tpi","\U0001F3B2","زوجي/فردي","total-pair-impair-ar.html"),
          ("resultats","\U0001F3C6","النتائج","resultats-ar.html"),("livres","\U0001F4DA","كتب (بالفرنسية)","livres.html"),("vip","\u2B50","VIP","vip-ar.html")]},
 }
 
@@ -1604,6 +1604,7 @@ def footer_html():
 <a href="cote-de-2.html">Côte de 2</a>
 <a href="pronostics.html">Pronostics</a>
 <a href="resultats.html">Résultats</a>
+<a href="competitions.html">Compétitions</a>
 <a href="bilan.html">Mon bilan</a>
 <a href="livres.html">Mes livres</a>
 <a href="actualites.html">Actualités</a>
@@ -3285,7 +3286,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html", "livres.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html", "livres.html", "competitions.html", "all-competitions.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -3530,6 +3531,7 @@ def footer_html_en():
 <a href="odds-of-2.html">Odds of 2</a>
 <a href="predictions.html">Predictions</a>
 <a href="results.html">Results</a>
+<a href="all-competitions.html">All competitions</a>
 <a href="track-record.html">Track record</a>
 <a href="which-bookmaker.html">Which bookmaker?</a>
 <a href="promo-code-not-working.html">Promo code not working</a>
@@ -6739,6 +6741,8 @@ TEAM_AR = {"PSG": "باريس سان جيرمان", "Real Madrid": "ريال م�
   "Algérie": "الجزائر", "Égypte": "مصر", "Tunisie": "تونس", "Nigeria": "نيجيريا", "Ghana": "غانا", "RD Congo": "الكونغو الديمقراطية"}
 TEAM_L.update({"Soudan": {"en": "Sudan", "es": "Sudán"}, "Sénégal": {"en": "Senegal", "es": "Senegal"}, "Zimbabwe": {"en": "Zimbabwe", "es": "Zimbabue"}, "Guinée équatoriale": {"en": "Equatorial Guinea", "es": "Guinea Ecuatorial"}, "Somalie": {"en": "Somalia", "es": "Somalia"}, "Ghana": {"en": "Ghana", "es": "Ghana"}, "Centrafrique": {"en": "Central African Republic", "es": "República Centroafricana"}, "Bénin": {"en": "Benin", "es": "Benín"}, "Érythrée": {"en": "Eritrea", "es": "Eritrea"}, "Guinée": {"en": "Guinea", "es": "Guinea"}, "Burundi": {"en": "Burundi", "es": "Burundi"}, "Zambie": {"en": "Zambia", "es": "Zambia"}, "Éthiopie": {"en": "Ethiopia", "es": "Etiopía"}, "Mozambique": {"en": "Mozambique", "es": "Mozambique"}, "Lesotho": {"en": "Lesotho", "es": "Lesoto"}, "Gabon": {"en": "Gabon", "es": "Gabón"}, "Malawi": {"en": "Malawi", "es": "Malaui"}, "Égypte": {"en": "Egypt", "es": "Egipto"}, "Soudan du Sud": {"en": "South Sudan", "es": "Sudán del Sur"}, "Angola": {"en": "Angola", "es": "Angola"}, "Tanzanie": {"en": "Tanzania", "es": "Tanzania"}, "Nigeria": {"en": "Nigeria", "es": "Nigeria"}, "Gambie": {"en": "Gambia", "es": "Gambia"}, "Côte d'Ivoire": {"en": "Ivory Coast", "es": "Costa de Marfil"}, "Guinée-Bissau": {"en": "Guinea-Bissau", "es": "Guinea-Bisáu"}, "Madagascar": {"en": "Madagascar", "es": "Madagascar"}, "Kenya": {"en": "Kenya", "es": "Kenia"}, "Afrique du Sud": {"en": "South Africa", "es": "Sudáfrica"}, "Libye": {"en": "Libya", "es": "Libia"}, "Tunisie": {"en": "Tunisia", "es": "Túnez"}, "Sierra Leone": {"en": "Sierra Leone", "es": "Sierra Leona"}, "RD Congo": {"en": "DR Congo", "es": "RD Congo"}, "Togo": {"en": "Togo", "es": "Togo"}, "Algérie": {"en": "Algeria", "es": "Argelia"}, "Botswana": {"en": "Botswana", "es": "Botsuana"}, "Ouganda": {"en": "Uganda", "es": "Uganda"}, "Congo": {"en": "Congo", "es": "Congo"}, "Comores": {"en": "Comoros", "es": "Comoras"}, "Liberia": {"en": "Liberia", "es": "Liberia"}, "Cap-Vert": {"en": "Cape Verde", "es": "Cabo Verde"}, "Mauritanie": {"en": "Mauritania", "es": "Mauritania"}, "Burkina Faso": {"en": "Burkina Faso", "es": "Burkina Faso"}, "Rwanda": {"en": "Rwanda", "es": "Ruanda"}, "Mali": {"en": "Mali", "es": "Malí"}, "Niger": {"en": "Niger", "es": "Níger"}, "Maroc": {"en": "Morocco", "es": "Marruecos"}})
 
+TEAM_L.update({"Chypre": {"en": "Cyprus", "es": "Chipre"}, "Monténégro": {"en": "Montenegro", "es": "Montenegro"}, "Lettonie": {"en": "Latvia", "es": "Letonia"}, "Arménie": {"en": "Armenia", "es": "Armenia"}, "Biélorussie": {"en": "Belarus", "es": "Bielorrusia"}, "Albanie": {"en": "Albania", "es": "Albania"}, "Finlande": {"en": "Finland", "es": "Finlandia"}, "Saint-Marin": {"en": "San Marino", "es": "San Marino"}, "Belgique": {"en": "Belgium", "es": "Bélgica"}, "Italie": {"en": "Italy", "es": "Italia"}, "Croatie": {"en": "Croatia", "es": "Croacia"}, "Tchéquie": {"en": "Czechia", "es": "Chequia"}, "Turquie": {"en": "Turkey", "es": "Turquía"}, "Espagne": {"en": "Spain", "es": "España"}, "Angleterre": {"en": "England", "es": "Inglaterra"}, "Îles Féroé": {"en": "Faroe Islands", "es": "Islas Feroe"}, "Moldavie": {"en": "Moldova", "es": "Moldavia"}, "Kazakhstan": {"en": "Kazakhstan", "es": "Kazajistán"}, "Slovaquie": {"en": "Slovakia", "es": "Eslovaquia"}, "Estonie": {"en": "Estonia", "es": "Estonia"}, "Bulgarie": {"en": "Bulgaria", "es": "Bulgaria"}, "Islande": {"en": "Iceland", "es": "Islandia"}, "Luxembourg": {"en": "Luxembourg", "es": "Luxemburgo"}, "Lituanie": {"en": "Lithuania", "es": "Lituania"}, "Liechtenstein": {"en": "Liechtenstein", "es": "Liechtenstein"}, "Allemagne": {"en": "Germany", "es": "Alemania"}, "Pays-Bas": {"en": "Netherlands", "es": "Países Bajos"}, "Gibraltar": {"en": "Gibraltar", "es": "Gibraltar"}, "Malte": {"en": "Malta", "es": "Malta"}, "Grèce": {"en": "Greece", "es": "Grecia"}, "Serbie": {"en": "Serbia", "es": "Serbia"}, "Macédoine du Nord": {"en": "North Macedonia", "es": "Macedonia del Norte"}, "Slovénie": {"en": "Slovenia", "es": "Eslovenia"}, "Suisse": {"en": "Switzerland", "es": "Suiza"}, "Écosse": {"en": "Scotland", "es": "Escocia"}, "Bosnie-Herzégovine": {"en": "Bosnia and Herzegovina", "es": "Bosnia y Herzegovina"}, "Roumanie": {"en": "Romania", "es": "Rumanía"}, "Danemark": {"en": "Denmark", "es": "Dinamarca"}, "Norvège": {"en": "Norway", "es": "Noruega"}, "Hongrie": {"en": "Hungary", "es": "Hungría"}, "Irlande du Nord": {"en": "Northern Ireland", "es": "Irlanda del Norte"}, "Israël": {"en": "Israel", "es": "Israel"}, "Autriche": {"en": "Austria", "es": "Austria"}, "Pologne": {"en": "Poland", "es": "Polonia"}, "Suède": {"en": "Sweden", "es": "Suecia"}, "Irlande": {"en": "Republic of Ireland", "es": "Irlanda"}, "Kosovo": {"en": "Kosovo", "es": "Kosovo"}, "Ukraine": {"en": "Ukraine", "es": "Ucrania"}, "Géorgie": {"en": "Georgia", "es": "Georgia"}, "Pays de Galles": {"en": "Wales", "es": "Gales"}, "Portugal": {"en": "Portugal", "es": "Portugal"}})
+
 def _team_l(t, lang):
     if lang == "ar" and t in TEAM_AR: return TEAM_AR[t]
     return TEAM_L.get(t, {}).get(lang) or TEAM_L.get(t, {}).get("en", t)
@@ -7285,6 +7289,106 @@ def bilan_page(lang="fr"):
 
 open(os.path.join(OUT, BILAN_SLUG), "w", encoding="utf-8").write(bilan_page("fr")); written.append(BILAN_SLUG)
 open(os.path.join(OUT, BILAN_SLUG_EN), "w", encoding="utf-8").write(bilan_page("en")); written.append(BILAN_SLUG_EN)
+# ---------------------------------------------------------------- Page « Toutes les compétitions » : un onglet par compétition, même sans match
+COMP_ALL_SLUG = {"fr": "competitions.html", "en": "all-competitions.html"}
+# (groupe FR, groupe EN, [(nom FR = valeur du champ competition dans matchs.txt, nom EN, drapeau)])
+COMP_CAT = [
+ ("Sélections", "National teams", [("Éliminatoires CAN 2027", "AFCON 2027 qualifiers", "🌍"), ("Ligue des nations UEFA", "UEFA Nations League", "🇪🇺"),
+   ("Matchs amicaux", "International friendlies", "🤝"), ("Ligue des nations CONCACAF", "CONCACAF Nations League", "🌎")]),
+ ("Coupes d'Europe", "European cups", [("Ligue des Champions", "Champions League", "⭐"), ("Ligue Europa", "Europa League", "🟠"), ("Ligue Conférence", "Conference League", "🟢")]),
+ ("Grands championnats", "Top leagues", [("Premier League", "Premier League", "🇬🇧"), ("Liga", "La Liga", "🇪🇸"), ("Serie A", "Serie A", "🇮🇹"), ("Bundesliga", "Bundesliga", "🇩🇪"), ("Ligue 1", "Ligue 1", "🇫🇷")]),
+ ("Deuxièmes divisions", "Second divisions", [("Championship", "Championship (England)", "🇬🇧"), ("Liga 2", "Segunda División (Spain)", "🇪🇸"), ("Serie B", "Serie B (Italy)", "🇮🇹"),
+   ("2. Bundesliga", "2. Bundesliga (Germany)", "🇩🇪"), ("Ligue 2", "Ligue 2 (France)", "🇫🇷"), ("Liga Portugal 2", "Liga Portugal 2", "🇵🇹"), ("Eerste Divisie", "Eerste Divisie (Netherlands)", "🇳🇱")]),
+ ("Autres championnats d'Europe", "Other European leagues", [("Eredivisie", "Eredivisie (Netherlands)", "🇳🇱"), ("Liga Portugal", "Liga Portugal", "🇵🇹"), ("Süper Lig", "Süper Lig (Turkey)", "🇹🇷"),
+   ("Pro League", "Belgian Pro League", "🇧🇪"), ("Scottish Premiership", "Scottish Premiership", "🏴"), ("Super League Grèce", "Greek Super League", "🇬🇷"),
+   ("Championnat d'Ukraine", "Ukrainian Premier League", "🇺🇦"), ("Championnat de Russie", "Russian Premier League", "🇷🇺"), ("Ekstraklasa", "Ekstraklasa (Poland)", "🇵🇱"),
+   ("Bundesliga autrichienne", "Austrian Bundesliga", "🇦🇹"), ("Super League Suisse", "Swiss Super League", "🇨🇭"), ("Superliga Danemark", "Danish Superliga", "🇩🇰"),
+   ("Allsvenskan", "Allsvenskan (Sweden)", "🇸🇪"), ("Eliteserien", "Eliteserien (Norway)", "🇳🇴")]),
+ ("Afrique", "Africa", [("Ligue des champions CAF", "CAF Champions League", "🌍"), ("Coupe de la Confédération CAF", "CAF Confederation Cup", "🌍"),
+   ("Championnat d'Égypte", "Egyptian Premier League", "🇪🇬"), ("Championnat d'Afrique du Sud", "South African Premiership", "🇿🇦")]),
+ ("Amériques et Asie", "Americas and Asia", [("MLS", "MLS (USA)", "🇺🇸"), ("Brasileirão", "Brasileirão (Brazil)", "🇧🇷"), ("Liga argentine", "Argentine Liga", "🇦🇷"), ("Liga MX", "Liga MX (Mexico)", "🇲🇽"),
+   ("J1 League", "J1 League (Japan)", "🇯🇵"), ("K League 1", "K League 1 (South Korea)", "🇰🇷"), ("Saudi Pro League", "Saudi Pro League", "🇸🇦"), ("A-League", "A-League (Australia)", "🇦🇺")]),
+ ("Autres sports", "Other sports", [("NBA", "NBA", "🏀"), ("Tennis", "Tennis", "🎾")]),
+]
+for _g in COMP_CAT:
+    for _fr, _en, _fl in _g[2]:
+        COMP_L.setdefault(_fr, {}).setdefault("en", _en)
+        COMP_L[_fr].setdefault("es", _en)
+_COMP_CSS = """<style>
+.cgroup{margin:26px 0 8px;font-size:20px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.ccard{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;cursor:pointer}
+.ccard:hover,.ccard.on{border-color:#f59e0b;box-shadow:0 6px 18px rgba(245,158,11,.25)}
+.ccard .fl{font-size:28px;line-height:1}
+.ccard b{display:block;font-size:15px;line-height:1.2}
+.ccard small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.ccard.has small{color:#16a34a;font-weight:700}
+.cmpsec{margin:30px 0}
+.js .cmpsec{display:none}.js .cmpsec.on{display:block}
+.cmpempty{background:var(--soft);border-radius:16px;padding:20px;text-align:center;color:var(--ink2)}
+.nextall{margin-top:8px}
+</style>"""
+_COMP_T = {
+ "fr": {"title": "Toutes les compétitions : pronostics foot, NBA, tennis | Cousin Marc", "desc": "Toutes les compétitions suivies par Cousin Marc : sélections, coupes d'Europe, championnats, deuxièmes divisions. Clique sur une compétition pour voir ses matchs et ses résultats.",
+        "eyebrow": "Pronostics", "h1": 'Toutes les <span class="hl">compétitions</span>', "sub": "Clique sur une compétition pour voir ses matchs.", "next": "Les prochains matchs", "none": "Pas de match pour l'instant. Reviens bientôt : j'ajoute les matchs dès qu'ils sont programmés.",
+        "n1": "1 match à venir", "nn": "{n} matchs à venir", "soon": "Bientôt", "up": "À venir", "last": "Derniers résultats", "all": "Tous mes pronostics", "allhref": "pronostics.html", "lang": "fr"},
+ "en": {"title": "All competitions: football, NBA and tennis predictions | Cousin Marc", "desc": "Every competition followed by Cousin Marc: national teams, European cups, leagues and second divisions. Tap a competition to see its games and results.",
+        "eyebrow": "Predictions", "h1": 'All <span class="hl">competitions</span>', "sub": "Tap a competition to see its games.", "next": "Next games", "none": "No game for now. Come back soon: I add games as soon as they are scheduled.",
+        "n1": "1 game coming up", "nn": "{n} games coming up", "soon": "Coming soon", "up": "Coming up", "last": "Latest results", "all": "All my predictions", "allhref": "predictions.html", "lang": "en"},
+}
+def comps_page(lang):
+    T = _COMP_T[lang]; es = html.escape
+    now = datetime.datetime.now()
+    seen = {c for g in COMP_CAT for c in (x[0] for x in g[2])}
+    cat = [(g[0 if lang == "fr" else 1], g[2]) for g in COMP_CAT]
+    extra = sorted({m.get("competition") for m in MATCHS if m.get("competition")} - seen)
+    if extra: cat.append(("Autres" if lang == "fr" else "Others", [(c, COMP_L.get(c, {}).get("en", c), "🏆") for c in extra]))
+    def ups(comp): return sorted([m for m in _comp_ms(comp) if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])
+    def lastres(comp): return sorted([m for m in _comp_ms(comp) if m.get("resultat")], key=lambda m: m["dt"], reverse=True)[:6]
+    slug_of = lambda c: "c-" + re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFD", COMP_L.get(c, {}).get("en", c)).encode("ascii", "ignore").decode().lower()).strip("-")
+    grids, secs = "", ""
+    for gname, items in cat:
+        cards = ""
+        for fr, en, fl in items:
+            u = ups(fr); n = len(u); nm = fr if lang == "fr" else en
+            st = (T["n1"] if n == 1 else T["nn"].format(n=n)) if n else T["soon"]
+            cards += f'<a class="ccard{" has" if n else ""}" href="#{slug_of(fr)}" data-t="{slug_of(fr)}"><span class="fl">{fl}</span><span><b>{es(nm)}</b><small>{st}</small></span></a>'
+            body = ""
+            if u: body += f'<h3>{T["up"]}</h3>{_grid(u, lang)}'
+            lr = lastres(fr)
+            if lr: body += f'<h3>{T["last"]}</h3>{_grid(lr, lang)}'
+            if not body: body = f'<div class="cmpempty">{T["none"]}</div>'
+            link = ""
+            if comp_page_ok(fr): link = f'<p><a href="{COMP_PAGES[fr][0 if lang == "fr" else 1]}.html" style="color:var(--gold);font-weight:700">{T["all"]} {es(nm)} →</a></p>'
+            secs += f'<section class="cmpsec" id="{slug_of(fr)}"><h2>{fl} {es(nm)}</h2>{body}{link}</section>'
+        grids += f'<h2 class="cgroup">{es(gname)}</h2><div class="cgrid">{cards}</div>'
+    nxt = sorted([m for m in MATCHS if not m.get("resultat") and m["dt"] >= now - datetime.timedelta(hours=3)], key=lambda m: m["dt"])[:12]
+    nxth = f'<section class="nextall"><h2>{T["next"]}</h2>{_grid(nxt, lang)}</section>' if nxt else ""
+    slug = COMP_ALL_SLUG[lang]
+    nav = nav_fr(en=COMP_ALL_SLUG["en"]) if lang == "fr" else nav_en(fr=COMP_ALL_SLUG["fr"])
+    foot = footer_html() if lang == "fr" else footer_html_en()
+    js = ('<script>(function(){document.documentElement.classList.add("js");var cs=document.querySelectorAll(".cmpsec"),cc=document.querySelectorAll(".ccard");'
+          'function show(id){cs.forEach(function(s){s.classList.toggle("on",s.id===id)});cc.forEach(function(c){c.classList.toggle("on",c.getAttribute("data-t")===id)});'
+          'var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:"smooth",block:"start"})}'
+          'cc.forEach(function(c){c.addEventListener("click",function(ev){ev.preventDefault();var id=c.getAttribute("data-t");history.replaceState(null,"","#"+id);show(id)})});'
+          'if(location.hash&&document.getElementById(location.hash.slice(1)))show(location.hash.slice(1))})();</script>')
+    return head(T["title"], T["desc"], f"{BASE}/{slug}", extra=_COMP_CSS, nav=nav, lang=lang,
+                alternates=(f"{BASE}/{COMP_ALL_SLUG['fr']}", f"{BASE}/{COMP_ALL_SLUG['en']}")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">{T["eyebrow"]}</p>
+<h1>{T["h1"]}</h1>
+<p>{T["sub"]}</p>
+</div></header>
+<main class="wrap">
+{grids}
+{secs}
+{nxth}
+</main>
+{foot}
+{js}"""
+
+for _lg in ("fr", "en"):
+    open(os.path.join(OUT, COMP_ALL_SLUG[_lg]), "w", encoding="utf-8").write(comps_page(_lg)); written.append(COMP_ALL_SLUG[_lg])
 def gains_page(lang):
     L = GAINS_L[lang]
     imgs = "".join(f'<figure class="gcard"><img src="{f}" alt="{html.escape(m)} : ticket gagnant {paid}" loading="lazy" decoding="async">'
