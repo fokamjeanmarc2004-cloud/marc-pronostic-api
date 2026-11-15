@@ -1432,17 +1432,17 @@ NAV_L = {
          ("analyses","\U0001F4CA","Analyses des matchs","pronostics.html"),("cote2","\u26BD","Côte de 2","cote-de-2.html"),("tpi","\U0001F3B2","Total Pair/Impair","total-pair-impair.html"),
          ("compare","\U0001F9ED","Quel bookmaker choisir ?","quel-bookmaker-choisir.html"),("aide","❓","Code qui ne marche pas","code-promo-ne-marche-pas.html"),
          ("resultats","\U0001F3C6","Résultats","resultats.html"),
-         ("vip","\u2B50","VIP","vip.html")]},
+         ("livres","\U0001F4DA","Mes livres","livres.html"),("vip","\u2B50","VIP","vip.html")]},
   "en": {"title":"Menu","items":[("accueil","\U0001F3E0","Home","promo-codes.html"),("codes","\U0001F39F\uFE0F","Promo codes","promo-codes.html#bookmakers"),
          ("analyses","\U0001F4CA","Match predictions","predictions.html"),("cote2","\u26BD","Odds of 2","odds-of-2.html"),("tpi","\U0001F3B2","Total Odd/Even","total-odd-even.html"),
          ("compare","\U0001F9ED","Which bookmaker?","which-bookmaker.html"),("aide","❓","Code not working","promo-code-not-working.html"),
-         ("resultats","\U0001F3C6","Results","results.html"),("vip","\u2B50","VIP","vip-en.html")]},
+         ("resultats","\U0001F3C6","Results","results.html"),("livres","\U0001F4DA","Books (in French)","livres.html"),("vip","\u2B50","VIP","vip-en.html")]},
   "es": {"title":"Menú","items":[("accueil","\U0001F3E0","Inicio","codigos-promocionales.html"),("codes","\U0001F39F\uFE0F","Códigos promo","codigos-promocionales.html#bookmakers"),
          ("analyses","\U0001F4CA","Pronósticos de partidos","pronosticos.html"),("cote2","\u26BD","Cuota de 2","cuota-de-2.html"),("tpi","\U0001F3B2","Total Par/Impar","total-par-impar.html"),
-         ("resultats","\U0001F3C6","Resultados","resultados.html"),("vip","\u2B50","VIP","vip-es.html")]},
+         ("resultats","\U0001F3C6","Resultados","resultados.html"),("livres","\U0001F4DA","Libros (en francés)","livres.html"),("vip","\u2B50","VIP","vip-es.html")]},
   "ar": {"title":"القائمة","items":[("accueil","\U0001F3E0","الرئيسية","promo-codes-ar.html"),("codes","\U0001F39F\uFE0F","الرموز الترويجية","promo-codes-ar.html#bookmakers"),
          ("analyses","\U0001F4CA","توقعات المباريات","pronostics-ar.html"),("cote2","\u26BD","رهان بضعف 2","cote-2-ar.html"),("tpi","\U0001F3B2","زوجي/فردي","total-pair-impair-ar.html"),
-         ("resultats","\U0001F3C6","النتائج","resultats-ar.html"),("vip","\u2B50","VIP","vip-ar.html")]},
+         ("resultats","\U0001F3C6","النتائج","resultats-ar.html"),("livres","\U0001F4DA","كتب (بالفرنسية)","livres.html"),("vip","\u2B50","VIP","vip-ar.html")]},
 }
 
 def burger_html():
@@ -1459,10 +1459,10 @@ def navpanel_html(lang="fr", lang_links=""):
 
 VIP_SLUG = {"fr":"vip.html","en":"vip-en.html","es":"vip-es.html","ar":"vip-ar.html"}
 TOPLINKS_L = {
-  "fr": [("Codes promo","index.html#bookmakers"),("Analyses","pronostics.html"),("Côte de 2","cote-de-2.html"),("Pair/Impair","total-pair-impair.html"),("Résultats","resultats.html")],
-  "en": [("Promo codes","promo-codes.html#bookmakers"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Odd/Even","total-odd-even.html"),("Results","results.html")],
-  "es": [("Códigos","codigos-promocionales.html#bookmakers"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Par/Impar","total-par-impar.html"),("Resultados","resultados.html")],
-  "ar": [("الرموز","promo-codes-ar.html#bookmakers"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("زوجي/فردي","total-pair-impair-ar.html"),("النتائج","resultats-ar.html")],
+  "fr": [("Codes promo","index.html#bookmakers"),("Analyses","pronostics.html"),("Côte de 2","cote-de-2.html"),("Pair/Impair","total-pair-impair.html"),("Résultats","resultats.html"),("📚 Livres","livres.html")],
+  "en": [("Promo codes","promo-codes.html#bookmakers"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Odd/Even","total-odd-even.html"),("Results","results.html"),("📚 Books (FR)","livres.html")],
+  "es": [("Códigos","codigos-promocionales.html#bookmakers"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Par/Impar","total-par-impar.html"),("Resultados","resultados.html"),("📚 Libros (FR)","livres.html")],
+  "ar": [("الرموز","promo-codes-ar.html#bookmakers"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("زوجي/فردي","total-pair-impair-ar.html"),("النتائج","resultats-ar.html"),("📚 كتب (FR)","livres.html")],
 }
 HOME_L = {"fr":"index.html","en":"promo-codes.html","es":"codigos-promocionales.html","ar":"promo-codes-ar.html"}
 
@@ -1559,8 +1559,19 @@ NAV = nav_fr(es="codigos-promocionales.html")
 def social_html():
     return "\n".join(f'<a href="{u}" rel="nofollow">{ICONS.get(n,"")}<span>{n}</span></a>' for n,u in SOCIAL)
 
+_BAND_L = {"fr": ("📚 Mes livres", "Apprends ma méthode d'analyse : guides PDF de Cousin Marc.", "Voir les livres"),
+           "en": ("📚 My books", "Learn my analysis method: guides by Cousin Marc (in French).", "See the books"),
+           "es": ("📚 Mis libros", "Aprende mi método de análisis: guías de Cousin Marc (en francés).", "Ver los libros"),
+           "ar": ("📚 كتبي", "تعلّم طريقتي في التحليل: أدلة كوزين مارك (بالفرنسية).", "عرض الكتب")}
+def livres_band(lang):
+    a, b, c = _BAND_L[lang]
+    return (f'<aside class="lvband" id="lvband" style="background:#0b1a3a;color:#fff;padding:18px 0"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between">'
+            f'<div><b style="font-size:18px;color:#fff">{a}</b><br><span style="color:#d6def0;font-size:14.5px">{b}</span></div>'
+            f'<a href="livres.html" style="background:#e0a800;color:#0b1a3a;font-weight:800;text-decoration:none;border-radius:12px;padding:12px 18px">{c} →</a></div>'
+            f'<script>if(/livre/.test(location.pathname)){{var x=document.getElementById("lvband");if(x)x.remove()}}</script></aside>\n')
+
 def footer_html():
-    return f"""<footer><div class="wrap">
+    return livres_band("fr") + f"""<footer><div class="wrap">
 <div class="cols">
 <div>
 <h4>Navigation</h4>
@@ -3469,7 +3480,7 @@ def related_block_en(current):
     return cards
 
 def footer_html_en():
-    return f"""<footer><div class="wrap">
+    return livres_band("en") + f"""<footer><div class="wrap">
 <div class="cols">
 <div><h4>Navigation</h4>
 <a href="promo-codes.html">Promo codes</a>
@@ -3943,7 +3954,7 @@ def related_block_es(current):
     return cards
 
 def footer_html_es():
-    return f"""<footer><div class="wrap">
+    return livres_band("es") + f"""<footer><div class="wrap">
 <div class="cols">
 <div><h4>Navegación</h4>
 <a href="codigos-promocionales.html">Códigos promo</a>
@@ -4584,7 +4595,7 @@ def related_block_ar(current):
     return cards
 
 def footer_html_ar():
-    return f"""<footer><div class="wrap">
+    return livres_band("ar") + f"""<footer><div class="wrap">
 <div class="cols">
 <div><h4>التنقّل</h4>
 <a href="promo-codes-ar.html">رموز ترويجية</a>
