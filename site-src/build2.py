@@ -1488,7 +1488,7 @@ TOPLINKS_L = {
 HOME_L = {"fr":"index.html","en":"promo-codes.html","es":"codigos-promocionales.html","ar":"promo-codes-ar.html"}
 
 TABBAR_L = {
-  "fr": ("Accueil", "Codes", "Copier", "Coupon", "VIP", "Copié !", "cote-de-2.html"),
+  "fr": ("Accueil", "Codes", "Copier", "Livres", "VIP", "Copié !", "livres.html"),
   "en": ("Home", "Codes", "Copy", "Coupon", "VIP", "Copied!", "odds-of-2.html"),
   "es": ("Inicio", "Códigos", "Copiar", "Cupón", "VIP", "¡Copiado!", "cuota-de-2.html"),
   "ar": ("الرئيسية", "الرموز", "نسخ", "القسيمة", "VIP", "تم النسخ", "cote-2-ar.html"),
@@ -1507,7 +1507,7 @@ def tabbar_html(lang):
             f'<a href="{h}" data-p="{h}"><span class="ti">🏠</span>{home}</a>'
             f'<a href="{h}#bookmakers"><span class="ti">🎟️</span>{codes}</a>'
             f'<button type="button" class="tb-ffn" data-ok="{ok}" aria-label="{copy} FFN"><b translate="no">FFN</b><small>{copy}</small></button>'
-            f'<a href="{cslug}" data-p="{cslug}"><span class="ti">⚽</span>{coupon}</a>'
+            f'<a href="{cslug}" data-p="{cslug}"><span class="ti">{"📚" if lang == "fr" else "⚽"}</span>{coupon}</a>'
             f'<a href="{VIP_SLUG[lang]}" data-p="{VIP_SLUG[lang]}" class="tb-vip"><span class="ti">⭐</span>{vip}</a>'
             f'</nav>' + TABBAR_SCRIPT)
 
