@@ -1908,7 +1908,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11j"><script>
+<link rel="stylesheet" href="style.css?v=2026-11k"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -2703,7 +2703,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
                      f'<div class="hsec-head"><div><p class="kicker">{T["p_kick"]}</p><h2>{T["p_h2"]}</h2><p>{T["p_p"]}</p></div></div>'
                      f'<div class="related">{country_index_cards()}</div></div></section>')
     return head(title, desc, canonical, nav=nav, lang=lang, alternates=alternates, show_youtube=True) + f"""
-<header class="home-hero"><div class="wrap">
+<header class="home-hero hero-photo hero-accueil"><div class="wrap">
 <p class="eyebrow">{T["eyebrow"].replace("{maj}", maj)}</p>
 <h1>{T["h1"]}</h1>
 <p class="lead">{T["lead"]}</p>
@@ -2802,7 +2802,7 @@ def pronostics_page():
 .daygroup{{margin-top:22px}}
 .daygroup h3{{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--green-ink);margin-bottom:8px}}
 </style>
-<header class="hero"><div class="wrap">
+<header class="hero hero-photo hero-analyse"><div class="wrap">
 <p class="eyebrow">📊 Analyses · mis à jour {MAJ_FR}</p>
 <h1>Pronostics foot <span class="hl">du jour</span></h1>
 <p class="sub">Mes analyses des grands matchs : Ligue des champions, Premier League, Liga, Ligue 1, CAN… Pour chaque match : mon pronostic, la cote, mon avis, puis le résultat.</p>
@@ -3220,7 +3220,7 @@ def vip_page(lang):
                 f'<button type="button" class="vcopy" onclick="try{{navigator.clipboard.writeText(\'{addr}\');this.textContent=\'{L["copied"]}\';}}catch(e){{}}">{L["copy"]}</button>'
                 f'<p class="vwarn">⚠️ {L["warn_net"]} <b>{net}</b>. {L["warn_lost"]}</p></div>')
     body=f'''
-<header class="vhero"><div class="wrap">
+<header class="vhero hero-photo hero-vip"><div class="wrap">
 <p class="eyebrow">⭐ {L["eyebrow"]}</p>
 <h1>{L["h1"]}</h1>
 <div class="btnrow"><a class="cta" href="#paiement">{L["cta"]}</a><a class="cta alt" href="#preuves">{L["proofs"]}</a></div>
@@ -7399,7 +7399,7 @@ def gains_page(lang):
     foot = {"fr": footer_html, "en": footer_html_en, "es": footer_html_es, "ar": footer_html_ar}[lang]
     return head(L["title"], L["desc"], f"{BASE}/{GAINS_SLUG[lang]}", nav=navs[lang], lang=lang,
                 alternates=(f"{BASE}/{GAINS_SLUG['fr']}", f"{BASE}/{GAINS_SLUG['en']}", f"{BASE}/{GAINS_SLUG['es']}", f"{BASE}/{GAINS_SLUG['ar']}")) + f"""
-<header class="hero"><div class="wrap">
+<header class="hero hero-photo hero-gains"><div class="wrap">
 <p class="eyebrow">{L["eyebrow"]}</p>
 <h1>{L["h1"]}</h1>
 </div></header>
@@ -8149,6 +8149,17 @@ CSS += r'''
 .home-hero .cta.alt{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
 .reslink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:11px 16px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;text-decoration:none;font-size:15px}
 .reslink b{color:#4ade80;font-size:18px}.reslink i{font-style:normal;color:#facc15}
+'''
+CSS += r'''
+/* ---------- fonds photo (vraies images, allégées) ---------- */
+.hero-photo{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;border-bottom:0!important}
+.hero-photo h1,.hero-photo .lead,.hero-photo p{color:#fff}
+.hero-photo .eyebrow{color:#fde68a}
+.hero-photo .eyebrow::before{background:#facc15}
+.home-hero.hero-accueil{background:linear-gradient(180deg,rgba(6,16,36,.55),rgba(6,16,36,.88)),url("fond-accueil.jpg")!important;background-size:cover!important;background-position:center!important}
+.hero.hero-analyse{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.9)),url("fond-analyse.jpg")!important;background-size:cover!important;background-position:center!important}
+.vhero.hero-vip{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-vip.jpg")!important;background-size:cover!important;background-position:center!important}
+.hero.hero-gains{background:linear-gradient(180deg,rgba(6,16,36,.6),rgba(6,16,36,.92)),url("fond-gains.jpg")!important;background-size:cover!important;background-position:center!important}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
