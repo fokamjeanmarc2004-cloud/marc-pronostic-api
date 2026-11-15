@@ -7642,9 +7642,8 @@ def livres_page():
     import json as _j
     ico = _book_icons(); sv = _sport_svgs()
     def book3d(b):
-        return (f'<div class="bk3"><div class="bk"><div class="front" style="background:linear-gradient(150deg,{b["c1"]},{b["c2"]})">'
-                f'<div><small>Cousin Marc</small><b>{b["cov"]}</b></div><div class="ill">{ico[b["ico"]]}</div><i>Guide pratique · 2026</i></div>'
-                f'<div class="spine"></div><div class="pgs"></div><div class="back"></div></div></div>')
+        return (f'<div class="bk3"><img src="livre-{b["id"]}-3d.webp" alt="Livre : {html.escape(b["titre"])}" width="180" height="240" loading="lazy" '
+                f'style="height:236px;width:auto;margin:0 auto;display:block;filter:drop-shadow(0 18px 22px rgba(0,0,0,.5))"></div>')
     def card(b):
         dispo = b["status"] == "dispo"
         st = '<span class="st">DISPONIBLE</span>' if dispo else '<span class="st soon">BIENTÔT</span>'
