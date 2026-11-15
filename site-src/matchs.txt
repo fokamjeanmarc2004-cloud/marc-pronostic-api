@@ -3023,3 +3023,113 @@ Bilan après 3 matchs : Niger : 1 victoire, 2 défaites (3 pts) ; Maroc : 3 vict
 Le Maroc est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire du Maroc. Option plus grosse cote : Maroc gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 14:00
+competition: Liga 2
+equipe1: Tenerife
+equipe2: Ceuta
+pronostic: Victoire de Tenerife
+pronostic_en: Tenerife to win
+pronostic_es: Gana Tenerife
+cote:
+bookmaker: 1xbet
+proba: 58-27-15
+analyse_en: Kick-off Sunday 15 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar.
+Tenerife host Ceuta in the Segunda División (Spanish second tier).
+Ceuta have won just one game in 13. Tenerife draw a lot (6), so I stay careful about the score.
+My pick: Tenerife to win. Bigger odds: Tenerife win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar.
+Tenerife reçoit Ceuta en Liga 2 (Segunda División).
+Classement : Tenerife 14e, 15 pts, 3 victoires, 6 nuls, 3 défaites ; Ceuta 22e et dernier, 5 pts, 1 victoire, 2 nuls, 10 défaites.
+Ceuta n'a gagné qu'un match sur 13 et en a perdu 10. Tenerife fait beaucoup de nuls (6), donc je reste prudent sur le score.
+Mon choix : victoire de Tenerife. Option plus grosse cote : Tenerife gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 16:00
+competition: Liga 2
+equipe1: Granada
+equipe2: Las Palmas
+pronostic: Granada ou nul
+pronostic_en: Granada or draw
+pronostic_es: Granada o empate
+cote:
+bookmaker: 1xbet
+proba: 45-28-27
+analyse_en: Kick-off Sunday 15 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar.
+Granada host Las Palmas in the Segunda División (Spanish second tier).
+Two teams close in the table: a very open game. Granada have the better record of the two, so I take the double chance to limit the risk.
+My pick: Granada or draw. Bigger odds: Granada don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar.
+Granada reçoit Las Palmas en Liga 2 (Segunda División).
+Classement : Granada 7e, 23 pts, 7 victoires, 2 nuls, 3 défaites ; Las Palmas 11e, 20 pts, 6 victoires, 2 nuls, 5 défaites.
+Deux équipes proches au classement : un match très ouvert. Granada a un bilan légèrement meilleur (23 points contre 20), donc je choisis la double chance pour limiter le risque.
+Mon choix : Granada ou nul. Option plus grosse cote : Granada ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 18:00
+competition: Liga 2
+equipe1: Eibar
+equipe2: Cádiz
+pronostic: Victoire d'Eibar
+pronostic_en: Eibar to win
+pronostic_es: Gana Eibar
+cote:
+bookmaker: 1xbet
+proba: 62-24-14
+analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
+Eibar host Cádiz in the Segunda División (Spanish second tier).
+Eibar are high in the table (6th) while Cádiz are 20th with only 2 wins. Bookmakers also make Eibar favourites.
+My pick: Eibar to win. Bigger odds: Eibar win and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+Eibar reçoit Cádiz en Liga 2 (Segunda División).
+Classement : Eibar 6e, 23 pts, 7 victoires, 2 nuls, 3 défaites ; Cádiz 20e, 10 pts, 2 victoires, 4 nuls, 7 défaites.
+Eibar est dans le haut du classement (6e) et Cadix est 20e avec seulement 2 victoires. Les bookmakers donnent aussi Eibar favori.
+Mon choix : victoire d'Eibar. Option plus grosse cote : Eibar gagne et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-15 18:00
+competition: Liga 2
+equipe1: Eldense
+equipe2: Sabadell
+pronostic: Sabadell ou nul
+pronostic_en: Sabadell or draw
+pronostic_es: Sabadell o empate
+cote:
+bookmaker: 1xbet
+proba: 30-32-38
+analyse_en: Kick-off Sunday 15 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
+Eldense host Sabadell in the Segunda División (Spanish second tier).
+Sabadell are hard to beat: 6 draws and only 3 defeats in 13 games. Eldense have lost 7 of their 13. I take the double chance.
+My pick: Sabadell or draw. Bigger odds: Sabadell don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 15 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
+Eldense reçoit Sabadell en Liga 2 (Segunda División).
+Classement : Eldense 16e, 14 pts, 4 victoires, 2 nuls, 7 défaites ; Sabadell 13e, 18 pts, 4 victoires, 6 nuls, 3 défaites.
+Sabadell est une équipe difficile à battre : 6 nuls et seulement 3 défaites en 13 matchs. Eldense a perdu 7 de ses 13 matchs. Je choisis la double chance.
+Mon choix : Sabadell ou nul. Option plus grosse cote : Sabadell ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-16 20:00
+competition: Liga 2
+equipe1: Albacete
+equipe2: Celta Fortuna
+pronostic: Celta Fortuna ou nul
+pronostic_en: Celta Fortuna or draw
+pronostic_es: Celta Fortuna o empate
+cote:
+bookmaker: 1xbet
+proba: 33-30-37
+analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
+Albacete host Celta Fortuna in the Segunda División (Spanish second tier).
+Two bottom-table sides. Albacete have lost 9 of 13, Celta Fortuna draw more often. A risky game, so the double chance.
+My pick: Celta Fortuna or draw. Bigger odds: Celta Fortuna don't lose and under 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
+Albacete reçoit Celta Fortuna en Liga 2 (Segunda División).
+Classement : Albacete 21e, 10 pts, 3 victoires, 1 nul, 9 défaites ; Celta Fortuna 17e, 13 pts, 3 victoires, 4 nuls, 6 défaites.
+Deux équipes de bas de tableau. Albacete a perdu 9 matchs sur 13, Celta Fortuna fait plus de nuls. Match à risque, donc double chance.
+Mon choix : Celta Fortuna ou nul. Option plus grosse cote : Celta Fortuna ne perd pas et moins de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.

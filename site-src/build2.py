@@ -6235,7 +6235,7 @@ HOME_VENUE = {
 }
 ORGANIZER = {"Ligue des Champions": ("UEFA", "https://www.uefa.com"), "Ligue Europa": ("UEFA", "https://www.uefa.com"), "Ligue Conférence": ("UEFA", "https://www.uefa.com"), "NBA": ("NBA", "https://www.nba.com"), "Tennis": ("ATP Tour", "https://www.atptour.com"),
              "Ligue 1": ("Ligue de Football Professionnel", "https://www.lfp.fr"), "Premier League": ("Premier League", "https://www.premierleague.com"),
-             "Liga": ("LaLiga", "https://www.laliga.com"), "CAN": ("CAF", "https://www.cafonline.com")}
+             "Liga": ("LaLiga", "https://www.laliga.com"), "Liga 2": ("LaLiga Hypermotion", "https://www.laliga.com"), "CAN": ("CAF", "https://www.cafonline.com")}
 
 def sports_event_ld(m, desc):
     e1, e2 = m["equipe1"], m["equipe2"]
@@ -6287,6 +6287,59 @@ def _proba(m):
     except ValueError:
         return None
 
+# ---------------------------------------------------------------- Autres options de pari (3 niveaux : prudent / équilibré / audacieux)
+_ALT_L = {
+ "fr": {"h": "Autres options de pari", "lv": ("🟢 Prudent", "🟡 Équilibré", "🔴 Audacieux"),
+        "note": "Ce sont des idées d'après mon analyse, pas des certitudes. Vérifie que la cote existe et compare-la avant de jouer.",
+        "dc": "{f} ou nul (double chance) · {p} % de chances selon mon estimation", "o05": "Plus de 0,5 but dans le match",
+        "fu35": "{f} gagne et moins de 3,5 buts", "u35": "Moins de 3,5 buts", "hcp": "{f} gagne avec 2 buts d'écart ou plus (handicap -1)",
+        "draw": "Match nul · {p} % de chances selon mon estimation", "btts": "Les deux équipes marquent",
+        "bm": "{f} gagne avec plus de {x} points d'écart", "tot": "Plus de {n} points au total (si la ligne existe)",
+        "s1": "{f} gagne au moins un set", "s20": "{f} gagne 2 sets à 0", "o25": "Plus de 2,5 sets dans le match", "g": "Moins de 22,5 jeux (si la ligne existe)"},
+ "en": {"h": "Other betting options", "lv": ("🟢 Safe", "🟡 Balanced", "🔴 Bold"),
+        "note": "These are ideas based on my analysis, not certainties. Check the odds exist and compare them before you bet.",
+        "dc": "{f} or draw (double chance) · {p}% chance by my estimate", "o05": "Over 0.5 goals in the match",
+        "fu35": "{f} win and under 3.5 goals", "u35": "Under 3.5 goals", "hcp": "{f} win by 2+ goals (handicap -1)",
+        "draw": "Draw · {p}% chance by my estimate", "btts": "Both teams to score",
+        "bm": "{f} win by more than {x} points", "tot": "Over {n} total points (if the line exists)",
+        "s1": "{f} win at least one set", "s20": "{f} win 2 sets to 0", "o25": "Over 2.5 sets in the match", "g": "Under 22.5 games (if the line exists)"},
+ "ar": {"h": "خيارات رهان أخرى", "lv": ("🟢 حذر", "🟡 متوازن", "🔴 جريء"),
+        "note": "هذه أفكار مبنية على تحليلي وليست مؤكدة. تأكد من وجود النسبة وقارنها قبل اللعب.",
+        "dc": "{f} أو تعادل (فرصة مزدوجة) · {p}٪ حسب تقديري", "o05": "أكثر من 0.5 هدف في المباراة",
+        "fu35": "فوز {f} وأقل من 3.5 أهداف", "u35": "أقل من 3.5 أهداف", "hcp": "فوز {f} بفارق هدفين أو أكثر",
+        "draw": "تعادل · {p}٪ حسب تقديري", "btts": "كلا الفريقين يسجل",
+        "bm": "فوز {f} بأكثر من {x} نقطة", "tot": "أكثر من {n} نقطة في المجموع (إن وُجد الخط)",
+        "s1": "{f} يفوز بمجموعة واحدة على الأقل", "s20": "فوز {f} 2-0 في المجموعات", "o25": "أكثر من 2.5 مجموعة", "g": "أقل من 22.5 شوطًا (إن وُجد الخط)"},
+}
+def alt_bets_html(m, lang, e1, e2, pick, p):
+    L = _ALT_L[lang]; es = html.escape
+    sp = sport_of(m)
+    items = []
+    if sp == "foot":
+        fav, pf = (e1, p[0]) if p[0] >= p[2] else (e2, p[2])
+        main_dc = (" ou nul" in pick.lower()) or (" or draw" in pick.lower()) or ("أو تعادل" in pick)
+        strong = pf >= 60
+        items.append(L["o05"] if main_dc else L["dc"].format(f=fav, p=pf + p[1]))
+        items.append(L["fu35"].format(f=fav) if strong else L["u35"])
+        items.append(L["hcp"].format(f=fav) if strong else (L["draw"].format(p=p[1]) if p[1] >= 28 else L["btts"]))
+    else:
+        sc = re.match(r"\s*(\d+)\s*-\s*(\d+)", m.get("score", "") or "")
+        fav, pf = (e1, p[0]) if p[0] >= p[2] else (e2, p[2])
+        if sp == "basket" and sc:
+            a, b = int(sc.group(1)), int(sc.group(2)); diff, tot = abs(a - b), a + b
+            x1 = max(2.5, round(diff * 0.45) + 0.5); x2 = max(x1 + 3, round(diff * 0.85) + 0.5)
+            items = [L["tot"].format(n=str(max(150, tot - 15) - 0.5).replace(".", ",") if lang == "fr" else str(max(150, tot - 15) - 0.5)),
+                     L["bm"].format(f=fav, x=str(x1).replace(".", ",") if lang == "fr" else x1),
+                     L["bm"].format(f=fav, x=str(x2).replace(".", ",") if lang == "fr" else x2)]
+        elif sp == "tennis":
+            items = [L["s1"].format(f=fav), L["s20"].format(f=fav) if pf >= 60 else L["o25"], L["g"]]
+        else:
+            return ""
+    chips = "".join(f'<div style="display:flex;gap:10px;align-items:flex-start;margin:8px 0"><b style="flex:0 0 7.5em;font-size:.9em">{lv}</b><span>{es(txt)}</span></div>'
+                    for lv, txt in zip(L["lv"], items))
+    return (f'<div style="margin-top:16px;padding:16px 18px;border-radius:14px;border:1px solid rgba(148,163,184,.4)"><h3 style="margin:0 0 6px">{L["h"]}</h3>{chips}'
+            f'<p style="margin:10px 0 0;font-size:.85em;opacity:.75">{L["note"]}</p></div>')
+
 def proba_html(m, lang, e1, e2, pick, when):
     """Bloc probabilites + FAQ (html, json-ld FAQPage). Vide si pas de champ proba."""
     p = _proba(m)
@@ -6315,7 +6368,7 @@ def proba_html(m, lang, e1, e2, pick, when):
     qa.append((T["q4"].format(a=e1, b=e2), (T["a4"] if not two else T["a4b"]).format(w=when)))
     faq = f'<section><h2>{T["faq"]}</h2>' + "".join(f'<h3>{es(q)}</h3><p>{es(a)}</p>' for q, a in qa) + "</section>"
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
-    return block + "", faq + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+    return block + alt_bets_html(m, lang, e1, e2, pick, p), faq + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
 
 
 
@@ -6640,6 +6693,7 @@ COMP_L = {"Ligue des Champions": {"en": "Champions League", "es": "Liga de Campe
           "Ligue 1": {"en": "Ligue 1", "es": "Ligue 1", "ar": "الدوري الفرنسي"},
           "Premier League": {"en": "Premier League", "es": "Premier League", "ar": "الدوري الإنجليزي"},
           "Liga": {"en": "La Liga", "es": "LaLiga", "ar": "الدوري الإسباني"},
+          "Liga 2": {"en": "Segunda División", "es": "Segunda División", "ar": "الدرجة الثانية الإسبانية"},
           "Serie A": {"en": "Serie A", "es": "Serie A", "ar": "الدوري الإيطالي"},
           "Bundesliga": {"en": "Bundesliga", "es": "Bundesliga", "ar": "الدوري الألماني"},
           "CAN": {"en": "AFCON", "es": "Copa Africana", "ar": "كأس أمم أفريقيا"},
@@ -6797,6 +6851,9 @@ COMP_PAGES = {
  "Premier League": ("pronostic-premier-league", "premier-league-predictions",
    "La Premier League est le championnat le plus regardé en Afrique. Arsenal, Manchester City, Liverpool, Chelsea et Manchester United : j'analyse les grosses affiches du week-end.",
    "The Premier League is the most watched league in Africa, from Lagos to Nairobi. Arsenal, Manchester City, Liverpool, Chelsea and Manchester United: I analyse the big weekend games."),
+ "Liga 2": ("pronostic-liga-2", "segunda-division-predictions",
+   "Mes pronostics de la Liga 2 (Segunda División espagnole) : Almería, Castellón, Girona, Mallorca, Eibar… Un championnat très disputé, avec le résultat de chaque pronostic.",
+   "My Segunda División (Spanish second tier) predictions: Almería, Castellón, Girona, Mallorca, Eibar… A very tight league, with the result of every prediction."),
  "Liga": ("pronostic-liga", "la-liga-predictions",
    "Real Madrid, Barça, Atlético : la Liga espagnole reste une valeur sûre pour les paris. Mes analyses des grands matchs, avec le résultat de chaque pronostic.",
    "Real Madrid, Barcelona, Atlético: La Liga is a safe bet for football fans. My analysis of the big games, with the result of every prediction."),
