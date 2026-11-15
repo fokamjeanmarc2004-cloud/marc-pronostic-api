@@ -7413,7 +7413,7 @@ for _lg in ("fr", "en", "es", "ar"):
     open(os.path.join(OUT, GAINS_SLUG[_lg]), "w", encoding="utf-8").write(gains_page(_lg)); written.append(GAINS_SLUG[_lg])
 # ---------------------------------------------------------------- Page de vente du livre « Analyser un match comme Cousin Marc »
 LIVRE_SLUG = "livre-analyse-match.html"
-LIVRE_PRIX_FCFA, LIVRE_PRIX_USD = "15 000", "25"
+LIVRE_PRIX_FCFA, LIVRE_PRIX_USD = "50 000", "83"
 _LIVRE_CSS = """<style>
 .lvh{display:grid;grid-template-columns:1fr;gap:22px;align-items:center}
 @media(min-width:760px){.lvh{grid-template-columns:230px 1fr}}
@@ -7446,7 +7446,7 @@ def livre_page():
            ("Dans quel format est le livre ?", "Un fichier PDF d'environ 26 pages, lisible sur téléphone, tablette ou ordinateur, avec une fiche d'analyse et un carnet de paris à imprimer."),
            ("Comment je reçois le livre ?", "Tu paies par Mobile Money ou en crypto, tu m'envoies la capture sur Telegram, et je t'envoie le PDF dès que j'ai vérifié le paiement."),
            ("Le livre est-il en anglais aussi ?", "Pas encore. Cette première édition est en français."),
-           ("Le prix change-t-il ?", "Le prix de lancement est de 15 000 FCFA. Il peut évoluer, donc ne tarde pas."),
+           ("Le prix change-t-il ?", "Le prix est de 50 000 FCFA. Il reflète plusieurs années d'expérience et des analyses détaillées."),
            ("Y a-t-il un remboursement ?", "C'est un produit numérique livré tout de suite : il n'est pas remboursable une fois envoyé. Lis bien l'extrait et le sommaire avant d'acheter.")]
     jsonld = json.dumps({"@context": "https://schema.org", "@type": "Book", "name": "Analyser un match comme Cousin Marc", "author": {"@type": "Person", "name": "Cousin Marc"},
                          "inLanguage": "fr", "bookFormat": "https://schema.org/EBook", "numberOfPages": 26,
@@ -7601,13 +7601,13 @@ def _book_icons():
 # ---------------------------------------------------------------- Boutique : « Mes livres » (catalogue + panier -> commande Telegram)
 LIVRES_SLUG = "livres.html"
 LIVRES = [
- {"id": "analyse", "titre": "Analyser un match comme Cousin Marc", "cov": "Analyser un match", "sous": "Ma méthode en 7 étapes", "prix": 15000, "usd": 25, "status": "dispo", "ico": "ball", "c1": "#0b1a3a", "c2": "#2563eb",
+ {"id": "analyse", "titre": "Analyser un match comme Cousin Marc", "cov": "Analyser un match", "sous": "Ma méthode en 7 étapes", "prix": 50000, "usd": 83, "status": "dispo", "ico": "ball", "c1": "#0b1a3a", "c2": "#2563eb",
   "chips": ["Cotes", "7 étapes", "Mise", "26 pages"], "lien": "livre-analyse-match.html"},
- {"id": "equipes", "titre": "Les équipes à surveiller", "cov": "Les équipes à surveiller", "sous": "Profils, tendances, pièges", "prix": 18000, "usd": 30, "status": "bientot", "ico": "shield", "c1": "#4a0d1c", "c2": "#dc2626",
+ {"id": "equipes", "titre": "Les équipes à surveiller", "cov": "Les équipes à surveiller", "sous": "Profils, tendances, pièges", "prix": 50000, "usd": 83, "status": "bientot", "ico": "shield", "c1": "#4a0d1c", "c2": "#dc2626",
   "chips": ["Favoris piégeux", "Domicile / extérieur", "Régularité"]},
- {"id": "cotes", "titre": "Repérer les grosses cotes", "cov": "Repérer les grosses cotes", "sous": "Mes stratégies, tous sports", "prix": 18000, "usd": 30, "status": "bientot", "ico": "target", "c1": "#064a25", "c2": "#22c55e",
+ {"id": "cotes", "titre": "Repérer les grosses cotes", "cov": "Repérer les grosses cotes", "sous": "Mes stratégies, tous sports", "prix": 50000, "usd": 83, "status": "bientot", "ico": "target", "c1": "#064a25", "c2": "#22c55e",
   "chips": ["Foot", "Tennis", "Basket", "Mouvements de cotes"]},
- {"id": "virtuel", "titre": "Jeux virtuels et crash : comprendre avant de jouer", "cov": "Jeux virtuels et crash", "sous": "Comprendre, tester, limiter ses pertes", "prix": 20000, "usd": 33, "status": "bientot", "ico": "plane", "c1": "#2e0b4a", "c2": "#9333ea",
+ {"id": "virtuel", "titre": "Jeux virtuels et crash : comprendre avant de jouer", "cov": "Jeux virtuels et crash", "sous": "Comprendre, tester, limiter ses pertes", "prix": 50000, "usd": 83, "status": "bientot", "ico": "plane", "c1": "#2e0b4a", "c2": "#9333ea",
   "chips": ["Comment ça marche", "Test 300 manches", "Anti-arnaque"]},
 ]
 LIVRES_SPORTS = [("foot", "Football"), ("tennis", "Tennis"), ("basket", "Basket"), ("hockey", "Hockey"), ("baseball", "Baseball"), ("cricket", "Cricket"), ("tt", "Tennis de table")]
