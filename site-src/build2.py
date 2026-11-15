@@ -1888,7 +1888,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11d"><script>
+<link rel="stylesheet" href="style.css?v=2026-11e"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -7302,48 +7302,93 @@ def livre_page():
 {footer_html()}"""
 
 open(os.path.join(OUT, LIVRE_SLUG), "w", encoding="utf-8").write(livre_page()); written.append(LIVRE_SLUG)
+# -*- coding: utf-8 -*-
+"""Genere un ballon de football en SVG (pentagones noirs, coutures, ombre et reflet)."""
+import math
+
+def _ballpent(cx, cy, r, rot_deg):
+    return [(cx + r * math.cos(math.radians(rot_deg + 72 * k)), cy + r * math.sin(math.radians(rot_deg + 72 * k))) for k in range(5)]
+
+def _ballpts(p):
+    return " ".join(f"{x:.1f},{y:.1f}" for x, y in p)
+
+def _ball_svg(size=200, uid="b"):
+    cx = cy = 100
+    R = 94
+    th = [-90 + 72 * k for k in range(5)]
+    center = _ballpent(cx, cy, 27, -90)
+    d_out = 87
+    outers, seams = [], []
+    for k, a in enumerate(th):
+        ox, oy = cx + d_out * math.cos(math.radians(a)), cy + d_out * math.sin(math.radians(a))
+        op = _ballpent(ox, oy, 25, a + 180)
+        outers.append(op)
+        # couture : sommet du pentagone central -> sommet interieur du pentagone externe
+        seams.append((center[k], op[0]))
+    # coutures laterales entre pentagones externes voisins
+    lat = []
+    for k in range(5):
+        a = outers[k][1]
+        b = outers[(k + 1) % 5][4]
+        lat.append((a, b))
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="{size}" height="{size}">',
+         '<defs>',
+         f'<radialGradient id="{uid}g" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#eef1f6"/><stop offset="1" stop-color="#b9c2d3"/></radialGradient>',
+         f'<radialGradient id="{uid}s" cx="50%" cy="50%" r="50%"><stop offset=".7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#0b1a3a" stop-opacity=".45"/></radialGradient>',
+         f'<clipPath id="{uid}c"><circle cx="{cx}" cy="{cy}" r="{R}"/></clipPath>',
+         '</defs>',
+         f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#{uid}g)"/>',
+         f'<g clip-path="url(#{uid}c)" fill="#12182b" stroke="#12182b" stroke-linejoin="round" stroke-width="2">',
+         f'<polygon points="{_ballpts(center)}"/>']
+    for op in outers:
+        s.append(f'<polygon points="{_ballpts(op)}"/>')
+    s.append('</g>')
+    s.append(f'<g clip-path="url(#{uid}c)" stroke="#12182b" stroke-width="2.2" stroke-linecap="round" fill="none">')
+    for a, b in seams + lat:
+        s.append(f'<line x1="{a[0]:.1f}" y1="{a[1]:.1f}" x2="{b[0]:.1f}" y2="{b[1]:.1f}"/>')
+    s.append('</g>')
+    s.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#{uid}s)"/>')
+    s.append(f'<ellipse cx="72" cy="58" rx="26" ry="14" fill="#fff" opacity=".55" transform="rotate(-30 72 58)"/>')
+    s.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="#0b1a3a" stroke-opacity=".25" stroke-width="1.5"/>')
+    s.append('</svg>')
+    return "".join(s)
+
+
+# ---------------------------------------------------------------- Icones dessinees (ballons, bouclier, cible, avion)
+def _sport_svgs():
+    def circ(fill, extra, uid):
+        return (f'<svg viewBox="0 0 100 100"><defs><radialGradient id="{uid}" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></radialGradient></defs>'
+                f'<circle cx="50" cy="50" r="46" fill="{fill}"/>{extra}<circle cx="50" cy="50" r="46" fill="url(#{uid})"/></svg>')
+    return {
+     "foot": _ball_svg(100, "sf"),
+     "basket": circ("#e8791c", '<g fill="none" stroke="#3a1a06" stroke-width="2.6"><path d="M50 4v92M4 50h92"/><path d="M14 18c22 14 22 50 0 64M86 18c-22 14-22 50 0 64"/></g>', "sb"),
+     "tennis": circ("#c6e03a", '<g fill="none" stroke="#fff" stroke-width="4"><path d="M10 28c26 6 40 26 38 62M90 72c-26-6-40-26-38-62"/></g>', "st"),
+     "hockey": '<svg viewBox="0 0 100 100"><ellipse cx="50" cy="64" rx="40" ry="16" fill="#0c0f1a"/><rect x="10" y="40" width="80" height="24" fill="#1b2033"/><ellipse cx="50" cy="40" rx="40" ry="16" fill="#2a3150"/><ellipse cx="38" cy="36" rx="14" ry="4" fill="#fff" opacity=".35"/></svg>',
+     "baseball": circ("#f6f3ea", '<g fill="none" stroke="#c62828" stroke-width="2.4"><path d="M24 14c14 18 14 54 0 72M76 14c-14 18-14 54 0 72"/></g><g stroke="#c62828" stroke-width="2"><path d="M20 26l9 2M20 38l10 1M20 50l10 0M20 62l10-1M20 74l9-2M80 26l-9 2M80 38l-10 1M80 50l-10 0M80 62l-10-1M80 74l-9-2"/></g>', "sbb"),
+     "cricket": circ("#b3231f", '<g fill="none" stroke="#f3e3c3" stroke-width="2.4"><path d="M8 50c26-10 58-10 84 0M8 56c26-10 58-10 84 0"/></g>', "sc"),
+     "tt": circ("#ff7a1a", '', "stt"),
+    }
+def _book_icons():
+    return {
+     "ball": _ball_svg(100, "bi"),
+     "shield": '<svg viewBox="0 0 100 100"><path d="M50 6l36 12v28c0 24-16 40-36 48C30 86 14 70 14 46V18z" fill="#fff" opacity=".95"/><path d="M50 14l28 9v23c0 19-12 32-28 39-16-7-28-20-28-39V23z" fill="#c62828"/><rect x="45" y="30" width="10" height="28" rx="4" fill="#fff"/><circle cx="50" cy="68" r="6" fill="#fff"/></svg>',
+     "target": '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="#fff"/><circle cx="50" cy="50" r="34" fill="#16a34a"/><circle cx="50" cy="50" r="24" fill="#fff"/><circle cx="50" cy="50" r="14" fill="#16a34a"/><circle cx="50" cy="50" r="5" fill="#facc15"/><path d="M50 50L86 14" stroke="#facc15" stroke-width="4" stroke-linecap="round"/><path d="M86 14l-14 2 12 12z" fill="#facc15"/></svg>',
+     "plane": '<svg viewBox="0 0 100 100"><path d="M6 86C34 84 58 66 80 24" fill="none" stroke="#e9d5ff" stroke-width="4" stroke-dasharray="2 7" stroke-linecap="round"/><g transform="translate(74 18) rotate(35)"><path d="M0-14L9 12 0 7-9 12z" fill="#fff"/><path d="M0-4L20 6 0 3-20 6z" fill="#facc15"/></g><text x="8" y="40" font-size="20" font-weight="800" fill="#fff" font-family="Arial">x2.4</text></svg>',
+    }
+
 # ---------------------------------------------------------------- Boutique : « Mes livres » (catalogue + panier -> commande Telegram)
 LIVRES_SLUG = "livres.html"
-# status : "dispo" (achetable), "bientot" (on peut demander a etre prevenu). prix en FCFA.
 LIVRES = [
- {"id": "analyse", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes · 26 pages", "prix": 15000, "usd": 25, "status": "dispo", "emo": "📘", "c1": "#0b1a3a", "c2": "#1d4ed8",
-  "desc": "Comprendre les cotes, analyser un match, choisir ton pari et gérer ta mise. Exemples réels, fiche d'analyse et carnet de paris.", "lien": "livre-analyse-match.html"},
- {"id": "equipes", "titre": "Les équipes à surveiller", "sous": "Profils, tendances et pièges par équipe", "prix": 18000, "usd": 30, "status": "bientot", "emo": "🛡️", "c1": "#3a0b1a", "c2": "#c62828",
-  "desc": "Les équipes dont il faut se méfier et celles qui rapportent : régularité, comportement en favori, à domicile et à l'extérieur, d'après mon suivi depuis 2021."},
- {"id": "cotes", "titre": "Repérer les grosses cotes", "sous": "Mes stratégies, tous sports", "prix": 18000, "usd": 30, "status": "bientot", "emo": "🎯", "c1": "#0b3a1f", "c2": "#16a34a",
-  "desc": "Comment je repère les cotes intéressantes et les mouvements de cotes qui méritent l'attention, en football, tennis, basket et autres sports. Mon expérience, sans promesse de gain."},
- {"id": "virtuel", "titre": "Jeux virtuels et crash : comprendre avant de jouer", "sous": "Comment ça marche, les risques, limiter ses pertes", "prix": 20000, "usd": 33, "status": "bientot", "emo": "🎰", "c1": "#2a0b3a", "c2": "#7e22ce",
-  "desc": "Comment fonctionnent les jeux virtuels et les jeux crash, ce qui est vrai et faux sur les « méthodes », et comment limiter ses pertes si tu décides de jouer."},
+ {"id": "analyse", "titre": "Analyser un match comme Cousin Marc", "cov": "Analyser un match", "sous": "Ma méthode en 7 étapes", "prix": 15000, "usd": 25, "status": "dispo", "ico": "ball", "c1": "#0b1a3a", "c2": "#2563eb",
+  "chips": ["Cotes", "7 étapes", "Mise", "26 pages"], "lien": "livre-analyse-match.html"},
+ {"id": "equipes", "titre": "Les équipes à surveiller", "cov": "Les équipes à surveiller", "sous": "Profils, tendances, pièges", "prix": 18000, "usd": 30, "status": "bientot", "ico": "shield", "c1": "#4a0d1c", "c2": "#dc2626",
+  "chips": ["Favoris piégeux", "Domicile / extérieur", "Régularité"]},
+ {"id": "cotes", "titre": "Repérer les grosses cotes", "cov": "Repérer les grosses cotes", "sous": "Mes stratégies, tous sports", "prix": 18000, "usd": 30, "status": "bientot", "ico": "target", "c1": "#064a25", "c2": "#22c55e",
+  "chips": ["Foot", "Tennis", "Basket", "Mouvements de cotes"]},
+ {"id": "virtuel", "titre": "Jeux virtuels et crash : comprendre avant de jouer", "cov": "Jeux virtuels et crash", "sous": "Comprendre, tester, limiter ses pertes", "prix": 20000, "usd": 33, "status": "bientot", "ico": "plane", "c1": "#2e0b4a", "c2": "#9333ea",
+  "chips": ["Comment ça marche", "Test 300 manches", "Anti-arnaque"]},
 ]
-LIVRES_SPORTS = [("⚽", "Football"), ("🎾", "Tennis"), ("🏀", "Basket"), ("🏒", "Hockey"), ("⚾", "Baseball"), ("🏏", "Cricket"), ("🏓", "Tennis de table")]
-_SHOP_CSS = """<style>
-.shgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:14px 0 26px}
-.shcard{background:var(--soft);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
-.shcov{padding:22px 18px;color:#fff;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end;position:relative}
-.shcov .e{position:absolute;top:14px;right:16px;font-size:34px;opacity:.9}
-.shcov small{letter-spacing:1.4px;font-size:10.5px;font-weight:700;text-transform:uppercase;color:#f3c64a}
-.shcov b{font-size:19px;line-height:1.2;color:#fff!important;margin-top:6px}
-.shbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
-.shbody p{margin:0;font-size:14.5px;color:var(--ink2)}
-.shprice{font-size:22px;font-weight:800;color:var(--gold)}
-.shprice span{font-size:13px;font-weight:500;color:var(--ink2)}
-.shbadge{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;background:#16a34a;color:#fff;align-self:flex-start}
-.shbadge.soon{background:#64748b}
-.shbtn{margin-top:auto;display:inline-flex;justify-content:center;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:15px;border-radius:12px;padding:12px 14px;border:1px solid var(--green);background:var(--green);color:#fff;cursor:pointer;font-family:inherit}
-.shbtn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
-.shmini{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0 24px}
-.shmini div{background:var(--soft);border-radius:14px;padding:14px;text-align:center}
-.shmini b{display:block;font-size:26px}
-.shmini span{font-size:13px;color:var(--ink2)}
-#shcart{position:sticky;bottom:0;z-index:20;background:var(--bg,#fff);border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(0,0,0,.12);padding:12px 0;display:none}
-#shcart.on{display:block}
-#shcart .in{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
-#shcart ul{margin:0;padding:0;list-style:none;font-size:14.5px}
-#shcart li{display:flex;gap:8px;align-items:center;margin-bottom:3px}
-#shcart li button{border:0;background:none;color:#c62828;cursor:pointer;font-size:16px}
-#shcart .tot{font-size:19px;font-weight:800}
-.shfmt{display:flex;gap:14px;flex-wrap:wrap;font-size:14.5px}
-</style>"""
+LIVRES_SPORTS = [("foot", "Football"), ("tennis", "Tennis"), ("basket", "Basket"), ("hockey", "Hockey"), ("baseball", "Baseball"), ("cricket", "Cricket"), ("tt", "Tennis de table")]
 _SHOP_JS = """<script>
 (function(){
 var BOOKS=__BOOKS__, TG="__TG__", cart=[];
@@ -7363,6 +7408,7 @@ function render(){
   lines.push("Total : "+fmt(tot)+" FCFA","Format : "+f);
   box.querySelector("a.go").href=TG+"?text="+encodeURIComponent(lines.join("\\n"));
   document.querySelectorAll("[data-add]").forEach(function(btn){var id=btn.getAttribute("data-add"),on=cart.indexOf(id)>-1;btn.textContent=on?"\\u2713 Dans le panier":"Ajouter au panier";btn.classList.toggle("alt",on)});
+  var tc=document.getElementById("topcart");if(tc){tc.hidden=cart.length===0;var sp=tc.querySelector("span");if(sp)sp.textContent=cart.length}
 }
 document.addEventListener("click",function(e){var t=e.target.closest("[data-add]");if(!t)return;var id=t.getAttribute("data-add"),i=cart.indexOf(id);if(i>-1)cart.splice(i,1);else cart.push(id);save();render()});
 document.addEventListener("change",function(e){if(e.target.name==="shfmt")render()});
@@ -7372,55 +7418,55 @@ render();
 
 def livres_page():
     import json as _j
+    ico = _book_icons(); sv = _sport_svgs()
+    def book3d(b):
+        return (f'<div class="bk3"><div class="bk"><div class="front" style="background:linear-gradient(150deg,{b["c1"]},{b["c2"]})">'
+                f'<div><small>Cousin Marc</small><b>{b["cov"]}</b></div><div class="ill">{ico[b["ico"]]}</div><i>Guide pratique · 2026</i></div>'
+                f'<div class="spine"></div><div class="pgs"></div><div class="back"></div></div></div>')
     def card(b):
         dispo = b["status"] == "dispo"
-        badge = '<span class="shbadge">Disponible</span>' if dispo else '<span class="shbadge soon">Bientôt disponible</span>'
+        st = '<span class="st">DISPONIBLE</span>' if dispo else '<span class="st soon">BIENTÔT</span>'
         if dispo:
-            btn = (f'<button type="button" class="shbtn" data-add="{b["id"]}">Ajouter au panier</button>'
-                   f'<a class="shbtn alt" href="{b["lien"]}">Voir le détail</a>')
+            btn = (f'<button type="button" class="shb" data-add="{b["id"]}">Ajouter au panier</button>'
+                   f'<a class="shb alt" href="{b["lien"]}">Voir le détail</a>')
         else:
             msg = urllib.parse.quote(f"Préviens-moi quand le livre « {b['titre']} » sera disponible.")
-            btn = f'<a class="shbtn alt" href="{VIP_TG}?text={msg}">Me prévenir</a>'
+            btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">Me prévenir</a>'
         fcfa = f'{b["prix"]:,}'.replace(",", " ")
-        return (f'<article class="shcard"><div class="shcov" style="background:linear-gradient(135deg,{b["c1"]},{b["c2"]})"><span class="e">{b["emo"]}</span>'
-                f'<small>Cousin Marc · guide</small><b>{b["titre"]}</b></div>'
-                f'<div class="shbody">{badge}<p><b>{b["sous"]}</b></p><p>{b["desc"]}</p>'
-                f'<div class="shprice">{fcfa} FCFA <span>≈ {b["usd"]} $</span></div>{btn}</div></article>')
+        chips = "".join(f"<span>{c}</span>" for c in b["chips"])
+        return (f'<article class="shc">{st}{book3d(b)}<h3>{b["titre"]}</h3><p class="tg">{b["sous"]}</p><div class="chips">{chips}</div>'
+                f'<div class="shp">{fcfa} FCFA<small>≈ {b["usd"]} $</small></div>{btn}</article>')
     cards = "".join(card(b) for b in LIVRES)
-    sports = "".join(f'<div><b>{e}</b><span>{n}<br>bientôt</span></div>' for e, n in LIVRES_SPORTS)
+    sports = "".join(f'<div>{sv[k]}{n}<small>bientôt</small></div>' for k, n in LIVRES_SPORTS)
+    minibook = ('<svg class="minibook" viewBox="0 0 64 64"><rect x="10" y="6" width="42" height="52" rx="4" fill="#1d4ed8"/><rect x="10" y="6" width="9" height="52" rx="3" fill="#0b1a3a"/>'
+                '<circle cx="36" cy="26" r="9" fill="#fff"/><path d="M36 20l5 4-2 6h-6l-2-6z" fill="#12182b"/><rect x="24" y="42" width="22" height="3" rx="1.5" fill="#facc15"/><rect x="24" y="48" width="14" height="3" rx="1.5" fill="#fff" opacity=".8"/></svg>')
     books_json = _j.dumps([{k: b[k] for k in ("id", "titre", "prix", "usd", "status")} for b in LIVRES], ensure_ascii=False)
     js = _SHOP_JS.replace("__BOOKS__", books_json).replace("__TG__", VIP_TG)
     return head("Mes livres : guides de pronostics par Cousin Marc",
         "Les guides de Cousin Marc : analyser un match, repérer les grosses cotes, les équipes à surveiller, les jeux virtuels. Version PDF, paiement Mobile Money ou crypto.",
-        f"{BASE}/{LIVRES_SLUG}", extra=_SHOP_CSS, nav=nav_fr(), lang="fr") + f"""
-<header class="hero"><div class="wrap">
+        f"{BASE}/{LIVRES_SLUG}", nav=nav_fr(), lang="fr") + f"""
+<header class="hero hero-shop"><div class="wrap"><div class="shhero">
+<div>
 <p class="eyebrow">Boutique · guides pratiques</p>
 <h1>Mes <span class="hl">livres</span></h1>
-<p>Des guides écrits par un pronostiqueur actif depuis 2021, pour comprendre au lieu de copier. Un livre par sujet, et bientôt un livre par sport.</p>
-</div></header>
-<main class="wrap legalbody">
-<div class="note" style="margin-top:0"><b>Honnêteté d'abord :</b> ces livres partagent mon expérience et mes méthodes. Ils ne promettent <b>aucun gain</b> et ne garantissent aucun résultat. Les paris comportent un risque de perte. 18+ · Joue de façon responsable.</div>
-
-<h2>Les guides</h2>
-<div class="shgrid">{cards}</div>
-
-<h2>Un livre par sport (à venir)</h2>
-<p>À terme, chaque sport aura son propre guide complet, avec ses spécificités.</p>
-<div class="shmini">{sports}</div>
-
-<h2>Comment commander</h2>
-<ol>
-<li>Ajoute les livres disponibles au <b>panier</b>.</li>
-<li>Choisis le format et appuie sur <b>Commander sur Telegram</b> : ta commande s'écrit toute seule dans un message à Cousin Marc.</li>
-<li>Envoie le montant par Mobile Money ou crypto (<a href="livre-analyse-match.html#payer" style="color:var(--gold);font-weight:700">voir les numéros de paiement</a>), puis ta capture d'écran dans la même conversation.</li>
-<li>Je vérifie le paiement et je t'envoie ton livre.</li>
-</ol>
-<p class="small">Format PDF : livré par Telegram après vérification du paiement. Version papier avec retrait en agence : bientôt, selon ta ville.</p>
-<div class="note">Les résultats passés ne garantissent pas les gains futurs. Ces livres ne constituent pas un conseil financier. 18+ · Voir aussi : <a href="jeu-responsable.html">jeu responsable</a> · <a href="bilan.html">mon bilan public</a>.</div>
-</main>
+<p>Les méthodes d'un pronostiqueur actif depuis 2021. Simple, clair, sans promesse magique.</p>
+<div class="btnrow"><a class="cta" href="#guides">Voir les guides</a><a class="cta alt" href="bilan.html">Mon bilan public</a></div>
+</div>
+<div class="shlogo"><img src="logo-cm-512.png" alt="Cousin Marc" width="150" height="150">{minibook}</div>
+</div></div></header>
+<section class="shopbg" id="guides"><div class="wrap">
+<h2>Choisis ton guide</h2>
+<p class="shsub">PDF · paiement Mobile Money ou crypto · livré sur Telegram</p>
+<div class="shgrid2">{cards}</div>
+<div class="steps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
+<h2 style="margin-top:34px">Un livre par sport</h2>
+<p class="shsub">À venir</p>
+<div class="spt">{sports}</div>
+<p class="shnote">Paiement : <a href="livre-analyse-match.html#payer">voir les numéros</a> · Aucun gain n'est garanti · 18+ · <a href="jeu-responsable.html">Jeu responsable</a></p>
+</div></section>
 <div id="shcart"><div class="wrap in">
 <div><ul></ul><div class="tot"></div><div class="shfmt"><label><input type="radio" name="shfmt" value="PDF" checked> PDF</label><label><input type="radio" name="shfmt" value="Papier (retrait en agence)"> Papier (bientôt)</label></div></div>
-<a class="shbtn go" href="{VIP_TG}">Commander sur Telegram</a>
+<a class="shb go" style="width:auto" href="{VIP_TG}">Commander sur Telegram</a>
 </div></div>
 {footer_html()}
 {js}"""
@@ -7719,6 +7765,82 @@ html.cm-lite .navpanel.open .navpanel-links a,html.cm-lite .tcode,html.cm-lite .
 html.cm-lite .winmarq,html.cm-lite .ticker{overflow-x:auto}
 """
 
+CSS += r'''
+/* ==========================================================
+   STYLE V3 : hauts de page sombres et vivants (ballon anime), boutique livres
+   CSS seulement : les textes et les liens ne changent pas (SEO)
+   ========================================================== */
+.hero{background:
+  radial-gradient(520px 280px at 90% 8%,rgba(250,204,21,.25),transparent 62%),
+  radial-gradient(680px 360px at 4% 115%,rgba(59,130,246,.40),transparent 62%),
+  linear-gradient(135deg,#061024 0%,#0b1d5c 55%,#13338a 100%)!important;
+  border-bottom:0!important;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1.2px);background-size:22px 22px;pointer-events:none}
+.hero::after{content:"";position:absolute;right:-22px;bottom:-22px;width:118px;height:118px;opacity:.5;
+  background:url("data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20200%20200%22%20width=%22200%22%20height=%22200%22%3E%3Cdefs%3E%3CradialGradient%20id=%22hg%22%20cx=%2236%25%22%20cy=%2230%25%22%20r=%2280%25%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23ffffff%22/%3E%3Cstop%20offset=%22.55%22%20stop-color=%22%23eef1f6%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23b9c2d3%22/%3E%3C/radialGradient%3E%3CradialGradient%20id=%22hs%22%20cx=%2250%25%22%20cy=%2250%25%22%20r=%2250%25%22%3E%3Cstop%20offset=%22.7%22%20stop-color=%22%23000%22%20stop-opacity=%220%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%230b1a3a%22%20stop-opacity=%22.45%22/%3E%3C/radialGradient%3E%3CclipPath%20id=%22hc%22%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22%20fill=%22url(%23hg)%22/%3E%3Cg%20clip-path=%22url(%23hc)%22%20fill=%22%2312182b%22%20stroke=%22%2312182b%22%20stroke-linejoin=%22round%22%20stroke-width=%222%22%3E%3Cpolygon%20points=%22100.0,73.0%20125.7,91.7%20115.9,121.8%2084.1,121.8%2074.3,91.7%22/%3E%3Cpolygon%20points=%22100.0,38.0%2076.2,20.7%2085.3,-7.2%20114.7,-7.2%20123.8,20.7%22/%3E%3Cpolygon%20points=%22159.0,80.8%20168.0,52.9%20197.4,52.9%20206.5,80.8%20182.7,98.1%22/%3E%3Cpolygon%20points=%22136.4,150.2%20165.8,150.2%20174.9,178.1%20151.1,195.4%20127.4,178.1%22/%3E%3Cpolygon%20points=%2263.6,150.2%2072.6,178.1%2048.9,195.4%2025.1,178.1%2034.2,150.2%22/%3E%3Cpolygon%20points=%2241.0,80.8%2017.3,98.1%20-6.5,80.8%202.6,52.9%2032.0,52.9%22/%3E%3C/g%3E%3Cg%20clip-path=%22url(%23hc)%22%20stroke=%22%2312182b%22%20stroke-width=%222.2%22%20stroke-linecap=%22round%22%20fill=%22none%22%3E%3Cline%20x1=%22100.0%22%20y1=%2273.0%22%20x2=%22100.0%22%20y2=%2238.0%22/%3E%3Cline%20x1=%22125.7%22%20y1=%2291.7%22%20x2=%22159.0%22%20y2=%2280.8%22/%3E%3Cline%20x1=%22115.9%22%20y1=%22121.8%22%20x2=%22136.4%22%20y2=%22150.2%22/%3E%3Cline%20x1=%2284.1%22%20y1=%22121.8%22%20x2=%2263.6%22%20y2=%22150.2%22/%3E%3Cline%20x1=%2274.3%22%20y1=%2291.7%22%20x2=%2241.0%22%20y2=%2280.8%22/%3E%3Cline%20x1=%2276.2%22%20y1=%2220.7%22%20x2=%22182.7%22%20y2=%2298.1%22/%3E%3Cline%20x1=%22168.0%22%20y1=%2252.9%22%20x2=%22127.4%22%20y2=%22178.1%22/%3E%3Cline%20x1=%22165.8%22%20y1=%22150.2%22%20x2=%2234.2%22%20y2=%22150.2%22/%3E%3Cline%20x1=%2272.6%22%20y1=%22178.1%22%20x2=%2232.0%22%20y2=%2252.9%22/%3E%3Cline%20x1=%2217.3%22%20y1=%2298.1%22%20x2=%22123.8%22%20y2=%2220.7%22/%3E%3C/g%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22%20fill=%22url(%23hs)%22/%3E%3Cellipse%20cx=%2272%22%20cy=%2258%22%20rx=%2226%22%20ry=%2214%22%20fill=%22%23fff%22%20opacity=%22.55%22%20transform=%22rotate(-30%2072%2058)%22/%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22%20fill=%22none%22%20stroke=%22%230b1a3a%22%20stroke-opacity=%22.25%22%20stroke-width=%221.5%22/%3E%3C/svg%3E") center/contain no-repeat;animation:cmfloat 6s ease-in-out infinite;pointer-events:none;filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))}
+@media(min-width:900px){.hero::after{right:7%;top:50%;bottom:auto;margin-top:-120px;width:240px;height:240px;opacity:1}}
+@keyframes cmfloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(16deg)}}
+@media(prefers-reduced-motion:reduce){.hero::after,.shlogo,.shlogo::before,.bk3 .bk{animation:none!important}}
+.hero .wrap{position:relative;z-index:1}
+.hero .wrap>h1,.hero .wrap>h2{color:#fff}
+.hero .wrap>p,.hero .wrap>.sub{color:#d6def5}
+.hero .eyebrow{color:#f6d56a}.hero .eyebrow::before{background:#facc15;box-shadow:0 0 0 4px rgba(250,204,21,.25)}
+.hero h1 .hl,.hero .hl{background:linear-gradient(90deg,#facc15,#fb923c)!important;-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.hero a.cta.alt{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
+
+/* ---------- Boutique « Mes livres » ---------- */
+.shopbg{background:radial-gradient(700px 320px at 50% 0%,rgba(59,130,246,.22),transparent 65%),linear-gradient(180deg,#071027,#0a1740 60%,#071027);color:#fff;padding:34px 0 46px}
+.shopbg h2{color:#fff;border:0;text-align:center;margin:0 0 6px;font-size:26px}
+.shopbg .shsub{text-align:center;color:#b9c6ea;margin:0 0 22px;font-size:15px}
+.shgrid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.shc{background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:20px 16px 18px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px;position:relative;backdrop-filter:blur(4px)}
+.shc h3{color:#fff;font-size:18px;margin:2px 0 0;line-height:1.2}
+.shc .tg{color:#c3cff0;font-size:14px;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.chips span{font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px;background:rgba(250,204,21,.14);color:#fde68a;border:1px solid rgba(250,204,21,.3)}
+.shp{font-size:26px;font-weight:800;color:#facc15;line-height:1}
+.shp small{display:block;font-size:12px;font-weight:500;color:#b9c6ea;margin-top:3px}
+.shb{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;font-weight:700;font-size:15px;border-radius:13px;padding:12px 18px;border:0;background:linear-gradient(90deg,#f59e0b,#f97316);color:#1a1205;cursor:pointer;font-family:inherit;width:100%;box-shadow:0 8px 22px rgba(249,115,22,.35)}
+.shb.alt{background:rgba(255,255,255,.1);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.25)}
+.shc .st{position:absolute;top:14px;right:14px;font-size:11px;font-weight:800;letter-spacing:.5px;padding:4px 10px;border-radius:99px;background:#16a34a;color:#fff;z-index:3}
+.shc .st.soon{background:#475569}
+.bk3{perspective:900px;height:236px;display:flex;align-items:center;justify-content:center;margin-bottom:4px}
+.bk3 .bk{width:150px;height:210px;position:relative;transform-style:preserve-3d;transform:rotateY(-26deg) rotateX(3deg);transition:transform .5s;animation:bkfloat 5s ease-in-out infinite}
+.bk3:hover .bk{transform:rotateY(-8deg) rotateX(2deg)}
+@keyframes bkfloat{0%,100%{margin-top:0}50%{margin-top:-9px}}
+.bk3 .bk>div{position:absolute;top:0;left:0}
+.bk3 .front{width:150px;height:210px;transform:translateZ(11px);border-radius:3px 9px 9px 3px;padding:14px 12px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;box-shadow:inset 6px 0 10px rgba(0,0,0,.28),inset -2px 0 0 rgba(255,255,255,.12),0 18px 28px rgba(0,0,0,.55);overflow:hidden}
+.bk3 .front::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:rgba(0,0,0,.25)}
+.bk3 .front::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.28),transparent 38%);pointer-events:none}
+.bk3 .front small{font-size:8.5px;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;color:#fde68a;position:relative}
+.bk3 .front b{font-size:15px;line-height:1.15;color:#fff;position:relative;display:block;margin-top:3px}
+.bk3 .front .ill{display:flex;justify-content:center;align-items:center;flex:1;position:relative}
+.bk3 .front .ill svg{width:78px;height:78px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45))}
+.bk3 .front i{font-style:normal;font-size:8.5px;color:#e6ecff;position:relative}
+.bk3 .back{width:150px;height:210px;transform:translateZ(-11px);background:#10162b;border-radius:9px 3px 3px 9px}
+.bk3 .spine{left:-11px;width:22px;height:210px;transform:rotateY(-90deg);background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(255,255,255,.14))}
+.bk3 .pgs{left:139px;width:22px;height:206px;top:2px;transform:rotateY(90deg);background:repeating-linear-gradient(90deg,#f4efe1 0 1px,#d8d1bd 1px 2px)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:26px 0 8px}
+.steps div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px;text-align:center;font-size:14.5px;color:#e6ecff}
+.steps b{display:flex;margin:0 auto 6px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;align-items:center;justify-content:center;font-size:16px}
+.spt{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:12px;margin:14px 0 4px}
+.spt div{text-align:center;color:#c3cff0;font-size:13px}
+.spt svg{width:56px;height:56px;display:block;margin:0 auto 6px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));animation:cmfloat 7s ease-in-out infinite}
+.spt small{display:block;color:#7f8fba;font-size:11px}
+.shlogo{position:relative;width:150px;height:150px;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center}
+.shlogo::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 0deg,#facc15,#f97316,#3b82f6,#facc15);filter:blur(14px);opacity:.75;animation:cmspin 8s linear infinite}
+.shlogo img{position:relative;width:150px;height:150px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.shlogo .minibook{position:absolute;right:-18px;bottom:-6px;width:62px;height:62px;z-index:2;animation:cmfloat 5s ease-in-out infinite;filter:drop-shadow(0 8px 10px rgba(0,0,0,.5))}
+@keyframes cmspin{to{transform:rotate(360deg)}}
+.hero-shop::after{display:none!important}
+.hero-shop h1{color:#fff}.hero-shop p{color:#d6def5}
+.hero-shop .shhero{display:grid;grid-template-columns:1fr;gap:22px;align-items:center}
+@media(min-width:800px){.hero-shop .shhero{grid-template-columns:1.2fr .8fr}}
+.shnote{margin-top:22px;text-align:center;font-size:13px;color:#9fb0dd}
+.shnote a{color:#fde68a}
+#shcart{background:#0a1740!important;color:#fff;border-top:1px solid rgba(255,255,255,.2)!important}
+#shcart li button{color:#fca5a5}
+'''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
 open(os.path.join(OUT,"google5d6ef3eb30a3bfc3.html"),"w",encoding="utf-8").write("google-site-verification: google5d6ef3eb30a3bfc3.html\n"); written.append("google5d6ef3eb30a3bfc3.html")

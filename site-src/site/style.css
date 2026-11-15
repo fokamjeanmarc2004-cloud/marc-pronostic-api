@@ -752,3 +752,78 @@ html.cm-lite .navpanel{background:linear-gradient(170deg,#fff,#eef4ff)!important
 html.cm-lite .vidhero .cta,html.cm-lite .tgband .cta,html.cm-lite .vhero .cta.alt,html.cm-lite footer .cta.alt{background:rgba(255,255,255,.14)!important}
 html.cm-lite .navpanel.open .navpanel-links a,html.cm-lite .tcode,html.cm-lite .codebox .code,html.cm-lite .wtrack,html.cm-lite .ticker-track{animation:none!important}
 html.cm-lite .winmarq,html.cm-lite .ticker{overflow-x:auto}
+
+/* ==========================================================
+   STYLE V3 : hauts de page sombres et vivants (ballon anime), boutique livres
+   CSS seulement : les textes et les liens ne changent pas (SEO)
+   ========================================================== */
+.hero{background:
+  radial-gradient(520px 280px at 90% 8%,rgba(250,204,21,.25),transparent 62%),
+  radial-gradient(680px 360px at 4% 115%,rgba(59,130,246,.40),transparent 62%),
+  linear-gradient(135deg,#061024 0%,#0b1d5c 55%,#13338a 100%)!important;
+  border-bottom:0!important;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1.2px);background-size:22px 22px;pointer-events:none}
+.hero::after{content:"";position:absolute;right:-22px;bottom:-22px;width:118px;height:118px;opacity:.5;
+  background:url("data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20200%20200%22%20width=%22200%22%20height=%22200%22%3E%3Cdefs%3E%3CradialGradient%20id=%22hg%22%20cx=%2236%25%22%20cy=%2230%25%22%20r=%2280%25%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23ffffff%22/%3E%3Cstop%20offset=%22.55%22%20stop-color=%22%23eef1f6%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23b9c2d3%22/%3E%3C/radialGradient%3E%3CradialGradient%20id=%22hs%22%20cx=%2250%25%22%20cy=%2250%25%22%20r=%2250%25%22%3E%3Cstop%20offset=%22.7%22%20stop-color=%22%23000%22%20stop-opacity=%220%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%230b1a3a%22%20stop-opacity=%22.45%22/%3E%3C/radialGradient%3E%3CclipPath%20id=%22hc%22%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22/%3E%3C/clipPath%3E%3C/defs%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22%20fill=%22url(%23hg)%22/%3E%3Cg%20clip-path=%22url(%23hc)%22%20fill=%22%2312182b%22%20stroke=%22%2312182b%22%20stroke-linejoin=%22round%22%20stroke-width=%222%22%3E%3Cpolygon%20points=%22100.0,73.0%20125.7,91.7%20115.9,121.8%2084.1,121.8%2074.3,91.7%22/%3E%3Cpolygon%20points=%22100.0,38.0%2076.2,20.7%2085.3,-7.2%20114.7,-7.2%20123.8,20.7%22/%3E%3Cpolygon%20points=%22159.0,80.8%20168.0,52.9%20197.4,52.9%20206.5,80.8%20182.7,98.1%22/%3E%3Cpolygon%20points=%22136.4,150.2%20165.8,150.2%20174.9,178.1%20151.1,195.4%20127.4,178.1%22/%3E%3Cpolygon%20points=%2263.6,150.2%2072.6,178.1%2048.9,195.4%2025.1,178.1%2034.2,150.2%22/%3E%3Cpolygon%20points=%2241.0,80.8%2017.3,98.1%20-6.5,80.8%202.6,52.9%2032.0,52.9%22/%3E%3C/g%3E%3Cg%20clip-path=%22url(%23hc)%22%20stroke=%22%2312182b%22%20stroke-width=%222.2%22%20stroke-linecap=%22round%22%20fill=%22none%22%3E%3Cline%20x1=%22100.0%22%20y1=%2273.0%22%20x2=%22100.0%22%20y2=%2238.0%22/%3E%3Cline%20x1=%22125.7%22%20y1=%2291.7%22%20x2=%22159.0%22%20y2=%2280.8%22/%3E%3Cline%20x1=%22115.9%22%20y1=%22121.8%22%20x2=%22136.4%22%20y2=%22150.2%22/%3E%3Cline%20x1=%2284.1%22%20y1=%22121.8%22%20x2=%2263.6%22%20y2=%22150.2%22/%3E%3Cline%20x1=%2274.3%22%20y1=%2291.7%22%20x2=%2241.0%22%20y2=%2280.8%22/%3E%3Cline%20x1=%2276.2%22%20y1=%2220.7%22%20x2=%22182.7%22%20y2=%2298.1%22/%3E%3Cline%20x1=%22168.0%22%20y1=%2252.9%22%20x2=%22127.4%22%20y2=%22178.1%22/%3E%3Cline%20x1=%22165.8%22%20y1=%22150.2%22%20x2=%2234.2%22%20y2=%22150.2%22/%3E%3Cline%20x1=%2272.6%22%20y1=%22178.1%22%20x2=%2232.0%22%20y2=%2252.9%22/%3E%3Cline%20x1=%2217.3%22%20y1=%2298.1%22%20x2=%22123.8%22%20y2=%2220.7%22/%3E%3C/g%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22%20fill=%22url(%23hs)%22/%3E%3Cellipse%20cx=%2272%22%20cy=%2258%22%20rx=%2226%22%20ry=%2214%22%20fill=%22%23fff%22%20opacity=%22.55%22%20transform=%22rotate(-30%2072%2058)%22/%3E%3Ccircle%20cx=%22100%22%20cy=%22100%22%20r=%2294%22%20fill=%22none%22%20stroke=%22%230b1a3a%22%20stroke-opacity=%22.25%22%20stroke-width=%221.5%22/%3E%3C/svg%3E") center/contain no-repeat;animation:cmfloat 6s ease-in-out infinite;pointer-events:none;filter:drop-shadow(0 14px 18px rgba(0,0,0,.45))}
+@media(min-width:900px){.hero::after{right:7%;top:50%;bottom:auto;margin-top:-120px;width:240px;height:240px;opacity:1}}
+@keyframes cmfloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(16deg)}}
+@media(prefers-reduced-motion:reduce){.hero::after,.shlogo,.shlogo::before,.bk3 .bk{animation:none!important}}
+.hero .wrap{position:relative;z-index:1}
+.hero .wrap>h1,.hero .wrap>h2{color:#fff}
+.hero .wrap>p,.hero .wrap>.sub{color:#d6def5}
+.hero .eyebrow{color:#f6d56a}.hero .eyebrow::before{background:#facc15;box-shadow:0 0 0 4px rgba(250,204,21,.25)}
+.hero h1 .hl,.hero .hl{background:linear-gradient(90deg,#facc15,#fb923c)!important;-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.hero a.cta.alt{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
+
+/* ---------- Boutique « Mes livres » ---------- */
+.shopbg{background:radial-gradient(700px 320px at 50% 0%,rgba(59,130,246,.22),transparent 65%),linear-gradient(180deg,#071027,#0a1740 60%,#071027);color:#fff;padding:34px 0 46px}
+.shopbg h2{color:#fff;border:0;text-align:center;margin:0 0 6px;font-size:26px}
+.shopbg .shsub{text-align:center;color:#b9c6ea;margin:0 0 22px;font-size:15px}
+.shgrid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.shc{background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:20px 16px 18px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px;position:relative;backdrop-filter:blur(4px)}
+.shc h3{color:#fff;font-size:18px;margin:2px 0 0;line-height:1.2}
+.shc .tg{color:#c3cff0;font-size:14px;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.chips span{font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px;background:rgba(250,204,21,.14);color:#fde68a;border:1px solid rgba(250,204,21,.3)}
+.shp{font-size:26px;font-weight:800;color:#facc15;line-height:1}
+.shp small{display:block;font-size:12px;font-weight:500;color:#b9c6ea;margin-top:3px}
+.shb{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;font-weight:700;font-size:15px;border-radius:13px;padding:12px 18px;border:0;background:linear-gradient(90deg,#f59e0b,#f97316);color:#1a1205;cursor:pointer;font-family:inherit;width:100%;box-shadow:0 8px 22px rgba(249,115,22,.35)}
+.shb.alt{background:rgba(255,255,255,.1);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.25)}
+.shc .st{position:absolute;top:14px;right:14px;font-size:11px;font-weight:800;letter-spacing:.5px;padding:4px 10px;border-radius:99px;background:#16a34a;color:#fff;z-index:3}
+.shc .st.soon{background:#475569}
+.bk3{perspective:900px;height:236px;display:flex;align-items:center;justify-content:center;margin-bottom:4px}
+.bk3 .bk{width:150px;height:210px;position:relative;transform-style:preserve-3d;transform:rotateY(-26deg) rotateX(3deg);transition:transform .5s;animation:bkfloat 5s ease-in-out infinite}
+.bk3:hover .bk{transform:rotateY(-8deg) rotateX(2deg)}
+@keyframes bkfloat{0%,100%{margin-top:0}50%{margin-top:-9px}}
+.bk3 .bk>div{position:absolute;top:0;left:0}
+.bk3 .front{width:150px;height:210px;transform:translateZ(11px);border-radius:3px 9px 9px 3px;padding:14px 12px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;box-shadow:inset 6px 0 10px rgba(0,0,0,.28),inset -2px 0 0 rgba(255,255,255,.12),0 18px 28px rgba(0,0,0,.55);overflow:hidden}
+.bk3 .front::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:rgba(0,0,0,.25)}
+.bk3 .front::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.28),transparent 38%);pointer-events:none}
+.bk3 .front small{font-size:8.5px;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;color:#fde68a;position:relative}
+.bk3 .front b{font-size:15px;line-height:1.15;color:#fff;position:relative;display:block;margin-top:3px}
+.bk3 .front .ill{display:flex;justify-content:center;align-items:center;flex:1;position:relative}
+.bk3 .front .ill svg{width:78px;height:78px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45))}
+.bk3 .front i{font-style:normal;font-size:8.5px;color:#e6ecff;position:relative}
+.bk3 .back{width:150px;height:210px;transform:translateZ(-11px);background:#10162b;border-radius:9px 3px 3px 9px}
+.bk3 .spine{left:-11px;width:22px;height:210px;transform:rotateY(-90deg);background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(255,255,255,.14))}
+.bk3 .pgs{left:139px;width:22px;height:206px;top:2px;transform:rotateY(90deg);background:repeating-linear-gradient(90deg,#f4efe1 0 1px,#d8d1bd 1px 2px)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:26px 0 8px}
+.steps div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px;text-align:center;font-size:14.5px;color:#e6ecff}
+.steps b{display:flex;margin:0 auto 6px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#facc15,#f97316);color:#1a1205;align-items:center;justify-content:center;font-size:16px}
+.spt{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:12px;margin:14px 0 4px}
+.spt div{text-align:center;color:#c3cff0;font-size:13px}
+.spt svg{width:56px;height:56px;display:block;margin:0 auto 6px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));animation:cmfloat 7s ease-in-out infinite}
+.spt small{display:block;color:#7f8fba;font-size:11px}
+.shlogo{position:relative;width:150px;height:150px;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center}
+.shlogo::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 0deg,#facc15,#f97316,#3b82f6,#facc15);filter:blur(14px);opacity:.75;animation:cmspin 8s linear infinite}
+.shlogo img{position:relative;width:150px;height:150px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.shlogo .minibook{position:absolute;right:-18px;bottom:-6px;width:62px;height:62px;z-index:2;animation:cmfloat 5s ease-in-out infinite;filter:drop-shadow(0 8px 10px rgba(0,0,0,.5))}
+@keyframes cmspin{to{transform:rotate(360deg)}}
+.hero-shop::after{display:none!important}
+.hero-shop h1{color:#fff}.hero-shop p{color:#d6def5}
+.hero-shop .shhero{display:grid;grid-template-columns:1fr;gap:22px;align-items:center}
+@media(min-width:800px){.hero-shop .shhero{grid-template-columns:1.2fr .8fr}}
+.shnote{margin-top:22px;text-align:center;font-size:13px;color:#9fb0dd}
+.shnote a{color:#fde68a}
+#shcart{background:#0a1740!important;color:#fff;border-top:1px solid rgba(255,255,255,.2)!important}
+#shcart li button{color:#fca5a5}
