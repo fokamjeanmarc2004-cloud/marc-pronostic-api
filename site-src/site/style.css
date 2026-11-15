@@ -1336,3 +1336,12 @@ a[href^="https://wa.me/?text"]{background:#128c4a!important;color:#fff!important
 .vfx td,.vfx th{padding:9px 10px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--bd)}
 [dir="rtl"] .vfx td,[dir="rtl"] .vfx th{text-align:right}
 .vfx td b{color:var(--gold)}
+
+.crumb{font-size:13px;color:#aab6cf;margin-bottom:12px}.crumb a{color:#fdba74;text-decoration:none}.crumb a:hover{text-decoration:underline}.crumb span{color:#e6ecf7}
+.toc{margin:22px 0 4px}.toc details{background:var(--bg2)!important;border:1px solid var(--bd)!important;border-radius:14px;padding:0 16px}
+.toc summary{font-weight:800;color:#fff;padding:14px 0;cursor:pointer}
+.toc ol{margin:0 0 14px;padding-left:20px;columns:2 260px;column-gap:28px}
+.toc li{margin:5px 0;break-inside:avoid;color:var(--mut);font-size:14.5px}.toc a{color:#fdba74;text-decoration:none}.toc a:hover{text-decoration:underline}
+.ccact .cta{font-size:14px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tmore{font-size:13.5px!important}
+main h2[id],main section[id]{scroll-margin-top:84px}

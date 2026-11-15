@@ -1644,7 +1644,7 @@ def footer_html():
 </div>
 <div>
 <h4>Bookmakers</h4>
-{''.join(f'<a href="{b["slug"]}.html">{b["name"]}</a>' for b in BOOKMAKERS[:4])}
+{''.join(f'<a href="{b["slug"]}.html">Code promo {b["name"]}</a>' for b in BOOKMAKERS)}
 </div>
 <div>
 <h4>Infos</h4>
@@ -1940,7 +1940,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11t"><script>
+<link rel="stylesheet" href="style.css?v=2026-11u"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -2469,8 +2469,28 @@ BK_GUIDE_FR["code-promo-linebet"] = lambda b: _other_guide(b, """
 <h2>Linebet en Afrique</h2>
 <p>Linebet est un bookmaker en ligne présent en Afrique de l'Ouest et du Centre, au Cameroun, au Sénégal ou au Nigeria notamment. Le code promo <b>ESS22</b> est le même dans tous les pays : seul le plafond du bonus dépend de ta devise.</p>
 <p>Comme pour tous les bookmakers, choisis bien ton pays et ta devise à l'inscription, et garde le même numéro Mobile Money pour tes dépôts et tes retraits.</p>
+</section>
+<section id="meilleur-code">
+<h2>Quel est le meilleur code promo Linebet ?</h2>
+<p>Tu verras beaucoup de codes Linebet sur internet. Ils donnent tous accès au <b>même bonus de bienvenue</b> : c'est Linebet qui fixe le pourcentage et le plafond, pas le code. Aucun code ne « double » le bonus, et aucun code ne se vend.</p>
+<p>La vraie différence, c'est ce que tu trouves derrière le code. Avec <b>ESS22</b>, tu as mon guide d'inscription, mes pronostics gratuits chaque jour et une réponse sur Telegram si ton bonus ne s'affiche pas.</p>
+</section>
+<section id="pays">
+<h2>Code promo Linebet par pays : la liste 2026</h2>
+<p>Le code promo Linebet est <b>ESS22</b> dans tous les pays. Ce qui change, c'est la devise du compte et le plafond du bonus.</p>
+<h3>Code promo Linebet Cameroun</h3>
+<p>Au Cameroun, inscris-toi en choisissant le franc CFA (XAF) et colle <b>ESS22</b> dans le champ « Code promo ». Le bonus de 100% sur le premier dépôt va jusqu'à 100 000 XAF.</p>
+<h3>Code promo Linebet Sénégal</h3>
+<p>Au Sénégal, le compte est en franc CFA (XOF). Le code reste <b>ESS22</b> et le bonus de 100% va jusqu'à 130 000 XOF.</p>
+<h3>Code promo Linebet Nigeria</h3>
+<p>Au Nigeria, le compte est en naira. Le code est toujours <b>ESS22</b> ; le plafond du bonus s'affiche en naira dans ton compte après l'inscription.</p>
+<h3>Code promo Linebet Côte d'Ivoire, Burkina Faso, Mali, Bénin, Togo, Guinée, RDC</h3>
+<p>Dans ces pays aussi, le code est <b>ESS22</b>. Choisis la devise de ton pays à l'inscription : le plafond exact du bonus est indiqué dans la rubrique « Bonus » de ton compte.</p>
+<p>Montants indicatifs : Linebet peut les modifier selon ses promotions. Vérifie toujours le montant affiché dans ton compte avant de déposer.</p>
 </section>""")
-BK_FAQ_FR["code-promo-linebet"] = _other_faq("Linebet", "ESS22", "100% sur le 1er dépôt")
+BK_FAQ_FR["code-promo-linebet"] = _other_faq("Linebet", "ESS22", "100% sur le 1er dépôt",
+    [("Quel est le meilleur code promo Linebet ?", "Tous les codes Linebet donnent le même bonus de bienvenue, fixé par Linebet. Avec ESS22, tu as en plus le guide d'inscription et les pronostics gratuits de Cousin Marc."),
+     ("Le code promo Linebet ESS22 marche-t-il au Nigeria et au Sénégal ?", "Oui. ESS22 est le même code dans tous les pays où Linebet accepte les inscriptions. Seuls la devise du compte et le plafond du bonus changent.")])
 
 BK_GUIDE_FR["code-promo-fastparie"] = lambda b: _other_guide(b, """
 <section id="orthographe">
@@ -2481,16 +2501,52 @@ BK_GUIDE_FR["code-promo-fastparie"] = lambda b: _other_guide(b, """
 BK_FAQ_FR["code-promo-fastparie"] = _other_faq("Fastparie", "FJM", "100% sur le 1er dépôt",
     [("Fastpari et Fastparie, c'est pareil ?", "Oui, ce sont deux orthographes du même bookmaker. Le code promo est FJM dans les deux cas.")])
 
+def _bk_toc(page):
+    """Ajoute un identifiant à chaque titre H2 du contenu et construit le sommaire (liens internes à la page)."""
+    i = page.find("<main"); j = page.find("</main>")
+    if i < 0 or j < 0: return page
+    body, items, used = page[i:j], [], set()
+    def one(m):
+        attrs, inner = m.group(1), m.group(2)
+        txt = re.sub(r'<span class="num">.*?</span>', "", inner); txt = html.unescape(re.sub(r"<[^>]+>", "", txt)).strip()
+        if not txt or txt.startswith("●"): return m.group(0)
+        mid = re.search(r'id="([^"]+)"', attrs)
+        sid = mid.group(1) if mid else "s-" + re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFD", txt).encode("ascii", "ignore").decode().lower()).strip("-")[:50]
+        if sid in used: return m.group(0)
+        used.add(sid); items.append((sid, txt))
+        return m.group(0) if mid else f'<h2 id="{sid}"{attrs}>{inner}</h2>'
+    body = re.sub(r"<h2([^>]*)>(.*?)</h2>", one, body, flags=re.S)
+    if len(items) < 4: return page
+    toc = ('<nav class="toc" aria-label="Sommaire"><details open><summary>Sommaire de la page</summary><ol>'
+           + "".join(f'<li><a href="#{a}">{html.escape(t)}</a></li>' for a, t in items) + "</ol></details></nav>")
+    k = body.find(">") + 1
+    return page[:i] + body[:k] + toc + body[k:] + page[j:]
+
 def bookmaker_page(b):
+    return _bk_toc(_bookmaker_page(b))
+
+def _bookmaker_page(b):
     name, code, slug = b["name"], b["code"], b["slug"]
-    extra = f'<script type="application/ld+json">\n{faq_jsonld(name, code, BK_FAQ_FR.get(slug, ()))}\n</script>'
+    _crumb = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Accueil", "item": f"{BASE}/"},
+        {"@type": "ListItem", "position": 2, "name": "Codes promo", "item": f"{BASE}/codes-promo.html"},
+        {"@type": "ListItem", "position": 3, "name": f"Code promo {name}", "item": f"{BASE}/{slug}.html"}]}
+    _art = {"@context": "https://schema.org", "@type": "Article", "headline": f"Code promo {name} 2026 : {code}", "inLanguage": "fr",
+            "dateModified": _NOW.isoformat(), "datePublished": "2026-06-01", "mainEntityOfPage": f"{BASE}/{slug}.html",
+            "image": f"{BASE}/affiche-" + slug.replace("code-promo-", "") + ".jpg",
+            "author": {"@type": "Person", "name": "Cousin Marc", "url": f"{BASE}/a-propos.html"},
+            "publisher": {"@type": "Organization", "name": "Cousin Marc Pronostic", "logo": {"@type": "ImageObject", "url": f"{BASE}/logo-cm-512.png"}}}
+    extra = (f'<script type="application/ld+json">\n{faq_jsonld(name, code, BK_FAQ_FR.get(slug, ()))}\n</script>'
+             f'<script type="application/ld+json">{json.dumps(_crumb, ensure_ascii=False)}</script>'
+             f'<script type="application/ld+json">{json.dumps(_art, ensure_ascii=False)}</script>')
     _t, _d = _title_desc(b, "fr",
         f"Code Promo {name} 2026 : {code} → {bk_bonus(b,'fr')} | Cousin Marc",
         f"Code promo {name} 2026 : utilise {code} à l'inscription et active ton bonus ({bk_bonus(b,'fr')}). Guide d'inscription pas à pas par Cousin Marc.")
     return head(_t, _d,
         f"{BASE}/{slug}.html", extra, nav=nav_fr(en=f"{en_slug(b)}.html", es=f"{es_slug(b)}.html", ar=f"{ar_slug(b)}.html"), alternates=(f"{BASE}/{slug}.html", f"{BASE}/{en_slug(b)}.html", f"{BASE}/{es_slug(b)}.html", f"{BASE}/{ar_slug(b)}.html"), image=f"{BASE}/affiche-" + slug.replace("code-promo-","") + ".jpg") + f"""
 <header class="hero"><div class="wrap">
-<p class="eyebrow">Cousin Marc Pronostic · Mis à jour {MAJ_FR}</p>
+<nav class="crumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> › <a href="codes-promo.html">Codes promo</a> › <span>Code promo {name}</span></nav>
+<p class="eyebrow">Cousin Marc Pronostic · Vérifié le {VERIF_FR}</p>
 <h1>Code Promo <span class="hl" translate="no">{name}</span> 2026</h1>
 <p class="sub">Active ton bonus de bienvenue <b>({bk_bonus(b,'fr')})</b> avec le code officiel ci-dessous. Vérifié et testé par Cousin Marc.</p>
 <div class="codebox">{bk_logo(b, "cblogo", 64)}<div class="stamp"><span class="st-txt">Vérifié par CM</span></div>
@@ -2681,7 +2737,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
                 f'<div class="tcode"><span translate="no">{b["code"]}</span>'
                 f'<button class="copybtn-mini" aria-label="{T["copy_aria"]} {b["code"]}" onclick="copyCode(this,\'{b["code"]}\')">{T["copy"]}</button></div>'
                 f'<div class="tactions"><a class="tgo" href="{b["site"]}" rel="sponsored nofollow">{T["join"]}</a>'
-                f'<a class="tmore" href="{_home_slug(b, lang)}.html">{T["guide"]} <span translate="no">{b["name"]}</span></a></div></article>')
+                f'<a class="tmore" href="{_home_slug(b, lang)}.html">{"Code promo" if lang == "fr" else T["guide"]} <span translate="no">{b["name"]}</span></a></div></article>')
     rows = "".join(
         f'<div class="bkrow">{bk_logo(b)}'
         f'<a class="bkinfo" href="{_home_slug(b, lang)}.html"><span class="bkname" translate="no">{b["name"]}</span><span class="bkbonus">{home_bonus(b, lang)}</span></a>'
@@ -7529,7 +7585,7 @@ def codes_page(lang):
                   f'<div class="cchead">{bk_logo(b, size=48)}<div><b translate="no">{b["name"]}</b><span>{home_bonus(b, lang)}</span></div></div>'
                   f'<div class="cccode"><span translate="no">{b["code"]}</span><button class="copybtn-mini" aria-label="{T["copy_aria"]} {b["code"]}" onclick="copyCode(this,\'{b["code"]}\')">{T["copy"]}</button></div>'
                   f'<div class="ccact"><a class="cta" href="{b["site"]}" rel="sponsored nofollow">{T["join"]}</a>'
-                  f'<a class="cta alt" href="{_home_slug(b, lang)}.html">{T["guide"]}</a></div></article>')
+                  f'<a class="cta alt" href="{_home_slug(b, lang)}.html">{T["guide"]} <span translate="no">{b["name"]}</span></a></div></article>')
     steps = "".join(f'<li><b>{k}</b>{t}</li>' for k, t in enumerate(C["steps"], 1))
     vids = "".join(f'<figure class="cvid"><div class="video yt-facade" data-yt="{v}" data-yt-title="{html.escape(t)}" role="button" tabindex="0" aria-label="{html.escape(t)}">'
                    f'<img src="https://i.ytimg.com/vi/{v}/hqdefault.jpg" alt="{html.escape(t)} : tuto Cousin Marc" width="480" height="360" loading="lazy"><span class="ytf-play" aria-hidden="true">▶</span></div>'
@@ -7609,7 +7665,7 @@ def livre_page():
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Nouveau · guide PDF</p>
 <div class="lvh">
-<div class="lvcover"><img src="livre-analyse-static.webp" alt="Livre : Analyser un match comme Cousin Marc" width="360" height="553" style="width:100%;height:auto;display:block;border-radius:10px"><small>Guide pratique · 2026</small><b>Analyser un match comme <span>Cousin Marc</span></b><i>Ma méthode en 7 étapes · 26 pages · exemples réels</i></div>
+<div class="lvcover"><img src="livre-cv-analyse.webp" alt="Livre : Analyser un match comme Cousin Marc" width="420" height="560" style="width:100%;height:auto;display:block;border-radius:10px"><small>Guide pratique · 2026</small><b>Analyser un match comme <span>Cousin Marc</span></b><i>Ma méthode en 7 étapes · 26 pages · exemples réels</i></div>
 <div>
 <h1>Analyser un match <span class="hl">comme Cousin Marc</span></h1>
 <p>Ma méthode, étape par étape, pour choisir un pronostic, comprendre les cotes et gérer ta mise sans te faire plumer. Les mêmes étapes que j'utilise pour mes analyses publiées sur ce site.</p>
@@ -7753,34 +7809,34 @@ LIVRES_NIV = [
  ("collection", "∞", "La collection complète", "Tous les manuels réunis, du niveau 1 au niveau 3."),
 ]
 LIVRES = [
- {"id": "analyse", "niv": "formation", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes · 26 pages", "img": "livre-analyse-static.webp",
+ {"id": "analyse", "niv": "formation", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes · 26 pages", "img": "livre-cv-analyse.webp",
   "pts": ["Lire et comparer les cotes", "Ma grille d'analyse en 7 étapes", "Gérer sa mise"], "prix": 50000, "usd": 83, "status": "dispo", "lien": "livre-analyse-match.html"},
  {"id": "multi", "niv": "formation", "vol": "Vol. 01", "titre": "Manuel de pronostic : tous les sports", "sous": "Analyser, comparer les cotes, décider avec méthode",
-  "pts": ["Transformer une cote en probabilité", "Le dossier complet d'un match", "Suivre ses paris pour progresser"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Transformer une cote en probabilité", "Le dossier complet d'un match", "Suivre ses paris pour progresser"], "prix": 50000, "usd": 83, "status": "dispo"},
  {"id": "f-foot", "niv": "formation", "titre": "Guide d'analyse du football", "sous": "Paris sportifs et analyse stratégique",
-  "pts": ["Repérer les équipes en forme", "Lire les statistiques clés", "Les marchés : 1X2, buts, les deux marquent"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Repérer les équipes en forme", "Lire les statistiques clés", "Les marchés : 1X2, buts, les deux marquent"], "prix": 50000, "usd": 83, "status": "precommande"},
  {"id": "f-tennis", "niv": "formation", "titre": "Guide d'analyse du tennis", "sous": "Spécial paris sportifs",
-  "pts": ["Forme, surface et face-à-face", "Le service et le retour", "Repérer une cote qui a de la valeur"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Forme, surface et face-à-face", "Le service et le retour", "Repérer une cote qui a de la valeur"], "prix": 50000, "usd": 83, "status": "precommande"},
  {"id": "f-hockey", "niv": "formation", "titre": "Guide d'analyse du hockey sur glace", "sous": "Analyse, stratégie, paris sportifs",
-  "pts": ["Équipes solides et équipes fragiles", "Le rôle du gardien", "Forme et tendances des matchs"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Équipes solides et équipes fragiles", "Le rôle du gardien", "Forme et tendances des matchs"], "prix": 50000, "usd": 83, "status": "precommande"},
  {"id": "f-baseball", "niv": "formation", "titre": "Guide d'analyse du baseball", "sous": "Analyse, stratégie, valeur",
-  "pts": ["Lanceurs partants et releveurs", "Lire les alignements", "Les moments clés d'un match"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Lanceurs partants et releveurs", "Lire les alignements", "Les moments clés d'un match"], "prix": 50000, "usd": 83, "status": "precommande"},
  {"id": "p-foot", "niv": "pratique", "vol": "Vol. 04", "titre": "Manuel de pronostics : football", "sous": "Équipes et cotes",
-  "pts": ["Profils offensifs et défensifs", "Absences, calendrier, motivation", "Choisir le bon marché"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Profils offensifs et défensifs", "Absences, calendrier, motivation", "Choisir le bon marché"], "prix": 50000, "usd": 83, "status": "dispo"},
  {"id": "p-tennis", "niv": "pratique", "vol": "Vol. 02", "titre": "Manuel de pronostics : tennis", "sous": "Lire le match",
-  "pts": ["Match-ups et surfaces", "Les signaux à suivre en live", "Ma fiche avant de parier"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Match-ups et surfaces", "Les signaux à suivre en live", "Ma fiche avant de parier"], "prix": 50000, "usd": 83, "status": "dispo"},
  {"id": "p-hockey", "niv": "pratique", "vol": "Vol. 03", "titre": "Manuel de pronostics : hockey sur glace", "sous": "Gardiens, unités spéciales, LNH",
-  "pts": ["Favori médiatique ou vraie domination", "Supériorité numérique", "Paris sur la LNH"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Favori médiatique ou vraie domination", "Supériorité numérique", "Paris sur la LNH"], "prix": 50000, "usd": 83, "status": "dispo"},
  {"id": "p-baseball", "niv": "pratique", "vol": "Vol. 05", "titre": "Manuel de pronostics : baseball", "sous": "Lanceurs, bullpen, alignements",
-  "pts": ["Le duel des lanceurs", "La fatigue du bullpen", "Repérer les cotes mal placées"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Le duel des lanceurs", "La fatigue du bullpen", "Repérer les cotes mal placées"], "prix": 50000, "usd": 83, "status": "dispo"},
  {"id": "live", "niv": "expert", "vol": "Vol. 07", "titre": "Analyse des cotes et des failles", "sous": "Live, écarts de prix et cotes de 2",
-  "pts": ["Repérer un écart de prix en direct", "Filtrer les paris trop risqués", "Limiter les pertes inutiles"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Repérer un écart de prix en direct", "Filtrer les paris trop risqués", "Limiter les pertes inutiles"], "prix": 50000, "usd": 83, "status": "dispo"},
  {"id": "art", "niv": "expert", "titre": "L'art de l'analyse sportive", "sous": "Penser comme un analyste, tous sports",
-  "pts": ["Décider avec méthode", "Comparer plusieurs sports", "Garder la discipline"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Décider avec méthode", "Comparer plusieurs sports", "Garder la discipline"], "prix": 50000, "usd": 83, "status": "precommande"},
  {"id": "virtuels", "niv": "virtuel", "vol": "Vol. 06", "titre": "Jeux virtuels et esports : comprendre", "sous": "Crash, Aviator, simulations, esports",
-  "pts": ["Comment le résultat est tiré (RNG)", "Esports : là où l'analyse compte", "Les erreurs qui coûtent cher"], "prix": 50000, "usd": 83, "status": "bientot"},
+  "pts": ["Comment le résultat est tiré (RNG)", "Esports : là où l'analyse compte", "Les erreurs qui coûtent cher"], "prix": 50000, "usd": 83, "status": "dispo"},
  {"id": "collection", "niv": "collection", "titre": "Manuel de tous les sports : la collection", "sous": "Tous les manuels réunis",
-  "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": None, "usd": None, "status": "bientot"},
+  "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": None, "usd": None, "status": "precommande"},
 ]
 LIVRES_SPORTS = [("foot", "Football"), ("tennis", "Tennis"), ("basket", "Basket"), ("hockey", "Hockey"), ("baseball", "Baseball"), ("cricket", "Cricket"), ("tt", "Tennis de table")]
 _SHOP_JS = """<script>
@@ -7815,20 +7871,20 @@ def livres_page():
     def card(b):
         dispo = b["status"] == "dispo"
         img = b.get("img") or f'livre-cv-{b["id"]}.webp'
-        st = '<span class="lbst">DISPONIBLE</span>' if dispo else '<span class="lbst soon">BIENTÔT</span>'
+        st = '<span class="lbst">DISPONIBLE</span>' if dispo else '<span class="lbst soon">PRÉCOMMANDE</span>'
         vol = f'<span class="lbvol">{b["vol"]}</span>' if b.get("vol") else ""
         niv = next(n[2] for n in LIVRES_NIV if n[0] == b["niv"])
         if dispo:
             btn = (f'<button type="button" class="shb" data-add="{b["id"]}">Ajouter au panier</button>'
-                   f'<a class="shb alt" href="{b["lien"]}">Voir le détail</a>')
+                   + (f'<a class="shb alt" href="{b["lien"]}">Voir le détail</a>' if b.get("lien") else ""))
         else:
-            msg = urllib.parse.quote(f"Préviens-moi quand le livre « {b['titre']} » sera disponible.")
-            btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">🔔 Me prévenir</a>'
+            msg = urllib.parse.quote(f"LIVRE — Je veux précommander « {b['titre']} ».")
+            btn = f'<a class="shb alt" href="{VIP_TG}?text={msg}">Précommander</a>'
         if b["prix"]:
             fcfa = f'{b["prix"]:,}'.replace(",", " ")
-            price = f'{fcfa} FCFA<small>≈ {b["usd"]} $ · PDF</small>' if dispo else f'<em>dès</em> {fcfa} FCFA<small>sortie bientôt</small>'
+            price = f'{fcfa} FCFA<small>≈ {b["usd"]} $ · PDF</small>' if dispo else f'{fcfa} FCFA<small>livré dès la sortie</small>'
         else:
-            price = 'Prix bientôt<small>offre groupée</small>'
+            price = 'Prix sur demande<small>offre groupée</small>'
         pts = "".join(f"<li>{html.escape(p)}</li>" for p in b["pts"])
         href = b.get("lien", f"{VIP_TG}?text=" + urllib.parse.quote(f"Préviens-moi quand le livre « {b['titre']} » sera disponible."))
         return (f'<article class="lb" data-niv="{b["niv"]}"><a class="lbimg" href="{href}">'
@@ -7870,7 +7926,7 @@ var g=document.getElementById('guides');if(g&&g.getBoundingClientRect().top<0)g.
 <div class="lbchips" role="toolbar" aria-label="Filtrer par niveau">{chips}</div>
 {secs}
 <div class="shsteps"><div><b>1</b>Ajoute au panier</div><div><b>2</b>Commande sur Telegram</div><div><b>3</b>Paie et reçois ton livre</div></div>
-<p class="shnote">Les livres marqués « Bientôt » sont en cours d'écriture : clique sur « Me prévenir » pour être averti à la sortie. Paiement : <a href="livre-analyse-match.html#payer">voir les numéros</a> · Aucun gain n'est garanti · 18+ · <a href="jeu-responsable.html">Jeu responsable</a></p>
+<p class="shnote">Les livres marqués « Précommande » sont livrés dès leur sortie. Paiement : <a href="livre-analyse-match.html#payer">voir les numéros</a> · Aucun gain n'est garanti · 18+ · <a href="jeu-responsable.html">Jeu responsable</a></p>
 </div></section>
 <div id="shcart"><div class="wrap in">
 <div><ul></ul><div class="tot"></div><div class="shfmt"><label><input type="radio" name="shfmt" value="PDF" checked> PDF</label><label><input type="radio" name="shfmt" value="Papier (retrait en agence)"> Papier (bientôt)</label></div></div>
@@ -8775,6 +8831,16 @@ a[href^="https://wa.me/?text"]{background:#128c4a!important;color:#fff!important
 .vfx td,.vfx th{padding:9px 10px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--bd)}
 [dir="rtl"] .vfx td,[dir="rtl"] .vfx th{text-align:right}
 .vfx td b{color:var(--gold)}
+'''
+CSS += r'''
+.crumb{font-size:13px;color:#aab6cf;margin-bottom:12px}.crumb a{color:#fdba74;text-decoration:none}.crumb a:hover{text-decoration:underline}.crumb span{color:#e6ecf7}
+.toc{margin:22px 0 4px}.toc details{background:var(--bg2)!important;border:1px solid var(--bd)!important;border-radius:14px;padding:0 16px}
+.toc summary{font-weight:800;color:#fff;padding:14px 0;cursor:pointer}
+.toc ol{margin:0 0 14px;padding-left:20px;columns:2 260px;column-gap:28px}
+.toc li{margin:5px 0;break-inside:avoid;color:var(--mut);font-size:14.5px}.toc a{color:#fdba74;text-decoration:none}.toc a:hover{text-decoration:underline}
+.ccact .cta{font-size:14px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tmore{font-size:13.5px!important}
+main h2[id],main section[id]{scroll-margin-top:84px}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
