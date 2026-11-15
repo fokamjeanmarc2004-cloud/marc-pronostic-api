@@ -258,6 +258,12 @@
   force = true
 
 [[redirects]]
+  from = "/bilan"
+  to = "/bilan.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/borussia-dortmund-predictions"
   to = "/borussia-dortmund-predictions.html"
   status = 301
@@ -2150,6 +2156,12 @@
 [[redirects]]
   from = "/total-par-impar"
   to = "/total-par-impar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/track-record"
+  to = "/track-record.html"
   status = 301
   force = true
 

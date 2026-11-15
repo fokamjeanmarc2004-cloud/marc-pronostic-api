@@ -1568,6 +1568,7 @@ def footer_html():
 <a href="cote-de-2.html">Côte de 2</a>
 <a href="pronostics.html">Pronostics</a>
 <a href="resultats.html">Résultats</a>
+<a href="bilan.html">Mon bilan</a>
 <a href="actualites.html">Actualités</a>
 <a href="a-propos.html">À propos</a>
 </div>
@@ -3229,7 +3230,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -3474,6 +3475,7 @@ def footer_html_en():
 <a href="odds-of-2.html">Odds of 2</a>
 <a href="predictions.html">Predictions</a>
 <a href="results.html">Results</a>
+<a href="track-record.html">Track record</a>
 <a href="which-bookmaker.html">Which bookmaker?</a>
 <a href="promo-code-not-working.html">Promo code not working</a>
 <a href="news.html">News</a>
@@ -7052,6 +7054,122 @@ open(os.path.join(OUT, "resultats.json"), "w", encoding="utf-8").write(json.dump
       "p": _m["pronostic"], "p_en": _m.get("pronostic_en") or "", "res": _m["resultat"], "sc": _final_score(_m), "slug": _m["slug"], "slug_en": _m.get("slug_en", "")}
      for _m in sorted(MATCHS, key=lambda x: x["dt"]) if _m.get("resultat") and _m["dt"] > _past], ensure_ascii=False))
 written.append("resultats.json")
+# ---------------------------------------------------------------- Page « Mon bilan en direct » (FR + EN), calculee depuis matchs.txt
+BILAN_SLUG, BILAN_SLUG_EN = "bilan.html", "track-record.html"
+_BILAN_CSS = """<style>
+.bkpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.bkpi div{background:var(--soft);border-radius:16px;padding:16px;text-align:center}
+.bkpi b{display:block;font-size:30px;line-height:1.1;color:var(--gold)}
+.bkpi span{font-size:14px;color:var(--ink2)}
+.btab{width:100%;border-collapse:collapse;margin:10px 0 22px}
+.btab th,.btab td{padding:10px 8px;border-bottom:1px solid rgba(128,128,128,.25);text-align:left;font-size:15px}
+.btab td.n,.btab th.n{text-align:right;white-space:nowrap}
+.bbar{height:8px;border-radius:6px;background:rgba(128,128,128,.25);overflow:hidden;min-width:70px}
+.bbar i{display:block;height:100%;background:#16a34a}
+.blast{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 20px}
+.blast a{padding:6px 10px;border-radius:999px;background:var(--soft);font-size:14px;text-decoration:none;color:inherit}
+</style>"""
+
+def _bilan_data():
+    done = sorted([m for m in MATCHS if _RES_FR.get((m.get("resultat") or "").lower(), (0, ""))[1] in ("win", "lose")], key=lambda m: m["dt"])
+    win = lambda m: _RES_FR[m["resultat"].lower()][1] == "win"
+    def stat(ms):
+        w = sum(1 for m in ms if win(m))
+        return (w, len(ms), round(100 * w / len(ms)) if ms else 0)
+    now = datetime.datetime.now()
+    streak = 0
+    for m in reversed(done):
+        if win(m): streak += 1
+        else: break
+    best = cur = 0
+    for m in done:
+        cur = cur + 1 if win(m) else 0
+        best = max(best, cur)
+    def group(key):
+        g = {}
+        for m in done: g.setdefault(key(m), []).append(m)
+        return sorted(((k, stat(v)) for k, v in g.items()), key=lambda x: -x[1][1])
+    months = {}
+    for m in done: months.setdefault((m["dt"].year, m["dt"].month), []).append(m)
+    return {"all": stat(done), "d7": stat([m for m in done if m["dt"] >= now - datetime.timedelta(days=7)]),
+            "d30": stat([m for m in done if m["dt"] >= now - datetime.timedelta(days=30)]), "streak": streak, "best": best,
+            "sport": group(sport_of), "comp": group(lambda m: m.get("competition", "")),
+            "month": [(k, stat(v)) for k, v in sorted(months.items(), reverse=True)],
+            "last": [m for m in reversed(done) if win(m)][:12], "first": done[0]["dt"] if done else now}
+
+def _bilan_rows(rows, label):
+    return "".join(f'<tr><td>{html.escape(label(k))}</td><td class="n"><b>{s[0]}</b> / {s[1]}</td><td class="n">{s[2]} %</td>'
+                   f'<td><div class="bbar"><i style="width:{s[2]}%"></i></div></td></tr>' for k, s in rows if s[1])
+
+def bilan_page(lang="fr"):
+    D = _bilan_data(); en = lang == "en"
+    a, d7, d30 = D["all"], D["d7"], D["d30"]
+    sp = {"foot": ("⚽ Football", "⚽ Football"), "basket": ("🏀 Basket (NBA)", "🏀 Basketball (NBA)"), "tennis": ("🎾 Tennis", "🎾 Tennis")}
+    first = f'{D["first"].day} {_MOIS_FR[D["first"].month-1]} {D["first"].year}' if not en else f'{_MOIS_EN[D["first"].month-1]} {D["first"].day}, {D["first"].year}'
+    month_l = lambda k: (f"{_MOIS_EN[k[1]-1]} {k[0]}" if en else f"{_MOIS_FR[k[1]-1].capitalize()} {k[0]}")
+    comp_l = lambda c: (COMP_L.get(c, {}).get("en", c) if en else c)
+    tn = lambda t: (_team_l(t, "en") if en else t)
+    last = "".join(f'<a href="{(m.get("slug_en") if en and m.get("slug_en") else m["slug"])}.html">✅ {html.escape(tn(m["equipe1"]))} – {html.escape(tn(m["equipe2"]))}</a>' for m in D["last"])
+    T = {
+      "title": "My Track Record: Every Prediction, Wins and Losses | Cousin Marc" if en else "Mon bilan en direct : tous mes pronostics, gagnés et perdus | Cousin Marc",
+      "desc": (f"Cousin Marc's real track record: {a[0]} predictions won out of {a[1]} ({a[2]}%), by sport, competition and month. Updated automatically after every match."
+               if en else f"Le vrai bilan de Cousin Marc : {a[0]} pronostics gagnés sur {a[1]} ({a[2]} %), par sport, par compétition et par mois. Mis à jour automatiquement après chaque match."),
+      "eyebrow": "Transparency · updated after every match" if en else "Transparence · mis à jour après chaque match",
+      "h1": 'My <span class="hl">track record</span>, live' if en else 'Mon <span class="hl">bilan</span> en direct',
+      "intro": (f"Every prediction I post on this site is counted here, wins and losses, since {first}. Nothing is deleted: each prediction is published before kick-off, and its result is added after the match."
+                if en else f"Tous les pronostics que je publie sur ce site sont comptés ici, les gagnés comme les perdus, depuis le {first}. Rien n'est effacé : chaque pronostic est publié avant le match, et son résultat est ajouté après."),
+      "k": (("Won overall", "Last 7 days", "Last 30 days", "Current winning streak", "Best winning streak") if en
+            else ("Gagnés au total", "7 derniers jours", "30 derniers jours", "Série de gagnés en cours", "Meilleure série de gagnés")),
+      "hs": "By sport" if en else "Par sport", "hc": "By competition" if en else "Par compétition", "hm": "Month by month" if en else "Mois par mois",
+      "th": (("", "Won", "Success rate", "") if en else ("", "Gagnés", "Réussite", "")),
+      "hl": "Latest winning predictions" if en else "Derniers pronostics gagnés",
+      "all": "See every finished match, wins and losses →" if en else "Voir tous les matchs terminés, gagnés et perdus →",
+      "how_h": "How this record is calculated" if en else "Comment ce bilan est calculé",
+      "how": (("Each prediction is posted on the site before the match, with my analysis.", "After the match, the official score and the result (won or lost) are added to the page.",
+               "This page counts all of them automatically. Refunded bets are not counted.", "It covers my free predictions on this site, not the VIP tickets.")
+              if en else ("Chaque pronostic est publié sur le site avant le match, avec mon analyse.", "Après le match, le score officiel et le résultat (gagné ou perdu) sont ajoutés sur la page.",
+                          "Cette page les compte tous automatiquement. Les paris remboursés ne sont pas comptés.", "Elle concerne mes pronostics gratuits du site, pas les tickets VIP.")),
+      "note": ("Past results do not guarantee future wins. 18+ · Play responsibly." if en else "Les résultats passés ne garantissent pas les gains futurs. 18+ · Joue de façon responsable."),
+      "cta": "Today's predictions" if en else "Les pronostics du jour",
+    }
+    th = "".join(f'<th{" class=n" if i in (1, 2) else ""}>{x}</th>' for i, x in enumerate(T["th"]))
+    tab = lambda rows, label: f'<table class="btab"><thead><tr>{th}</tr></thead><tbody>{_bilan_rows(rows, label)}</tbody></table>'
+    kp = lambda s: f"{s[0]}/{s[1]}" if s[1] else "–"
+    pron = "predictions.html" if en else "pronostics.html"
+    return head(T["title"], T["desc"], f"{BASE}/{BILAN_SLUG_EN if en else BILAN_SLUG}", extra=_BILAN_CSS,
+                nav=(nav_en(fr=BILAN_SLUG) if en else nav_fr(en=BILAN_SLUG_EN)), lang=lang,
+                alternates=(f"{BASE}/{BILAN_SLUG}", f"{BASE}/{BILAN_SLUG_EN}")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">{T["eyebrow"]}</p>
+<h1>{T["h1"]}</h1>
+</div></header>
+<main class="wrap legalbody">
+<p>{T["intro"]}</p>
+<div class="bkpi">
+<div><b>{a[2]} %</b><span>{T["k"][0]} · {kp(a)}</span></div>
+<div><b>{kp(d7)}</b><span>{T["k"][1]}{f" · {d7[2]} %" if d7[1] else ""}</span></div>
+<div><b>{kp(d30)}</b><span>{T["k"][2]}{f" · {d30[2]} %" if d30[1] else ""}</span></div>
+<div><b>{D["streak"]}</b><span>{T["k"][3]}</span></div>
+<div><b>{D["best"]}</b><span>{T["k"][4]}</span></div>
+</div>
+<h2>{T["hs"]}</h2>
+{tab(D["sport"], lambda k: sp.get(k, (k, k))[1 if en else 0])}
+<h2>{T["hc"]}</h2>
+{tab(D["comp"], comp_l)}
+<h2>{T["hm"]}</h2>
+{tab(D["month"], month_l)}
+<h2>{T["hl"]}</h2>
+<div class="blast">{last}</div>
+<p><a href="{pron}#termines" style="color:var(--gold);font-weight:700">{T["all"]}</a></p>
+<h2>{T["how_h"]}</h2>
+<ul>{"".join(f"<li>{x}</li>" for x in T["how"])}</ul>
+<p><a class="btn" href="{pron}">{T["cta"]}</a></p>
+<div class="note">{T["note"]}</div>
+</main>
+{footer_html_en() if en else footer_html()}"""
+
+open(os.path.join(OUT, BILAN_SLUG), "w", encoding="utf-8").write(bilan_page("fr")); written.append(BILAN_SLUG)
+open(os.path.join(OUT, BILAN_SLUG_EN), "w", encoding="utf-8").write(bilan_page("en")); written.append(BILAN_SLUG_EN)
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
