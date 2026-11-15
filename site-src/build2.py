@@ -1908,7 +1908,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11k"><script>
+<link rel="stylesheet" href="style.css?v=2026-11l"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -7642,8 +7642,8 @@ def livres_page():
     import json as _j
     ico = _book_icons(); sv = _sport_svgs()
     def book3d(b):
-        return (f'<div class="bk3"><img src="livre-{b["id"]}-3d.webp" alt="Livre : {html.escape(b["titre"])}" width="180" height="240" loading="lazy" '
-                f'style="height:236px;width:auto;margin:0 auto;display:block;filter:drop-shadow(0 18px 22px rgba(0,0,0,.5))"></div>')
+        return (f'<div class="bk3"><img src="livre-{b["id"]}-static.webp" alt="Livre : {html.escape(b["titre"])}" width="360" height="553" loading="lazy" decoding="async" '
+                f'style="height:236px;width:auto;max-width:100%;margin:0 auto;display:block;border-radius:6px;box-shadow:0 18px 26px rgba(0,0,0,.55)"></div>')
     def card(b):
         dispo = b["status"] == "dispo"
         st = '<span class="st">DISPONIBLE</span>' if dispo else '<span class="st soon">BIENTÔT</span>'
