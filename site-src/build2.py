@@ -7068,6 +7068,7 @@ _BILAN_CSS = """<style>
 .bbar i{display:block;height:100%;background:#16a34a}
 .blast{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 20px}
 .blast a{padding:6px 10px;border-radius:999px;background:var(--soft);font-size:14px;text-decoration:none;color:inherit}
+@media(max-width:520px){.btab th,.btab td{padding:9px 4px;font-size:14px}.btab .bbar{display:none}.btab th:last-child{display:none}.bkpi b{font-size:26px}}
 </style>"""
 
 def _bilan_data():
