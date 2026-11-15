@@ -1040,3 +1040,14 @@ body:has(.shopbg) .vidlow{margin-top:0}
  .astats div{padding:9px 8px!important;font-size:11.5px!important;line-height:1.25}
  .astats b{font-size:20px!important}
 }
+
+/* menu du haut (ordinateur) : chaque lien sur une seule ligne */
+.toplinks a{white-space:nowrap;padding:8px 11px!important;font-size:14.5px}
+
+/* page gains : titre des tickets lisible sur fond bleu nuit */
+.gcard figcaption b{color:#fff!important}
+.gcard figcaption{font-size:12.5px!important}.gcard figcaption b{font-size:13px!important;line-height:1.25!important}.gcard figcaption strong{font-size:14px!important}
+/* texte d'intro collé au haut de page : un peu d'air */
+header.hero+main.wrap>p:first-child{margin-top:28px}
+/* vidéos de preuve (filmées au téléphone) : hauteur limitée */
+main video{max-height:560px;width:auto!important;max-width:100%;margin:0 auto}

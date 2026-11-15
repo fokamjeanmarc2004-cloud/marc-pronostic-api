@@ -1481,10 +1481,10 @@ def navpanel_html(lang="fr", lang_links=""):
 
 VIP_SLUG = {"fr":"vip.html","en":"vip-en.html","es":"vip-es.html","ar":"vip-ar.html"}
 TOPLINKS_L = {
-  "fr": [("Codes promo","index.html#bookmakers"),("Analyses","pronostics.html"),("Côte de 2","cote-de-2.html"),("Pair/Impair","total-pair-impair.html"),("Résultats","resultats.html"),("📚 Livres","livres.html")],
-  "en": [("Promo codes","promo-codes.html#bookmakers"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Odd/Even","total-odd-even.html"),("Results","results.html"),("📚 Books (FR)","livres.html")],
-  "es": [("Códigos","codigos-promocionales.html#bookmakers"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Par/Impar","total-par-impar.html"),("Resultados","resultados.html"),("📚 Libros (FR)","livres.html")],
-  "ar": [("الرموز","promo-codes-ar.html#bookmakers"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("زوجي/فردي","total-pair-impair-ar.html"),("النتائج","resultats-ar.html"),("📚 كتب (FR)","livres.html")],
+  "fr": [("Codes promo","index.html#bookmakers"),("Pronostics","pronostics.html"),("Côte de 2","cote-de-2.html"),("Résultats","resultats.html"),("Livres","livres.html")],
+  "en": [("Promo codes","promo-codes.html#bookmakers"),("Predictions","predictions.html"),("Odds of 2","odds-of-2.html"),("Results","results.html"),("Books (FR)","livres.html")],
+  "es": [("Códigos","codigos-promocionales.html#bookmakers"),("Pronósticos","pronosticos.html"),("Cuota de 2","cuota-de-2.html"),("Resultados","resultados.html"),("Libros (FR)","livres.html")],
+  "ar": [("الرموز","promo-codes-ar.html#bookmakers"),("التوقعات","pronostics-ar.html"),("رهان بضعف 2","cote-2-ar.html"),("النتائج","resultats-ar.html"),("كتب (FR)","livres.html")],
 }
 HOME_L = {"fr":"index.html","en":"promo-codes.html","es":"codigos-promocionales.html","ar":"promo-codes-ar.html"}
 
@@ -1909,7 +1909,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11o"><script>
+<link rel="stylesheet" href="style.css?v=2026-11p"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -8299,6 +8299,19 @@ CSS += r'''
  .astats div{padding:9px 8px!important;font-size:11.5px!important;line-height:1.25}
  .astats b{font-size:20px!important}
 }
+'''
+CSS += r'''
+/* menu du haut (ordinateur) : chaque lien sur une seule ligne */
+.toplinks a{white-space:nowrap;padding:8px 11px!important;font-size:14.5px}
+'''
+CSS += r'''
+/* page gains : titre des tickets lisible sur fond bleu nuit */
+.gcard figcaption b{color:#fff!important}
+.gcard figcaption{font-size:12.5px!important}.gcard figcaption b{font-size:13px!important;line-height:1.25!important}.gcard figcaption strong{font-size:14px!important}
+/* texte d'intro collé au haut de page : un peu d'air */
+header.hero+main.wrap>p:first-child{margin-top:28px}
+/* vidéos de preuve (filmées au téléphone) : hauteur limitée */
+main video{max-height:560px;width:auto!important;max-width:100%;margin:0 auto}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
