@@ -413,6 +413,7 @@ async function nbaResultsOnce(env, now, dryText, dry) {
     done.push(r.line);
   }
   try { done.push(...(await footPass(blocks, now, FOOT_FORCE))); } catch (e) { console.log("foot", e.message); }
+  try { done.push(...(await tennisPass(blocks, now))); } catch (e) { console.log("tennis", e.message); }
   if (!done.length) return "Résultats : rien à mettre pour l'instant";
   const out = blocks.join("\n---\n");
   if (dryText !== null) return { text: out, done };
@@ -528,6 +529,70 @@ export async function footPass(blocks, now = new Date(), force = false) {
     const en = `Final score: ${g.home} ${sc} ${g.away}. ` + (res === "gagne" ? "Prediction won ✅." : "Prediction lost ❌.");
     blocks[t.i] = insertResult(b, res, fr, en, `النتيجة النهائية: ${sc}. ${AR_RES[res]}`);
     done.push(`⚽ ${e1} ${sc} ${e2} : ${res === "gagne" ? "✅ gagné" : "❌ perdu"}`);
+  }
+  return done;
+}
+
+// ---------------------------------------------------------------- Resultats TENNIS automatiques (ATP, scores ESPN)
+// Seulement les pronostics « X to win » et les matchs vraiment termines (STATUS_FINAL) : abandon, forfait... = laisse a la main.
+export function tennisVerdict(pen, comp) {
+  // comp = [{ n: nom, w: gagnant (bool), ls: [jeux par set] }, ...]
+  const pick = plain((((pen || "").match(/^(.+?)\s+to win$/i) || [])[1]) || "");
+  if (!pick || comp.length !== 2) return null;
+  const mine = comp.filter((c) => plain(c.n).split(" ").includes(pick.split(" ").pop()));
+  if (mine.length !== 1) return null;
+  return mine[0].w ? "gagne" : "perdu";
+}
+
+export async function tennisPass(blocks, now = new Date()) {
+  const todo = [];
+  blocks.forEach((b, i) => {
+    if (/^resultat:/m.test(b) || !/^sport:\s*tennis/m.test(b)) return;
+    const d = (b.match(/^date:\s*(.+)$/m) || [])[1];
+    if (!d) return;
+    const start = Date.parse(d.trim().replace(" ", "T") + ":00+01:00");
+    // au moins 1h apres le debut prevu, pas plus vieux que 5 jours
+    if (isNaN(start) || start + 3600000 > now.getTime() || start < now.getTime() - 5 * 86400000) return;
+    todo.push({ i, day: new Date(start).toISOString().slice(0, 10).replace(/-/g, "") });
+  });
+  const cache = {}, done = [];
+  for (const t of todo) {
+    if (!(t.day in cache)) {
+      cache[t.day] = [];
+      for (const host of ["https://site.api.espn.com", "https://site.web.api.espn.com"]) {
+        try {
+          const r = await fetch(`${host}/apis/site/v2/sports/tennis/atp/scoreboard?dates=${t.day}`, { headers: ESPN_UA });
+          if (!r.ok) continue;
+          for (const ev of (await r.json()).events || []) {
+            for (const g of ev.groupings || []) {
+              if (!/singles/i.test(g.grouping?.displayName || "")) continue;
+              for (const c of g.competitions || []) {
+                const st = c.status?.type || {};
+                if (!st.completed || st.name !== "STATUS_FINAL") continue;
+                cache[t.day].push((c.competitors || []).map((x) => ({ n: x.athlete?.displayName || "", w: !!x.winner, ls: (x.linescores || []).map((l) => Math.round(l.value)) })));
+              }
+            }
+          }
+          break;
+        } catch (e) { console.log("espn tennis", e.message); }
+      }
+    }
+    const b = blocks[t.i];
+    const get = (k) => ((b.match(new RegExp("^" + k + ":\\s*(.+)$", "m")) || [])[1] || "").trim();
+    const e1 = get("equipe1"), e2 = get("equipe2"), pen = get("pronostic_en");
+    const same = (a, x) => { const A = plain(a).split(" "), X = plain(x).split(" "); return A[A.length - 1] === X[X.length - 1]; };
+    const comp = cache[t.day].find((c) => c.length === 2 && ((same(e1, c[0].n) && same(e2, c[1].n)) || (same(e1, c[1].n) && same(e2, c[0].n))));
+    if (!comp) continue;
+    const res = tennisVerdict(pen, comp);
+    if (!res) continue;
+    const p1 = same(e1, comp[0].n) ? comp[0] : comp[1], p2 = p1 === comp[0] ? comp[1] : comp[0];
+    const sets1 = p1.ls.filter((v, k) => v > (p2.ls[k] ?? 0)).length, sets2 = p2.ls.filter((v, k) => v > (p1.ls[k] ?? 0)).length;
+    const detail = p1.ls.map((v, k) => `${v}-${p2.ls[k] ?? 0}`).join(", ");
+    const sc = `${sets1}-${sets2}`;
+    const fr = `Score final : ${e1} ${sc} ${e2} (${detail}). ` + (res === "gagne" ? "Pronostic gagné ✅." : "Pronostic perdu ❌.");
+    const en = `Final score: ${e1} ${sc} ${e2} (${detail}). ` + (res === "gagne" ? "Prediction won ✅." : "Prediction lost ❌.");
+    blocks[t.i] = insertResult(b, res, fr, en, `النتيجة النهائية: ${sc} (${detail}). ${AR_RES[res]}`);
+    done.push(`🎾 ${e1} ${sc} ${e2} : ${res === "gagne" ? "✅ gagné" : "❌ perdu"}`);
   }
   return done;
 }
