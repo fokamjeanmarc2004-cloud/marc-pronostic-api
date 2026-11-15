@@ -7464,7 +7464,7 @@ def livre_page():
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Nouveau · guide PDF</p>
 <div class="lvh">
-<div class="lvcover"><img src="livre-analyse-3d.webp" alt="Livre : Analyser un match comme Cousin Marc" width="360" height="480" style="width:100%;height:auto;display:block;border-radius:10px"><small>Guide pratique · 2026</small><b>Analyser un match comme <span>Cousin Marc</span></b><i>Ma méthode en 7 étapes · 26 pages · exemples réels</i></div>
+<div class="lvcover"><img src="livre-analyse-static.webp" alt="Livre : Analyser un match comme Cousin Marc" width="360" height="553" style="width:100%;height:auto;display:block;border-radius:10px"><small>Guide pratique · 2026</small><b>Analyser un match comme <span>Cousin Marc</span></b><i>Ma méthode en 7 étapes · 26 pages · exemples réels</i></div>
 <div>
 <h1>Analyser un match <span class="hl">comme Cousin Marc</span></h1>
 <p>Ma méthode, étape par étape, pour choisir un pronostic, comprendre les cotes et gérer ta mise sans te faire plumer. Les mêmes étapes que j'utilise pour mes analyses publiées sur ce site.</p>
