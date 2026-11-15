@@ -616,6 +616,12 @@
   force = true
 
 [[redirects]]
+  from = "/livres"
+  to = "/livres.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/manchester-united-predictions"
   to = "/manchester-united-predictions.html"
   status = 301

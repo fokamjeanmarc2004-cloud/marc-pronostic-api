@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, re, html, json, shutil, datetime, unicodedata
+import os, re, html, json, shutil, datetime, unicodedata, urllib.parse
 _MOIS_FR = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]
 _MOIS_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 _MOIS_ES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
@@ -1569,7 +1569,7 @@ def footer_html():
 <a href="pronostics.html">Pronostics</a>
 <a href="resultats.html">Résultats</a>
 <a href="bilan.html">Mon bilan</a>
-<a href="livre-analyse-match.html">Le livre</a>
+<a href="livres.html">Mes livres</a>
 <a href="actualites.html">Actualités</a>
 <a href="a-propos.html">À propos</a>
 </div>
@@ -3231,7 +3231,7 @@ def sitemap():
             + [f"{a['slug']}.html" for a in ARTICLES] + [f"{a['slug']}.html" for a in ARTICLES_EN] + [f"{a['slug']}.html" for a in ARTICLES_ES] + [f"{a['slug']}.html" for a in ARTICLES_AR] \
             + [f"{cty_hub_slug(c)}.html" for c in COUNTRIES] + [f"{cty_en_slug(c)}.html" for c in COUNTRIES_EN] + [f"{TCHAD_AR_SLUG}.html"] \
             + [f"{cty_bk_slug(_bk(s), c)}.html" for c in COUNTRIES for s in c["books"] if (s, c["slug"]) in KEEP_COUNTRY_BK] \
-            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
+            + [COMPARE_SLUG, COMPARE_SLUG_EN, HELP_SLUG, HELP_SLUG_EN, "affiche.html", "bilan.html", "track-record.html", "livre-analyse-match.html", "livres.html"] + NEW_PAGES + [m["slug"] + ".html" for m in MATCHS] + [m["slug_en"] + ".html" for m in MATCHS if m.get("slug_en")] + [m["slug_ar"] + ".html" for m in MATCHS if m.get("slug_ar")]
     items = "\n".join(f"  <url><loc>{BASE}/{p}</loc><changefreq>weekly</changefreq></url>" for p in pages)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>'
 
@@ -7279,11 +7279,136 @@ def livre_page():
 <h2>Questions fréquentes</h2>
 {faq_html}
 
+<p><a href="livres.html" style="color:var(--gold);font-weight:700">← Voir tous mes livres</a></p>
 <div class="note">Les résultats passés ne garantissent pas les gains futurs. Ce guide ne constitue pas un conseil financier. 18+ · Joue de façon responsable. Voir aussi : <a href="jeu-responsable.html">jeu responsable</a> · <a href="bilan.html">mon bilan public</a> · <a href="pronostics.html">pronostics du jour</a>.</div>
 </main>
 {footer_html()}"""
 
 open(os.path.join(OUT, LIVRE_SLUG), "w", encoding="utf-8").write(livre_page()); written.append(LIVRE_SLUG)
+# ---------------------------------------------------------------- Boutique : « Mes livres » (catalogue + panier -> commande Telegram)
+LIVRES_SLUG = "livres.html"
+# status : "dispo" (achetable), "bientot" (on peut demander a etre prevenu). prix en FCFA.
+LIVRES = [
+ {"id": "analyse", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes · 26 pages", "prix": 15000, "usd": 25, "status": "dispo", "emo": "📘", "c1": "#0b1a3a", "c2": "#1d4ed8",
+  "desc": "Comprendre les cotes, analyser un match, choisir ton pari et gérer ta mise. Exemples réels, fiche d'analyse et carnet de paris.", "lien": "livre-analyse-match.html"},
+ {"id": "equipes", "titre": "Les équipes à surveiller", "sous": "Profils, tendances et pièges par équipe", "prix": 18000, "usd": 30, "status": "bientot", "emo": "🛡️", "c1": "#3a0b1a", "c2": "#c62828",
+  "desc": "Les équipes dont il faut se méfier et celles qui rapportent : régularité, comportement en favori, à domicile et à l'extérieur, d'après mon suivi depuis 2021."},
+ {"id": "cotes", "titre": "Repérer les grosses cotes", "sous": "Mes stratégies, tous sports", "prix": 18000, "usd": 30, "status": "bientot", "emo": "🎯", "c1": "#0b3a1f", "c2": "#16a34a",
+  "desc": "Comment je repère les cotes intéressantes et les mouvements de cotes qui méritent l'attention, en football, tennis, basket et autres sports. Mon expérience, sans promesse de gain."},
+ {"id": "virtuel", "titre": "Jeux virtuels et crash : comprendre avant de jouer", "sous": "Comment ça marche, les risques, limiter ses pertes", "prix": 20000, "usd": 33, "status": "bientot", "emo": "🎰", "c1": "#2a0b3a", "c2": "#7e22ce",
+  "desc": "Comment fonctionnent les jeux virtuels et les jeux crash, ce qui est vrai et faux sur les « méthodes », et comment limiter ses pertes si tu décides de jouer."},
+]
+LIVRES_SPORTS = [("⚽", "Football"), ("🎾", "Tennis"), ("🏀", "Basket"), ("🏒", "Hockey"), ("⚾", "Baseball"), ("🏏", "Cricket"), ("🏓", "Tennis de table")]
+_SHOP_CSS = """<style>
+.shgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:14px 0 26px}
+.shcard{background:var(--soft);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.shcov{padding:22px 18px;color:#fff;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end;position:relative}
+.shcov .e{position:absolute;top:14px;right:16px;font-size:34px;opacity:.9}
+.shcov small{letter-spacing:1.4px;font-size:10.5px;font-weight:700;text-transform:uppercase;color:#f3c64a}
+.shcov b{font-size:19px;line-height:1.2;color:#fff!important;margin-top:6px}
+.shbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.shbody p{margin:0;font-size:14.5px;color:var(--ink2)}
+.shprice{font-size:22px;font-weight:800;color:var(--gold)}
+.shprice span{font-size:13px;font-weight:500;color:var(--ink2)}
+.shbadge{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;background:#16a34a;color:#fff;align-self:flex-start}
+.shbadge.soon{background:#64748b}
+.shbtn{margin-top:auto;display:inline-flex;justify-content:center;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:15px;border-radius:12px;padding:12px 14px;border:1px solid var(--green);background:var(--green);color:#fff;cursor:pointer;font-family:inherit}
+.shbtn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.shmini{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0 24px}
+.shmini div{background:var(--soft);border-radius:14px;padding:14px;text-align:center}
+.shmini b{display:block;font-size:26px}
+.shmini span{font-size:13px;color:var(--ink2)}
+#shcart{position:sticky;bottom:0;z-index:20;background:var(--bg,#fff);border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(0,0,0,.12);padding:12px 0;display:none}
+#shcart.on{display:block}
+#shcart .in{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+#shcart ul{margin:0;padding:0;list-style:none;font-size:14.5px}
+#shcart li{display:flex;gap:8px;align-items:center;margin-bottom:3px}
+#shcart li button{border:0;background:none;color:#c62828;cursor:pointer;font-size:16px}
+#shcart .tot{font-size:19px;font-weight:800}
+.shfmt{display:flex;gap:14px;flex-wrap:wrap;font-size:14.5px}
+</style>"""
+_SHOP_JS = """<script>
+(function(){
+var BOOKS=__BOOKS__, TG="__TG__", cart=[];
+function fmt(n){return String(n).replace(/\\B(?=(\\d{3})+(?!\\d))/g,"\\u00a0")}
+try{var s=sessionStorage.getItem("cm_cart");if(s)cart=JSON.parse(s).filter(function(id){return BOOKS.some(function(b){return b.id===id&&b.status==="dispo"})})}catch(e){}
+function save(){try{sessionStorage.setItem("cm_cart",JSON.stringify(cart))}catch(e){}}
+function render(){
+  var box=document.getElementById("shcart");if(!box)return;
+  var ul=box.querySelector("ul"),tot=0,usd=0;ul.innerHTML="";
+  cart.forEach(function(id){var b=BOOKS.filter(function(x){return x.id===id})[0];if(!b)return;tot+=b.prix;usd+=b.usd;
+    var li=document.createElement("li");li.textContent=b.titre+" : "+fmt(b.prix)+" FCFA ";
+    var x=document.createElement("button");x.type="button";x.setAttribute("aria-label","Retirer");x.textContent="\\u2715";x.onclick=function(){cart=cart.filter(function(c){return c!==id});save();render()};li.appendChild(x);ul.appendChild(li)});
+  box.classList.toggle("on",cart.length>0);
+  box.querySelector(".tot").textContent="Total : "+fmt(tot)+" FCFA (\\u2248 "+usd+" $)";
+  var f=document.querySelector("input[name=shfmt]:checked");f=f?f.value:"PDF";
+  var lines=["LIVRE \\u2014 Ma commande :"];cart.forEach(function(id){var b=BOOKS.filter(function(x){return x.id===id})[0];if(b)lines.push("- "+b.titre+" ("+fmt(b.prix)+" FCFA)")});
+  lines.push("Total : "+fmt(tot)+" FCFA","Format : "+f);
+  box.querySelector("a.go").href=TG+"?text="+encodeURIComponent(lines.join("\\n"));
+  document.querySelectorAll("[data-add]").forEach(function(btn){var id=btn.getAttribute("data-add"),on=cart.indexOf(id)>-1;btn.textContent=on?"\\u2713 Dans le panier":"Ajouter au panier";btn.classList.toggle("alt",on)});
+}
+document.addEventListener("click",function(e){var t=e.target.closest("[data-add]");if(!t)return;var id=t.getAttribute("data-add"),i=cart.indexOf(id);if(i>-1)cart.splice(i,1);else cart.push(id);save();render()});
+document.addEventListener("change",function(e){if(e.target.name==="shfmt")render()});
+render();
+})();
+</script>"""
+
+def livres_page():
+    import json as _j
+    def card(b):
+        dispo = b["status"] == "dispo"
+        badge = '<span class="shbadge">Disponible</span>' if dispo else '<span class="shbadge soon">Bientôt disponible</span>'
+        if dispo:
+            btn = (f'<button type="button" class="shbtn" data-add="{b["id"]}">Ajouter au panier</button>'
+                   f'<a class="shbtn alt" href="{b["lien"]}">Voir le détail</a>')
+        else:
+            msg = urllib.parse.quote(f"Préviens-moi quand le livre « {b['titre']} » sera disponible.")
+            btn = f'<a class="shbtn alt" href="{VIP_TG}?text={msg}">Me prévenir</a>'
+        fcfa = f'{b["prix"]:,}'.replace(",", " ")
+        return (f'<article class="shcard"><div class="shcov" style="background:linear-gradient(135deg,{b["c1"]},{b["c2"]})"><span class="e">{b["emo"]}</span>'
+                f'<small>Cousin Marc · guide</small><b>{b["titre"]}</b></div>'
+                f'<div class="shbody">{badge}<p><b>{b["sous"]}</b></p><p>{b["desc"]}</p>'
+                f'<div class="shprice">{fcfa} FCFA <span>≈ {b["usd"]} $</span></div>{btn}</div></article>')
+    cards = "".join(card(b) for b in LIVRES)
+    sports = "".join(f'<div><b>{e}</b><span>{n}<br>bientôt</span></div>' for e, n in LIVRES_SPORTS)
+    books_json = _j.dumps([{k: b[k] for k in ("id", "titre", "prix", "usd", "status")} for b in LIVRES], ensure_ascii=False)
+    js = _SHOP_JS.replace("__BOOKS__", books_json).replace("__TG__", VIP_TG)
+    return head("Mes livres : guides de pronostics par Cousin Marc",
+        "Les guides de Cousin Marc : analyser un match, repérer les grosses cotes, les équipes à surveiller, les jeux virtuels. Version PDF, paiement Mobile Money ou crypto.",
+        f"{BASE}/{LIVRES_SLUG}", extra=_SHOP_CSS, nav=nav_fr(), lang="fr") + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Boutique · guides pratiques</p>
+<h1>Mes <span class="hl">livres</span></h1>
+<p>Des guides écrits par un pronostiqueur actif depuis 2021, pour comprendre au lieu de copier. Un livre par sujet, et bientôt un livre par sport.</p>
+</div></header>
+<main class="wrap legalbody">
+<div class="note" style="margin-top:0"><b>Honnêteté d'abord :</b> ces livres partagent mon expérience et mes méthodes. Ils ne promettent <b>aucun gain</b> et ne garantissent aucun résultat. Les paris comportent un risque de perte. 18+ · Joue de façon responsable.</div>
+
+<h2>Les guides</h2>
+<div class="shgrid">{cards}</div>
+
+<h2>Un livre par sport (à venir)</h2>
+<p>À terme, chaque sport aura son propre guide complet, avec ses spécificités.</p>
+<div class="shmini">{sports}</div>
+
+<h2>Comment commander</h2>
+<ol>
+<li>Ajoute les livres disponibles au <b>panier</b>.</li>
+<li>Choisis le format et appuie sur <b>Commander sur Telegram</b> : ta commande s'écrit toute seule dans un message à Cousin Marc.</li>
+<li>Envoie le montant par Mobile Money ou crypto (<a href="livre-analyse-match.html#payer" style="color:var(--gold);font-weight:700">voir les numéros de paiement</a>), puis ta capture d'écran dans la même conversation.</li>
+<li>Je vérifie le paiement et je t'envoie ton livre.</li>
+</ol>
+<p class="small">Format PDF : livré par Telegram après vérification du paiement. Version papier avec retrait en agence : bientôt, selon ta ville.</p>
+<div class="note">Les résultats passés ne garantissent pas les gains futurs. Ces livres ne constituent pas un conseil financier. 18+ · Voir aussi : <a href="jeu-responsable.html">jeu responsable</a> · <a href="bilan.html">mon bilan public</a>.</div>
+</main>
+<div id="shcart"><div class="wrap in">
+<div><ul></ul><div class="tot"></div><div class="shfmt"><label><input type="radio" name="shfmt" value="PDF" checked> PDF</label><label><input type="radio" name="shfmt" value="Papier (retrait en agence)"> Papier (bientôt)</label></div></div>
+<a class="shbtn go" href="{VIP_TG}">Commander sur Telegram</a>
+</div></div>
+{footer_html()}
+{js}"""
+
+open(os.path.join(OUT, LIVRES_SLUG), "w", encoding="utf-8").write(livres_page()); written.append(LIVRES_SLUG)
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
