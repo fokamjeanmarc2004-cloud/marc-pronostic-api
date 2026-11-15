@@ -1940,7 +1940,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11v"><script>
+<link rel="stylesheet" href="style.css?v=2026-11w"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -8864,6 +8864,12 @@ CSS += r'''
 .fpro li{color:#dbe3f7;padding-left:22px;position:relative}.fpro li::before{content:"✓";position:absolute;left:0;color:#facc15;font-weight:800}
 .fpro .fnote{color:var(--mut);font-size:13px;margin:10px 0 0}
 .fbuy{display:flex;flex-direction:column;gap:10px}.fbuy .lbprice{font-size:26px}.fbuy .shb{width:100%}
+'''
+CSS += r'''
+.vmomo,.vcrypto,.vpaywrap .vmomo,.vpaywrap .vcrypto{color:var(--tx)!important}
+.vm-num{color:#fde68a!important;font-size:clamp(24px,3.4vw,30px)!important;font-weight:800!important;letter-spacing:.03em}
+.vm-row span,.vc-head span{color:var(--tx2)!important}.vm-row b,.vm-head b,.vc-head b{color:#fff!important}
+.vaddr{color:#fde68a!important}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")

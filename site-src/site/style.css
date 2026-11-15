@@ -1355,3 +1355,8 @@ main h2[id],main section[id]{scroll-margin-top:84px}
 .fpro li{color:#dbe3f7;padding-left:22px;position:relative}.fpro li::before{content:"✓";position:absolute;left:0;color:#facc15;font-weight:800}
 .fpro .fnote{color:var(--mut);font-size:13px;margin:10px 0 0}
 .fbuy{display:flex;flex-direction:column;gap:10px}.fbuy .lbprice{font-size:26px}.fbuy .shb{width:100%}
+
+.vmomo,.vcrypto,.vpaywrap .vmomo,.vpaywrap .vcrypto{color:var(--tx)!important}
+.vm-num{color:#fde68a!important;font-size:clamp(24px,3.4vw,30px)!important;font-weight:800!important;letter-spacing:.03em}
+.vm-row span,.vc-head span{color:var(--tx2)!important}.vm-row b,.vm-head b,.vc-head b{color:#fff!important}
+.vaddr{color:#fde68a!important}
