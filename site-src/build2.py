@@ -7814,7 +7814,7 @@ LIVRES_NIV = [
 FORMATION_PRIX, FORMATION_USD = 150000, 250
 LIVRES = [
  {"id": "debuter", "niv": "formation", "titre": "Débuter les paris sportifs", "sous": "Les bases en 10 leçons",
-  "pts": ["Comprendre une cote", "Les types de paris", "Les erreurs du débutant"], "prix": None, "usd": None, "status": "precommande"},
+  "pts": ["Comprendre une cote", "Les types de paris", "Les erreurs du débutant"], "prix": 35000, "usd": 60, "status": "dispo"},
  {"id": "analyse", "niv": "formation", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes", "img": "livre-cv-analyse.webp",
   "pts": ["Lire et comparer les cotes", "Ma grille d'analyse en 7 étapes", "Gérer sa mise"], "prix": 80000, "usd": 135, "status": "dispo", "lien": "livre-analyse-match.html"},
  {"id": "multi", "niv": "formation", "titre": "Manuel de pronostic : tous les sports", "sous": "Analyser, comparer les cotes, décider avec méthode",
@@ -7844,7 +7844,7 @@ LIVRES = [
  {"id": "collection", "niv": "collection", "titre": "Manuel universel : tous les sports", "sous": "Tous les sports dans un seul manuel",
   "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": 105000, "usd": 175, "status": "dispo"},
  {"id": "mise", "niv": "formation", "titre": "Gérer sa mise", "sous": "Budget, discipline, carnet de paris",
-  "pts": ["Fixer son budget", "Mise fixe ou mise relative", "Tenir un carnet de paris"], "prix": None, "usd": None, "status": "precommande"},
+  "pts": ["Fixer son budget", "Mise fixe ou mise relative", "Tenir un carnet de paris"], "prix": 35000, "usd": 60, "status": "dispo"},
 ]
 LIVRES_SPORTS = [("foot", "Football"), ("tennis", "Tennis"), ("basket", "Basket"), ("hockey", "Hockey"), ("baseball", "Baseball"), ("cricket", "Cricket"), ("tt", "Tennis de table")]
 _SHOP_JS = """<script>
