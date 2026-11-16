@@ -848,19 +848,27 @@ async function sendAnalyses(env, date = new Date(), moment = "jour") {
   return `analyses du jour publiées (${today.length} match(s), ${sent} message(s))`;
 }
 
+// comparaison en temps constant (ne laisse pas deviner un secret caractere par caractere)
+function sameText(a, b) {
+  const x = new TextEncoder().encode(String(a)), y = new TextEncoder().encode(String(b));
+  if (x.length !== y.length) return false;
+  return crypto.subtle.timingSafeEqual(x, y);
+}
+
 // ---------------------------------------------------------------- Entrees du Worker
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const given = (url.searchParams.get("key") || "").trim();
-    const keyOk = env.WEBHOOK_SECRET && given === env.WEBHOOK_SECRET.trim();
+    const keyOk = !!env.WEBHOOK_SECRET && sameText(given, env.WEBHOOK_SECRET.trim());
+    // le depot est public : le message d'erreur ne donne aucun indice sur le mot de passe
     const keyHelp = () => !env.WEBHOOK_SECRET
       ? "❌ Le secret WEBHOOK_SECRET est absent dans Cloudflare (Settings > Variables and Secrets)."
-      : `❌ Clé incorrecte : tu as tapé ${given.length} caractères, le mot de passe enregistré en a ${env.WEBHOOK_SECRET.trim().length}. Attention aux majuscules/minuscules.`;
+      : "❌ Clé incorrecte. Attention aux majuscules/minuscules.";
 
     // Messages envoyes par Telegram
     if (url.pathname === "/telegram" && request.method === "POST") {
-      if (request.headers.get("X-Telegram-Bot-Api-Secret-Token") !== env.WEBHOOK_SECRET) {
+      if (!env.WEBHOOK_SECRET || !sameText(request.headers.get("X-Telegram-Bot-Api-Secret-Token") || "", env.WEBHOOK_SECRET)) {
         return new Response("interdit", { status: 403 });
       }
       const update = await request.json();
@@ -901,32 +909,12 @@ export default {
       return new Response(`✅ ${out} dans ${channelOf(env)}`, { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
-    // Envoi unique du bilan demande par Cousin Marc le 13/11 (une seule fois : un fichier temoin est cree sur GitHub)
-    // Rattrapage unique du 14/11 au soir (resultats valides + pronostics de la nuit) : une seule fois
-    if (url.pathname === "/rattrapage-14nov") {
-      const flag = "promo/rattrapage-14nov.txt";
-      if ((await gh(env, `contents/${flag}?ref=main`)).ok) return new Response("déjà envoyé");
-      await saveToGithub(env, flag, new TextEncoder().encode(new Date().toISOString()), "rattrapage 14 novembre");
-      let out = "";
-      try { out += await sendBilan(env, new Date(), 26); } catch (e) { out += "bilan erreur : " + e.message; }
-      try { out += " | " + await sendAnalyses(env, new Date(), "nuit"); } catch (e) { out += " | nuit erreur : " + e.message; }
-      return new Response(out, { headers: { "content-type": "text/plain; charset=utf-8" } });
-    }
-
-    if (url.pathname === "/bilan-13nov") {
-      const flag = "promo/bilan-13nov.txt";
-      const ex = await gh(env, `contents/${flag}?ref=main`);
-      if (ex.ok) return new Response("déjà envoyé", { headers: { "content-type": "text/plain; charset=utf-8" } });
-      await saveToGithub(env, flag, new TextEncoder().encode(new Date().toISOString() + "\n"), "bilan 13 novembre envoye");
-      let out;
-      try { out = await sendBilan(env, new Date(), 36); } catch (e) { out = "erreur : " + e.message; }
-      return new Response(out, { headers: { "content-type": "text/plain; charset=utf-8" } });
-    }
+    // (les envois uniques /bilan-13nov et /rattrapage-14nov, deja faits, sont retires : ils etaient ouverts a tous)
 
     // Messages du soir declenches par GitHub (bot-soir.yml). Cle = empreinte SHA-256 du jeton Telegram.
     if (url.pathname === "/tick") {
       const hash = [...new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(env.TELEGRAM_BOT_TOKEN || "")))].map((b) => b.toString(16).padStart(2, "0")).join("");
-      if (!env.TELEGRAM_BOT_TOKEN || request.headers.get("X-Tick-Key") !== hash) return new Response("interdit", { status: 403 });
+      if (!env.TELEGRAM_BOT_TOKEN || !sameText(request.headers.get("X-Tick-Key") || "", hash)) return new Response("interdit", { status: 403 });
       const slot = url.searchParams.get("slot");
       let out;
       try {
@@ -939,8 +927,10 @@ export default {
       return new Response(String(out), { headers: { "content-type": "text/plain; charset=utf-8" } });
     }
 
-    // Test des resultats NBA automatiques (lecture seule, n ecrit rien) : /nba-test
+    // Test des resultats NBA automatiques (lecture seule, n ecrit rien) : /nba-test?key=...
+    // protege : chaque appel interroge GitHub avec la cle du bot (appels en boucle = quota GitHub epuise)
     if (url.pathname === "/nba-test") {
+      if (!keyOk) return new Response(keyHelp(), { status: 403, headers: { "content-type": "text/plain; charset=utf-8" } });
       let out;
       try { out = await nbaResults(env, new Date(), null, true); } catch (e) { out = "erreur : " + e.message; }
       return new Response(typeof out === "string" ? out : JSON.stringify(out), { headers: { "content-type": "text/plain; charset=utf-8" } });
