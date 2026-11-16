@@ -1944,7 +1944,7 @@ if(navigator.clipboard&&window.isSecureContext){{navigator.clipboard.writeText(t
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12b"><script>
+<link rel="stylesheet" href="style.css?v=2026-12c"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -9028,6 +9028,8 @@ CSS += r'''
   .copybtn-mini,.sb-copy,.tcode button,.bkcodebox button,.vcopy,.copybtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;padding-top:0!important;padding-bottom:0!important}
 }
 .copybtn-mini:focus-visible,.sb-copy:focus-visible,.copybtn:focus-visible,.vcopy:focus-visible,.cta:focus-visible,.bkjoin:focus-visible{outline:2px solid #fbbf24;outline-offset:2px}
+/* titres de section de l'accueil sans étiquette au-dessus : le titre parle seul ("Commence ici" de la vidéo reste) */
+.hsec .kicker{display:none!important}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")

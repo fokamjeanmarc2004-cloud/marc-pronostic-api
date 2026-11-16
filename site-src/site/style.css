@@ -1411,3 +1411,5 @@ footer bdi{unicode-bidi:isolate}
   .copybtn-mini,.sb-copy,.tcode button,.bkcodebox button,.vcopy,.copybtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;padding-top:0!important;padding-bottom:0!important}
 }
 .copybtn-mini:focus-visible,.sb-copy:focus-visible,.copybtn:focus-visible,.vcopy:focus-visible,.cta:focus-visible,.bkjoin:focus-visible{outline:2px solid #fbbf24;outline-offset:2px}
+/* titres de section de l'accueil sans étiquette au-dessus : le titre parle seul ("Commence ici" de la vidéo reste) */
+.hsec .kicker{display:none!important}
