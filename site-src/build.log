@@ -1,12 +1,12 @@
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:3310: SyntaxWarning: invalid escape sequence '\w'
-  f'<div class="vproofs">{imgs}</div><p class="muted" style="font-size:13px;margin-top:12px">{L["proofs_sub"]}</p></section>' + '<script>(function(){var R="https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/preuves/";var g=document.querySelector(".vproofs");if(!g||!window.fetch)return;fetch(R+"preuves.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(l){l.filter(function(p){return /^tg-/.test(p.file)}).slice(0,30).reverse().forEach(function(p){var f=document.createElement("figure");f.className="vproof-card";var i=document.createElement("img");i.src=R+p.file;i.loading="lazy";i.alt=(p.titre||"")+" - Cousin Marc";var c=document.createElement("figcaption");var s=document.createElement("span");s.textContent=(p.titre||"").replace(/^[^\w(]+/,"");c.appendChild(s);if(p.cote){var b=document.createElement("b");b.textContent="@"+p.cote;c.appendChild(b)}if(p.gain){var t=document.createElement("strong");t.textContent="✅ "+p.gain;c.appendChild(t)}f.appendChild(i);f.appendChild(c);g.insertBefore(f,g.firstChild)})}).catch(function(){})})();</script>')
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:2722: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:3313: SyntaxWarning: invalid escape sequence '\w'
+  f'<div class="vproofs">{imgs}</div><p class="muted" style="font-size:13px;margin-top:12px">{L["proofs_sub"]}</p></section>' + '<script>(function(){var R="https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/preuves/";var g=document.querySelector(".vproofs");if(!g||!window.fetch)return;fetch(R+"preuves.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(l){l.filter(function(p){return /^tg-/.test(p.file)}).slice(0,30).reverse().forEach(function(p){var f=document.createElement("figure");f.className="vproof-card";var i=document.createElement("img");i.src=R+p.file;i.loading="lazy";i.alt=(p.titre||"")+" - Cousin Marc";var c=document.createElement("figcaption");var s=document.createElement("span");s.textContent=(p.titre||"").replace(/^[^\w(]+/,"");c.appendChild(s);if(p.cote){var b=document.createElement("b");b.textContent="@"+p.cote;c.appendChild(b)}if(p.gain){var t=document.createElement("strong");t.textContent="\u2705 "+p.gain;c.appendChild(t)}f.appendChild(i);f.appendChild(c);g.insertBefore(f,g.firstChild)})}).catch(function(){})})();</script>')
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:2725: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   lim = datetime.datetime.utcnow() + datetime.timedelta(hours=1) - datetime.timedelta(hours=2)   # heure de Douala - 2 h
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:6975: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:6978: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   _DLA_NOW = datetime.datetime.utcnow() + datetime.timedelta(hours=1)   # heure de Douala
   73 page(s) aujourd'hui/demain/competition
   155 page(s) match du jour
-Pages générées :
+Pages g�n�r�es :
  - index.html
  - promo-codes.html
  - 1xbet-promo-code.html
@@ -42,48 +42,48 @@ Pages générées :
  - code-promo-afroparie.html
  - code-promo-1win.html
  - code-promo-goldpari.html
- - pronostic-psg.html
  - pronostic-real-madrid.html
+ - pronostic-psg.html
  - pronostic-barcelone.html
  - pronostic-manchester-united.html
  - pronostic-atletico-madrid.html
+ - pronostic-naples.html
+ - pronostic-liverpool.html
  - pronostic-arsenal.html
  - pronostic-roma.html
- - pronostic-liverpool.html
- - pronostic-naples.html
- - pronostic-marseille.html
- - pronostic-rb-leipzig.html
- - pronostic-juventus.html
- - pronostic-como.html
  - pronostic-villarreal.html
- - pronostic-phoenix-suns.html
  - pronostic-detroit-pistons.html
+ - pronostic-como.html
  - pronostic-aston-villa.html
- - pronostic-chelsea.html
- - pronostic-bayern-munich.html
  - pronostic-borussia-dortmund.html
+ - pronostic-marseille.html
+ - pronostic-chelsea.html
+ - pronostic-juventus.html
+ - pronostic-bayern-munich.html
+ - pronostic-rb-leipzig.html
+ - pronostic-phoenix-suns.html
  - pronostic-les-deux-equipes-marquent.html
  - pronostic-plus-de-2-5-buts.html
- - psg-predictions.html
  - real-madrid-predictions.html
+ - psg-predictions.html
  - barcelona-predictions.html
  - manchester-united-predictions.html
  - atletico-madrid-predictions.html
+ - napoli-predictions.html
+ - liverpool-predictions.html
  - arsenal-predictions.html
  - roma-predictions.html
- - liverpool-predictions.html
- - napoli-predictions.html
- - marseille-predictions.html
- - rb-leipzig-predictions.html
- - juventus-predictions.html
- - como-predictions.html
  - villarreal-predictions.html
- - phoenix-suns-predictions.html
  - detroit-pistons-predictions.html
+ - como-predictions.html
  - aston-villa-predictions.html
- - chelsea-predictions.html
- - bayern-munich-predictions.html
  - borussia-dortmund-predictions.html
+ - marseille-predictions.html
+ - chelsea-predictions.html
+ - juventus-predictions.html
+ - bayern-munich-predictions.html
+ - rb-leipzig-predictions.html
+ - phoenix-suns-predictions.html
  - btts-predictions.html
  - over-2-5-goals-predictions.html
  - football-predictions-today-ar.html
@@ -512,4 +512,4 @@ Pages générées :
  - robots.txt
  - google5d6ef3eb30a3bfc3.html
   logos Telegram/WhatsApp mis dans 326 page(s)
-  rappels 18+ allégés dans 386 page(s)
+  rappels 18+ all�g�s dans 386 page(s)

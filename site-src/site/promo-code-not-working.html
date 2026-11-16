@@ -21,6 +21,9 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "I forgot to enter the promo code when I registered", "acceptedAnswer": {"@type": "Answer", "text": "With most bookmakers, the code cannot be added once the account is created. Contact the bookmaker's support right away (live chat) and explain that you forgot the code: some will add it if you have not made a deposit yet. Never open a second account: it is forbidden and can get your winnings blocked."}}, {"@type": "Question", "name": "The site says the code is invalid", "acceptedAnswer": {"@type": "Answer", "text": "Check three things: the code is typed in capital letters with no space; you enter it in the \"Promo code\" field (not \"Referral code\" or \"Friend code\"); and it is the right code for that bookmaker (see the table below). If the message stays, copy and paste the code from this page."}}, {"@type": "Question", "name": "My bonus did not show up after my deposit", "acceptedAnswer": {"@type": "Answer", "text": "The bonus is often credited only if: your first deposit reaches the required minimum; your profile is complete (name, date of birth, confirmed phone number); and the sports welcome bonus is activated in your profile (\"Bonuses\" or \"Account settings\", depending on the bookmaker). Wait a few minutes, then contact support with your proof of deposit."}}, {"@type": "Question", "name": "I can't withdraw my bonus", "acceptedAnswer": {"@type": "Answer", "text": "A welcome bonus cannot be withdrawn straight away: you first have to wager it a number of times on accumulators with a minimum odds (the \"wagering requirements\"). They are shown on the bookmaker's Promotions page. Your real money, on the other hand, can always be withdrawn."}}, {"@type": "Question", "name": "I'm asked for an identity check", "acceptedAnswer": {"@type": "Answer", "text": "This is normal and required before a withdrawal: send a clear ID document and, if asked, a selfie. Use the same first and last name as on your account. Without verification, the withdrawal stays blocked."}}, {"@type": "Question", "name": "My withdrawal is blocked or refused", "acceptedAnswer": {"@type": "Answer", "text": "The most common causes: bonus wagering not finished, account not verified, or a withdrawal requested to a different payment method than the deposit. Withdraw to the same Mobile Money number you used to deposit."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -42,7 +45,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -172,5 +175,5 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 </div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Promo code FFN · 18+ · Play responsibly</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 </body></html>

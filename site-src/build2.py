@@ -1519,7 +1519,7 @@ TABBAR_L = {
 TABBAR_SCRIPT = """<script>(function(){var t=document.querySelector('.tabbar');if(!t)return;var p=location.pathname.split('/').pop()||'index.html';
 t.querySelectorAll('a[data-p]').forEach(function(a){if(a.getAttribute('data-p')===p&&!location.hash)a.classList.add('on');});
 var b=t.querySelector('.tb-ffn');b.addEventListener('click',function(){var l=b.querySelector('small'),o=l.textContent;
-try{navigator.clipboard.writeText('FFN');}catch(e){}l.textContent=b.getAttribute('data-ok');b.classList.add('ok');
+try{cmCopy('FFN');}catch(e){}l.textContent=b.getAttribute('data-ok');b.classList.add('ok');
 if(typeof gtag==='function')gtag('event','copy_promo_code',{page_path:location.pathname,source:'tabbar'});
 setTimeout(function(){l.textContent=o;b.classList.remove('ok');},1600);});})();</script>"""
 
@@ -1669,7 +1669,7 @@ def footer_html():
 <div class="warn">⚠️ Réservé aux 18 ans et +. Le jeu comporte des risques : endettement, dépendance, isolement. Jouez de manière responsable et ne misez que ce que vous pouvez vous permettre de perdre. <a href="jeu-responsable.html" style="color:var(--gold)">En savoir plus</a></div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · 18+ · Joue de façon responsable</p>
 </div></footer>
-<script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
+<script>function copyCode(btn,code){{cmCopy(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
 
 def faq_jsonld(name, code, extra=()):
@@ -1920,6 +1920,9 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
 {extra}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){{return new Promise(function(ok){{function fb(){{var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{{document.execCommand("copy");}}catch(_){{}}a.remove();ok();}}
+if(navigator.clipboard&&window.isSecureContext){{navigator.clipboard.writeText(t).then(ok,fb);}}else{{fb();}}}});}}</script>
 <script>document.addEventListener("click",function(e){{try{{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){{gtag("event","affiliate_click",{{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname}});}}
@@ -1941,7 +1944,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -3330,7 +3333,7 @@ def vip_page(lang):
                f'<div class="vm-num" translate="no">{disp}</div>'
                f'<div class="vm-row"><span>{L["momo_name"]}</span><b translate="no">{holder}</b></div>'
                f'<div class="vm-row"><span>{L["momo_amount"]}</span><b>{VIP_PRICE_XAF}</b></div>'
-               f'<button type="button" class="vcopy" onclick="try{{navigator.clipboard.writeText(\'{raw}\');this.textContent=\'{L["copied"]}\';}}catch(e){{}}">{L["momo_copy"]}</button></div>')
+               f'<button type="button" class="vcopy" onclick="try{{cmCopy(\'{raw}\');this.textContent=\'{L["copied"]}\';}}catch(e){{}}">{L["momo_copy"]}</button></div>')
     cards=""
     for name,net,addr,qr,stable,reco in CRYPTOS:
         badge=f'<span class="vbadge">⭐ {L["reco"]}</span>' if reco else ''
@@ -3338,7 +3341,7 @@ def vip_page(lang):
         cards+=(f'<div class="vcrypto{" reco" if reco else ""}"><div class="vc-head"><b>{name}</b><span>{net}</span>{badge}</div>{note}'
                 f'<img src="{qr}" alt="QR {name} Cousin Marc VIP" width="164" height="164" loading="lazy">'
                 f'<div class="vaddr" translate="no">{addr}</div>'
-                f'<button type="button" class="vcopy" onclick="try{{navigator.clipboard.writeText(\'{addr}\');this.textContent=\'{L["copied"]}\';}}catch(e){{}}">{L["copy"]}</button>'
+                f'<button type="button" class="vcopy" onclick="try{{cmCopy(\'{addr}\');this.textContent=\'{L["copied"]}\';}}catch(e){{}}">{L["copy"]}</button>'
                 f'<p class="vwarn">⚠️ {L["warn_net"]} <b>{net}</b>. {L["warn_lost"]}</p></div>')
     body=f'''
 <header class="vhero hero-photo hero-vip"><div class="wrap">
@@ -3677,7 +3680,7 @@ def footer_html_en():
 <div class="warn">⚠️ 18+ only. Gambling involves risks: debt, addiction, isolation. Play responsibly and only bet what you can afford to lose.</div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Promo code FFN · 18+ · Play responsibly</p>
 </div></footer>
-<script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
+<script>function copyCode(btn,code){{cmCopy(code).then(function(){{var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
 # ---------------------------------------------------------------- Pages PAYS en anglais (public anglophone prioritaire)
 # utc = decalage horaire en heure d'hiver europeenne (novembre-mars)
@@ -4148,7 +4151,7 @@ def footer_html_es():
 <div class="warn">⚠️ Solo mayores de 18 años. El juego implica riesgos: deudas, adicción, aislamiento. Juega de forma responsable y apuesta solo lo que puedas permitirte perder.</div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Código promocional FFN · +18 · Juega con responsabilidad</p>
 </div></footer>
-<script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ ¡Copiado!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
+<script>function copyCode(btn,code){{cmCopy(code).then(function(){{var t=btn.textContent;btn.textContent="✅ ¡Copiado!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
 def bookmaker_page_es(b):
     name, code, slug = b["name"], b["code"], b["slug"]
@@ -4790,7 +4793,7 @@ def footer_html_ar():
 <div class="warn">⚠️ للبالغين فقط (18 عامًا فأكثر). المراهنة تنطوي على مخاطر: ديون، إدمان، عزلة. العب بمسؤولية وراهن فقط بما يمكنك تحمّل خسارته.</div>
 <p style="margin-top:18px">© 2026 كوزين مارك (Cousin Marc Pronostic) · الرمز الترويجي FFN · +18 · العب بمسؤولية</p>
 </div></footer>
-<script>function copyCode(btn,code){{navigator.clipboard.writeText(code).then(function(){{var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
+<script>function copyCode(btn,code){{cmCopy(code).then(function(){{var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){{btn.textContent=t;}},1500);}});}}</script>"""
 
 def bookmaker_page_ar(b):
     name, code, slug = b["name"], b["code"], b["slug"]
@@ -9018,6 +9021,13 @@ CSS += r'''
 /* menu identique sur tous les écrans : tout est dans le menu déroulant ; la barre du haut garde le logo, VIP, la langue et le bouton menu */
 .toplinks{display:flex!important}
 .toplinks li:not(:last-child){display:none!important}
+'''
+CSS += r'''
+/* boutons Copier assez grands pour le pouce (44 px) sur écran tactile ; contour visible au clavier */
+@media (pointer:coarse){
+  .copybtn-mini,.sb-copy,.tcode button,.bkcodebox button,.vcopy,.copybtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;padding-top:0!important;padding-bottom:0!important}
+}
+.copybtn-mini:focus-visible,.sb-copy:focus-visible,.copybtn:focus-visible,.vcopy:focus-visible,.cta:focus-visible,.bkjoin:focus-visible{outline:2px solid #fbbf24;outline-offset:2px}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")

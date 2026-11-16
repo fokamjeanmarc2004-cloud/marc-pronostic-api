@@ -21,6 +21,9 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SportsEvent", "name": "Slavia Prague vs Arsenal", "description": "Pronostic Slavia Prague - Arsenal du 4 novembre 2026 (Ligue des Champions) : Victoire d'Arsenal. Analyse de Cousin Marc.", "sport": "Football", "startDate": "2026-11-04T21:00+01:00", "endDate": "2026-11-04T23:00+01:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "image": ["https://cousinmarc-pronostic.com/og-cousinmarc-v3.jpg"], "homeTeam": {"@type": "SportsTeam", "name": "Slavia Prague"}, "awayTeam": {"@type": "SportsTeam", "name": "Arsenal"}, "competitor": [{"@type": "SportsTeam", "name": "Slavia Prague"}, {"@type": "SportsTeam", "name": "Arsenal"}], "performer": [{"@type": "SportsTeam", "name": "Slavia Prague"}, {"@type": "SportsTeam", "name": "Arsenal"}], "location": {"@type": "Place", "name": "Fortuna Arena", "address": {"@type": "PostalAddress", "addressLocality": "Prague", "addressCountry": "CZ"}}, "organizer": {"@type": "Organization", "name": "UEFA", "url": "https://www.uefa.com"}}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -42,7 +45,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -184,6 +187,6 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <div class="warn">⚠️ Réservé aux 18 ans et +. Le jeu comporte des risques : endettement, dépendance, isolement. Jouez de manière responsable et ne misez que ce que vous pouvez vous permettre de perdre. <a href="jeu-responsable.html" style="color:var(--gold)">En savoir plus</a></div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · 18+ · Joue de façon responsable</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 
 </body></html>

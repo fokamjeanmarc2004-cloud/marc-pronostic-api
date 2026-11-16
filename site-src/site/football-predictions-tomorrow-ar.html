@@ -24,6 +24,9 @@
 .linkchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.linkchips a{font-size:13px;font-weight:700;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink)}</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "توقعات مباريات الغد (الثلاثاء 17 نوفمبر) | كوزين مارك", "itemListElement": []}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -45,7 +48,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -126,7 +129,7 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <p class="eyebrow">📅 الثلاثاء 17 نوفمبر 2026 · <a href="pronostics-ar.html" style="color:inherit">كل توقعاتي</a></p>
 <h1>توقعات مباريات <span class="hl">الغد</span></h1>
 <p class="sub">أكبر مباريات يوم الثلاثاء 17 نوفمبر 2026، مع توقعي وتحليلي لكل مباراة. المواعيد بتوقيت الجزائر وتونس والمغرب (+1 ساعة في القاهرة، +2 في مكة).</p>
-<div class="astats"><div><b>76</b>توقعات رابحة</div><div><b>73 %</b>نسبة النجاح</div></div>
+<div class="astats"><div><b>80</b>توقعات رابحة</div><div><b>73 %</b>نسبة النجاح</div></div>
 <div class="linkchips"><a href="football-predictions-today-ar.html">📅 مباريات اليوم</a><a href="champions-league-predictions-ar.html">دوري أبطال أوروبا</a><a href="pronostics-ar.html">📊 كل التوقعات</a></div>
 </div></header>
 <main class="wrap">
@@ -165,5 +168,5 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <div class="warn">⚠️ للبالغين فقط (18 عامًا فأكثر). المراهنة تنطوي على مخاطر: ديون، إدمان، عزلة. العب بمسؤولية وراهن فقط بما يمكنك تحمّل خسارته.</div>
 <p style="margin-top:18px">© 2026 كوزين مارك (Cousin Marc Pronostic) · الرمز الترويجي FFN · +18 · العب بمسؤولية</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 </body></html>

@@ -21,6 +21,9 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -42,7 +45,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -183,7 +186,7 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <div class="warn">⚠️ Réservé aux 18 ans et +. Le jeu comporte des risques : endettement, dépendance, isolement. Jouez de manière responsable et ne misez que ce que vous pouvez vous permettre de perdre. <a href="jeu-responsable.html" style="color:var(--gold)">En savoir plus</a></div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · 18+ · Joue de façon responsable</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 <script>
 (function(){
 var BOOKS=[{"id": "debuter", "titre": "Débuter les paris sportifs", "prix": 35000, "usd": 60, "status": "dispo"}, {"id": "analyse", "titre": "Analyser un match comme Cousin Marc", "prix": 80000, "usd": 135, "status": "dispo"}, {"id": "multi", "titre": "Manuel de pronostic : tous les sports", "prix": 60000, "usd": 100, "status": "dispo"}, {"id": "f-foot", "titre": "Guide d'analyse du football", "prix": 65000, "usd": 110, "status": "dispo"}, {"id": "f-tennis", "titre": "Guide d'analyse du tennis", "prix": 45000, "usd": 75, "status": "dispo"}, {"id": "f-hockey", "titre": "Guide d'analyse du hockey sur glace", "prix": 35000, "usd": 60, "status": "dispo"}, {"id": "f-baseball", "titre": "Guide d'analyse du baseball", "prix": 38000, "usd": 65, "status": "dispo"}, {"id": "p-foot", "titre": "Manuel de pronostics : football", "prix": 25000, "usd": 45, "status": "dispo"}, {"id": "p-tennis", "titre": "Manuel de pronostics : tennis", "prix": 33000, "usd": 55, "status": "dispo"}, {"id": "p-hockey", "titre": "Manuel de pronostics : hockey sur glace", "prix": 30000, "usd": 50, "status": "dispo"}, {"id": "p-baseball", "titre": "Manuel de pronostics : baseball", "prix": 30000, "usd": 50, "status": "dispo"}, {"id": "live", "titre": "Analyse des cotes et des failles", "prix": 65000, "usd": 110, "status": "dispo"}, {"id": "art", "titre": "L'art de l'analyse sportive", "prix": 45000, "usd": 75, "status": "dispo"}, {"id": "virtuels", "titre": "Jeux virtuels et esports : comprendre", "prix": 90000, "usd": 150, "status": "dispo"}, {"id": "collection", "titre": "Manuel universel : tous les sports", "prix": 105000, "usd": 175, "status": "dispo"}, {"id": "mise", "titre": "Gérer sa mise", "prix": 35000, "usd": 60, "status": "dispo"}], TG="https://t.me/Barcilone", cart=[];

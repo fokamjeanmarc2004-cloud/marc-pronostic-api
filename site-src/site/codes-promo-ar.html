@@ -21,6 +21,9 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -42,7 +45,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -121,7 +124,7 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
   if(key){var el=p.querySelector('a[data-key="'+key+'"]');if(el)el.classList.add('active');}
 })();</script><script>document.addEventListener('click',function(e){document.querySelectorAll('details.langdd[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});document.addEventListener('keydown',function(e){if(e.key==='Escape')document.querySelectorAll('details.langdd[open]').forEach(function(d){d.removeAttribute('open')})});</script><section class="vidhero" id="video"><div class="wrap vidgrid"><div class="yt-facade" data-yt="r0QYlI6IXww" data-yt-title="شاهد الفيديو قبل التسجيل" role="button" tabindex="0" aria-label="تشغيل الفيديو : شاهد الفيديو قبل التسجيل"><img src="https://i.ytimg.com/vi/r0QYlI6IXww/hqdefault.jpg" alt="شاهد الفيديو قبل التسجيل — Cousin Marc" width="480" height="360" fetchpriority="high"><span class="ytf-play" aria-hidden="true">▶</span></div><div class="vidtext"><p class="kicker">🎥 ابدأ من هنا</p><h2>شاهد الفيديو قبل التسجيل</h2><p>خطوة بخطوة: كيف تنشئ حسابك وتدخل الرمز الترويجي وتقوم بأول إيداع.</p><a class="ytsub" href="https://youtube.com/@prossport" target="_blank" rel="nofollow">▶ اشترك في القناة</a></div></div></section>
 <header class="hero"><div class="wrap">
-<p class="eyebrow">الرموز الترويجية 2026 · تم التحقق في 15 نوفمبر 2026</p>
+<p class="eyebrow">الرموز الترويجية 2026 · تم التحقق في 16 نوفمبر 2026</p>
 <h1>رموزي <span class="hl">الترويجية</span></h1>
 <p class="sub">انسخ الرمز، سجّل عبر الزر، وتتفعّل مكافأة الترحيب مع أول إيداع.</p>
 <ol class="csteps"><li><b>1</b>انسخ الرمز</li><li><b>2</b>اضغط «التسجيل»</li><li><b>3</b>الصق الرمز عند التسجيل</li></ol>
@@ -158,4 +161,4 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <div class="warn">⚠️ للبالغين فقط (18 عامًا فأكثر). المراهنة تنطوي على مخاطر: ديون، إدمان، عزلة. العب بمسؤولية وراهن فقط بما يمكنك تحمّل خسارته.</div>
 <p style="margin-top:18px">© 2026 كوزين مارك (Cousin Marc Pronostic) · الرمز الترويجي FFN · +18 · العب بمسؤولية</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){btn.textContent=t;},1500);});}</script>

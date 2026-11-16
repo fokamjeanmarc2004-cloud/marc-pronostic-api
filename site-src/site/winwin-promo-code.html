@@ -92,6 +92,9 @@
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -113,7 +116,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -235,7 +238,7 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <tr><td>Welcome bonus</td><td><b>300% up to 300,000 FCFA</b></td></tr>
 <tr><td>Countries</td><td>English-speaking Africa (Cameroon, Nigeria, Ghana, Kenya, Uganda, Tanzania, Zambia…), French-speaking Africa and many other countries where WinWin is available</td></tr>
 <tr><td>Payment</td><td>Mobile Money (MTN, Orange, M-Pesa, Airtel…), bank transfer, cards, crypto, depending on the country</td></tr>
-<tr><td>Last checked</td><td>November 15, 2026, by Cousin Marc</td></tr>
+<tr><td>Last checked</td><td>November 16, 2026, by Cousin Marc</td></tr>
 </tbody></table></div>
 </section>
 
@@ -264,7 +267,7 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 </section>
 <section id="by-country">
 <h2>WinWin promo code by country (2026 list)</h2>
-<p>Good news: <b>the WinWin promo code is the same in every country: FFN.</b> It is valid today (last checked November 15, 2026). What changes from one country to another is the bonus currency and the payment methods.</p>
+<p>Good news: <b>the WinWin promo code is the same in every country: FFN.</b> It is valid today (last checked November 16, 2026). What changes from one country to another is the bonus currency and the payment methods.</p>
 <h3>WinWin promo code in Cameroon (English-speaking regions included)</h3>
 <p style="margin:0 0 6px"><a href="betting-promo-codes-cameroon.html">→ All betting promo codes in Cameroon</a></p>
 <p>From Buea, Bamenda or Limbe as from Douala, register in CFA francs (XAF) with <b>FFN</b> and deposit with MTN Mobile Money or Orange Money.</p>
@@ -362,6 +365,6 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 </div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Promo code FFN · 18+ · Play responsibly</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copied!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 
 </body></html>

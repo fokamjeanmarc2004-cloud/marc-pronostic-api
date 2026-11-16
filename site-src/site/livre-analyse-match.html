@@ -39,6 +39,9 @@
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Book", "name": "Analyser un match comme Cousin Marc", "author": {"@type": "Person", "name": "Cousin Marc"}, "inLanguage": "fr", "bookFormat": "https://schema.org/EBook", "numberOfPages": 26, "description": "Guide pratique : comprendre les cotes, analyser un match en 7 étapes, choisir son pari et gérer sa mise.", "offers": {"@type": "Offer", "price": "15000", "priceCurrency": "XAF", "availability": "https://schema.org/InStock", "url": "https://cousinmarc-pronostic.com/livre-analyse-match.html"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Est-ce que ce livre garantit des gains ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, et aucun livre honnête ne peut le faire. Les paris comportent toujours un risque de perte. Ce guide t'apprend à analyser, à comprendre les cotes et à protéger ton argent."}}, {"@type": "Question", "name": "Je suis débutant, est-ce pour moi ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Tout est expliqué simplement, avec des exemples chiffrés. Il n'y a besoin d'aucune connaissance en mathématiques au-delà de la division et de la multiplication."}}, {"@type": "Question", "name": "Dans quel format est le livre ?", "acceptedAnswer": {"@type": "Answer", "text": "Un fichier PDF, lisible sur téléphone, tablette ou ordinateur, avec une fiche d'analyse et un carnet de paris à imprimer."}}, {"@type": "Question", "name": "Comment je reçois le livre ?", "acceptedAnswer": {"@type": "Answer", "text": "Tu paies par Mobile Money ou en crypto, tu m'envoies la capture sur Telegram, et je t'envoie le PDF dès que j'ai vérifié le paiement."}}, {"@type": "Question", "name": "Le livre est-il en anglais aussi ?", "acceptedAnswer": {"@type": "Answer", "text": "Pas encore. Cette première édition est en français."}}, {"@type": "Question", "name": "Le prix change-t-il ?", "acceptedAnswer": {"@type": "Answer", "text": "Le prix est de 50 000 FCFA. Il reflète plusieurs années d'expérience et des analyses détaillées."}}, {"@type": "Question", "name": "Y a-t-il un remboursement ?", "acceptedAnswer": {"@type": "Answer", "text": "C'est un produit numérique livré tout de suite : il n'est pas remboursable une fois envoyé. Lis bien l'extrait et le sommaire avant d'acheter."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -60,7 +63,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -236,4 +239,4 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <div class="warn">⚠️ Réservé aux 18 ans et +. Le jeu comporte des risques : endettement, dépendance, isolement. Jouez de manière responsable et ne misez que ce que vous pouvez vous permettre de perdre. <a href="jeu-responsable.html" style="color:var(--gold)">En savoir plus</a></div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · 18+ · Joue de façon responsable</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>

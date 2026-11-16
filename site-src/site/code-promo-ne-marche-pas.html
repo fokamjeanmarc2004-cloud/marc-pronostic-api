@@ -21,6 +21,9 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "J'ai oublié de mettre le code promo à l'inscription", "acceptedAnswer": {"@type": "Answer", "text": "Chez la plupart des bookmakers, le code ne peut plus être ajouté une fois le compte créé. Contacte tout de suite le support du bookmaker (chat en direct) en expliquant que tu as oublié le code : certains acceptent de l'ajouter si tu n'as pas encore fait de dépôt. Ne crée surtout pas un deuxième compte : c'est interdit et ça peut bloquer tes gains."}}, {"@type": "Question", "name": "Le site dit que le code est invalide", "acceptedAnswer": {"@type": "Answer", "text": "Vérifie trois choses : le code est tapé en majuscules et sans espace ; tu l'écris dans le champ « Code promo » (pas « Code parrain » ni « Code ami ») ; et c'est le bon code pour ce bookmaker (voir le tableau plus bas). Si le message persiste, copie-colle le code depuis cette page."}}, {"@type": "Question", "name": "Mon bonus n'apparaît pas après le dépôt", "acceptedAnswer": {"@type": "Answer", "text": "Le bonus est souvent crédité seulement si : ton premier dépôt atteint le minimum demandé ; ton profil est complet (nom, date de naissance, téléphone confirmé) ; et le bonus de bienvenue sport est activé dans ton profil (rubrique « Bonus » ou « Paramètres du compte » selon le bookmaker). Attends quelques minutes puis contacte le support avec la preuve de dépôt."}}, {"@type": "Question", "name": "Je n'arrive pas à retirer mon bonus", "acceptedAnswer": {"@type": "Answer", "text": "Un bonus de bienvenue ne se retire pas directement : il faut d'abord le miser un certain nombre de fois sur des paris combinés avec une cote minimale (les « conditions de mise »). Elles sont indiquées dans la page Promotions du bookmaker. Ton argent réel, lui, reste retirable."}}, {"@type": "Question", "name": "On me demande une vérification d'identité", "acceptedAnswer": {"@type": "Answer", "text": "C'est normal et obligatoire avant un retrait : envoie une pièce d'identité lisible et, si demandé, un selfie. Utilise les mêmes nom et prénom que sur ton compte. Sans vérification, le retrait reste bloqué."}}, {"@type": "Question", "name": "Mon retrait est bloqué ou refusé", "acceptedAnswer": {"@type": "Answer", "text": "Les causes les plus fréquentes : conditions de mise du bonus non terminées, compte non vérifié, ou retrait demandé vers un moyen de paiement différent de celui du dépôt. Retire de préférence sur le même numéro Mobile Money que celui utilisé pour déposer."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -42,7 +45,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -183,5 +186,5 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <div class="warn">⚠️ Réservé aux 18 ans et +. Le jeu comporte des risques : endettement, dépendance, isolement. Jouez de manière responsable et ne misez que ce que vous pouvez vous permettre de perdre. <a href="jeu-responsable.html" style="color:var(--gold)">En savoir plus</a></div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · 18+ · Joue de façon responsable</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 </body></html>

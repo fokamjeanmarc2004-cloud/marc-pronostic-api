@@ -21,6 +21,9 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -42,7 +45,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -170,7 +173,7 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <div class="warn">⚠️ للبالغين فقط (18 عامًا فأكثر). المراهنة تنطوي على مخاطر: ديون، إدمان، عزلة. العب بمسؤولية وراهن فقط بما يمكنك تحمّل خسارته.</div>
 <p style="margin-top:18px">© 2026 كوزين مارك (Cousin Marc Pronostic) · الرمز الترويجي FFN · +18 · العب بمسؤولية</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ تم النسخ!";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 <script>
 (function(){
 var BOOKS=[{"id": "debuter", "titre": "ابدأ في المراهنات الرياضية", "prix": 35000, "usd": 60, "status": "dispo"}, {"id": "analyse", "titre": "حلّل المباراة مثل Cousin Marc", "prix": 80000, "usd": 135, "status": "dispo"}, {"id": "multi", "titre": "دليل التوقعات: كل الرياضات", "prix": 60000, "usd": 100, "status": "dispo"}, {"id": "f-foot", "titre": "دليل تحليل كرة القدم", "prix": 65000, "usd": 110, "status": "dispo"}, {"id": "f-tennis", "titre": "دليل تحليل التنس", "prix": 45000, "usd": 75, "status": "dispo"}, {"id": "f-hockey", "titre": "دليل تحليل هوكي الجليد", "prix": 35000, "usd": 60, "status": "dispo"}, {"id": "f-baseball", "titre": "دليل تحليل البيسبول", "prix": 38000, "usd": 65, "status": "dispo"}, {"id": "p-foot", "titre": "دليل التوقعات: كرة القدم", "prix": 25000, "usd": 45, "status": "dispo"}, {"id": "p-tennis", "titre": "دليل التوقعات: التنس", "prix": 33000, "usd": 55, "status": "dispo"}, {"id": "p-hockey", "titre": "دليل التوقعات: هوكي الجليد", "prix": 30000, "usd": 50, "status": "dispo"}, {"id": "p-baseball", "titre": "دليل التوقعات: البيسبول", "prix": 30000, "usd": 50, "status": "dispo"}, {"id": "live", "titre": "تحليل الاحتمالات", "prix": 65000, "usd": 110, "status": "dispo"}, {"id": "art", "titre": "فن التحليل الرياضي", "prix": 45000, "usd": 75, "status": "dispo"}, {"id": "virtuels", "titre": "الألعاب الافتراضية والرياضات الإلكترونية", "prix": 90000, "usd": 150, "status": "dispo"}, {"id": "collection", "titre": "الدليل الشامل: كل الرياضات", "prix": 105000, "usd": 175, "status": "dispo"}, {"id": "mise", "titre": "إدارة الرهان", "prix": 35000, "usd": 60, "status": "dispo"}], TG="https://t.me/Barcilone", cart=[];

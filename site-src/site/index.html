@@ -21,6 +21,9 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDDTEQ1GB"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4LDDTEQ1GB');</script>
+<script>/* copie avec secours : les navigateurs intégrés (Facebook, Telegram, vieux Android) n'ont pas toujours navigator.clipboard */
+function cmCopy(t){return new Promise(function(ok){function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="0";a.style.opacity="0";document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand("copy");}catch(_){}a.remove();ok();}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else{fb();}});}</script>
 <script>document.addEventListener("click",function(e){try{
   var t=e.target.closest('a[rel*="sponsored"]');
   if(t&&typeof gtag==="function"){gtag("event","affiliate_click",{"link_url":t.href,"link_text":t.textContent.trim(),"page_path":location.pathname});}
@@ -42,7 +45,7 @@
   }
 }catch(err){}});
 document.addEventListener("keydown",function(e){var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();f.click();}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12a"><script>
+<link rel="stylesheet" href="style.css?v=2026-12b"><script>
 document.addEventListener("DOMContentLoaded",function(){
   try{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -125,7 +128,7 @@ addEventListener('click',function(e){var t=e.target.closest('a,button,.chip,.cta
 <h1>Pronostics foot &amp; codes promo <em>vérifiés.</em></h1>
 <p class="lead">Coupon du jour · codes officiels · guides d'inscription.</p>
 <div class="btnrow"><a class="cta" href="#bookmakers">Voir les codes promo</a><a class="cta alt" href="#coupon-du-jour">Coupon du jour</a></div>
-<a class="reslink" href="bilan.html"><span>📊</span><b>73 %</b> de réussite · 76/104 gagnés<i>→</i></a>
+<a class="reslink" href="bilan.html"><span>📊</span><b>73 %</b> de réussite · 80/109 gagnés<i>→</i></a>
 <div class="topcodes"><article class="tcard"><span class="trank">#1</span><div class="tname" translate="no"><img class="blogo" src="logos/1xbet.png" alt="Logo 1xBet" width="40" height="40" loading="lazy" decoding="async">1xBet</div><div class="tbonus">300% jusqu'à 300 000 FCFA</div><div class="tcode"><span translate="no">FFN</span><button class="copybtn-mini" aria-label="Copier le code promo FFN" onclick="copyCode(this,'FFN')">Copier</button></div><div class="tactions"><a class="tgo" href="https://tinyurl.com/3vptk7a4" rel="sponsored nofollow">S'inscrire</a><a class="tmore" href="code-promo-1xbet.html">Code promo <span translate="no">1xBet</span></a></div></article><article class="tcard"><span class="trank">#2</span><div class="tname" translate="no"><img class="blogo" src="logos/melbet.png" alt="Logo Melbet" width="40" height="40" loading="lazy" decoding="async">Melbet</div><div class="tbonus">300% jusqu'à 300 000 FCFA</div><div class="tcode"><span translate="no">FFN</span><button class="copybtn-mini" aria-label="Copier le code promo FFN" onclick="copyCode(this,'FFN')">Copier</button></div><div class="tactions"><a class="tgo" href="https://tinyurl.com/48f3ukrb" rel="sponsored nofollow">S'inscrire</a><a class="tmore" href="code-promo-melbet.html">Code promo <span translate="no">Melbet</span></a></div></article><article class="tcard"><span class="trank">#3</span><div class="tname" translate="no"><img class="blogo" src="logos/paripesa.png" alt="Logo Paripesa" width="40" height="40" loading="lazy" decoding="async">Paripesa</div><div class="tbonus">300% jusqu'à 300 000 FCFA</div><div class="tcode"><span translate="no">FFN</span><button class="copybtn-mini" aria-label="Copier le code promo FFN" onclick="copyCode(this,'FFN')">Copier</button></div><div class="tactions"><a class="tgo" href="https://paripesa.bet/flex4" rel="sponsored nofollow">S'inscrire</a><a class="tmore" href="code-promo-paripesa.html">Code promo <span translate="no">Paripesa</span></a></div></article></div>
 </div></header>
 
@@ -250,5 +253,5 @@ render();
 <div class="warn">⚠️ Réservé aux 18 ans et +. Le jeu comporte des risques : endettement, dépendance, isolement. Jouez de manière responsable et ne misez que ce que vous pouvez vous permettre de perdre. <a href="jeu-responsable.html" style="color:var(--gold)">En savoir plus</a></div>
 <p style="margin-top:18px">© 2026 Cousin Marc Pronostic · Code promo FFN · 18+ · Joue de façon responsable</p>
 </div></footer>
-<script>function copyCode(btn,code){navigator.clipboard.writeText(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
+<script>function copyCode(btn,code){cmCopy(code).then(function(){var t=btn.textContent;btn.textContent="✅ Copié !";setTimeout(function(){btn.textContent=t;},1500);});}</script>
 </body></html>

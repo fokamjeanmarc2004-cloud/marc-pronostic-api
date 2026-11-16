@@ -1405,3 +1405,9 @@ footer bdi{unicode-bidi:isolate}
 /* menu identique sur tous les écrans : tout est dans le menu déroulant ; la barre du haut garde le logo, VIP, la langue et le bouton menu */
 .toplinks{display:flex!important}
 .toplinks li:not(:last-child){display:none!important}
+
+/* boutons Copier assez grands pour le pouce (44 px) sur écran tactile ; contour visible au clavier */
+@media (pointer:coarse){
+  .copybtn-mini,.sb-copy,.tcode button,.bkcodebox button,.vcopy,.copybtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;padding-top:0!important;padding-bottom:0!important}
+}
+.copybtn-mini:focus-visible,.sb-copy:focus-visible,.copybtn:focus-visible,.vcopy:focus-visible,.cta:focus-visible,.bkjoin:focus-visible{outline:2px solid #fbbf24;outline-offset:2px}
