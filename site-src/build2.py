@@ -1941,7 +1941,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11z"><script>
+<link rel="stylesheet" href="style.css?v=2026-12a"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -9015,8 +9015,9 @@ footer bdi{unicode-bidi:isolate}
 [dir="rtl"] .lvlh h2,[dir="rtl"] .lvlh p,[dir="rtl"] .shcat h2{text-align:right!important}
 '''
 CSS += r'''
-/* ordinateur et tablette : le menu déroulant ne répète pas les liens déjà visibles dans la barre du haut */
-@media(min-width:760px){.navpanel-links a[data-key="codes"],.navpanel-links a[data-key="analyses"],.navpanel-links a[data-key="cote2"],.navpanel-links a[data-key="resultats"],.navpanel-links a[data-key="livres"],.navpanel-links a[data-key="vip"]{display:none!important}}
+/* menu identique sur tous les écrans : tout est dans le menu déroulant ; la barre du haut garde le logo, VIP, la langue et le bouton menu */
+.toplinks{display:flex!important}
+.toplinks li:not(:last-child){display:none!important}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
