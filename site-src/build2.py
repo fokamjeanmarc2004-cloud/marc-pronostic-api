@@ -7813,34 +7813,38 @@ LIVRES_NIV = [
 ]
 FORMATION_PRIX, FORMATION_USD = 150000, 250
 LIVRES = [
+ {"id": "debuter", "niv": "formation", "titre": "Débuter les paris sportifs", "sous": "Les bases en 10 leçons",
+  "pts": ["Comprendre une cote", "Les types de paris", "Les erreurs du débutant"], "prix": None, "usd": None, "status": "precommande"},
  {"id": "analyse", "niv": "formation", "titre": "Analyser un match comme Cousin Marc", "sous": "Ma méthode en 7 étapes", "img": "livre-cv-analyse.webp",
   "pts": ["Lire et comparer les cotes", "Ma grille d'analyse en 7 étapes", "Gérer sa mise"], "prix": 80000, "usd": 135, "status": "dispo", "lien": "livre-analyse-match.html"},
- {"id": "multi", "niv": "formation", "vol": "Vol. 01", "titre": "Manuel de pronostic : tous les sports", "sous": "Analyser, comparer les cotes, décider avec méthode",
+ {"id": "multi", "niv": "formation", "titre": "Manuel de pronostic : tous les sports", "sous": "Analyser, comparer les cotes, décider avec méthode",
   "pts": ["Transformer une cote en probabilité", "Le dossier complet d'un match", "Suivre ses paris pour progresser"], "prix": 60000, "usd": 100, "status": "dispo"},
  {"id": "f-foot", "niv": "formation", "titre": "Guide d'analyse du football", "sous": "Paris sportifs et analyse stratégique",
-  "pts": ["Repérer les équipes en forme", "Lire les statistiques clés", "Les marchés : 1X2, buts, les deux marquent"], "prix": 65000, "usd": 110, "status": "precommande"},
+  "pts": ["Repérer les équipes en forme", "Lire les statistiques clés", "Les marchés : 1X2, buts, les deux marquent"], "prix": 65000, "usd": 110, "status": "dispo"},
  {"id": "f-tennis", "niv": "formation", "titre": "Guide d'analyse du tennis", "sous": "Spécial paris sportifs",
-  "pts": ["Forme, surface et face-à-face", "Le service et le retour", "Repérer une cote qui a de la valeur"], "prix": 45000, "usd": 75, "status": "precommande"},
+  "pts": ["Forme, surface et face-à-face", "Le service et le retour", "Repérer une cote qui a de la valeur"], "prix": 45000, "usd": 75, "status": "dispo"},
  {"id": "f-hockey", "niv": "formation", "titre": "Guide d'analyse du hockey sur glace", "sous": "Analyse, stratégie, paris sportifs",
-  "pts": ["Équipes solides et équipes fragiles", "Le rôle du gardien", "Forme et tendances des matchs"], "prix": 35000, "usd": 60, "status": "precommande"},
+  "pts": ["Équipes solides et équipes fragiles", "Le rôle du gardien", "Forme et tendances des matchs"], "prix": 35000, "usd": 60, "status": "dispo"},
  {"id": "f-baseball", "niv": "formation", "titre": "Guide d'analyse du baseball", "sous": "Analyse, stratégie, valeur",
-  "pts": ["Lanceurs partants et releveurs", "Lire les alignements", "Les moments clés d'un match"], "prix": 38000, "usd": 65, "status": "precommande"},
- {"id": "p-foot", "niv": "pratique", "vol": "Vol. 04", "titre": "Manuel de pronostics : football", "sous": "Équipes et cotes",
+  "pts": ["Lanceurs partants et releveurs", "Lire les alignements", "Les moments clés d'un match"], "prix": 38000, "usd": 65, "status": "dispo"},
+ {"id": "p-foot", "niv": "pratique", "titre": "Manuel de pronostics : football", "sous": "Équipes et cotes",
   "pts": ["Profils offensifs et défensifs", "Absences, calendrier, motivation", "Choisir le bon marché"], "prix": 25000, "usd": 45, "status": "dispo"},
- {"id": "p-tennis", "niv": "pratique", "vol": "Vol. 02", "titre": "Manuel de pronostics : tennis", "sous": "Lire le match",
+ {"id": "p-tennis", "niv": "pratique", "titre": "Manuel de pronostics : tennis", "sous": "Lire le match",
   "pts": ["Match-ups et surfaces", "Les signaux à suivre en live", "Ma fiche avant de parier"], "prix": 33000, "usd": 55, "status": "dispo"},
- {"id": "p-hockey", "niv": "pratique", "vol": "Vol. 03", "titre": "Manuel de pronostics : hockey sur glace", "sous": "Gardiens, unités spéciales, LNH",
+ {"id": "p-hockey", "niv": "pratique", "titre": "Manuel de pronostics : hockey sur glace", "sous": "Gardiens, unités spéciales, LNH",
   "pts": ["Favori médiatique ou vraie domination", "Supériorité numérique", "Paris sur la LNH"], "prix": 30000, "usd": 50, "status": "dispo"},
- {"id": "p-baseball", "niv": "pratique", "vol": "Vol. 05", "titre": "Manuel de pronostics : baseball", "sous": "Lanceurs, bullpen, alignements",
+ {"id": "p-baseball", "niv": "pratique", "titre": "Manuel de pronostics : baseball", "sous": "Lanceurs, bullpen, alignements",
   "pts": ["Le duel des lanceurs", "La fatigue du bullpen", "Repérer les cotes mal placées"], "prix": 30000, "usd": 50, "status": "dispo"},
- {"id": "live", "niv": "expert", "vol": "Vol. 07", "titre": "Analyse des cotes et des failles", "sous": "Live, écarts de prix et cotes de 2",
+ {"id": "live", "niv": "expert", "titre": "Analyse des cotes et des failles", "sous": "Live, écarts de prix et cotes de 2",
   "pts": ["Repérer un écart de prix en direct", "Filtrer les paris trop risqués", "Limiter les pertes inutiles"], "prix": 65000, "usd": 110, "status": "dispo"},
  {"id": "art", "niv": "expert", "titre": "L'art de l'analyse sportive", "sous": "Penser comme un analyste, tous sports",
-  "pts": ["Décider avec méthode", "Comparer plusieurs sports", "Garder la discipline"], "prix": 45000, "usd": 75, "status": "precommande"},
- {"id": "virtuels", "niv": "virtuel", "vol": "Vol. 06", "titre": "Jeux virtuels et esports : comprendre", "sous": "Crash, Aviator, simulations, esports",
+  "pts": ["Décider avec méthode", "Comparer plusieurs sports", "Garder la discipline"], "prix": 45000, "usd": 75, "status": "dispo"},
+ {"id": "virtuels", "niv": "virtuel", "titre": "Jeux virtuels et esports : comprendre", "sous": "Crash, Aviator, simulations, esports",
   "pts": ["Comment le résultat est tiré (RNG)", "Esports : là où l'analyse compte", "Les erreurs qui coûtent cher"], "prix": 90000, "usd": 150, "status": "dispo"},
  {"id": "collection", "niv": "collection", "titre": "Manuel universel : tous les sports", "sous": "Tous les sports dans un seul manuel",
-  "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": 105000, "usd": 175, "status": "precommande"},
+  "pts": ["Formation, pratique et expert", "Football, tennis, hockey, baseball", "Live, cotes et jeux virtuels"], "prix": 105000, "usd": 175, "status": "dispo"},
+ {"id": "mise", "niv": "formation", "titre": "Gérer sa mise", "sous": "Budget, discipline, carnet de paris",
+  "pts": ["Fixer son budget", "Mise fixe ou mise relative", "Tenir un carnet de paris"], "prix": None, "usd": None, "status": "precommande"},
 ]
 LIVRES_SPORTS = [("foot", "Football"), ("tennis", "Tennis"), ("basket", "Basket"), ("hockey", "Hockey"), ("baseball", "Baseball"), ("cricket", "Cricket"), ("tt", "Tennis de table")]
 _SHOP_JS = """<script>
@@ -7929,21 +7933,21 @@ SHOP_NIV_T = {
         "collection": ("الدليل الشامل", "كل الرياضات في دليل واحد."), "pro": ("تدريب احترافي", "")},
 }
 SHOP_BOOK_T = {
- "en": {"analyse": ("Analyse a match like Cousin Marc", "My 7-step method"), "multi": ("Prediction manual: all sports", "Analyse, compare odds, decide with method"),
+ "en": {"debuter": ("Getting started with sports betting", "The basics in 10 lessons"), "mise": ("Managing your stake", "Budget, discipline, betting log"), "analyse": ("Analyse a match like Cousin Marc", "My 7-step method"), "multi": ("Prediction manual: all sports", "Analyse, compare odds, decide with method"),
         "f-foot": ("Football analysis guide", "Sports betting and strategic analysis"), "f-tennis": ("Tennis analysis guide", "Sports betting special"),
         "f-hockey": ("Ice hockey analysis guide", "Analysis, strategy, sports betting"), "f-baseball": ("Baseball analysis guide", "Analysis, strategy, value"),
         "p-foot": ("Predictions manual: football", "Teams and odds"), "p-tennis": ("Predictions manual: tennis", "Reading the match"),
         "p-hockey": ("Predictions manual: ice hockey", "Goalies, special teams, NHL"), "p-baseball": ("Predictions manual: baseball", "Pitchers, bullpen, line-ups"),
         "live": ("Odds analysis", "Live, price gaps and odds of 2"), "art": ("The art of sports analysis", "Think like an analyst, all sports"),
         "virtuels": ("Virtual games and esports: understand", "Crash, Aviator, simulations, esports"), "collection": ("Universal manual: all sports", "All sports in a single manual")},
- "es": {"analyse": ("Analizar un partido como Cousin Marc", "Mi método en 7 pasos"), "multi": ("Manual de pronósticos: todos los deportes", "Analizar, comparar cuotas, decidir con método"),
+ "es": {"debuter": ("Empezar con las apuestas deportivas", "Lo básico en 10 lecciones"), "mise": ("Gestionar la apuesta", "Presupuesto, disciplina, registro"), "analyse": ("Analizar un partido como Cousin Marc", "Mi método en 7 pasos"), "multi": ("Manual de pronósticos: todos los deportes", "Analizar, comparar cuotas, decidir con método"),
         "f-foot": ("Guía de análisis del fútbol", "Apuestas deportivas y análisis estratégico"), "f-tennis": ("Guía de análisis del tenis", "Especial apuestas deportivas"),
         "f-hockey": ("Guía de análisis del hockey sobre hielo", "Análisis, estrategia, apuestas"), "f-baseball": ("Guía de análisis del béisbol", "Análisis, estrategia, valor"),
         "p-foot": ("Manual de pronósticos: fútbol", "Equipos y cuotas"), "p-tennis": ("Manual de pronósticos: tenis", "Leer el partido"),
         "p-hockey": ("Manual de pronósticos: hockey sobre hielo", "Porteros, unidades especiales, NHL"), "p-baseball": ("Manual de pronósticos: béisbol", "Lanzadores, bullpen, alineaciones"),
         "live": ("Análisis de las cuotas", "Directo, diferencias de precio y cuotas de 2"), "art": ("El arte del análisis deportivo", "Pensar como un analista"),
         "virtuels": ("Juegos virtuales y esports: entender", "Crash, Aviator, simulaciones, esports"), "collection": ("Manual universal: todos los deportes", "Todos los deportes en un solo manual")},
- "ar": {"analyse": ("حلّل المباراة مثل Cousin Marc", "طريقتي في 7 خطوات"), "multi": ("دليل التوقعات: كل الرياضات", "حلّل، قارن الاحتمالات، وقرّر بمنهج"),
+ "ar": {"debuter": ("ابدأ في المراهنات الرياضية", "الأساسيات في 10 دروس"), "mise": ("إدارة الرهان", "الميزانية والانضباط وسجل الرهانات"), "analyse": ("حلّل المباراة مثل Cousin Marc", "طريقتي في 7 خطوات"), "multi": ("دليل التوقعات: كل الرياضات", "حلّل، قارن الاحتمالات، وقرّر بمنهج"),
         "f-foot": ("دليل تحليل كرة القدم", "المراهنات الرياضية والتحليل"), "f-tennis": ("دليل تحليل التنس", "خاص بالمراهنات الرياضية"),
         "f-hockey": ("دليل تحليل هوكي الجليد", "تحليل واستراتيجية"), "f-baseball": ("دليل تحليل البيسبول", "تحليل واستراتيجية وقيمة"),
         "p-foot": ("دليل التوقعات: كرة القدم", "الفرق والاحتمالات"), "p-tennis": ("دليل التوقعات: التنس", "قراءة المباراة"),
@@ -7977,7 +7981,7 @@ def livres_page(lang="fr"):
             _old = f'<span class="lbold"><s>{_norm:,} FCFA</s><i>-{round(100 * (1 - b["prix"] / _norm))} %</i></span>'.replace(",", " ")
             price = _old + (f'{fcfa} FCFA<small>≈ {b["usd"]} $ · {T["promo_s"]}</small>' if dispo else f'{fcfa} FCFA<small>≈ {b["usd"]} $ · {T["promo_s"]} · {T["later"]}</small>')
         else:
-            price = 'Prix sur demande<small>offre groupée</small>'
+            price = {'fr':'Prix bientôt','en':'Price soon','es':'Precio pronto','ar':'السعر قريبًا'}[lang]
         pts = "".join(f"<li>{html.escape(p)}</li>" for p in b["pts"]) if lang == "fr" else ""
         href = b["lien"] if b.get("lien") and lang == "fr" else f"{VIP_TG}?text=" + urllib.parse.quote(T["premsg"].replace("{t}", titre))
         return (f'<article class="lb" data-niv="{b["niv"]}"><a class="lbimg" href="{href}">'
