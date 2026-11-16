@@ -2420,6 +2420,7 @@ pronostic_es: Gana Shelton
 pronostic_ar: فوز شيلتون
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 42-58
 score: 1-2
 analyse_en: Start Sunday 15 November, not before 8:30pm in Douala, Lagos and Turin (7:30pm in Accra and Dakar). ATP Finals in Turin, John McEnroe Group, indoor hard court.
@@ -2428,12 +2429,14 @@ Shelton's big left-handed serve is a real weapon on a fast indoor court.
 Fils can match him in power, so I expect a tight match, maybe in three sets.
 My pick: Shelton to win. Bigger odds: over 2.5 sets in the match.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Arthur Fils 1-2 Ben Shelton (2-6, 6-3, 3-6). Prediction won ✅.
 analyse: Début du match dimanche 15 novembre, pas avant 20h30 à Douala et à Turin (19h30 à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe John McEnroe, sur dur en salle.
 Ben Shelton est tête de série numéro 3 ; Arthur Fils est tête de série numéro 6.
 Le gros service de gaucher de Shelton est une vraie arme sur un court rapide en salle.
 Fils peut lui répondre en puissance : je m'attends à un match serré, peut-être en trois sets.
 Mon choix : victoire de Shelton. Option plus grosse cote : plus de 2,5 sets dans le match.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Arthur Fils 1-2 Ben Shelton (2-6, 6-3, 3-6). Pronostic gagné ✅.
 ---
 date: 2026-11-16 14:00
 competition: Tennis
@@ -3297,6 +3300,7 @@ pronostic_en: Belgium or draw
 pronostic_es: Bélgica o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 38-27-35
 analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Belgium host Italy in the UEFA Nations League (league phase).
@@ -3304,12 +3308,14 @@ Nations League record: Belgium: 3 wins, 2 defeats (9 pts); Italy: 3 wins, 1 draw
 This looks tight, so I take the double chance to limit the risk.
 My pick: Belgium or draw. Bigger odds: Belgium don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Belgium 4-1 Italy. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 La Belgique reçoit l'Italie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Belgique : 3 victoires, 2 défaites (9 pts) ; Italie : 3 victoires, 1 nul, 1 défaite (10 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Belgique ou nul. Option plus grosse cote : Belgique ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Belgique 4-1 Italie. Pronostic gagné ✅.
 ---
 date: 2026-11-15 20:45
 competition: Ligue des nations UEFA
@@ -3320,6 +3326,7 @@ pronostic_en: Croatia to win
 pronostic_es: Gana Croacia
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 60-23-17
 analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Croatia host Czechia in the UEFA Nations League (league phase).
@@ -3327,12 +3334,14 @@ Nations League record: Croatia: 1 win, 4 defeats (3 pts); Czechia: 5 defeats (0 
 Croatia are the stronger side on paper and play at home. Bookmakers also make Croatia favourites.
 My pick: Croatia to win. Bigger odds: Croatia win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Croatia 2-1 Czechia. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 La Croatie reçoit la Tchéquie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Croatie : 1 victoire, 4 défaites (3 pts) ; Tchéquie : 5 défaites (0 pts).
 La Croatie est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Croatie favori.
 Mon choix : victoire de la Croatie. Option plus grosse cote : Croatie gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Croatie 2-1 Tchéquie. Pronostic gagné ✅.
 ---
 date: 2026-11-15 20:45
 competition: Ligue des nations UEFA
@@ -3343,6 +3352,7 @@ pronostic_en: France to win
 pronostic_es: Gana Francia
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 78-19-3
 analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 France host Turkey in the UEFA Nations League (league phase).
@@ -3350,12 +3360,14 @@ Nations League record: France: 3 wins, 1 draw, 1 defeat (10 pts); Turkey: 5 defe
 France are the stronger side on paper and play at home. Bookmakers also make France favourites.
 My pick: France to win. Bigger odds: France win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: France 2-1 Türkiye. Prediction won ✅.
 analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 La France reçoit la Turquie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : France : 3 victoires, 1 nul, 1 défaite (10 pts) ; Turquie : 5 défaites (0 pts).
 La France est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la France favori.
 Mon choix : victoire de la France. Option plus grosse cote : France gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : France 2-1 Turquie. Pronostic gagné ✅.
 ---
 date: 2026-11-15 20:45
 competition: Ligue des nations UEFA
@@ -3366,6 +3378,7 @@ pronostic_en: Spain to win
 pronostic_es: Gana España
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 57-24-19
 analyse_en: Kick-off Sunday 15 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Spain host England in the UEFA Nations League (league phase).
@@ -3373,12 +3386,14 @@ Nations League record: Spain: 5 wins (15 pts); England: 4 wins, 1 defeat (12 pts
 Spain are the stronger side on paper and play at home. Bookmakers also make Spain favourites.
 My pick: Spain to win. Bigger odds: Spain win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Spain 2-3 England. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 15 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 L'Espagne reçoit l'Angleterre en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Espagne : 5 victoires (15 pts) ; Angleterre : 4 victoires, 1 défaite (12 pts).
 L'Espagne est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi l'Espagne favori.
 Mon choix : victoire de l'Espagne. Option plus grosse cote : Espagne gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Espagne 2-3 Angleterre. Pronostic perdu ❌.
 ---
 date: 2026-11-16 16:00
 competition: Ligue des nations UEFA
