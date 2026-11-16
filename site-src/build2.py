@@ -1941,7 +1941,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-11y"><script>
+<link rel="stylesheet" href="style.css?v=2026-11z"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -9013,6 +9013,10 @@ main.legalbody{padding-bottom:48px!important}
 footer bdi{unicode-bidi:isolate}
 [dir="rtl"] .lb li{padding-left:0;padding-right:20px}[dir="rtl"] .lb li::before,[dir="rtl"] .fpro li::before{left:auto;right:0}[dir="rtl"] .fpro li{padding-left:0;padding-right:22px}
 [dir="rtl"] .lvlh h2,[dir="rtl"] .lvlh p,[dir="rtl"] .shcat h2{text-align:right!important}
+'''
+CSS += r'''
+/* ordinateur et tablette : le menu déroulant ne répète pas les liens déjà visibles dans la barre du haut */
+@media(min-width:760px){.navpanel-links a[data-key="codes"],.navpanel-links a[data-key="analyses"],.navpanel-links a[data-key="cote2"],.navpanel-links a[data-key="resultats"],.navpanel-links a[data-key="livres"],.navpanel-links a[data-key="vip"]{display:none!important}}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")
