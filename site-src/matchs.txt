@@ -2449,6 +2449,7 @@ pronostic_es: Gana Alcaraz
 pronostic_ar: فوز ألكاراز
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 20-80
 score: 0-2
 analyse_en: Start Monday 16 November, not before 2pm in Douala, Lagos and Turin (1pm in Accra and Dakar). ATP Finals in Turin, Ivan Lendl Group, indoor hard court.
@@ -2457,12 +2458,14 @@ Frances Tiafoe is the 7th seed, one of the last players to qualify.
 With Sinner out injured, Alcaraz is one of the two big favourites for the title with Zverev.
 My pick: Alcaraz to win. Bigger odds: Alcaraz wins 2 sets to 0.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Frances Tiafoe 0-2 Carlos Alcaraz (2-6, 2-6). Prediction won ✅.
 analyse: Début du match lundi 16 novembre, pas avant 14h à Douala et à Turin (13h à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe Ivan Lendl, sur dur en salle.
 Carlos Alcaraz est tête de série numéro 2 et leader de ce groupe.
 Frances Tiafoe est tête de série numéro 7, l'un des derniers qualifiés.
 Sans Sinner, blessé, Alcaraz est l'un des deux grands favoris pour le titre avec Zverev.
 Mon choix : victoire d'Alcaraz. Option plus grosse cote : Alcaraz gagne 2 sets à 0.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Frances Tiafoe 0-2 Carlos Alcaraz (2-6, 2-6). Pronostic gagné ✅.
 ---
 date: 2026-11-16 20:30
 competition: Tennis
@@ -2499,6 +2502,7 @@ pronostic_en: Cameroon to win
 pronostic_es: Gana Camerún
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 14-24-62
 analyse_en: Kick-off Monday 16 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Namibia host Cameroon on matchday 4 of AFCON 2027 qualifying.
@@ -2506,12 +2510,14 @@ Record after 3 games: Namibia: 1 win, 2 defeats (3 pts); Cameroon: 2 wins, 1 dra
 Cameroon are clearly the stronger side and start as favourites, even away from home.
 My pick: Cameroon to win. Bigger odds: Cameroon win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Namibia 0-3 Cameroon. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 La Namibie reçoit le Cameroun pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Namibie : 1 victoire, 2 défaites (3 pts) ; Cameroun : 2 victoires, 1 nul (7 pts).
 Le Cameroun est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire du Cameroun. Option plus grosse cote : Cameroun gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Namibie 0-3 Cameroun. Pronostic gagné ✅.
 ---
 date: 2026-11-16 14:00
 competition: Éliminatoires CAN 2027
@@ -2522,6 +2528,7 @@ pronostic_en: Senegal to win
 pronostic_es: Gana Senegal
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 12-20-68
 analyse_en: Kick-off Monday 16 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Sudan host Senegal on matchday 4 of AFCON 2027 qualifying.
@@ -2529,12 +2536,14 @@ Record after 3 games: Sudan: 1 win, 2 defeats (3 pts); Senegal: 2 wins, 1 draw (
 Senegal are clearly the stronger side and start as favourites, even away from home.
 My pick: Senegal to win. Bigger odds: Senegal win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sudan 2-4 Senegal. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 Le Soudan reçoit le Sénégal pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Soudan : 1 victoire, 2 défaites (3 pts) ; Sénégal : 2 victoires, 1 nul (7 pts).
 Le Sénégal est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire du Sénégal. Option plus grosse cote : Sénégal gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Soudan 2-4 Sénégal. Pronostic gagné ✅.
 ---
 date: 2026-11-16 14:00
 competition: Éliminatoires CAN 2027
@@ -2545,6 +2554,7 @@ pronostic_en: Zimbabwe or draw
 pronostic_es: Zimbabue o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 42-30-28
 analyse_en: Kick-off Monday 16 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Zimbabwe host Equatorial Guinea on matchday 4 of AFCON 2027 qualifying.
@@ -2552,12 +2562,14 @@ Record after 3 games: Zimbabwe: 1 win, 1 draw, 1 defeat (4 pts); Equatorial Guin
 This looks tight, so I go for the double chance to limit the risk.
 My pick: Zimbabwe or draw. Bigger odds: Zimbabwe don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Zimbabwe 3-0 Equatorial Guinea. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 Le Zimbabwe reçoit la Guinée équatoriale pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Zimbabwe : 1 victoire, 1 nul, 1 défaite (4 pts) ; Guinée équatoriale : 1 victoire, 1 nul, 1 défaite (4 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Zimbabwe ou nul. Option plus grosse cote : Zimbabwe ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Zimbabwe 3-0 Guinée équatoriale. Pronostic gagné ✅.
 ---
 date: 2026-11-16 16:00
 competition: Éliminatoires CAN 2027
@@ -2568,6 +2580,7 @@ pronostic_en: Ghana to win
 pronostic_es: Gana Ghana
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 10-20-70
 analyse_en: Kick-off Monday 16 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar, 18:00 in Nairobi.
 Somalia host Ghana on matchday 4 of AFCON 2027 qualifying.
@@ -2575,12 +2588,14 @@ Record after 3 games: Somalia: 3 defeats (0 pts); Ghana: 1 win, 2 defeats (3 pts
 Ghana are clearly the stronger side and start as favourites, even away from home.
 My pick: Ghana to win. Bigger odds: Ghana win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Somalia 0-1 Ghana. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar, 18h à Nairobi.
 La Somalie reçoit le Ghana pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Somalie : 3 défaites (0 pts) ; Ghana : 1 victoire, 2 défaites (3 pts).
 Le Ghana est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire du Ghana. Option plus grosse cote : Ghana gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Somalie 0-1 Ghana. Pronostic gagné ✅.
 ---
 date: 2026-11-16 17:00
 competition: Éliminatoires CAN 2027
@@ -2591,6 +2606,7 @@ pronostic_en: Benin to win
 pronostic_es: Gana Benín
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 15-25-60
 analyse_en: Kick-off Monday 16 November: 17:00 in Douala, Lagos and Paris, 16:00 in Accra and Dakar, 19:00 in Nairobi.
 Central African Republic host Benin on matchday 4 of AFCON 2027 qualifying.
@@ -2598,12 +2614,14 @@ Record after 3 games: Central African Republic: 3 defeats (0 pts); Benin: 2 wins
 Benin are clearly the stronger side and start as favourites, even away from home.
 My pick: Benin to win. Bigger odds: Benin win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Central African Republic 0-1 Benin. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 17h à Douala et à Paris, 16h à Abidjan et Dakar, 19h à Nairobi.
 La Centrafrique reçoit le Bénin pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Centrafrique : 3 défaites (0 pts) ; Bénin : 2 victoires, 1 nul (7 pts).
 Le Bénin est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire du Bénin. Option plus grosse cote : Bénin gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Centrafrique 0-1 Bénin. Pronostic gagné ✅.
 ---
 date: 2026-11-16 18:00
 competition: Éliminatoires CAN 2027
@@ -2614,6 +2632,7 @@ pronostic_en: Guinea to win
 pronostic_es: Gana Guinea
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 14-22-64
 analyse_en: Kick-off Monday 16 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar, 20:00 in Nairobi.
 Eritrea host Guinea on matchday 4 of AFCON 2027 qualifying.
@@ -2621,12 +2640,14 @@ Record after 3 games: Eritrea: 1 draw, 2 defeats (1 pts); Guinea: 2 wins, 1 defe
 Guinea are clearly the stronger side and start as favourites, even away from home.
 My pick: Guinea to win. Bigger odds: Guinea win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Eritrea 1-3 Guinea. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar, 20h à Nairobi.
 L'Érythrée reçoit la Guinée pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Érythrée : 1 nul, 2 défaites (1 pts) ; Guinée : 2 victoires, 1 défaite (6 pts).
 La Guinée est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire de la Guinée. Option plus grosse cote : Guinée gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Érythrée 1-3 Guinée. Pronostic gagné ✅.
 ---
 date: 2026-11-17 14:00
 competition: Éliminatoires CAN 2027
@@ -3404,6 +3425,7 @@ pronostic_en: Faroe Islands or draw
 pronostic_es: Islas Feroe o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 44-23-33
 analyse_en: Kick-off Monday 16 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar.
 Faroe Islands host Moldova in the UEFA Nations League (league phase).
@@ -3411,12 +3433,14 @@ Nations League record: Faroe Islands: 5 draws (5 pts); Moldova: 2 wins, 1 draw, 
 This looks tight, so I take the double chance to limit the risk. Bookmakers also make Faroe Islands favourites.
 My pick: Faroe Islands or draw. Bigger odds: Faroe Islands don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Faroe Islands 1-0 Moldova. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar.
 Les Îles Féroé reçoit la Moldavie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Îles Féroé : 5 nuls (5 pts) ; Moldavie : 2 victoires, 1 nul, 2 défaites (7 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque. Les bookmakers donnent aussi les Îles Féroé favori.
 Mon choix : Îles Féroé ou nul. Option plus grosse cote : Îles Féroé ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Îles Féroé 1-0 Moldavie. Pronostic gagné ✅.
 ---
 date: 2026-11-16 16:00
 competition: Ligue des nations UEFA
@@ -3427,6 +3451,7 @@ pronostic_en: Slovakia to win
 pronostic_es: Gana Eslovaquia
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 6-29-65
 analyse_en: Kick-off Monday 16 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar.
 Kazakhstan host Slovakia in the UEFA Nations League (league phase).
@@ -3434,12 +3459,14 @@ Nations League record: Kazakhstan: 2 draws, 3 defeats (2 pts); Slovakia: 3 wins,
 Slovakia are the stronger side on paper, even away. Bookmakers also make Slovakia favourites.
 My pick: Slovakia to win. Bigger odds: Slovakia win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Kazakhstan 2-2 Slovakia. Prediction lost ❌.
 analyse: Coup d'envoi lundi 16 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar.
 Le Kazakhstan reçoit la Slovaquie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Kazakhstan : 2 nuls, 3 défaites (2 pts) ; Slovaquie : 3 victoires, 2 nuls (11 pts).
 La Slovaquie est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi la Slovaquie favori.
 Mon choix : victoire de la Slovaquie. Option plus grosse cote : Slovaquie gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Kazakhstan 2-2 Slovaquie. Pronostic perdu ❌.
 ---
 date: 2026-11-16 18:00
 competition: Ligue des nations UEFA
@@ -3450,6 +3477,7 @@ pronostic_en: Estonia to win
 pronostic_es: Gana Estonia
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 70-21-9
 analyse_en: Kick-off Monday 16 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
 Estonia host Bulgaria in the UEFA Nations League (league phase).
@@ -3457,12 +3485,14 @@ Nations League record: Estonia: 2 wins, 3 draws (9 pts); Bulgaria: 1 win, 1 draw
 Estonia are the stronger side on paper and play at home.
 My pick: Estonia to win. Bigger odds: Estonia win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Estonia 2-1 Bulgaria. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
 L'Estonie reçoit la Bulgarie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Estonie : 2 victoires, 3 nuls (9 pts) ; Bulgarie : 1 victoire, 1 nul, 3 défaites (4 pts).
 L'Estonie est le mieux placé sur le papier et joue à domicile.
 Mon choix : victoire de l'Estonie. Option plus grosse cote : Estonie gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Estonie 2-1 Bulgarie. Pronostic gagné ✅.
 ---
 date: 2026-11-16 18:00
 competition: Ligue des nations UEFA
@@ -3473,6 +3503,7 @@ pronostic_en: Iceland to win
 pronostic_es: Gana Islandia
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 74-21-5
 analyse_en: Kick-off Monday 16 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
 Iceland host Luxembourg in the UEFA Nations League (league phase).
@@ -3480,12 +3511,14 @@ Nations League record: Iceland: 3 wins, 2 draws (11 pts); Luxembourg: 1 win, 4 d
 Iceland are the stronger side on paper and play at home. Bookmakers also make Iceland favourites.
 My pick: Iceland to win. Bigger odds: Iceland win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Iceland 3-0 Luxembourg. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
 L'Islande reçoit le Luxembourg en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Islande : 3 victoires, 2 nuls (11 pts) ; Luxembourg : 1 victoire, 4 défaites (3 pts).
 L'Islande est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi l'Islande favori.
 Mon choix : victoire de l'Islande. Option plus grosse cote : Islande gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Islande 3-0 Luxembourg. Pronostic gagné ✅.
 ---
 date: 2026-11-16 18:00
 competition: Ligue des nations UEFA
@@ -3496,6 +3529,7 @@ pronostic_en: Lithuania to win
 pronostic_es: Gana Lituania
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 79-15-6
 analyse_en: Kick-off Monday 16 November: 18:00 in Douala, Lagos and Paris, 17:00 in Accra and Dakar.
 Lithuania host Liechtenstein in the UEFA Nations League (league phase).
@@ -3503,12 +3537,14 @@ Nations League record: Lithuania: 1 win, 1 draw, 1 defeat (4 pts); Liechtenstein
 Lithuania are the stronger side on paper and play at home. Bookmakers also make Lithuania favourites.
 My pick: Lithuania to win. Bigger odds: Lithuania win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Lithuania 2-1 Liechtenstein. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 18h à Douala et à Paris, 17h à Abidjan et Dakar.
 La Lituanie reçoit le Liechtenstein en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Lituanie : 1 victoire, 1 nul, 1 défaite (4 pts) ; Liechtenstein : 1 nul, 2 défaites (1 pts).
 La Lituanie est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Lituanie favori.
 Mon choix : victoire de la Lituanie. Option plus grosse cote : Lituanie gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lituanie 2-1 Liechtenstein. Pronostic gagné ✅.
 ---
 date: 2026-11-16 20:45
 competition: Ligue des nations UEFA
