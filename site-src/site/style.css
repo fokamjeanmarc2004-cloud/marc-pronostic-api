@@ -1411,5 +1411,43 @@ footer bdi{unicode-bidi:isolate}
   .copybtn-mini,.sb-copy,.tcode button,.bkcodebox button,.vcopy,.copybtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;padding-top:0!important;padding-bottom:0!important}
 }
 .copybtn-mini:focus-visible,.sb-copy:focus-visible,.copybtn:focus-visible,.vcopy:focus-visible,.cta:focus-visible,.bkjoin:focus-visible{outline:2px solid #fbbf24;outline-offset:2px}
-/* titres de section de l'accueil sans étiquette au-dessus : le titre parle seul ("Commence ici" de la vidéo reste) */
-.hsec .kicker{display:none!important}
+/* titres sans étiquette au-dessus : le titre parle seul */
+.kicker{display:none!important}
+
+/* ==========================================================
+   NUIT ET OR (nov. 2026, dernier calque) : le bleu nuit reste le fond,
+   l'or = la marque Cousin Marc (logo, codes, VIP, titres, navigation),
+   l'orange = un seul geste : S'inscrire. Couleurs pleines, pas de halo ni de texte en dégradé.
+   ========================================================== */
+:root{--brand:#fbbf24;--brand-h:#fcd34d;--brand-ink:#1a1205;--act:#f97316;--act-h:#fb923c;--act-ink:#1c0d02;
+  --lift:0 2px 4px rgba(0,0,0,.25),0 8px 18px rgba(0,0,0,.28)}
+.tgo,.bkjoin,.sb-go{background:var(--act)!important;background-image:none!important;color:var(--act-ink)!important;box-shadow:var(--lift)!important;filter:none!important}
+.tgo:hover,.bkjoin:hover,.sb-go:hover{background:var(--act-h)!important}
+.cta:not(.alt),.shb:not(.alt),.vproof .cta{background:var(--brand)!important;background-image:none!important;color:var(--brand-ink)!important;box-shadow:var(--lift)!important;filter:none!important}
+.cta:not(.alt):hover,.shb:not(.alt):hover{background:var(--brand-h)!important}
+.cta.alt:hover,.tmore:hover,.shb.alt:hover{border-color:var(--brand)!important}
+.copybtn-mini,.sb-copy,.vcopy{background:transparent!important;color:var(--brand)!important;border:1.5px solid var(--brand)!important;box-shadow:none!important}
+.copybtn-mini:hover,.sb-copy:hover,.vcopy:hover{background:rgba(251,191,36,.12)!important}
+.copybtn-mini.ok,.sb-copy.ok{background:var(--brand)!important;color:var(--brand-ink)!important}
+.ytsub{background:transparent!important;color:var(--tx)!important;border:1px solid #34486e!important}
+.ytsub:hover{border-color:var(--brand)!important}
+.toplinks a.vip{background:var(--brand)!important;background-image:none!important;box-shadow:none!important}
+.cmp-c .chip[data-v*=" "].on,.chip[data-v*=" "].on,.chip[data-v].on{background:var(--brand)!important;background-image:none!important}
+.gainsband .gb,.gvip{background:var(--bg2)!important;background-image:none!important}
+.hsec-head h2::after,main section>h2::after{background:var(--brand)!important;background-image:none!important}
+.hl,h1 .hl,.home-hero h1 em,.home-hero h1 .hl,.vhero h1 em{background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;-webkit-text-fill-color:currentColor!important;color:var(--brand)!important}
+.related a:hover,.hubcard:hover,a.mcard:hover,.ccard:hover,.ccard.on{border-color:var(--brand)!important}
+.reslink .ico,.resbox .ico{display:inline-flex;color:var(--brand)}
+.reslink .ico svg,.resbox .ico svg{display:block}
+.heromaj{margin-top:18px;font-size:13px;line-height:1.5;color:#c5cfe2}
+.bkmore{background:var(--bg3)!important;color:var(--tx)!important;border:1px solid #34486e!important;border-radius:12px}
+.bkmore:hover{border-color:var(--brand)!important}
+.bkcode,.tcode span,.mpick b,.vamount,.vm-num{font-variant-numeric:tabular-nums}
+.lvgo{background:var(--brand)!important;background-image:none!important;color:var(--brand-ink)!important;box-shadow:var(--lift)!important}
+.lvgo:hover{background:var(--brand-h)!important}
+.tgband{background:var(--bg2)!important;background-image:none!important;border:1px solid var(--bd)!important}
+.cmp-q span{background:var(--brand)!important;background-image:none!important;color:var(--brand-ink)!important}
+.gb .gbico{display:inline-flex;vertical-align:-3px;margin-right:6px;color:var(--brand)}
+::selection{background:rgba(251,191,36,.35);color:#fff}
+html{scrollbar-color:#34486e var(--bg1);accent-color:var(--brand);caret-color:var(--brand)}
+a{text-underline-offset:3px}

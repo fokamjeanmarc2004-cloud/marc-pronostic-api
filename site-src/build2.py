@@ -349,7 +349,12 @@ GAINS_L = {
 }
 def gains_band(lang):
     L = GAINS_L[lang]
-    return (f'<section class="gainsband"><div class="wrap"><div class="gb"><div><b>{L["band"]}</b><span>{L["bandsub"]}</span></div>'
+    # trophée dessiné à la place de l'emoji 🏆
+    tro = ('<span class="gbico" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" '
+           'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/>'
+           '<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>')
+    band = L["band"].replace("🏆", "").strip()
+    return (f'<section class="gainsband"><div class="wrap"><div class="gb"><div><b>{tro}{band}</b><span>{L["bandsub"]}</span></div>'
             f'<a class="cta" href="{RESULTS_SLUG[lang]}">{L["btn"]} →</a></div></div></section>')
 
 
@@ -1754,6 +1759,10 @@ VIDEO_L = {
  "es": ("Empieza aquí", "Mira el vídeo antes de registrarte", "Paso a paso: cómo crear tu cuenta, poner el código promocional y hacer tu primer depósito.", "Suscríbete al canal", "Reproducir vídeo"),
  "ar": ("ابدأ من هنا", "شاهد الفيديو قبل التسجيل", "خطوة بخطوة: كيف تنشئ حسابك وتدخل الرمز الترويجي وتقوم بأول إيداع.", "اشترك في القناة", "تشغيل الفيديو"),
 }
+# icône dessinée (au lieu de l'emoji 📊) : même trait que le reste, prend la couleur du texte
+ICON_CHART = ('<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" '
+              'stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M7 16v-5"/><path d="M12 16V7"/><path d="M17 16v-8"/></svg>')
+
 def video_block(lang):
     kick, title, sub, subscribe, play = VIDEO_L.get(lang, VIDEO_L["fr"])
     vid = YT_VID_L.get(lang, YT_VID)
@@ -1944,7 +1953,7 @@ if(navigator.clipboard&&window.isSecureContext){{navigator.clipboard.writeText(t
   }}
 }}catch(err){{}}}});
 document.addEventListener("keydown",function(e){{var f=e.target.closest&&e.target.closest(".yt-facade");if(f&&(e.key==="Enter"||e.key===" ")){{e.preventDefault();f.click();}}}});</script>
-<link rel="stylesheet" href="style.css?v=2026-12c"><script>
+<link rel="stylesheet" href="style.css?v=2026-12e"><script>
 document.addEventListener("DOMContentLoaded",function(){{
   try{{
     var b=Math.floor(Date.now()/600000); /* recharge les coupons toutes les 10 min */
@@ -2772,7 +2781,7 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
                                "es": f" · <b>{_p30} %</b> en los últimos 30 días", "ar": f" · <b>{_p30}%</b> خلال آخر 30 يومًا"}[lang],) + _lab[1:]
         _short = {"fr": f"de réussite · {_w}/{len(_done)} gagnés", "en": f"success rate · {_w}/{len(_done)} won", "es": f"de acierto · {_w}/{len(_done)} ganados", "ar": f"نسبة النجاح · {_w}/{len(_done)} رابحة"}[lang]
         _tgt = {"fr": "bilan.html", "en": "track-record.html"}.get(lang, U["res"])
-        bilan = f'<a class="reslink" href="{_tgt}"><span>📊</span><b>{_pc} %</b> {_short}<i>→</i></a>'
+        bilan = f'<a class="reslink" href="{_tgt}"><span class="ico" aria-hidden="true">{ICON_CHART}</span><b>{_pc} %</b> {_short}<i>→</i></a>'
     countries = ""
     matchs_home = ""
     compare_home = ""
@@ -2800,19 +2809,24 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
                      '<p>Bookmakers, bonus, mobile money and kick-off times for players in English-speaking Africa.</p></div></div>'
                      '<div class="related">' + "".join(f'<a href="{cty_en_slug(c)}.html"><div class="bk">{c["name"]}</div><div class="cd">Promo codes &amp; mobile money</div></a>' for c in COUNTRIES_EN)
                      + '</div></div></section>')
-    if lang == "fr":
-        countries = (f'<section class="hsec" id="pays"><div class="wrap">'
-                     f'<div class="hsec-head"><div><p class="kicker">{T["p_kick"]}</p><h2>{T["p_h2"]}</h2><p>{T["p_p"]}</p></div></div>'
-                     f'<div class="related">{country_index_cards()}</div></div></section>')
-    return head(title, desc, canonical, nav=nav, lang=lang, alternates=alternates, show_youtube=True) + f"""
+    # FR : la grille des pays doublait le comparateur "Quel bookmaker pour toi ?" (les pages pays restent dans le bas de page)
+    resp = {"fr": "18+ · Joue de façon responsable, ne mise que ce que tu peux perdre.",
+            "en": "18+ · Play responsibly, only stake what you can afford to lose.",
+            "es": "18+ · Juega con responsabilidad, apuesta solo lo que puedas perder.",
+            "ar": "+18 · العب بمسؤولية ولا تراهن إلا بما يمكنك خسارته."}[lang]
+    more = {"fr": "Voir les {n} bookmakers", "en": "See all {n} bookmakers", "es": "Ver las {n} casas", "ar": "عرض كل المواقع ({n})"}[lang].replace("{n}", str(len(BOOKMAKERS)))
+    # accueil : un seul bloc d'ouverture (titre, codes, s'inscrire), la vidéo d'inscription juste après
+    return head(title, desc, canonical, nav=nav, lang=lang, alternates=alternates, show_youtube=False) + f"""
 <header class="home-hero hero-photo hero-accueil"><div class="wrap">
-<p class="eyebrow">{T["eyebrow"].replace("{maj}", maj)}</p>
 <h1>{T["h1"]}</h1>
 <p class="lead">{T["lead"]}</p>
 <div class="btnrow"><a class="cta" href="#bookmakers">{T["cta1"]}</a><a class="cta alt" href="#coupon-du-jour">{T["cta2"]}</a></div>
 {bilan}
 <div class="topcodes">{top}</div>
+<p class="heromaj">{T["eyebrow"].replace("{maj}", maj)} · {resp}</p>
 </div></header>
+
+{video_block(lang)}
 
 {coupons_home}
 
@@ -2823,20 +2837,21 @@ def home_page(lang, title, desc, canonical, nav, alternates, footer):
 <div class="coupon-grid">
 <div class="coupon-card">{cote2_history_html(lang, T["c_alt"])}</div>
 <div class="facts facts1"><div class="btnrow" style="justify-content:flex-start;margin-top:0"><a class="cta" href="{U["cote2"]}">{T["c_full"]}</a></div>
-<a class="resbox" href="{U["res"]}"><span>📊</span><b>{T["c_res"]}</b><i>→</i></a></div>
+<a class="resbox" href="{U["res"]}"><span class="ico" aria-hidden="true">{ICON_CHART}</span><b>{T["c_res"]}</b><i>→</i></a></div>
 </div>
 </div></section>
 
 <section class="hsec" id="bookmakers"><div class="wrap">
 <div class="hsec-head"><div><p class="kicker">{T["b_kick"]}</p><h2>{T["b_h2"]}</h2></div></div>
-<div class="bklist">{rows}</div>
+<div class="bklist bkfold">{rows}</div>
+<div class="bkmorewrap"><button type="button" class="bkmore" onclick="this.parentNode.previousElementSibling.classList.remove('bkfold');this.parentNode.remove()">{more}</button></div>
 </div></section>
 
 {gains_band(lang)}
 
 {matchs_home}
 
-{countries}
+{countries if lang != "fr" else ""}
 
 <section class="hsec"><div class="wrap about-grid">
 <div><p class="kicker">{T["a_kick"]}</p><h2>Cousin Marc</h2>
@@ -9028,8 +9043,47 @@ CSS += r'''
   .copybtn-mini,.sb-copy,.tcode button,.bkcodebox button,.vcopy,.copybtn{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;padding-top:0!important;padding-bottom:0!important}
 }
 .copybtn-mini:focus-visible,.sb-copy:focus-visible,.copybtn:focus-visible,.vcopy:focus-visible,.cta:focus-visible,.bkjoin:focus-visible{outline:2px solid #fbbf24;outline-offset:2px}
-/* titres de section de l'accueil sans étiquette au-dessus : le titre parle seul ("Commence ici" de la vidéo reste) */
-.hsec .kicker{display:none!important}
+/* titres sans étiquette au-dessus : le titre parle seul */
+.kicker{display:none!important}
+'''
+CSS += r'''
+/* ==========================================================
+   NUIT ET OR (nov. 2026, dernier calque) : le bleu nuit reste le fond,
+   l'or = la marque Cousin Marc (logo, codes, VIP, titres, navigation),
+   l'orange = un seul geste : S'inscrire. Couleurs pleines, pas de halo ni de texte en dégradé.
+   ========================================================== */
+:root{--brand:#fbbf24;--brand-h:#fcd34d;--brand-ink:#1a1205;--act:#f97316;--act-h:#fb923c;--act-ink:#1c0d02;
+  --lift:0 2px 4px rgba(0,0,0,.25),0 8px 18px rgba(0,0,0,.28)}
+.tgo,.bkjoin,.sb-go{background:var(--act)!important;background-image:none!important;color:var(--act-ink)!important;box-shadow:var(--lift)!important;filter:none!important}
+.tgo:hover,.bkjoin:hover,.sb-go:hover{background:var(--act-h)!important}
+.cta:not(.alt),.shb:not(.alt),.vproof .cta{background:var(--brand)!important;background-image:none!important;color:var(--brand-ink)!important;box-shadow:var(--lift)!important;filter:none!important}
+.cta:not(.alt):hover,.shb:not(.alt):hover{background:var(--brand-h)!important}
+.cta.alt:hover,.tmore:hover,.shb.alt:hover{border-color:var(--brand)!important}
+.copybtn-mini,.sb-copy,.vcopy{background:transparent!important;color:var(--brand)!important;border:1.5px solid var(--brand)!important;box-shadow:none!important}
+.copybtn-mini:hover,.sb-copy:hover,.vcopy:hover{background:rgba(251,191,36,.12)!important}
+.copybtn-mini.ok,.sb-copy.ok{background:var(--brand)!important;color:var(--brand-ink)!important}
+.ytsub{background:transparent!important;color:var(--tx)!important;border:1px solid #34486e!important}
+.ytsub:hover{border-color:var(--brand)!important}
+.toplinks a.vip{background:var(--brand)!important;background-image:none!important;box-shadow:none!important}
+.cmp-c .chip[data-v*=" "].on,.chip[data-v*=" "].on,.chip[data-v].on{background:var(--brand)!important;background-image:none!important}
+.gainsband .gb,.gvip{background:var(--bg2)!important;background-image:none!important}
+.hsec-head h2::after,main section>h2::after{background:var(--brand)!important;background-image:none!important}
+.hl,h1 .hl,.home-hero h1 em,.home-hero h1 .hl,.vhero h1 em{background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;-webkit-text-fill-color:currentColor!important;color:var(--brand)!important}
+.related a:hover,.hubcard:hover,a.mcard:hover,.ccard:hover,.ccard.on{border-color:var(--brand)!important}
+.reslink .ico,.resbox .ico{display:inline-flex;color:var(--brand)}
+.reslink .ico svg,.resbox .ico svg{display:block}
+.heromaj{margin-top:18px;font-size:13px;line-height:1.5;color:#c5cfe2}
+.bkmore{background:var(--bg3)!important;color:var(--tx)!important;border:1px solid #34486e!important;border-radius:12px}
+.bkmore:hover{border-color:var(--brand)!important}
+.bkcode,.tcode span,.mpick b,.vamount,.vm-num{font-variant-numeric:tabular-nums}
+.lvgo{background:var(--brand)!important;background-image:none!important;color:var(--brand-ink)!important;box-shadow:var(--lift)!important}
+.lvgo:hover{background:var(--brand-h)!important}
+.tgband{background:var(--bg2)!important;background-image:none!important;border:1px solid var(--bd)!important}
+.cmp-q span{background:var(--brand)!important;background-image:none!important;color:var(--brand-ink)!important}
+.gb .gbico{display:inline-flex;vertical-align:-3px;margin-right:6px;color:var(--brand)}
+::selection{background:rgba(251,191,36,.35);color:#fff}
+html{scrollbar-color:#34486e var(--bg1);accent-color:var(--brand);caret-color:var(--brand)}
+a{text-underline-offset:3px}
 '''
 open(os.path.join(OUT,"style.css"),"w",encoding="utf-8").write(CSS); written.append("style.css")
 open(os.path.join(OUT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n"); written.append("robots.txt")

@@ -1,8 +1,8 @@
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:3313: SyntaxWarning: invalid escape sequence '\w'
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:3328: SyntaxWarning: invalid escape sequence '\w'
   f'<div class="vproofs">{imgs}</div><p class="muted" style="font-size:13px;margin-top:12px">{L["proofs_sub"]}</p></section>' + '<script>(function(){var R="https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/preuves/";var g=document.querySelector(".vproofs");if(!g||!window.fetch)return;fetch(R+"preuves.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(l){l.filter(function(p){return /^tg-/.test(p.file)}).slice(0,30).reverse().forEach(function(p){var f=document.createElement("figure");f.className="vproof-card";var i=document.createElement("img");i.src=R+p.file;i.loading="lazy";i.alt=(p.titre||"")+" - Cousin Marc";var c=document.createElement("figcaption");var s=document.createElement("span");s.textContent=(p.titre||"").replace(/^[^\w(]+/,"");c.appendChild(s);if(p.cote){var b=document.createElement("b");b.textContent="@"+p.cote;c.appendChild(b)}if(p.gain){var t=document.createElement("strong");t.textContent="\u2705 "+p.gain;c.appendChild(t)}f.appendChild(i);f.appendChild(c);g.insertBefore(f,g.firstChild)})}).catch(function(){})})();</script>')
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:2725: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:2734: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   lim = datetime.datetime.utcnow() + datetime.timedelta(hours=1) - datetime.timedelta(hours=2)   # heure de Douala - 2 h
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:6978: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:6993: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   _DLA_NOW = datetime.datetime.utcnow() + datetime.timedelta(hours=1)   # heure de Douala
   73 page(s) aujourd'hui/demain/competition
   155 page(s) match du jour
@@ -42,48 +42,48 @@ Pages générées :
  - code-promo-afroparie.html
  - code-promo-1win.html
  - code-promo-goldpari.html
- - pronostic-real-madrid.html
  - pronostic-psg.html
  - pronostic-barcelone.html
+ - pronostic-real-madrid.html
  - pronostic-manchester-united.html
  - pronostic-atletico-madrid.html
+ - pronostic-liverpool.html
+ - pronostic-naples.html
  - pronostic-arsenal.html
  - pronostic-roma.html
- - pronostic-naples.html
- - pronostic-liverpool.html
- - pronostic-phoenix-suns.html
- - pronostic-bayern-munich.html
- - pronostic-juventus.html
- - pronostic-aston-villa.html
- - pronostic-chelsea.html
- - pronostic-marseille.html
- - pronostic-detroit-pistons.html
- - pronostic-villarreal.html
  - pronostic-rb-leipzig.html
- - pronostic-borussia-dortmund.html
+ - pronostic-aston-villa.html
+ - pronostic-phoenix-suns.html
  - pronostic-como.html
+ - pronostic-borussia-dortmund.html
+ - pronostic-chelsea.html
+ - pronostic-detroit-pistons.html
+ - pronostic-bayern-munich.html
+ - pronostic-marseille.html
+ - pronostic-villarreal.html
+ - pronostic-juventus.html
  - pronostic-les-deux-equipes-marquent.html
  - pronostic-plus-de-2-5-buts.html
- - real-madrid-predictions.html
  - psg-predictions.html
  - barcelona-predictions.html
+ - real-madrid-predictions.html
  - manchester-united-predictions.html
  - atletico-madrid-predictions.html
+ - liverpool-predictions.html
+ - napoli-predictions.html
  - arsenal-predictions.html
  - roma-predictions.html
- - napoli-predictions.html
- - liverpool-predictions.html
- - phoenix-suns-predictions.html
- - bayern-munich-predictions.html
- - juventus-predictions.html
- - aston-villa-predictions.html
- - chelsea-predictions.html
- - marseille-predictions.html
- - detroit-pistons-predictions.html
- - villarreal-predictions.html
  - rb-leipzig-predictions.html
- - borussia-dortmund-predictions.html
+ - aston-villa-predictions.html
+ - phoenix-suns-predictions.html
  - como-predictions.html
+ - borussia-dortmund-predictions.html
+ - chelsea-predictions.html
+ - detroit-pistons-predictions.html
+ - bayern-munich-predictions.html
+ - marseille-predictions.html
+ - villarreal-predictions.html
+ - juventus-predictions.html
  - btts-predictions.html
  - over-2-5-goals-predictions.html
  - football-predictions-today-ar.html
