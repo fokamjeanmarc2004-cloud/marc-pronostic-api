@@ -2478,6 +2478,7 @@ pronostic_es: Gana Medvedev
 pronostic_ar: فوز ميدفيديف
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 40-60
 score: 1-2
 analyse_en: Start Monday 16 November, not before 8:30pm in Douala, Lagos and Turin (7:30pm in Accra and Dakar). ATP Finals in Turin, Ivan Lendl Group, indoor hard court.
@@ -2486,12 +2487,14 @@ Flavio Cobolli is the 5th seed and plays at home, in front of the Italian crowd.
 The crowd will push Cobolli, but Medvedev has much more experience at this level.
 My pick: Medvedev to win. Bigger odds: over 2.5 sets in the match.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Flavio Cobolli 0-2 Daniil Medvedev (6-7, 3-6). Prediction won ✅.
 analyse: Début du match lundi 16 novembre, pas avant 20h30 à Douala et à Turin (19h30 à Abidjan et Dakar). Masters de Turin (ATP Finals), groupe Ivan Lendl, sur dur en salle.
 Daniil Medvedev est tête de série numéro 4 et ancien vainqueur de ce tournoi (2020) : le dur en salle est sa meilleure surface.
 Flavio Cobolli est tête de série numéro 5 et joue à domicile, devant le public italien.
 Le public va pousser Cobolli, mais Medvedev a beaucoup plus d'expérience à ce niveau.
 Mon choix : victoire de Medvedev. Option plus grosse cote : plus de 2,5 sets dans le match.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Flavio Cobolli 0-2 Daniil Medvedev (6-7, 3-6). Pronostic gagné ✅.
 ---
 date: 2026-11-16 14:00
 competition: Éliminatoires CAN 2027
@@ -3172,18 +3175,21 @@ pronostic_en: Celta Fortuna or draw
 pronostic_es: Celta Fortuna o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 33-30-37
 analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Albacete host Celta Fortuna in the Segunda División (Spanish second tier).
 Two bottom-table sides. Albacete have lost 9 of 13, Celta Fortuna draw more often. A risky game, so the double chance.
 My pick: Celta Fortuna or draw. Bigger odds: Celta Fortuna don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Albacete 1-0 RC Celta Fortuna. Prediction lost ❌.
 analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 Albacete reçoit Celta Fortuna en Liga 2 (Segunda División).
 Classement : Albacete 21e, 10 pts, 3 victoires, 1 nul, 9 défaites ; Celta Fortuna 17e, 13 pts, 3 victoires, 4 nuls, 6 défaites.
 Deux équipes de bas de tableau. Albacete a perdu 9 matchs sur 13, Celta Fortuna fait plus de nuls. Match à risque, donc double chance.
 Mon choix : Celta Fortuna ou nul. Option plus grosse cote : Celta Fortuna ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Albacete 1-0 Celta Fortuna. Pronostic perdu ❌.
 ---
 date: 2026-11-15 14:30
 competition: Eerste Divisie
@@ -3555,6 +3561,7 @@ pronostic_en: Germany or draw
 pronostic_es: Alemania o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 41-22-37
 analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Germany host Netherlands in the UEFA Nations League (league phase).
@@ -3562,12 +3569,14 @@ Nations League record: Germany: 2 wins, 2 draws, 1 defeat (8 pts); Netherlands: 
 This looks tight, so I take the double chance to limit the risk. Bookmakers also make Germany favourites.
 My pick: Germany or draw. Bigger odds: Germany don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Germany 5-0 Netherlands. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 L'Allemagne reçoit les Pays-Bas en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Allemagne : 2 victoires, 2 nuls, 1 défaite (8 pts) ; Pays-Bas : 3 victoires, 2 nuls (11 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque. Les bookmakers donnent aussi l'Allemagne favori.
 Mon choix : Allemagne ou nul. Option plus grosse cote : Allemagne ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Allemagne 5-0 Pays-Bas. Pronostic gagné ✅.
 ---
 date: 2026-11-16 20:45
 competition: Ligue des nations UEFA
@@ -3578,6 +3587,7 @@ pronostic_en: Malta to win
 pronostic_es: Gana Malta
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 8-23-69
 analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Gibraltar host Malta in the UEFA Nations League (league phase).
@@ -3585,12 +3595,14 @@ Nations League record: Gibraltar: 2 draws, 1 defeat (2 pts); Malta: 2 wins, 1 dr
 Malta are the stronger side on paper, even away. Bookmakers also make Malta favourites.
 My pick: Malta to win. Bigger odds: Malta win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Gibraltar 1-1 Malta. Prediction lost ❌.
 analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 Gibraltar reçoit Malte en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Gibraltar : 2 nuls, 1 défaite (2 pts) ; Malte : 2 victoires, 1 nul (7 pts).
 Malte est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi Malte favori.
 Mon choix : victoire de Malte. Option plus grosse cote : Malte gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Gibraltar 1-1 Malte. Pronostic perdu ❌.
 ---
 date: 2026-11-16 20:45
 competition: Ligue des nations UEFA
@@ -3601,6 +3613,7 @@ pronostic_en: Greece to win
 pronostic_es: Gana Grecia
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 71-24-5
 analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Greece host Serbia in the UEFA Nations League (league phase).
@@ -3608,12 +3621,14 @@ Nations League record: Greece: 2 wins, 2 draws, 1 defeat (8 pts); Serbia: 5 defe
 Greece are the stronger side on paper and play at home. Bookmakers also make Greece favourites.
 My pick: Greece to win. Bigger odds: Greece win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Greece 1-0 Serbia. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 La Grèce reçoit la Serbie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Grèce : 2 victoires, 2 nuls, 1 défaite (8 pts) ; Serbie : 5 défaites (0 pts).
 La Grèce est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Grèce favori.
 Mon choix : victoire de la Grèce. Option plus grosse cote : Grèce gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Grèce 1-0 Serbie. Pronostic gagné ✅.
 ---
 date: 2026-11-16 20:45
 competition: Ligue des nations UEFA
@@ -3624,6 +3639,7 @@ pronostic_en: Slovenia to win
 pronostic_es: Gana Eslovenia
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 10-24-66
 analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 North Macedonia host Slovenia in the UEFA Nations League (league phase).
@@ -3631,12 +3647,14 @@ Nations League record: North Macedonia: 5 defeats (0 pts); Slovenia: 2 wins, 2 d
 Slovenia are the stronger side on paper, even away. Bookmakers also make Slovenia favourites.
 My pick: Slovenia to win. Bigger odds: Slovenia win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: North Macedonia 0-3 Slovenia. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 La Macédoine du Nord reçoit la Slovénie en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Macédoine du Nord : 5 défaites (0 pts) ; Slovénie : 2 victoires, 2 nuls, 1 défaite (8 pts).
 La Slovénie est le mieux placé sur le papier, même en déplacement. Les bookmakers donnent aussi la Slovénie favori.
 Mon choix : victoire de la Slovénie. Option plus grosse cote : Slovénie gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Macédoine du Nord 0-3 Slovénie. Pronostic gagné ✅.
 ---
 date: 2026-11-16 20:45
 competition: Ligue des nations UEFA
@@ -3647,6 +3665,7 @@ pronostic_en: Switzerland to win
 pronostic_es: Gana Suiza
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 66-28-6
 analyse_en: Kick-off Monday 16 November: 20:00 in Douala, Lagos and Paris, 19:00 in Accra and Dakar.
 Switzerland host Scotland in the UEFA Nations League (league phase).
@@ -3654,12 +3673,14 @@ Nations League record: Switzerland: 4 wins, 1 draw (13 pts); Scotland: 2 wins, 1
 Switzerland are the stronger side on paper and play at home. Bookmakers also make Switzerland favourites.
 My pick: Switzerland to win. Bigger odds: Switzerland win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Switzerland 4-0 Scotland. Prediction won ✅.
 analyse: Coup d'envoi lundi 16 novembre : 20h à Douala et à Paris, 19h à Abidjan et Dakar.
 La Suisse reçoit l'Écosse en Ligue des nations UEFA (phase de ligue).
 Bilan en Ligue des nations : Suisse : 4 victoires, 1 nul (13 pts) ; Écosse : 2 victoires, 1 nul, 2 défaites (7 pts).
 La Suisse est le mieux placé sur le papier et joue à domicile. Les bookmakers donnent aussi la Suisse favori.
 Mon choix : victoire de la Suisse. Option plus grosse cote : Suisse gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Suisse 4-0 Écosse. Pronostic gagné ✅.
 ---
 date: 2026-11-17 20:45
 competition: Ligue des nations UEFA
