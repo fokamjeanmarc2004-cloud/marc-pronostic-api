@@ -2661,6 +2661,7 @@ pronostic_en: Zambia or draw
 pronostic_es: Zambia o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 30-30-40
 analyse_en: Kick-off Tuesday 17 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Burundi host Zambia on matchday 4 of AFCON 2027 qualifying.
@@ -2668,12 +2669,14 @@ Record after 3 games: Burundi: 2 draws, 1 defeat (2 pts); Zambia: 1 win, 1 draw,
 This looks tight, so I go for the double chance to limit the risk.
 My pick: Zambia or draw. Bigger odds: Zambia don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Burundi 1-1 Zambia. Prediction won ✅.
 analyse: Coup d'envoi mardi 17 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 Le Burundi reçoit la Zambie pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Burundi : 2 nuls, 1 défaite (2 pts) ; Zambie : 1 victoire, 1 nul, 1 défaite (4 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Zambie ou nul. Option plus grosse cote : Zambie ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Burundi 1-1 Zambie. Pronostic gagné ✅.
 ---
 date: 2026-11-17 14:00
 competition: Éliminatoires CAN 2027
@@ -2684,6 +2687,7 @@ pronostic_en: Mozambique or draw
 pronostic_es: Mozambique o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 30-30-40
 analyse_en: Kick-off Tuesday 17 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Ethiopia host Mozambique on matchday 4 of AFCON 2027 qualifying.
@@ -2691,12 +2695,14 @@ Record after 3 games: Ethiopia: 1 win, 2 defeats (3 pts); Mozambique: 1 win, 1 d
 This looks tight, so I go for the double chance to limit the risk.
 My pick: Mozambique or draw. Bigger odds: Mozambique don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Ethiopia 0-1 Mozambique. Prediction won ✅.
 analyse: Coup d'envoi mardi 17 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 L'Éthiopie reçoit le Mozambique pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Éthiopie : 1 victoire, 2 défaites (3 pts) ; Mozambique : 1 victoire, 1 nul, 1 défaite (4 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Mozambique ou nul. Option plus grosse cote : Mozambique ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Éthiopie 0-1 Mozambique. Pronostic gagné ✅.
 ---
 date: 2026-11-17 14:00
 competition: Éliminatoires CAN 2027
@@ -2707,6 +2713,7 @@ pronostic_en: Gabon to win
 pronostic_es: Gana Gabón
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 12-22-66
 analyse_en: Kick-off Tuesday 17 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Lesotho host Gabon on matchday 4 of AFCON 2027 qualifying.
@@ -2714,12 +2721,14 @@ Record after 3 games: Lesotho: 3 defeats (0 pts); Gabon: 2 wins, 1 defeat (6 pts
 Gabon are clearly the stronger side and start as favourites, even away from home.
 My pick: Gabon to win. Bigger odds: Gabon win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Lesotho 2-1 Gabon. Prediction lost ❌.
 analyse: Coup d'envoi mardi 17 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 Le Lesotho reçoit le Gabon pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Lesotho : 3 défaites (0 pts) ; Gabon : 2 victoires, 1 défaite (6 pts).
 Le Gabon est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire du Gabon. Option plus grosse cote : Gabon gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lesotho 2-1 Gabon. Pronostic perdu ❌.
 ---
 date: 2026-11-17 14:00
 competition: Éliminatoires CAN 2027
@@ -2730,6 +2739,7 @@ pronostic_en: Egypt to win
 pronostic_es: Gana Egipto
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 12-22-66
 analyse_en: Kick-off Tuesday 17 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Malawi host Egypt on matchday 4 of AFCON 2027 qualifying.
@@ -2737,12 +2747,14 @@ Record after 3 games: Malawi: 1 win, 2 defeats (3 pts); Egypt: 2 wins, 1 draw (7
 Egypt are clearly the stronger side and start as favourites, even away from home.
 My pick: Egypt to win. Bigger odds: Egypt win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Malawi 0-0 Egypt. Prediction lost ❌.
 analyse: Coup d'envoi mardi 17 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 Le Malawi reçoit l'Égypte pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Malawi : 1 victoire, 2 défaites (3 pts) ; Égypte : 2 victoires, 1 nul (7 pts).
 L'Égypte est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire de l'Égypte. Option plus grosse cote : Égypte gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Malawi 0-0 Égypte. Pronostic perdu ❌.
 ---
 date: 2026-11-17 14:00
 competition: Éliminatoires CAN 2027
@@ -2753,6 +2765,7 @@ pronostic_en: Angola to win
 pronostic_es: Gana Angola
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 13-22-65
 analyse_en: Kick-off Tuesday 17 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 South Sudan host Angola on matchday 4 of AFCON 2027 qualifying.
@@ -2760,12 +2773,14 @@ Record after 3 games: South Sudan: 3 defeats (0 pts); Angola: 2 wins, 1 draw (7 
 Angola are clearly the stronger side and start as favourites, even away from home.
 My pick: Angola to win. Bigger odds: Angola win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: South Sudan 0-1 Angola. Prediction won ✅.
 analyse: Coup d'envoi mardi 17 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 Le Soudan du Sud reçoit l'Angola pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Soudan du Sud : 3 défaites (0 pts) ; Angola : 2 victoires, 1 nul (7 pts).
 L'Angola est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire de l'Angola. Option plus grosse cote : Angola gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Soudan du Sud 0-1 Angola. Pronostic gagné ✅.
 ---
 date: 2026-11-17 14:00
 competition: Éliminatoires CAN 2027
@@ -2776,6 +2791,7 @@ pronostic_en: Nigeria to win
 pronostic_es: Gana Nigeria
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 15-23-62
 analyse_en: Kick-off Tuesday 17 November: 14:00 in Douala, Lagos and Paris, 13:00 in Accra and Dakar, 16:00 in Nairobi.
 Tanzania host Nigeria on matchday 4 of AFCON 2027 qualifying.
@@ -2783,12 +2799,14 @@ Record after 3 games: Tanzania: 1 draw, 2 defeats (1 pts); Nigeria: 2 wins, 1 de
 Nigeria are clearly the stronger side and start as favourites, even away from home.
 My pick: Nigeria to win. Bigger odds: Nigeria win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Tanzania 0-0 Nigeria. Prediction lost ❌.
 analyse: Coup d'envoi mardi 17 novembre : 14h à Douala et à Paris, 13h à Abidjan et Dakar, 16h à Nairobi.
 La Tanzanie reçoit le Nigeria pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Tanzanie : 1 nul, 2 défaites (1 pts) ; Nigeria : 2 victoires, 1 défaite (6 pts).
 Le Nigeria est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire du Nigeria. Option plus grosse cote : Nigeria gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Tanzanie 0-0 Nigeria. Pronostic perdu ❌.
 ---
 date: 2026-11-17 17:00
 competition: Éliminatoires CAN 2027
@@ -2799,6 +2817,7 @@ pronostic_en: Ivory Coast or draw
 pronostic_es: Costa de Marfil o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 20-25-55
 analyse_en: Kick-off Tuesday 17 November: 17:00 in Douala, Lagos and Paris, 16:00 in Accra and Dakar, 19:00 in Nairobi.
 Gambia host Ivory Coast on matchday 4 of AFCON 2027 qualifying.
@@ -2806,12 +2825,14 @@ Record after 3 games: Gambia: 2 wins, 1 defeat (6 pts); Ivory Coast: 3 wins (9 p
 This looks tight, so I go for the double chance to limit the risk.
 My pick: Ivory Coast or draw. Bigger odds: Ivory Coast don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Gambia 2-2 Ivory Coast. Prediction won ✅.
 analyse: Coup d'envoi mardi 17 novembre : 17h à Douala et à Paris, 16h à Abidjan et Dakar, 19h à Nairobi.
 La Gambie reçoit la Côte d'Ivoire pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Gambie : 2 victoires, 1 défaite (6 pts) ; Côte d'Ivoire : 3 victoires (9 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Côte d'Ivoire ou nul. Option plus grosse cote : Côte d'Ivoire ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Gambie 2-2 Côte d'Ivoire. Pronostic gagné ✅.
 ---
 date: 2026-11-17 17:00
 competition: Éliminatoires CAN 2027
@@ -2822,6 +2843,7 @@ pronostic_en: Guinea-Bissau to win
 pronostic_es: Gana Guinea-Bisáu
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 52-28-20
 analyse_en: Kick-off Tuesday 17 November: 17:00 in Douala, Lagos and Paris, 16:00 in Accra and Dakar, 19:00 in Nairobi.
 Guinea-Bissau host Madagascar on matchday 4 of AFCON 2027 qualifying.
@@ -2829,12 +2851,14 @@ Record after 3 games: Guinea-Bissau: 2 wins, 1 draw (7 pts); Madagascar: 2 draws
 Guinea-Bissau are clearly the stronger side and start as favourites, at home.
 My pick: Guinea-Bissau to win. Bigger odds: Guinea-Bissau win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Guinea-Bissau 2-0 Madagascar. Prediction won ✅.
 analyse: Coup d'envoi mardi 17 novembre : 17h à Douala et à Paris, 16h à Abidjan et Dakar, 19h à Nairobi.
 La Guinée-Bissau reçoit Madagascar pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Guinée-Bissau : 2 victoires, 1 nul (7 pts) ; Madagascar : 2 nuls, 1 défaite (2 pts).
 La Guinée-Bissau est nettement mieux classé et part favori, devant son public.
 Mon choix : victoire de la Guinée-Bissau. Option plus grosse cote : Guinée-Bissau gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Guinée-Bissau 2-0 Madagascar. Pronostic gagné ✅.
 ---
 date: 2026-11-17 17:00
 competition: Éliminatoires CAN 2027
@@ -2845,6 +2869,7 @@ pronostic_en: South Africa or draw
 pronostic_es: Sudáfrica o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 20-28-52
 analyse_en: Kick-off Tuesday 17 November: 17:00 in Douala, Lagos and Paris, 16:00 in Accra and Dakar, 19:00 in Nairobi.
 Kenya host South Africa on matchday 4 of AFCON 2027 qualifying.
@@ -2852,12 +2877,14 @@ Record after 3 games: Kenya: 2 draws, 1 defeat (2 pts); South Africa: 2 wins, 1 
 This looks tight, so I go for the double chance to limit the risk.
 My pick: South Africa or draw. Bigger odds: South Africa don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Kenya 1-2 South Africa. Prediction won ✅.
 analyse: Coup d'envoi mardi 17 novembre : 17h à Douala et à Paris, 16h à Abidjan et Dakar, 19h à Nairobi.
 Le Kenya reçoit l'Afrique du Sud pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Kenya : 2 nuls, 1 défaite (2 pts) ; Afrique du Sud : 2 victoires, 1 nul (7 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Afrique du Sud ou nul. Option plus grosse cote : Afrique du Sud ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Kenya 1-2 Afrique du Sud. Pronostic gagné ✅.
 ---
 date: 2026-11-17 17:00
 competition: Éliminatoires CAN 2027
@@ -2868,6 +2895,7 @@ pronostic_en: Tunisia or draw
 pronostic_es: Túnez o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 28-30-42
 analyse_en: Kick-off Tuesday 17 November: 17:00 in Douala, Lagos and Paris, 16:00 in Accra and Dakar, 19:00 in Nairobi.
 Libya host Tunisia on matchday 4 of AFCON 2027 qualifying.
@@ -2875,12 +2903,14 @@ Record after 3 games: Libya: 1 win, 1 draw, 1 defeat (4 pts); Tunisia: 2 draws, 
 This looks tight, so I go for the double chance to limit the risk.
 My pick: Tunisia or draw. Bigger odds: Tunisia don't lose and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Libya 1-1 Tunisia. Prediction won ✅.
 analyse: Coup d'envoi mardi 17 novembre : 17h à Douala et à Paris, 16h à Abidjan et Dakar, 19h à Nairobi.
 La Libye reçoit la Tunisie pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Libye : 1 victoire, 1 nul, 1 défaite (4 pts) ; Tunisie : 2 nuls, 1 défaite (2 pts).
 Le match s'annonce serré : je choisis la double chance pour limiter le risque.
 Mon choix : Tunisie ou nul. Option plus grosse cote : Tunisie ne perd pas et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Libye 1-1 Tunisie. Pronostic gagné ✅.
 ---
 date: 2026-11-17 17:00
 competition: Éliminatoires CAN 2027
@@ -2891,6 +2921,7 @@ pronostic_en: DR Congo to win
 pronostic_es: Gana RD Congo
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 10-20-70
 analyse_en: Kick-off Tuesday 17 November: 17:00 in Douala, Lagos and Paris, 16:00 in Accra and Dakar, 19:00 in Nairobi.
 Sierra Leone host DR Congo on matchday 4 of AFCON 2027 qualifying.
@@ -2898,12 +2929,14 @@ Record after 3 games: Sierra Leone: 3 defeats (0 pts); DR Congo: 3 wins (9 pts).
 DR Congo are clearly the stronger side and start as favourites, even away from home.
 My pick: DR Congo to win. Bigger odds: DR Congo win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sierra Leone 1-1 Congo DR. Prediction lost ❌.
 analyse: Coup d'envoi mardi 17 novembre : 17h à Douala et à Paris, 16h à Abidjan et Dakar, 19h à Nairobi.
 La Sierra Leone reçoit la RD Congo pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Sierra Leone : 3 défaites (0 pts) ; RD Congo : 3 victoires (9 pts).
 La RD Congo est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire de la RD Congo. Option plus grosse cote : RD Congo gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sierra Leone 1-1 RD Congo. Pronostic perdu ❌.
 ---
 date: 2026-11-17 17:00
 competition: Éliminatoires CAN 2027
@@ -2914,6 +2947,7 @@ pronostic_en: Algeria to win
 pronostic_es: Gana Argelia
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 14-22-64
 analyse_en: Kick-off Tuesday 17 November: 17:00 in Douala, Lagos and Paris, 16:00 in Accra and Dakar, 19:00 in Nairobi.
 Togo host Algeria on matchday 4 of AFCON 2027 qualifying.
@@ -2921,12 +2955,14 @@ Record after 3 games: Togo: 1 win, 2 defeats (3 pts); Algeria: 2 wins, 1 draw (7
 Algeria are clearly the stronger side and start as favourites, even away from home.
 My pick: Algeria to win. Bigger odds: Algeria win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Togo 3-0 Algeria. Prediction lost ❌.
 analyse: Coup d'envoi mardi 17 novembre : 17h à Douala et à Paris, 16h à Abidjan et Dakar, 19h à Nairobi.
 Le Togo reçoit l'Algérie pour la 4e journée des éliminatoires de la CAN 2027.
 Bilan après 3 matchs : Togo : 1 victoire, 2 défaites (3 pts) ; Algérie : 2 victoires, 1 nul (7 pts).
 L'Algérie est nettement mieux classé et part favori malgré le déplacement.
 Mon choix : victoire de l'Algérie. Option plus grosse cote : Algérie gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Togo 3-0 Algérie. Pronostic perdu ❌.
 ---
 date: 2026-11-17 20:00
 competition: Éliminatoires CAN 2027
