@@ -8091,7 +8091,7 @@ def livres_page(lang="fr"):
     _fmsg = urllib.parse.quote(T["f_msg"])
     _ffc = f"{FORMATION_PRIX:,}".replace(",", " ")
     secs += (f'<section class="lvsec" id="niv-pro" data-niv="pro"><div class="lvlh"><span class="n">🎓</span><div><h2>{T["f_h"]}</h2><p>{T["f_sub"]}</p></div></div>'
-             f'<div class="fpro"><div><p class="lbniv">{T["f_tag"]}</p><h3>{T["f_t"]}</h3>'
+             f'<div class="fpro"><img class="fproimg" src="formation-pro.webp" alt="{T["f_t"]}" width="840" height="630" loading="lazy" decoding="async"><div><p class="lbniv">{T["f_tag"]}</p><h3>{T["f_t"]}</h3>'
              f'<ul>{"".join(f"<li>{x}</li>" for x in T["f_pts"])}</ul>'
              f'<p class="fnote">{T["f_note"]}</p></div>'
              f'<div class="fbuy"><div class="lbprice"><span class="lbold"><s>215 000 FCFA</s><i>-30 %</i></span>{_ffc} FCFA<small>{T["f_year"]} · ≈ {FORMATION_USD} $</small></div>'
@@ -9062,7 +9062,9 @@ CSS += r'''
 .promo{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;background:rgba(239,68,68,.1);border:1px solid rgba(248,113,113,.45);border-radius:14px;padding:12px 16px;margin:0 0 18px}
 .promo b{color:#fca5a5;font-size:16px;white-space:nowrap}.promo span{color:var(--tx2);font-size:14.5px}
 .fpro{display:grid;gap:18px;background:linear-gradient(135deg,rgba(251,191,36,.1),rgba(249,115,22,.06)),var(--bg2);border:1px solid rgba(251,191,36,.45);border-radius:18px;padding:20px}
-@media(min-width:760px){.fpro{grid-template-columns:1fr 280px;align-items:center}}
+.fproimg{width:100%;height:auto;border-radius:14px;display:block}
+@media(min-width:760px){.fpro{grid-template-columns:260px 1fr 260px;align-items:center}}
+@media(min-width:760px) and (max-width:1000px){.fpro{grid-template-columns:200px 1fr}.fpro .fbuy{grid-column:1/-1}}
 .fpro h3{color:#fff;font-size:21px;margin:4px 0 8px}
 .fpro ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
 .fpro li{color:#dbe3f7;padding-left:22px;position:relative}.fpro li::before{content:"✓";position:absolute;left:0;color:#facc15;font-weight:800}
