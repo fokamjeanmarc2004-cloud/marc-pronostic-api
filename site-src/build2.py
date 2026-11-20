@@ -1657,6 +1657,7 @@ def footer_html():
 <a href="comment-sinscrire-1xbet-2026.html">Comment s'inscrire</a>
 <a href="deposer-retirer-paris-afrique.html">Comment retirer</a>
 <a href="jeu-responsable.html">Jeu responsable</a>
+<a href="mentions-legales.html">Mentions légales</a>
 <a href="quel-bookmaker-choisir.html">Quel bookmaker choisir ?</a>
 <a href="code-promo-ne-marche-pas.html">Code promo qui ne marche pas</a>
 </div>
@@ -1917,7 +1918,7 @@ def head(title, desc, canonical, extra="", nav=None, lang="fr", alternates=None,
 <meta name="robots" content="index, follow">
 <link rel="icon" href="favicon.ico?v=3" sizes="any"><link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png?v=3"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png?v=3">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3"><meta name="theme-color" content="#070d1a">{_ORG_LD if canonical.rstrip("/") in (BASE, BASE + "/index.html") else ""}<link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Cousin Marc"><meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3"><meta name="theme-color" content="#070d1a">{_ORG_LD if canonical.rstrip("/") in (BASE, BASE + "/index.html") else ""}<link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Cousin Marc"><meta name="mobile-web-app-capable" content="yes"><script>if("serviceWorker"in navigator)addEventListener("load",function(){{navigator.serviceWorker.register("/sw.js").catch(function(){{}})}})</script>
 <meta property="og:type" content="website"><meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}"><meta property="og:url" content="{canonical}">
 <meta property="og:locale" content="{oglocale}">
@@ -3420,7 +3421,7 @@ def sitemap():
              "pronostics.html", "predictions.html", "pronosticos.html", "pronostics-ar.html",
              "actualites.html", "news.html", "noticias.html", "actualites-ar.html",
              "a-propos.html", "about.html", "acerca-de.html", "a-propos-ar.html",
-             "jeu-responsable.html", "responsible-gambling.html", "juego-responsable.html", "jeu-responsable-ar.html",
+             "jeu-responsable.html", "responsible-gambling.html", "juego-responsable.html", "jeu-responsable-ar.html", "mentions-legales.html",
              TPI_SLUG["fr"], TPI_SLUG["en"], TPI_SLUG["es"], TPI_SLUG["ar"],
              RESULTS_SLUG["fr"], RESULTS_SLUG["en"], RESULTS_SLUG["es"], RESULTS_SLUG["ar"], VIP_SLUG["fr"], VIP_SLUG["en"], VIP_SLUG["es"], VIP_SLUG["ar"]] \
             + [f"{b['slug']}.html" for b in BOOKMAKERS] + [f"{en_slug(b)}.html" for b in BOOKMAKERS] + [f"{es_slug(b)}.html" for b in BOOKMAKERS] + [f"{ar_slug(b)}.html" for b in BOOKMAKERS] \
@@ -8069,6 +8070,7 @@ for _lg in ("fr", "en", "es", "ar"):
 print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
+open(os.path.join(OUT,"mentions-legales.html"),"w",encoding="utf-8").write(mentions_page()); written.append("mentions-legales.html")
 open(os.path.join(OUT,"actualites.html"),"w",encoding="utf-8").write(actualites_page()); written.append("actualites.html")
 open(os.path.join(OUT,"cote-de-2.html"),"w",encoding="utf-8").write(cote_de_2_page()); written.append("cote-de-2.html")
 # Pages anglaises (versions complètes)
@@ -8205,6 +8207,15 @@ MANIFEST = {
     {"src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
   ]
 }
+SW_JS = """const V='cm-v1';
+self.addEventListener('install',e=>{self.skipWaiting()});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==V).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
+self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET'||new URL(r.url).origin!==location.origin)return;
+const html=r.mode==='navigate'||(r.headers.get('accept')||'').includes('text/html');
+if(html){e.respondWith(fetch(r).then(x=>{const c=x.clone();caches.open(V).then(h=>h.put(r,c));return x}).catch(()=>caches.match(r).then(x=>x||caches.match('/404.html'))))}
+else{e.respondWith(caches.match(r).then(x=>x||fetch(r).then(y=>{if(y.ok){const c=y.clone();caches.open(V).then(h=>h.put(r,c))}return y})))}});
+"""
+open(os.path.join(OUT,"sw.js"),"w",encoding="utf-8").write(SW_JS); written.append("sw.js")
 open(os.path.join(OUT,"manifest.json"),"w",encoding="utf-8").write(json.dumps(MANIFEST, ensure_ascii=False, indent=2)); written.append("manifest.json")
 
 CSS += r"""

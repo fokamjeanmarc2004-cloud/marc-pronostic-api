@@ -858,6 +858,12 @@
   force = true
 
 [[redirects]]
+  from = "/mentions-legales"
+  to = "/mentions-legales.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/miami-heat-predictions"
   to = "/miami-heat-predictions.html"
   status = 301
