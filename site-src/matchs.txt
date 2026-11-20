@@ -4243,3 +4243,3155 @@ Bilan : OM : 6 victoires, 0 nul, 4 défaites ; Le Mans : 1 victoire, 5 nuls, 4 d
 L'OM reçoit le promu et doit s'imposer au Vélodrome.
 Mon choix : victoire de l'OM. Option plus grosse cote : OM gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 16:00
+competition: Premier League
+equipe1: Bournemouth
+equipe2: Nottingham Forest
+pronostic: Victoire de Bournemouth
+pronostic_en: Bournemouth to win
+pronostic_es: Gana Bournemouth
+cote:
+bookmaker: 1xbet
+proba: 58-19-23
+score: 2-0
+analyse_en: Kick-off Saturday 21 November: 16:00 in Douala, Lagos and Paris.
+Bournemouth host Nottingham Forest in the Premier League.
+Record: Bournemouth: 4 wins, 3 draws, 3 defeats; Nottingham Forest: 2 wins, 3 draws, 5 defeats.
+Bournemouth are clearly better placed and play at home.
+My pick: Bournemouth to win. Bigger odds: Bournemouth win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 16h à Douala et à Paris.
+Bournemouth reçoit Nottingham Forest en Premier League.
+Bilan : Bournemouth : 4 victoires, 3 nuls, 3 défaites ; Nottingham Forest : 2 victoires, 3 nuls, 5 défaites.
+Bournemouth est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Bournemouth. Option plus grosse cote : Bournemouth gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 16:00
+competition: Premier League
+equipe1: Aston Villa
+equipe2: Sunderland
+pronostic: Aston Villa ou match nul
+pronostic_en: Aston Villa or draw
+pronostic_es: Aston Villa o empate
+cote:
+bookmaker: 1xbet
+proba: 52-22-26
+score: 1-0
+analyse_en: Kick-off Saturday 21 November: 16:00 in Douala, Lagos and Paris.
+Aston Villa host Sunderland in the Premier League.
+Record: Aston Villa: 3 wins, 4 draws, 3 defeats; Sunderland: 2 wins, 2 draws, 6 defeats.
+Aston Villa have the home edge, but I cover the draw to stay safe.
+My pick: Aston Villa or draw. Bigger odds: Aston Villa to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 16h à Douala et à Paris.
+Aston Villa reçoit Sunderland en Premier League.
+Bilan : Aston Villa : 3 victoires, 4 nuls, 3 défaites ; Sunderland : 2 victoires, 2 nuls, 6 défaites.
+Aston Villa a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : aston Villa ou match nul. Option plus grosse cote : victoire de Aston Villa.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 16:00
+competition: Premier League
+equipe1: Chelsea
+equipe2: Leeds United
+pronostic: Chelsea ou match nul
+pronostic_en: Chelsea or draw
+pronostic_es: Chelsea o empate
+cote:
+bookmaker: 1xbet
+proba: 46-24-30
+score: 1-0
+analyse_en: Kick-off Saturday 21 November: 16:00 in Douala, Lagos and Paris.
+Chelsea host Leeds United in the Premier League.
+Record: Chelsea: 5 wins, 1 draw, 4 defeats; Leeds United: 3 wins, 5 draws, 2 defeats.
+Chelsea have the home edge, but I cover the draw to stay safe.
+My pick: Chelsea or draw. Bigger odds: Chelsea to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 16h à Douala et à Paris.
+Chelsea reçoit Leeds United en Premier League.
+Bilan : Chelsea : 5 victoires, 1 nul, 4 défaites ; Leeds United : 3 victoires, 5 nuls, 2 défaites.
+Chelsea a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : chelsea ou match nul. Option plus grosse cote : victoire de Chelsea.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 16:00
+competition: Premier League
+equipe1: Coventry City
+equipe2: Crystal Palace
+pronostic: Coventry City ou match nul
+pronostic_en: Coventry City or draw
+pronostic_es: Coventry City o empate
+cote:
+bookmaker: 1xbet
+proba: 46-24-30
+score: 1-0
+analyse_en: Kick-off Saturday 21 November: 16:00 in Douala, Lagos and Paris.
+Coventry City host Crystal Palace in the Premier League.
+Record: Coventry City: 3 wins, 0 draws, 7 defeats; Crystal Palace: 2 wins, 1 draw, 7 defeats.
+Coventry City have the home edge, but I cover the draw to stay safe.
+My pick: Coventry City or draw. Bigger odds: Coventry City to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 16h à Douala et à Paris.
+Coventry City reçoit Crystal Palace en Premier League.
+Bilan : Coventry City : 3 victoires, 0 nul, 7 défaites ; Crystal Palace : 2 victoires, 1 nul, 7 défaites.
+Coventry City a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : coventry City ou match nul. Option plus grosse cote : victoire de Coventry City.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 16:00
+competition: Premier League
+equipe1: Tottenham Hotspur
+equipe2: Ipswich Town
+pronostic: Tottenham Hotspur ou match nul
+pronostic_en: Tottenham Hotspur or draw
+pronostic_es: Tottenham Hotspur o empate
+cote:
+bookmaker: 1xbet
+proba: 44-25-31
+score: 1-0
+analyse_en: Kick-off Saturday 21 November: 16:00 in Douala, Lagos and Paris.
+Tottenham Hotspur host Ipswich Town in the Premier League.
+Record: Tottenham Hotspur: 3 wins, 3 draws, 4 defeats; Ipswich Town: 3 wins, 2 draws, 5 defeats.
+Tottenham Hotspur have the home edge, but I cover the draw to stay safe.
+My pick: Tottenham Hotspur or draw. Bigger odds: Tottenham Hotspur to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 16h à Douala et à Paris.
+Tottenham Hotspur reçoit Ipswich Town en Premier League.
+Bilan : Tottenham Hotspur : 3 victoires, 3 nuls, 4 défaites ; Ipswich Town : 3 victoires, 2 nuls, 5 défaites.
+Tottenham Hotspur a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : tottenham Hotspur ou match nul. Option plus grosse cote : victoire de Tottenham Hotspur.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 15:00
+competition: Premier League
+equipe1: Hull City
+equipe2: Brighton & Hove Albion
+pronostic: Brighton & Hove Albion ou match nul
+pronostic_en: Brighton & Hove Albion or draw
+pronostic_es: Brighton & Hove Albion o empate
+cote:
+bookmaker: 1xbet
+proba: 19-36-45
+score: 0-1
+analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
+Hull City host Brighton & Hove Albion in the Premier League.
+Record: Hull City: 2 wins, 5 draws, 3 defeats; Brighton & Hove Albion: 7 wins, 1 draw, 2 defeats.
+Brighton & Hove Albion are slightly better, but away games are hard: I cover the draw.
+My pick: Brighton & Hove Albion or draw. Bigger odds: Brighton & Hove Albion to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
+Hull City reçoit Brighton & Hove Albion en Premier League.
+Bilan : Hull City : 2 victoires, 5 nuls, 3 défaites ; Brighton & Hove Albion : 7 victoires, 1 nul, 2 défaites.
+Brighton & Hove Albion est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : brighton & Hove Albion ou match nul. Option plus grosse cote : victoire de Brighton & Hove Albion.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 21:00
+competition: Premier League
+equipe1: Brentford
+equipe2: Everton
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Monday 23 November: 21:00 in Douala, Lagos and Paris.
+Brentford host Everton in the Premier League.
+Record: Brentford: 3 wins, 5 draws, 2 defeats; Everton: 4 wins, 4 draws, 2 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 23 novembre : 21h à Douala et à Paris.
+Brentford reçoit Everton en Premier League.
+Bilan : Brentford : 3 victoires, 5 nuls, 2 défaites ; Everton : 4 victoires, 4 nuls, 2 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-27 21:00
+competition: Premier League
+equipe1: Nottingham Forest
+equipe2: Chelsea
+pronostic: Chelsea ou match nul
+pronostic_en: Chelsea or draw
+pronostic_es: Chelsea o empate
+cote:
+bookmaker: 1xbet
+proba: 25-34-41
+score: 0-1
+analyse_en: Kick-off Friday 27 November: 21:00 in Douala, Lagos and Paris.
+Nottingham Forest host Chelsea in the Premier League.
+Record: Nottingham Forest: 2 wins, 3 draws, 5 defeats; Chelsea: 5 wins, 1 draw, 4 defeats.
+Chelsea are slightly better, but away games are hard: I cover the draw.
+My pick: Chelsea or draw. Bigger odds: Chelsea to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 27 novembre : 21h à Douala et à Paris.
+Nottingham Forest reçoit Chelsea en Premier League.
+Bilan : Nottingham Forest : 2 victoires, 3 nuls, 5 défaites ; Chelsea : 5 victoires, 1 nul, 4 défaites.
+Chelsea est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : chelsea ou match nul. Option plus grosse cote : victoire de Chelsea.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-20 21:00
+competition: Liga
+equipe1: Athletic Club
+equipe2: Espanyol
+pronostic: Athletic Club ou match nul
+pronostic_en: Athletic Club or draw
+pronostic_es: Athletic Club o empate
+cote:
+bookmaker: 1xbet
+proba: 51-22-27
+score: 1-0
+analyse_en: Kick-off Friday 20 November: 21:00 in Douala, Lagos and Paris.
+Athletic Club host Espanyol in the Liga.
+Record: Athletic Club: 4 wins, 4 draws, 3 defeats; Espanyol: 3 wins, 3 draws, 6 defeats.
+Athletic Club have the home edge, but I cover the draw to stay safe.
+My pick: Athletic Club or draw. Bigger odds: Athletic Club to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 20 novembre : 21h à Douala et à Paris.
+Athletic Club reçoit Espanyol en Liga.
+Bilan : Athletic Club : 4 victoires, 4 nuls, 3 défaites ; Espanyol : 3 victoires, 3 nuls, 6 défaites.
+Athletic Club a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : athletic Club ou match nul. Option plus grosse cote : victoire de Athletic Club.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 14:00
+competition: Liga
+equipe1: Alavés
+equipe2: Deportivo
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Saturday 21 November: 14:00 in Douala, Lagos and Paris.
+Alavés host Deportivo in the Liga.
+Record: Alavés: 3 wins, 4 draws, 5 defeats; Deportivo: 3 wins, 6 draws, 3 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 14h à Douala et à Paris.
+Alavés reçoit Deportivo en Liga.
+Bilan : Alavés : 3 victoires, 4 nuls, 5 défaites ; Deportivo : 3 victoires, 6 nuls, 3 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 16:15
+competition: Liga
+equipe1: Rayo Vallecano
+equipe2: Valencia
+pronostic: Rayo Vallecano ou match nul
+pronostic_en: Rayo Vallecano or draw
+pronostic_es: Rayo Vallecano o empate
+cote:
+bookmaker: 1xbet
+proba: 49-23-28
+score: 1-0
+analyse_en: Kick-off Saturday 21 November: 16:15 in Douala, Lagos and Paris.
+Rayo Vallecano host Valencia in the Liga.
+Record: Rayo Vallecano: 3 wins, 3 draws, 5 defeats; Valencia: 2 wins, 3 draws, 7 defeats.
+Rayo Vallecano have the home edge, but I cover the draw to stay safe.
+My pick: Rayo Vallecano or draw. Bigger odds: Rayo Vallecano to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 16h15 à Douala et à Paris.
+Rayo Vallecano reçoit Valencia en Liga.
+Bilan : Rayo Vallecano : 3 victoires, 3 nuls, 5 défaites ; Valencia : 2 victoires, 3 nuls, 7 défaites.
+Rayo Vallecano a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : rayo Vallecano ou match nul. Option plus grosse cote : victoire de Rayo Vallecano.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 18:30
+competition: Liga
+equipe1: Sevilla
+equipe2: Real Betis
+pronostic: Real Betis ou match nul
+pronostic_en: Real Betis or draw
+pronostic_es: Real Betis o empate
+cote:
+bookmaker: 1xbet
+proba: 25-34-41
+score: 0-1
+analyse_en: Kick-off Saturday 21 November: 18:30 in Douala, Lagos and Paris.
+Sevilla host Real Betis in the Liga.
+Record: Sevilla: 5 wins, 3 draws, 4 defeats; Real Betis: 8 wins, 2 draws, 2 defeats.
+Real Betis are slightly better, but away games are hard: I cover the draw.
+My pick: Real Betis or draw. Bigger odds: Real Betis to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 18h30 à Douala et à Paris.
+Sevilla reçoit Real Betis en Liga.
+Bilan : Sevilla : 5 victoires, 3 nuls, 4 défaites ; Real Betis : 8 victoires, 2 nuls, 2 défaites.
+Real Betis est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : real Betis ou match nul. Option plus grosse cote : victoire de Real Betis.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 16:15
+competition: Liga
+equipe1: Racing Santander
+equipe2: Real Sociedad
+pronostic: Real Sociedad ou match nul
+pronostic_en: Real Sociedad or draw
+pronostic_es: Real Sociedad o empate
+cote:
+bookmaker: 1xbet
+proba: 25-34-41
+score: 0-1
+analyse_en: Kick-off Sunday 22 November: 16:15 in Douala, Lagos and Paris.
+Racing Santander host Real Sociedad in the Liga.
+Record: Racing Santander: 4 wins, 2 draws, 6 defeats; Real Sociedad: 7 wins, 1 draw, 4 defeats.
+Real Sociedad are slightly better, but away games are hard: I cover the draw.
+My pick: Real Sociedad or draw. Bigger odds: Real Sociedad to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 16h15 à Douala et à Paris.
+Racing Santander reçoit Real Sociedad en Liga.
+Bilan : Racing Santander : 4 victoires, 2 nuls, 6 défaites ; Real Sociedad : 7 victoires, 1 nul, 4 défaites.
+Real Sociedad est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : real Sociedad ou match nul. Option plus grosse cote : victoire de Real Sociedad.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 18:30
+competition: Liga
+equipe1: Osasuna
+equipe2: Málaga
+pronostic: Osasuna ou match nul
+pronostic_en: Osasuna or draw
+pronostic_es: Osasuna o empate
+cote:
+bookmaker: 1xbet
+proba: 54-21-25
+score: 1-0
+analyse_en: Kick-off Sunday 22 November: 18:30 in Douala, Lagos and Paris.
+Osasuna host Málaga in the Liga.
+Record: Osasuna: 3 wins, 3 draws, 6 defeats; Málaga: 0 wins, 5 draws, 7 defeats.
+Osasuna have the home edge, but I cover the draw to stay safe.
+My pick: Osasuna or draw. Bigger odds: Osasuna to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 18h30 à Douala et à Paris.
+Osasuna reçoit Málaga en Liga.
+Bilan : Osasuna : 3 victoires, 3 nuls, 6 défaites ; Málaga : 0 victoire, 5 nuls, 7 défaites.
+Osasuna a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : osasuna ou match nul. Option plus grosse cote : victoire de Osasuna.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 21:00
+competition: Liga
+equipe1: Levante
+equipe2: Elche
+pronostic: Levante ou match nul
+pronostic_en: Levante or draw
+pronostic_es: Levante o empate
+cote:
+bookmaker: 1xbet
+proba: 44-25-31
+score: 1-0
+analyse_en: Kick-off Monday 23 November: 21:00 in Douala, Lagos and Paris.
+Levante host Elche in the Liga.
+Record: Levante: 2 wins, 5 draws, 5 defeats; Elche: 2 wins, 4 draws, 6 defeats.
+Levante have the home edge, but I cover the draw to stay safe.
+My pick: Levante or draw. Bigger odds: Levante to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 23 novembre : 21h à Douala et à Paris.
+Levante reçoit Elche en Liga.
+Bilan : Levante : 2 victoires, 5 nuls, 5 défaites ; Elche : 2 victoires, 4 nuls, 6 défaites.
+Levante a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : levante ou match nul. Option plus grosse cote : victoire de Levante.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-27 21:00
+competition: Liga
+equipe1: Levante
+equipe2: Racing Santander
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Friday 27 November: 21:00 in Douala, Lagos and Paris.
+Levante host Racing Santander in the Liga.
+Record: Levante: 2 wins, 5 draws, 5 defeats; Racing Santander: 4 wins, 2 draws, 6 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 27 novembre : 21h à Douala et à Paris.
+Levante reçoit Racing Santander en Liga.
+Bilan : Levante : 2 victoires, 5 nuls, 5 défaites ; Racing Santander : 4 victoires, 2 nuls, 6 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-20 20:45
+competition: Ligue 1
+equipe1: Troyes
+equipe2: Le Havre AC
+pronostic: Victoire de Troyes
+pronostic_en: Troyes to win
+pronostic_es: Gana Troyes
+cote:
+bookmaker: 1xbet
+proba: 58-19-23
+score: 2-0
+analyse_en: Kick-off Friday 20 November: 20:45 in Douala, Lagos and Paris.
+Troyes host Le Havre AC in the Ligue 1.
+Record: Troyes: 2 wins, 2 draws, 6 defeats; Le Havre AC: 0 wins, 2 draws, 8 defeats.
+Troyes are clearly better placed and play at home.
+My pick: Troyes to win. Bigger odds: Troyes win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 20 novembre : 20h45 à Douala et à Paris.
+Troyes reçoit Le Havre AC en Ligue 1.
+Bilan : Troyes : 2 victoires, 2 nuls, 6 défaites ; Le Havre AC : 0 victoire, 2 nuls, 8 défaites.
+Troyes est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Troyes. Option plus grosse cote : Troyes gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 20:45
+competition: Ligue 1
+equipe1: AS Monaco
+equipe2: AJ Auxerre
+pronostic: Victoire de AS Monaco
+pronostic_en: AS Monaco to win
+pronostic_es: Gana AS Monaco
+cote:
+bookmaker: 1xbet
+proba: 58-19-23
+score: 2-0
+analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
+AS Monaco host AJ Auxerre in the Ligue 1.
+Record: AS Monaco: 4 wins, 4 draws, 2 defeats; AJ Auxerre: 3 wins, 1 draw, 6 defeats.
+AS Monaco are clearly better placed and play at home.
+My pick: AS Monaco to win. Bigger odds: AS Monaco win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
+AS Monaco reçoit AJ Auxerre en Ligue 1.
+Bilan : AS Monaco : 4 victoires, 4 nuls, 2 défaites ; AJ Auxerre : 3 victoires, 1 nul, 6 défaites.
+AS Monaco est nettement mieux classé et joue à domicile.
+Mon choix : victoire de AS Monaco. Option plus grosse cote : AS Monaco gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 20:45
+competition: Ligue 1
+equipe1: Lens
+equipe2: Toulouse
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
+Lens host Toulouse in the Ligue 1.
+Record: Lens: 4 wins, 1 draw, 5 defeats; Toulouse: 3 wins, 4 draws, 3 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
+Lens reçoit Toulouse en Ligue 1.
+Bilan : Lens : 4 victoires, 1 nul, 5 défaites ; Toulouse : 3 victoires, 4 nuls, 3 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 20:45
+competition: Ligue 1
+equipe1: Lille
+equipe2: Lyon
+pronostic: Lille ou match nul
+pronostic_en: Lille or draw
+pronostic_es: Lille o empate
+cote:
+bookmaker: 1xbet
+proba: 50-22-28
+score: 1-0
+analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
+Lille host Lyon in the Ligue 1.
+Record: Lille: 6 wins, 3 draws, 1 defeat; Lyon: 5 wins, 2 draws, 3 defeats.
+Lille have the home edge, but I cover the draw to stay safe.
+My pick: Lille or draw. Bigger odds: Lille to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
+Lille reçoit Lyon en Ligue 1.
+Bilan : Lille : 6 victoires, 3 nuls, 1 défaite ; Lyon : 5 victoires, 2 nuls, 3 défaites.
+Lille a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : lille ou match nul. Option plus grosse cote : victoire de Lille.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 20:45
+competition: Ligue 1
+equipe1: Strasbourg
+equipe2: Brest
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
+Strasbourg host Brest in the Ligue 1.
+Record: Strasbourg: 3 wins, 1 draw, 6 defeats; Brest: 4 wins, 3 draws, 3 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
+Strasbourg reçoit Brest en Ligue 1.
+Bilan : Strasbourg : 3 victoires, 1 nul, 6 défaites ; Brest : 4 victoires, 3 nuls, 3 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 15:00
+competition: Ligue 1
+equipe1: Paris FC
+equipe2: Angers
+pronostic: Victoire de Paris FC
+pronostic_en: Paris FC to win
+pronostic_es: Gana Paris FC
+cote:
+bookmaker: 1xbet
+proba: 70-14-16
+score: 2-0
+analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
+Paris FC host Angers in the Ligue 1.
+Record: Paris FC: 6 wins, 2 draws, 2 defeats; Angers: 2 wins, 2 draws, 6 defeats.
+Paris FC are clearly better placed and play at home.
+My pick: Paris FC to win. Bigger odds: Paris FC win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
+Paris FC reçoit Angers en Ligue 1.
+Bilan : Paris FC : 6 victoires, 2 nuls, 2 défaites ; Angers : 2 victoires, 2 nuls, 6 défaites.
+Paris FC est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Paris FC. Option plus grosse cote : Paris FC gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 17:15
+competition: Ligue 1
+equipe1: Lorient
+equipe2: Stade Rennais
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Sunday 22 November: 17:15 in Douala, Lagos and Paris.
+Lorient host Stade Rennais in the Ligue 1.
+Record: Lorient: 4 wins, 3 draws, 3 defeats; Stade Rennais: 5 wins, 1 draw, 4 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 17h15 à Douala et à Paris.
+Lorient reçoit Stade Rennais en Ligue 1.
+Bilan : Lorient : 4 victoires, 3 nuls, 3 défaites ; Stade Rennais : 5 victoires, 1 nul, 4 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-27 20:45
+competition: Ligue 1
+equipe1: Brest
+equipe2: Paris FC
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Friday 27 November: 20:45 in Douala, Lagos and Paris.
+Brest host Paris FC in the Ligue 1.
+Record: Brest: 4 wins, 3 draws, 3 defeats; Paris FC: 6 wins, 2 draws, 2 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 27 novembre : 20h45 à Douala et à Paris.
+Brest reçoit Paris FC en Ligue 1.
+Bilan : Brest : 4 victoires, 3 nuls, 3 défaites ; Paris FC : 6 victoires, 2 nuls, 2 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 15:00
+competition: Serie A
+equipe1: Como
+equipe2: Cagliari
+pronostic: Victoire de Como
+pronostic_en: Como to win
+pronostic_es: Gana Como
+cote:
+bookmaker: 1xbet
+proba: 59-18-23
+score: 2-0
+analyse_en: Kick-off Saturday 21 November: 15:00 in Douala, Lagos and Paris.
+Como host Cagliari in the Serie A.
+Record: Como: 7 wins, 2 draws, 2 defeats; Cagliari: 5 wins, 1 draw, 5 defeats.
+Como are clearly better placed and play at home.
+My pick: Como to win. Bigger odds: Como win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 15h à Douala et à Paris.
+Como reçoit Cagliari en Serie A.
+Bilan : Como : 7 victoires, 2 nuls, 2 défaites ; Cagliari : 5 victoires, 1 nul, 5 défaites.
+Como est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Como. Option plus grosse cote : Como gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 15:00
+competition: Serie A
+equipe1: Lazio
+equipe2: Lecce
+pronostic: Victoire de Lazio
+pronostic_en: Lazio to win
+pronostic_es: Gana Lazio
+cote:
+bookmaker: 1xbet
+proba: 79-9-12
+score: 3-0
+analyse_en: Kick-off Saturday 21 November: 15:00 in Douala, Lagos and Paris.
+Lazio host Lecce in the Serie A.
+Record: Lazio: 9 wins, 2 draws, 0 defeats; Lecce: 3 wins, 1 draw, 7 defeats.
+Lazio are clearly better placed and play at home.
+My pick: Lazio to win. Bigger odds: Lazio win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 15h à Douala et à Paris.
+Lazio reçoit Lecce en Serie A.
+Bilan : Lazio : 9 victoires, 2 nuls, 0 défaite ; Lecce : 3 victoires, 1 nul, 7 défaites.
+Lazio est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Lazio. Option plus grosse cote : Lazio gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 18:00
+competition: Serie A
+equipe1: Parma
+equipe2: AS Roma
+pronostic: Victoire de AS Roma
+pronostic_en: AS Roma to win
+pronostic_es: Gana AS Roma
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 0-2
+analyse_en: Kick-off Saturday 21 November: 18:00 in Douala, Lagos and Paris.
+Parma host AS Roma in the Serie A.
+Record: Parma: 2 wins, 2 draws, 7 defeats; AS Roma: 8 wins, 3 draws, 0 defeats.
+AS Roma are clearly stronger, even away.
+My pick: AS Roma to win. Bigger odds: AS Roma win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 18h à Douala et à Paris.
+Parma reçoit AS Roma en Serie A.
+Bilan : Parma : 2 victoires, 2 nuls, 7 défaites ; AS Roma : 8 victoires, 3 nuls, 0 défaite.
+AS Roma est nettement plus fort, même en déplacement.
+Mon choix : victoire de AS Roma. Option plus grosse cote : AS Roma gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 12:30
+competition: Serie A
+equipe1: Juventus
+equipe2: Venezia
+pronostic: Victoire de Juventus
+pronostic_en: Juventus to win
+pronostic_es: Gana Juventus
+cote:
+bookmaker: 1xbet
+proba: 68-14-18
+score: 2-0
+analyse_en: Kick-off Sunday 22 November: 12:30 in Douala, Lagos and Paris.
+Juventus host Venezia in the Serie A.
+Record: Juventus: 5 wins, 3 draws, 3 defeats; Venezia: 2 wins, 0 draws, 9 defeats.
+Juventus are clearly better placed and play at home.
+My pick: Juventus to win. Bigger odds: Juventus win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 12h30 à Douala et à Paris.
+Juventus reçoit Venezia en Serie A.
+Bilan : Juventus : 5 victoires, 3 nuls, 3 défaites ; Venezia : 2 victoires, 0 nul, 9 défaites.
+Juventus est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Juventus. Option plus grosse cote : Juventus gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 15:00
+competition: Serie A
+equipe1: Bologna
+equipe2: Udinese
+pronostic: Victoire de Bologna
+pronostic_en: Bologna to win
+pronostic_es: Gana Bologna
+cote:
+bookmaker: 1xbet
+proba: 68-14-18
+score: 2-0
+analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
+Bologna host Udinese in the Serie A.
+Record: Bologna: 5 wins, 2 draws, 4 defeats; Udinese: 1 win, 2 draws, 8 defeats.
+Bologna are clearly better placed and play at home.
+My pick: Bologna to win. Bigger odds: Bologna win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
+Bologna reçoit Udinese en Serie A.
+Bilan : Bologna : 5 victoires, 2 nuls, 4 défaites ; Udinese : 1 victoire, 2 nuls, 8 défaites.
+Bologna est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Bologna. Option plus grosse cote : Bologna gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 15:00
+competition: Serie A
+equipe1: Sassuolo
+equipe2: Genoa
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
+Sassuolo host Genoa in the Serie A.
+Record: Sassuolo: 2 wins, 2 draws, 7 defeats; Genoa: 4 wins, 1 draw, 6 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
+Sassuolo reçoit Genoa en Serie A.
+Bilan : Sassuolo : 2 victoires, 2 nuls, 7 défaites ; Genoa : 4 victoires, 1 nul, 6 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 18:00
+competition: Serie A
+equipe1: Milan
+equipe2: Frosinone
+pronostic: Milan ou match nul
+pronostic_en: Milan or draw
+pronostic_es: Milan o empate
+cote:
+bookmaker: 1xbet
+proba: 49-23-28
+score: 1-0
+analyse_en: Kick-off Sunday 22 November: 18:00 in Douala, Lagos and Paris.
+Milan host Frosinone in the Serie A.
+Record: Milan: 7 wins, 3 draws, 1 defeat; Frosinone: 6 wins, 2 draws, 3 defeats.
+Milan have the home edge, but I cover the draw to stay safe.
+My pick: Milan or draw. Bigger odds: Milan to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 18h à Douala et à Paris.
+Milan reçoit Frosinone en Serie A.
+Bilan : Milan : 7 victoires, 3 nuls, 1 défaite ; Frosinone : 6 victoires, 2 nuls, 3 défaites.
+Milan a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : milan ou match nul. Option plus grosse cote : victoire de Milan.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 20:45
+competition: Serie A
+equipe1: Monza
+equipe2: Fiorentina
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Monday 23 November: 20:45 in Douala, Lagos and Paris.
+Monza host Fiorentina in the Serie A.
+Record: Monza: 2 wins, 1 draw, 8 defeats; Fiorentina: 2 wins, 3 draws, 6 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 23 novembre : 20h45 à Douala et à Paris.
+Monza reçoit Fiorentina en Serie A.
+Bilan : Monza : 2 victoires, 1 nul, 8 défaites ; Fiorentina : 2 victoires, 3 nuls, 6 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-27 20:45
+competition: Serie A
+equipe1: Venezia
+equipe2: Bologna
+pronostic: Bologna ou match nul
+pronostic_en: Bologna or draw
+pronostic_es: Bologna o empate
+cote:
+bookmaker: 1xbet
+proba: 21-36-43
+score: 0-1
+analyse_en: Kick-off Friday 27 November: 20:45 in Douala, Lagos and Paris.
+Venezia host Bologna in the Serie A.
+Record: Venezia: 2 wins, 0 draws, 9 defeats; Bologna: 5 wins, 2 draws, 4 defeats.
+Bologna are slightly better, but away games are hard: I cover the draw.
+My pick: Bologna or draw. Bigger odds: Bologna to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 27 novembre : 20h45 à Douala et à Paris.
+Venezia reçoit Bologna en Serie A.
+Bilan : Venezia : 2 victoires, 0 nul, 9 défaites ; Bologna : 5 victoires, 2 nuls, 4 défaites.
+Bologna est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : bologna ou match nul. Option plus grosse cote : victoire de Bologna.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 15:30
+competition: Bundesliga
+equipe1: Union Berlin
+equipe2: RB Leipzig
+pronostic: Victoire de RB Leipzig
+pronostic_en: RB Leipzig to win
+pronostic_es: Gana RB Leipzig
+cote:
+bookmaker: 1xbet
+proba: 13-39-48
+score: 0-2
+analyse_en: Kick-off Saturday 21 November: 15:30 in Douala, Lagos and Paris.
+Union Berlin host RB Leipzig in the Bundesliga.
+Record: Union Berlin: 1 win, 4 draws, 4 defeats; RB Leipzig: 6 wins, 0 draws, 3 defeats.
+RB Leipzig are clearly stronger, even away.
+My pick: RB Leipzig to win. Bigger odds: RB Leipzig win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 15h30 à Douala et à Paris.
+Union Berlin reçoit RB Leipzig en Bundesliga.
+Bilan : Union Berlin : 1 victoire, 4 nuls, 4 défaites ; RB Leipzig : 6 victoires, 0 nul, 3 défaites.
+RB Leipzig est nettement plus fort, même en déplacement.
+Mon choix : victoire de RB Leipzig. Option plus grosse cote : RB Leipzig gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 15:30
+competition: Bundesliga
+equipe1: Bayer Leverkusen
+equipe2: Paderborn 07
+pronostic: Victoire de Bayer Leverkusen
+pronostic_en: Bayer Leverkusen to win
+pronostic_es: Gana Bayer Leverkusen
+cote:
+bookmaker: 1xbet
+proba: 60-18-22
+score: 2-0
+analyse_en: Kick-off Saturday 21 November: 15:30 in Douala, Lagos and Paris.
+Bayer Leverkusen host Paderborn 07 in the Bundesliga.
+Record: Bayer Leverkusen: 5 wins, 1 draw, 3 defeats; Paderborn 07: 2 wins, 4 draws, 3 defeats.
+Bayer Leverkusen are clearly better placed and play at home.
+My pick: Bayer Leverkusen to win. Bigger odds: Bayer Leverkusen win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 15h30 à Douala et à Paris.
+Bayer Leverkusen reçoit Paderborn 07 en Bundesliga.
+Bilan : Bayer Leverkusen : 5 victoires, 1 nul, 3 défaites ; Paderborn 07 : 2 victoires, 4 nuls, 3 défaites.
+Bayer Leverkusen est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Bayer Leverkusen. Option plus grosse cote : Bayer Leverkusen gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 15:30
+competition: Bundesliga
+equipe1: Eintracht Frankfurt
+equipe2: TSG Hoffenheim
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Saturday 21 November: 15:30 in Douala, Lagos and Paris.
+Eintracht Frankfurt host TSG Hoffenheim in the Bundesliga.
+Record: Eintracht Frankfurt: 3 wins, 3 draws, 3 defeats; TSG Hoffenheim: 4 wins, 0 draws, 5 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 15h30 à Douala et à Paris.
+Eintracht Frankfurt reçoit TSG Hoffenheim en Bundesliga.
+Bilan : Eintracht Frankfurt : 3 victoires, 3 nuls, 3 défaites ; TSG Hoffenheim : 4 victoires, 0 nul, 5 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 15:30
+competition: Bundesliga
+equipe1: Elversberg
+equipe2: Freiburg
+pronostic: Freiburg ou match nul
+pronostic_en: Freiburg or draw
+pronostic_es: Freiburg o empate
+cote:
+bookmaker: 1xbet
+proba: 25-34-41
+score: 0-1
+analyse_en: Kick-off Saturday 21 November: 15:30 in Douala, Lagos and Paris.
+Elversberg host Freiburg in the Bundesliga.
+Record: Elversberg: 4 wins, 1 draw, 4 defeats; Freiburg: 6 wins, 1 draw, 2 defeats.
+Freiburg are slightly better, but away games are hard: I cover the draw.
+My pick: Freiburg or draw. Bigger odds: Freiburg to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 15h30 à Douala et à Paris.
+Elversberg reçoit Freiburg en Bundesliga.
+Bilan : Elversberg : 4 victoires, 1 nul, 4 défaites ; Freiburg : 6 victoires, 1 nul, 2 défaites.
+Freiburg est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : freiburg ou match nul. Option plus grosse cote : victoire de Freiburg.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 18:30
+competition: Bundesliga
+equipe1: Schalke 04
+equipe2: VfB Stuttgart
+pronostic: VfB Stuttgart ou match nul
+pronostic_en: VfB Stuttgart or draw
+pronostic_es: VfB Stuttgart o empate
+cote:
+bookmaker: 1xbet
+proba: 25-34-41
+score: 0-1
+analyse_en: Kick-off Saturday 21 November: 18:30 in Douala, Lagos and Paris.
+Schalke 04 host VfB Stuttgart in the Bundesliga.
+Record: Schalke 04: 1 win, 3 draws, 5 defeats; VfB Stuttgart: 4 wins, 0 draws, 5 defeats.
+VfB Stuttgart are slightly better, but away games are hard: I cover the draw.
+My pick: VfB Stuttgart or draw. Bigger odds: VfB Stuttgart to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 18h30 à Douala et à Paris.
+Schalke 04 reçoit VfB Stuttgart en Bundesliga.
+Bilan : Schalke 04 : 1 victoire, 3 nuls, 5 défaites ; VfB Stuttgart : 4 victoires, 0 nul, 5 défaites.
+VfB Stuttgart est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : vfB Stuttgart ou match nul. Option plus grosse cote : victoire de VfB Stuttgart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 15:30
+competition: Bundesliga
+equipe1: Augsburg
+equipe2: Mainz
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Sunday 22 November: 15:30 in Douala, Lagos and Paris.
+Augsburg host Mainz in the Bundesliga.
+Record: Augsburg: 2 wins, 3 draws, 4 defeats; Mainz: 3 wins, 1 draw, 5 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 15h30 à Douala et à Paris.
+Augsburg reçoit Mainz en Bundesliga.
+Bilan : Augsburg : 2 victoires, 3 nuls, 4 défaites ; Mainz : 3 victoires, 1 nul, 5 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 17:30
+competition: Bundesliga
+equipe1: Werder Bremen
+equipe2: Hamburg SV
+pronostic: Werder Bremen ou match nul
+pronostic_en: Werder Bremen or draw
+pronostic_es: Werder Bremen o empate
+cote:
+bookmaker: 1xbet
+proba: 49-23-28
+score: 1-0
+analyse_en: Kick-off Sunday 22 November: 17:30 in Douala, Lagos and Paris.
+Werder Bremen host Hamburg SV in the Bundesliga.
+Record: Werder Bremen: 4 wins, 3 draws, 2 defeats; Hamburg SV: 4 wins, 0 draws, 5 defeats.
+Werder Bremen have the home edge, but I cover the draw to stay safe.
+My pick: Werder Bremen or draw. Bigger odds: Werder Bremen to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 17h30 à Douala et à Paris.
+Werder Bremen reçoit Hamburg SV en Bundesliga.
+Bilan : Werder Bremen : 4 victoires, 3 nuls, 2 défaites ; Hamburg SV : 4 victoires, 0 nul, 5 défaites.
+Werder Bremen a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : werder Bremen ou match nul. Option plus grosse cote : victoire de Werder Bremen.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-27 20:30
+competition: Bundesliga
+equipe1: Werder Bremen
+equipe2: Borussia Mönchengladbach
+pronostic: Victoire de Werder Bremen
+pronostic_en: Werder Bremen to win
+pronostic_es: Gana Werder Bremen
+cote:
+bookmaker: 1xbet
+proba: 70-14-16
+score: 2-0
+analyse_en: Kick-off Friday 27 November: 20:30 in Douala, Lagos and Paris.
+Werder Bremen host Borussia Mönchengladbach in the Bundesliga.
+Record: Werder Bremen: 4 wins, 3 draws, 2 defeats; Borussia Mönchengladbach: 1 win, 1 draw, 7 defeats.
+Werder Bremen are clearly better placed and play at home.
+My pick: Werder Bremen to win. Bigger odds: Werder Bremen win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 27 novembre : 20h30 à Douala et à Paris.
+Werder Bremen reçoit Borussia Mönchengladbach en Bundesliga.
+Bilan : Werder Bremen : 4 victoires, 3 nuls, 2 défaites ; Borussia Mönchengladbach : 1 victoire, 1 nul, 7 défaites.
+Werder Bremen est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Werder Bremen. Option plus grosse cote : Werder Bremen gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-20 20:30
+competition: Liga 2
+equipe1: Andorra
+equipe2: Leganés
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Friday 20 November: 20:30 in Douala, Lagos and Paris.
+Andorra host Leganés in the Liga 2.
+Record: Andorra: 3 wins, 2 draws, 8 defeats; Leganés: 4 wins, 3 draws, 7 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 20 novembre : 20h30 à Douala et à Paris.
+Andorra reçoit Leganés en Liga 2.
+Bilan : Andorra : 3 victoires, 2 nuls, 8 défaites ; Leganés : 4 victoires, 3 nuls, 7 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 14:00
+competition: Liga 2
+equipe1: CD Sabadell
+equipe2: Granada
+pronostic: Granada ou match nul
+pronostic_en: Granada or draw
+pronostic_es: Granada o empate
+cote:
+bookmaker: 1xbet
+proba: 24-34-42
+score: 0-1
+analyse_en: Kick-off Saturday 21 November: 14:00 in Douala, Lagos and Paris.
+CD Sabadell host Granada in the Liga 2.
+Record: CD Sabadell: 4 wins, 6 draws, 4 defeats; Granada: 8 wins, 2 draws, 3 defeats.
+Granada are slightly better, but away games are hard: I cover the draw.
+My pick: Granada or draw. Bigger odds: Granada to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 14h à Douala et à Paris.
+CD Sabadell reçoit Granada en Liga 2.
+Bilan : CD Sabadell : 4 victoires, 6 nuls, 4 défaites ; Granada : 8 victoires, 2 nuls, 3 défaites.
+Granada est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : granada ou match nul. Option plus grosse cote : victoire de Granada.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 16:15
+competition: Liga 2
+equipe1: Real Sociedad II
+equipe2: Cádiz
+pronostic: Real Sociedad II ou match nul
+pronostic_en: Real Sociedad II or draw
+pronostic_es: Real Sociedad II o empate
+cote:
+bookmaker: 1xbet
+proba: 45-25-30
+score: 1-0
+analyse_en: Kick-off Saturday 21 November: 16:15 in Douala, Lagos and Paris.
+Real Sociedad II host Cádiz in the Liga 2.
+Record: Real Sociedad II: 3 wins, 4 draws, 7 defeats; Cádiz: 2 wins, 5 draws, 7 defeats.
+Real Sociedad II have the home edge, but I cover the draw to stay safe.
+My pick: Real Sociedad II or draw. Bigger odds: Real Sociedad II to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 16h15 à Douala et à Paris.
+Real Sociedad II reçoit Cádiz en Liga 2.
+Bilan : Real Sociedad II : 3 victoires, 4 nuls, 7 défaites ; Cádiz : 2 victoires, 5 nuls, 7 défaites.
+Real Sociedad II a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : real Sociedad II ou match nul. Option plus grosse cote : victoire de Real Sociedad II.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 18:30
+competition: Liga 2
+equipe1: Castellón
+equipe2: Eldense
+pronostic: Victoire de Castellón
+pronostic_en: Castellón to win
+pronostic_es: Gana Castellón
+cote:
+bookmaker: 1xbet
+proba: 68-14-18
+score: 2-0
+analyse_en: Kick-off Saturday 21 November: 18:30 in Douala, Lagos and Paris.
+Castellón host Eldense in the Liga 2.
+Record: Castellón: 9 wins, 3 draws, 1 defeat; Eldense: 5 wins, 2 draws, 7 defeats.
+Castellón are clearly better placed and play at home.
+My pick: Castellón to win. Bigger odds: Castellón win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 18h30 à Douala et à Paris.
+Castellón reçoit Eldense en Liga 2.
+Bilan : Castellón : 9 victoires, 3 nuls, 1 défaite ; Eldense : 5 victoires, 2 nuls, 7 défaites.
+Castellón est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Castellón. Option plus grosse cote : Castellón gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 21:00
+competition: Liga 2
+equipe1: Tenerife
+equipe2: Mallorca
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Saturday 21 November: 21:00 in Douala, Lagos and Paris.
+Tenerife host Mallorca in the Liga 2.
+Record: Tenerife: 4 wins, 6 draws, 3 defeats; Mallorca: 6 wins, 5 draws, 2 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 21 novembre : 21h à Douala et à Paris.
+Tenerife reçoit Mallorca en Liga 2.
+Bilan : Tenerife : 4 victoires, 6 nuls, 3 défaites ; Mallorca : 6 victoires, 5 nuls, 2 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 14:00
+competition: Liga 2
+equipe1: Córdoba
+equipe2: Real Oviedo
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Sunday 22 November: 14:00 in Douala, Lagos and Paris.
+Córdoba host Real Oviedo in the Liga 2.
+Record: Córdoba: 6 wins, 2 draws, 6 defeats; Real Oviedo: 6 wins, 3 draws, 5 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 14h à Douala et à Paris.
+Córdoba reçoit Real Oviedo en Liga 2.
+Bilan : Córdoba : 6 victoires, 2 nuls, 6 défaites ; Real Oviedo : 6 victoires, 3 nuls, 5 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 16:15
+competition: Liga 2
+equipe1: Sporting Gijón
+equipe2: Las Palmas
+pronostic: Sporting Gijón ou match nul
+pronostic_en: Sporting Gijón or draw
+pronostic_es: Sporting Gijón o empate
+cote:
+bookmaker: 1xbet
+proba: 46-24-30
+score: 1-0
+analyse_en: Kick-off Sunday 22 November: 16:15 in Douala, Lagos and Paris.
+Sporting Gijón host Las Palmas in the Liga 2.
+Record: Sporting Gijón: 7 wins, 2 draws, 5 defeats; Las Palmas: 6 wins, 2 draws, 6 defeats.
+Sporting Gijón have the home edge, but I cover the draw to stay safe.
+My pick: Sporting Gijón or draw. Bigger odds: Sporting Gijón to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 16h15 à Douala et à Paris.
+Sporting Gijón reçoit Las Palmas en Liga 2.
+Bilan : Sporting Gijón : 7 victoires, 2 nuls, 5 défaites ; Las Palmas : 6 victoires, 2 nuls, 6 défaites.
+Sporting Gijón a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : sporting Gijón ou match nul. Option plus grosse cote : victoire de Sporting Gijón.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 18:30
+competition: Liga 2
+equipe1: Girona
+equipe2: Eibar
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Sunday 22 November: 18:30 in Douala, Lagos and Paris.
+Girona host Eibar in the Liga 2.
+Record: Girona: 7 wins, 3 draws, 4 defeats; Eibar: 7 wins, 3 draws, 3 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 18h30 à Douala et à Paris.
+Girona reçoit Eibar en Liga 2.
+Bilan : Girona : 7 victoires, 3 nuls, 4 défaites ; Eibar : 7 victoires, 3 nuls, 3 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 18:30
+competition: Liga 2
+equipe1: Celta Fortuna
+equipe2: Real Valladolid
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Sunday 22 November: 18:30 in Douala, Lagos and Paris.
+Celta Fortuna host Real Valladolid in the Liga 2.
+Record: Celta Fortuna: 3 wins, 4 draws, 7 defeats; Real Valladolid: 5 wins, 3 draws, 6 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 18h30 à Douala et à Paris.
+Celta Fortuna reçoit Real Valladolid en Liga 2.
+Bilan : Celta Fortuna : 3 victoires, 4 nuls, 7 défaites ; Real Valladolid : 5 victoires, 3 nuls, 6 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 21:00
+competition: Liga 2
+equipe1: Burgos
+equipe2: Albacete
+pronostic: Victoire de Burgos
+pronostic_en: Burgos to win
+pronostic_es: Gana Burgos
+cote:
+bookmaker: 1xbet
+proba: 62-17-21
+score: 2-0
+analyse_en: Kick-off Sunday 22 November: 21:00 in Douala, Lagos and Paris.
+Burgos host Albacete in the Liga 2.
+Record: Burgos: 7 wins, 3 draws, 4 defeats; Albacete: 4 wins, 1 draw, 9 defeats.
+Burgos are clearly better placed and play at home.
+My pick: Burgos to win. Bigger odds: Burgos win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 22 novembre : 21h à Douala et à Paris.
+Burgos reçoit Albacete en Liga 2.
+Bilan : Burgos : 7 victoires, 3 nuls, 4 défaites ; Albacete : 4 victoires, 1 nul, 9 défaites.
+Burgos est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Burgos. Option plus grosse cote : Burgos gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 20:30
+competition: Liga 2
+equipe1: Ceuta
+equipe2: Almería
+pronostic: Victoire de Almería
+pronostic_en: Almería to win
+pronostic_es: Gana Almería
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 0-2
+analyse_en: Kick-off Monday 23 November: 20:30 in Douala, Lagos and Paris.
+Ceuta host Almería in the Liga 2.
+Record: Ceuta: 1 win, 2 draws, 11 defeats; Almería: 10 wins, 2 draws, 2 defeats.
+Almería are clearly stronger, even away.
+My pick: Almería to win. Bigger odds: Almería win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi lundi 23 novembre : 20h30 à Douala et à Paris.
+Ceuta reçoit Almería en Liga 2.
+Bilan : Ceuta : 1 victoire, 2 nuls, 11 défaites ; Almería : 10 victoires, 2 nuls, 2 défaites.
+Almería est nettement plus fort, même en déplacement.
+Mon choix : victoire de Almería. Option plus grosse cote : Almería gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-27 20:30
+competition: Liga 2
+equipe1: Leganés
+equipe2: CD Sabadell
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Friday 27 November: 20:30 in Douala, Lagos and Paris.
+Leganés host CD Sabadell in the Liga 2.
+Record: Leganés: 4 wins, 3 draws, 7 defeats; CD Sabadell: 4 wins, 6 draws, 4 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi vendredi 27 novembre : 20h30 à Douala et à Paris.
+Leganés reçoit CD Sabadell en Liga 2.
+Bilan : Leganés : 4 victoires, 3 nuls, 7 défaites ; CD Sabadell : 4 victoires, 6 nuls, 4 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 18:45
+competition: Ligue des Champions
+equipe1: Bodo/Glimt
+equipe2: LASK Linz
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Tuesday 24 November: 18:45 in Douala, Lagos and Paris.
+Bodo/Glimt host LASK Linz in the Ligue des Champions.
+Record: Bodo/Glimt: 1 win, 1 draw, 2 defeats; LASK Linz: 2 wins, 0 draws, 2 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 24 novembre : 18h45 à Douala et à Paris.
+Bodo/Glimt reçoit LASK Linz en Ligue des Champions.
+Bilan : Bodo/Glimt : 1 victoire, 1 nul, 2 défaites ; LASK Linz : 2 victoires, 0 nul, 2 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 18:45
+competition: Ligue des Champions
+equipe1: Galatasaray
+equipe2: Aston Villa
+pronostic: Aston Villa ou match nul
+pronostic_en: Aston Villa or draw
+pronostic_es: Aston Villa o empate
+cote:
+bookmaker: 1xbet
+proba: 24-34-42
+score: 0-1
+analyse_en: Kick-off Tuesday 24 November: 18:45 in Douala, Lagos and Paris.
+Galatasaray host Aston Villa in the Ligue des Champions.
+Record: Galatasaray: 2 wins, 0 draws, 2 defeats; Aston Villa: 3 wins, 0 draws, 1 defeat.
+Aston Villa are slightly better, but away games are hard: I cover the draw.
+My pick: Aston Villa or draw. Bigger odds: Aston Villa to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 24 novembre : 18h45 à Douala et à Paris.
+Galatasaray reçoit Aston Villa en Ligue des Champions.
+Bilan : Galatasaray : 2 victoires, 0 nul, 2 défaites ; Aston Villa : 3 victoires, 0 nul, 1 défaite.
+Aston Villa est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : aston Villa ou match nul. Option plus grosse cote : victoire de Aston Villa.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 21:00
+competition: Ligue des Champions
+equipe1: Arsenal
+equipe2: Borussia Dortmund
+pronostic: Arsenal ou match nul
+pronostic_en: Arsenal or draw
+pronostic_es: Arsenal o empate
+cote:
+bookmaker: 1xbet
+proba: 47-24-29
+score: 1-0
+analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
+Arsenal host Borussia Dortmund in the Ligue des Champions.
+Record: Arsenal: 3 wins, 1 draw, 0 defeats; Borussia Dortmund: 3 wins, 0 draws, 1 defeat.
+Arsenal have the home edge, but I cover the draw to stay safe.
+My pick: Arsenal or draw. Bigger odds: Arsenal to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
+Arsenal reçoit Borussia Dortmund en Ligue des Champions.
+Bilan : Arsenal : 3 victoires, 1 nul, 0 défaite ; Borussia Dortmund : 3 victoires, 0 nul, 1 défaite.
+Arsenal a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : arsenal ou match nul. Option plus grosse cote : victoire de Arsenal.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 21:00
+competition: Ligue des Champions
+equipe1: Como
+equipe2: AEK Athens
+pronostic: Victoire de Como
+pronostic_en: Como to win
+pronostic_es: Gana Como
+cote:
+bookmaker: 1xbet
+proba: 75-11-14
+score: 3-0
+analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
+Como host AEK Athens in the Ligue des Champions.
+Record: Como: 3 wins, 0 draws, 1 defeat; AEK Athens: 1 win, 0 draws, 3 defeats.
+Como are clearly better placed and play at home.
+My pick: Como to win. Bigger odds: Como win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
+Como reçoit AEK Athens en Ligue des Champions.
+Bilan : Como : 3 victoires, 0 nul, 1 défaite ; AEK Athens : 1 victoire, 0 nul, 3 défaites.
+Como est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Como. Option plus grosse cote : Como gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 21:00
+competition: Ligue des Champions
+equipe1: Feyenoord Rotterdam
+equipe2: Porto
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
+Feyenoord Rotterdam host Porto in the Ligue des Champions.
+Record: Feyenoord Rotterdam: 1 win, 0 draws, 3 defeats; Porto: 1 win, 0 draws, 3 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
+Feyenoord Rotterdam reçoit Porto en Ligue des Champions.
+Bilan : Feyenoord Rotterdam : 1 victoire, 0 nul, 3 défaites ; Porto : 1 victoire, 0 nul, 3 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 21:00
+competition: Ligue des Champions
+equipe1: RB Leipzig
+equipe2: Lens
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
+RB Leipzig host Lens in the Ligue des Champions.
+Record: RB Leipzig: 1 win, 0 draws, 3 defeats; Lens: 1 win, 0 draws, 3 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
+RB Leipzig reçoit Lens en Ligue des Champions.
+Bilan : RB Leipzig : 1 victoire, 0 nul, 3 défaites ; Lens : 1 victoire, 0 nul, 3 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 21:00
+competition: Ligue des Champions
+equipe1: Slovan Bratislava
+equipe2: Real Betis
+pronostic: Victoire de Real Betis
+pronostic_en: Real Betis to win
+pronostic_es: Gana Real Betis
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 1-3
+analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
+Slovan Bratislava host Real Betis in the Ligue des Champions.
+Record: Slovan Bratislava: 0 wins, 0 draws, 4 defeats; Real Betis: 3 wins, 0 draws, 1 defeat.
+Real Betis are clearly stronger, even away.
+My pick: Real Betis to win. Bigger odds: Real Betis win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
+Slovan Bratislava reçoit Real Betis en Ligue des Champions.
+Bilan : Slovan Bratislava : 0 victoire, 0 nul, 4 défaites ; Real Betis : 3 victoires, 0 nul, 1 défaite.
+Real Betis est nettement plus fort, même en déplacement.
+Mon choix : victoire de Real Betis. Option plus grosse cote : Real Betis gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 18:45
+competition: Ligue des Champions
+equipe1: Sabah FK
+equipe2: Barcelone
+pronostic: Victoire de Barcelone
+pronostic_en: Barcelone to win
+pronostic_es: Gana Barcelone
+cote:
+bookmaker: 1xbet
+proba: 10-40-50
+score: 0-2
+analyse_en: Kick-off Wednesday 25 November: 18:45 in Douala, Lagos and Paris.
+Sabah FK host Barcelone in the Ligue des Champions.
+Record: Sabah FK: 1 win, 0 draws, 3 defeats; Barcelone: 3 wins, 0 draws, 1 defeat.
+Barcelone are clearly stronger, even away.
+My pick: Barcelone to win. Bigger odds: Barcelone win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 18h45 à Douala et à Paris.
+Sabah FK reçoit Barcelone en Ligue des Champions.
+Bilan : Sabah FK : 1 victoire, 0 nul, 3 défaites ; Barcelone : 3 victoires, 0 nul, 1 défaite.
+Barcelone est nettement plus fort, même en déplacement.
+Mon choix : victoire de Barcelone. Option plus grosse cote : Barcelone gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 18:45
+competition: Ligue des Champions
+equipe1: Slavia Prague
+equipe2: Villarreal
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Wednesday 25 November: 18:45 in Douala, Lagos and Paris.
+Slavia Prague host Villarreal in the Ligue des Champions.
+Record: Slavia Prague: 0 wins, 1 draw, 3 defeats; Villarreal: 1 win, 0 draws, 3 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 18h45 à Douala et à Paris.
+Slavia Prague reçoit Villarreal en Ligue des Champions.
+Bilan : Slavia Prague : 0 victoire, 1 nul, 3 défaites ; Villarreal : 1 victoire, 0 nul, 3 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 21:00
+competition: Ligue des Champions
+equipe1: Atlético Madrid
+equipe2: Viking FK
+pronostic: Atlético Madrid ou match nul
+pronostic_en: Atlético Madrid or draw
+pronostic_es: Atlético Madrid o empate
+cote:
+bookmaker: 1xbet
+proba: 42-26-32
+score: 1-0
+analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
+Atlético Madrid host Viking FK in the Ligue des Champions.
+Record: Atlético Madrid: 1 win, 1 draw, 2 defeats; Viking FK: 1 win, 1 draw, 2 defeats.
+Atlético Madrid have the home edge, but I cover the draw to stay safe.
+My pick: Atlético Madrid or draw. Bigger odds: Atlético Madrid to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
+Atlético Madrid reçoit Viking FK en Ligue des Champions.
+Bilan : Atlético Madrid : 1 victoire, 1 nul, 2 défaites ; Viking FK : 1 victoire, 1 nul, 2 défaites.
+Atlético Madrid a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : atlético Madrid ou match nul. Option plus grosse cote : victoire de Atlético Madrid.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 21:00
+competition: Ligue des Champions
+equipe1: Club Brugge
+equipe2: Liverpool
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
+Club Brugge host Liverpool in the Ligue des Champions.
+Record: Club Brugge: 3 wins, 0 draws, 1 defeat; Liverpool: 3 wins, 0 draws, 1 defeat.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
+Club Brugge reçoit Liverpool en Ligue des Champions.
+Bilan : Club Brugge : 3 victoires, 0 nul, 1 défaite ; Liverpool : 3 victoires, 0 nul, 1 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 21:00
+competition: Ligue des Champions
+equipe1: Inter
+equipe2: VfB Stuttgart
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
+Inter host VfB Stuttgart in the Ligue des Champions.
+Record: Inter: 2 wins, 0 draws, 2 defeats; VfB Stuttgart: 2 wins, 1 draw, 1 defeat.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
+Inter reçoit VfB Stuttgart en Ligue des Champions.
+Bilan : Inter : 2 victoires, 0 nul, 2 défaites ; VfB Stuttgart : 2 victoires, 1 nul, 1 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 21:00
+competition: Ligue des Champions
+equipe1: Lille
+equipe2: Bayern Munich
+pronostic: Victoire de Bayern Munich
+pronostic_en: Bayern Munich to win
+pronostic_es: Gana Bayern Munich
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 0-2
+analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
+Lille host Bayern Munich in the Ligue des Champions.
+Record: Lille: 0 wins, 1 draw, 3 defeats; Bayern Munich: 2 wins, 2 draws, 0 defeats.
+Bayern Munich are clearly stronger, even away.
+My pick: Bayern Munich to win. Bigger odds: Bayern Munich win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
+Lille reçoit Bayern Munich en Ligue des Champions.
+Bilan : Lille : 0 victoire, 1 nul, 3 défaites ; Bayern Munich : 2 victoires, 2 nuls, 0 défaite.
+Bayern Munich est nettement plus fort, même en déplacement.
+Mon choix : victoire de Bayern Munich. Option plus grosse cote : Bayern Munich gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 21:00
+competition: Ligue des Champions
+equipe1: PSG
+equipe2: AS Roma
+pronostic: Victoire de PSG
+pronostic_en: PSG to win
+pronostic_es: Gana PSG
+cote:
+bookmaker: 1xbet
+proba: 84-7-9
+score: 3-0
+analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
+PSG host AS Roma in the Ligue des Champions.
+Record: PSG: 4 wins, 0 draws, 0 defeats; AS Roma: 1 win, 1 draw, 2 defeats.
+PSG are clearly better placed and play at home.
+My pick: PSG to win. Bigger odds: PSG win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
+PSG reçoit AS Roma en Ligue des Champions.
+Bilan : PSG : 4 victoires, 0 nul, 0 défaite ; AS Roma : 1 victoire, 1 nul, 2 défaites.
+PSG est nettement mieux classé et joue à domicile.
+Mon choix : victoire de PSG. Option plus grosse cote : PSG gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 21:00
+competition: Ligue des Champions
+equipe1: Shakhtar Donetsk
+equipe2: Fenerbahce
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
+Shakhtar Donetsk host Fenerbahce in the Ligue des Champions.
+Record: Shakhtar Donetsk: 1 win, 1 draw, 2 defeats; Fenerbahce: 1 win, 2 draws, 1 defeat.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
+Shakhtar Donetsk reçoit Fenerbahce en Ligue des Champions.
+Bilan : Shakhtar Donetsk : 1 victoire, 1 nul, 2 défaites ; Fenerbahce : 1 victoire, 2 nuls, 1 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-25 21:00
+competition: Ligue des Champions
+equipe1: Sporting CP
+equipe2: Manchester United
+pronostic: Victoire de Sporting CP
+pronostic_en: Sporting CP to win
+pronostic_es: Gana Sporting CP
+cote:
+bookmaker: 1xbet
+proba: 61-18-21
+score: 2-0
+analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
+Sporting CP host Manchester United in the Ligue des Champions.
+Record: Sporting CP: 3 wins, 0 draws, 1 defeat; Manchester United: 2 wins, 0 draws, 2 defeats.
+Sporting CP are clearly better placed and play at home.
+My pick: Sporting CP to win. Bigger odds: Sporting CP win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
+Sporting CP reçoit Manchester United en Ligue des Champions.
+Bilan : Sporting CP : 3 victoires, 0 nul, 1 défaite ; Manchester United : 2 victoires, 0 nul, 2 défaites.
+Sporting CP est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Sporting CP. Option plus grosse cote : Sporting CP gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Europa
+equipe1: Besiktas
+equipe2: Hapoel Be'er
+pronostic: Victoire de Besiktas
+pronostic_en: Besiktas to win
+pronostic_es: Gana Besiktas
+cote:
+bookmaker: 1xbet
+proba: 75-11-14
+score: 3-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Besiktas host Hapoel Be'er in the Ligue Europa.
+Record: Besiktas: 2 wins, 1 draw, 1 defeat; Hapoel Be'er: 0 wins, 1 draw, 3 defeats.
+Besiktas are clearly better placed and play at home.
+My pick: Besiktas to win. Bigger odds: Besiktas win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Besiktas reçoit Hapoel Be'er en Ligue Europa.
+Bilan : Besiktas : 2 victoires, 1 nul, 1 défaite ; Hapoel Be'er : 0 victoire, 1 nul, 3 défaites.
+Besiktas est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Besiktas. Option plus grosse cote : Besiktas gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Europa
+equipe1: Celta Vigo
+equipe2: Bournemouth
+pronostic: Victoire de Bournemouth
+pronostic_en: Bournemouth to win
+pronostic_es: Gana Bournemouth
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 1-3
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Celta Vigo host Bournemouth in the Ligue Europa.
+Record: Celta Vigo: 1 win, 0 draws, 3 defeats; Bournemouth: 4 wins, 0 draws, 0 defeats.
+Bournemouth are clearly stronger, even away.
+My pick: Bournemouth to win. Bigger odds: Bournemouth win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Celta Vigo reçoit Bournemouth en Ligue Europa.
+Bilan : Celta Vigo : 1 victoire, 0 nul, 3 défaites ; Bournemouth : 4 victoires, 0 nul, 0 défaite.
+Bournemouth est nettement plus fort, même en déplacement.
+Mon choix : victoire de Bournemouth. Option plus grosse cote : Bournemouth gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Europa
+equipe1: Dinamo Zagreb
+equipe2: Bayer Leverkusen
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Dinamo Zagreb host Bayer Leverkusen in the Ligue Europa.
+Record: Dinamo Zagreb: 2 wins, 1 draw, 1 defeat; Bayer Leverkusen: 3 wins, 0 draws, 1 defeat.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Dinamo Zagreb reçoit Bayer Leverkusen en Ligue Europa.
+Bilan : Dinamo Zagreb : 2 victoires, 1 nul, 1 défaite ; Bayer Leverkusen : 3 victoires, 0 nul, 1 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Europa
+equipe1: Olympiacos
+equipe2: Milan
+pronostic: Victoire de Olympiacos
+pronostic_en: Olympiacos to win
+pronostic_es: Gana Olympiacos
+cote:
+bookmaker: 1xbet
+proba: 80-9-11
+score: 3-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Olympiacos host Milan in the Ligue Europa.
+Record: Olympiacos: 3 wins, 1 draw, 0 defeats; Milan: 1 win, 0 draws, 3 defeats.
+Olympiacos are clearly better placed and play at home.
+My pick: Olympiacos to win. Bigger odds: Olympiacos win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Olympiacos reçoit Milan en Ligue Europa.
+Bilan : Olympiacos : 3 victoires, 1 nul, 0 défaite ; Milan : 1 victoire, 0 nul, 3 défaites.
+Olympiacos est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Olympiacos. Option plus grosse cote : Olympiacos gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Europa
+equipe1: RB Salzburg
+equipe2: Ararat-Armenia
+pronostic: Victoire de RB Salzburg
+pronostic_en: RB Salzburg to win
+pronostic_es: Gana RB Salzburg
+cote:
+bookmaker: 1xbet
+proba: 66-15-19
+score: 2-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+RB Salzburg host Ararat-Armenia in the Ligue Europa.
+Record: RB Salzburg: 1 win, 1 draw, 2 defeats; Ararat-Armenia: 0 wins, 0 draws, 4 defeats.
+RB Salzburg are clearly better placed and play at home.
+My pick: RB Salzburg to win. Bigger odds: RB Salzburg win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+RB Salzburg reçoit Ararat-Armenia en Ligue Europa.
+Bilan : RB Salzburg : 1 victoire, 1 nul, 2 défaites ; Ararat-Armenia : 0 victoire, 0 nul, 4 défaites.
+RB Salzburg est nettement mieux classé et joue à domicile.
+Mon choix : victoire de RB Salzburg. Option plus grosse cote : RB Salzburg gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Europa
+equipe1: Union St.-Gilloise
+equipe2: Lech Poznan
+pronostic: Victoire de Union St.-Gilloise
+pronostic_en: Union St.-Gilloise to win
+pronostic_es: Gana Union St.-Gilloise
+cote:
+bookmaker: 1xbet
+proba: 85-7-8
+score: 3-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Union St.-Gilloise host Lech Poznan in the Ligue Europa.
+Record: Union St.-Gilloise: 3 wins, 1 draw, 0 defeats; Lech Poznan: 0 wins, 1 draw, 3 defeats.
+Union St.-Gilloise are clearly better placed and play at home.
+My pick: Union St.-Gilloise to win. Bigger odds: Union St.-Gilloise win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Union St.-Gilloise reçoit Lech Poznan en Ligue Europa.
+Bilan : Union St.-Gilloise : 3 victoires, 1 nul, 0 défaite ; Lech Poznan : 0 victoire, 1 nul, 3 défaites.
+Union St.-Gilloise est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Union St.-Gilloise. Option plus grosse cote : Union St.-Gilloise gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Europa
+equipe1: Viktoria Plzen
+equipe2: Benfica
+pronostic: Victoire de Benfica
+pronostic_en: Benfica to win
+pronostic_es: Gana Benfica
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 1-3
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Viktoria Plzen host Benfica in the Ligue Europa.
+Record: Viktoria Plzen: 1 win, 0 draws, 3 defeats; Benfica: 4 wins, 0 draws, 0 defeats.
+Benfica are clearly stronger, even away.
+My pick: Benfica to win. Bigger odds: Benfica win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Viktoria Plzen reçoit Benfica en Ligue Europa.
+Bilan : Viktoria Plzen : 1 victoire, 0 nul, 3 défaites ; Benfica : 4 victoires, 0 nul, 0 défaite.
+Benfica est nettement plus fort, même en déplacement.
+Mon choix : victoire de Benfica. Option plus grosse cote : Benfica gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: Crystal Palace
+equipe2: Real Sociedad
+pronostic: Crystal Palace ou match nul
+pronostic_en: Crystal Palace or draw
+pronostic_es: Crystal Palace o empate
+cote:
+bookmaker: 1xbet
+proba: 42-26-32
+score: 1-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Crystal Palace host Real Sociedad in the Ligue Europa.
+Record: Crystal Palace: 1 win, 2 draws, 1 defeat; Real Sociedad: 1 win, 2 draws, 1 defeat.
+Crystal Palace have the home edge, but I cover the draw to stay safe.
+My pick: Crystal Palace or draw. Bigger odds: Crystal Palace to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Crystal Palace reçoit Real Sociedad en Ligue Europa.
+Bilan : Crystal Palace : 1 victoire, 2 nuls, 1 défaite ; Real Sociedad : 1 victoire, 2 nuls, 1 défaite.
+Crystal Palace a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : crystal Palace ou match nul. Option plus grosse cote : victoire de Crystal Palace.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: Ferencvaros
+equipe2: NK Celje
+pronostic: Victoire de Ferencvaros
+pronostic_en: Ferencvaros to win
+pronostic_es: Gana Ferencvaros
+cote:
+bookmaker: 1xbet
+proba: 84-7-9
+score: 3-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Ferencvaros host NK Celje in the Ligue Europa.
+Record: Ferencvaros: 4 wins, 0 draws, 0 defeats; NK Celje: 1 win, 1 draw, 2 defeats.
+Ferencvaros are clearly better placed and play at home.
+My pick: Ferencvaros to win. Bigger odds: Ferencvaros win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Ferencvaros reçoit NK Celje en Ligue Europa.
+Bilan : Ferencvaros : 4 victoires, 0 nul, 0 défaite ; NK Celje : 1 victoire, 1 nul, 2 défaites.
+Ferencvaros est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Ferencvaros. Option plus grosse cote : Ferencvaros gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: Juventus
+equipe2: Omonia Nicosia
+pronostic: Victoire de Juventus
+pronostic_en: Juventus to win
+pronostic_es: Gana Juventus
+cote:
+bookmaker: 1xbet
+proba: 66-15-19
+score: 2-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Juventus host Omonia Nicosia in the Ligue Europa.
+Record: Juventus: 3 wins, 1 draw, 0 defeats; Omonia Nicosia: 2 wins, 0 draws, 2 defeats.
+Juventus are clearly better placed and play at home.
+My pick: Juventus to win. Bigger odds: Juventus win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Juventus reçoit Omonia Nicosia en Ligue Europa.
+Bilan : Juventus : 3 victoires, 1 nul, 0 défaite ; Omonia Nicosia : 2 victoires, 0 nul, 2 défaites.
+Juventus est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Juventus. Option plus grosse cote : Juventus gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: Lyon
+equipe2: Lillestrom
+pronostic: Victoire de Lyon
+pronostic_en: Lyon to win
+pronostic_es: Gana Lyon
+cote:
+bookmaker: 1xbet
+proba: 75-11-14
+score: 3-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Lyon host Lillestrom in the Ligue Europa.
+Record: Lyon: 2 wins, 1 draw, 1 defeat; Lillestrom: 0 wins, 1 draw, 3 defeats.
+Lyon are clearly better placed and play at home.
+My pick: Lyon to win. Bigger odds: Lyon win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Lyon reçoit Lillestrom en Ligue Europa.
+Bilan : Lyon : 2 victoires, 1 nul, 1 défaite ; Lillestrom : 0 victoire, 1 nul, 3 défaites.
+Lyon est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Lyon. Option plus grosse cote : Lyon gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: NEC Nijmegen
+equipe2: Stade Rennais
+pronostic: NEC Nijmegen ou match nul
+pronostic_en: NEC Nijmegen or draw
+pronostic_es: NEC Nijmegen o empate
+cote:
+bookmaker: 1xbet
+proba: 47-24-29
+score: 1-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+NEC Nijmegen host Stade Rennais in the Ligue Europa.
+Record: NEC Nijmegen: 2 wins, 1 draw, 1 defeat; Stade Rennais: 1 win, 3 draws, 0 defeats.
+NEC Nijmegen have the home edge, but I cover the draw to stay safe.
+My pick: NEC Nijmegen or draw. Bigger odds: NEC Nijmegen to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+NEC Nijmegen reçoit Stade Rennais en Ligue Europa.
+Bilan : NEC Nijmegen : 2 victoires, 1 nul, 1 défaite ; Stade Rennais : 1 victoire, 3 nuls, 0 défaite.
+NEC Nijmegen a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : nEC Nijmegen ou match nul. Option plus grosse cote : victoire de NEC Nijmegen.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: OFI Crete
+equipe2: Anderlecht
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+OFI Crete host Anderlecht in the Ligue Europa.
+Record: OFI Crete: 2 wins, 0 draws, 2 defeats; Anderlecht: 2 wins, 0 draws, 2 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+OFI Crete reçoit Anderlecht en Ligue Europa.
+Bilan : OFI Crete : 2 victoires, 0 nul, 2 défaites ; Anderlecht : 2 victoires, 0 nul, 2 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: Sparta Prague
+equipe2: AZ Alkmaar
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Sparta Prague host AZ Alkmaar in the Ligue Europa.
+Record: Sparta Prague: 1 win, 1 draw, 2 defeats; AZ Alkmaar: 2 wins, 0 draws, 2 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Sparta Prague reçoit AZ Alkmaar en Ligue Europa.
+Bilan : Sparta Prague : 1 victoire, 1 nul, 2 défaites ; AZ Alkmaar : 2 victoires, 0 nul, 2 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: Sunderland
+equipe2: Jagiellonia Bialystok
+pronostic: Victoire de Sunderland
+pronostic_en: Sunderland to win
+pronostic_es: Gana Sunderland
+cote:
+bookmaker: 1xbet
+proba: 66-15-19
+score: 2-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Sunderland host Jagiellonia Bialystok in the Ligue Europa.
+Record: Sunderland: 2 wins, 1 draw, 1 defeat; Jagiellonia Bialystok: 1 win, 0 draws, 3 defeats.
+Sunderland are clearly better placed and play at home.
+My pick: Sunderland to win. Bigger odds: Sunderland win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Sunderland reçoit Jagiellonia Bialystok en Ligue Europa.
+Bilan : Sunderland : 2 victoires, 1 nul, 1 défaite ; Jagiellonia Bialystok : 1 victoire, 0 nul, 3 défaites.
+Sunderland est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Sunderland. Option plus grosse cote : Sunderland gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: Torreense
+equipe2: Celtic
+pronostic: Victoire de Torreense
+pronostic_en: Torreense to win
+pronostic_es: Gana Torreense
+cote:
+bookmaker: 1xbet
+proba: 61-18-21
+score: 2-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Torreense host Celtic in the Ligue Europa.
+Record: Torreense: 2 wins, 0 draws, 2 defeats; Celtic: 1 win, 0 draws, 3 defeats.
+Torreense are clearly better placed and play at home.
+My pick: Torreense to win. Bigger odds: Torreense win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Torreense reçoit Celtic en Ligue Europa.
+Bilan : Torreense : 2 victoires, 0 nul, 2 défaites ; Celtic : 1 victoire, 0 nul, 3 défaites.
+Torreense est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Torreense. Option plus grosse cote : Torreense gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Europa
+equipe1: TSG Hoffenheim
+equipe2: SK Sturm Graz
+pronostic: TSG Hoffenheim ou match nul
+pronostic_en: TSG Hoffenheim or draw
+pronostic_es: TSG Hoffenheim o empate
+cote:
+bookmaker: 1xbet
+proba: 42-26-32
+score: 1-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+TSG Hoffenheim host SK Sturm Graz in the Ligue Europa.
+Record: TSG Hoffenheim: 1 win, 1 draw, 2 defeats; SK Sturm Graz: 1 win, 1 draw, 2 defeats.
+TSG Hoffenheim have the home edge, but I cover the draw to stay safe.
+My pick: TSG Hoffenheim or draw. Bigger odds: TSG Hoffenheim to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+TSG Hoffenheim reçoit SK Sturm Graz en Ligue Europa.
+Bilan : TSG Hoffenheim : 1 victoire, 1 nul, 2 défaites ; SK Sturm Graz : 1 victoire, 1 nul, 2 défaites.
+TSG Hoffenheim a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : tSG Hoffenheim ou match nul. Option plus grosse cote : victoire de TSG Hoffenheim.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 16:30
+competition: Ligue Conférence
+equipe1: Kairat Almaty
+equipe2: Mjällby AIF
+pronostic: Victoire de Mjällby AIF
+pronostic_en: Mjällby AIF to win
+pronostic_es: Gana Mjällby AIF
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 0-2
+analyse_en: Kick-off Thursday 26 November: 16:30 in Douala, Lagos and Paris.
+Kairat Almaty host Mjällby AIF in the Ligue Conférence.
+Record: Kairat Almaty: 0 wins, 2 draws, 1 defeat; Mjällby AIF: 2 wins, 1 draw, 0 defeats.
+Mjällby AIF are clearly stronger, even away.
+My pick: Mjällby AIF to win. Bigger odds: Mjällby AIF win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 16h30 à Douala et à Paris.
+Kairat Almaty reçoit Mjällby AIF en Ligue Conférence.
+Bilan : Kairat Almaty : 0 victoire, 2 nuls, 1 défaite ; Mjällby AIF : 2 victoires, 1 nul, 0 défaite.
+Mjällby AIF est nettement plus fort, même en déplacement.
+Mon choix : victoire de Mjällby AIF. Option plus grosse cote : Mjällby AIF gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Ajax Amsterdam
+equipe2: Thun
+pronostic: Victoire de Ajax Amsterdam
+pronostic_en: Ajax Amsterdam to win
+pronostic_es: Gana Ajax Amsterdam
+cote:
+bookmaker: 1xbet
+proba: 66-15-19
+score: 2-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Ajax Amsterdam host Thun in the Ligue Conférence.
+Record: Ajax Amsterdam: 2 wins, 0 draws, 1 defeat; Thun: 1 win, 0 draws, 2 defeats.
+Ajax Amsterdam are clearly better placed and play at home.
+My pick: Ajax Amsterdam to win. Bigger odds: Ajax Amsterdam win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Ajax Amsterdam reçoit Thun en Ligue Conférence.
+Bilan : Ajax Amsterdam : 2 victoires, 0 nul, 1 défaite ; Thun : 1 victoire, 0 nul, 2 défaites.
+Ajax Amsterdam est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Ajax Amsterdam. Option plus grosse cote : Ajax Amsterdam gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Brighton & Hove Albion
+equipe2: CSU Craiova
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Brighton & Hove Albion host CSU Craiova in the Ligue Conférence.
+Record: Brighton & Hove Albion: 2 wins, 1 draw, 0 defeats; CSU Craiova: 2 wins, 1 draw, 0 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Brighton & Hove Albion reçoit CSU Craiova en Ligue Conférence.
+Bilan : Brighton & Hove Albion : 2 victoires, 1 nul, 0 défaite ; CSU Craiova : 2 victoires, 1 nul, 0 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Egnatia
+equipe2: Lincoln Red Imps
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Egnatia host Lincoln Red Imps in the Ligue Conférence.
+Record: Egnatia: 0 wins, 2 draws, 1 defeat; Lincoln Red Imps: 1 win, 0 draws, 2 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Egnatia reçoit Lincoln Red Imps en Ligue Conférence.
+Bilan : Egnatia : 0 victoire, 2 nuls, 1 défaite ; Lincoln Red Imps : 1 victoire, 0 nul, 2 défaites.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Heart of Midlothian
+equipe2: AS Monaco
+pronostic: Victoire de AS Monaco
+pronostic_en: AS Monaco to win
+pronostic_es: Gana AS Monaco
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 1-3
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Heart of Midlothian host AS Monaco in the Ligue Conférence.
+Record: Heart of Midlothian: 0 wins, 1 draw, 2 defeats; AS Monaco: 3 wins, 0 draws, 0 defeats.
+AS Monaco are clearly stronger, even away.
+My pick: AS Monaco to win. Bigger odds: AS Monaco win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Heart of Midlothian reçoit AS Monaco en Ligue Conférence.
+Bilan : Heart of Midlothian : 0 victoire, 1 nul, 2 défaites ; AS Monaco : 3 victoires, 0 nul, 0 défaite.
+AS Monaco est nettement plus fort, même en déplacement.
+Mon choix : victoire de AS Monaco. Option plus grosse cote : AS Monaco gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Iberia 1999
+equipe2: Getafe
+pronostic: Iberia 1999 ou match nul
+pronostic_en: Iberia 1999 or draw
+pronostic_es: Iberia 1999 o empate
+cote:
+bookmaker: 1xbet
+proba: 42-26-32
+score: 1-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Iberia 1999 host Getafe in the Ligue Conférence.
+Record: Iberia 1999: 0 wins, 1 draw, 2 defeats; Getafe: 0 wins, 1 draw, 2 defeats.
+Iberia 1999 have the home edge, but I cover the draw to stay safe.
+My pick: Iberia 1999 or draw. Bigger odds: Iberia 1999 to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Iberia 1999 reçoit Getafe en Ligue Conférence.
+Bilan : Iberia 1999 : 0 victoire, 1 nul, 2 défaites ; Getafe : 0 victoire, 1 nul, 2 défaites.
+Iberia 1999 a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : iberia 1999 ou match nul. Option plus grosse cote : victoire de Iberia 1999.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Jablonec
+equipe2: Lugano
+pronostic: Victoire de Lugano
+pronostic_en: Lugano to win
+pronostic_es: Gana Lugano
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 1-3
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Jablonec host Lugano in the Ligue Conférence.
+Record: Jablonec: 0 wins, 2 draws, 1 defeat; Lugano: 3 wins, 0 draws, 0 defeats.
+Lugano are clearly stronger, even away.
+My pick: Lugano to win. Bigger odds: Lugano win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Jablonec reçoit Lugano en Ligue Conférence.
+Bilan : Jablonec : 0 victoire, 2 nuls, 1 défaite ; Lugano : 3 victoires, 0 nul, 0 défaite.
+Lugano est nettement plus fort, même en déplacement.
+Mon choix : victoire de Lugano. Option plus grosse cote : Lugano gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Kauno Zalgiris
+equipe2: Riga FC
+pronostic: Riga FC ou match nul
+pronostic_en: Riga FC or draw
+pronostic_es: Riga FC o empate
+cote:
+bookmaker: 1xbet
+proba: 21-36-43
+score: 0-1
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Kauno Zalgiris host Riga FC in the Ligue Conférence.
+Record: Kauno Zalgiris: 0 wins, 0 draws, 3 defeats; Riga FC: 0 wins, 3 draws, 0 defeats.
+Riga FC are slightly better, but away games are hard: I cover the draw.
+My pick: Riga FC or draw. Bigger odds: Riga FC to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Kauno Zalgiris reçoit Riga FC en Ligue Conférence.
+Bilan : Kauno Zalgiris : 0 victoire, 0 nul, 3 défaites ; Riga FC : 0 victoire, 3 nuls, 0 défaite.
+Riga FC est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : riga FC ou match nul. Option plus grosse cote : victoire de Riga FC.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: Pafos
+equipe2: Midtjylland
+pronostic: Pafos ou match nul
+pronostic_en: Pafos or draw
+pronostic_es: Pafos o empate
+cote:
+bookmaker: 1xbet
+proba: 42-26-32
+score: 1-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+Pafos host Midtjylland in the Ligue Conférence.
+Record: Pafos: 0 wins, 1 draw, 2 defeats; Midtjylland: 0 wins, 1 draw, 2 defeats.
+Pafos have the home edge, but I cover the draw to stay safe.
+My pick: Pafos or draw. Bigger odds: Pafos to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+Pafos reçoit Midtjylland en Ligue Conférence.
+Bilan : Pafos : 0 victoire, 1 nul, 2 défaites ; Midtjylland : 0 victoire, 1 nul, 2 défaites.
+Pafos a l'avantage à domicile, mais je couvre le nul par prudence.
+Mon choix : pafos ou match nul. Option plus grosse cote : victoire de Pafos.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 18:45
+competition: Ligue Conférence
+equipe1: SK Brann
+equipe2: AGF
+pronostic: Victoire de SK Brann
+pronostic_en: SK Brann to win
+pronostic_es: Gana SK Brann
+cote:
+bookmaker: 1xbet
+proba: 78-10-12
+score: 3-0
+analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
+SK Brann host AGF in the Ligue Conférence.
+Record: SK Brann: 2 wins, 1 draw, 0 defeats; AGF: 0 wins, 2 draws, 1 defeat.
+SK Brann are clearly better placed and play at home.
+My pick: SK Brann to win. Bigger odds: SK Brann win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
+SK Brann reçoit AGF en Ligue Conférence.
+Bilan : SK Brann : 2 victoires, 1 nul, 0 défaite ; AGF : 0 victoire, 2 nuls, 1 défaite.
+SK Brann est nettement mieux classé et joue à domicile.
+Mon choix : victoire de SK Brann. Option plus grosse cote : SK Brann gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: Borac Banja Luka
+equipe2: Atalanta
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Borac Banja Luka host Atalanta in the Ligue Conférence.
+Record: Borac Banja Luka: 1 win, 0 draws, 2 defeats; Atalanta: 1 win, 1 draw, 1 defeat.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Borac Banja Luka reçoit Atalanta en Ligue Conférence.
+Bilan : Borac Banja Luka : 1 victoire, 0 nul, 2 défaites ; Atalanta : 1 victoire, 1 nul, 1 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: Braga
+equipe2: KuPS Kuopio
+pronostic: Victoire de Braga
+pronostic_en: Braga to win
+pronostic_es: Gana Braga
+cote:
+bookmaker: 1xbet
+proba: 66-15-19
+score: 2-0
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Braga host KuPS Kuopio in the Ligue Conférence.
+Record: Braga: 1 win, 1 draw, 1 defeat; KuPS Kuopio: 0 wins, 1 draw, 2 defeats.
+Braga are clearly better placed and play at home.
+My pick: Braga to win. Bigger odds: Braga win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Braga reçoit KuPS Kuopio en Ligue Conférence.
+Bilan : Braga : 1 victoire, 1 nul, 1 défaite ; KuPS Kuopio : 0 victoire, 1 nul, 2 défaites.
+Braga est nettement mieux classé et joue à domicile.
+Mon choix : victoire de Braga. Option plus grosse cote : Braga gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: CSKA Sofia
+equipe2: Trabzonspor
+pronostic: Victoire de Trabzonspor
+pronostic_en: Trabzonspor to win
+pronostic_es: Gana Trabzonspor
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 0-2
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+CSKA Sofia host Trabzonspor in the Ligue Conférence.
+Record: CSKA Sofia: 0 wins, 1 draw, 2 defeats; Trabzonspor: 2 wins, 0 draws, 1 defeat.
+Trabzonspor are clearly stronger, even away.
+My pick: Trabzonspor to win. Bigger odds: Trabzonspor win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+CSKA Sofia reçoit Trabzonspor en Ligue Conférence.
+Bilan : CSKA Sofia : 0 victoire, 1 nul, 2 défaites ; Trabzonspor : 2 victoires, 0 nul, 1 défaite.
+Trabzonspor est nettement plus fort, même en déplacement.
+Mon choix : victoire de Trabzonspor. Option plus grosse cote : Trabzonspor gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: Nordsjælland
+equipe2: Panathinaikos
+pronostic: Victoire de Panathinaikos
+pronostic_en: Panathinaikos to win
+pronostic_es: Gana Panathinaikos
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 1-3
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Nordsjælland host Panathinaikos in the Ligue Conférence.
+Record: Nordsjælland: 0 wins, 2 draws, 1 defeat; Panathinaikos: 3 wins, 0 draws, 0 defeats.
+Panathinaikos are clearly stronger, even away.
+My pick: Panathinaikos to win. Bigger odds: Panathinaikos win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Nordsjælland reçoit Panathinaikos en Ligue Conférence.
+Bilan : Nordsjælland : 0 victoire, 2 nuls, 1 défaite ; Panathinaikos : 3 victoires, 0 nul, 0 défaite.
+Panathinaikos est nettement plus fort, même en déplacement.
+Mon choix : victoire de Panathinaikos. Option plus grosse cote : Panathinaikos gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: Hajduk Split
+equipe2: Sint-Truidense
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Hajduk Split host Sint-Truidense in the Ligue Conférence.
+Record: Hajduk Split: 2 wins, 0 draws, 1 defeat; Sint-Truidense: 2 wins, 1 draw, 0 defeats.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Hajduk Split reçoit Sint-Truidense en Ligue Conférence.
+Bilan : Hajduk Split : 2 victoires, 0 nul, 1 défaite ; Sint-Truidense : 2 victoires, 1 nul, 0 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: Inter D'Escaldes
+equipe2: F.C. København
+pronostic: Victoire de F.C. København
+pronostic_en: F.C. København to win
+pronostic_es: Gana F.C. København
+cote:
+bookmaker: 1xbet
+proba: 8-41-51
+score: 1-3
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Inter D'Escaldes host F.C. København in the Ligue Conférence.
+Record: Inter D'Escaldes: 0 wins, 0 draws, 3 defeats; F.C. København: 2 wins, 1 draw, 0 defeats.
+F.C. København are clearly stronger, even away.
+My pick: F.C. København to win. Bigger odds: F.C. København win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Inter D'Escaldes reçoit F.C. København en Ligue Conférence.
+Bilan : Inter D'Escaldes : 0 victoire, 0 nul, 3 défaites ; F.C. København : 2 victoires, 1 nul, 0 défaite.
+F.C. København est nettement plus fort, même en déplacement.
+Mon choix : victoire de F.C. København. Option plus grosse cote : F.C. København gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: KAA Gent
+equipe2: Red Star Belgrade
+pronostic: Les deux équipes marquent
+pronostic_en: Both teams to score
+pronostic_es: Ambos equipos marcan
+cote:
+bookmaker: 1xbet
+proba: 34-30-36
+score: 1-1
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+KAA Gent host Red Star Belgrade in the Ligue Conférence.
+Record: KAA Gent: 1 win, 1 draw, 1 defeat; Red Star Belgrade: 1 win, 1 draw, 1 defeat.
+Two evenly matched sides: an open game, both can score.
+My pick: Both teams to score. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+KAA Gent reçoit Red Star Belgrade en Ligue Conférence.
+Bilan : KAA Gent : 1 victoire, 1 nul, 1 défaite ; Red Star Belgrade : 1 victoire, 1 nul, 1 défaite.
+Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
+Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-26 21:00
+competition: Ligue Conférence
+equipe1: Freiburg
+equipe2: Twente
+pronostic: Twente ou match nul
+pronostic_en: Twente or draw
+pronostic_es: Twente o empate
+cote:
+bookmaker: 1xbet
+proba: 21-36-43
+score: 0-1
+analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
+Freiburg host Twente in the Ligue Conférence.
+Record: Freiburg: 2 wins, 0 draws, 1 defeat; Twente: 3 wins, 0 draws, 0 defeats.
+Twente are slightly better, but away games are hard: I cover the draw.
+My pick: Twente or draw. Bigger odds: Twente to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
+Freiburg reçoit Twente en Ligue Conférence.
+Bilan : Freiburg : 2 victoires, 0 nul, 1 défaite ; Twente : 3 victoires, 0 nul, 0 défaite.
+Twente est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
+Mon choix : twente ou match nul. Option plus grosse cote : victoire de Twente.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-21 19:00
+competition: NBA
+sport: basket
+equipe1: Philadelphia 76ers
+equipe2: Milwaukee Bucks
+pronostic: Victoire des 76ers
+pronostic_en: 76ers to win
+pronostic_es: Ganan los 76ers
+cote:
+bookmaker: 1xbet
+proba: 88-12
+score: 118-108
+analyse_en: Tip-off Saturday 21 November at 19:00 in Douala and Lagos.
+Philadelphia 76ers are 13-3; Milwaukee Bucks are 1-15.
+76ers are the better team on record, and they play at home.
+My pick: 76ers to win. Bigger odds: 76ers win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match samedi 21 novembre à 19h à Douala.
+Philadelphia 76ers est à 13 victoires et 3 défaites ; Milwaukee Bucks est à 1 victoires et 15 défaites.
+76ers a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des 76ers. Option plus grosse cote : 76ers gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 01:30
+competition: NBA
+sport: basket
+equipe1: New York Knicks
+equipe2: Portland Trail Blazers
+pronostic: Victoire des Trail Blazers
+pronostic_en: Trail Blazers to win
+pronostic_es: Ganan los Trail Blazers
+cote:
+bookmaker: 1xbet
+proba: 48-52
+score: 108-112
+analyse_en: Tip-off Sunday 22 November at 01:30 in Douala and Lagos.
+New York Knicks are 9-6; Portland Trail Blazers are 10-5.
+Trail Blazers are the better team on record, even on the road.
+My pick: Trail Blazers to win. Bigger odds: Trail Blazers win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 22 novembre à 1h30 à Douala.
+New York Knicks est à 9 victoires et 6 défaites ; Portland Trail Blazers est à 10 victoires et 5 défaites.
+Trail Blazers a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Trail Blazers. Option plus grosse cote : Trail Blazers gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 02:00
+competition: NBA
+sport: basket
+equipe1: Dallas Mavericks
+equipe2: LA Clippers
+pronostic: Victoire des Mavericks
+pronostic_en: Mavericks to win
+pronostic_es: Ganan los Mavericks
+cote:
+bookmaker: 1xbet
+proba: 72-28
+score: 118-108
+analyse_en: Tip-off Sunday 22 November at 02:00 in Douala and Lagos.
+Dallas Mavericks are 8-7; LA Clippers are 4-10.
+Mavericks are the better team on record, and they play at home.
+My pick: Mavericks to win. Bigger odds: Mavericks win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 22 novembre à 2h à Douala.
+Dallas Mavericks est à 8 victoires et 7 défaites ; LA Clippers est à 4 victoires et 10 défaites.
+Mavericks a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Mavericks. Option plus grosse cote : Mavericks gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 02:00
+competition: NBA
+sport: basket
+equipe1: Minnesota Timberwolves
+equipe2: Memphis Grizzlies
+pronostic: Victoire des Grizzlies
+pronostic_en: Grizzlies to win
+pronostic_es: Ganan los Grizzlies
+cote:
+bookmaker: 1xbet
+proba: 48-52
+score: 108-112
+analyse_en: Tip-off Sunday 22 November at 02:00 in Douala and Lagos.
+Minnesota Timberwolves are 11-5; Memphis Grizzlies are 12-4.
+Grizzlies are the better team on record, even on the road.
+My pick: Grizzlies to win. Bigger odds: Grizzlies win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 22 novembre à 2h à Douala.
+Minnesota Timberwolves est à 11 victoires et 5 défaites ; Memphis Grizzlies est à 12 victoires et 4 défaites.
+Grizzlies a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Grizzlies. Option plus grosse cote : Grizzlies gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 02:00
+competition: NBA
+sport: basket
+equipe1: San Antonio Spurs
+equipe2: New Orleans Pelicans
+pronostic: Victoire des Spurs
+pronostic_en: Spurs to win
+pronostic_es: Ganan los Spurs
+cote:
+bookmaker: 1xbet
+proba: 88-12
+score: 118-108
+analyse_en: Tip-off Sunday 22 November at 02:00 in Douala and Lagos.
+San Antonio Spurs are 13-3; New Orleans Pelicans are 5-11.
+Spurs are the better team on record, and they play at home.
+My pick: Spurs to win. Bigger odds: Spurs win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 22 novembre à 2h à Douala.
+San Antonio Spurs est à 13 victoires et 3 défaites ; New Orleans Pelicans est à 5 victoires et 11 défaites.
+Spurs a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Spurs. Option plus grosse cote : Spurs gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 04:00
+competition: NBA
+sport: basket
+equipe1: Sacramento Kings
+equipe2: Boston Celtics
+pronostic: Victoire des Celtics
+pronostic_en: Celtics to win
+pronostic_es: Ganan los Celtics
+cote:
+bookmaker: 1xbet
+proba: 12-88
+score: 106-116
+analyse_en: Tip-off Sunday 22 November at 04:00 in Douala and Lagos.
+Sacramento Kings are 1-13; Boston Celtics are 11-4.
+Celtics are the better team on record, even on the road.
+My pick: Celtics to win. Bigger odds: Celtics win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 22 novembre à 4h à Douala.
+Sacramento Kings est à 1 victoires et 13 défaites ; Boston Celtics est à 11 victoires et 4 défaites.
+Celtics a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Celtics. Option plus grosse cote : Celtics gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-22 21:30
+competition: NBA
+sport: basket
+equipe1: Atlanta Hawks
+equipe2: Detroit Pistons
+pronostic: Victoire des Pistons
+pronostic_en: Pistons to win
+pronostic_es: Ganan los Pistons
+cote:
+bookmaker: 1xbet
+proba: 46-54
+score: 108-112
+analyse_en: Tip-off Sunday 22 November at 21:30 in Douala and Lagos.
+Atlanta Hawks are 9-6; Detroit Pistons are 10-4.
+Pistons are the better team on record, even on the road.
+My pick: Pistons to win. Bigger odds: Pistons win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match dimanche 22 novembre à 21h30 à Douala.
+Atlanta Hawks est à 9 victoires et 6 défaites ; Detroit Pistons est à 10 victoires et 4 défaites.
+Pistons a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Pistons. Option plus grosse cote : Pistons gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 00:00
+competition: NBA
+sport: basket
+equipe1: Miami Heat
+equipe2: Oklahoma City Thunder
+pronostic: Victoire des Heat
+pronostic_en: Heat to win
+pronostic_es: Ganan los Heat
+cote:
+bookmaker: 1xbet
+proba: 54-46
+score: 112-106
+analyse_en: Tip-off Monday 23 November at 00:00 in Douala and Lagos.
+Miami Heat are 9-6; Oklahoma City Thunder are 9-6.
+Heat are the better team on record, and they play at home.
+My pick: Heat to win. Bigger odds: Heat win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 23 novembre à 0h à Douala.
+Miami Heat est à 9 victoires et 6 défaites ; Oklahoma City Thunder est à 9 victoires et 6 défaites.
+Heat a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Heat. Option plus grosse cote : Heat gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 01:00
+competition: NBA
+sport: basket
+equipe1: Washington Wizards
+equipe2: Orlando Magic
+pronostic: Victoire des Magic
+pronostic_en: Magic to win
+pronostic_es: Ganan los Magic
+cote:
+bookmaker: 1xbet
+proba: 46-54
+score: 108-112
+analyse_en: Tip-off Monday 23 November at 01:00 in Douala and Lagos.
+Washington Wizards are 5-11; Orlando Magic are 6-8.
+Magic are the better team on record, even on the road.
+My pick: Magic to win. Bigger odds: Magic win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 23 novembre à 1h à Douala.
+Washington Wizards est à 5 victoires et 11 défaites ; Orlando Magic est à 6 victoires et 8 défaites.
+Magic a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Magic. Option plus grosse cote : Magic gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 01:00
+competition: NBA
+sport: basket
+equipe1: Chicago Bulls
+equipe2: Denver Nuggets
+pronostic: Victoire des Nuggets
+pronostic_en: Nuggets to win
+pronostic_es: Ganan los Nuggets
+cote:
+bookmaker: 1xbet
+proba: 31-69
+score: 108-112
+analyse_en: Tip-off Monday 23 November at 01:00 in Douala and Lagos.
+Chicago Bulls are 4-10; Denver Nuggets are 8-5.
+Nuggets are the better team on record, even on the road.
+My pick: Nuggets to win. Bigger odds: Nuggets win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 23 novembre à 1h à Douala.
+Chicago Bulls est à 4 victoires et 10 défaites ; Denver Nuggets est à 8 victoires et 5 défaites.
+Nuggets a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Nuggets. Option plus grosse cote : Nuggets gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 01:00
+competition: NBA
+sport: basket
+equipe1: Utah Jazz
+equipe2: Dallas Mavericks
+pronostic: Victoire des Mavericks
+pronostic_en: Mavericks to win
+pronostic_es: Ganan los Mavericks
+cote:
+bookmaker: 1xbet
+proba: 30-70
+score: 108-112
+analyse_en: Tip-off Monday 23 November at 01:00 in Douala and Lagos.
+Utah Jazz are 3-13; Dallas Mavericks are 8-7.
+Mavericks are the better team on record, even on the road.
+My pick: Mavericks to win. Bigger odds: Mavericks win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 23 novembre à 1h à Douala.
+Utah Jazz est à 3 victoires et 13 défaites ; Dallas Mavericks est à 8 victoires et 7 défaites.
+Mavericks a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Mavericks. Option plus grosse cote : Mavericks gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 02:00
+competition: NBA
+sport: basket
+equipe1: New York Knicks
+equipe2: Indiana Pacers
+pronostic: Victoire des Knicks
+pronostic_en: Knicks to win
+pronostic_es: Ganan los Knicks
+cote:
+bookmaker: 1xbet
+proba: 73-27
+score: 118-108
+analyse_en: Tip-off Monday 23 November at 02:00 in Douala and Lagos.
+New York Knicks are 9-6; Indiana Pacers are 5-10.
+Knicks are the better team on record, and they play at home.
+My pick: Knicks to win. Bigger odds: Knicks win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 23 novembre à 2h à Douala.
+New York Knicks est à 9 victoires et 6 défaites ; Indiana Pacers est à 5 victoires et 10 défaites.
+Knicks a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Knicks. Option plus grosse cote : Knicks gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-23 02:30
+competition: NBA
+sport: basket
+equipe1: Golden State Warriors
+equipe2: Boston Celtics
+pronostic: Victoire des Celtics
+pronostic_en: Celtics to win
+pronostic_es: Ganan los Celtics
+cote:
+bookmaker: 1xbet
+proba: 38-62
+score: 108-112
+analyse_en: Tip-off Monday 23 November at 02:30 in Douala and Lagos.
+Golden State Warriors are 8-8; Boston Celtics are 11-4.
+Celtics are the better team on record, even on the road.
+My pick: Celtics to win. Bigger odds: Celtics win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match lundi 23 novembre à 2h30 à Douala.
+Golden State Warriors est à 8 victoires et 8 défaites ; Boston Celtics est à 11 victoires et 4 défaites.
+Celtics a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Celtics. Option plus grosse cote : Celtics gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 01:00
+competition: NBA
+sport: basket
+equipe1: Charlotte Hornets
+equipe2: Memphis Grizzlies
+pronostic: Victoire des Grizzlies
+pronostic_en: Grizzlies to win
+pronostic_es: Ganan los Grizzlies
+cote:
+bookmaker: 1xbet
+proba: 22-78
+score: 106-116
+analyse_en: Tip-off Tuesday 24 November at 01:00 in Douala and Lagos.
+Charlotte Hornets are 4-10; Memphis Grizzlies are 12-4.
+Grizzlies are the better team on record, even on the road.
+My pick: Grizzlies to win. Bigger odds: Grizzlies win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 1h à Douala.
+Charlotte Hornets est à 4 victoires et 10 défaites ; Memphis Grizzlies est à 12 victoires et 4 défaites.
+Grizzlies a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Grizzlies. Option plus grosse cote : Grizzlies gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 01:00
+competition: NBA
+sport: basket
+equipe1: Philadelphia 76ers
+equipe2: Portland Trail Blazers
+pronostic: Victoire des 76ers
+pronostic_en: 76ers to win
+pronostic_es: Ganan los 76ers
+cote:
+bookmaker: 1xbet
+proba: 64-36
+score: 112-106
+analyse_en: Tip-off Tuesday 24 November at 01:00 in Douala and Lagos.
+Philadelphia 76ers are 13-3; Portland Trail Blazers are 10-5.
+76ers are the better team on record, and they play at home.
+My pick: 76ers to win. Bigger odds: 76ers win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 1h à Douala.
+Philadelphia 76ers est à 13 victoires et 3 défaites ; Portland Trail Blazers est à 10 victoires et 5 défaites.
+76ers a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des 76ers. Option plus grosse cote : 76ers gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 01:30
+competition: NBA
+sport: basket
+equipe1: Indiana Pacers
+equipe2: Oklahoma City Thunder
+pronostic: Victoire des Thunder
+pronostic_en: Thunder to win
+pronostic_es: Ganan los Thunder
+cote:
+bookmaker: 1xbet
+proba: 36-64
+score: 108-112
+analyse_en: Tip-off Tuesday 24 November at 01:30 in Douala and Lagos.
+Indiana Pacers are 5-10; Oklahoma City Thunder are 9-6.
+Thunder are the better team on record, even on the road.
+My pick: Thunder to win. Bigger odds: Thunder win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 1h30 à Douala.
+Indiana Pacers est à 5 victoires et 10 défaites ; Oklahoma City Thunder est à 9 victoires et 6 défaites.
+Thunder a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Thunder. Option plus grosse cote : Thunder gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 01:30
+competition: NBA
+sport: basket
+equipe1: Toronto Raptors
+equipe2: Milwaukee Bucks
+pronostic: Victoire des Raptors
+pronostic_en: Raptors to win
+pronostic_es: Ganan los Raptors
+cote:
+bookmaker: 1xbet
+proba: 73-27
+score: 118-108
+analyse_en: Tip-off Tuesday 24 November at 01:30 in Douala and Lagos.
+Toronto Raptors are 5-10; Milwaukee Bucks are 1-15.
+Raptors are the better team on record, and they play at home.
+My pick: Raptors to win. Bigger odds: Raptors win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 1h30 à Douala.
+Toronto Raptors est à 5 victoires et 10 défaites ; Milwaukee Bucks est à 1 victoires et 15 défaites.
+Raptors a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Raptors. Option plus grosse cote : Raptors gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 01:30
+competition: NBA
+sport: basket
+equipe1: Minnesota Timberwolves
+equipe2: Brooklyn Nets
+pronostic: Victoire des Timberwolves
+pronostic_en: Timberwolves to win
+pronostic_es: Ganan los Timberwolves
+cote:
+bookmaker: 1xbet
+proba: 87-13
+score: 118-108
+analyse_en: Tip-off Tuesday 24 November at 01:30 in Douala and Lagos.
+Minnesota Timberwolves are 11-5; Brooklyn Nets are 3-11.
+Timberwolves are the better team on record, and they play at home.
+My pick: Timberwolves to win. Bigger odds: Timberwolves win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 1h30 à Douala.
+Minnesota Timberwolves est à 11 victoires et 5 défaites ; Brooklyn Nets est à 3 victoires et 11 défaites.
+Timberwolves a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Timberwolves. Option plus grosse cote : Timberwolves gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 02:00
+competition: NBA
+sport: basket
+equipe1: Chicago Bulls
+equipe2: Cleveland Cavaliers
+pronostic: Victoire des Cavaliers
+pronostic_en: Cavaliers to win
+pronostic_es: Ganan los Cavaliers
+cote:
+bookmaker: 1xbet
+proba: 39-61
+score: 108-112
+analyse_en: Tip-off Tuesday 24 November at 02:00 in Douala and Lagos.
+Chicago Bulls are 4-10; Cleveland Cavaliers are 8-8.
+Cavaliers are the better team on record, even on the road.
+My pick: Cavaliers to win. Bigger odds: Cavaliers win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 2h à Douala.
+Chicago Bulls est à 4 victoires et 10 défaites ; Cleveland Cavaliers est à 8 victoires et 8 défaites.
+Cavaliers a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Cavaliers. Option plus grosse cote : Cavaliers gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 02:00
+competition: NBA
+sport: basket
+equipe1: New Orleans Pelicans
+equipe2: Phoenix Suns
+pronostic: Victoire des Suns
+pronostic_en: Suns to win
+pronostic_es: Ganan los Suns
+cote:
+bookmaker: 1xbet
+proba: 41-59
+score: 108-112
+analyse_en: Tip-off Tuesday 24 November at 02:00 in Douala and Lagos.
+New Orleans Pelicans are 5-11; Phoenix Suns are 7-7.
+Suns are the better team on record, even on the road.
+My pick: Suns to win. Bigger odds: Suns win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 2h à Douala.
+New Orleans Pelicans est à 5 victoires et 11 défaites ; Phoenix Suns est à 7 victoires et 7 défaites.
+Suns a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Suns. Option plus grosse cote : Suns gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 02:30
+competition: NBA
+sport: basket
+equipe1: Houston Rockets
+equipe2: LA Clippers
+pronostic: Victoire des Rockets
+pronostic_en: Rockets to win
+pronostic_es: Ganan los Rockets
+cote:
+bookmaker: 1xbet
+proba: 87-13
+score: 118-108
+analyse_en: Tip-off Tuesday 24 November at 02:30 in Douala and Lagos.
+Houston Rockets are 12-4; LA Clippers are 4-10.
+Rockets are the better team on record, and they play at home.
+My pick: Rockets to win. Bigger odds: Rockets win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 2h30 à Douala.
+Houston Rockets est à 12 victoires et 4 défaites ; LA Clippers est à 4 victoires et 10 défaites.
+Rockets a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Rockets. Option plus grosse cote : Rockets gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 04:00
+competition: NBA
+sport: basket
+equipe1: Los Angeles Lakers
+equipe2: Utah Jazz
+pronostic: Victoire des Lakers
+pronostic_en: Lakers to win
+pronostic_es: Ganan los Lakers
+cote:
+bookmaker: 1xbet
+proba: 88-12
+score: 118-108
+analyse_en: Tip-off Tuesday 24 November at 04:00 in Douala and Lagos.
+Los Angeles Lakers are 13-3; Utah Jazz are 3-13.
+Lakers are the better team on record, and they play at home.
+My pick: Lakers to win. Bigger odds: Lakers win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 4h à Douala.
+Los Angeles Lakers est à 13 victoires et 3 défaites ; Utah Jazz est à 3 victoires et 13 défaites.
+Lakers a le meilleur bilan, et joue à domicile.
+Mon choix : victoire des Lakers. Option plus grosse cote : Lakers gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+
+---
+date: 2026-11-24 04:00
+competition: NBA
+sport: basket
+equipe1: Sacramento Kings
+equipe2: San Antonio Spurs
+pronostic: Victoire des Spurs
+pronostic_en: Spurs to win
+pronostic_es: Ganan los Spurs
+cote:
+bookmaker: 1xbet
+proba: 12-88
+score: 106-116
+analyse_en: Tip-off Tuesday 24 November at 04:00 in Douala and Lagos.
+Sacramento Kings are 1-13; San Antonio Spurs are 13-3.
+Spurs are the better team on record, even on the road.
+My pick: Spurs to win. Bigger odds: Spurs win by more than 5.5 points.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Début du match mardi 24 novembre à 4h à Douala.
+Sacramento Kings est à 1 victoires et 13 défaites ; San Antonio Spurs est à 13 victoires et 3 défaites.
+Spurs a le meilleur bilan, même en déplacement.
+Mon choix : victoire des Spurs. Option plus grosse cote : Spurs gagne avec plus de 5,5 points d'écart.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.

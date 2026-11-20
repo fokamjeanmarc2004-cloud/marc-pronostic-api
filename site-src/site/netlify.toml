@@ -106,6 +106,12 @@
   force = true
 
 [[redirects]]
+  from = "/ac-milan-predictions"
+  to = "/ac-milan-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/acerca-de"
   to = "/acerca-de.html"
   status = 301
@@ -172,6 +178,12 @@
   force = true
 
 [[redirects]]
+  from = "/atalanta-predictions"
+  to = "/atalanta-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/atletico-madrid-predictions"
   to = "/atletico-madrid-predictions.html"
   status = 301
@@ -180,6 +192,12 @@
 [[redirects]]
   from = "/barcelona-predictions"
   to = "/barcelona-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bayer-leverkusen-predictions"
+  to = "/bayer-leverkusen-predictions.html"
   status = 301
   force = true
 
@@ -310,8 +328,20 @@
   force = true
 
 [[redirects]]
+  from = "/charlotte-hornets-predictions"
+  to = "/charlotte-hornets-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/chelsea-predictions"
   to = "/chelsea-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/chicago-bulls-predictions"
+  to = "/chicago-bulls-predictions.html"
   status = 301
   force = true
 
@@ -502,8 +532,26 @@
   force = true
 
 [[redirects]]
+  from = "/crystal-palace-predictions"
+  to = "/crystal-palace-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/cuota-de-2"
   to = "/cuota-de-2.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/dallas-mavericks-predictions"
+  to = "/dallas-mavericks-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/denver-nuggets-predictions"
+  to = "/denver-nuggets-predictions.html"
   status = 301
   force = true
 
@@ -574,6 +622,24 @@
   force = true
 
 [[redirects]]
+  from = "/galatasaray-predictions"
+  to = "/galatasaray-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/getafe-predictions"
+  to = "/getafe-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/golden-state-warriors-predictions"
+  to = "/golden-state-warriors-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/goldpari-codigo-promocional"
   to = "/goldpari-codigo-promocional.html"
   status = 301
@@ -592,6 +658,12 @@
   force = true
 
 [[redirects]]
+  from = "/houston-rockets-predictions"
+  to = "/houston-rockets-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/how-to-register-1xbet-2026"
   to = "/how-to-register-1xbet-2026.html"
   status = 301
@@ -600,6 +672,12 @@
 [[redirects]]
   from = "/how-to-withdraw-1xbet-melbet-paripesa"
   to = "/how-to-withdraw-1xbet-melbet-paripesa.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/indiana-pacers-predictions"
+  to = "/indiana-pacers-predictions.html"
   status = 301
   force = true
 
@@ -634,14 +712,38 @@
   force = true
 
 [[redirects]]
+  from = "/la-clippers-predictions"
+  to = "/la-clippers-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/la-liga-predictions"
   to = "/la-liga-predictions.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/lens-predictions"
+  to = "/lens-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/levante-predictions"
+  to = "/levante-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/ligue-1-predictions"
   to = "/ligue-1-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lille-predictions"
+  to = "/lille-predictions.html"
   status = 301
   force = true
 
@@ -678,6 +780,12 @@
 [[redirects]]
   from = "/livres"
   to = "/livres.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lyon-predictions"
+  to = "/lyon-predictions.html"
   status = 301
   force = true
 
@@ -736,6 +844,30 @@
   force = true
 
 [[redirects]]
+  from = "/memphis-grizzlies-predictions"
+  to = "/memphis-grizzlies-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/miami-heat-predictions"
+  to = "/miami-heat-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/milwaukee-bucks-predictions"
+  to = "/milwaukee-bucks-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/minnesota-timberwolves-predictions"
+  to = "/minnesota-timberwolves-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/napoli-predictions"
   to = "/napoli-predictions.html"
   status = 301
@@ -744,6 +876,18 @@
 [[redirects]]
   from = "/nba-predictions"
   to = "/nba-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/new-orleans-pelicans-predictions"
+  to = "/new-orleans-pelicans-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/new-york-knicks-predictions"
+  to = "/new-york-knicks-predictions.html"
   status = 301
   force = true
 
@@ -760,8 +904,26 @@
   force = true
 
 [[redirects]]
+  from = "/nottingham-forest-predictions"
+  to = "/nottingham-forest-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/odds-of-2"
   to = "/odds-of-2.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/oklahoma-city-thunder-predictions"
+  to = "/oklahoma-city-thunder-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/orlando-magic-predictions"
+  to = "/orlando-magic-predictions.html"
   status = 301
   force = true
 
@@ -850,8 +1012,20 @@
   force = true
 
 [[redirects]]
+  from = "/philadelphia-76ers-predictions"
+  to = "/philadelphia-76ers-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/phoenix-suns-predictions"
   to = "/phoenix-suns-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/portland-trail-blazers-predictions"
+  to = "/portland-trail-blazers-predictions.html"
   status = 301
   force = true
 
@@ -862,8 +1036,26 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-ac-milan-frosinone-2026-11-22"
+  to = "/prediction-ac-milan-frosinone-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-aek-athens-real-madrid-2026-11-04"
   to = "/prediction-aek-athens-real-madrid-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-ajax-amsterdam-thun-2026-11-26"
+  to = "/prediction-ajax-amsterdam-thun-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-alaves-deportivo-2026-11-21"
+  to = "/prediction-alaves-deportivo-2026-11-21.html"
   status = 301
   force = true
 
@@ -880,8 +1072,32 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-andorra-leganes-2026-11-20"
+  to = "/prediction-andorra-leganes-2026-11-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-arsenal-borussia-dortmund-2026-11-24"
+  to = "/prediction-arsenal-borussia-dortmund-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-arthur-fils-ben-shelton-2026-11-15"
   to = "/prediction-arthur-fils-ben-shelton-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-as-monaco-aj-auxerre-2026-11-21"
+  to = "/prediction-as-monaco-aj-auxerre-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-aston-villa-sunderland-2026-11-21"
+  to = "/prediction-aston-villa-sunderland-2026-11-21.html"
   status = 301
   force = true
 
@@ -894,6 +1110,18 @@
 [[redirects]]
   from = "/prediction-atalanta-kairat-almaty-2026-11-05"
   to = "/prediction-atalanta-kairat-almaty-2026-11-05.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-athletic-club-espanyol-2026-11-20"
+  to = "/prediction-athletic-club-espanyol-2026-11-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-atlanta-hawks-detroit-pistons-2026-11-22"
+  to = "/prediction-atlanta-hawks-detroit-pistons-2026-11-22.html"
   status = 301
   force = true
 
@@ -912,6 +1140,18 @@
 [[redirects]]
   from = "/prediction-atletico-madrid-bayern-munich-2026-11-03"
   to = "/prediction-atletico-madrid-bayern-munich-2026-11-03.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-atletico-madrid-viking-fk-2026-11-25"
+  to = "/prediction-atletico-madrid-viking-fk-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-augsburg-mainz-2026-11-22"
+  to = "/prediction-augsburg-mainz-2026-11-22.html"
   status = 301
   force = true
 
@@ -940,6 +1180,12 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-bayer-leverkusen-paderborn-07-2026-11-21"
+  to = "/prediction-bayer-leverkusen-paderborn-07-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-bayern-munich-cologne-2026-11-20"
   to = "/prediction-bayern-munich-cologne-2026-11-20.html"
   status = 301
@@ -952,8 +1198,32 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-besiktas-hapoel-be-er-2026-11-26"
+  to = "/prediction-besiktas-hapoel-be-er-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-bielorussie-albanie-2026-11-15"
   to = "/prediction-bielorussie-albanie-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-bodo-glimt-lask-linz-2026-11-24"
+  to = "/prediction-bodo-glimt-lask-linz-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-bologna-udinese-2026-11-22"
+  to = "/prediction-bologna-udinese-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-borac-banja-luka-atalanta-2026-11-26"
+  to = "/prediction-borac-banja-luka-atalanta-2026-11-26.html"
   status = 301
   force = true
 
@@ -976,8 +1246,44 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-bournemouth-nottingham-forest-2026-11-21"
+  to = "/prediction-bournemouth-nottingham-forest-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-braga-kups-kuopio-2026-11-26"
+  to = "/prediction-braga-kups-kuopio-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-brentford-everton-2026-11-23"
+  to = "/prediction-brentford-everton-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-brest-paris-fc-2026-11-27"
+  to = "/prediction-brest-paris-fc-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-brighton-brentford-2026-11-08"
   to = "/prediction-brighton-brentford-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-brighton-hove-albion-csu-craiova-2026-11-26"
+  to = "/prediction-brighton-hove-albion-csu-craiova-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-burgos-albacete-2026-11-22"
+  to = "/prediction-burgos-albacete-2026-11-22.html"
   status = 301
   force = true
 
@@ -994,6 +1300,30 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-castellon-eldense-2026-11-21"
+  to = "/prediction-castellon-eldense-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-cd-sabadell-granada-2026-11-21"
+  to = "/prediction-cd-sabadell-granada-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-celta-fortuna-real-valladolid-2026-11-22"
+  to = "/prediction-celta-fortuna-real-valladolid-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-celta-vigo-bournemouth-2026-11-26"
+  to = "/prediction-celta-vigo-bournemouth-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-celtic-besiktas-2026-11-05"
   to = "/prediction-celtic-besiktas-2026-11-05.html"
   status = 301
@@ -1006,8 +1336,38 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-ceuta-almeria-2026-11-23"
+  to = "/prediction-ceuta-almeria-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-charlotte-hornets-cleveland-cavaliers-2026-11-10"
   to = "/prediction-charlotte-hornets-cleveland-cavaliers-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-charlotte-hornets-memphis-grizzlies-2026-11-24"
+  to = "/prediction-charlotte-hornets-memphis-grizzlies-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-chelsea-leeds-united-2026-11-21"
+  to = "/prediction-chelsea-leeds-united-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-chicago-bulls-cleveland-cavaliers-2026-11-24"
+  to = "/prediction-chicago-bulls-cleveland-cavaliers-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-chicago-bulls-denver-nuggets-2026-11-23"
+  to = "/prediction-chicago-bulls-denver-nuggets-2026-11-23.html"
   status = 301
   force = true
 
@@ -1018,8 +1378,38 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-club-brugge-liverpool-2026-11-25"
+  to = "/prediction-club-brugge-liverpool-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-como-aek-athens-2026-11-24"
+  to = "/prediction-como-aek-athens-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-como-cagliari-2026-11-21"
+  to = "/prediction-como-cagliari-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-congo-comores-2026-11-17"
   to = "/prediction-congo-comores-2026-11-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-cordoba-real-oviedo-2026-11-22"
+  to = "/prediction-cordoba-real-oviedo-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-coventry-city-crystal-palace-2026-11-21"
+  to = "/prediction-coventry-city-crystal-palace-2026-11-21.html"
   status = 301
   force = true
 
@@ -1042,6 +1432,24 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-crystal-palace-real-sociedad-2026-11-26"
+  to = "/prediction-crystal-palace-real-sociedad-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-cska-sofia-trabzonspor-2026-11-26"
+  to = "/prediction-cska-sofia-trabzonspor-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-dallas-mavericks-la-clippers-2026-11-22"
+  to = "/prediction-dallas-mavericks-la-clippers-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-danemark-norvege-2026-11-17"
   to = "/prediction-danemark-norvege-2026-11-17.html"
   status = 301
@@ -1054,14 +1462,38 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-dinamo-zagreb-bayer-leverkusen-2026-11-26"
+  to = "/prediction-dinamo-zagreb-bayer-leverkusen-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-egnatia-lincoln-red-imps-2026-11-26"
+  to = "/prediction-egnatia-lincoln-red-imps-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-eibar-cadiz-2026-11-15"
   to = "/prediction-eibar-cadiz-2026-11-15.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/prediction-eintracht-frankfurt-tsg-hoffenheim-2026-11-21"
+  to = "/prediction-eintracht-frankfurt-tsg-hoffenheim-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-eldense-sabadell-2026-11-15"
   to = "/prediction-eldense-sabadell-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-elversberg-freiburg-2026-11-21"
+  to = "/prediction-elversberg-freiburg-2026-11-21.html"
   status = 301
   force = true
 
@@ -1096,6 +1528,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-ferencvaros-nk-celje-2026-11-26"
+  to = "/prediction-ferencvaros-nk-celje-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-feyenoord-rotterdam-porto-2026-11-24"
+  to = "/prediction-feyenoord-rotterdam-porto-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-finlande-saint-marin-2026-11-15"
   to = "/prediction-finlande-saint-marin-2026-11-15.html"
   status = 301
@@ -1126,6 +1570,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-freiburg-twente-2026-11-26"
+  to = "/prediction-freiburg-twente-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-galatasaray-aston-villa-2026-11-24"
+  to = "/prediction-galatasaray-aston-villa-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-gambie-cote-d-ivoire-2026-11-17"
   to = "/prediction-gambie-cote-d-ivoire-2026-11-17.html"
   status = 301
@@ -1146,6 +1602,18 @@
 [[redirects]]
   from = "/prediction-gibraltar-malte-2026-11-16"
   to = "/prediction-gibraltar-malte-2026-11-16.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-girona-eibar-2026-11-22"
+  to = "/prediction-girona-eibar-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-golden-state-warriors-boston-celtics-2026-11-23"
+  to = "/prediction-golden-state-warriors-boston-celtics-2026-11-23.html"
   status = 301
   force = true
 
@@ -1174,6 +1642,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-hajduk-split-sint-truidense-2026-11-26"
+  to = "/prediction-hajduk-split-sint-truidense-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-heart-of-midlothian-as-monaco-2026-11-26"
+  to = "/prediction-heart-of-midlothian-as-monaco-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-hongrie-irlande-du-nord-2026-11-17"
   to = "/prediction-hongrie-irlande-du-nord-2026-11-17.html"
   status = 301
@@ -1186,8 +1666,26 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-houston-rockets-la-clippers-2026-11-24"
+  to = "/prediction-houston-rockets-la-clippers-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-houston-rockets-utah-jazz-2026-11-14"
   to = "/prediction-houston-rockets-utah-jazz-2026-11-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-hull-city-brighton-hove-albion-2026-11-22"
+  to = "/prediction-hull-city-brighton-hove-albion-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-iberia-1999-getafe-2026-11-26"
+  to = "/prediction-iberia-1999-getafe-2026-11-26.html"
   status = 301
   force = true
 
@@ -1204,8 +1702,26 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-indiana-pacers-oklahoma-city-thunder-2026-11-24"
+  to = "/prediction-indiana-pacers-oklahoma-city-thunder-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-inter-d-escaldes-f-c-kbenhavn-2026-11-26"
+  to = "/prediction-inter-d-escaldes-f-c-kbenhavn-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-inter-milan-como-2026-11-08"
   to = "/prediction-inter-milan-como-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-inter-milan-vfb-stuttgart-2026-11-25"
+  to = "/prediction-inter-milan-vfb-stuttgart-2026-11-25.html"
   status = 301
   force = true
 
@@ -1228,8 +1744,44 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-jablonec-lugano-2026-11-26"
+  to = "/prediction-jablonec-lugano-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-juventus-napoli-2026-11-01"
   to = "/prediction-juventus-napoli-2026-11-01.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-juventus-omonia-nicosia-2026-11-26"
+  to = "/prediction-juventus-omonia-nicosia-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-juventus-venezia-2026-11-22"
+  to = "/prediction-juventus-venezia-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-kaa-gent-red-star-belgrade-2026-11-26"
+  to = "/prediction-kaa-gent-red-star-belgrade-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-kairat-almaty-mjallby-aif-2026-11-26"
+  to = "/prediction-kairat-almaty-mjallby-aif-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-kauno-zalgiris-riga-fc-2026-11-26"
+  to = "/prediction-kauno-zalgiris-riga-fc-2026-11-26.html"
   status = 301
   force = true
 
@@ -1246,8 +1798,26 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-lazio-lecce-2026-11-21"
+  to = "/prediction-lazio-lecce-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-leganes-cd-sabadell-2026-11-27"
+  to = "/prediction-leganes-cd-sabadell-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-lens-marseille-2026-11-08"
   to = "/prediction-lens-marseille-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-lens-toulouse-2026-11-21"
+  to = "/prediction-lens-toulouse-2026-11-21.html"
   status = 301
   force = true
 
@@ -1264,6 +1834,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-levante-elche-2026-11-23"
+  to = "/prediction-levante-elche-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-levante-racing-santander-2026-11-27"
+  to = "/prediction-levante-racing-santander-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-liberia-cap-vert-2026-11-17"
   to = "/prediction-liberia-cap-vert-2026-11-17.html"
   status = 301
@@ -1276,6 +1858,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-lille-bayern-munich-2026-11-25"
+  to = "/prediction-lille-bayern-munich-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-lille-lyon-2026-11-21"
+  to = "/prediction-lille-lyon-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-lituanie-liechtenstein-2026-11-16"
   to = "/prediction-lituanie-liechtenstein-2026-11-16.html"
   status = 301
@@ -1284,6 +1878,24 @@
 [[redirects]]
   from = "/prediction-liverpool-manchester-united-2026-11-22"
   to = "/prediction-liverpool-manchester-united-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-lorient-stade-rennais-2026-11-22"
+  to = "/prediction-lorient-stade-rennais-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-los-angeles-lakers-utah-jazz-2026-11-24"
+  to = "/prediction-los-angeles-lakers-utah-jazz-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-lyon-lillestrom-2026-11-26"
+  to = "/prediction-lyon-lillestrom-2026-11-26.html"
   status = 301
   force = true
 
@@ -1348,6 +1960,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-miami-heat-oklahoma-city-thunder-2026-11-23"
+  to = "/prediction-miami-heat-oklahoma-city-thunder-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-minnesota-timberwolves-brooklyn-nets-2026-11-24"
+  to = "/prediction-minnesota-timberwolves-brooklyn-nets-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-minnesota-timberwolves-chicago-bulls-2026-11-15"
   to = "/prediction-minnesota-timberwolves-chicago-bulls-2026-11-15.html"
   status = 301
@@ -1360,6 +1984,12 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-minnesota-timberwolves-memphis-grizzlies-2026-11-22"
+  to = "/prediction-minnesota-timberwolves-memphis-grizzlies-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-monaco-nordsjlland-2026-11-05"
   to = "/prediction-monaco-nordsjlland-2026-11-05.html"
   status = 301
@@ -1368,6 +1998,12 @@
 [[redirects]]
   from = "/prediction-monchengladbach-borussia-dortmund-2026-11-21"
   to = "/prediction-monchengladbach-borussia-dortmund-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-monza-fiorentina-2026-11-23"
+  to = "/prediction-monza-fiorentina-2026-11-23.html"
   status = 301
   force = true
 
@@ -1396,14 +2032,38 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-nec-nijmegen-stade-rennais-2026-11-26"
+  to = "/prediction-nec-nijmegen-stade-rennais-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-new-orleans-pelicans-denver-nuggets-2026-11-15"
   to = "/prediction-new-orleans-pelicans-denver-nuggets-2026-11-15.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/prediction-new-orleans-pelicans-phoenix-suns-2026-11-24"
+  to = "/prediction-new-orleans-pelicans-phoenix-suns-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-new-york-knicks-indiana-pacers-2026-11-23"
+  to = "/prediction-new-york-knicks-indiana-pacers-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-new-york-knicks-milwaukee-bucks-2026-11-11"
   to = "/prediction-new-york-knicks-milwaukee-bucks-2026-11-11.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-new-york-knicks-portland-trail-blazers-2026-11-22"
+  to = "/prediction-new-york-knicks-portland-trail-blazers-2026-11-22.html"
   status = 301
   force = true
 
@@ -1426,14 +2086,74 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-nordsjlland-panathinaikos-2026-11-26"
+  to = "/prediction-nordsjlland-panathinaikos-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-nottingham-forest-chelsea-2026-11-27"
+  to = "/prediction-nottingham-forest-chelsea-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-ofi-crete-anderlecht-2026-11-26"
+  to = "/prediction-ofi-crete-anderlecht-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-olympiacos-ac-milan-2026-11-26"
+  to = "/prediction-olympiacos-ac-milan-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-orlando-magic-milwaukee-bucks-2026-11-14"
   to = "/prediction-orlando-magic-milwaukee-bucks-2026-11-14.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/prediction-osasuna-malaga-2026-11-22"
+  to = "/prediction-osasuna-malaga-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-pafos-midtjylland-2026-11-26"
+  to = "/prediction-pafos-midtjylland-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-paris-fc-angers-2026-11-22"
+  to = "/prediction-paris-fc-angers-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-parma-as-roma-2026-11-21"
+  to = "/prediction-parma-as-roma-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-pays-de-galles-portugal-2026-11-17"
   to = "/prediction-pays-de-galles-portugal-2026-11-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-philadelphia-76ers-milwaukee-bucks-2026-11-21"
+  to = "/prediction-philadelphia-76ers-milwaukee-bucks-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-philadelphia-76ers-portland-trail-blazers-2026-11-24"
+  to = "/prediction-philadelphia-76ers-portland-trail-blazers-2026-11-24.html"
   status = 301
   force = true
 
@@ -1474,8 +2194,20 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-psg-as-roma-2026-11-25"
+  to = "/prediction-psg-as-roma-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-psg-troyes-2026-11-07"
   to = "/prediction-psg-troyes-2026-11-07.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-racing-santander-real-sociedad-2026-11-22"
+  to = "/prediction-racing-santander-real-sociedad-2026-11-22.html"
   status = 301
   force = true
 
@@ -1486,14 +2218,38 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-rayo-vallecano-valencia-2026-11-21"
+  to = "/prediction-rayo-vallecano-valencia-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-rb-leipzig-lens-2026-11-24"
+  to = "/prediction-rb-leipzig-lens-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-rb-leipzig-manchester-city-2026-11-04"
   to = "/prediction-rb-leipzig-manchester-city-2026-11-04.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/prediction-rb-salzburg-ararat-armenia-2026-11-26"
+  to = "/prediction-rb-salzburg-ararat-armenia-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-real-madrid-celta-vigo-2026-11-21"
   to = "/prediction-real-madrid-celta-vigo-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-real-sociedad-ii-cadiz-2026-11-21"
+  to = "/prediction-real-sociedad-ii-cadiz-2026-11-21.html"
   status = 301
   force = true
 
@@ -1522,6 +2278,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-sabah-fk-barcelona-2026-11-25"
+  to = "/prediction-sabah-fk-barcelona-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-sacramento-kings-boston-celtics-2026-11-22"
+  to = "/prediction-sacramento-kings-boston-celtics-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-sacramento-kings-orlando-magic-2026-11-11"
   to = "/prediction-sacramento-kings-orlando-magic-2026-11-11.html"
   status = 301
@@ -1534,8 +2302,44 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-sacramento-kings-san-antonio-spurs-2026-11-24"
+  to = "/prediction-sacramento-kings-san-antonio-spurs-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-san-antonio-spurs-golden-state-warriors-2026-11-14"
   to = "/prediction-san-antonio-spurs-golden-state-warriors-2026-11-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-san-antonio-spurs-new-orleans-pelicans-2026-11-22"
+  to = "/prediction-san-antonio-spurs-new-orleans-pelicans-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-sassuolo-genoa-2026-11-22"
+  to = "/prediction-sassuolo-genoa-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-schalke-04-vfb-stuttgart-2026-11-21"
+  to = "/prediction-schalke-04-vfb-stuttgart-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-sevilla-real-betis-2026-11-21"
+  to = "/prediction-sevilla-real-betis-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-shakhtar-donetsk-fenerbahce-2026-11-25"
+  to = "/prediction-shakhtar-donetsk-fenerbahce-2026-11-25.html"
   status = 301
   force = true
 
@@ -1546,8 +2350,26 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-sk-brann-agf-2026-11-26"
+  to = "/prediction-sk-brann-agf-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-slavia-prague-arsenal-2026-11-04"
   to = "/prediction-slavia-prague-arsenal-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-slavia-prague-villarreal-2026-11-25"
+  to = "/prediction-slavia-prague-villarreal-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-slovan-bratislava-real-betis-2026-11-24"
+  to = "/prediction-slovan-bratislava-real-betis-2026-11-24.html"
   status = 301
   force = true
 
@@ -1570,6 +2392,30 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-sparta-prague-az-alkmaar-2026-11-26"
+  to = "/prediction-sparta-prague-az-alkmaar-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-sporting-cp-manchester-united-2026-11-25"
+  to = "/prediction-sporting-cp-manchester-united-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-sporting-gijon-las-palmas-2026-11-22"
+  to = "/prediction-sporting-gijon-las-palmas-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-strasbourg-brest-2026-11-21"
+  to = "/prediction-strasbourg-brest-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-suisse-ecosse-2026-11-16"
   to = "/prediction-suisse-ecosse-2026-11-16.html"
   status = 301
@@ -1578,6 +2424,12 @@
 [[redirects]]
   from = "/prediction-sunderland-chelsea-2026-11-08"
   to = "/prediction-sunderland-chelsea-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-sunderland-jagiellonia-bialystok-2026-11-26"
+  to = "/prediction-sunderland-jagiellonia-bialystok-2026-11-26.html"
   status = 301
   force = true
 
@@ -1594,14 +2446,68 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-tenerife-mallorca-2026-11-21"
+  to = "/prediction-tenerife-mallorca-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-togo-algerie-2026-11-17"
   to = "/prediction-togo-algerie-2026-11-17.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/prediction-toronto-raptors-milwaukee-bucks-2026-11-24"
+  to = "/prediction-toronto-raptors-milwaukee-bucks-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-torreense-celtic-2026-11-26"
+  to = "/prediction-torreense-celtic-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-tottenham-hotspur-ipswich-town-2026-11-21"
+  to = "/prediction-tottenham-hotspur-ipswich-town-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-troyes-le-havre-ac-2026-11-20"
+  to = "/prediction-troyes-le-havre-ac-2026-11-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-tsg-hoffenheim-sk-sturm-graz-2026-11-26"
+  to = "/prediction-tsg-hoffenheim-sk-sturm-graz-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-ukraine-georgie-2026-11-17"
   to = "/prediction-ukraine-georgie-2026-11-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-union-berlin-rb-leipzig-2026-11-21"
+  to = "/prediction-union-berlin-rb-leipzig-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-union-st-gilloise-lech-poznan-2026-11-26"
+  to = "/prediction-union-st-gilloise-lech-poznan-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-utah-jazz-dallas-mavericks-2026-11-23"
+  to = "/prediction-utah-jazz-dallas-mavericks-2026-11-23.html"
   status = 301
   force = true
 
@@ -1618,6 +2524,18 @@
   force = true
 
 [[redirects]]
+  from = "/prediction-venezia-bologna-2026-11-27"
+  to = "/prediction-venezia-bologna-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-viktoria-plzen-benfica-2026-11-26"
+  to = "/prediction-viktoria-plzen-benfica-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/prediction-villarreal-psg-2026-11-03"
   to = "/prediction-villarreal-psg-2026-11-03.html"
   status = 301
@@ -1626,6 +2544,24 @@
 [[redirects]]
   from = "/prediction-washington-wizards-detroit-pistons-2026-11-13"
   to = "/prediction-washington-wizards-detroit-pistons-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-washington-wizards-orlando-magic-2026-11-23"
+  to = "/prediction-washington-wizards-orlando-magic-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-werder-bremen-borussia-monchengladbach-2026-11-27"
+  to = "/prediction-werder-bremen-borussia-monchengladbach-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prediction-werder-bremen-hamburg-sv-2026-11-22"
+  to = "/prediction-werder-bremen-hamburg-sv-2026-11-22.html"
   status = 301
   force = true
 
@@ -1684,6 +2620,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-ajax-amsterdam-thun-2026-11-26"
+  to = "/pronostic-ajax-amsterdam-thun-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-alaves-deportivo-2026-11-21"
+  to = "/pronostic-alaves-deportivo-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-albacete-celta-fortuna-2026-11-16"
   to = "/pronostic-albacete-celta-fortuna-2026-11-16.html"
   status = 301
@@ -1696,6 +2644,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-andorra-leganes-2026-11-20"
+  to = "/pronostic-andorra-leganes-2026-11-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-arsenal-borussia-dortmund-2026-11-24"
+  to = "/pronostic-arsenal-borussia-dortmund-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-arsenal"
   to = "/pronostic-arsenal.html"
   status = 301
@@ -1704,6 +2664,18 @@
 [[redirects]]
   from = "/pronostic-arthur-fils-ben-shelton-2026-11-15"
   to = "/pronostic-arthur-fils-ben-shelton-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-as-monaco-aj-auxerre-2026-11-21"
+  to = "/pronostic-as-monaco-aj-auxerre-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-aston-villa-sunderland-2026-11-21"
+  to = "/pronostic-aston-villa-sunderland-2026-11-21.html"
   status = 301
   force = true
 
@@ -1728,6 +2700,24 @@
 [[redirects]]
   from = "/pronostic-atalanta-kairat-almaty-2026-11-05"
   to = "/pronostic-atalanta-kairat-almaty-2026-11-05.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-atalanta"
+  to = "/pronostic-atalanta.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-athletic-club-espanyol-2026-11-20"
+  to = "/pronostic-athletic-club-espanyol-2026-11-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-atlanta-hawks-detroit-pistons-2026-11-22"
+  to = "/pronostic-atlanta-hawks-detroit-pistons-2026-11-22.html"
   status = 301
   force = true
 
@@ -1762,8 +2752,20 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-atletico-madrid-viking-fk-2026-11-25"
+  to = "/pronostic-atletico-madrid-viking-fk-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-atletico-madrid"
   to = "/pronostic-atletico-madrid.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-augsburg-mainz-2026-11-22"
+  to = "/pronostic-augsburg-mainz-2026-11-22.html"
   status = 301
   force = true
 
@@ -1816,6 +2818,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-bayer-leverkusen-paderborn-07-2026-11-21"
+  to = "/pronostic-bayer-leverkusen-paderborn-07-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-bayer-leverkusen"
+  to = "/pronostic-bayer-leverkusen.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-bayern-munich-arsenal-2026-10-21"
   to = "/pronostic-bayern-munich-arsenal-2026-10-21.html"
   status = 301
@@ -1846,6 +2860,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-besiktas-hapoel-be-er-2026-11-26"
+  to = "/pronostic-besiktas-hapoel-be-er-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-bielorussie-albanie-2026-11-15"
   to = "/pronostic-bielorussie-albanie-2026-11-15.html"
   status = 301
@@ -1854,6 +2874,24 @@
 [[redirects]]
   from = "/pronostic-bodo-glimt-borussia-dortmund-2026-10-14"
   to = "/pronostic-bodo-glimt-borussia-dortmund-2026-10-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-bodo-glimt-lask-linz-2026-11-24"
+  to = "/pronostic-bodo-glimt-lask-linz-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-bologna-udinese-2026-11-22"
+  to = "/pronostic-bologna-udinese-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-borac-banja-luka-atalanta-2026-11-26"
+  to = "/pronostic-borac-banja-luka-atalanta-2026-11-26.html"
   status = 301
   force = true
 
@@ -1888,14 +2926,50 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-bournemouth-nottingham-forest-2026-11-21"
+  to = "/pronostic-bournemouth-nottingham-forest-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-braga-kups-kuopio-2026-11-26"
+  to = "/pronostic-braga-kups-kuopio-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-brentford-everton-2026-11-23"
+  to = "/pronostic-brentford-everton-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-brest-paris-fc-2026-11-27"
+  to = "/pronostic-brest-paris-fc-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-brighton-brentford-2026-11-08"
   to = "/pronostic-brighton-brentford-2026-11-08.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/pronostic-brighton-hove-albion-csu-craiova-2026-11-26"
+  to = "/pronostic-brighton-hove-albion-csu-craiova-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-bundesliga"
   to = "/pronostic-bundesliga.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-burgos-albacete-2026-11-22"
+  to = "/pronostic-burgos-albacete-2026-11-22.html"
   status = 301
   force = true
 
@@ -1918,6 +2992,30 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-castellon-eldense-2026-11-21"
+  to = "/pronostic-castellon-eldense-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-cd-sabadell-granada-2026-11-21"
+  to = "/pronostic-cd-sabadell-granada-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-celta-fortuna-real-valladolid-2026-11-22"
+  to = "/pronostic-celta-fortuna-real-valladolid-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-celta-vigo-bournemouth-2026-11-26"
+  to = "/pronostic-celta-vigo-bournemouth-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-celtic-besiktas-2026-11-05"
   to = "/pronostic-celtic-besiktas-2026-11-05.html"
   status = 301
@@ -1930,8 +3028,32 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-ceuta-almeria-2026-11-23"
+  to = "/pronostic-ceuta-almeria-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-charlotte-hornets-cleveland-cavaliers-2026-11-10"
   to = "/pronostic-charlotte-hornets-cleveland-cavaliers-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-charlotte-hornets-memphis-grizzlies-2026-11-24"
+  to = "/pronostic-charlotte-hornets-memphis-grizzlies-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-charlotte-hornets"
+  to = "/pronostic-charlotte-hornets.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-chelsea-leeds-united-2026-11-21"
+  to = "/pronostic-chelsea-leeds-united-2026-11-21.html"
   status = 301
   force = true
 
@@ -1948,8 +3070,44 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-chicago-bulls-cleveland-cavaliers-2026-11-24"
+  to = "/pronostic-chicago-bulls-cleveland-cavaliers-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-chicago-bulls-denver-nuggets-2026-11-23"
+  to = "/pronostic-chicago-bulls-denver-nuggets-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-chicago-bulls"
+  to = "/pronostic-chicago-bulls.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-chypre-montenegro-2026-11-15"
   to = "/pronostic-chypre-montenegro-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-club-brugge-liverpool-2026-11-25"
+  to = "/pronostic-club-brugge-liverpool-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-como-aek-athens-2026-11-24"
+  to = "/pronostic-como-aek-athens-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-como-cagliari-2026-11-21"
+  to = "/pronostic-como-cagliari-2026-11-21.html"
   status = 301
   force = true
 
@@ -1972,6 +3130,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-cordoba-real-oviedo-2026-11-22"
+  to = "/pronostic-cordoba-real-oviedo-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-coventry-city-crystal-palace-2026-11-21"
+  to = "/pronostic-coventry-city-crystal-palace-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-croatie-tchequie-2026-11-15"
   to = "/pronostic-croatie-tchequie-2026-11-15.html"
   status = 301
@@ -1990,8 +3160,44 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-crystal-palace-real-sociedad-2026-11-26"
+  to = "/pronostic-crystal-palace-real-sociedad-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-crystal-palace"
+  to = "/pronostic-crystal-palace.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-cska-sofia-trabzonspor-2026-11-26"
+  to = "/pronostic-cska-sofia-trabzonspor-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-dallas-mavericks-la-clippers-2026-11-22"
+  to = "/pronostic-dallas-mavericks-la-clippers-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-dallas-mavericks"
+  to = "/pronostic-dallas-mavericks.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-danemark-norvege-2026-11-17"
   to = "/pronostic-danemark-norvege-2026-11-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-denver-nuggets"
+  to = "/pronostic-denver-nuggets.html"
   status = 301
   force = true
 
@@ -2008,8 +3214,26 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-dinamo-zagreb-bayer-leverkusen-2026-11-26"
+  to = "/pronostic-dinamo-zagreb-bayer-leverkusen-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-egnatia-lincoln-red-imps-2026-11-26"
+  to = "/pronostic-egnatia-lincoln-red-imps-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-eibar-cadiz-2026-11-15"
   to = "/pronostic-eibar-cadiz-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-eintracht-frankfurt-tsg-hoffenheim-2026-11-21"
+  to = "/pronostic-eintracht-frankfurt-tsg-hoffenheim-2026-11-21.html"
   status = 301
   force = true
 
@@ -2022,6 +3246,12 @@
 [[redirects]]
   from = "/pronostic-eliminatoires-can-2027"
   to = "/pronostic-eliminatoires-can-2027.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-elversberg-freiburg-2026-11-21"
+  to = "/pronostic-elversberg-freiburg-2026-11-21.html"
   status = 301
   force = true
 
@@ -2074,8 +3304,20 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-ferencvaros-nk-celje-2026-11-26"
+  to = "/pronostic-ferencvaros-nk-celje-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-feyenoord-como-2026-10-14"
   to = "/pronostic-feyenoord-como-2026-10-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-feyenoord-rotterdam-porto-2026-11-24"
+  to = "/pronostic-feyenoord-rotterdam-porto-2026-11-24.html"
   status = 301
   force = true
 
@@ -2122,8 +3364,26 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-freiburg-twente-2026-11-26"
+  to = "/pronostic-freiburg-twente-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-galatasaray-aston-villa-2026-11-24"
+  to = "/pronostic-galatasaray-aston-villa-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-galatasaray-barcelone-2026-10-13"
   to = "/pronostic-galatasaray-barcelone-2026-10-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-galatasaray"
+  to = "/pronostic-galatasaray.html"
   status = 301
   force = true
 
@@ -2146,14 +3406,38 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-getafe"
+  to = "/pronostic-getafe.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-gibraltar-malte-2026-11-16"
   to = "/pronostic-gibraltar-malte-2026-11-16.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/pronostic-girona-eibar-2026-11-22"
+  to = "/pronostic-girona-eibar-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-golden-state-warriors-boston-celtics-2026-11-23"
+  to = "/pronostic-golden-state-warriors-boston-celtics-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-golden-state-warriors-new-orleans-pelicans-2026-11-10"
   to = "/pronostic-golden-state-warriors-new-orleans-pelicans-2026-11-10.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-golden-state-warriors"
+  to = "/pronostic-golden-state-warriors.html"
   status = 301
   force = true
 
@@ -2176,6 +3460,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-hajduk-split-sint-truidense-2026-11-26"
+  to = "/pronostic-hajduk-split-sint-truidense-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-heart-of-midlothian-as-monaco-2026-11-26"
+  to = "/pronostic-heart-of-midlothian-as-monaco-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-hongrie-irlande-du-nord-2026-11-17"
   to = "/pronostic-hongrie-irlande-du-nord-2026-11-17.html"
   status = 301
@@ -2188,8 +3484,32 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-houston-rockets-la-clippers-2026-11-24"
+  to = "/pronostic-houston-rockets-la-clippers-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-houston-rockets-utah-jazz-2026-11-14"
   to = "/pronostic-houston-rockets-utah-jazz-2026-11-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-houston-rockets"
+  to = "/pronostic-houston-rockets.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-hull-city-brighton-hove-albion-2026-11-22"
+  to = "/pronostic-hull-city-brighton-hove-albion-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-iberia-1999-getafe-2026-11-26"
+  to = "/pronostic-iberia-1999-getafe-2026-11-26.html"
   status = 301
   force = true
 
@@ -2206,8 +3526,32 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-indiana-pacers-oklahoma-city-thunder-2026-11-24"
+  to = "/pronostic-indiana-pacers-oklahoma-city-thunder-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-indiana-pacers"
+  to = "/pronostic-indiana-pacers.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-inter-como-2026-11-08"
   to = "/pronostic-inter-como-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-inter-d-escaldes-f-c-kbenhavn-2026-11-26"
+  to = "/pronostic-inter-d-escaldes-f-c-kbenhavn-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-inter-vfb-stuttgart-2026-11-25"
+  to = "/pronostic-inter-vfb-stuttgart-2026-11-25.html"
   status = 301
   force = true
 
@@ -2236,14 +3580,50 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-jablonec-lugano-2026-11-26"
+  to = "/pronostic-jablonec-lugano-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-juventus-naples-2026-11-01"
   to = "/pronostic-juventus-naples-2026-11-01.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/pronostic-juventus-omonia-nicosia-2026-11-26"
+  to = "/pronostic-juventus-omonia-nicosia-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-juventus-venezia-2026-11-22"
+  to = "/pronostic-juventus-venezia-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-juventus"
   to = "/pronostic-juventus.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-kaa-gent-red-star-belgrade-2026-11-26"
+  to = "/pronostic-kaa-gent-red-star-belgrade-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-kairat-almaty-mjallby-aif-2026-11-26"
+  to = "/pronostic-kairat-almaty-mjallby-aif-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-kauno-zalgiris-riga-fc-2026-11-26"
+  to = "/pronostic-kauno-zalgiris-riga-fc-2026-11-26.html"
   status = 301
   force = true
 
@@ -2260,6 +3640,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-la-clippers"
+  to = "/pronostic-la-clippers.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lazio-lecce-2026-11-21"
+  to = "/pronostic-lazio-lecce-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-le-havre-psg-2026-10-30"
   to = "/pronostic-le-havre-psg-2026-10-30.html"
   status = 301
@@ -2272,8 +3664,26 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-leganes-cd-sabadell-2026-11-27"
+  to = "/pronostic-leganes-cd-sabadell-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-lens-marseille-2026-11-08"
   to = "/pronostic-lens-marseille-2026-11-08.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lens-toulouse-2026-11-21"
+  to = "/pronostic-lens-toulouse-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lens"
+  to = "/pronostic-lens.html"
   status = 301
   force = true
 
@@ -2298,6 +3708,24 @@
 [[redirects]]
   from = "/pronostic-levante-atletico-madrid-2026-10-31"
   to = "/pronostic-levante-atletico-madrid-2026-10-31.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-levante-elche-2026-11-23"
+  to = "/pronostic-levante-elche-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-levante-racing-santander-2026-11-27"
+  to = "/pronostic-levante-racing-santander-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-levante"
+  to = "/pronostic-levante.html"
   status = 301
   force = true
 
@@ -2350,8 +3778,26 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-lille-bayern-munich-2026-11-25"
+  to = "/pronostic-lille-bayern-munich-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-lille-galatasaray-2026-10-21"
   to = "/pronostic-lille-galatasaray-2026-10-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lille-lyon-2026-11-21"
+  to = "/pronostic-lille-lyon-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lille"
+  to = "/pronostic-lille.html"
   status = 301
   force = true
 
@@ -2382,6 +3828,30 @@
 [[redirects]]
   from = "/pronostic-liverpool"
   to = "/pronostic-liverpool.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lorient-stade-rennais-2026-11-22"
+  to = "/pronostic-lorient-stade-rennais-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-los-angeles-lakers-utah-jazz-2026-11-24"
+  to = "/pronostic-los-angeles-lakers-utah-jazz-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lyon-lillestrom-2026-11-26"
+  to = "/pronostic-lyon-lillestrom-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-lyon"
+  to = "/pronostic-lyon.html"
   status = 301
   force = true
 
@@ -2470,8 +3940,26 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-memphis-grizzlies"
+  to = "/pronostic-memphis-grizzlies.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-miami-heat-detroit-pistons-2026-11-15"
   to = "/pronostic-miami-heat-detroit-pistons-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-miami-heat-oklahoma-city-thunder-2026-11-23"
+  to = "/pronostic-miami-heat-oklahoma-city-thunder-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-miami-heat"
+  to = "/pronostic-miami-heat.html"
   status = 301
   force = true
 
@@ -2482,8 +3970,32 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-milan-frosinone-2026-11-22"
+  to = "/pronostic-milan-frosinone-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-milan-inter-2026-10-31"
   to = "/pronostic-milan-inter-2026-10-31.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-milan"
+  to = "/pronostic-milan.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-milwaukee-bucks"
+  to = "/pronostic-milwaukee-bucks.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-minnesota-timberwolves-brooklyn-nets-2026-11-24"
+  to = "/pronostic-minnesota-timberwolves-brooklyn-nets-2026-11-24.html"
   status = 301
   force = true
 
@@ -2500,6 +4012,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-minnesota-timberwolves-memphis-grizzlies-2026-11-22"
+  to = "/pronostic-minnesota-timberwolves-memphis-grizzlies-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-minnesota-timberwolves"
+  to = "/pronostic-minnesota-timberwolves.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-monaco-nordsjlland-2026-11-05"
   to = "/pronostic-monaco-nordsjlland-2026-11-05.html"
   status = 301
@@ -2508,6 +4032,12 @@
 [[redirects]]
   from = "/pronostic-monchengladbach-borussia-dortmund-2026-11-21"
   to = "/pronostic-monchengladbach-borussia-dortmund-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-monza-fiorentina-2026-11-23"
+  to = "/pronostic-monza-fiorentina-2026-11-23.html"
   status = 301
   force = true
 
@@ -2554,14 +4084,50 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-nec-nijmegen-stade-rennais-2026-11-26"
+  to = "/pronostic-nec-nijmegen-stade-rennais-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-new-orleans-pelicans-denver-nuggets-2026-11-15"
   to = "/pronostic-new-orleans-pelicans-denver-nuggets-2026-11-15.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/pronostic-new-orleans-pelicans-phoenix-suns-2026-11-24"
+  to = "/pronostic-new-orleans-pelicans-phoenix-suns-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-new-orleans-pelicans"
+  to = "/pronostic-new-orleans-pelicans.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-new-york-knicks-indiana-pacers-2026-11-23"
+  to = "/pronostic-new-york-knicks-indiana-pacers-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-new-york-knicks-milwaukee-bucks-2026-11-11"
   to = "/pronostic-new-york-knicks-milwaukee-bucks-2026-11-11.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-new-york-knicks-portland-trail-blazers-2026-11-22"
+  to = "/pronostic-new-york-knicks-portland-trail-blazers-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-new-york-knicks"
+  to = "/pronostic-new-york-knicks.html"
   status = 301
   force = true
 
@@ -2584,8 +4150,44 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-nordsjlland-panathinaikos-2026-11-26"
+  to = "/pronostic-nordsjlland-panathinaikos-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-nottingham-forest-arsenal-2026-10-18"
   to = "/pronostic-nottingham-forest-arsenal-2026-10-18.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-nottingham-forest-chelsea-2026-11-27"
+  to = "/pronostic-nottingham-forest-chelsea-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-nottingham-forest"
+  to = "/pronostic-nottingham-forest.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-ofi-crete-anderlecht-2026-11-26"
+  to = "/pronostic-ofi-crete-anderlecht-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-oklahoma-city-thunder"
+  to = "/pronostic-oklahoma-city-thunder.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-olympiacos-milan-2026-11-26"
+  to = "/pronostic-olympiacos-milan-2026-11-26.html"
   status = 301
   force = true
 
@@ -2596,14 +4198,62 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-orlando-magic"
+  to = "/pronostic-orlando-magic.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-osasuna-malaga-2026-11-22"
+  to = "/pronostic-osasuna-malaga-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-pafos-midtjylland-2026-11-26"
+  to = "/pronostic-pafos-midtjylland-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-paris-fc-angers-2026-11-22"
+  to = "/pronostic-paris-fc-angers-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-parma-as-roma-2026-11-21"
+  to = "/pronostic-parma-as-roma-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-pays-de-galles-portugal-2026-11-17"
   to = "/pronostic-pays-de-galles-portugal-2026-11-17.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/pronostic-philadelphia-76ers-milwaukee-bucks-2026-11-21"
+  to = "/pronostic-philadelphia-76ers-milwaukee-bucks-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-philadelphia-76ers-portland-trail-blazers-2026-11-24"
+  to = "/pronostic-philadelphia-76ers-portland-trail-blazers-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-philadelphia-76ers-toronto-raptors-2026-11-13"
   to = "/pronostic-philadelphia-76ers-toronto-raptors-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-philadelphia-76ers"
+  to = "/pronostic-philadelphia-76ers.html"
   status = 301
   force = true
 
@@ -2650,6 +4300,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-portland-trail-blazers"
+  to = "/pronostic-portland-trail-blazers.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-porto-psv-eindhoven-2026-10-20"
   to = "/pronostic-porto-psv-eindhoven-2026-10-20.html"
   status = 301
@@ -2658,6 +4314,12 @@
 [[redirects]]
   from = "/pronostic-premier-league"
   to = "/pronostic-premier-league.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-psg-as-roma-2026-11-25"
+  to = "/pronostic-psg-as-roma-2026-11-25.html"
   status = 301
   force = true
 
@@ -2692,8 +4354,32 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-racing-santander-real-sociedad-2026-11-22"
+  to = "/pronostic-racing-santander-real-sociedad-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-racing-santander"
+  to = "/pronostic-racing-santander.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-rafael-jodar-alexander-zverev-2026-11-15"
   to = "/pronostic-rafael-jodar-alexander-zverev-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-rayo-vallecano-valencia-2026-11-21"
+  to = "/pronostic-rayo-vallecano-valencia-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-rb-leipzig-lens-2026-11-24"
+  to = "/pronostic-rb-leipzig-lens-2026-11-24.html"
   status = 301
   force = true
 
@@ -2722,6 +4408,12 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-rb-salzburg-ararat-armenia-2026-11-26"
+  to = "/pronostic-rb-salzburg-ararat-armenia-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-rc-lens-sporting-portugal-2026-10-13"
   to = "/pronostic-rc-lens-sporting-portugal-2026-10-13.html"
   status = 301
@@ -2730,6 +4422,12 @@
 [[redirects]]
   from = "/pronostic-real-betis-barcelone-2026-10-17"
   to = "/pronostic-real-betis-barcelone-2026-10-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-real-betis"
+  to = "/pronostic-real-betis.html"
   status = 301
   force = true
 
@@ -2758,8 +4456,20 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-real-sociedad-ii-cadiz-2026-11-21"
+  to = "/pronostic-real-sociedad-ii-cadiz-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-real-sociedad-lyon-2026-11-05"
   to = "/pronostic-real-sociedad-lyon-2026-11-05.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-real-sociedad"
+  to = "/pronostic-real-sociedad.html"
   status = 301
   force = true
 
@@ -2794,6 +4504,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-sabah-fk-barcelone-2026-11-25"
+  to = "/pronostic-sabah-fk-barcelone-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-sacramento-kings-boston-celtics-2026-11-22"
+  to = "/pronostic-sacramento-kings-boston-celtics-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-sacramento-kings-orlando-magic-2026-11-11"
   to = "/pronostic-sacramento-kings-orlando-magic-2026-11-11.html"
   status = 301
@@ -2806,8 +4528,44 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-sacramento-kings-san-antonio-spurs-2026-11-24"
+  to = "/pronostic-sacramento-kings-san-antonio-spurs-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-sacramento-kings"
+  to = "/pronostic-sacramento-kings.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-san-antonio-spurs-golden-state-warriors-2026-11-14"
   to = "/pronostic-san-antonio-spurs-golden-state-warriors-2026-11-14.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-san-antonio-spurs-new-orleans-pelicans-2026-11-22"
+  to = "/pronostic-san-antonio-spurs-new-orleans-pelicans-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-san-antonio-spurs"
+  to = "/pronostic-san-antonio-spurs.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-sassuolo-genoa-2026-11-22"
+  to = "/pronostic-sassuolo-genoa-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-schalke-04-vfb-stuttgart-2026-11-21"
+  to = "/pronostic-schalke-04-vfb-stuttgart-2026-11-21.html"
   status = 301
   force = true
 
@@ -2818,8 +4576,26 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-sevilla-real-betis-2026-11-21"
+  to = "/pronostic-sevilla-real-betis-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-shakhtar-donetsk-fenerbahce-2026-11-25"
+  to = "/pronostic-shakhtar-donetsk-fenerbahce-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-sierra-leone-rd-congo-2026-11-17"
   to = "/pronostic-sierra-leone-rd-congo-2026-11-17.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-sk-brann-agf-2026-11-26"
+  to = "/pronostic-sk-brann-agf-2026-11-26.html"
   status = 301
   force = true
 
@@ -2832,6 +4608,24 @@
 [[redirects]]
   from = "/pronostic-slavia-prague-arsenal-2026-11-04"
   to = "/pronostic-slavia-prague-arsenal-2026-11-04.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-slavia-prague-villarreal-2026-11-25"
+  to = "/pronostic-slavia-prague-villarreal-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-slavia-prague"
+  to = "/pronostic-slavia-prague.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-slovan-bratislava-real-betis-2026-11-24"
+  to = "/pronostic-slovan-bratislava-real-betis-2026-11-24.html"
   status = 301
   force = true
 
@@ -2854,6 +4648,30 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-sparta-prague-az-alkmaar-2026-11-26"
+  to = "/pronostic-sparta-prague-az-alkmaar-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-sporting-cp-manchester-united-2026-11-25"
+  to = "/pronostic-sporting-cp-manchester-united-2026-11-25.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-sporting-gijon-las-palmas-2026-11-22"
+  to = "/pronostic-sporting-gijon-las-palmas-2026-11-22.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-strasbourg-brest-2026-11-21"
+  to = "/pronostic-strasbourg-brest-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-strasbourg-psg-2026-10-17"
   to = "/pronostic-strasbourg-psg-2026-10-17.html"
   status = 301
@@ -2872,6 +4690,18 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-sunderland-jagiellonia-bialystok-2026-11-26"
+  to = "/pronostic-sunderland-jagiellonia-bialystok-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-sunderland"
+  to = "/pronostic-sunderland.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-tanzanie-nigeria-2026-11-17"
   to = "/pronostic-tanzanie-nigeria-2026-11-17.html"
   status = 301
@@ -2880,6 +4710,12 @@
 [[redirects]]
   from = "/pronostic-tenerife-ceuta-2026-11-15"
   to = "/pronostic-tenerife-ceuta-2026-11-15.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-tenerife-mallorca-2026-11-21"
+  to = "/pronostic-tenerife-mallorca-2026-11-21.html"
   status = 301
   force = true
 
@@ -2896,6 +4732,36 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-toronto-raptors-milwaukee-bucks-2026-11-24"
+  to = "/pronostic-toronto-raptors-milwaukee-bucks-2026-11-24.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-torreense-celtic-2026-11-26"
+  to = "/pronostic-torreense-celtic-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-tottenham-hotspur-ipswich-town-2026-11-21"
+  to = "/pronostic-tottenham-hotspur-ipswich-town-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-troyes-le-havre-ac-2026-11-20"
+  to = "/pronostic-troyes-le-havre-ac-2026-11-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-tsg-hoffenheim-sk-sturm-graz-2026-11-26"
+  to = "/pronostic-tsg-hoffenheim-sk-sturm-graz-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-udinese-roma-2026-10-31"
   to = "/pronostic-udinese-roma-2026-10-31.html"
   status = 301
@@ -2908,8 +4774,32 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-union-berlin-rb-leipzig-2026-11-21"
+  to = "/pronostic-union-berlin-rb-leipzig-2026-11-21.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-union-st-gilloise-lech-poznan-2026-11-26"
+  to = "/pronostic-union-st-gilloise-lech-poznan-2026-11-26.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-utah-jazz-dallas-mavericks-2026-11-23"
+  to = "/pronostic-utah-jazz-dallas-mavericks-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-utah-jazz-miami-heat-2026-11-11"
   to = "/pronostic-utah-jazz-miami-heat-2026-11-11.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-utah-jazz"
+  to = "/pronostic-utah-jazz.html"
   status = 301
   force = true
 
@@ -2920,8 +4810,26 @@
   force = true
 
 [[redirects]]
+  from = "/pronostic-venezia-bologna-2026-11-27"
+  to = "/pronostic-venezia-bologna-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pronostic-vfb-stuttgart-atletico-madrid-2026-10-20"
   to = "/pronostic-vfb-stuttgart-atletico-madrid-2026-10-20.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-vfb-stuttgart"
+  to = "/pronostic-vfb-stuttgart.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-viktoria-plzen-benfica-2026-11-26"
+  to = "/pronostic-viktoria-plzen-benfica-2026-11-26.html"
   status = 301
   force = true
 
@@ -2952,6 +4860,30 @@
 [[redirects]]
   from = "/pronostic-washington-wizards-detroit-pistons-2026-11-13"
   to = "/pronostic-washington-wizards-detroit-pistons-2026-11-13.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-washington-wizards-orlando-magic-2026-11-23"
+  to = "/pronostic-washington-wizards-orlando-magic-2026-11-23.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-washington-wizards"
+  to = "/pronostic-washington-wizards.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-werder-bremen-borussia-monchengladbach-2026-11-27"
+  to = "/pronostic-werder-bremen-borussia-monchengladbach-2026-11-27.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pronostic-werder-bremen-hamburg-sv-2026-11-22"
+  to = "/pronostic-werder-bremen-hamburg-sv-2026-11-22.html"
   status = 301
   force = true
 
@@ -2992,14 +4924,32 @@
   force = true
 
 [[redirects]]
+  from = "/racing-santander-predictions"
+  to = "/racing-santander-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/rb-leipzig-predictions"
   to = "/rb-leipzig-predictions.html"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/real-betis-predictions"
+  to = "/real-betis-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/real-madrid-predictions"
   to = "/real-madrid-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/real-sociedad-predictions"
+  to = "/real-sociedad-predictions.html"
   status = 301
   force = true
 
@@ -3040,6 +4990,18 @@
   force = true
 
 [[redirects]]
+  from = "/sacramento-kings-predictions"
+  to = "/sacramento-kings-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/san-antonio-spurs-predictions"
+  to = "/san-antonio-spurs-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/segunda-division-predictions"
   to = "/segunda-division-predictions.html"
   status = 301
@@ -3054,6 +5016,18 @@
 [[redirects]]
   from = "/shop"
   to = "/shop.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/slavia-prague-predictions"
+  to = "/slavia-prague-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sunderland-predictions"
+  to = "/sunderland-predictions.html"
   status = 301
   force = true
 
@@ -3100,6 +5074,18 @@
   force = true
 
 [[redirects]]
+  from = "/utah-jazz-predictions"
+  to = "/utah-jazz-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vfb-stuttgart-predictions"
+  to = "/vfb-stuttgart-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/villarreal-predictions"
   to = "/villarreal-predictions.html"
   status = 301
@@ -3126,6 +5112,12 @@
 [[redirects]]
   from = "/vip"
   to = "/vip.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/washington-wizards-predictions"
+  to = "/washington-wizards-predictions.html"
   status = 301
   force = true
 
