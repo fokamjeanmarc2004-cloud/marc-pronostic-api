@@ -921,6 +921,7 @@ export default {
         if (slot === "nba") out = await nbaResults(env, new Date());
         else if (slot === "bilan") out = await sendBilan(env, new Date(), 26);
         else if (slot === "midi") out = enPause(new Date()) ? "trêve : pas de promo" : await sendMidi(env, new Date());
+        else if (slot === "jour") out = await sendAnalyses(env, new Date(), "jour");
         else if (slot === "nuit") out = await sendAnalyses(env, new Date(Date.now() + 2 * 3600000), "nuit");
         else out = "slot inconnu";
       } catch (e) { out = "erreur : " + e.message; }
