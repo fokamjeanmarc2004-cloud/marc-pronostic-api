@@ -3040,7 +3040,7 @@ def mentions_page():
     return head(
         "Mentions légales | Cousin Marc Pronostic",
         "Mentions légales du site Cousin Marc Pronostic : éditeur, hébergement, liens d'affiliation et avertissement sur les paris sportifs.",
-        f"{BASE}/mentions-legales.html") + f"""
+        f"{BASE}/mentions-legales.html", nav=nav_fr(en="legal-notice.html", es="aviso-legal.html", ar="mentions-legales-ar.html"), alternates=(f"{BASE}/mentions-legales.html", f"{BASE}/legal-notice.html", f"{BASE}/aviso-legal.html", f"{BASE}/mentions-legales-ar.html")) + f"""
 <header class="hero"><div class="wrap">
 <p class="eyebrow">Informations</p>
 <h1>Mentions <span class="hl">légales</span></h1>
@@ -3058,6 +3058,75 @@ def mentions_page():
 <p>Les montants de bonus, codes et offres sont indicatifs et susceptibles d'évoluer selon les conditions des bookmakers et ton pays de résidence. Vérifie toujours les conditions officielles sur le site du bookmaker.</p>
 </main>
 {footer_html()}
+</body></html>"""
+
+
+def mentions_page_en():
+    return head('Legal Notice | Cousin Marc Pronostic', 'Legal notice for Cousin Marc Pronostic: publisher, hosting, affiliate links and sports betting disclaimer.', f"{BASE}/legal-notice.html", nav=nav_en(fr="mentions-legales.html", es="aviso-legal.html", ar="mentions-legales-ar.html"), lang="en",
+        alternates=(f"{BASE}/mentions-legales.html", f"{BASE}/legal-notice.html", f"{BASE}/aviso-legal.html", f"{BASE}/mentions-legales-ar.html")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Information</p>
+<h1>Legal <span class="hl">Notice</span></h1>
+</div></header>
+<main class="wrap legalbody">
+<h2>Publisher</h2>
+<p>This site is published by Cousin Marc Pronostic, as part of a content creation and affiliate activity around sports betting.</p>
+<h2>Hosting</h2>
+<p>The site is hosted by Netlify. The domain name is registered through Cloudflare.</p>
+<h2>Affiliate links</h2>
+<p>This site contains affiliate links to partner bookmakers. When a user signs up through these links and the promo code, the site may earn a commission at no extra cost to the user.</p>
+<h2>Disclaimer</h2>
+<p>Sports betting is for adults only (18+) and involves financial risk. Information on this site is provided for guidance only. No prediction is guaranteed. See our <a href="responsible-gambling.html" style="color:var(--gold)">Responsible gambling</a> page.</p>
+<h2>Content</h2>
+<p>Bonus amounts, codes and offers are indicative and may change according to bookmaker terms and your country of residence. Always check the official terms on the bookmaker's website.</p>
+</main>
+{footer_html_en()}
+</body></html>"""
+
+
+def mentions_page_es():
+    return head('Aviso legal | Cousin Marc Pronostic', 'Aviso legal de Cousin Marc Pronostic: editor, alojamiento, enlaces de afiliación y advertencia sobre las apuestas deportivas.', f"{BASE}/aviso-legal.html", nav=nav_es(fr="mentions-legales.html", en="legal-notice.html", ar="mentions-legales-ar.html"), lang="es",
+        alternates=(f"{BASE}/mentions-legales.html", f"{BASE}/legal-notice.html", f"{BASE}/aviso-legal.html", f"{BASE}/mentions-legales-ar.html")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Información</p>
+<h1>Aviso <span class="hl">legal</span></h1>
+</div></header>
+<main class="wrap legalbody">
+<h2>Editor del sitio</h2>
+<p>Este sitio es editado por Cousin Marc Pronostic, en el marco de una actividad de creación de contenido y afiliación en torno a las apuestas deportivas.</p>
+<h2>Alojamiento</h2>
+<p>El sitio está alojado en Netlify. El nombre de dominio está registrado a través de Cloudflare.</p>
+<h2>Enlaces de afiliación</h2>
+<p>Este sitio contiene enlaces de afiliación a casas de apuestas asociadas. Cuando un usuario se registra mediante estos enlaces y el código promocional, el sitio puede recibir una comisión, sin coste adicional para el usuario.</p>
+<h2>Advertencia</h2>
+<p>Las apuestas deportivas son solo para mayores de edad (18+) y conllevan riesgos financieros. La información de este sitio es meramente orientativa. Ningún pronóstico está garantizado. Consulta nuestra página <a href="juego-responsable.html" style="color:var(--gold)">Juego responsable</a>.</p>
+<h2>Contenido</h2>
+<p>Los importes de bonos, códigos y ofertas son orientativos y pueden cambiar según las condiciones de las casas de apuestas y tu país de residencia. Comprueba siempre las condiciones oficiales en su sitio web.</p>
+</main>
+{footer_html_es()}
+</body></html>"""
+
+
+def mentions_page_ar():
+    return head('الإشعار القانوني | Cousin Marc Pronostic', 'الإشعار القانوني لموقع Cousin Marc Pronostic: الناشر، الاستضافة، روابط الشراكة وتنبيه حول المراهنات الرياضية.', f"{BASE}/mentions-legales-ar.html", nav=nav_ar(fr="mentions-legales.html", en="legal-notice.html", es="aviso-legal.html"), lang="ar",
+        alternates=(f"{BASE}/mentions-legales.html", f"{BASE}/legal-notice.html", f"{BASE}/aviso-legal.html", f"{BASE}/mentions-legales-ar.html")) + f"""
+<header class="hero"><div class="wrap">
+<p class="eyebrow">معلومات</p>
+<h1>الإشعار <span class="hl">القانوني</span></h1>
+</div></header>
+<main class="wrap legalbody">
+<h2>ناشر الموقع</h2>
+<p>يصدر هذا الموقع عن Cousin Marc Pronostic، في إطار نشاط لإنشاء المحتوى والتسويق بالعمولة حول المراهنات الرياضية.</p>
+<h2>الاستضافة</h2>
+<p>يستضيف Netlify هذا الموقع، وتم تسجيل اسم النطاق عبر Cloudflare.</p>
+<h2>روابط الشراكة</h2>
+<p>يحتوي هذا الموقع على روابط شراكة مع مواقع مراهنات شريكة. عندما يسجّل المستخدم عبر هذه الروابط وبالرمز الترويجي، قد يحصل الموقع على عمولة دون أي تكلفة إضافية على المستخدم.</p>
+<h2>تنبيه</h2>
+<p>المراهنات الرياضية مخصصة للبالغين فقط (18 عامًا فأكثر) وتنطوي على مخاطر مالية. المعلومات الواردة في هذا الموقع للإرشاد فقط، ولا يوجد أي توقع مضمون. اطّلع على صفحة <a href="jeu-responsable-ar.html" style="color:var(--gold)">المراهنة المسؤولة</a>.</p>
+<h2>المحتوى</h2>
+<p>مبالغ المكافآت والرموز والعروض إرشادية وقد تتغير بحسب شروط مواقع المراهنات وبلد إقامتك. تحقق دائمًا من الشروط الرسمية على موقع المراهنات.</p>
+</main>
+{footer_html_ar()}
 </body></html>"""
 
 
@@ -3421,7 +3490,7 @@ def sitemap():
              "pronostics.html", "predictions.html", "pronosticos.html", "pronostics-ar.html",
              "actualites.html", "news.html", "noticias.html", "actualites-ar.html",
              "a-propos.html", "about.html", "acerca-de.html", "a-propos-ar.html",
-             "jeu-responsable.html", "responsible-gambling.html", "juego-responsable.html", "jeu-responsable-ar.html", "mentions-legales.html",
+             "jeu-responsable.html", "responsible-gambling.html", "juego-responsable.html", "jeu-responsable-ar.html", "mentions-legales.html", "legal-notice.html", "aviso-legal.html", "mentions-legales-ar.html",
              TPI_SLUG["fr"], TPI_SLUG["en"], TPI_SLUG["es"], TPI_SLUG["ar"],
              RESULTS_SLUG["fr"], RESULTS_SLUG["en"], RESULTS_SLUG["es"], RESULTS_SLUG["ar"], VIP_SLUG["fr"], VIP_SLUG["en"], VIP_SLUG["es"], VIP_SLUG["ar"]] \
             + [f"{b['slug']}.html" for b in BOOKMAKERS] + [f"{en_slug(b)}.html" for b in BOOKMAKERS] + [f"{es_slug(b)}.html" for b in BOOKMAKERS] + [f"{ar_slug(b)}.html" for b in BOOKMAKERS] \
@@ -3679,6 +3748,7 @@ def footer_html_en():
 <a href="promo-code-not-working.html">Promo code not working</a>
 <a href="news.html">News</a>
 <a href="about.html">About</a>
+<a href="legal-notice.html">Legal notice</a>
 <a href="index.html">Français</a>
 </div>
 <div><h4>Bookmakers</h4>
@@ -4152,6 +4222,7 @@ def footer_html_es():
 <a href="noticias.html">Noticias</a>
 <a href="acerca-de.html">Acerca de</a>
 <a href="juego-responsable.html">Juego responsable</a>
+<a href="aviso-legal.html">Aviso legal</a>
 <a href="index.html">Français</a>
 <a href="promo-codes.html">English</a>
 </div>
@@ -4794,6 +4865,7 @@ def footer_html_ar():
 <a href="a-propos-ar.html">من نحن</a>
 <a href="promo-codes-tchad-ar.html">الرموز في تشاد</a>
 <a href="jeu-responsable-ar.html">المراهنة المسؤولة</a>
+<a href="mentions-legales-ar.html">الإشعار القانوني</a>
 <a href="index.html">Français</a>
 <a href="promo-codes.html">English</a>
 </div>
@@ -8071,6 +8143,9 @@ print(f"  {len(MATCHS)} page(s) match du jour")
 open(os.path.join(OUT,"a-propos.html"),"w",encoding="utf-8").write(apropos_page()); written.append("a-propos.html")
 open(os.path.join(OUT,"jeu-responsable.html"),"w",encoding="utf-8").write(jeu_responsable_page()); written.append("jeu-responsable.html")
 open(os.path.join(OUT,"mentions-legales.html"),"w",encoding="utf-8").write(mentions_page()); written.append("mentions-legales.html")
+open(os.path.join(OUT,"legal-notice.html"),"w",encoding="utf-8").write(mentions_page_en()); written.append("legal-notice.html")
+open(os.path.join(OUT,"aviso-legal.html"),"w",encoding="utf-8").write(mentions_page_es()); written.append("aviso-legal.html")
+open(os.path.join(OUT,"mentions-legales-ar.html"),"w",encoding="utf-8").write(mentions_page_ar()); written.append("mentions-legales-ar.html")
 open(os.path.join(OUT,"actualites.html"),"w",encoding="utf-8").write(actualites_page()); written.append("actualites.html")
 open(os.path.join(OUT,"cote-de-2.html"),"w",encoding="utf-8").write(cote_de_2_page()); written.append("cote-de-2.html")
 # Pages anglaises (versions complètes)

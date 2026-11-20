@@ -190,6 +190,12 @@
   force = true
 
 [[redirects]]
+  from = "/aviso-legal"
+  to = "/aviso-legal.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/barcelona-predictions"
   to = "/barcelona-predictions.html"
   status = 301
@@ -724,6 +730,12 @@
   force = true
 
 [[redirects]]
+  from = "/legal-notice"
+  to = "/legal-notice.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/lens-predictions"
   to = "/lens-predictions.html"
   status = 301
@@ -846,6 +858,12 @@
 [[redirects]]
   from = "/memphis-grizzlies-predictions"
   to = "/memphis-grizzlies-predictions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mentions-legales-ar"
+  to = "/mentions-legales-ar.html"
   status = 301
   force = true
 
