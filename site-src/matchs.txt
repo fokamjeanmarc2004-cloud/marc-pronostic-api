@@ -4038,6 +4038,7 @@ pronostic_en: Real Madrid to win
 pronostic_es: Gana Real Madrid
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 79-13-8
 score: 3-1
 analyse_en: Kick-off Saturday 21 November: 21:00 in Douala, Lagos and Paris.
@@ -4046,12 +4047,14 @@ Record: Real Madrid: 10 wins, 0 draws, 2 defeats; Celta: 2 wins, 7 draws, 3 defe
 Real Madrid lead the league and host a Celta side that draws a lot.
 My pick: Real Madrid to win. Bigger odds: Real Madrid win and over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Real Madrid 2-1 Celta Vigo. Prediction won ✅.
 analyse: Coup d'envoi samedi 21 novembre : 21h à Douala et à Paris.
 Real Madrid reçoit Celta Vigo en Liga.
 Bilan : Real Madrid : 10 victoires, 0 nul, 2 défaites ; Celta : 2 victoires, 7 nuls, 3 défaites.
 Le Real domine le championnat et reçoit un Celta qui fait beaucoup de nuls.
 Mon choix : victoire du Real Madrid. Option plus grosse cote : Real Madrid gagne et plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Real Madrid 2-1 Celta Vigo. Pronostic gagné ✅.
 
 ---
 date: 2026-11-21 17:15
@@ -4091,6 +4094,7 @@ pronostic_en: Napoli to win
 pronostic_es: Gana Nápoles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 62-24-14
 score: 2-0
 analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
@@ -4099,12 +4103,14 @@ Record: Napoli: 4 wins, 3 draws, 4 defeats; Torino: 4 wins, 2 draws, 5 defeats.
 Napoli host and remain favourites on paper.
 My pick: Napoli to win. Bigger odds: Napoli win and under 3.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Napoli 1-0 Torino. Prediction won ✅.
 analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
 Naples reçoit Torino en Serie A.
 Bilan : Naples : 4 victoires, 3 nuls, 4 défaites ; Torino : 4 victoires, 2 nuls, 5 défaites.
 Naples reçoit à domicile et reste favori sur le papier.
 Mon choix : victoire de Naples. Option plus grosse cote : Naples gagne et moins de 3,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Naples 1-0 Torino. Pronostic gagné ✅.
 
 ---
 date: 2026-11-21 15:30
@@ -4724,6 +4730,7 @@ pronostic_en: AS Monaco to win
 pronostic_es: Gana AS Monaco
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 58-19-23
 score: 2-0
 analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
@@ -4732,12 +4739,14 @@ Record: AS Monaco: 4 wins, 4 draws, 2 defeats; AJ Auxerre: 3 wins, 1 draw, 6 def
 AS Monaco are clearly better placed and play at home.
 My pick: AS Monaco to win. Bigger odds: AS Monaco win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: AS Monaco 1-1 AJ Auxerre. Prediction lost ❌.
 analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
 AS Monaco reçoit AJ Auxerre en Ligue 1.
 Bilan : AS Monaco : 4 victoires, 4 nuls, 2 défaites ; AJ Auxerre : 3 victoires, 1 nul, 6 défaites.
 AS Monaco est nettement mieux classé et joue à domicile.
 Mon choix : victoire de AS Monaco. Option plus grosse cote : AS Monaco gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : AS Monaco 1-1 AJ Auxerre. Pronostic perdu ❌.
 
 ---
 date: 2026-11-21 20:45
@@ -4749,6 +4758,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
@@ -4757,12 +4767,14 @@ Record: Lens: 4 wins, 1 draw, 5 defeats; Toulouse: 3 wins, 4 draws, 3 defeats.
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Lens 1-1 Toulouse. Prediction won ✅.
 analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
 Lens reçoit Toulouse en Ligue 1.
 Bilan : Lens : 4 victoires, 1 nul, 5 défaites ; Toulouse : 3 victoires, 4 nuls, 3 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lens 1-1 Toulouse. Pronostic gagné ✅.
 
 ---
 date: 2026-11-21 20:45
@@ -4774,6 +4786,7 @@ pronostic_en: Lille or draw
 pronostic_es: Lille o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 50-22-28
 score: 1-0
 analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
@@ -4782,12 +4795,14 @@ Record: Lille: 6 wins, 3 draws, 1 defeat; Lyon: 5 wins, 2 draws, 3 defeats.
 Lille have the home edge, but I cover the draw to stay safe.
 My pick: Lille or draw. Bigger odds: Lille to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Lille 0-1 Lyon. Prediction lost ❌.
 analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
 Lille reçoit Lyon en Ligue 1.
 Bilan : Lille : 6 victoires, 3 nuls, 1 défaite ; Lyon : 5 victoires, 2 nuls, 3 défaites.
 Lille a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : lille ou match nul. Option plus grosse cote : victoire de Lille.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lille 0-1 Lyon. Pronostic perdu ❌.
 
 ---
 date: 2026-11-21 20:45
@@ -4799,6 +4814,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Saturday 21 November: 20:45 in Douala, Lagos and Paris.
@@ -4807,12 +4823,14 @@ Record: Strasbourg: 3 wins, 1 draw, 6 defeats; Brest: 4 wins, 3 draws, 3 defeats
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Strasbourg 0-1 Brest. Prediction lost ❌.
 analyse: Coup d'envoi samedi 21 novembre : 20h45 à Douala et à Paris.
 Strasbourg reçoit Brest en Ligue 1.
 Bilan : Strasbourg : 3 victoires, 1 nul, 6 défaites ; Brest : 4 victoires, 3 nuls, 3 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Strasbourg 0-1 Brest. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 15:00
@@ -5460,6 +5478,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Saturday 21 November: 21:00 in Douala, Lagos and Paris.
@@ -5468,12 +5487,14 @@ Record: Tenerife: 4 wins, 6 draws, 3 defeats; Mallorca: 6 wins, 5 draws, 2 defea
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Tenerife 0-0 Mallorca. Prediction lost ❌.
 analyse: Coup d'envoi samedi 21 novembre : 21h à Douala et à Paris.
 Tenerife reçoit Mallorca en Liga 2.
 Bilan : Tenerife : 4 victoires, 6 nuls, 3 défaites ; Mallorca : 6 victoires, 5 nuls, 2 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Tenerife 0-0 Mallorca. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 14:00
@@ -6936,6 +6957,7 @@ pronostic_en: 76ers to win
 pronostic_es: Ganan los 76ers
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 88-12
 score: 118-108
 analyse_en: Tip-off Saturday 21 November at 19:00 in Douala and Lagos.
@@ -6943,11 +6965,13 @@ Philadelphia 76ers are 13-3; Milwaukee Bucks are 1-15.
 76ers are the better team on record, and they play at home.
 My pick: 76ers to win. Bigger odds: 76ers win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Philadelphia 76ers 132-129 Milwaukee Bucks. Prediction won ✅: 76ers to win.
 analyse: Début du match samedi 21 novembre à 19h à Douala.
 Philadelphia 76ers est à 13 victoires et 3 défaites ; Milwaukee Bucks est à 1 victoires et 15 défaites.
 76ers a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des 76ers. Option plus grosse cote : 76ers gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Philadelphia 76ers 132-129 Milwaukee Bucks. Pronostic gagné ✅ : victoire des 76ers.
 
 ---
 date: 2026-11-22 01:30
@@ -6960,6 +6984,7 @@ pronostic_en: Trail Blazers to win
 pronostic_es: Ganan los Trail Blazers
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 48-52
 score: 108-112
 analyse_en: Tip-off Sunday 22 November at 01:30 in Douala and Lagos.
@@ -6967,11 +6992,13 @@ New York Knicks are 9-6; Portland Trail Blazers are 10-5.
 Trail Blazers are the better team on record, even on the road.
 My pick: Trail Blazers to win. Bigger odds: Trail Blazers win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: New York Knicks 97-96 Portland Trail Blazers. Prediction lost ❌: New York Knicks won.
 analyse: Début du match dimanche 22 novembre à 1h30 à Douala.
 New York Knicks est à 9 victoires et 6 défaites ; Portland Trail Blazers est à 10 victoires et 5 défaites.
 Trail Blazers a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Trail Blazers. Option plus grosse cote : Trail Blazers gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : New York Knicks 97-96 Portland Trail Blazers. Pronostic perdu ❌ : New York Knicks a gagné.
 
 ---
 date: 2026-11-22 02:00
@@ -6984,6 +7011,7 @@ pronostic_en: Mavericks to win
 pronostic_es: Ganan los Mavericks
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 72-28
 score: 118-108
 analyse_en: Tip-off Sunday 22 November at 02:00 in Douala and Lagos.
@@ -6991,11 +7019,13 @@ Dallas Mavericks are 8-7; LA Clippers are 4-10.
 Mavericks are the better team on record, and they play at home.
 My pick: Mavericks to win. Bigger odds: Mavericks win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Dallas Mavericks 110-100 LA Clippers. Prediction won ✅: Mavericks to win.
 analyse: Début du match dimanche 22 novembre à 2h à Douala.
 Dallas Mavericks est à 8 victoires et 7 défaites ; LA Clippers est à 4 victoires et 10 défaites.
 Mavericks a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Mavericks. Option plus grosse cote : Mavericks gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Dallas Mavericks 110-100 LA Clippers. Pronostic gagné ✅ : victoire des Mavericks.
 
 ---
 date: 2026-11-22 02:00
@@ -7008,6 +7038,7 @@ pronostic_en: Grizzlies to win
 pronostic_es: Ganan los Grizzlies
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 48-52
 score: 108-112
 analyse_en: Tip-off Sunday 22 November at 02:00 in Douala and Lagos.
@@ -7015,11 +7046,13 @@ Minnesota Timberwolves are 11-5; Memphis Grizzlies are 12-4.
 Grizzlies are the better team on record, even on the road.
 My pick: Grizzlies to win. Bigger odds: Grizzlies win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Minnesota Timberwolves 104-95 Memphis Grizzlies. Prediction lost ❌: Minnesota Timberwolves won.
 analyse: Début du match dimanche 22 novembre à 2h à Douala.
 Minnesota Timberwolves est à 11 victoires et 5 défaites ; Memphis Grizzlies est à 12 victoires et 4 défaites.
 Grizzlies a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Grizzlies. Option plus grosse cote : Grizzlies gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Minnesota Timberwolves 104-95 Memphis Grizzlies. Pronostic perdu ❌ : Minnesota Timberwolves a gagné.
 
 ---
 date: 2026-11-22 02:00
@@ -7032,6 +7065,7 @@ pronostic_en: Spurs to win
 pronostic_es: Ganan los Spurs
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 88-12
 score: 118-108
 analyse_en: Tip-off Sunday 22 November at 02:00 in Douala and Lagos.
@@ -7039,11 +7073,13 @@ San Antonio Spurs are 13-3; New Orleans Pelicans are 5-11.
 Spurs are the better team on record, and they play at home.
 My pick: Spurs to win. Bigger odds: Spurs win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: San Antonio Spurs 114-91 New Orleans Pelicans. Prediction won ✅: Spurs to win.
 analyse: Début du match dimanche 22 novembre à 2h à Douala.
 San Antonio Spurs est à 13 victoires et 3 défaites ; New Orleans Pelicans est à 5 victoires et 11 défaites.
 Spurs a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Spurs. Option plus grosse cote : Spurs gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : San Antonio Spurs 114-91 New Orleans Pelicans. Pronostic gagné ✅ : victoire des Spurs.
 
 ---
 date: 2026-11-22 04:00
