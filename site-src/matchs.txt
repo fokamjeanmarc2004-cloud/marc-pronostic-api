@@ -4150,6 +4150,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 58-23-19
 score: 2-1
 analyse_en: Kick-off Sunday 22 November: 17:30 in Douala, Lagos and Paris.
@@ -4158,12 +4159,14 @@ Record: Liverpool: 5 wins, 3 draws, 2 defeats; Man United: 1 win, 5 draws, 4 def
 Big clash: Liverpool are better placed, but United often score.
 My pick: Both teams to score. Bigger odds: Liverpool to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Liverpool 4-0 Manchester United. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 17h30 à Douala et à Paris.
 Liverpool reçoit Manchester United en Premier League.
 Bilan : Liverpool : 5 victoires, 3 nuls, 2 défaites ; Man United : 1 victoire, 5 nuls, 4 défaites.
 Gros choc : Liverpool est mieux classé, mais United marque souvent.
 Mon choix : les deux équipes marquent. Option plus grosse cote : Liverpool gagne.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Liverpool 4-0 Manchester United. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 14:00
@@ -4175,6 +4178,7 @@ pronostic_en: Barcelona to win
 pronostic_es: Gana Barcelona
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 80-12-8
 score: 3-1
 analyse_en: Kick-off Sunday 22 November: 14:00 in Douala, Lagos and Paris.
@@ -4183,12 +4187,14 @@ Record: Barça: 11 wins, 0 draws, 1 defeat; Villarreal: 4 wins, 3 draws, 5 defea
 Barça have the best record in La Liga.
 My pick: Barcelona to win. Bigger odds: Barcelona win and over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Barcelona 3-2 Villarreal. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 14h à Douala et à Paris.
 Barcelone reçoit Villarreal en Liga.
 Bilan : Barça : 11 victoires, 0 nul, 1 défaite ; Villarreal : 4 victoires, 3 nuls, 5 défaites.
 Le Barça a le meilleur bilan de la Liga.
 Mon choix : victoire de Barcelone. Option plus grosse cote : Barcelone gagne et plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Barcelone 3-2 Villarreal. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 20:45
@@ -4415,6 +4421,7 @@ pronostic_en: Brighton & Hove Albion or draw
 pronostic_es: Brighton & Hove Albion o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 19-36-45
 score: 0-1
 analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
@@ -4423,12 +4430,14 @@ Record: Hull City: 2 wins, 5 draws, 3 defeats; Brighton & Hove Albion: 7 wins, 1
 Brighton & Hove Albion are slightly better, but away games are hard: I cover the draw.
 My pick: Brighton & Hove Albion or draw. Bigger odds: Brighton & Hove Albion to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Hull City 2-0 Brighton & Hove Albion. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
 Hull City reçoit Brighton & Hove Albion en Premier League.
 Bilan : Hull City : 2 victoires, 5 nuls, 3 défaites ; Brighton & Hove Albion : 7 victoires, 1 nul, 2 défaites.
 Brighton & Hove Albion est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
 Mon choix : brighton & Hove Albion ou match nul. Option plus grosse cote : victoire de Brighton & Hove Albion.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Hull City 2-0 Brighton & Hove Albion. Pronostic perdu ❌.
 
 ---
 date: 2026-11-23 21:00
@@ -4602,6 +4611,7 @@ pronostic_en: Real Sociedad or draw
 pronostic_es: Real Sociedad o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 25-34-41
 score: 0-1
 analyse_en: Kick-off Sunday 22 November: 16:15 in Douala, Lagos and Paris.
@@ -4610,12 +4620,14 @@ Record: Racing Santander: 4 wins, 2 draws, 6 defeats; Real Sociedad: 7 wins, 1 d
 Real Sociedad are slightly better, but away games are hard: I cover the draw.
 My pick: Real Sociedad or draw. Bigger odds: Real Sociedad to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Racing Santander 3-2 Real Sociedad. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 16h15 à Douala et à Paris.
 Racing Santander reçoit Real Sociedad en Liga.
 Bilan : Racing Santander : 4 victoires, 2 nuls, 6 défaites ; Real Sociedad : 7 victoires, 1 nul, 4 défaites.
 Real Sociedad est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
 Mon choix : real Sociedad ou match nul. Option plus grosse cote : victoire de Real Sociedad.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Racing Santander 3-2 Real Sociedad. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 18:30
@@ -4627,6 +4639,7 @@ pronostic_en: Osasuna or draw
 pronostic_es: Osasuna o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 54-21-25
 score: 1-0
 analyse_en: Kick-off Sunday 22 November: 18:30 in Douala, Lagos and Paris.
@@ -4635,12 +4648,14 @@ Record: Osasuna: 3 wins, 3 draws, 6 defeats; Málaga: 0 wins, 5 draws, 7 defeats
 Osasuna have the home edge, but I cover the draw to stay safe.
 My pick: Osasuna or draw. Bigger odds: Osasuna to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Osasuna 1-0 Málaga. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 18h30 à Douala et à Paris.
 Osasuna reçoit Málaga en Liga.
 Bilan : Osasuna : 3 victoires, 3 nuls, 6 défaites ; Málaga : 0 victoire, 5 nuls, 7 défaites.
 Osasuna a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : osasuna ou match nul. Option plus grosse cote : victoire de Osasuna.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Osasuna 1-0 Málaga. Pronostic gagné ✅.
 
 ---
 date: 2026-11-23 21:00
@@ -4842,6 +4857,7 @@ pronostic_en: Paris FC to win
 pronostic_es: Gana Paris FC
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 70-14-16
 score: 2-0
 analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
@@ -4850,12 +4866,14 @@ Record: Paris FC: 6 wins, 2 draws, 2 defeats; Angers: 2 wins, 2 draws, 6 defeats
 Paris FC are clearly better placed and play at home.
 My pick: Paris FC to win. Bigger odds: Paris FC win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Paris FC 4-0 Angers. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
 Paris FC reçoit Angers en Ligue 1.
 Bilan : Paris FC : 6 victoires, 2 nuls, 2 défaites ; Angers : 2 victoires, 2 nuls, 6 défaites.
 Paris FC est nettement mieux classé et joue à domicile.
 Mon choix : victoire de Paris FC. Option plus grosse cote : Paris FC gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Paris FC 4-0 Angers. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 17:15
@@ -4867,6 +4885,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Sunday 22 November: 17:15 in Douala, Lagos and Paris.
@@ -4875,12 +4894,14 @@ Record: Lorient: 4 wins, 3 draws, 3 defeats; Stade Rennais: 5 wins, 1 draw, 4 de
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Lorient 1-1 Stade Rennais. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 17h15 à Douala et à Paris.
 Lorient reçoit Stade Rennais en Ligue 1.
 Bilan : Lorient : 4 victoires, 3 nuls, 3 défaites ; Stade Rennais : 5 victoires, 1 nul, 4 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lorient 1-1 Stade Rennais. Pronostic gagné ✅.
 
 ---
 date: 2026-11-27 20:45
@@ -5001,6 +5022,7 @@ pronostic_en: Juventus to win
 pronostic_es: Gana Juventus
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 68-14-18
 score: 2-0
 analyse_en: Kick-off Sunday 22 November: 12:30 in Douala, Lagos and Paris.
@@ -5009,12 +5031,14 @@ Record: Juventus: 5 wins, 3 draws, 3 defeats; Venezia: 2 wins, 0 draws, 9 defeat
 Juventus are clearly better placed and play at home.
 My pick: Juventus to win. Bigger odds: Juventus win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Juventus 4-0 Venezia. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 12h30 à Douala et à Paris.
 Juventus reçoit Venezia en Serie A.
 Bilan : Juventus : 5 victoires, 3 nuls, 3 défaites ; Venezia : 2 victoires, 0 nul, 9 défaites.
 Juventus est nettement mieux classé et joue à domicile.
 Mon choix : victoire de Juventus. Option plus grosse cote : Juventus gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Juventus 4-0 Venezia. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 15:00
@@ -5026,6 +5050,7 @@ pronostic_en: Bologna to win
 pronostic_es: Gana Bologna
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 68-14-18
 score: 2-0
 analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
@@ -5034,12 +5059,14 @@ Record: Bologna: 5 wins, 2 draws, 4 defeats; Udinese: 1 win, 2 draws, 8 defeats.
 Bologna are clearly better placed and play at home.
 My pick: Bologna to win. Bigger odds: Bologna win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Bologna 1-1 Udinese. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
 Bologna reçoit Udinese en Serie A.
 Bilan : Bologna : 5 victoires, 2 nuls, 4 défaites ; Udinese : 1 victoire, 2 nuls, 8 défaites.
 Bologna est nettement mieux classé et joue à domicile.
 Mon choix : victoire de Bologna. Option plus grosse cote : Bologna gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Bologna 1-1 Udinese. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 15:00
@@ -5051,6 +5078,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Sunday 22 November: 15:00 in Douala, Lagos and Paris.
@@ -5059,12 +5087,14 @@ Record: Sassuolo: 2 wins, 2 draws, 7 defeats; Genoa: 4 wins, 1 draw, 6 defeats.
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sassuolo 0-2 Genoa. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 15h à Douala et à Paris.
 Sassuolo reçoit Genoa en Serie A.
 Bilan : Sassuolo : 2 victoires, 2 nuls, 7 défaites ; Genoa : 4 victoires, 1 nul, 6 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sassuolo 0-2 Genoa. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 18:00
@@ -5076,6 +5106,7 @@ pronostic_en: Milan or draw
 pronostic_es: Milan o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 49-23-28
 score: 1-0
 analyse_en: Kick-off Sunday 22 November: 18:00 in Douala, Lagos and Paris.
@@ -5084,12 +5115,14 @@ Record: Milan: 7 wins, 3 draws, 1 defeat; Frosinone: 6 wins, 2 draws, 3 defeats.
 Milan have the home edge, but I cover the draw to stay safe.
 My pick: Milan or draw. Bigger odds: Milan to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: AC Milan 5-1 Frosinone. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 18h à Douala et à Paris.
 Milan reçoit Frosinone en Serie A.
 Bilan : Milan : 7 victoires, 3 nuls, 1 défaite ; Frosinone : 6 victoires, 2 nuls, 3 défaites.
 Milan a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : milan ou match nul. Option plus grosse cote : victoire de Milan.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Milan 5-1 Frosinone. Pronostic gagné ✅.
 
 ---
 date: 2026-11-23 20:45
@@ -5291,6 +5324,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Sunday 22 November: 15:30 in Douala, Lagos and Paris.
@@ -5299,12 +5333,14 @@ Record: Augsburg: 2 wins, 3 draws, 4 defeats; Mainz: 3 wins, 1 draw, 5 defeats.
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: FC Augsburg 3-1 Mainz. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 15h30 à Douala et à Paris.
 Augsburg reçoit Mainz en Bundesliga.
 Bilan : Augsburg : 2 victoires, 3 nuls, 4 défaites ; Mainz : 3 victoires, 1 nul, 5 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Augsburg 3-1 Mainz. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 17:30
@@ -5316,6 +5352,7 @@ pronostic_en: Werder Bremen or draw
 pronostic_es: Werder Bremen o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 49-23-28
 score: 1-0
 analyse_en: Kick-off Sunday 22 November: 17:30 in Douala, Lagos and Paris.
@@ -5324,12 +5361,14 @@ Record: Werder Bremen: 4 wins, 3 draws, 2 defeats; Hamburg SV: 4 wins, 0 draws, 
 Werder Bremen have the home edge, but I cover the draw to stay safe.
 My pick: Werder Bremen or draw. Bigger odds: Werder Bremen to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Werder Bremen 4-0 Hamburg SV. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 17h30 à Douala et à Paris.
 Werder Bremen reçoit Hamburg SV en Bundesliga.
 Bilan : Werder Bremen : 4 victoires, 3 nuls, 2 défaites ; Hamburg SV : 4 victoires, 0 nul, 5 défaites.
 Werder Bremen a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : werder Bremen ou match nul. Option plus grosse cote : victoire de Werder Bremen.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Werder Bremen 4-0 Hamburg SV. Pronostic gagné ✅.
 
 ---
 date: 2026-11-27 20:30
@@ -5506,6 +5545,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Sunday 22 November: 14:00 in Douala, Lagos and Paris.
@@ -5514,12 +5554,14 @@ Record: Córdoba: 6 wins, 2 draws, 6 defeats; Real Oviedo: 6 wins, 3 draws, 5 de
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Córdoba 3-0 Real Oviedo. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 14h à Douala et à Paris.
 Córdoba reçoit Real Oviedo en Liga 2.
 Bilan : Córdoba : 6 victoires, 2 nuls, 6 défaites ; Real Oviedo : 6 victoires, 3 nuls, 5 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Córdoba 3-0 Real Oviedo. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 16:15
@@ -5531,6 +5573,7 @@ pronostic_en: Sporting Gijón or draw
 pronostic_es: Sporting Gijón o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 46-24-30
 score: 1-0
 analyse_en: Kick-off Sunday 22 November: 16:15 in Douala, Lagos and Paris.
@@ -5539,12 +5582,14 @@ Record: Sporting Gijón: 7 wins, 2 draws, 5 defeats; Las Palmas: 6 wins, 2 draws
 Sporting Gijón have the home edge, but I cover the draw to stay safe.
 My pick: Sporting Gijón or draw. Bigger odds: Sporting Gijón to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sporting Gijón 0-2 Las Palmas. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 16h15 à Douala et à Paris.
 Sporting Gijón reçoit Las Palmas en Liga 2.
 Bilan : Sporting Gijón : 7 victoires, 2 nuls, 5 défaites ; Las Palmas : 6 victoires, 2 nuls, 6 défaites.
 Sporting Gijón a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : sporting Gijón ou match nul. Option plus grosse cote : victoire de Sporting Gijón.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sporting Gijón 0-2 Las Palmas. Pronostic perdu ❌.
 
 ---
 date: 2026-11-22 18:30
@@ -5556,6 +5601,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Sunday 22 November: 18:30 in Douala, Lagos and Paris.
@@ -5564,12 +5610,14 @@ Record: Girona: 7 wins, 3 draws, 4 defeats; Eibar: 7 wins, 3 draws, 3 defeats.
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Girona 2-1 Eibar. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 18h30 à Douala et à Paris.
 Girona reçoit Eibar en Liga 2.
 Bilan : Girona : 7 victoires, 3 nuls, 4 défaites ; Eibar : 7 victoires, 3 nuls, 3 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Girona 2-1 Eibar. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 18:30
@@ -5581,6 +5629,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Sunday 22 November: 18:30 in Douala, Lagos and Paris.
@@ -5589,12 +5638,14 @@ Record: Celta Fortuna: 3 wins, 4 draws, 7 defeats; Real Valladolid: 5 wins, 3 dr
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: RC Celta Fortuna 1-1 Real Valladolid. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 18h30 à Douala et à Paris.
 Celta Fortuna reçoit Real Valladolid en Liga 2.
 Bilan : Celta Fortuna : 3 victoires, 4 nuls, 7 défaites ; Real Valladolid : 5 victoires, 3 nuls, 6 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Celta Fortuna 1-1 Real Valladolid. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 21:00
@@ -7092,6 +7143,7 @@ pronostic_en: Celtics to win
 pronostic_es: Ganan los Celtics
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 12-88
 score: 106-116
 analyse_en: Tip-off Sunday 22 November at 04:00 in Douala and Lagos.
@@ -7099,11 +7151,13 @@ Sacramento Kings are 1-13; Boston Celtics are 11-4.
 Celtics are the better team on record, even on the road.
 My pick: Celtics to win. Bigger odds: Celtics win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sacramento Kings 97-96 Boston Celtics. Prediction lost ❌: Sacramento Kings won.
 analyse: Début du match dimanche 22 novembre à 4h à Douala.
 Sacramento Kings est à 1 victoires et 13 défaites ; Boston Celtics est à 11 victoires et 4 défaites.
 Celtics a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Celtics. Option plus grosse cote : Celtics gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sacramento Kings 97-96 Boston Celtics. Pronostic perdu ❌ : Sacramento Kings a gagné.
 
 ---
 date: 2026-11-22 21:30
