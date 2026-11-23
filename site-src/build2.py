@@ -2028,12 +2028,68 @@ BK_EXTRA = {
    "faq":[("ما هو رمز Megapari الترويجي في 2026؟","رمز Megapari الترويجي هو FFN. أدخله عند التسجيل لتفعيل أقصى مكافأة ترحيب."),("هل يوفّر Megapari كازينو؟","نعم، يجمع Megapari بين المراهنات الرياضية والكازينو (سلوتس وألعاب مباشرة) على المنصّة نفسها.")]},
  },
 }
+
+# ---- Faits verifies sur les sites officiels (lus le 23/11/2026) : Megapari et Paripesa ----
+FACTS_LABEL = {"fr": "Ce que dit la marque (site officiel, consulté le 23 novembre 2026)",
+               "en": "What the brand says (official site, checked on 23 November 2026)",
+               "es": "Lo que dice la marca (sitio oficial, consultado el 23 de noviembre de 2026)"}
+BK_EXTRA["code-promo-paripesa"] = {
+ "fr": {"rev": ["Paripesa est un bookmaker en ligne qui met en avant un catalogue large : plus de 1 000 événements par jour en avant-match et des paris en direct disponibles 24 heures sur 24. Il fait partie de la même famille de plateformes que 1xBet et Melbet, avec le même type d'interface, ce qui facilite la prise en main si tu connais déjà l'une d'elles."],
+   "pros": ["Plus de 1 000 événements par jour en avant-match (selon le site officiel)", "Paris en direct 24h/24 avec plus de 30 marchés sur la plupart des sports", "Nombreux types de paris : simple, combiné, système, chaîne, patent, etc.", "Code promo FFN pour le bonus de bienvenue"],
+   "faq": [("Quel est le code promo Paripesa en 2026 ?", "Le code promo Paripesa est FFN. Saisis-le à l'inscription pour activer ton bonus de bienvenue."),
+           ("Peut-on avoir plusieurs comptes Paripesa ?", "Non. Selon les règles officielles, chaque client ne peut avoir qu'un seul compte : la règle s'applique par famille, adresse e-mail, adresse IP, carte bancaire ou portefeuille électronique."),
+           ("Paripesa peut-il demander une vérification d'identité ?", "Oui. Les règles prévoient que l'agence peut demander une pièce d'identité ou un passeport et organiser une visioconférence. La réponse est donnée dans un délai de 5 jours ouvrables après cet échange."),
+           ("Comment sont versés les gains sur Paripesa ?", "Selon la présentation officielle, les gains sont versés par le même moyen que celui utilisé pour le dépôt."),
+           ("Comment contacter le support Paripesa ?", "En ligne depuis le site, par le formulaire de contact, ou par e-mail à support-fr@paripesa.com.")],
+   "facts": ["Sports proposés : football, tennis, basket-ball, volley-ball, hockey sur glace, boxe, handball, cricket, snooker, Formule 1, cyclisme et bien d'autres.",
+             "Marchés en direct : corners, cartons jaunes, coups francs, handicap européen, score exact, plus/moins de buts, première équipe à marquer.",
+             "Les moyens de paiement et les montants minimum changent selon le pays : sélectionne ton pays sur la page « Dépôt » du site officiel avant de déposer."]},
+ "en": {"rev": ["Paripesa is an online bookmaker that highlights a wide catalogue: more than 1,000 pre-match events a day and live betting available around the clock. It belongs to the same family of platforms as 1xBet and Melbet and uses a similar interface, which makes it easy to pick up if you already know one of them."],
+   "pros": ["More than 1,000 pre-match events a day (per the official site)", "Live betting 24/7 with 30+ markets on most sports", "Many bet types: single, accumulator, system, chain, patent and more", "FFN promo code for the welcome bonus"],
+   "faq": [("What is the Paripesa promo code in 2026?", "The Paripesa promo code is FFN. Enter it at registration to activate your welcome bonus."),
+           ("Can I have several Paripesa accounts?", "No. Under the official rules each customer may hold only one account, applied per family, e-mail address, IP address, bank card or e-wallet."),
+           ("Can Paripesa ask for ID verification?", "Yes. The rules allow the company to request an ID card or passport and hold a video call. A reply is given within 5 working days after the call."),
+           ("How are winnings paid on Paripesa?", "According to the official presentation, winnings are paid out by the same method used for the deposit."),
+           ("How do I contact Paripesa support?", "Online from the website, through the contact form, or by e-mail at support-fr@paripesa.com.")],
+   "facts": ["Sports offered: football, tennis, basketball, volleyball, ice hockey, boxing, handball, cricket, snooker, Formula 1, cycling and many more.",
+             "Live markets include corners, yellow cards, free kicks, European handicap, correct score, over/under and first team to score.",
+             "Payment methods and minimum amounts change by country: select your country on the official 'Deposit' page before you deposit."]},
+ "es": {"rev": ["Paripesa es una casa de apuestas en línea que destaca por un catálogo amplio: más de 1.000 eventos diarios en pre-partido y apuestas en vivo disponibles las 24 horas. Pertenece a la misma familia de plataformas que 1xBet y Melbet y tiene una interfaz parecida, lo que facilita empezar si ya conoces alguna de ellas."],
+   "pros": ["Más de 1.000 eventos diarios en pre-partido (según el sitio oficial)", "Apuestas en vivo 24/7 con más de 30 mercados en la mayoría de deportes", "Muchos tipos de apuesta: simple, combinada, sistema, cadena, patent y más", "Código FFN para el bono de bienvenida"],
+   "faq": [("¿Cuál es el código promocional de Paripesa en 2026?", "El código promocional de Paripesa es FFN. Introdúcelo al registrarte para activar tu bono de bienvenida."),
+           ("¿Puedo tener varias cuentas en Paripesa?", "No. Según las reglas oficiales, cada cliente solo puede tener una cuenta: se aplica por familia, correo electrónico, dirección IP, tarjeta bancaria o monedero electrónico."),
+           ("¿Paripesa puede pedir verificación de identidad?", "Sí. Las reglas prevén que la empresa pida un documento de identidad o pasaporte y realice una videollamada. La respuesta se da en un plazo de 5 días hábiles."),
+           ("¿Cómo se pagan las ganancias en Paripesa?", "Según la presentación oficial, las ganancias se abonan por el mismo medio utilizado para el depósito."),
+           ("¿Cómo contactar con el soporte de Paripesa?", "En línea desde el sitio web, mediante el formulario de contacto o por correo a support-fr@paripesa.com.")],
+   "facts": ["Deportes: fútbol, tenis, baloncesto, voleibol, hockey sobre hielo, boxeo, balonmano, críquet, snooker, Fórmula 1, ciclismo y muchos más.",
+             "Mercados en vivo: córners, tarjetas amarillas, tiros libres, hándicap europeo, resultado exacto, más/menos goles y primer equipo en marcar.",
+             "Los métodos de pago y los mínimos cambian según el país: elige tu país en la página « Depósito » del sitio oficial antes de depositar."]},
+}
+BK_EXTRA["code-promo-megapari"]["fr"]["facts"] = [
+  "Offre : paris sportifs avant-match et en direct, machines à sous, casino en direct, jeux Aviator et Crash, sports virtuels, loteries et e-sport.",
+  "Plus de 500 résultats possibles sur un seul événement et diffusions en direct, selon la présentation officielle.",
+  "Paiements annoncés : Visa, Mastercard, plus de 20 cryptomonnaies et des systèmes de paiement locaux (la liste dépend du pays).",
+  "Support multilingue 24h/24 et 7j/7, interface disponible dans plus de 60 langues, applications Android et iOS, et possibilité de parier via Telegram."]
+BK_EXTRA["code-promo-megapari"]["en"]["facts"] = [
+  "Offer: pre-match and live sports betting, slots, live casino, Aviator and Crash games, virtual sports, lotteries and esports.",
+  "500+ possible outcomes on a single event and live streams, according to the official presentation.",
+  "Announced payments: Visa, Mastercard, 20+ cryptocurrencies and local payment systems (the list depends on the country).",
+  "Multilingual support 24/7, interface in 60+ languages, Android and iOS apps, and the option to bet through Telegram."]
+BK_EXTRA["code-promo-megapari"]["es"]["facts"] = [
+  "Oferta: apuestas deportivas pre-partido y en vivo, tragaperras, casino en vivo, juegos Aviator y Crash, deportes virtuales, loterías y esports.",
+  "Más de 500 resultados posibles en un solo evento y retransmisiones en directo, según la presentación oficial.",
+  "Pagos anunciados: Visa, Mastercard, más de 20 criptomonedas y sistemas de pago locales (la lista depende del país).",
+  "Soporte multilingüe 24/7, interfaz en más de 60 idiomas, apps Android e iOS y posibilidad de apostar por Telegram."]
+
 def bk_extra(b, lang):
     d = BK_EXTRA.get(b["slug"], {}).get(lang)
     if not d:
         return ""
     lab = EXTRA_LABELS.get(lang, EXTRA_LABELS["fr"])
     revs = "".join(f"<p>{p}</p>" for p in d["rev"])
+    if d.get("facts"):
+        revs += (f'<p style="font-weight:800;margin-top:14px">{FACTS_LABEL.get(lang, FACTS_LABEL["fr"])} :</p><ul style="margin-top:6px">'
+                 + "".join(f"<li>{x}</li>" for x in d["facts"]) + "</ul>")
     pros = "".join(f"<li>{x}</li>" for x in d["pros"])
     faqs = "".join(f'<div style="margin-top:12px"><b>{q}</b><br><span style="color:var(--mist)">{a}</span></div>' for q, a in d["faq"])
     vid_html = ""
