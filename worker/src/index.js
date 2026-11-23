@@ -688,6 +688,13 @@ async function handleUpdate(update, env) {
       const bytes = await img.arrayBuffer();
       await saveToGithub(env, c.file, bytes, c.label);
       status = `✅ Reçu ! ${c.label} (${c.file}, ${Math.round(bytes.byteLength / 1024)} Ko).\nSur le site dans quelques minutes.`;
+      if (c.file === "result-photo.jpg") {
+        // « resultat » : la photo s'ajoute aussi au mur des tickets de la page Résultats (elle s'y accumule)
+        const pv = parseVip("vip\n" + (c.comment || ""));
+        const info = pv && (pv.cote || pv.gain) ? pv : { titre: "⚽ Ticket gagnant", cote: "", gain: "" };
+        await addVipProof(env, bytes, info);
+        status += "\n🏆 Ajouté aussi à la page Résultats du site (mur des tickets gagnants).";
+      }
     } catch (e) {
       console.log("site", e.message);
       status = "⚠️ Impossible de mettre le coupon sur le site (vérifie la clé GITHUB_TOKEN dans Cloudflare).";
