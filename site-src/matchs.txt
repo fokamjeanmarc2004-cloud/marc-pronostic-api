@@ -4206,6 +4206,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 22-27-51
 score: 1-2
 analyse_en: Kick-off Sunday 22 November: 20:45 in Douala, Lagos and Paris.
@@ -4214,12 +4215,14 @@ Record: Atalanta: 4 wins, 2 draws, 5 defeats; Inter: 9 wins, 1 draw, 1 defeat.
 Inter lead the table, but Atalanta play open football at home.
 My pick: Both teams to score. Bigger odds: Inter to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Atalanta 4-4 Internazionale. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 20h45 à Douala et à Paris.
 Atalanta reçoit Inter en Serie A.
 Bilan : Atalanta : 4 victoires, 2 nuls, 5 défaites ; Inter : 9 victoires, 1 nul, 1 défaite.
 L'Inter est leader, mais l'Atalanta joue ouvert à domicile.
 Mon choix : les deux équipes marquent. Option plus grosse cote : Inter gagne.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Atalanta 4-4 Inter. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 21:00
@@ -4231,6 +4234,7 @@ pronostic_en: Atlético Madrid to win
 pronostic_es: Gana Atlético de Madrid
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 20-30-50
 score: 0-1
 analyse_en: Kick-off Sunday 22 November: 21:00 in Douala, Lagos and Paris.
@@ -4239,12 +4243,14 @@ Record: Getafe: 3 wins, 3 draws, 6 defeats; Atlético: 9 wins, 1 draw, 2 defeats
 Atlético are solid, but Getafe defend well: a tight game.
 My pick: Atlético Madrid to win. Bigger odds: Atlético win and under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Getafe 0-3 Atlético Madrid. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 21h à Douala et à Paris.
 Getafe reçoit Atlético Madrid en Liga.
 Bilan : Getafe : 3 victoires, 3 nuls, 6 défaites ; Atlético : 9 victoires, 1 nul, 2 défaites.
 L'Atlético est solide, mais Getafe défend bien : match serré.
 Mon choix : victoire de l'Atlético de Madrid. Option plus grosse cote : Atlético gagne et moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Getafe 0-3 Atlético Madrid. Pronostic gagné ✅.
 
 ---
 date: 2026-11-22 20:45
@@ -4256,6 +4262,7 @@ pronostic_en: Marseille to win
 pronostic_es: Gana Marsella
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 72-18-10
 score: 2-0
 analyse_en: Kick-off Sunday 22 November: 20:45 in Douala, Lagos and Paris.
@@ -4264,12 +4271,14 @@ Record: OM: 6 wins, 0 draws, 4 defeats; Le Mans: 1 win, 5 draws, 4 defeats.
 OM host the promoted side and should win at the Vélodrome.
 My pick: Marseille to win. Bigger odds: OM win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Marseille 2-3 Le Mans. Prediction lost ❌.
 analyse: Coup d'envoi dimanche 22 novembre : 20h45 à Douala et à Paris.
 Marseille reçoit Le Mans en Ligue 1.
 Bilan : OM : 6 victoires, 0 nul, 4 défaites ; Le Mans : 1 victoire, 5 nuls, 4 défaites.
 L'OM reçoit le promu et doit s'imposer au Vélodrome.
 Mon choix : victoire de l'OM. Option plus grosse cote : OM gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Marseille 2-3 Le Mans. Pronostic perdu ❌.
 
 ---
 date: 2026-11-21 16:00
@@ -5657,6 +5666,7 @@ pronostic_en: Burgos to win
 pronostic_es: Gana Burgos
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 62-17-21
 score: 2-0
 analyse_en: Kick-off Sunday 22 November: 21:00 in Douala, Lagos and Paris.
@@ -5665,12 +5675,14 @@ Record: Burgos: 7 wins, 3 draws, 4 defeats; Albacete: 4 wins, 1 draw, 9 defeats.
 Burgos are clearly better placed and play at home.
 My pick: Burgos to win. Bigger odds: Burgos win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Burgos 1-0 Albacete. Prediction won ✅.
 analyse: Coup d'envoi dimanche 22 novembre : 21h à Douala et à Paris.
 Burgos reçoit Albacete en Liga 2.
 Bilan : Burgos : 7 victoires, 3 nuls, 4 défaites ; Albacete : 4 victoires, 1 nul, 9 défaites.
 Burgos est nettement mieux classé et joue à domicile.
 Mon choix : victoire de Burgos. Option plus grosse cote : Burgos gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Burgos 1-0 Albacete. Pronostic gagné ✅.
 
 ---
 date: 2026-11-23 20:30
@@ -7170,6 +7182,7 @@ pronostic_en: Pistons to win
 pronostic_es: Ganan los Pistons
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 46-54
 score: 108-112
 analyse_en: Tip-off Sunday 22 November at 21:30 in Douala and Lagos.
@@ -7177,11 +7190,13 @@ Atlanta Hawks are 9-6; Detroit Pistons are 10-4.
 Pistons are the better team on record, even on the road.
 My pick: Pistons to win. Bigger odds: Pistons win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Atlanta Hawks 107-97 Detroit Pistons. Prediction lost ❌: Atlanta Hawks won.
 analyse: Début du match dimanche 22 novembre à 21h30 à Douala.
 Atlanta Hawks est à 9 victoires et 6 défaites ; Detroit Pistons est à 10 victoires et 4 défaites.
 Pistons a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Pistons. Option plus grosse cote : Pistons gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Atlanta Hawks 107-97 Detroit Pistons. Pronostic perdu ❌ : Atlanta Hawks a gagné.
 
 ---
 date: 2026-11-23 00:00
@@ -7194,6 +7209,7 @@ pronostic_en: Heat to win
 pronostic_es: Ganan los Heat
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 54-46
 score: 112-106
 analyse_en: Tip-off Monday 23 November at 00:00 in Douala and Lagos.
@@ -7201,11 +7217,13 @@ Miami Heat are 9-6; Oklahoma City Thunder are 9-6.
 Heat are the better team on record, and they play at home.
 My pick: Heat to win. Bigger odds: Heat win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Miami Heat 123-113 Oklahoma City Thunder. Prediction won ✅: Heat to win.
 analyse: Début du match lundi 23 novembre à 0h à Douala.
 Miami Heat est à 9 victoires et 6 défaites ; Oklahoma City Thunder est à 9 victoires et 6 défaites.
 Heat a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Heat. Option plus grosse cote : Heat gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Miami Heat 123-113 Oklahoma City Thunder. Pronostic gagné ✅ : victoire des Heat.
 
 ---
 date: 2026-11-23 01:00
@@ -7218,6 +7236,7 @@ pronostic_en: Magic to win
 pronostic_es: Ganan los Magic
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 46-54
 score: 108-112
 analyse_en: Tip-off Monday 23 November at 01:00 in Douala and Lagos.
@@ -7225,11 +7244,13 @@ Washington Wizards are 5-11; Orlando Magic are 6-8.
 Magic are the better team on record, even on the road.
 My pick: Magic to win. Bigger odds: Magic win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Washington Wizards 116-96 Orlando Magic. Prediction lost ❌: Washington Wizards won.
 analyse: Début du match lundi 23 novembre à 1h à Douala.
 Washington Wizards est à 5 victoires et 11 défaites ; Orlando Magic est à 6 victoires et 8 défaites.
 Magic a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Magic. Option plus grosse cote : Magic gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Washington Wizards 116-96 Orlando Magic. Pronostic perdu ❌ : Washington Wizards a gagné.
 
 ---
 date: 2026-11-23 01:00
@@ -7242,6 +7263,7 @@ pronostic_en: Nuggets to win
 pronostic_es: Ganan los Nuggets
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 31-69
 score: 108-112
 analyse_en: Tip-off Monday 23 November at 01:00 in Douala and Lagos.
@@ -7249,11 +7271,13 @@ Chicago Bulls are 4-10; Denver Nuggets are 8-5.
 Nuggets are the better team on record, even on the road.
 My pick: Nuggets to win. Bigger odds: Nuggets win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Chicago Bulls 145-151 Denver Nuggets. Prediction won ✅: Nuggets to win.
 analyse: Début du match lundi 23 novembre à 1h à Douala.
 Chicago Bulls est à 4 victoires et 10 défaites ; Denver Nuggets est à 8 victoires et 5 défaites.
 Nuggets a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Nuggets. Option plus grosse cote : Nuggets gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Chicago Bulls 145-151 Denver Nuggets. Pronostic gagné ✅ : victoire des Nuggets.
 
 ---
 date: 2026-11-23 01:00
@@ -7266,6 +7290,7 @@ pronostic_en: Mavericks to win
 pronostic_es: Ganan los Mavericks
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 30-70
 score: 108-112
 analyse_en: Tip-off Monday 23 November at 01:00 in Douala and Lagos.
@@ -7273,11 +7298,13 @@ Utah Jazz are 3-13; Dallas Mavericks are 8-7.
 Mavericks are the better team on record, even on the road.
 My pick: Mavericks to win. Bigger odds: Mavericks win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Utah Jazz 114-116 Dallas Mavericks. Prediction won ✅: Mavericks to win.
 analyse: Début du match lundi 23 novembre à 1h à Douala.
 Utah Jazz est à 3 victoires et 13 défaites ; Dallas Mavericks est à 8 victoires et 7 défaites.
 Mavericks a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Mavericks. Option plus grosse cote : Mavericks gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Utah Jazz 114-116 Dallas Mavericks. Pronostic gagné ✅ : victoire des Mavericks.
 
 ---
 date: 2026-11-23 02:00
@@ -7290,6 +7317,7 @@ pronostic_en: Knicks to win
 pronostic_es: Ganan los Knicks
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 73-27
 score: 118-108
 analyse_en: Tip-off Monday 23 November at 02:00 in Douala and Lagos.
@@ -7297,11 +7325,13 @@ New York Knicks are 9-6; Indiana Pacers are 5-10.
 Knicks are the better team on record, and they play at home.
 My pick: Knicks to win. Bigger odds: Knicks win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: New York Knicks 113-106 Indiana Pacers. Prediction won ✅: Knicks to win.
 analyse: Début du match lundi 23 novembre à 2h à Douala.
 New York Knicks est à 9 victoires et 6 défaites ; Indiana Pacers est à 5 victoires et 10 défaites.
 Knicks a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Knicks. Option plus grosse cote : Knicks gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : New York Knicks 113-106 Indiana Pacers. Pronostic gagné ✅ : victoire des Knicks.
 
 ---
 date: 2026-11-23 02:30
@@ -7314,6 +7344,7 @@ pronostic_en: Celtics to win
 pronostic_es: Ganan los Celtics
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 38-62
 score: 108-112
 analyse_en: Tip-off Monday 23 November at 02:30 in Douala and Lagos.
@@ -7321,11 +7352,13 @@ Golden State Warriors are 8-8; Boston Celtics are 11-4.
 Celtics are the better team on record, even on the road.
 My pick: Celtics to win. Bigger odds: Celtics win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Golden State Warriors 88-87 Boston Celtics. Prediction lost ❌: Golden State Warriors won.
 analyse: Début du match lundi 23 novembre à 2h30 à Douala.
 Golden State Warriors est à 8 victoires et 8 défaites ; Boston Celtics est à 11 victoires et 4 défaites.
 Celtics a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Celtics. Option plus grosse cote : Celtics gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Golden State Warriors 88-87 Boston Celtics. Pronostic perdu ❌ : Golden State Warriors a gagné.
 
 ---
 date: 2026-11-24 01:00
