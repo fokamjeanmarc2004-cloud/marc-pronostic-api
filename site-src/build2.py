@@ -3752,7 +3752,7 @@ def footer_html_en():
 <a href="index.html">Français</a>
 </div>
 <div><h4>Bookmakers</h4>
-{''.join(f'<a href="{en_slug(b)}.html">{b["name"]}</a>' for b in BOOKMAKERS[:4])}
+{''.join(f'<a href="{en_slug(b)}.html">{b["name"]}</a>' for b in BOOKMAKERS)}
 </div>
 <div><h4>Countries</h4>
 {''.join(f'<a href="{cty_en_slug(c)}.html">{c["name"]}</a>' for c in COUNTRIES_EN)}
@@ -4227,7 +4227,7 @@ def footer_html_es():
 <a href="promo-codes.html">English</a>
 </div>
 <div><h4>Casas de apuestas</h4>
-{''.join(f'<a href="{es_slug(b)}.html">{b["name"]}</a>' for b in BOOKMAKERS[:4])}
+{''.join(f'<a href="{es_slug(b)}.html">{b["name"]}</a>' for b in BOOKMAKERS)}
 </div>
 <div><h4>Redes</h4>
 <a href="https://t.me/marc_prono" rel="nofollow">Telegram</a>
@@ -4870,7 +4870,7 @@ def footer_html_ar():
 <a href="promo-codes.html">English</a>
 </div>
 <div><h4>المراهنات</h4>
-{''.join(f'<a href="{ar_slug(b)}.html">{b["name"]}</a>' for b in BOOKMAKERS[:4])}
+{''.join(f'<a href="{ar_slug(b)}.html">{b["name"]}</a>' for b in BOOKMAKERS)}
 </div>
 <div><h4>الشبكات</h4>
 <a href="https://t.me/marc_prono" rel="nofollow">Telegram</a>
