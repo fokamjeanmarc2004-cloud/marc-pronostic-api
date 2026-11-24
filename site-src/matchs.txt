@@ -5756,6 +5756,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Tuesday 24 November: 18:45 in Douala, Lagos and Paris.
@@ -5764,12 +5765,14 @@ Record: Bodo/Glimt: 1 win, 1 draw, 2 defeats; LASK Linz: 2 wins, 0 draws, 2 defe
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Bodo/Glimt 1-0 LASK Linz. Prediction lost ❌.
 analyse: Coup d'envoi mardi 24 novembre : 18h45 à Douala et à Paris.
 Bodo/Glimt reçoit LASK Linz en Ligue des Champions.
 Bilan : Bodo/Glimt : 1 victoire, 1 nul, 2 défaites ; LASK Linz : 2 victoires, 0 nul, 2 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Bodo/Glimt 1-0 LASK Linz. Pronostic perdu ❌.
 
 ---
 date: 2026-11-24 18:45
@@ -5781,6 +5784,7 @@ pronostic_en: Aston Villa or draw
 pronostic_es: Aston Villa o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 24-34-42
 score: 0-1
 analyse_en: Kick-off Tuesday 24 November: 18:45 in Douala, Lagos and Paris.
@@ -5789,12 +5793,14 @@ Record: Galatasaray: 2 wins, 0 draws, 2 defeats; Aston Villa: 3 wins, 0 draws, 1
 Aston Villa are slightly better, but away games are hard: I cover the draw.
 My pick: Aston Villa or draw. Bigger odds: Aston Villa to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Galatasaray 1-0 Aston Villa. Prediction lost ❌.
 analyse: Coup d'envoi mardi 24 novembre : 18h45 à Douala et à Paris.
 Galatasaray reçoit Aston Villa en Ligue des Champions.
 Bilan : Galatasaray : 2 victoires, 0 nul, 2 défaites ; Aston Villa : 3 victoires, 0 nul, 1 défaite.
 Aston Villa est un peu au-dessus, mais jouer à l'extérieur est difficile : je couvre le nul.
 Mon choix : aston Villa ou match nul. Option plus grosse cote : victoire de Aston Villa.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Galatasaray 1-0 Aston Villa. Pronostic perdu ❌.
 
 ---
 date: 2026-11-24 21:00
@@ -7599,6 +7605,7 @@ pronostic_en: Lakers to win
 pronostic_es: Ganan los Lakers
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 88-12
 score: 118-108
 analyse_en: Tip-off Tuesday 24 November at 04:00 in Douala and Lagos.
@@ -7606,11 +7613,13 @@ Los Angeles Lakers are 13-3; Utah Jazz are 3-13.
 Lakers are the better team on record, and they play at home.
 My pick: Lakers to win. Bigger odds: Lakers win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Los Angeles Lakers 109-94 Utah Jazz. Prediction won ✅: Lakers to win.
 analyse: Début du match mardi 24 novembre à 4h à Douala.
 Los Angeles Lakers est à 13 victoires et 3 défaites ; Utah Jazz est à 3 victoires et 13 défaites.
 Lakers a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Lakers. Option plus grosse cote : Lakers gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Los Angeles Lakers 109-94 Utah Jazz. Pronostic gagné ✅ : victoire des Lakers.
 
 ---
 date: 2026-11-24 04:00
@@ -7623,6 +7632,7 @@ pronostic_en: Spurs to win
 pronostic_es: Ganan los Spurs
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 12-88
 score: 106-116
 analyse_en: Tip-off Tuesday 24 November at 04:00 in Douala and Lagos.
@@ -7630,8 +7640,10 @@ Sacramento Kings are 1-13; San Antonio Spurs are 13-3.
 Spurs are the better team on record, even on the road.
 My pick: Spurs to win. Bigger odds: Spurs win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sacramento Kings 107-123 San Antonio Spurs. Prediction won ✅: Spurs to win.
 analyse: Début du match mardi 24 novembre à 4h à Douala.
 Sacramento Kings est à 1 victoires et 13 défaites ; San Antonio Spurs est à 13 victoires et 3 défaites.
 Spurs a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Spurs. Option plus grosse cote : Spurs gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sacramento Kings 107-123 San Antonio Spurs. Pronostic gagné ✅ : victoire des Spurs.
