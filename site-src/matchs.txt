@@ -4458,6 +4458,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Monday 23 November: 21:00 in Douala, Lagos and Paris.
@@ -4466,12 +4467,14 @@ Record: Brentford: 3 wins, 5 draws, 2 defeats; Everton: 4 wins, 4 draws, 2 defea
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Brentford 4-0 Everton. Prediction lost ❌.
 analyse: Coup d'envoi lundi 23 novembre : 21h à Douala et à Paris.
 Brentford reçoit Everton en Premier League.
 Bilan : Brentford : 3 victoires, 5 nuls, 2 défaites ; Everton : 4 victoires, 4 nuls, 2 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Brentford 4-0 Everton. Pronostic perdu ❌.
 
 ---
 date: 2026-11-27 21:00
@@ -4676,6 +4679,7 @@ pronostic_en: Levante or draw
 pronostic_es: Levante o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 44-25-31
 score: 1-0
 analyse_en: Kick-off Monday 23 November: 21:00 in Douala, Lagos and Paris.
@@ -4684,12 +4688,14 @@ Record: Levante: 2 wins, 5 draws, 5 defeats; Elche: 2 wins, 4 draws, 6 defeats.
 Levante have the home edge, but I cover the draw to stay safe.
 My pick: Levante or draw. Bigger odds: Levante to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Levante 1-1 Elche. Prediction won ✅.
 analyse: Coup d'envoi lundi 23 novembre : 21h à Douala et à Paris.
 Levante reçoit Elche en Liga.
 Bilan : Levante : 2 victoires, 5 nuls, 5 défaites ; Elche : 2 victoires, 4 nuls, 6 défaites.
 Levante a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : levante ou match nul. Option plus grosse cote : victoire de Levante.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Levante 1-1 Elche. Pronostic gagné ✅.
 
 ---
 date: 2026-11-27 21:00
@@ -5143,6 +5149,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Monday 23 November: 20:45 in Douala, Lagos and Paris.
@@ -5151,12 +5158,14 @@ Record: Monza: 2 wins, 1 draw, 8 defeats; Fiorentina: 2 wins, 3 draws, 6 defeats
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Monza 3-0 Fiorentina. Prediction lost ❌.
 analyse: Coup d'envoi lundi 23 novembre : 20h45 à Douala et à Paris.
 Monza reçoit Fiorentina en Serie A.
 Bilan : Monza : 2 victoires, 1 nul, 8 défaites ; Fiorentina : 2 victoires, 3 nuls, 6 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Monza 3-0 Fiorentina. Pronostic perdu ❌.
 
 ---
 date: 2026-11-27 20:45
@@ -5694,6 +5703,7 @@ pronostic_en: Almería to win
 pronostic_es: Gana Almería
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 8-41-51
 score: 0-2
 analyse_en: Kick-off Monday 23 November: 20:30 in Douala, Lagos and Paris.
@@ -5702,12 +5712,14 @@ Record: Ceuta: 1 win, 2 draws, 11 defeats; Almería: 10 wins, 2 draws, 2 defeats
 Almería are clearly stronger, even away.
 My pick: Almería to win. Bigger odds: Almería win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Ceuta 2-3 Almería. Prediction won ✅.
 analyse: Coup d'envoi lundi 23 novembre : 20h30 à Douala et à Paris.
 Ceuta reçoit Almería en Liga 2.
 Bilan : Ceuta : 1 victoire, 2 nuls, 11 défaites ; Almería : 10 victoires, 2 nuls, 2 défaites.
 Almería est nettement plus fort, même en déplacement.
 Mon choix : victoire de Almería. Option plus grosse cote : Almería gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Ceuta 2-3 Almería. Pronostic gagné ✅.
 
 ---
 date: 2026-11-27 20:30
@@ -7371,6 +7383,7 @@ pronostic_en: Grizzlies to win
 pronostic_es: Ganan los Grizzlies
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 22-78
 score: 106-116
 analyse_en: Tip-off Tuesday 24 November at 01:00 in Douala and Lagos.
@@ -7378,11 +7391,13 @@ Charlotte Hornets are 4-10; Memphis Grizzlies are 12-4.
 Grizzlies are the better team on record, even on the road.
 My pick: Grizzlies to win. Bigger odds: Grizzlies win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Charlotte Hornets 111-117 Memphis Grizzlies. Prediction won ✅: Grizzlies to win.
 analyse: Début du match mardi 24 novembre à 1h à Douala.
 Charlotte Hornets est à 4 victoires et 10 défaites ; Memphis Grizzlies est à 12 victoires et 4 défaites.
 Grizzlies a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Grizzlies. Option plus grosse cote : Grizzlies gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Charlotte Hornets 111-117 Memphis Grizzlies. Pronostic gagné ✅ : victoire des Grizzlies.
 
 ---
 date: 2026-11-24 01:00
@@ -7395,6 +7410,7 @@ pronostic_en: 76ers to win
 pronostic_es: Ganan los 76ers
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 64-36
 score: 112-106
 analyse_en: Tip-off Tuesday 24 November at 01:00 in Douala and Lagos.
@@ -7402,11 +7418,13 @@ Philadelphia 76ers are 13-3; Portland Trail Blazers are 10-5.
 76ers are the better team on record, and they play at home.
 My pick: 76ers to win. Bigger odds: 76ers win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Philadelphia 76ers 111-128 Portland Trail Blazers. Prediction lost ❌: Portland Trail Blazers won.
 analyse: Début du match mardi 24 novembre à 1h à Douala.
 Philadelphia 76ers est à 13 victoires et 3 défaites ; Portland Trail Blazers est à 10 victoires et 5 défaites.
 76ers a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des 76ers. Option plus grosse cote : 76ers gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Philadelphia 76ers 111-128 Portland Trail Blazers. Pronostic perdu ❌ : Portland Trail Blazers a gagné.
 
 ---
 date: 2026-11-24 01:30
@@ -7419,6 +7437,7 @@ pronostic_en: Thunder to win
 pronostic_es: Ganan los Thunder
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 36-64
 score: 108-112
 analyse_en: Tip-off Tuesday 24 November at 01:30 in Douala and Lagos.
@@ -7426,11 +7445,13 @@ Indiana Pacers are 5-10; Oklahoma City Thunder are 9-6.
 Thunder are the better team on record, even on the road.
 My pick: Thunder to win. Bigger odds: Thunder win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Indiana Pacers 125-120 Oklahoma City Thunder. Prediction lost ❌: Indiana Pacers won.
 analyse: Début du match mardi 24 novembre à 1h30 à Douala.
 Indiana Pacers est à 5 victoires et 10 défaites ; Oklahoma City Thunder est à 9 victoires et 6 défaites.
 Thunder a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Thunder. Option plus grosse cote : Thunder gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Indiana Pacers 125-120 Oklahoma City Thunder. Pronostic perdu ❌ : Indiana Pacers a gagné.
 
 ---
 date: 2026-11-24 01:30
@@ -7443,6 +7464,7 @@ pronostic_en: Raptors to win
 pronostic_es: Ganan los Raptors
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 73-27
 score: 118-108
 analyse_en: Tip-off Tuesday 24 November at 01:30 in Douala and Lagos.
@@ -7450,11 +7472,13 @@ Toronto Raptors are 5-10; Milwaukee Bucks are 1-15.
 Raptors are the better team on record, and they play at home.
 My pick: Raptors to win. Bigger odds: Raptors win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Toronto Raptors 111-116 Milwaukee Bucks. Prediction lost ❌: Milwaukee Bucks won.
 analyse: Début du match mardi 24 novembre à 1h30 à Douala.
 Toronto Raptors est à 5 victoires et 10 défaites ; Milwaukee Bucks est à 1 victoires et 15 défaites.
 Raptors a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Raptors. Option plus grosse cote : Raptors gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Toronto Raptors 111-116 Milwaukee Bucks. Pronostic perdu ❌ : Milwaukee Bucks a gagné.
 
 ---
 date: 2026-11-24 01:30
@@ -7467,6 +7491,7 @@ pronostic_en: Timberwolves to win
 pronostic_es: Ganan los Timberwolves
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 87-13
 score: 118-108
 analyse_en: Tip-off Tuesday 24 November at 01:30 in Douala and Lagos.
@@ -7474,11 +7499,13 @@ Minnesota Timberwolves are 11-5; Brooklyn Nets are 3-11.
 Timberwolves are the better team on record, and they play at home.
 My pick: Timberwolves to win. Bigger odds: Timberwolves win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Minnesota Timberwolves 142-116 Brooklyn Nets. Prediction won ✅: Timberwolves to win.
 analyse: Début du match mardi 24 novembre à 1h30 à Douala.
 Minnesota Timberwolves est à 11 victoires et 5 défaites ; Brooklyn Nets est à 3 victoires et 11 défaites.
 Timberwolves a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Timberwolves. Option plus grosse cote : Timberwolves gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Minnesota Timberwolves 142-116 Brooklyn Nets. Pronostic gagné ✅ : victoire des Timberwolves.
 
 ---
 date: 2026-11-24 02:00
@@ -7491,6 +7518,7 @@ pronostic_en: Cavaliers to win
 pronostic_es: Ganan los Cavaliers
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 39-61
 score: 108-112
 analyse_en: Tip-off Tuesday 24 November at 02:00 in Douala and Lagos.
@@ -7498,11 +7526,13 @@ Chicago Bulls are 4-10; Cleveland Cavaliers are 8-8.
 Cavaliers are the better team on record, even on the road.
 My pick: Cavaliers to win. Bigger odds: Cavaliers win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Chicago Bulls 122-108 Cleveland Cavaliers. Prediction lost ❌: Chicago Bulls won.
 analyse: Début du match mardi 24 novembre à 2h à Douala.
 Chicago Bulls est à 4 victoires et 10 défaites ; Cleveland Cavaliers est à 8 victoires et 8 défaites.
 Cavaliers a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Cavaliers. Option plus grosse cote : Cavaliers gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Chicago Bulls 122-108 Cleveland Cavaliers. Pronostic perdu ❌ : Chicago Bulls a gagné.
 
 ---
 date: 2026-11-24 02:00
@@ -7515,6 +7545,7 @@ pronostic_en: Suns to win
 pronostic_es: Ganan los Suns
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 41-59
 score: 108-112
 analyse_en: Tip-off Tuesday 24 November at 02:00 in Douala and Lagos.
@@ -7522,11 +7553,13 @@ New Orleans Pelicans are 5-11; Phoenix Suns are 7-7.
 Suns are the better team on record, even on the road.
 My pick: Suns to win. Bigger odds: Suns win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: New Orleans Pelicans 119-123 Phoenix Suns. Prediction won ✅: Suns to win.
 analyse: Début du match mardi 24 novembre à 2h à Douala.
 New Orleans Pelicans est à 5 victoires et 11 défaites ; Phoenix Suns est à 7 victoires et 7 défaites.
 Suns a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Suns. Option plus grosse cote : Suns gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : New Orleans Pelicans 119-123 Phoenix Suns. Pronostic gagné ✅ : victoire des Suns.
 
 ---
 date: 2026-11-24 02:30
@@ -7539,6 +7572,7 @@ pronostic_en: Rockets to win
 pronostic_es: Ganan los Rockets
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 87-13
 score: 118-108
 analyse_en: Tip-off Tuesday 24 November at 02:30 in Douala and Lagos.
@@ -7546,11 +7580,13 @@ Houston Rockets are 12-4; LA Clippers are 4-10.
 Rockets are the better team on record, and they play at home.
 My pick: Rockets to win. Bigger odds: Rockets win by more than 5.5 points.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Houston Rockets 116-104 LA Clippers. Prediction won ✅: Rockets to win.
 analyse: Début du match mardi 24 novembre à 2h30 à Douala.
 Houston Rockets est à 12 victoires et 4 défaites ; LA Clippers est à 4 victoires et 10 défaites.
 Rockets a le meilleur bilan, et joue à domicile.
 Mon choix : victoire des Rockets. Option plus grosse cote : Rockets gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Houston Rockets 116-104 LA Clippers. Pronostic gagné ✅ : victoire des Rockets.
 
 ---
 date: 2026-11-24 04:00
