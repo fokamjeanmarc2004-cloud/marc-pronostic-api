@@ -5952,6 +5952,7 @@ pronostic_en: Barcelona to win and over 1.5 goals
 pronostic_es: Gana el Barcelona y más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 10-40-50
 score: 0-3
 analyse_en: Kick-off Wednesday 25 November: 18:45 in Douala, Lagos and Paris.
@@ -5960,12 +5961,14 @@ Record: Sabah FK: 1 win, 0 draws, 3 defeats; Barcelone: 3 wins, 0 draws, 1 defea
 Barcelone are clearly stronger, even away.
 My pick: Barcelona to win and over 1.5 goals. Bigger odds: Barcelona win by 2 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sabah FK 1-4 Barcelona. Prediction won ✅.
 analyse: Coup d'envoi mercredi 25 novembre : 18h45 à Douala et à Paris.
 Sabah FK reçoit Barcelone en Ligue des Champions.
 Bilan : Sabah FK : 1 victoire, 0 nul, 3 défaites ; Barcelone : 3 victoires, 0 nul, 1 défaite.
 Barcelone est nettement plus fort, même en déplacement.
 Mon choix : Barcelone gagne et plus de 1,5 but. Option plus grosse cote : Barcelone gagne avec 2 buts d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sabah FK 1-4 Barcelone. Pronostic gagné ✅.
 
 ---
 date: 2026-11-25 18:45
@@ -5977,6 +5980,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-2
 analyse_en: Kick-off Wednesday 25 November: 18:45 in Douala, Lagos and Paris.
@@ -5985,12 +5989,14 @@ Record: Slavia Prague: 0 wins, 1 draw, 3 defeats; Villarreal: 1 win, 0 draws, 3 
 Two evenly matched sides: an open game, both can score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Slavia Prague 0-1 Villarreal. Prediction lost ❌.
 analyse: Coup d'envoi mercredi 25 novembre : 18h45 à Douala et à Paris.
 Slavia Prague reçoit Villarreal en Ligue des Champions.
 Bilan : Slavia Prague : 0 victoire, 1 nul, 3 défaites ; Villarreal : 1 victoire, 0 nul, 3 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Slavia Prague 0-1 Villarreal. Pronostic perdu ❌.
 
 ---
 date: 2026-11-25 21:00
