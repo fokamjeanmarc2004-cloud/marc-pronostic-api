@@ -6964,7 +6964,7 @@ def affiche_page():
     tpl = open(AFFICHE_TPL_FILE, encoding="utf-8").read().replace("__BKS__", bks)
     return head("Fais ton affiche avec ton code promo (gratuit) | Cousin Marc",
                 "Outil gratuit : crée une affiche avec ton prénom et ton code promo (FFN) pour la partager sur WhatsApp, Telegram ou Facebook.",
-                f"{BASE}/{AFFICHE_SLUG}", show_youtube=False) + tpl + f"\n{footer_html()}\n</body></html>"
+                f"{BASE}/{AFFICHE_SLUG}", show_youtube=True) + tpl + f"\n{footer_html()}\n</body></html>"
 
 
 # ============================================================
