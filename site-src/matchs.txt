@@ -5812,6 +5812,7 @@ pronostic_en: Arsenal or draw
 pronostic_es: Arsenal o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 47-24-29
 score: 1-0
 analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
@@ -5820,12 +5821,14 @@ Record: Arsenal: 3 wins, 1 draw, 0 defeats; Borussia Dortmund: 3 wins, 0 draws, 
 Arsenal have the home edge, but I cover the draw to stay safe.
 My pick: Arsenal or draw. Bigger odds: Arsenal to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Arsenal 1-1 Borussia Dortmund. Prediction won ✅.
 analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
 Arsenal reçoit Borussia Dortmund en Ligue des Champions.
 Bilan : Arsenal : 3 victoires, 1 nul, 0 défaite ; Borussia Dortmund : 3 victoires, 0 nul, 1 défaite.
 Arsenal a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : arsenal ou match nul. Option plus grosse cote : victoire de Arsenal.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Arsenal 1-1 Borussia Dortmund. Pronostic gagné ✅.
 
 ---
 date: 2026-11-24 21:00
@@ -5837,6 +5840,7 @@ pronostic_en: Como to win
 pronostic_es: Gana Como
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 75-11-14
 score: 3-0
 analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
@@ -5845,12 +5849,14 @@ Record: Como: 3 wins, 0 draws, 1 defeat; AEK Athens: 1 win, 0 draws, 3 defeats.
 Como are clearly better placed and play at home.
 My pick: Como to win. Bigger odds: Como win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Como 1-0 AEK Athens. Prediction won ✅.
 analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
 Como reçoit AEK Athens en Ligue des Champions.
 Bilan : Como : 3 victoires, 0 nul, 1 défaite ; AEK Athens : 1 victoire, 0 nul, 3 défaites.
 Como est nettement mieux classé et joue à domicile.
 Mon choix : victoire de Como. Option plus grosse cote : Como gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Como 1-0 AEK Athens. Pronostic gagné ✅.
 
 ---
 date: 2026-11-24 21:00
@@ -5862,6 +5868,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
@@ -5870,12 +5877,14 @@ Record: Feyenoord Rotterdam: 1 win, 0 draws, 3 defeats; Porto: 1 win, 0 draws, 3
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Feyenoord Rotterdam 0-1 FC Porto. Prediction lost ❌.
 analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
 Feyenoord Rotterdam reçoit Porto en Ligue des Champions.
 Bilan : Feyenoord Rotterdam : 1 victoire, 0 nul, 3 défaites ; Porto : 1 victoire, 0 nul, 3 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Feyenoord Rotterdam 0-1 Porto. Pronostic perdu ❌.
 
 ---
 date: 2026-11-24 21:00
@@ -5887,6 +5896,7 @@ pronostic_en: Both teams to score
 pronostic_es: Ambos equipos marcan
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
@@ -5895,12 +5905,14 @@ Record: RB Leipzig: 1 win, 0 draws, 3 defeats; Lens: 1 win, 0 draws, 3 defeats.
 Two evenly matched sides: an open game, both can score.
 My pick: Both teams to score. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: RB Leipzig 3-1 Lens. Prediction won ✅.
 analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
 RB Leipzig reçoit Lens en Ligue des Champions.
 Bilan : RB Leipzig : 1 victoire, 0 nul, 3 défaites ; Lens : 1 victoire, 0 nul, 3 défaites.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Les deux équipes marquent. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : RB Leipzig 3-1 Lens. Pronostic gagné ✅.
 
 ---
 date: 2026-11-24 21:00
@@ -5912,6 +5924,7 @@ pronostic_en: Real Betis to win
 pronostic_es: Gana Real Betis
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 8-41-51
 score: 1-3
 analyse_en: Kick-off Tuesday 24 November: 21:00 in Douala, Lagos and Paris.
@@ -5920,12 +5933,14 @@ Record: Slovan Bratislava: 0 wins, 0 draws, 4 defeats; Real Betis: 3 wins, 0 dra
 Real Betis are clearly stronger, even away.
 My pick: Real Betis to win. Bigger odds: Real Betis win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Slovan Bratislava 0-2 Real Betis. Prediction won ✅.
 analyse: Coup d'envoi mardi 24 novembre : 21h à Douala et à Paris.
 Slovan Bratislava reçoit Real Betis en Ligue des Champions.
 Bilan : Slovan Bratislava : 0 victoire, 0 nul, 4 défaites ; Real Betis : 3 victoires, 0 nul, 1 défaite.
 Real Betis est nettement plus fort, même en déplacement.
 Mon choix : victoire de Real Betis. Option plus grosse cote : Real Betis gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Slovan Bratislava 0-2 Real Betis. Pronostic gagné ✅.
 
 ---
 date: 2026-11-25 18:45
