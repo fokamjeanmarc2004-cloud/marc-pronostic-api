@@ -1,12 +1,12 @@
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:3328: SyntaxWarning: invalid escape sequence '\w'
-  f'<div class="vproofs">{imgs}</div><p class="muted" style="font-size:13px;margin-top:12px">{L["proofs_sub"]}</p></section>' + '<script>(function(){var R="https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/preuves/";var g=document.querySelector(".vproofs");if(!g||!window.fetch)return;fetch(R+"preuves.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(l){l.filter(function(p){return /^tg-/.test(p.file)}).slice(0,30).reverse().forEach(function(p){var f=document.createElement("figure");f.className="vproof-card";var i=document.createElement("img");i.src=R+p.file;i.loading="lazy";i.alt=(p.titre||"")+" - Cousin Marc";var c=document.createElement("figcaption");var s=document.createElement("span");s.textContent=(p.titre||"").replace(/^[^\w(]+/,"");c.appendChild(s);if(p.cote){var b=document.createElement("b");b.textContent="@"+p.cote;c.appendChild(b)}if(p.gain){var t=document.createElement("strong");t.textContent="\u2705 "+p.gain;c.appendChild(t)}f.appendChild(i);f.appendChild(c);g.insertBefore(f,g.firstChild)})}).catch(function(){})})();</script>')
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:2734: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:3454: SyntaxWarning: invalid escape sequence '\w'
+  f'<div class="vproofs">{imgs}</div><p class="muted" style="font-size:13px;margin-top:12px">{L["proofs_sub"]}</p></section>' + '<script>(function(){var R="https://raw.githubusercontent.com/fokamjeanmarc2004-cloud/marc-pronostic-api/main/promo/preuves/";var g=document.querySelector(".vproofs");if(!g||!window.fetch)return;fetch(R+"preuves.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(l){l.filter(function(p){return /^tg-/.test(p.file)}).slice(0,30).reverse().forEach(function(p){var f=document.createElement("figure");f.className="vproof-card";var i=document.createElement("img");i.src=R+p.file;i.loading="lazy";i.alt=(p.titre||"")+" - Cousin Marc";var c=document.createElement("figcaption");var s=document.createElement("span");s.textContent=(p.titre||"").replace(/^[^\w(]+/,"");c.appendChild(s);if(p.cote){var b=document.createElement("b");b.textContent="@"+p.cote;c.appendChild(b)}if(p.gain){var t=document.createElement("strong");t.textContent="âœ… "+p.gain;c.appendChild(t)}f.appendChild(i);f.appendChild(c);g.insertBefore(f,g.firstChild)})}).catch(function(){})})();</script>')
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:2791: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   lim = datetime.datetime.utcnow() + datetime.timedelta(hours=1) - datetime.timedelta(hours=2)   # heure de Douala - 2 h
-C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:6993: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:7122: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   _DLA_NOW = datetime.datetime.utcnow() + datetime.timedelta(hours=1)   # heure de Douala
-  73 page(s) aujourd'hui/demain/competition
-  155 page(s) match du jour
-Pages générées :
+  157 page(s) aujourd'hui/demain/competition
+  294 page(s) match du jour
+Pages gÃ©nÃ©rÃ©es :
  - index.html
  - promo-codes.html
  - 1xbet-promo-code.html
@@ -44,46 +44,128 @@ Pages générées :
  - code-promo-goldpari.html
  - pronostic-psg.html
  - pronostic-barcelone.html
- - pronostic-real-madrid.html
  - pronostic-manchester-united.html
+ - pronostic-real-madrid.html
  - pronostic-atletico-madrid.html
- - pronostic-liverpool.html
- - pronostic-naples.html
  - pronostic-arsenal.html
- - pronostic-roma.html
+ - pronostic-liverpool.html
  - pronostic-rb-leipzig.html
- - pronostic-aston-villa.html
- - pronostic-phoenix-suns.html
- - pronostic-como.html
  - pronostic-borussia-dortmund.html
- - pronostic-chelsea.html
- - pronostic-detroit-pistons.html
- - pronostic-bayern-munich.html
- - pronostic-marseille.html
- - pronostic-villarreal.html
  - pronostic-juventus.html
+ - pronostic-bayern-munich.html
+ - pronostic-naples.html
+ - pronostic-aston-villa.html
+ - pronostic-villarreal.html
+ - pronostic-como.html
+ - pronostic-chelsea.html
+ - pronostic-new-york-knicks.html
+ - pronostic-minnesota-timberwolves.html
+ - pronostic-detroit-pistons.html
+ - pronostic-crystal-palace.html
+ - pronostic-milan.html
+ - pronostic-inter.html
+ - pronostic-lille.html
+ - pronostic-lyon.html
+ - pronostic-portland-trail-blazers.html
+ - pronostic-san-antonio-spurs.html
+ - pronostic-real-betis.html
+ - pronostic-new-orleans-pelicans.html
+ - pronostic-phoenix-suns.html
+ - pronostic-milwaukee-bucks.html
+ - pronostic-utah-jazz.html
+ - pronostic-sacramento-kings.html
+ - pronostic-roma.html
+ - pronostic-marseille.html
+ - pronostic-indiana-pacers.html
+ - pronostic-racing-santander.html
+ - pronostic-chicago-bulls.html
+ - pronostic-galatasaray.html
+ - pronostic-denver-nuggets.html
+ - pronostic-la-clippers.html
+ - pronostic-real-sociedad.html
+ - pronostic-slavia-prague.html
+ - pronostic-dallas-mavericks.html
+ - pronostic-oklahoma-city-thunder.html
+ - pronostic-memphis-grizzlies.html
+ - pronostic-vfb-stuttgart.html
+ - pronostic-atalanta.html
+ - pronostic-levante.html
+ - pronostic-lens.html
+ - pronostic-charlotte-hornets.html
+ - pronostic-manchester-city.html
+ - pronostic-bayer-leverkusen.html
+ - pronostic-miami-heat.html
+ - pronostic-golden-state-warriors.html
+ - pronostic-washington-wizards.html
+ - pronostic-houston-rockets.html
+ - pronostic-getafe.html
+ - pronostic-nottingham-forest.html
+ - pronostic-sunderland.html
+ - pronostic-orlando-magic.html
+ - pronostic-philadelphia-76ers.html
  - pronostic-les-deux-equipes-marquent.html
  - pronostic-plus-de-2-5-buts.html
  - psg-predictions.html
  - barcelona-predictions.html
- - real-madrid-predictions.html
  - manchester-united-predictions.html
+ - real-madrid-predictions.html
  - atletico-madrid-predictions.html
- - liverpool-predictions.html
- - napoli-predictions.html
  - arsenal-predictions.html
- - roma-predictions.html
+ - liverpool-predictions.html
  - rb-leipzig-predictions.html
- - aston-villa-predictions.html
- - phoenix-suns-predictions.html
- - como-predictions.html
  - borussia-dortmund-predictions.html
- - chelsea-predictions.html
- - detroit-pistons-predictions.html
- - bayern-munich-predictions.html
- - marseille-predictions.html
- - villarreal-predictions.html
  - juventus-predictions.html
+ - bayern-munich-predictions.html
+ - napoli-predictions.html
+ - aston-villa-predictions.html
+ - villarreal-predictions.html
+ - como-predictions.html
+ - chelsea-predictions.html
+ - new-york-knicks-predictions.html
+ - minnesota-timberwolves-predictions.html
+ - detroit-pistons-predictions.html
+ - crystal-palace-predictions.html
+ - ac-milan-predictions.html
+ - inter-milan-predictions.html
+ - lille-predictions.html
+ - lyon-predictions.html
+ - portland-trail-blazers-predictions.html
+ - san-antonio-spurs-predictions.html
+ - real-betis-predictions.html
+ - new-orleans-pelicans-predictions.html
+ - phoenix-suns-predictions.html
+ - milwaukee-bucks-predictions.html
+ - utah-jazz-predictions.html
+ - sacramento-kings-predictions.html
+ - roma-predictions.html
+ - marseille-predictions.html
+ - indiana-pacers-predictions.html
+ - racing-santander-predictions.html
+ - chicago-bulls-predictions.html
+ - galatasaray-predictions.html
+ - denver-nuggets-predictions.html
+ - la-clippers-predictions.html
+ - real-sociedad-predictions.html
+ - slavia-prague-predictions.html
+ - dallas-mavericks-predictions.html
+ - oklahoma-city-thunder-predictions.html
+ - memphis-grizzlies-predictions.html
+ - vfb-stuttgart-predictions.html
+ - atalanta-predictions.html
+ - levante-predictions.html
+ - lens-predictions.html
+ - charlotte-hornets-predictions.html
+ - manchester-city-predictions.html
+ - bayer-leverkusen-predictions.html
+ - miami-heat-predictions.html
+ - golden-state-warriors-predictions.html
+ - washington-wizards-predictions.html
+ - houston-rockets-predictions.html
+ - getafe-predictions.html
+ - nottingham-forest-predictions.html
+ - sunderland-predictions.html
+ - orlando-magic-predictions.html
+ - philadelphia-76ers-predictions.html
  - btts-predictions.html
  - over-2-5-goals-predictions.html
  - football-predictions-today-ar.html
@@ -101,6 +183,7 @@ Pages générées :
  - pronostic-liga.html
  - pronostic-ligue-1.html
  - pronostic-serie-a.html
+ - pronostic-bundesliga.html
  - pronostic-eliminatoires-can-2027.html
  - football-predictions-today.html
  - football-predictions-tomorrow.html
@@ -114,6 +197,7 @@ Pages générées :
  - la-liga-predictions.html
  - ligue-1-predictions.html
  - serie-a-predictions.html
+ - bundesliga-predictions.html
  - afcon-2027-qualifiers-predictions.html
  - pronostics.html
  - quel-bookmaker-choisir.html
@@ -121,6 +205,284 @@ Pages générées :
  - code-promo-ne-marche-pas.html
  - promo-code-not-working.html
  - affiche.html
+ - pronostic-nottingham-forest-chelsea-2026-11-27.html
+ - prediction-nottingham-forest-chelsea-2026-11-27.html
+ - pronostic-levante-racing-santander-2026-11-27.html
+ - prediction-levante-racing-santander-2026-11-27.html
+ - pronostic-brest-paris-fc-2026-11-27.html
+ - prediction-brest-paris-fc-2026-11-27.html
+ - pronostic-venezia-bologna-2026-11-27.html
+ - prediction-venezia-bologna-2026-11-27.html
+ - pronostic-werder-bremen-borussia-monchengladbach-2026-11-27.html
+ - prediction-werder-bremen-borussia-monchengladbach-2026-11-27.html
+ - pronostic-leganes-cd-sabadell-2026-11-27.html
+ - prediction-leganes-cd-sabadell-2026-11-27.html
+ - pronostic-crystal-palace-real-sociedad-2026-11-26.html
+ - prediction-crystal-palace-real-sociedad-2026-11-26.html
+ - pronostic-ferencvaros-nk-celje-2026-11-26.html
+ - prediction-ferencvaros-nk-celje-2026-11-26.html
+ - pronostic-juventus-omonia-nicosia-2026-11-26.html
+ - prediction-juventus-omonia-nicosia-2026-11-26.html
+ - pronostic-lyon-lillestrom-2026-11-26.html
+ - prediction-lyon-lillestrom-2026-11-26.html
+ - pronostic-nec-nijmegen-stade-rennais-2026-11-26.html
+ - prediction-nec-nijmegen-stade-rennais-2026-11-26.html
+ - pronostic-ofi-crete-anderlecht-2026-11-26.html
+ - prediction-ofi-crete-anderlecht-2026-11-26.html
+ - pronostic-sparta-prague-az-alkmaar-2026-11-26.html
+ - prediction-sparta-prague-az-alkmaar-2026-11-26.html
+ - pronostic-sunderland-jagiellonia-bialystok-2026-11-26.html
+ - prediction-sunderland-jagiellonia-bialystok-2026-11-26.html
+ - pronostic-torreense-celtic-2026-11-26.html
+ - prediction-torreense-celtic-2026-11-26.html
+ - pronostic-tsg-hoffenheim-sk-sturm-graz-2026-11-26.html
+ - prediction-tsg-hoffenheim-sk-sturm-graz-2026-11-26.html
+ - pronostic-borac-banja-luka-atalanta-2026-11-26.html
+ - prediction-borac-banja-luka-atalanta-2026-11-26.html
+ - pronostic-braga-kups-kuopio-2026-11-26.html
+ - prediction-braga-kups-kuopio-2026-11-26.html
+ - pronostic-cska-sofia-trabzonspor-2026-11-26.html
+ - prediction-cska-sofia-trabzonspor-2026-11-26.html
+ - pronostic-nordsjlland-panathinaikos-2026-11-26.html
+ - prediction-nordsjlland-panathinaikos-2026-11-26.html
+ - pronostic-hajduk-split-sint-truidense-2026-11-26.html
+ - prediction-hajduk-split-sint-truidense-2026-11-26.html
+ - pronostic-inter-d-escaldes-f-c-kbenhavn-2026-11-26.html
+ - prediction-inter-d-escaldes-f-c-kbenhavn-2026-11-26.html
+ - pronostic-kaa-gent-red-star-belgrade-2026-11-26.html
+ - prediction-kaa-gent-red-star-belgrade-2026-11-26.html
+ - pronostic-freiburg-twente-2026-11-26.html
+ - prediction-freiburg-twente-2026-11-26.html
+ - pronostic-besiktas-hapoel-be-er-2026-11-26.html
+ - prediction-besiktas-hapoel-be-er-2026-11-26.html
+ - pronostic-celta-vigo-bournemouth-2026-11-26.html
+ - prediction-celta-vigo-bournemouth-2026-11-26.html
+ - pronostic-dinamo-zagreb-bayer-leverkusen-2026-11-26.html
+ - prediction-dinamo-zagreb-bayer-leverkusen-2026-11-26.html
+ - pronostic-olympiacos-milan-2026-11-26.html
+ - prediction-olympiacos-ac-milan-2026-11-26.html
+ - pronostic-rb-salzburg-ararat-armenia-2026-11-26.html
+ - prediction-rb-salzburg-ararat-armenia-2026-11-26.html
+ - pronostic-union-st-gilloise-lech-poznan-2026-11-26.html
+ - prediction-union-st-gilloise-lech-poznan-2026-11-26.html
+ - pronostic-viktoria-plzen-benfica-2026-11-26.html
+ - prediction-viktoria-plzen-benfica-2026-11-26.html
+ - pronostic-ajax-amsterdam-thun-2026-11-26.html
+ - prediction-ajax-amsterdam-thun-2026-11-26.html
+ - pronostic-brighton-hove-albion-csu-craiova-2026-11-26.html
+ - prediction-brighton-hove-albion-csu-craiova-2026-11-26.html
+ - pronostic-egnatia-lincoln-red-imps-2026-11-26.html
+ - prediction-egnatia-lincoln-red-imps-2026-11-26.html
+ - pronostic-heart-of-midlothian-as-monaco-2026-11-26.html
+ - prediction-heart-of-midlothian-as-monaco-2026-11-26.html
+ - pronostic-iberia-1999-getafe-2026-11-26.html
+ - prediction-iberia-1999-getafe-2026-11-26.html
+ - pronostic-jablonec-lugano-2026-11-26.html
+ - prediction-jablonec-lugano-2026-11-26.html
+ - pronostic-kauno-zalgiris-riga-fc-2026-11-26.html
+ - prediction-kauno-zalgiris-riga-fc-2026-11-26.html
+ - pronostic-pafos-midtjylland-2026-11-26.html
+ - prediction-pafos-midtjylland-2026-11-26.html
+ - pronostic-sk-brann-agf-2026-11-26.html
+ - prediction-sk-brann-agf-2026-11-26.html
+ - pronostic-kairat-almaty-mjallby-aif-2026-11-26.html
+ - prediction-kairat-almaty-mjallby-aif-2026-11-26.html
+ - pronostic-atletico-madrid-viking-fk-2026-11-25.html
+ - prediction-atletico-madrid-viking-fk-2026-11-25.html
+ - pronostic-club-brugge-liverpool-2026-11-25.html
+ - prediction-club-brugge-liverpool-2026-11-25.html
+ - pronostic-inter-vfb-stuttgart-2026-11-25.html
+ - prediction-inter-milan-vfb-stuttgart-2026-11-25.html
+ - pronostic-lille-bayern-munich-2026-11-25.html
+ - prediction-lille-bayern-munich-2026-11-25.html
+ - pronostic-psg-as-roma-2026-11-25.html
+ - prediction-psg-as-roma-2026-11-25.html
+ - pronostic-shakhtar-donetsk-fenerbahce-2026-11-25.html
+ - prediction-shakhtar-donetsk-fenerbahce-2026-11-25.html
+ - pronostic-sporting-cp-manchester-united-2026-11-25.html
+ - prediction-sporting-cp-manchester-united-2026-11-25.html
+ - pronostic-sabah-fk-barcelone-2026-11-25.html
+ - prediction-sabah-fk-barcelona-2026-11-25.html
+ - pronostic-slavia-prague-villarreal-2026-11-25.html
+ - prediction-slavia-prague-villarreal-2026-11-25.html
+ - pronostic-arsenal-borussia-dortmund-2026-11-24.html
+ - prediction-arsenal-borussia-dortmund-2026-11-24.html
+ - pronostic-como-aek-athens-2026-11-24.html
+ - prediction-como-aek-athens-2026-11-24.html
+ - pronostic-feyenoord-rotterdam-porto-2026-11-24.html
+ - prediction-feyenoord-rotterdam-porto-2026-11-24.html
+ - pronostic-rb-leipzig-lens-2026-11-24.html
+ - prediction-rb-leipzig-lens-2026-11-24.html
+ - pronostic-slovan-bratislava-real-betis-2026-11-24.html
+ - prediction-slovan-bratislava-real-betis-2026-11-24.html
+ - pronostic-bodo-glimt-lask-linz-2026-11-24.html
+ - prediction-bodo-glimt-lask-linz-2026-11-24.html
+ - pronostic-galatasaray-aston-villa-2026-11-24.html
+ - prediction-galatasaray-aston-villa-2026-11-24.html
+ - pronostic-los-angeles-lakers-utah-jazz-2026-11-24.html
+ - prediction-los-angeles-lakers-utah-jazz-2026-11-24.html
+ - pronostic-sacramento-kings-san-antonio-spurs-2026-11-24.html
+ - prediction-sacramento-kings-san-antonio-spurs-2026-11-24.html
+ - pronostic-houston-rockets-la-clippers-2026-11-24.html
+ - prediction-houston-rockets-la-clippers-2026-11-24.html
+ - pronostic-chicago-bulls-cleveland-cavaliers-2026-11-24.html
+ - prediction-chicago-bulls-cleveland-cavaliers-2026-11-24.html
+ - pronostic-new-orleans-pelicans-phoenix-suns-2026-11-24.html
+ - prediction-new-orleans-pelicans-phoenix-suns-2026-11-24.html
+ - pronostic-indiana-pacers-oklahoma-city-thunder-2026-11-24.html
+ - prediction-indiana-pacers-oklahoma-city-thunder-2026-11-24.html
+ - pronostic-toronto-raptors-milwaukee-bucks-2026-11-24.html
+ - prediction-toronto-raptors-milwaukee-bucks-2026-11-24.html
+ - pronostic-minnesota-timberwolves-brooklyn-nets-2026-11-24.html
+ - prediction-minnesota-timberwolves-brooklyn-nets-2026-11-24.html
+ - pronostic-charlotte-hornets-memphis-grizzlies-2026-11-24.html
+ - prediction-charlotte-hornets-memphis-grizzlies-2026-11-24.html
+ - pronostic-philadelphia-76ers-portland-trail-blazers-2026-11-24.html
+ - prediction-philadelphia-76ers-portland-trail-blazers-2026-11-24.html
+ - pronostic-brentford-everton-2026-11-23.html
+ - prediction-brentford-everton-2026-11-23.html
+ - pronostic-levante-elche-2026-11-23.html
+ - prediction-levante-elche-2026-11-23.html
+ - pronostic-monza-fiorentina-2026-11-23.html
+ - prediction-monza-fiorentina-2026-11-23.html
+ - pronostic-ceuta-almeria-2026-11-23.html
+ - prediction-ceuta-almeria-2026-11-23.html
+ - pronostic-golden-state-warriors-boston-celtics-2026-11-23.html
+ - prediction-golden-state-warriors-boston-celtics-2026-11-23.html
+ - pronostic-new-york-knicks-indiana-pacers-2026-11-23.html
+ - prediction-new-york-knicks-indiana-pacers-2026-11-23.html
+ - pronostic-washington-wizards-orlando-magic-2026-11-23.html
+ - prediction-washington-wizards-orlando-magic-2026-11-23.html
+ - pronostic-chicago-bulls-denver-nuggets-2026-11-23.html
+ - prediction-chicago-bulls-denver-nuggets-2026-11-23.html
+ - pronostic-utah-jazz-dallas-mavericks-2026-11-23.html
+ - prediction-utah-jazz-dallas-mavericks-2026-11-23.html
+ - pronostic-miami-heat-oklahoma-city-thunder-2026-11-23.html
+ - prediction-miami-heat-oklahoma-city-thunder-2026-11-23.html
+ - pronostic-atlanta-hawks-detroit-pistons-2026-11-22.html
+ - prediction-atlanta-hawks-detroit-pistons-2026-11-22.html
+ - pronostic-getafe-atletico-madrid-2026-11-22.html
+ - prediction-getafe-atletico-madrid-2026-11-22.html
+ - pronostic-burgos-albacete-2026-11-22.html
+ - prediction-burgos-albacete-2026-11-22.html
+ - pronostic-atalanta-inter-2026-11-22.html
+ - prediction-atalanta-inter-milan-2026-11-22.html
+ - pronostic-marseille-le-mans-2026-11-22.html
+ - prediction-marseille-le-mans-2026-11-22.html
+ - pronostic-osasuna-malaga-2026-11-22.html
+ - prediction-osasuna-malaga-2026-11-22.html
+ - pronostic-girona-eibar-2026-11-22.html
+ - prediction-girona-eibar-2026-11-22.html
+ - pronostic-celta-fortuna-real-valladolid-2026-11-22.html
+ - prediction-celta-fortuna-real-valladolid-2026-11-22.html
+ - pronostic-milan-frosinone-2026-11-22.html
+ - prediction-ac-milan-frosinone-2026-11-22.html
+ - pronostic-liverpool-manchester-united-2026-11-22.html
+ - prediction-liverpool-manchester-united-2026-11-22.html
+ - pronostic-werder-bremen-hamburg-sv-2026-11-22.html
+ - prediction-werder-bremen-hamburg-sv-2026-11-22.html
+ - pronostic-lorient-stade-rennais-2026-11-22.html
+ - prediction-lorient-stade-rennais-2026-11-22.html
+ - pronostic-racing-santander-real-sociedad-2026-11-22.html
+ - prediction-racing-santander-real-sociedad-2026-11-22.html
+ - pronostic-sporting-gijon-las-palmas-2026-11-22.html
+ - prediction-sporting-gijon-las-palmas-2026-11-22.html
+ - pronostic-augsburg-mainz-2026-11-22.html
+ - prediction-augsburg-mainz-2026-11-22.html
+ - pronostic-hull-city-brighton-hove-albion-2026-11-22.html
+ - prediction-hull-city-brighton-hove-albion-2026-11-22.html
+ - pronostic-paris-fc-angers-2026-11-22.html
+ - prediction-paris-fc-angers-2026-11-22.html
+ - pronostic-bologna-udinese-2026-11-22.html
+ - prediction-bologna-udinese-2026-11-22.html
+ - pronostic-sassuolo-genoa-2026-11-22.html
+ - prediction-sassuolo-genoa-2026-11-22.html
+ - pronostic-barcelone-villarreal-2026-11-22.html
+ - prediction-barcelona-villarreal-2026-11-22.html
+ - pronostic-cordoba-real-oviedo-2026-11-22.html
+ - prediction-cordoba-real-oviedo-2026-11-22.html
+ - pronostic-juventus-venezia-2026-11-22.html
+ - prediction-juventus-venezia-2026-11-22.html
+ - pronostic-sacramento-kings-boston-celtics-2026-11-22.html
+ - prediction-sacramento-kings-boston-celtics-2026-11-22.html
+ - pronostic-dallas-mavericks-la-clippers-2026-11-22.html
+ - prediction-dallas-mavericks-la-clippers-2026-11-22.html
+ - pronostic-minnesota-timberwolves-memphis-grizzlies-2026-11-22.html
+ - prediction-minnesota-timberwolves-memphis-grizzlies-2026-11-22.html
+ - pronostic-san-antonio-spurs-new-orleans-pelicans-2026-11-22.html
+ - prediction-san-antonio-spurs-new-orleans-pelicans-2026-11-22.html
+ - pronostic-new-york-knicks-portland-trail-blazers-2026-11-22.html
+ - prediction-new-york-knicks-portland-trail-blazers-2026-11-22.html
+ - pronostic-real-madrid-celta-vigo-2026-11-21.html
+ - prediction-real-madrid-celta-vigo-2026-11-21.html
+ - pronostic-tenerife-mallorca-2026-11-21.html
+ - prediction-tenerife-mallorca-2026-11-21.html
+ - pronostic-naples-torino-2026-11-21.html
+ - prediction-napoli-torino-2026-11-21.html
+ - pronostic-as-monaco-aj-auxerre-2026-11-21.html
+ - prediction-as-monaco-aj-auxerre-2026-11-21.html
+ - pronostic-lens-toulouse-2026-11-21.html
+ - prediction-lens-toulouse-2026-11-21.html
+ - pronostic-lille-lyon-2026-11-21.html
+ - prediction-lille-lyon-2026-11-21.html
+ - pronostic-strasbourg-brest-2026-11-21.html
+ - prediction-strasbourg-brest-2026-11-21.html
+ - pronostic-philadelphia-76ers-milwaukee-bucks-2026-11-21.html
+ - prediction-philadelphia-76ers-milwaukee-bucks-2026-11-21.html
+ - pronostic-newcastle-arsenal-2026-11-21.html
+ - prediction-newcastle-arsenal-2026-11-21.html
+ - pronostic-sevilla-real-betis-2026-11-21.html
+ - prediction-sevilla-real-betis-2026-11-21.html
+ - pronostic-schalke-04-vfb-stuttgart-2026-11-21.html
+ - prediction-schalke-04-vfb-stuttgart-2026-11-21.html
+ - pronostic-castellon-eldense-2026-11-21.html
+ - prediction-castellon-eldense-2026-11-21.html
+ - pronostic-parma-as-roma-2026-11-21.html
+ - prediction-parma-as-roma-2026-11-21.html
+ - pronostic-nice-psg-2026-11-21.html
+ - prediction-nice-psg-2026-11-21.html
+ - pronostic-rayo-vallecano-valencia-2026-11-21.html
+ - prediction-rayo-vallecano-valencia-2026-11-21.html
+ - pronostic-real-sociedad-ii-cadiz-2026-11-21.html
+ - prediction-real-sociedad-ii-cadiz-2026-11-21.html
+ - pronostic-bournemouth-nottingham-forest-2026-11-21.html
+ - prediction-bournemouth-nottingham-forest-2026-11-21.html
+ - pronostic-aston-villa-sunderland-2026-11-21.html
+ - prediction-aston-villa-sunderland-2026-11-21.html
+ - pronostic-chelsea-leeds-united-2026-11-21.html
+ - prediction-chelsea-leeds-united-2026-11-21.html
+ - pronostic-coventry-city-crystal-palace-2026-11-21.html
+ - prediction-coventry-city-crystal-palace-2026-11-21.html
+ - pronostic-tottenham-hotspur-ipswich-town-2026-11-21.html
+ - prediction-tottenham-hotspur-ipswich-town-2026-11-21.html
+ - pronostic-monchengladbach-borussia-dortmund-2026-11-21.html
+ - prediction-monchengladbach-borussia-dortmund-2026-11-21.html
+ - pronostic-union-berlin-rb-leipzig-2026-11-21.html
+ - prediction-union-berlin-rb-leipzig-2026-11-21.html
+ - pronostic-bayer-leverkusen-paderborn-07-2026-11-21.html
+ - prediction-bayer-leverkusen-paderborn-07-2026-11-21.html
+ - pronostic-eintracht-frankfurt-tsg-hoffenheim-2026-11-21.html
+ - prediction-eintracht-frankfurt-tsg-hoffenheim-2026-11-21.html
+ - pronostic-elversberg-freiburg-2026-11-21.html
+ - prediction-elversberg-freiburg-2026-11-21.html
+ - pronostic-como-cagliari-2026-11-21.html
+ - prediction-como-cagliari-2026-11-21.html
+ - pronostic-lazio-lecce-2026-11-21.html
+ - prediction-lazio-lecce-2026-11-21.html
+ - pronostic-alaves-deportivo-2026-11-21.html
+ - prediction-alaves-deportivo-2026-11-21.html
+ - pronostic-cd-sabadell-granada-2026-11-21.html
+ - prediction-cd-sabadell-granada-2026-11-21.html
+ - pronostic-manchester-city-fulham-2026-11-21.html
+ - prediction-manchester-city-fulham-2026-11-21.html
+ - pronostic-athletic-club-espanyol-2026-11-20.html
+ - prediction-athletic-club-espanyol-2026-11-20.html
+ - pronostic-troyes-le-havre-ac-2026-11-20.html
+ - prediction-troyes-le-havre-ac-2026-11-20.html
+ - pronostic-bayern-munich-cologne-2026-11-20.html
+ - prediction-bayern-munich-cologne-2026-11-20.html
+ - pronostic-andorra-leganes-2026-11-20.html
+ - prediction-andorra-leganes-2026-11-20.html
  - pronostic-niger-maroc-2026-11-17.html
  - prediction-niger-maroc-2026-11-17.html
  - pronostic-bosnie-herzegovine-roumanie-2026-11-17.html
@@ -421,6 +783,10 @@ Pages générées :
  - boutique-ar.html
  - a-propos.html
  - jeu-responsable.html
+ - mentions-legales.html
+ - legal-notice.html
+ - aviso-legal.html
+ - mentions-legales-ar.html
  - actualites.html
  - cote-de-2.html
  - predictions.html
@@ -507,9 +873,10 @@ Pages générées :
  - sitemap.xml
  - netlify.toml
  - 404.html
+ - sw.js
  - manifest.json
  - style.css
  - robots.txt
  - google5d6ef3eb30a3bfc3.html
-  logos Telegram/WhatsApp mis dans 326 page(s)
-  rappels 18+ allégés dans 386 page(s)
+  logos Telegram/WhatsApp mis dans 604 page(s)
+  rappels 18+ allÃ©gÃ©s dans 749 page(s)
