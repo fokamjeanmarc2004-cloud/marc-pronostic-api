@@ -4,8 +4,8 @@ C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:2791: DeprecationWa
   lim = datetime.datetime.utcnow() + datetime.timedelta(hours=1) - datetime.timedelta(hours=2)   # heure de Douala - 2 h
 C:\Users\GLC\Documents\marc-pronostic-api\site-src\build2.py:7122: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   _DLA_NOW = datetime.datetime.utcnow() + datetime.timedelta(hours=1)   # heure de Douala
-  157 page(s) aujourd'hui/demain/competition
-  294 page(s) match du jour
+  165 page(s) aujourd'hui/demain/competition
+  308 page(s) match du jour
 Pages générées :
  - index.html
  - promo-codes.html
@@ -42,130 +42,138 @@ Pages générées :
  - code-promo-afroparie.html
  - code-promo-1win.html
  - code-promo-goldpari.html
- - pronostic-psg.html
  - pronostic-barcelone.html
+ - pronostic-psg.html
  - pronostic-real-madrid.html
- - pronostic-manchester-united.html
  - pronostic-atletico-madrid.html
- - pronostic-liverpool.html
+ - pronostic-manchester-united.html
  - pronostic-arsenal.html
- - pronostic-naples.html
- - pronostic-aston-villa.html
+ - pronostic-liverpool.html
  - pronostic-como.html
- - pronostic-chelsea.html
- - pronostic-villarreal.html
- - pronostic-rb-leipzig.html
- - pronostic-borussia-dortmund.html
  - pronostic-juventus.html
  - pronostic-bayern-munich.html
+ - pronostic-borussia-dortmund.html
+ - pronostic-rb-leipzig.html
+ - pronostic-aston-villa.html
+ - pronostic-villarreal.html
+ - pronostic-lyon.html
+ - pronostic-naples.html
+ - pronostic-chelsea.html
  - pronostic-marseille.html
- - pronostic-minnesota-timberwolves.html
- - pronostic-portland-trail-blazers.html
- - pronostic-roma.html
- - pronostic-utah-jazz.html
- - pronostic-new-york-knicks.html
- - pronostic-new-orleans-pelicans.html
  - pronostic-inter.html
+ - pronostic-new-york-knicks.html
+ - pronostic-minnesota-timberwolves.html
  - pronostic-real-betis.html
- - pronostic-san-antonio-spurs.html
- - pronostic-crystal-palace.html
+ - pronostic-utah-jazz.html
  - pronostic-milan.html
  - pronostic-lille.html
- - pronostic-milwaukee-bucks.html
+ - pronostic-new-orleans-pelicans.html
  - pronostic-sacramento-kings.html
- - pronostic-phoenix-suns.html
+ - pronostic-crystal-palace.html
  - pronostic-detroit-pistons.html
- - pronostic-lyon.html
- - pronostic-philadelphia-76ers.html
+ - pronostic-portland-trail-blazers.html
+ - pronostic-roma.html
+ - pronostic-phoenix-suns.html
+ - pronostic-bayer-leverkusen.html
+ - pronostic-milwaukee-bucks.html
+ - pronostic-san-antonio-spurs.html
  - pronostic-manchester-city.html
- - pronostic-nottingham-forest.html
+ - pronostic-everton.html
+ - pronostic-miami-heat.html
+ - pronostic-indiana-pacers.html
+ - pronostic-orlando-magic.html
  - pronostic-houston-rockets.html
  - pronostic-sunderland.html
- - pronostic-vfb-stuttgart.html
- - pronostic-orlando-magic.html
- - pronostic-real-sociedad.html
- - pronostic-atalanta.html
- - pronostic-lens.html
  - pronostic-slavia-prague.html
- - pronostic-levante.html
- - pronostic-la-clippers.html
- - pronostic-oklahoma-city-thunder.html
- - pronostic-galatasaray.html
- - pronostic-bayer-leverkusen.html
- - pronostic-getafe.html
- - pronostic-racing-santander.html
- - pronostic-dallas-mavericks.html
- - pronostic-miami-heat.html
  - pronostic-charlotte-hornets.html
  - pronostic-denver-nuggets.html
+ - pronostic-getafe.html
+ - pronostic-la-clippers.html
+ - pronostic-atalanta.html
+ - pronostic-dallas-mavericks.html
+ - pronostic-as-monaco.html
+ - pronostic-nottingham-forest.html
+ - pronostic-philadelphia-76ers.html
+ - pronostic-brentford.html
+ - pronostic-galatasaray.html
+ - pronostic-levante.html
+ - pronostic-oklahoma-city-thunder.html
+ - pronostic-chicago-bulls.html
+ - pronostic-real-sociedad.html
+ - pronostic-lens.html
+ - pronostic-vfb-stuttgart.html
+ - pronostic-alaves.html
+ - pronostic-racing-santander.html
+ - pronostic-washington-wizards.html
  - pronostic-golden-state-warriors.html
  - pronostic-memphis-grizzlies.html
- - pronostic-washington-wizards.html
- - pronostic-chicago-bulls.html
- - pronostic-indiana-pacers.html
  - pronostic-les-deux-equipes-marquent.html
  - pronostic-plus-de-2-5-buts.html
- - psg-predictions.html
  - barcelona-predictions.html
+ - psg-predictions.html
  - real-madrid-predictions.html
- - manchester-united-predictions.html
  - atletico-madrid-predictions.html
- - liverpool-predictions.html
+ - manchester-united-predictions.html
  - arsenal-predictions.html
- - napoli-predictions.html
- - aston-villa-predictions.html
+ - liverpool-predictions.html
  - como-predictions.html
- - chelsea-predictions.html
- - villarreal-predictions.html
- - rb-leipzig-predictions.html
- - borussia-dortmund-predictions.html
  - juventus-predictions.html
  - bayern-munich-predictions.html
+ - borussia-dortmund-predictions.html
+ - rb-leipzig-predictions.html
+ - aston-villa-predictions.html
+ - villarreal-predictions.html
+ - lyon-predictions.html
+ - napoli-predictions.html
+ - chelsea-predictions.html
  - marseille-predictions.html
- - minnesota-timberwolves-predictions.html
- - portland-trail-blazers-predictions.html
- - roma-predictions.html
- - utah-jazz-predictions.html
- - new-york-knicks-predictions.html
- - new-orleans-pelicans-predictions.html
  - inter-milan-predictions.html
+ - new-york-knicks-predictions.html
+ - minnesota-timberwolves-predictions.html
  - real-betis-predictions.html
- - san-antonio-spurs-predictions.html
- - crystal-palace-predictions.html
+ - utah-jazz-predictions.html
  - ac-milan-predictions.html
  - lille-predictions.html
- - milwaukee-bucks-predictions.html
+ - new-orleans-pelicans-predictions.html
  - sacramento-kings-predictions.html
- - phoenix-suns-predictions.html
+ - crystal-palace-predictions.html
  - detroit-pistons-predictions.html
- - lyon-predictions.html
- - philadelphia-76ers-predictions.html
+ - portland-trail-blazers-predictions.html
+ - roma-predictions.html
+ - phoenix-suns-predictions.html
+ - bayer-leverkusen-predictions.html
+ - milwaukee-bucks-predictions.html
+ - san-antonio-spurs-predictions.html
  - manchester-city-predictions.html
- - nottingham-forest-predictions.html
+ - everton-predictions.html
+ - miami-heat-predictions.html
+ - indiana-pacers-predictions.html
+ - orlando-magic-predictions.html
  - houston-rockets-predictions.html
  - sunderland-predictions.html
- - vfb-stuttgart-predictions.html
- - orlando-magic-predictions.html
- - real-sociedad-predictions.html
- - atalanta-predictions.html
- - lens-predictions.html
  - slavia-prague-predictions.html
- - levante-predictions.html
- - la-clippers-predictions.html
- - oklahoma-city-thunder-predictions.html
- - galatasaray-predictions.html
- - bayer-leverkusen-predictions.html
- - getafe-predictions.html
- - racing-santander-predictions.html
- - dallas-mavericks-predictions.html
- - miami-heat-predictions.html
  - charlotte-hornets-predictions.html
  - denver-nuggets-predictions.html
+ - getafe-predictions.html
+ - la-clippers-predictions.html
+ - atalanta-predictions.html
+ - dallas-mavericks-predictions.html
+ - as-monaco-predictions.html
+ - nottingham-forest-predictions.html
+ - philadelphia-76ers-predictions.html
+ - brentford-predictions.html
+ - galatasaray-predictions.html
+ - levante-predictions.html
+ - oklahoma-city-thunder-predictions.html
+ - chicago-bulls-predictions.html
+ - real-sociedad-predictions.html
+ - lens-predictions.html
+ - vfb-stuttgart-predictions.html
+ - alaves-predictions.html
+ - racing-santander-predictions.html
+ - washington-wizards-predictions.html
  - golden-state-warriors-predictions.html
  - memphis-grizzlies-predictions.html
- - washington-wizards-predictions.html
- - chicago-bulls-predictions.html
- - indiana-pacers-predictions.html
  - btts-predictions.html
  - over-2-5-goals-predictions.html
  - football-predictions-today-ar.html
@@ -205,6 +213,34 @@ Pages générées :
  - code-promo-ne-marche-pas.html
  - promo-code-not-working.html
  - affiche.html
+ - pronostic-barcelone-atletico-madrid-2026-12-02.html
+ - prediction-barcelona-atletico-madrid-2026-12-02.html
+ - pronostic-lyon-as-monaco-2026-11-29.html
+ - prediction-lyon-as-monaco-2026-11-29.html
+ - pronostic-como-juventus-2026-11-29.html
+ - prediction-como-juventus-2026-11-29.html
+ - pronostic-borussia-dortmund-bayer-leverkusen-2026-11-29.html
+ - prediction-borussia-dortmund-bayer-leverkusen-2026-11-29.html
+ - pronostic-arsenal-manchester-city-2026-11-29.html
+ - prediction-arsenal-manchester-city-2026-11-29.html
+ - pronostic-deportivo-barcelone-2026-11-29.html
+ - prediction-deportivo-barcelona-2026-11-29.html
+ - pronostic-aj-auxerre-marseille-2026-11-29.html
+ - prediction-aj-auxerre-marseille-2026-11-29.html
+ - pronostic-everton-liverpool-2026-11-29.html
+ - prediction-everton-liverpool-2026-11-29.html
+ - pronostic-real-madrid-alaves-2026-11-28.html
+ - prediction-real-madrid-alaves-2026-11-28.html
+ - pronostic-psg-lorient-2026-11-28.html
+ - prediction-psg-lorient-2026-11-28.html
+ - pronostic-inter-genoa-2026-11-28.html
+ - prediction-inter-milan-genoa-2026-11-28.html
+ - pronostic-elche-atletico-madrid-2026-11-28.html
+ - prediction-elche-atletico-madrid-2026-11-28.html
+ - pronostic-manchester-united-brentford-2026-11-28.html
+ - prediction-manchester-united-brentford-2026-11-28.html
+ - pronostic-hamburg-sv-bayern-munich-2026-11-28.html
+ - prediction-hamburg-sv-bayern-munich-2026-11-28.html
  - pronostic-nottingham-forest-chelsea-2026-11-27.html
  - prediction-nottingham-forest-chelsea-2026-11-27.html
  - pronostic-levante-racing-santander-2026-11-27.html
@@ -872,11 +908,3 @@ Pages générées :
  - paris-sportifs-tchad.html
  - sitemap.xml
  - netlify.toml
- - 404.html
- - sw.js
- - manifest.json
- - style.css
- - robots.txt
- - google5d6ef3eb30a3bfc3.html
-  logos Telegram/WhatsApp mis dans 604 page(s)
-  rappels 18+ allégés dans 749 page(s)

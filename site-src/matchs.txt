@@ -7689,3 +7689,315 @@ Spurs a le meilleur bilan, même en déplacement.
 Mon choix : victoire des Spurs. Option plus grosse cote : Spurs gagne avec plus de 5,5 points d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
 Score final : Sacramento Kings 107-123 San Antonio Spurs. Pronostic gagné ✅ : victoire des Spurs.
+---
+date: 2026-11-28 16:00
+competition: Premier League
+equipe1: Manchester United
+equipe2: Brentford
+pronostic: Plus de 1,5 but dans le match
+pronostic_en: Over 1.5 goals
+pronostic_es: Más de 1,5 goles
+cote:
+bookmaker: 1xbet
+proba: 33-27-40
+score: 1-2
+analyse_en: Kick-off Saturday 28 November: 16:00 in Douala, Lagos and Paris, 15:00 in Accra and Dakar, 18:00 in Nairobi.
+Manchester United are 19th with 14 goals scored but 23 conceded in 11 games; Brentford are 6th with 20 goals scored.
+Manchester United's defence concedes more than 2 goals a game and Brentford's attack is efficient: two or more goals look likely.
+My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 28 novembre : 16h à Douala et à Paris, 15h à Abidjan et Dakar.
+Manchester United est 19e avec 14 buts marqués mais 23 encaissés en 11 matchs ; Brentford est 6e avec 20 buts marqués.
+Une défense de Manchester United qui prend plus de 2 buts par match et une attaque de Brentford efficace : deux buts ou plus sont probables.
+Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-28 15:30
+competition: Bundesliga
+equipe1: Hamburg SV
+equipe2: Bayern Munich
+pronostic: Bayern Munich marque au moins 2 buts
+pronostic_en: Bayern Munich to score 2+ goals
+pronostic_es: El Bayern Múnich marca 2 o más goles
+cote:
+bookmaker: 1xbet
+combine: oui
+proba: 8-12-80
+score: 0-3
+analyse_en: Kick-off Saturday 28 November: 15:30 in Douala, Lagos and Paris, 14:30 in Accra and Dakar, 17:30 in Nairobi.
+Bayern are 2nd and unbeaten, with 30 goals in 10 games (3 a game). Hamburg are 12th and have conceded 24 goals.
+The Bundesliga's best attack against a defence conceding 2.4 goals a game: Bayern should score at least twice.
+My pick: Bayern Munich to score 2+ goals. Bigger odds: Bayern Munich to win and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 28 novembre : 15h30 à Douala et à Paris, 14h30 à Abidjan et Dakar.
+Le Bayern est 2e, invaincu, avec 30 buts marqués en 10 matchs (3 par match). Hambourg est 12e et a encaissé 24 buts.
+La meilleure attaque de Bundesliga contre une défense qui prend 2,4 buts par match : le Bayern devrait marquer au moins deux fois.
+Mon choix : Bayern Munich marque au moins 2 buts. Option plus grosse cote : Bayern Munich gagne et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-28 20:45
+competition: Ligue 1
+equipe1: PSG
+equipe2: Lorient
+pronostic: Plus de 1,5 but dans le match
+pronostic_en: Over 1.5 goals
+pronostic_es: Más de 1,5 goles
+cote:
+bookmaker: 1xbet
+combine: oui
+proba: 70-18-12
+score: 2-0
+analyse_en: Kick-off Saturday 28 November: 20:45 in Douala, Lagos and Paris, 19:45 in Accra and Dakar, 22:45 in Nairobi.
+PSG lead the table with 8 wins and 25 goals in 11 games. Lorient are 10th, with 4 wins and 4 draws.
+PSG score more than 2 goals a game: two or more goals in total look very likely, even against a solid defence.
+My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 28 novembre : 20h45 à Douala et à Paris, 19h45 à Abidjan et Dakar.
+Le PSG est leader avec 8 victoires et 25 buts marqués en 11 matchs. Lorient est 10e, avec 4 victoires et 4 nuls.
+Le PSG marque plus de 2 buts par match : deux buts ou plus au total sont très probables, même contre une défense solide.
+Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-28 21:00
+competition: Liga
+equipe1: Real Madrid
+equipe2: Alavés
+pronostic: Victoire du Real Madrid
+pronostic_en: Real Madrid to win
+pronostic_es: Gana el Real Madrid
+cote:
+bookmaker: 1xbet
+combine: oui
+proba: 78-14-8
+score: 3-0
+analyse_en: Kick-off Saturday 28 November: 21:00 in Douala, Lagos and Paris, 20:00 in Accra and Dakar, 23:00 in Nairobi.
+Real Madrid are 2nd with 11 wins in 13 games and 33 goals scored. Alavés are 9th with only 4 wins.
+At home, Real have a clear edge on paper: the win is the logical pick.
+My pick: Real Madrid to win. Bigger odds: Real Madrid to win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 28 novembre : 21h à Douala et à Paris, 20h à Abidjan et Dakar.
+Le Real Madrid est 2e avec 11 victoires en 13 matchs et 33 buts marqués. Alavés est 9e, avec 4 victoires seulement.
+À domicile, le Real a une très nette supériorité sur le papier : la victoire est le choix logique.
+Mon choix : Victoire du Real Madrid. Option plus grosse cote : le Real Madrid gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-28 20:45
+competition: Serie A
+equipe1: Inter
+equipe2: Genoa
+pronostic: Inter marque au moins 2 buts
+pronostic_en: Inter to score 2+ goals
+pronostic_es: El Inter marca 2 o más goles
+cote:
+bookmaker: 1xbet
+proba: 72-18-10
+score: 2-0
+analyse_en: Kick-off Saturday 28 November: 20:45 in Douala, Lagos and Paris, 19:45 in Accra and Dakar, 22:45 in Nairobi.
+Inter are 3rd with 9 wins in 12 games and 32 goals scored. Genoa are 10th, with 6 defeats.
+Inter score almost 3 goals a game: at least two goals at home look very likely.
+My pick: Inter to score 2+ goals. Bigger odds: Inter to win and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 28 novembre : 20h45 à Douala et à Paris, 19h45 à Abidjan et Dakar.
+L'Inter est 3e avec 9 victoires en 12 matchs et 32 buts marqués. Gênes est 10e, avec 6 défaites.
+L'Inter marque près de 3 buts par match : au moins deux buts à domicile me paraissent très probables.
+Mon choix : Inter marque au moins 2 buts. Option plus grosse cote : Inter gagne et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-28 18:30
+competition: Liga
+equipe1: Elche
+equipe2: Atlético Madrid
+pronostic: Atlético Madrid ou match nul
+pronostic_en: Atlético Madrid or draw
+pronostic_es: Atlético de Madrid o empate
+cote:
+bookmaker: 1xbet
+proba: 15-22-63
+score: 0-1
+analyse_en: Kick-off Saturday 28 November: 18:30 in Douala, Lagos and Paris, 17:30 in Accra and Dakar, 20:30 in Nairobi.
+Atlético Madrid are 3rd with 10 wins in 13 games and only 10 goals conceded. Elche are 19th with 2 wins.
+Atlético have a top-table defence: I cover the draw to be safe.
+My pick: Atlético Madrid or draw. Bigger odds: Atlético Madrid to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi samedi 28 novembre : 18h30 à Douala et à Paris, 17h30 à Abidjan et Dakar.
+Atlético Madrid est 3e avec 10 victoires en 13 matchs et seulement 10 buts encaissés. Elche est 19e avec 2 victoires.
+L'Atlético a la meilleure défense du haut de tableau : je couvre le nul par prudence.
+Mon choix : Atlético Madrid ou match nul. Option plus grosse cote : Atlético Madrid gagne.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-29 13:00
+competition: Premier League
+equipe1: Everton
+equipe2: Liverpool
+pronostic: Moins de 3,5 buts dans le match
+pronostic_en: Under 3.5 goals
+pronostic_es: Menos de 3,5 goles
+cote:
+bookmaker: 1xbet
+proba: 28-30-42
+score: 1-1
+analyse_en: Kick-off Sunday 29 November: 13:00 in Douala, Lagos and Paris, 12:00 in Accra and Dakar, 15:00 in Nairobi.
+Everton are 9th (12 scored, 14 conceded); Liverpool are 4th with 18 scored and 10 conceded in 11 games.
+Neither side scores a lot and a derby is often tight: three goals at most looks the most likely.
+My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 29 novembre : 13h à Douala et à Paris, 12h à Abidjan et Dakar.
+Everton est 9e (12 buts marqués, 14 encaissés) ; Liverpool est 4e avec 18 buts marqués et 10 encaissés en 11 matchs.
+Les deux équipes marquent peu à l'extérieur comme à domicile et un derby est souvent serré : trois buts maximum me paraissent le plus probable.
+Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-29 16:15
+competition: Liga
+equipe1: Deportivo
+equipe2: Barcelone
+pronostic: Barcelone gagne et plus de 1,5 but
+pronostic_en: Barcelona to win and over 1.5 goals
+pronostic_es: Gana el Barcelona y más de 1,5 goles
+cote:
+bookmaker: 1xbet
+combine: oui
+proba: 6-14-80
+score: 0-3
+analyse_en: Kick-off Sunday 29 November: 16:15 in Douala, Lagos and Paris, 15:15 in Accra and Dakar, 18:15 in Nairobi.
+Barcelona lead the table with 12 wins in 13 games and 51 goals scored (almost 4 a game). Deportivo are 12th.
+An attack scoring almost 4 goals a game against a mid-table side: a win with at least two goals looks very likely.
+My pick: Barcelona to win and over 1.5 goals. Bigger odds: Barcelona to win and over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 29 novembre : 16h15 à Douala et à Paris, 15h15 à Abidjan et Dakar.
+Barcelone est leader avec 12 victoires en 13 matchs et 51 buts marqués (près de 4 par match). Le Deportivo est 12e.
+Une attaque qui marque près de 4 buts par match contre une équipe du milieu de tableau : victoire et au moins deux buts me paraissent très probables.
+Mon choix : Barcelone gagne et plus de 1,5 but. Option plus grosse cote : Barcelone gagne et plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-29 15:00
+competition: Ligue 1
+equipe1: AJ Auxerre
+equipe2: Marseille
+pronostic: Plus de 2,5 buts dans le match
+pronostic_en: Over 2.5 goals
+pronostic_es: Más de 2,5 goles
+cote:
+bookmaker: 1xbet
+proba: 25-22-53
+score: 1-3
+analyse_en: Kick-off Sunday 29 November: 15:00 in Douala, Lagos and Paris, 14:00 in Accra and Dakar, 17:00 in Nairobi.
+Auxerre are 15th and have conceded 25 goals in 11 games; Marseille are 5th with 24 goals scored (and 17 conceded).
+Both sides concede plenty: their games average more than 3 goals, so over 2.5 goals is a good bet.
+My pick: Over 2.5 goals. Bigger odds: over 3.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 29 novembre : 15h à Douala et à Paris, 14h à Abidjan et Dakar.
+Auxerre est 15e et a encaissé 25 buts en 11 matchs ; Marseille est 5e avec 24 buts marqués (mais 17 encaissés).
+Deux équipes qui encaissent beaucoup : leurs matchs donnent en moyenne plus de 3 buts, donc plus de 2,5 buts est un bon pari.
+Mon choix : Plus de 2,5 buts dans le match. Option plus grosse cote : plus de 3,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-29 17:30
+competition: Premier League
+equipe1: Arsenal
+equipe2: Manchester City
+pronostic: Arsenal ou match nul
+pronostic_en: Arsenal or draw
+pronostic_es: Arsenal o empate
+cote:
+bookmaker: 1xbet
+proba: 45-28-27
+score: 1-0
+analyse_en: Kick-off Sunday 29 November: 17:30 in Douala, Lagos and Paris, 16:30 in Accra and Dakar, 19:30 in Nairobi.
+Arsenal lead the table with 9 wins in 11 games and 28 points. Manchester City are 3rd with 22 points, but already 3 defeats.
+The big game of the weekend: Arsenal are solid at home, but City can catch anyone out. I cover the draw to be safe.
+My pick: Arsenal or draw. Bigger odds: Arsenal to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 29 novembre : 17h30 à Douala et à Paris, 16h30 à Abidjan et Dakar.
+Arsenal est leader avec 9 victoires en 11 matchs et 28 points. Manchester City est 3e avec 22 points, mais déjà 3 défaites.
+Le choc du week-end : Arsenal est solide à domicile, mais City peut piéger n'importe qui. Je couvre le nul par prudence.
+Mon choix : Arsenal ou match nul. Option plus grosse cote : Arsenal gagne.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-29 19:30
+competition: Bundesliga
+equipe1: Borussia Dortmund
+equipe2: Bayer Leverkusen
+pronostic: Borussia Dortmund ou match nul
+pronostic_en: Borussia Dortmund or draw
+pronostic_es: Borussia Dortmund o empate
+cote:
+bookmaker: 1xbet
+proba: 50-25-25
+score: 2-1
+analyse_en: Kick-off Sunday 29 November: 19:30 in Douala, Lagos and Paris, 18:30 in Accra and Dakar, 21:30 in Nairobi.
+Dortmund lead the table and are unbeaten: 7 wins and 3 draws in 10 games. Leverkusen are 5th with 6 wins and 24 goals scored.
+Dortmund haven't lost this season and play at home: I take them with the draw to cover a tight game.
+My pick: Borussia Dortmund or draw. Bigger odds: Borussia Dortmund to win.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 29 novembre : 19h30 à Douala et à Paris, 18h30 à Abidjan et Dakar.
+Dortmund est leader et invaincu : 7 victoires et 3 nuls en 10 matchs. Leverkusen est 5e avec 6 victoires et 24 buts marqués.
+Dortmund n'a pas perdu cette saison et joue à domicile : je le prends avec le nul pour couvrir un match serré.
+Mon choix : Borussia Dortmund ou match nul. Option plus grosse cote : Borussia Dortmund gagne.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-29 20:45
+competition: Ligue 1
+equipe1: Lyon
+equipe2: AS Monaco
+pronostic: Moins de 3,5 buts dans le match
+pronostic_en: Under 3.5 goals
+pronostic_es: Menos de 3,5 goles
+cote:
+bookmaker: 1xbet
+proba: 48-27-25
+score: 1-1
+analyse_en: Kick-off Sunday 29 November: 20:45 in Douala, Lagos and Paris, 19:45 in Accra and Dakar, 22:45 in Nairobi.
+Lyon are 4th with only 9 goals conceded in 11 games; Monaco are 8th with 5 draws.
+A good Lyon defence and a Monaco side that plays a lot of tight games: three goals at most looks the most likely.
+My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 29 novembre : 20h45 à Douala et à Paris, 19h45 à Abidjan et Dakar.
+Lyon est 4e avec seulement 9 buts encaissés en 11 matchs ; Monaco est 8e avec 5 matchs nuls.
+Une bonne défense lyonnaise et un Monaco qui fait beaucoup de matchs serrés : trois buts maximum me paraissent le plus probable.
+Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-11-29 20:45
+competition: Serie A
+equipe1: Como
+equipe2: Juventus
+pronostic: Plus de 1,5 but dans le match
+pronostic_en: Over 1.5 goals
+pronostic_es: Más de 1,5 goles
+cote:
+bookmaker: 1xbet
+proba: 38-30-32
+score: 2-1
+analyse_en: Kick-off Sunday 29 November: 20:45 in Douala, Lagos and Paris, 19:45 in Accra and Dakar, 22:45 in Nairobi.
+Como are 5th with 8 wins in 12 games; Juventus are 6th with 6 wins and 19 goals scored.
+Two teams in good form who score regularly: two or more goals are likely, a safer bet than an exact score.
+My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi dimanche 29 novembre : 20h45 à Douala et à Paris, 19h45 à Abidjan et Dakar.
+Como est 5e avec 8 victoires en 12 matchs ; la Juventus est 6e avec 6 victoires et 19 buts marqués.
+Deux équipes en forme qui marquent régulièrement : deux buts ou plus sont probables, c'est un pari plus sûr qu'un score exact.
+Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+---
+date: 2026-12-02 21:30
+competition: Liga
+equipe1: Barcelone
+equipe2: Atlético Madrid
+pronostic: Plus de 2,5 buts dans le match
+pronostic_en: Over 2.5 goals
+pronostic_es: Más de 2,5 goles
+cote:
+bookmaker: 1xbet
+proba: 58-22-20
+score: 2-1
+analyse_en: Kick-off Wednesday 2 December: 21:30 in Douala, Lagos and Paris, 20:30 in Accra and Dakar, 23:30 in Nairobi.
+Barcelona have scored 51 goals in 13 La Liga games and host Atlético, who are 3rd with 26 goals scored.
+The leader against the 3rd-placed side: Barcelona have the best attack in the league, so over 2.5 goals looks a good choice.
+My pick: Over 2.5 goals. Bigger odds: Barcelona to win and over 1.5 goals.
+Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+analyse: Coup d'envoi mercredi 2 décembre : 21h30 à Douala et à Paris, 20h30 à Abidjan et Dakar.
+Barcelone a marqué 51 buts en 13 matchs de Liga et reçoit l'Atlético, 3e avec 26 buts marqués.
+Le leader et le 3e du classement : l'attaque de Barcelone est la meilleure du championnat, donc plus de 2,5 buts me paraît un bon choix.
+Mon choix : Plus de 2,5 buts dans le match. Option plus grosse cote : Barcelone gagne et plus de 1,5 but.
+La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
