@@ -6229,6 +6229,7 @@ pronostic_en: Bournemouth or draw
 pronostic_es: Bournemouth o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 8-41-51
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6237,12 +6238,14 @@ Record: Celta Vigo: 1 win, 0 draws, 3 defeats; Bournemouth: 4 wins, 0 draws, 0 d
 Bournemouth have the edge, but I cover the draw to be safe.
 My pick: Bournemouth or draw. Bigger odds: Bournemouth to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Celta Vigo 1-2 AFC Bournemouth. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Celta Vigo reçoit Bournemouth en Ligue Europa.
 Bilan : Celta Vigo : 1 victoire, 0 nul, 3 défaites ; Bournemouth : 4 victoires, 0 nul, 0 défaite.
 Bournemouth a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Bournemouth ou match nul. Option plus grosse cote : victoire de Bournemouth.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Celta Vigo 1-2 Bournemouth. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6254,6 +6257,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-2
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6262,12 +6266,14 @@ Record: Dinamo Zagreb: 2 wins, 1 draw, 1 defeat; Bayer Leverkusen: 3 wins, 0 dra
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Dinamo Zagreb 0-2 Bayer Leverkusen. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Dinamo Zagreb reçoit Bayer Leverkusen en Ligue Europa.
 Bilan : Dinamo Zagreb : 2 victoires, 1 nul, 1 défaite ; Bayer Leverkusen : 3 victoires, 0 nul, 1 défaite.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Dinamo Zagreb 0-2 Bayer Leverkusen. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6279,6 +6285,7 @@ pronostic_en: Olympiacos to win
 pronostic_es: Gana Olympiacos
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 80-9-11
 score: 3-0
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6287,12 +6294,14 @@ Record: Olympiacos: 3 wins, 1 draw, 0 defeats; Milan: 1 win, 0 draws, 3 defeats.
 Olympiacos are clearly stronger: the win is the logical pick.
 My pick: Olympiacos to win. Bigger odds: Olympiacos win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Olympiacos 2-4 AC Milan. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Olympiacos reçoit Milan en Ligue Europa.
 Bilan : Olympiacos : 3 victoires, 1 nul, 0 défaite ; Milan : 1 victoire, 0 nul, 3 défaites.
 Olympiacos est nettement plus fort : la victoire est le choix logique.
 Mon choix : Victoire de Olympiacos. Option plus grosse cote : Olympiacos gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Olympiacos 2-4 Milan. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 18:45
@@ -6304,6 +6313,7 @@ pronostic_en: RB Salzburg to win
 pronostic_es: Gana RB Salzburg
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 66-15-19
 score: 2-0
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6312,12 +6322,14 @@ Record: RB Salzburg: 1 win, 1 draw, 2 defeats; Ararat-Armenia: 0 wins, 0 draws, 
 RB Salzburg are clearly stronger: the win is the logical pick.
 My pick: RB Salzburg to win. Bigger odds: RB Salzburg win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: RB Salzburg 2-0 Ararat-Armenia. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 RB Salzburg reçoit Ararat-Armenia en Ligue Europa.
 Bilan : RB Salzburg : 1 victoire, 1 nul, 2 défaites ; Ararat-Armenia : 0 victoire, 0 nul, 4 défaites.
 RB Salzburg est nettement plus fort : la victoire est le choix logique.
 Mon choix : Victoire de RB Salzburg. Option plus grosse cote : RB Salzburg gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : RB Salzburg 2-0 Ararat-Armenia. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6329,6 +6341,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 85-7-8
 score: 3-0
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6337,12 +6350,14 @@ Record: Union St.-Gilloise: 3 wins, 1 draw, 0 defeats; Lech Poznan: 0 wins, 1 dr
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Union St.-Gilloise 2-2 Lech Poznan. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Union St.-Gilloise reçoit Lech Poznan en Ligue Europa.
 Bilan : Union St.-Gilloise : 3 victoires, 1 nul, 0 défaite ; Lech Poznan : 0 victoire, 1 nul, 3 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Union St.-Gilloise 2-2 Lech Poznan. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6354,6 +6369,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 8-41-51
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6362,12 +6378,14 @@ Record: Viktoria Plzen: 1 win, 0 draws, 3 defeats; Benfica: 4 wins, 0 draws, 0 d
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Viktoria Plzen 4-0 Benfica. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Viktoria Plzen reçoit Benfica en Ligue Europa.
 Bilan : Viktoria Plzen : 1 victoire, 0 nul, 3 défaites ; Benfica : 4 victoires, 0 nul, 0 défaite.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Viktoria Plzen 4-0 Benfica. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 21:00
@@ -6629,6 +6647,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 8-41-51
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 16:30 in Douala, Lagos and Paris.
@@ -6637,12 +6656,14 @@ Record: Kairat Almaty: 0 wins, 2 draws, 1 defeat; Mjällby AIF: 2 wins, 1 draw, 
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Kairat Almaty 1-0 Mjällby AIF. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 16h30 à Douala et à Paris.
 Kairat Almaty reçoit Mjällby AIF en Ligue Conférence.
 Bilan : Kairat Almaty : 0 victoire, 2 nuls, 1 défaite ; Mjällby AIF : 2 victoires, 1 nul, 0 défaite.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Kairat Almaty 1-0 Mjällby AIF. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6654,6 +6675,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 66-15-19
 score: 2-1
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6662,12 +6684,14 @@ Record: Ajax Amsterdam: 2 wins, 0 draws, 1 defeat; Thun: 1 win, 0 draws, 2 defea
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Ajax Amsterdam 4-0 FC Thun. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Ajax Amsterdam reçoit Thun en Ligue Conférence.
 Bilan : Ajax Amsterdam : 2 victoires, 0 nul, 1 défaite ; Thun : 1 victoire, 0 nul, 2 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Ajax Amsterdam 4-0 Thun. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6679,6 +6703,7 @@ pronostic_en: CSU Craiova or draw
 pronostic_es: CSU Craiova o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6687,12 +6712,14 @@ Record: Brighton & Hove Albion: 2 wins, 1 draw, 0 defeats; CSU Craiova: 2 wins, 
 CSU Craiova have the edge, but I cover the draw to be safe.
 My pick: CSU Craiova or draw. Bigger odds: CSU Craiova to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Brighton & Hove Albion 4-0 CSU Craiova. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Brighton & Hove Albion reçoit CSU Craiova en Ligue Conférence.
 Bilan : Brighton & Hove Albion : 2 victoires, 1 nul, 0 défaite ; CSU Craiova : 2 victoires, 1 nul, 0 défaite.
 CSU Craiova a l'avantage, mais je couvre le nul par prudence.
 Mon choix : CSU Craiova ou match nul. Option plus grosse cote : victoire de CSU Craiova.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Brighton & Hove Albion 4-0 CSU Craiova. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 18:45
@@ -6704,6 +6731,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-2
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6712,12 +6740,14 @@ Record: Egnatia: 0 wins, 2 draws, 1 defeat; Lincoln Red Imps: 1 win, 0 draws, 2 
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Egnatia 2-1 Lincoln Red Imps. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Egnatia reçoit Lincoln Red Imps en Ligue Conférence.
 Bilan : Egnatia : 0 victoire, 2 nuls, 1 défaite ; Lincoln Red Imps : 1 victoire, 0 nul, 2 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Egnatia 2-1 Lincoln Red Imps. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6729,6 +6759,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 8-41-51
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6737,12 +6768,14 @@ Record: Heart of Midlothian: 0 wins, 1 draw, 2 defeats; AS Monaco: 3 wins, 0 dra
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Heart of Midlothian 2-3 AS Monaco. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Heart of Midlothian reçoit AS Monaco en Ligue Conférence.
 Bilan : Heart of Midlothian : 0 victoire, 1 nul, 2 défaites ; AS Monaco : 3 victoires, 0 nul, 0 défaite.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Heart of Midlothian 2-3 AS Monaco. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 18:45
@@ -6754,6 +6787,7 @@ pronostic_en: Iberia 1999 or draw
 pronostic_es: Iberia 1999 o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 42-26-32
 score: 1-0
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6762,12 +6796,14 @@ Record: Iberia 1999: 0 wins, 1 draw, 2 defeats; Getafe: 0 wins, 1 draw, 2 defeat
 Iberia 1999 have the edge, but I cover the draw to be safe.
 My pick: Iberia 1999 or draw. Bigger odds: Iberia 1999 to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Iberia 1999 1-0 Getafe. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Iberia 1999 reçoit Getafe en Ligue Conférence.
 Bilan : Iberia 1999 : 0 victoire, 1 nul, 2 défaites ; Getafe : 0 victoire, 1 nul, 2 défaites.
 Iberia 1999 a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Iberia 1999 ou match nul. Option plus grosse cote : victoire de Iberia 1999.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Iberia 1999 1-0 Getafe. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6779,6 +6815,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 8-41-51
 score: 1-2
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6787,12 +6824,14 @@ Record: Jablonec: 0 wins, 2 draws, 1 defeat; Lugano: 3 wins, 0 draws, 0 defeats.
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Jablonec 2-0 FC Lugano. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Jablonec reçoit Lugano en Ligue Conférence.
 Bilan : Jablonec : 0 victoire, 2 nuls, 1 défaite ; Lugano : 3 victoires, 0 nul, 0 défaite.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Jablonec 2-0 Lugano. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6804,6 +6843,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 21-36-43
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6812,12 +6852,14 @@ Record: Kauno Zalgiris: 0 wins, 0 draws, 3 defeats; Riga FC: 0 wins, 3 draws, 0 
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Kauno Zalgiris 2-0 Riga FC. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Kauno Zalgiris reçoit Riga FC en Ligue Conférence.
 Bilan : Kauno Zalgiris : 0 victoire, 0 nul, 3 défaites ; Riga FC : 0 victoire, 3 nuls, 0 défaite.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Kauno Zalgiris 2-0 Riga FC. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6829,6 +6871,7 @@ pronostic_en: Pafos or draw
 pronostic_es: Pafos o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 42-26-32
 score: 1-0
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6837,12 +6880,14 @@ Record: Pafos: 0 wins, 1 draw, 2 defeats; Midtjylland: 0 wins, 1 draw, 2 defeats
 Pafos have the edge, but I cover the draw to be safe.
 My pick: Pafos or draw. Bigger odds: Pafos to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Pafos 0-2 FC Midtjylland. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Pafos reçoit Midtjylland en Ligue Conférence.
 Bilan : Pafos : 0 victoire, 1 nul, 2 défaites ; Midtjylland : 0 victoire, 1 nul, 2 défaites.
 Pafos a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Pafos ou match nul. Option plus grosse cote : victoire de Pafos.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Pafos 0-2 Midtjylland. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 18:45
@@ -6854,6 +6899,7 @@ pronostic_en: SK Brann to win
 pronostic_es: Gana SK Brann
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 78-10-12
 score: 3-0
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6862,12 +6908,14 @@ Record: SK Brann: 2 wins, 1 draw, 0 defeats; AGF: 0 wins, 2 draws, 1 defeat.
 SK Brann are clearly stronger: the win is the logical pick.
 My pick: SK Brann to win. Bigger odds: SK Brann win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: SK Brann 1-4 AGF. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 SK Brann reçoit AGF en Ligue Conférence.
 Bilan : SK Brann : 2 victoires, 1 nul, 0 défaite ; AGF : 0 victoire, 2 nuls, 1 défaite.
 SK Brann est nettement plus fort : la victoire est le choix logique.
 Mon choix : Victoire de SK Brann. Option plus grosse cote : SK Brann gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : SK Brann 1-4 AGF. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 21:00
