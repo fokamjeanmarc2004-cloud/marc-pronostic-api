@@ -6008,6 +6008,7 @@ pronostic_en: Atlético Madrid to score 2+ goals
 pronostic_es: El Atlético de Madrid marca 2 o más goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 42-26-32
 score: 2-0
 analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
@@ -6016,12 +6017,14 @@ Record: Atlético Madrid: 1 win, 1 draw, 2 defeats; Viking FK: 1 win, 1 draw, 2 
 Atlético Madrid have the home edge, but I cover the draw to stay safe.
 My pick: Atlético Madrid to score 2+ goals. Bigger odds: Atlético Madrid to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Atlético Madrid 2-0 Viking FK. Prediction won ✅.
 analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
 Atlético Madrid reçoit Viking FK en Ligue des Champions.
 Bilan : Atlético Madrid : 1 victoire, 1 nul, 2 défaites ; Viking FK : 1 victoire, 1 nul, 2 défaites.
 Atlético Madrid a l'avantage à domicile, mais je couvre le nul par prudence.
 Mon choix : Atlético Madrid marque au moins 2 buts. Option plus grosse cote : Atlético Madrid gagne.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Atlético Madrid 2-0 Viking FK. Pronostic gagné ✅.
 
 ---
 date: 2026-11-25 21:00
@@ -6033,6 +6036,7 @@ pronostic_en: Over 2.5 goals
 pronostic_es: Más de 2,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 2-2
 analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
@@ -6041,12 +6045,14 @@ Record: Club Brugge: 3 wins, 0 draws, 1 defeat; Liverpool: 3 wins, 0 draws, 1 de
 Two evenly matched sides: an open game, both can score.
 My pick: Over 2.5 goals. Bigger odds: both teams to score.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Club Brugge 0-3 Liverpool. Prediction won ✅.
 analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
 Club Brugge reçoit Liverpool en Ligue des Champions.
 Bilan : Club Brugge : 3 victoires, 0 nul, 1 défaite ; Liverpool : 3 victoires, 0 nul, 1 défaite.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Plus de 2,5 buts dans le match. Option plus grosse cote : les deux équipes marquent.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Club Brugge 0-3 Liverpool. Pronostic gagné ✅.
 
 ---
 date: 2026-11-25 21:00
@@ -6058,6 +6064,7 @@ pronostic_en: Inter to score 2+ goals
 pronostic_es: El Inter marca 2 o más goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 2-1
 analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
@@ -6066,12 +6073,14 @@ Record: Inter: 2 wins, 0 draws, 2 defeats; VfB Stuttgart: 2 wins, 1 draw, 1 defe
 Two evenly matched sides: an open game, both can score.
 My pick: Inter to score 2+ goals. Bigger odds: Inter to win and over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Internazionale 2-0 VfB Stuttgart. Prediction won ✅.
 analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
 Inter reçoit VfB Stuttgart en Ligue des Champions.
 Bilan : Inter : 2 victoires, 0 nul, 2 défaites ; VfB Stuttgart : 2 victoires, 1 nul, 1 défaite.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Inter marque au moins 2 buts. Option plus grosse cote : Inter gagne et plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Inter 2-0 VfB Stuttgart. Pronostic gagné ✅.
 
 ---
 date: 2026-11-25 21:00
@@ -6083,6 +6092,7 @@ pronostic_en: Bayern Munich to score 2+ goals
 pronostic_es: El Bayern Múnich marca 2 o más goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 8-41-51
 score: 1-3
 analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
@@ -6091,12 +6101,14 @@ Record: Lille: 0 wins, 1 draw, 3 defeats; Bayern Munich: 2 wins, 2 draws, 0 defe
 Bayern Munich are clearly stronger, even away.
 My pick: Bayern Munich to score 2+ goals. Bigger odds: Bayern Munich to win and over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Lille 2-1 Bayern Munich. Prediction lost ❌.
 analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
 Lille reçoit Bayern Munich en Ligue des Champions.
 Bilan : Lille : 0 victoire, 1 nul, 3 défaites ; Bayern Munich : 2 victoires, 2 nuls, 0 défaite.
 Bayern Munich est nettement plus fort, même en déplacement.
 Mon choix : Bayern Munich marque au moins 2 buts. Option plus grosse cote : Bayern Munich gagne et plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lille 2-1 Bayern Munich. Pronostic perdu ❌.
 
 ---
 date: 2026-11-25 21:00
@@ -6108,6 +6120,7 @@ pronostic_en: PSG to win and over 2.5 goals
 pronostic_es: Gana el PSG y más de 2,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 84-7-9
 score: 3-0
 analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
@@ -6116,12 +6129,14 @@ Record: PSG: 4 wins, 0 draws, 0 defeats; AS Roma: 1 win, 1 draw, 2 defeats.
 PSG are clearly better placed and play at home.
 My pick: PSG to win and over 2.5 goals. Bigger odds: PSG win by 2 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Paris Saint-Germain 2-2 AS Roma. Prediction lost ❌.
 analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
 PSG reçoit AS Roma en Ligue des Champions.
 Bilan : PSG : 4 victoires, 0 nul, 0 défaite ; AS Roma : 1 victoire, 1 nul, 2 défaites.
 PSG est nettement mieux classé et joue à domicile.
 Mon choix : Le PSG gagne et plus de 2,5 buts. Option plus grosse cote : le PSG gagne avec 2 buts d'écart.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : PSG 2-2 AS Roma. Pronostic perdu ❌.
 
 ---
 date: 2026-11-25 21:00
@@ -6133,6 +6148,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-1
 analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
@@ -6141,12 +6157,14 @@ Record: Shakhtar Donetsk: 1 win, 1 draw, 2 defeats; Fenerbahce: 1 win, 2 draws, 
 Two evenly matched sides: an open game, both can score.
 My pick: Under 3.5 goals. Bigger odds: draw.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Shakhtar Donetsk 0-1 Fenerbahce. Prediction won ✅.
 analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
 Shakhtar Donetsk reçoit Fenerbahce en Ligue des Champions.
 Bilan : Shakhtar Donetsk : 1 victoire, 1 nul, 2 défaites ; Fenerbahce : 1 victoire, 2 nuls, 1 défaite.
 Deux équipes de niveau proche : match ouvert, les deux peuvent marquer.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : match nul.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Shakhtar Donetsk 0-1 Fenerbahce. Pronostic gagné ✅.
 
 ---
 date: 2026-11-25 21:00
@@ -6158,6 +6176,7 @@ pronostic_en: Sporting CP to win
 pronostic_es: Gana Sporting CP
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 61-18-21
 score: 2-0
 analyse_en: Kick-off Wednesday 25 November: 21:00 in Douala, Lagos and Paris.
@@ -6166,12 +6185,14 @@ Record: Sporting CP: 3 wins, 0 draws, 1 defeat; Manchester United: 2 wins, 0 dra
 Sporting CP are clearly better placed and play at home.
 My pick: Sporting CP to win. Bigger odds: Sporting CP win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sporting CP 2-2 Manchester United. Prediction lost ❌.
 analyse: Coup d'envoi mercredi 25 novembre : 21h à Douala et à Paris.
 Sporting CP reçoit Manchester United en Ligue des Champions.
 Bilan : Sporting CP : 3 victoires, 0 nul, 1 défaite ; Manchester United : 2 victoires, 0 nul, 2 défaites.
 Sporting CP est nettement mieux classé et joue à domicile.
 Mon choix : victoire de Sporting CP. Option plus grosse cote : Sporting CP gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sporting CP 2-2 Manchester United. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 18:45
