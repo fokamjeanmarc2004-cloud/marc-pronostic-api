@@ -6204,6 +6204,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 75-11-14
 score: 2-1
 analyse_en: Kick-off Thursday 26 November: 18:45 in Douala, Lagos and Paris.
@@ -6212,12 +6213,14 @@ Record: Besiktas: 2 wins, 1 draw, 1 defeat; Hapoel Be'er: 0 wins, 1 draw, 3 defe
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Besiktas 2-1 Hapoel Be'er. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 18h45 à Douala et à Paris.
 Besiktas reçoit Hapoel Be'er en Ligue Europa.
 Bilan : Besiktas : 2 victoires, 1 nul, 1 défaite ; Hapoel Be'er : 0 victoire, 1 nul, 3 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Besiktas 2-1 Hapoel Be'er. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 18:45
@@ -6397,6 +6400,7 @@ pronostic_en: Crystal Palace or draw
 pronostic_es: Crystal Palace o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 42-26-32
 score: 1-0
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6405,12 +6409,14 @@ Record: Crystal Palace: 1 win, 2 draws, 1 defeat; Real Sociedad: 1 win, 2 draws,
 Crystal Palace have the edge, but I cover the draw to be safe.
 My pick: Crystal Palace or draw. Bigger odds: Crystal Palace to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Crystal Palace 2-1 Real Sociedad. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Crystal Palace reçoit Real Sociedad en Ligue Europa.
 Bilan : Crystal Palace : 1 victoire, 2 nuls, 1 défaite ; Real Sociedad : 1 victoire, 2 nuls, 1 défaite.
 Crystal Palace a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Crystal Palace ou match nul. Option plus grosse cote : victoire de Crystal Palace.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Crystal Palace 2-1 Real Sociedad. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -6422,6 +6428,7 @@ pronostic_en: Ferencvaros or draw
 pronostic_es: Ferencvaros o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 84-7-9
 score: 1-0
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6430,12 +6437,14 @@ Record: Ferencvaros: 4 wins, 0 draws, 0 defeats; NK Celje: 1 win, 1 draw, 2 defe
 Ferencvaros have the edge, but I cover the draw to be safe.
 My pick: Ferencvaros or draw. Bigger odds: Ferencvaros to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Ferencvaros 0-0 NK Celje. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Ferencvaros reçoit NK Celje en Ligue Europa.
 Bilan : Ferencvaros : 4 victoires, 0 nul, 0 défaite ; NK Celje : 1 victoire, 1 nul, 2 défaites.
 Ferencvaros a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Ferencvaros ou match nul. Option plus grosse cote : victoire de Ferencvaros.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Ferencvaros 0-0 NK Celje. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -6447,6 +6456,7 @@ pronostic_en: Juventus or draw
 pronostic_es: Juventus o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 66-15-19
 score: 1-0
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6455,12 +6465,14 @@ Record: Juventus: 3 wins, 1 draw, 0 defeats; Omonia Nicosia: 2 wins, 0 draws, 2 
 Juventus have the edge, but I cover the draw to be safe.
 My pick: Juventus or draw. Bigger odds: Juventus to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Juventus 4-1 Omonia Nicosia. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Juventus reçoit Omonia Nicosia en Ligue Europa.
 Bilan : Juventus : 3 victoires, 1 nul, 0 défaite ; Omonia Nicosia : 2 victoires, 0 nul, 2 défaites.
 Juventus a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Juventus ou match nul. Option plus grosse cote : victoire de Juventus.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Juventus 4-1 Omonia Nicosia. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -6472,6 +6484,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 75-11-14
 score: 2-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6480,12 +6493,14 @@ Record: Lyon: 2 wins, 1 draw, 1 defeat; Lillestrom: 0 wins, 1 draw, 3 defeats.
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Lyon 0-0 Lillestrom. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Lyon reçoit Lillestrom en Ligue Europa.
 Bilan : Lyon : 2 victoires, 1 nul, 1 défaite ; Lillestrom : 0 victoire, 1 nul, 3 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Lyon 0-0 Lillestrom. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 21:00
@@ -6497,6 +6512,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 47-24-29
 score: 2-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6505,12 +6521,14 @@ Record: NEC Nijmegen: 2 wins, 1 draw, 1 defeat; Stade Rennais: 1 win, 3 draws, 0
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: NEC Nijmegen 3-1 Stade Rennais. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 NEC Nijmegen reçoit Stade Rennais en Ligue Europa.
 Bilan : NEC Nijmegen : 2 victoires, 1 nul, 1 défaite ; Stade Rennais : 1 victoire, 3 nuls, 0 défaite.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : NEC Nijmegen 3-1 Stade Rennais. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -6522,6 +6540,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6530,12 +6549,14 @@ Record: OFI Crete: 2 wins, 0 draws, 2 defeats; Anderlecht: 2 wins, 0 draws, 2 de
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: OFI Crete 1-3 Anderlecht. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 OFI Crete reçoit Anderlecht en Ligue Europa.
 Bilan : OFI Crete : 2 victoires, 0 nul, 2 défaites ; Anderlecht : 2 victoires, 0 nul, 2 défaites.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : OFI Crete 1-3 Anderlecht. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 21:00
@@ -6547,6 +6568,7 @@ pronostic_en: AZ Alkmaar or draw
 pronostic_es: AZ Alkmaar o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6555,12 +6577,14 @@ Record: Sparta Prague: 1 win, 1 draw, 2 defeats; AZ Alkmaar: 2 wins, 0 draws, 2 
 AZ Alkmaar have the edge, but I cover the draw to be safe.
 My pick: AZ Alkmaar or draw. Bigger odds: AZ Alkmaar to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sparta Prague 2-4 AZ Alkmaar. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Sparta Prague reçoit AZ Alkmaar en Ligue Europa.
 Bilan : Sparta Prague : 1 victoire, 1 nul, 2 défaites ; AZ Alkmaar : 2 victoires, 0 nul, 2 défaites.
 AZ Alkmaar a l'avantage, mais je couvre le nul par prudence.
 Mon choix : AZ Alkmaar ou match nul. Option plus grosse cote : victoire de AZ Alkmaar.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sparta Prague 2-4 AZ Alkmaar. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -6572,6 +6596,7 @@ pronostic_en: Sunderland to win
 pronostic_es: Gana Sunderland
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 66-15-19
 score: 2-0
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6580,12 +6605,14 @@ Record: Sunderland: 2 wins, 1 draw, 1 defeat; Jagiellonia Bialystok: 1 win, 0 dr
 Sunderland are clearly stronger: the win is the logical pick.
 My pick: Sunderland to win. Bigger odds: Sunderland win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Sunderland 1-1 Jagiellonia Bialystok. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Sunderland reçoit Jagiellonia Bialystok en Ligue Europa.
 Bilan : Sunderland : 2 victoires, 1 nul, 1 défaite ; Jagiellonia Bialystok : 1 victoire, 0 nul, 3 défaites.
 Sunderland est nettement plus fort : la victoire est le choix logique.
 Mon choix : Victoire de Sunderland. Option plus grosse cote : Sunderland gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Sunderland 1-1 Jagiellonia Bialystok. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 21:00
@@ -6597,6 +6624,7 @@ pronostic_en: Torreense or draw
 pronostic_es: Torreense o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 61-18-21
 score: 1-0
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6605,12 +6633,14 @@ Record: Torreense: 2 wins, 0 draws, 2 defeats; Celtic: 1 win, 0 draws, 3 defeats
 Torreense have the edge, but I cover the draw to be safe.
 My pick: Torreense or draw. Bigger odds: Torreense to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Torreense 1-2 Celtic. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Torreense reçoit Celtic en Ligue Europa.
 Bilan : Torreense : 2 victoires, 0 nul, 2 défaites ; Celtic : 1 victoire, 0 nul, 3 défaites.
 Torreense a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Torreense ou match nul. Option plus grosse cote : victoire de Torreense.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Torreense 1-2 Celtic. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 21:00
@@ -6622,6 +6652,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 42-26-32
 score: 2-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6630,12 +6661,14 @@ Record: TSG Hoffenheim: 1 win, 1 draw, 2 defeats; SK Sturm Graz: 1 win, 1 draw, 
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: TSG Hoffenheim 3-1 SK Sturm Graz. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 TSG Hoffenheim reçoit SK Sturm Graz en Ligue Europa.
 Bilan : TSG Hoffenheim : 1 victoire, 1 nul, 2 défaites ; SK Sturm Graz : 1 victoire, 1 nul, 2 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : TSG Hoffenheim 3-1 SK Sturm Graz. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 16:30
@@ -6927,6 +6960,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-2
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6935,12 +6969,14 @@ Record: Borac Banja Luka: 1 win, 0 draws, 2 defeats; Atalanta: 1 win, 1 draw, 1 
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Borac Banja Luka 2-3 Atalanta. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Borac Banja Luka reçoit Atalanta en Ligue Conférence.
 Bilan : Borac Banja Luka : 1 victoire, 0 nul, 2 défaites ; Atalanta : 1 victoire, 1 nul, 1 défaite.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Borac Banja Luka 2-3 Atalanta. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -6952,6 +6988,7 @@ pronostic_en: Braga to win
 pronostic_es: Gana Braga
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 66-15-19
 score: 2-0
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6960,12 +6997,14 @@ Record: Braga: 1 win, 1 draw, 1 defeat; KuPS Kuopio: 0 wins, 1 draw, 2 defeats.
 Braga are clearly stronger: the win is the logical pick.
 My pick: Braga to win. Bigger odds: Braga win and over 1.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Braga 4-0 KuPS Kuopio. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Braga reçoit KuPS Kuopio en Ligue Conférence.
 Bilan : Braga : 1 victoire, 1 nul, 1 défaite ; KuPS Kuopio : 0 victoire, 1 nul, 2 défaites.
 Braga est nettement plus fort : la victoire est le choix logique.
 Mon choix : Victoire de Braga. Option plus grosse cote : Braga gagne et plus de 1,5 but.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Braga 4-0 KuPS Kuopio. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -6977,6 +7016,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 8-41-51
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -6985,12 +7025,14 @@ Record: CSKA Sofia: 0 wins, 1 draw, 2 defeats; Trabzonspor: 2 wins, 0 draws, 1 d
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: CSKA Sofia 1-2 Trabzonspor. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 CSKA Sofia reçoit Trabzonspor en Ligue Conférence.
 Bilan : CSKA Sofia : 0 victoire, 1 nul, 2 défaites ; Trabzonspor : 2 victoires, 0 nul, 1 défaite.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : CSKA Sofia 1-2 Trabzonspor. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -7002,6 +7044,7 @@ pronostic_en: Panathinaikos or draw
 pronostic_es: Panathinaikos o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 8-41-51
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -7010,12 +7053,14 @@ Record: Nordsjælland: 0 wins, 2 draws, 1 defeat; Panathinaikos: 3 wins, 0 draws
 Panathinaikos have the edge, but I cover the draw to be safe.
 My pick: Panathinaikos or draw. Bigger odds: Panathinaikos to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: FC Nordsjælland 3-2 Panathinaikos. Prediction lost ❌.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Nordsjælland reçoit Panathinaikos en Ligue Conférence.
 Bilan : Nordsjælland : 0 victoire, 2 nuls, 1 défaite ; Panathinaikos : 3 victoires, 0 nul, 0 défaite.
 Panathinaikos a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Panathinaikos ou match nul. Option plus grosse cote : victoire de Panathinaikos.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Nordsjælland 3-2 Panathinaikos. Pronostic perdu ❌.
 
 ---
 date: 2026-11-26 21:00
@@ -7027,6 +7072,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 1-2
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -7035,12 +7081,14 @@ Record: Hajduk Split: 2 wins, 0 draws, 1 defeat; Sint-Truidense: 2 wins, 1 draw,
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Hajduk Split 0-2 Sint-Truidense. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Hajduk Split reçoit Sint-Truidense en Ligue Conférence.
 Bilan : Hajduk Split : 2 victoires, 0 nul, 1 défaite ; Sint-Truidense : 2 victoires, 1 nul, 0 défaite.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Hajduk Split 0-2 Sint-Truidense. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -7052,6 +7100,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 8-41-51
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -7060,12 +7109,14 @@ Record: Inter D'Escaldes: 0 wins, 0 draws, 3 defeats; F.C. København: 2 wins, 1
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Inter D'Escaldes 2-0 F.C. København. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Inter D'Escaldes reçoit F.C. København en Ligue Conférence.
 Bilan : Inter D'Escaldes : 0 victoire, 0 nul, 3 défaites ; F.C. København : 2 victoires, 1 nul, 0 défaite.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Inter D'Escaldes 2-0 F.C. København. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -7077,6 +7128,7 @@ pronostic_en: Red Star Belgrade or draw
 pronostic_es: Red Star Belgrade o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 0-1
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -7085,12 +7137,14 @@ Record: KAA Gent: 1 win, 1 draw, 1 defeat; Red Star Belgrade: 1 win, 1 draw, 1 d
 Red Star Belgrade have the edge, but I cover the draw to be safe.
 My pick: Red Star Belgrade or draw. Bigger odds: Red Star Belgrade to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: KAA Gent 1-1 Red Star Belgrade. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 KAA Gent reçoit Red Star Belgrade en Ligue Conférence.
 Bilan : KAA Gent : 1 victoire, 1 nul, 1 défaite ; Red Star Belgrade : 1 victoire, 1 nul, 1 défaite.
 Red Star Belgrade a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Red Star Belgrade ou match nul. Option plus grosse cote : victoire de Red Star Belgrade.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : KAA Gent 1-1 Red Star Belgrade. Pronostic gagné ✅.
 
 ---
 date: 2026-11-26 21:00
@@ -7102,6 +7156,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 21-36-43
 score: 1-2
 analyse_en: Kick-off Thursday 26 November: 21:00 in Douala, Lagos and Paris.
@@ -7110,12 +7165,14 @@ Record: Freiburg: 2 wins, 0 draws, 1 defeat; Twente: 3 wins, 0 draws, 0 defeats.
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: SC Freiburg 2-1 FC Twente. Prediction won ✅.
 analyse: Coup d'envoi jeudi 26 novembre : 21h à Douala et à Paris.
 Freiburg reçoit Twente en Ligue Conférence.
 Bilan : Freiburg : 2 victoires, 0 nul, 1 défaite ; Twente : 3 victoires, 0 nul, 0 défaite.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Freiburg 2-1 Twente. Pronostic gagné ✅.
 
 ---
 date: 2026-11-21 19:00
