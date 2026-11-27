@@ -8665,7 +8665,7 @@ CSS += r'''
 .home-hero .eyebrow::before{background:#facc15!important}
 .home-hero .cta.alt{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
 .reslink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:11px 16px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;text-decoration:none;font-size:15px}
-.reslink b{color:#4ade80;font-size:18px}.reslink i{font-style:normal;color:#facc15}
+.reslink b{color:#4ade80;font-size:18px;white-space:nowrap}.reslink i{font-style:normal;color:#facc15}
 '''
 CSS += r'''
 /* ---------- fonds photo (vraies images, allégées) ---------- */
