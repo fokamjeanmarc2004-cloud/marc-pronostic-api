@@ -4486,6 +4486,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 25-34-41
 score: 1-2
 analyse_en: Kick-off Friday 27 November: 21:00 in Douala, Lagos and Paris.
@@ -4494,12 +4495,14 @@ Record: Nottingham Forest: 2 wins, 3 draws, 5 defeats; Chelsea: 5 wins, 1 draw, 
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Nottingham Forest 3-2 Chelsea. Prediction won ✅.
 analyse: Coup d'envoi vendredi 27 novembre : 21h à Douala et à Paris.
 Nottingham Forest reçoit Chelsea en Premier League.
 Bilan : Nottingham Forest : 2 victoires, 3 nuls, 5 défaites ; Chelsea : 5 victoires, 1 nul, 4 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Nottingham Forest 3-2 Chelsea. Pronostic gagné ✅.
 
 ---
 date: 2026-11-20 21:00
@@ -4707,6 +4710,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 0-1
 analyse_en: Kick-off Friday 27 November: 21:00 in Douala, Lagos and Paris.
@@ -4715,12 +4719,14 @@ Record: Levante: 2 wins, 5 draws, 5 defeats; Racing Santander: 4 wins, 2 draws, 
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Levante 1-3 Racing Santander. Prediction lost ❌.
 analyse: Coup d'envoi vendredi 27 novembre : 21h à Douala et à Paris.
 Levante reçoit Racing Santander en Liga.
 Bilan : Levante : 2 victoires, 5 nuls, 5 défaites ; Racing Santander : 4 victoires, 2 nuls, 6 défaites.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Levante 1-3 Racing Santander. Pronostic perdu ❌.
 
 ---
 date: 2026-11-20 20:45
@@ -4928,6 +4934,7 @@ pronostic_en: Paris FC or draw
 pronostic_es: Paris FC o empate
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 34-30-36
 score: 0-1
 analyse_en: Kick-off Friday 27 November: 20:45 in Douala, Lagos and Paris.
@@ -4936,12 +4943,14 @@ Record: Brest: 4 wins, 3 draws, 3 defeats; Paris FC: 6 wins, 2 draws, 2 defeats.
 Paris FC have the edge, but I cover the draw to be safe.
 My pick: Paris FC or draw. Bigger odds: Paris FC to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Brest 1-0 Paris FC. Prediction lost ❌.
 analyse: Coup d'envoi vendredi 27 novembre : 20h45 à Douala et à Paris.
 Brest reçoit Paris FC en Ligue 1.
 Bilan : Brest : 4 victoires, 3 nuls, 3 défaites ; Paris FC : 6 victoires, 2 nuls, 2 défaites.
 Paris FC a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Paris FC ou match nul. Option plus grosse cote : victoire de Paris FC.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Brest 1-0 Paris FC. Pronostic perdu ❌.
 
 ---
 date: 2026-11-21 15:00
@@ -5177,6 +5186,7 @@ pronostic_en: Over 1.5 goals
 pronostic_es: Más de 1,5 goles
 cote:
 bookmaker: 1xbet
+resultat: perdu
 proba: 21-36-43
 score: 1-2
 analyse_en: Kick-off Friday 27 November: 20:45 in Douala, Lagos and Paris.
@@ -5185,12 +5195,14 @@ Record: Venezia: 2 wins, 0 draws, 9 defeats; Bologna: 5 wins, 2 draws, 4 defeats
 Two or more goals are likely: a safer bet than an exact score.
 My pick: Over 1.5 goals. Bigger odds: over 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Venezia 0-0 Bologna. Prediction lost ❌.
 analyse: Coup d'envoi vendredi 27 novembre : 20h45 à Douala et à Paris.
 Venezia reçoit Bologna en Serie A.
 Bilan : Venezia : 2 victoires, 0 nul, 9 défaites ; Bologna : 5 victoires, 2 nuls, 4 défaites.
 Deux buts ou plus sont probables : c'est un pari plus sûr qu'un score exact.
 Mon choix : Plus de 1,5 but dans le match. Option plus grosse cote : plus de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Venezia 0-0 Bologna. Pronostic perdu ❌.
 
 ---
 date: 2026-11-21 15:30
@@ -5398,6 +5410,7 @@ pronostic_en: Werder Bremen or draw
 pronostic_es: Werder Bremen o empate
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 70-14-16
 score: 1-0
 analyse_en: Kick-off Friday 27 November: 20:30 in Douala, Lagos and Paris.
@@ -5406,12 +5419,14 @@ Record: Werder Bremen: 4 wins, 3 draws, 2 defeats; Borussia Mönchengladbach: 1 
 Werder Bremen have the edge, but I cover the draw to be safe.
 My pick: Werder Bremen or draw. Bigger odds: Werder Bremen to win.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Werder Bremen 3-3 Borussia Mönchengladbach. Prediction won ✅.
 analyse: Coup d'envoi vendredi 27 novembre : 20h30 à Douala et à Paris.
 Werder Bremen reçoit Borussia Mönchengladbach en Bundesliga.
 Bilan : Werder Bremen : 4 victoires, 3 nuls, 2 défaites ; Borussia Mönchengladbach : 1 victoire, 1 nul, 7 défaites.
 Werder Bremen a l'avantage, mais je couvre le nul par prudence.
 Mon choix : Werder Bremen ou match nul. Option plus grosse cote : victoire de Werder Bremen.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Werder Bremen 3-3 Borussia Mönchengladbach. Pronostic gagné ✅.
 
 ---
 date: 2026-11-20 20:30
@@ -5731,6 +5746,7 @@ pronostic_en: Under 3.5 goals
 pronostic_es: Menos de 3,5 goles
 cote:
 bookmaker: 1xbet
+resultat: gagne
 proba: 34-30-36
 score: 0-1
 analyse_en: Kick-off Friday 27 November: 20:30 in Douala, Lagos and Paris.
@@ -5739,12 +5755,14 @@ Record: Leganés: 4 wins, 3 draws, 7 defeats; CD Sabadell: 4 wins, 6 draws, 4 de
 I expect a fairly tight game: three goals at most looks the most likely.
 My pick: Under 3.5 goals. Bigger odds: under 2.5 goals.
 Odds vary from one bookmaker to another, so compare before you bet. You can play this prediction on 1xBet, Melbet, Paripesa or WinWin: sign up with the promo code FFN to get your welcome bonus.
+Final score: Leganés 0-0 CD Sabadell. Prediction won ✅.
 analyse: Coup d'envoi vendredi 27 novembre : 20h30 à Douala et à Paris.
 Leganés reçoit CD Sabadell en Liga 2.
 Bilan : Leganés : 4 victoires, 3 nuls, 7 défaites ; CD Sabadell : 4 victoires, 6 nuls, 4 défaites.
 Je m'attends à un match plutôt fermé : trois buts maximum me paraissent le plus probable.
 Mon choix : Moins de 3,5 buts dans le match. Option plus grosse cote : moins de 2,5 buts.
 La cote exacte dépend du bookmaker : compare avant de jouer. Tu peux jouer ce pronostic sur 1xBet, Melbet, Paripesa ou WinWin : inscris-toi avec le code promo FFN pour avoir ton bonus.
+Score final : Leganés 0-0 CD Sabadell. Pronostic gagné ✅.
 
 ---
 date: 2026-11-24 18:45
